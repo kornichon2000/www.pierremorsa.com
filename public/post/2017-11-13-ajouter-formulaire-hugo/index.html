@@ -1,0 +1,404 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        
+            
+                <title>Ajouter un formulaire de contact dans Hugo</title>
+            
+        
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="generator" content="Hugo 0.18.1" />
+        
+
+
+        
+            <meta name="author" content="Pierre Morsa">
+        
+        
+            
+                <meta name="description" content="Le Blog de Pierre Morsa | Ideas on Stage Partner &#43; Creative Director">
+            
+        
+
+        
+        
+            
+        
+
+        
+        
+            <link rel="stylesheet" href="/css/main.css" />
+        
+
+        
+        
+        
+
+    </head>
+    <body>
+
+        
+        <div id="wrapper">
+
+
+
+<section id="header">
+        <h1><a href="/">Pierre Morsa</a></h1>
+</section>
+
+
+    
+    <div id="main">
+        
+        
+        <article class="post">
+    <header>
+    <div class="title">
+            <h2><a href="/post/2017-11-13-ajouter-formulaire-hugo/">
+            Ajouter un formulaire de contact dans Hugo
+            </a></h2>
+        
+    </div>
+    <div class="meta">
+        
+            
+        
+
+        <time class="published"
+            datetime='2017-11-13'>
+            2017-11-13</time>
+    </div>
+</header>
+
+    
+
+    <div id="content">
+        
+
+<p>Vous trouverez dans cet article une procédure pas à pas pour ajouter un formulaire de contact dans un site statique Hugo, sans avoir besoin de back-end car nous allons déléguer le traitement des données à Zapier.</p>
+
+<p>J&rsquo;ai déjà parlé de <a href="http://gohugo.io">Hugo</a>, le générateur de sites statiques que j&rsquo;utilise pour mon blog et le site de ma société. Les sites générés étant statiques, il n&rsquo;y a pas de base de données ou de scripts serveurs pour gérer un formulaire de contact. Il faut donc trouver une solution alternative. En voici une possible, mais ce n&rsquo;est pas la seule.</p>
+
+<h2 id="ce-dont-vous-allez-avoir-besoin">Ce dont vous allez avoir besoin</h2>
+
+<ul>
+<li>Bootstrap, ou au minimum la librairie de validation de formulaire ; le thème utilisé était basé sur <a href="http://getbootstrap.com">Bootstrap</a>, une librairie qui permet de créer des sites web plus facilement. Si votre thème n&rsquo;utilise pas Bootstrap, il faudra peut-être bidouiller un peu plus.</li>
+<li>Un compte <a href="https://zapier.com">Zapier</a> pour créer le Web Hook auquel sera envoyé les données du formulaire</li>
+<li>Un compte <a href="https://slack.com/">Slack</a> pour pouvoir poster les données du formulaire ; à noter que le gros avantage d&rsquo;utiliser Zapier est de pouvoir rediriger le contenu du formulaire vers pratiquement n&rsquo;importe quel support : email, Slack, Google Sheets, Office 365, etc.<br /></li>
+<li>Un peu de JavaScript (eh oui on ne peut pas toujours s&rsquo;en passer malheureusement)</li>
+</ul>
+
+<h2 id="étape-1-créez-un-webhook-sur-zapier">Étape 1 : créez un WebHook sur Zapier</h2>
+
+<p>Commencez par créer un compte <a href="https://www.zapier.com/">Zapier</a> si vous n&rsquo;en avez pas encore ; la bonne nouvelle, c&rsquo;est que c&rsquo;est gratuit tant que vous n&rsquo;utilisez pas trop le service.</p>
+
+<p>Cliquez sur le bouton Make a Zap!</p>
+
+<p><img src="/pictures/2017/11/makeazap.jpg" alt="Make a Zap!" /></p>
+
+<p>Dans « Built-in Apps » choisissez « Webhooks ».</p>
+
+<p><img src="/pictures/2017/11/zapier-webhook.jpg" alt="Zapier Webhook" /></p>
+
+<p>Choisissez le type « Catch Hook ».</p>
+
+<p><img src="/pictures/2017/11/zapier-catch-hook.jpg" alt="Zapier catch hook" /></p>
+
+<p>Passez l&rsquo;étape optionnelle « Pick off a child key ».</p>
+
+<p>L&rsquo;étape suivante, « Test Webhooks by Zapier » est importante car elle vous donne l&rsquo;URL de votre Webhook.  <strong>Copiez l&rsquo;adresse du webhook quelque part</strong> car nous allons en avoir besoin lorsque nous créerons le formulaire.</p>
+
+<p>Notez que pour l&rsquo;instant vous n&rsquo;avez encore jamais envoyé de données au Webhook, par conséquent le test ne marchera pas. Gardez la page web de Zapier ouverte, nous y reviendrons plus tard.</p>
+
+<h2 id="étape-2-créez-un-fichier-contact-html-dans-le-répertoire-hugo-partials-de-votre-site">Étape 2 : créez un fichier contact.html dans le répertoire Hugo /partials de votre site</h2>
+
+<p>Ce fichier contiendra le code html du formulaire de contact. Ci-dessous vous trouverez l&rsquo;exemple du formulaire de contact que j&rsquo;ai créé.</p>
+
+<p>Quel que soit le thème que vous utilisiez, le truc est d&rsquo;utiliser l&rsquo;URL du Webhook créé à l&rsquo;étape précédente comme destination pour les données du formulaire. Pour cela, il faut adapter la ligne <code>&lt;form action = ...&gt;</code></p>
+
+<p><strong>Dans le code ci-dessous, remplacez <a href="https://hooks.zapier.com..">https://hooks.zapier.com..</a>. par l&rsquo;URL de <em>votre</em> hook Zapier créé dans l&rsquo;étape précédente.</strong></p>
+
+<p>Vérifiez également que vous avez <code>method=&quot;POST&quot;</code> comme méthode pour le form.</p>
+
+<pre><code>{{ &quot;&lt;!-- Contact Section --&gt;&quot; | safeHTML }}
+&lt;section id=&quot;contact&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;col-lg-12 text-center&quot;&gt;
+           			&lt;h3 class=&quot;section-subheading&quot;&gt;{{ with .Site.Params.contact.subtitle }}{{ . | markdownify }}{{ end }}&lt;/h3&gt;
+           			&lt;br&gt;
+            &lt;/div&gt;
+		    &lt;/div&gt;
+		        &lt;div class=&quot;col-md-6 col-md-offset-3 text-left&quot;&gt;
+		            &lt;form  action=&quot;https://hooks.zapier.com/hooks/...&quot; method=&quot;POST&quot; name=&quot;sentMessage&quot; id=&quot;contactForm&quot;&gt;
+				            &lt;div class=&quot;form-group&quot;&gt;
+				              		&lt;input type=&quot;hidden&quot; name=&quot;_subject&quot; value=&quot;Form sent from page: {{ .RelPermalink }}&quot;&gt;
+				            	&lt;/div&gt;
+		                &lt;div class=&quot;form-group&quot;&gt;
+		                    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;{{ with .Site.Params.contact.form.name.text }}{{ .  | markdownify }}{{ end }}&quot; name=&quot;name&quot; required data-validation-required-message=&quot;{{ with .Site.Params.contact.form.name.warning }}{{ . | markdownify}}{{ end }}&quot;&gt;
+		                    &lt;p class=&quot;help-block text-danger&quot;&gt;&lt;/p&gt;
+		                &lt;/div&gt;
+		                &lt;div class=&quot;form-group&quot;&gt;
+		                    &lt;input type=&quot;email&quot; class=&quot;form-control&quot; placeholder=&quot;{{ with .Site.Params.contact.form.email.text }}{{ . | markdownify }}{{ end }}&quot; name=&quot;email&quot; required data-validation-required-message=&quot;{{ with .Site.Params.contact.form.email.warning }}{{ . | markdownify }}{{ end }}&quot;&gt;
+		                    &lt;p class=&quot;help-block text-danger&quot;&gt;&lt;/p&gt;
+		                &lt;/div&gt;
+		                &lt;div class=&quot;form-group&quot;&gt;
+		                    &lt;input type=&quot;tel&quot; class=&quot;form-control&quot; placeholder=&quot;{{ with .Site.Params.contact.form.phone.text }}{{ . | markdownify }}{{ end }}&quot; name=&quot;phone&quot;&gt;
+		                    &lt;p class=&quot;help-block text-danger&quot;&gt;&lt;/p&gt;
+		                &lt;/div&gt;
+		                &lt;div class=&quot;form-group&quot;&gt;
+		                    &lt;textarea class=&quot;form-control&quot; placeholder=&quot;{{ with .Site.Params.contact.form.message.text }}{{ . | markdownify }}{{ end }}&quot; name=&quot;message&quot; required data-validation-required-message=&quot;{{ with .Site.Params.contact.form.message.warning }}{{ . | markdownify }}{{ end }}&quot;&gt;&lt;/textarea&gt;
+		                    &lt;p class=&quot;help-block text-danger&quot;&gt;&lt;/p&gt;
+		                &lt;/div&gt;
+		                &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
+		                &lt;div class=&quot;col-lg-12 text-center&quot;&gt;
+		                    &lt;div id=&quot;success&quot;&gt;{{ with .Site.Params.contact.success }}{{ . | markdownify }}{{ end }}&lt;/div&gt;
+		                    &lt;input type=&quot;submit&quot; value=&quot;{{ with .Site.Params.contact.buttonText }}{{ . | markdownify }}{{ end }}&quot; class=&quot;btn btn-primary btn-xl&quot;&gt;
+		                &lt;/div&gt;
+                &lt;/form&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;
+</code></pre>
+
+<p>Après cette étape, vous devrez bien sûr modifier le code de vos pages pour qu&rsquo;elles intègrent le formulaire là où vous le souhaitez ; je ne détaille pas cette étape, si vous lisez cet article c&rsquo;est que vous savez déjà comment faire.</p>
+
+<h2 id="étape-3-ajoutez-le-code-javascript-nécessaire-à-la-validation-interactive-du-formulaire">Étape 3 : ajoutez le code JavaScript nécessaire à la validation interactive du formulaire</h2>
+
+<p>Vous connaissez déjà mon peu d&rsquo;amour pour JavaScript, mais dans ce cas-ci c&rsquo;est la seule solution que j&rsquo;ai trouvé qui fonctionne. Le code est inséré directement dans la page, mais vous pouvez très bien le mettre dans un fichier sous /static/js/</p>
+
+<pre><code>&lt;script type=&quot;text/javascript&quot;&gt;
+$(function() {
+
+    $(&quot;input,textarea&quot;).not(&quot;[type=search]&quot;).jqBootstrapValidation({
+        preventSubmit: true,
+        submitError: function($form, event, errors) {
+            
+        },
+        submitSuccess: function($form, e) {
+    	    e.preventDefault();
+    	
+    	    var submitButton = $('input[type=submit]', $form);
+    	    $.ajax({
+    	      type: 'POST',
+    	      url: $form.prop('action'),
+    	      accept: {
+    	        javascript: 'application/javascript'
+    	      },
+    	      data: $form.serialize(),
+    	      beforeSend: function() {
+				submitButton.prop('value', 'Please Wait...');
+				submitButton.prop('disabled', 'disabled');
+    	      }
+    	    }).done(function(data) {
+				submitButton.prop('value', 'Thank you, we\x27ll get back to you shortly.');
+    			submitButton.prop('disabled', false);
+    			hj('formSubmitSuccessful');
+    	    });
+        },
+
+        filter: function() {
+            return $(this).is(&quot;:visible&quot;);
+        },
+    });
+
+});
+
+ 
+$('#name').focus(function() {
+    $('#success').html('');
+});
+&lt;/script&gt; 
+</code></pre>
+
+<p>À noter que même sans ce bout de code JavaScript, la soumission du formulaire au Webhook fonctionnera. Par contre c&rsquo;est moche ; le visiteur sera redirigé vers une page affichant le résultat technique du Webhook, ce qui n&rsquo;est vraiment pas idéal.</p>
+
+<h2 id="étape-4-installez-le-module-javascript-jqbootstrapvalidation">Étape 4 : installez le module JavaScript jqBootstrapValidation</h2>
+
+<p>Ce module est nécessaire pour faire fonctionner le code précédent. Vous le trouverez à l&rsquo;URL suivant :</p>
+
+<p><a href="http://ReactiveRaven.github.com/jqBootstrapValidation/">http://ReactiveRaven.github.com/jqBootstrapValidation/</a></p>
+
+<p>Copiez le fichier jqBootstrapValidation.js dans le répertoire /static/js/</p>
+
+<h2 id="étape-5-finissez-de-configurer-les-pages-de-votre-site">Étape 5 : finissez de configurer les pages de votre site</h2>
+
+<p>N&rsquo;oubliez pas d&rsquo;intégrer le code du formulaire et le code JavaScript à vos pages. Sinon évidemment ça ne marchera pas. Selon votre formulaire de contact, il est très probable que vous deviez adapter certains détails du code. <strong>Je <em>ne pense pas</em> avoir modifié le code de jqBootstrapValidation</strong> mais avec le temps on oublie parfois&hellip;</p>
+
+<h2 id="étape-6-finissez-de-configurer-zapier">Étape 6 : finissez de configurer Zapier</h2>
+
+<p>Je ne vais pas expliquer ce qu&rsquo;il faut faire ici en détail car il y a des dizaines de solutions possibles, mais vous devrez configurer Zapier pour qu&rsquo;il envoie les donnée du formulaire vers le canal de votre choix : Papier, email etc. Sans cela les données seront bloquées chez Zapier et pas très utiles.</p>
+
+<p>Au final, l&rsquo;action Zapier pour Slack ressemble à ceci :</p>
+
+<p><img src="/pictures/2017/11/zapier-slack-action.jpg" alt="Zapier Slack Action" /></p>
+
+<h2 id="pour-résumer">Pour résumer&hellip;</h2>
+
+<ul>
+<li>J&rsquo;ai créé un Webhook sur Zapier pour récupérer les données du formulaire.</li>
+<li>J&rsquo;ai ajouté le fichier contact.html dans le répertoire /layouts/partials du thème, avec le code du formulaire.</li>
+<li>J&rsquo;ai ajouté le code JavaScript nécessaire lors de la soumission du formulaire.</li>
+<li>J&rsquo;ai ajouté le fichier jqBootstrapValidation.js dans le répertoire /static/js/</li>
+<li>J&rsquo;ai fini de configurer l&rsquo;action Zapier pour poster les données du Webhook sur Slack.</li>
+</ul>
+
+<p>Voilà, j&rsquo;espère que cela vous aura été utile. Comme dans tout développement de ce type, difficile de garantir que cela fonctionnera tel quel sur votre site, mais cela devrait déjà être un bon point de départ.</p>
+
+    </div>
+
+    <footer>
+    </footer>
+</article>
+
+    </div>
+    
+<section id="sidebar">
+
+    
+        <section id="intro">
+            
+            
+                
+                    <a href="/"><img src="/pictures/main/pierre-morsa-avatar.jpg" class="intro-circle" width="" alt="Pierre Morsa" /></a>
+                
+            
+            
+                <header>
+                    <h2>Pierre Morsa</h2>
+                    <p>Présenter en public, Getting Things Done, Lifehacks, Technomagie etc.</p>
+                </header>
+            
+            
+        </section>
+
+
+    
+    
+    
+    
+        <section id="categories">
+            <ul class="posts">
+                
+                    
+                
+
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/pr%C3%A9senter-en-public/">Présenter en public</a>
+                                <span style="float:right;">45</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/gtd-getting-things-done/">GTD Getting Things Done</a>
+                                <span style="float:right;">29</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/lifehacks/">Lifehacks</a>
+                                <span style="float:right;">18</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/technomagie/">Technomagie</a>
+                                <span style="float:right;">17</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/nouvelles/">Nouvelles</a>
+                                <span style="float:right;">14</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/startup/">Startup</a>
+                                <span style="float:right;">13</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/nomade-digital/">Nomade Digital</a>
+                                <span style="float:right;">5</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/storytelling/">Storytelling</a>
+                                <span style="float:right;">3</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/tedx/">TEDx</a>
+                                <span style="float:right;">3</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/cr%C3%A9ativit%C3%A9/">Créativité</a>
+                                <span style="float:right;">1</span>
+                            </header>
+                        </article>
+                    </li>
+                
+            </ul>
+        </section>
+    
+
+    
+        <section class="blurb">
+            <p>Pierre Morsa est Partner + Creative Director chez <a href='https://www.ideasonstage.com'>Ideas on Stage</a>, la première agence globale de création de présentations. <br>Pour me contacter écrivez-moi à<br>p i e r r e . m o r s a @ p i e r r e m o r s a . c o m</p>
+
+            <ul class="actions">
+                <li><a href="/about/" class="button">En savoir Plus</a></li>
+            </ul>
+        </section>
+
+    
+        <section id="footer">
+            <p class="copyright">Site garanti sans cookies et sans JavaScript. Le contenu est en copie libre : vous pouvez tout copier et réutiliser librement.</p>
+        </section>
+
+</section>
+
+        </div>
+    </body>
+</html>
+

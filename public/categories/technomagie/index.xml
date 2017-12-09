@@ -1,0 +1,1784 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>technomagie on Pierre Morsa</title>
+    <link>https://www.pierremorsa.com/categories/technomagie/index.xml</link>
+    <description>Recent content in technomagie on Pierre Morsa</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <atom:link href="/categories/technomagie/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Ajouter un formulaire de contact dans Hugo</title>
+      <link>https://www.pierremorsa.com/post/2017-11-13-ajouter-formulaire-hugo/</link>
+      <pubDate>Mon, 13 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pierremorsa.com/post/2017-11-13-ajouter-formulaire-hugo/</guid>
+      <description>
+
+&lt;p&gt;Vous trouverez dans cet article une procédure pas à pas pour ajouter un formulaire de contact dans un site statique Hugo, sans avoir besoin de back-end car nous allons déléguer le traitement des données à Zapier.&lt;/p&gt;
+
+&lt;p&gt;J&amp;rsquo;ai déjà parlé de &lt;a href=&#34;http://gohugo.io&#34;&gt;Hugo&lt;/a&gt;, le générateur de sites statiques que j&amp;rsquo;utilise pour mon blog et le site de ma société. Les sites générés étant statiques, il n&amp;rsquo;y a pas de base de données ou de scripts serveurs pour gérer un formulaire de contact. Il faut donc trouver une solution alternative. En voici une possible, mais ce n&amp;rsquo;est pas la seule.&lt;/p&gt;
+
+&lt;h2 id=&#34;ce-dont-vous-allez-avoir-besoin&#34;&gt;Ce dont vous allez avoir besoin&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Bootstrap, ou au minimum la librairie de validation de formulaire ; le thème utilisé était basé sur &lt;a href=&#34;http://getbootstrap.com&#34;&gt;Bootstrap&lt;/a&gt;, une librairie qui permet de créer des sites web plus facilement. Si votre thème n&amp;rsquo;utilise pas Bootstrap, il faudra peut-être bidouiller un peu plus.&lt;/li&gt;
+&lt;li&gt;Un compte &lt;a href=&#34;https://zapier.com&#34;&gt;Zapier&lt;/a&gt; pour créer le Web Hook auquel sera envoyé les données du formulaire&lt;/li&gt;
+&lt;li&gt;Un compte &lt;a href=&#34;https://slack.com/&#34;&gt;Slack&lt;/a&gt; pour pouvoir poster les données du formulaire ; à noter que le gros avantage d&amp;rsquo;utiliser Zapier est de pouvoir rediriger le contenu du formulaire vers pratiquement n&amp;rsquo;importe quel support : email, Slack, Google Sheets, Office 365, etc.&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Un peu de JavaScript (eh oui on ne peut pas toujours s&amp;rsquo;en passer malheureusement)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;étape-1-créez-un-webhook-sur-zapier&#34;&gt;Étape 1 : créez un WebHook sur Zapier&lt;/h2&gt;
+
+&lt;p&gt;Commencez par créer un compte &lt;a href=&#34;https://www.zapier.com/&#34;&gt;Zapier&lt;/a&gt; si vous n&amp;rsquo;en avez pas encore ; la bonne nouvelle, c&amp;rsquo;est que c&amp;rsquo;est gratuit tant que vous n&amp;rsquo;utilisez pas trop le service.&lt;/p&gt;
+
+&lt;p&gt;Cliquez sur le bouton Make a Zap!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/11/makeazap.jpg&#34; alt=&#34;Make a Zap!&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Dans « Built-in Apps » choisissez « Webhooks ».&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/11/zapier-webhook.jpg&#34; alt=&#34;Zapier Webhook&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Choisissez le type « Catch Hook ».&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/11/zapier-catch-hook.jpg&#34; alt=&#34;Zapier catch hook&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Passez l&amp;rsquo;étape optionnelle « Pick off a child key ».&lt;/p&gt;
+
+&lt;p&gt;L&amp;rsquo;étape suivante, « Test Webhooks by Zapier » est importante car elle vous donne l&amp;rsquo;URL de votre Webhook.  &lt;strong&gt;Copiez l&amp;rsquo;adresse du webhook quelque part&lt;/strong&gt; car nous allons en avoir besoin lorsque nous créerons le formulaire.&lt;/p&gt;
+
+&lt;p&gt;Notez que pour l&amp;rsquo;instant vous n&amp;rsquo;avez encore jamais envoyé de données au Webhook, par conséquent le test ne marchera pas. Gardez la page web de Zapier ouverte, nous y reviendrons plus tard.&lt;/p&gt;
+
+&lt;h2 id=&#34;étape-2-créez-un-fichier-contact-html-dans-le-répertoire-hugo-partials-de-votre-site&#34;&gt;Étape 2 : créez un fichier contact.html dans le répertoire Hugo /partials de votre site&lt;/h2&gt;
+
+&lt;p&gt;Ce fichier contiendra le code html du formulaire de contact. Ci-dessous vous trouverez l&amp;rsquo;exemple du formulaire de contact que j&amp;rsquo;ai créé.&lt;/p&gt;
+
+&lt;p&gt;Quel que soit le thème que vous utilisiez, le truc est d&amp;rsquo;utiliser l&amp;rsquo;URL du Webhook créé à l&amp;rsquo;étape précédente comme destination pour les données du formulaire. Pour cela, il faut adapter la ligne &lt;code&gt;&amp;lt;form action = ...&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Dans le code ci-dessous, remplacez &lt;a href=&#34;https://hooks.zapier.com..&#34;&gt;https://hooks.zapier.com..&lt;/a&gt;. par l&amp;rsquo;URL de &lt;em&gt;votre&lt;/em&gt; hook Zapier créé dans l&amp;rsquo;étape précédente.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Vérifiez également que vous avez &lt;code&gt;method=&amp;quot;POST&amp;quot;&lt;/code&gt; comme méthode pour le form.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;{{ &amp;quot;&amp;lt;!-- Contact Section --&amp;gt;&amp;quot; | safeHTML }}
+&amp;lt;section id=&amp;quot;contact&amp;quot;&amp;gt;
+    &amp;lt;div class=&amp;quot;container&amp;quot;&amp;gt;
+        &amp;lt;div class=&amp;quot;row&amp;quot;&amp;gt;
+            &amp;lt;div class=&amp;quot;col-lg-12 text-center&amp;quot;&amp;gt;
+           			&amp;lt;h3 class=&amp;quot;section-subheading&amp;quot;&amp;gt;{{ with .Site.Params.contact.subtitle }}{{ . | markdownify }}{{ end }}&amp;lt;/h3&amp;gt;
+           			&amp;lt;br&amp;gt;
+            &amp;lt;/div&amp;gt;
+		    &amp;lt;/div&amp;gt;
+		        &amp;lt;div class=&amp;quot;col-md-6 col-md-offset-3 text-left&amp;quot;&amp;gt;
+		            &amp;lt;form  action=&amp;quot;https://hooks.zapier.com/hooks/...&amp;quot; method=&amp;quot;POST&amp;quot; name=&amp;quot;sentMessage&amp;quot; id=&amp;quot;contactForm&amp;quot;&amp;gt;
+				            &amp;lt;div class=&amp;quot;form-group&amp;quot;&amp;gt;
+				              		&amp;lt;input type=&amp;quot;hidden&amp;quot; name=&amp;quot;_subject&amp;quot; value=&amp;quot;Form sent from page: {{ .RelPermalink }}&amp;quot;&amp;gt;
+				            	&amp;lt;/div&amp;gt;
+		                &amp;lt;div class=&amp;quot;form-group&amp;quot;&amp;gt;
+		                    &amp;lt;input type=&amp;quot;text&amp;quot; class=&amp;quot;form-control&amp;quot; placeholder=&amp;quot;{{ with .Site.Params.contact.form.name.text }}{{ .  | markdownify }}{{ end }}&amp;quot; name=&amp;quot;name&amp;quot; required data-validation-required-message=&amp;quot;{{ with .Site.Params.contact.form.name.warning }}{{ . | markdownify}}{{ end }}&amp;quot;&amp;gt;
+		                    &amp;lt;p class=&amp;quot;help-block text-danger&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;
+		                &amp;lt;/div&amp;gt;
+		                &amp;lt;div class=&amp;quot;form-group&amp;quot;&amp;gt;
+		                    &amp;lt;input type=&amp;quot;email&amp;quot; class=&amp;quot;form-control&amp;quot; placeholder=&amp;quot;{{ with .Site.Params.contact.form.email.text }}{{ . | markdownify }}{{ end }}&amp;quot; name=&amp;quot;email&amp;quot; required data-validation-required-message=&amp;quot;{{ with .Site.Params.contact.form.email.warning }}{{ . | markdownify }}{{ end }}&amp;quot;&amp;gt;
+		                    &amp;lt;p class=&amp;quot;help-block text-danger&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;
+		                &amp;lt;/div&amp;gt;
+		                &amp;lt;div class=&amp;quot;form-group&amp;quot;&amp;gt;
+		                    &amp;lt;input type=&amp;quot;tel&amp;quot; class=&amp;quot;form-control&amp;quot; placeholder=&amp;quot;{{ with .Site.Params.contact.form.phone.text }}{{ . | markdownify }}{{ end }}&amp;quot; name=&amp;quot;phone&amp;quot;&amp;gt;
+		                    &amp;lt;p class=&amp;quot;help-block text-danger&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;
+		                &amp;lt;/div&amp;gt;
+		                &amp;lt;div class=&amp;quot;form-group&amp;quot;&amp;gt;
+		                    &amp;lt;textarea class=&amp;quot;form-control&amp;quot; placeholder=&amp;quot;{{ with .Site.Params.contact.form.message.text }}{{ . | markdownify }}{{ end }}&amp;quot; name=&amp;quot;message&amp;quot; required data-validation-required-message=&amp;quot;{{ with .Site.Params.contact.form.message.warning }}{{ . | markdownify }}{{ end }}&amp;quot;&amp;gt;&amp;lt;/textarea&amp;gt;
+		                    &amp;lt;p class=&amp;quot;help-block text-danger&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;
+		                &amp;lt;/div&amp;gt;
+		                &amp;lt;div class=&amp;quot;clearfix&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+		                &amp;lt;div class=&amp;quot;col-lg-12 text-center&amp;quot;&amp;gt;
+		                    &amp;lt;div id=&amp;quot;success&amp;quot;&amp;gt;{{ with .Site.Params.contact.success }}{{ . | markdownify }}{{ end }}&amp;lt;/div&amp;gt;
+		                    &amp;lt;input type=&amp;quot;submit&amp;quot; value=&amp;quot;{{ with .Site.Params.contact.buttonText }}{{ . | markdownify }}{{ end }}&amp;quot; class=&amp;quot;btn btn-primary btn-xl&amp;quot;&amp;gt;
+		                &amp;lt;/div&amp;gt;
+                &amp;lt;/form&amp;gt;
+            &amp;lt;/div&amp;gt;
+        &amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+&amp;lt;/section&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Après cette étape, vous devrez bien sûr modifier le code de vos pages pour qu&amp;rsquo;elles intègrent le formulaire là où vous le souhaitez ; je ne détaille pas cette étape, si vous lisez cet article c&amp;rsquo;est que vous savez déjà comment faire.&lt;/p&gt;
+
+&lt;h2 id=&#34;étape-3-ajoutez-le-code-javascript-nécessaire-à-la-validation-interactive-du-formulaire&#34;&gt;Étape 3 : ajoutez le code JavaScript nécessaire à la validation interactive du formulaire&lt;/h2&gt;
+
+&lt;p&gt;Vous connaissez déjà mon peu d&amp;rsquo;amour pour JavaScript, mais dans ce cas-ci c&amp;rsquo;est la seule solution que j&amp;rsquo;ai trouvé qui fonctionne. Le code est inséré directement dans la page, mais vous pouvez très bien le mettre dans un fichier sous /static/js/&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+$(function() {
+
+    $(&amp;quot;input,textarea&amp;quot;).not(&amp;quot;[type=search]&amp;quot;).jqBootstrapValidation({
+        preventSubmit: true,
+        submitError: function($form, event, errors) {
+            
+        },
+        submitSuccess: function($form, e) {
+    	    e.preventDefault();
+    	
+    	    var submitButton = $(&#39;input[type=submit]&#39;, $form);
+    	    $.ajax({
+    	      type: &#39;POST&#39;,
+    	      url: $form.prop(&#39;action&#39;),
+    	      accept: {
+    	        javascript: &#39;application/javascript&#39;
+    	      },
+    	      data: $form.serialize(),
+    	      beforeSend: function() {
+				submitButton.prop(&#39;value&#39;, &#39;Please Wait...&#39;);
+				submitButton.prop(&#39;disabled&#39;, &#39;disabled&#39;);
+    	      }
+    	    }).done(function(data) {
+				submitButton.prop(&#39;value&#39;, &#39;Thank you, we\x27ll get back to you shortly.&#39;);
+    			submitButton.prop(&#39;disabled&#39;, false);
+    			hj(&#39;formSubmitSuccessful&#39;);
+    	    });
+        },
+
+        filter: function() {
+            return $(this).is(&amp;quot;:visible&amp;quot;);
+        },
+    });
+
+});
+
+ 
+$(&#39;#name&#39;).focus(function() {
+    $(&#39;#success&#39;).html(&#39;&#39;);
+});
+&amp;lt;/script&amp;gt; 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;À noter que même sans ce bout de code JavaScript, la soumission du formulaire au Webhook fonctionnera. Par contre c&amp;rsquo;est moche ; le visiteur sera redirigé vers une page affichant le résultat technique du Webhook, ce qui n&amp;rsquo;est vraiment pas idéal.&lt;/p&gt;
+
+&lt;h2 id=&#34;étape-4-installez-le-module-javascript-jqbootstrapvalidation&#34;&gt;Étape 4 : installez le module JavaScript jqBootstrapValidation&lt;/h2&gt;
+
+&lt;p&gt;Ce module est nécessaire pour faire fonctionner le code précédent. Vous le trouverez à l&amp;rsquo;URL suivant :&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://ReactiveRaven.github.com/jqBootstrapValidation/&#34;&gt;http://ReactiveRaven.github.com/jqBootstrapValidation/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Copiez le fichier jqBootstrapValidation.js dans le répertoire /static/js/&lt;/p&gt;
+
+&lt;h2 id=&#34;étape-5-finissez-de-configurer-les-pages-de-votre-site&#34;&gt;Étape 5 : finissez de configurer les pages de votre site&lt;/h2&gt;
+
+&lt;p&gt;N&amp;rsquo;oubliez pas d&amp;rsquo;intégrer le code du formulaire et le code JavaScript à vos pages. Sinon évidemment ça ne marchera pas. Selon votre formulaire de contact, il est très probable que vous deviez adapter certains détails du code. &lt;strong&gt;Je &lt;em&gt;ne pense pas&lt;/em&gt; avoir modifié le code de jqBootstrapValidation&lt;/strong&gt; mais avec le temps on oublie parfois&amp;hellip;&lt;/p&gt;
+
+&lt;h2 id=&#34;étape-6-finissez-de-configurer-zapier&#34;&gt;Étape 6 : finissez de configurer Zapier&lt;/h2&gt;
+
+&lt;p&gt;Je ne vais pas expliquer ce qu&amp;rsquo;il faut faire ici en détail car il y a des dizaines de solutions possibles, mais vous devrez configurer Zapier pour qu&amp;rsquo;il envoie les donnée du formulaire vers le canal de votre choix : Papier, email etc. Sans cela les données seront bloquées chez Zapier et pas très utiles.&lt;/p&gt;
+
+&lt;p&gt;Au final, l&amp;rsquo;action Zapier pour Slack ressemble à ceci :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/11/zapier-slack-action.jpg&#34; alt=&#34;Zapier Slack Action&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;pour-résumer&#34;&gt;Pour résumer&amp;hellip;&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;J&amp;rsquo;ai créé un Webhook sur Zapier pour récupérer les données du formulaire.&lt;/li&gt;
+&lt;li&gt;J&amp;rsquo;ai ajouté le fichier contact.html dans le répertoire /layouts/partials du thème, avec le code du formulaire.&lt;/li&gt;
+&lt;li&gt;J&amp;rsquo;ai ajouté le code JavaScript nécessaire lors de la soumission du formulaire.&lt;/li&gt;
+&lt;li&gt;J&amp;rsquo;ai ajouté le fichier jqBootstrapValidation.js dans le répertoire /static/js/&lt;/li&gt;
+&lt;li&gt;J&amp;rsquo;ai fini de configurer l&amp;rsquo;action Zapier pour poster les données du Webhook sur Slack.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Voilà, j&amp;rsquo;espère que cela vous aura été utile. Comme dans tout développement de ce type, difficile de garantir que cela fonctionnera tel quel sur votre site, mais cela devrait déjà être un bon point de départ.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Contrôler PowerPoint avec un contrôleur MIDI</title>
+      <link>https://www.pierremorsa.com/post/2017-10-02-controler-powerpoint-avec-controleur-midi/</link>
+      <pubDate>Mon, 02 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pierremorsa.com/post/2017-10-02-controler-powerpoint-avec-controleur-midi/</guid>
+      <description>&lt;p&gt;Keyboard Maestro fait partie du top 5 des programmes que j&amp;rsquo;utilise tout le temps pour simplifier ou automatiser mon travail sur Mac. J&amp;rsquo;ai déjà donné quelques exemples d&amp;rsquo;actions possibles dans cet article. Depuis la semaine dernière Keyboard Maestro 8 est disponible. Je ne vais pas lister toutes les nouveautés ici, elles sont trop nombreuses, pour cela &lt;a href=&#34;https://wiki.keyboardmaestro.com/manual/Whats_New&#34;&gt;rendez vous directement sur la page officielle&lt;/a&gt; (en anglais).&lt;/p&gt;
+
+&lt;p&gt;Je vais juste évoquer l&amp;rsquo;amélioration de la partie MIDI ; il est désormais possible de déclencher des actions à partir d&amp;rsquo;un contrôleur MIDI.&lt;/p&gt;
+
+&lt;p&gt;J&amp;rsquo;ai un vieux contrôleur MIDI indestructible qui ressemble à un truc sorti d&amp;rsquo;un film de SF des années 60. Normalement je m&amp;rsquo;en sers pour contrôler les amplis virtuels de guitare, mais pour la démo je l&amp;rsquo;ai utilisé pour contrôler&amp;hellip; PowerPoint ! Et pourquoi pas après tout ? Lorsqu&amp;rsquo;on tourne le bouton 1 la transparence de l&amp;rsquo;objet change. Le bouton 2 change l&amp;rsquo;épaisseur du trait. Le bouton 3 change la taille de la police de caractères, etc. Lorsqu&amp;rsquo;on appuie sur le bouton au dessus cela applique le réglage à l&amp;rsquo;objet sélectionné (par exemple si le bouton est réglé sur une taille de police 24, appuyer sur le bouton va mettre le texte sélectionné en taille 24).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/10/ibk10control.jpg&#34; alt=&#34;Controleur MIDI&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;L&amp;rsquo;avantage de ce contrôleur MIDI est d&amp;rsquo;utiliser des boutons à rotation « infinie », par opposition aux boutons qui se bloquent sur la butée lorsqu&amp;rsquo;ils ont atteint leur valeur minimum ou maximum. Cela permet de définir la valeur de départ du bouton de manière logicielle. La petite barre sur l&amp;rsquo;écran LCD représente la valeur courante du bouton.&lt;/p&gt;
+
+&lt;p&gt;Ça demande un peu de bricolage pour tout faire fonctionner, mais une fois au point c&amp;rsquo;est très rigolo de pouvoir régler les paramètres de PowerPoint avec des molettes. Le gain de productivité est (très) discutable, mais je l&amp;rsquo;ai fait pour montrer les possibilités du contrôle MIDI de Keyboard Maestro 8.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Trier automatiquement ses projets par statut</title>
+      <link>https://www.pierremorsa.com/post/2017-09-25-comment-je-trie-projets-omnifocus/</link>
+      <pubDate>Mon, 25 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pierremorsa.com/post/2017-09-25-comment-je-trie-projets-omnifocus/</guid>
+      <description>&lt;p&gt;Comment trier ses projets dans OmniFocus ? Professionnel vs. personnel ? Par priorité ? Par date d&amp;rsquo;échéance ? Personnellement je les trie par statut. Si vous regardez l&amp;rsquo;image ci-dessous vous verrez que j&amp;rsquo;ai des dossiers nommés « active » (actifs), « stalled » (bloqué), « waiting for » (en attente), etc.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/09/projets-omnifocus.jpg&#34; alt=&#34;Projets OmniFocus&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Pourquoi ai-je choisi de trier mes projets de cette manière ? Parce que cela me permet d&amp;rsquo;identifier en un coup d&amp;rsquo;œil les projets sur lesquels je dois travailler, ceux que je dois débloquer, ceux qui sont en attente de quelque chose, etc.&lt;/p&gt;
+
+&lt;p&gt;Évidemment cette organisation est un peu pénible s&amp;rsquo;il faut trier manuellement les projets dans les dossiers en fonction de l&amp;rsquo;évolution de leur statut. C&amp;rsquo;est pourquoi j&amp;rsquo;ai écrit un script AppleScript appelé « housekeeping » qui va classer chaque projet automatiquement dans le bon dossier selon son statut. Vous trouverez le code du script ci-dessous. Je l&amp;rsquo;ai fait un peu à l&amp;rsquo;arrache, c&amp;rsquo;est loin d&amp;rsquo;être un exemple de code propre, et il faudra sûrement l&amp;rsquo;adapter un peu pour qu&amp;rsquo;il fonctionne chez vous, néanmoins j&amp;rsquo;espère qu&amp;rsquo;il peut vous aider si vous voulez faire quelque chose de similaire.&lt;/p&gt;
+
+&lt;p&gt;Ce script fait également d&amp;rsquo;autres choses : il définit la prochaine date de revue de manière plus « intelligente » : par exemple si la prochaine date de revue tombe un week-end il va déplacer la date de revue au lundi suivant, il va définir la fréquence de revue selon que le projet soit actif ou en attente, etc.&lt;/p&gt;
+
+&lt;p&gt;J&amp;rsquo;ai codé « en dur » certaines chaînes de caractères comme un gros goret, donc pour que le script fonctionne vous devez absolument avoir des dossiers nommés &amp;ldquo;active&amp;rdquo;, &amp;ldquo;stalled&amp;rdquo;, &amp;ldquo;waiting for&amp;rdquo;, &amp;ldquo;deferred&amp;rdquo;, &amp;ldquo;on hold&amp;rdquo;, &amp;ldquo;completed&amp;rdquo;, &amp;ldquo;dropped&amp;rdquo;, &amp;ldquo;templates&amp;rdquo; et un contexte nommé &amp;ldquo;Waiting for&amp;rdquo;. L&amp;rsquo;alternative étant d&amp;rsquo;éditer les chaînes de caractères dans le script utiliser d&amp;rsquo;autres noms. Il y a peut-être d&amp;rsquo;autres chose qu&amp;rsquo;il faudra vérifier pour qu&amp;rsquo;il fonctionne correctement. Pour rappel, ce genre de script est quasi impossible à débugger dans l&amp;rsquo;éditeur de scripts fourni en standard par Apple, à la place j&amp;rsquo;utilise Script Debugger de Late Night Software, un outil indispensable pour tout AppleScripter qui se respecte.&lt;/p&gt;
+
+&lt;p&gt;Et concernant le débat tabulations contre espaces, l&amp;rsquo;exemple ici utilise des espaces parce que les tabulations prenaient trop de place, mais mon script original utilise bien des tabulations !&lt;/p&gt;
+
+&lt;p&gt;Enfin il y a quelques bouts de code que j&amp;rsquo;ai piqué à gauche et à droite sur internet, mais je n&amp;rsquo;arrive plus à retrouver où, donc je tiens à m&amp;rsquo;en excuser auprès de leurs auteurs originaux. Les développeurs un peu expérimentés les reconnaîtront sûrement, parce que le style du code est clairement différent.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Attention : je ne suis pas responsable des problèmes que peut occasionner ce script, utilisez-le à vos risques et périls !!!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;(*
+  This script does the following:
+  1. Sort projects in folders based on status
+    - flagged
+    - active
+    - stalled
+    - waiting for
+    - defered
+    - completed
+    - dropped
+  2. Set review date to now for:
+    - Projects modified since last run
+    - Projects moved
+
+  3. Set review interval to weekly for:
+    - Projects that are active, stalled or waiting for
+
+  4. A few other things
+*)
+
+property fiveMinutes : 300
+property oneDay : 86400
+property sevenDays : 604800
+property fourteenDays : 1209600
+property twentyoneDays : 1814400
+property sixtyDays : 51840000
+property twelveWeeks : 7257600
+property changeGracePeriod : 0 -- 240
+property contextWaitingFor : {&amp;quot;waiting for&amp;quot;}
+property contextStalled : {&amp;quot;object&amp;quot;, &amp;quot;reference&amp;quot;}
+-- if script was never run set last run to 5 minutes ago by default
+property lastRun : (current date) - fiveMinutes
+property putOnHoldIfWaitingForTooLong : sixtyDays
+
+global theFlaggedFolder
+global theActiveFolder
+global theStalledFolder
+global theWaitingForFolder
+global theDeferredFolder
+global theOnHoldFolder
+global theCompletedFolder
+global theDroppedFolder
+global theTemplateFolder
+
+global theWaitingForContext
+
+property scriptSuiteName : &amp;quot;Projects Housekeeping&amp;quot;
+
+tell application &amp;quot;OmniFocus&amp;quot;
+  tell front document
+    
+    compact
+    try
+      -- set theFlaggedFolder to (first folder whose name is &amp;quot;flagged&amp;quot;)
+      set theActiveFolder to (first folder whose name is &amp;quot;active&amp;quot;)
+      set theStalledFolder to (first folder whose name is &amp;quot;stalled&amp;quot;)
+      set theWaitingForFolder to (first folder whose name is &amp;quot;waiting for&amp;quot;)
+      set theDeferredFolder to (first folder whose name is &amp;quot;deferred&amp;quot;)
+      set theOnHoldFolder to (first folder whose name is &amp;quot;on hold&amp;quot;)
+      set theCompletedFolder to (first folder whose name is &amp;quot;completed&amp;quot;)
+      set theDroppedFolder to (first folder whose name is &amp;quot;dropped&amp;quot;)
+      set theTemplateFolder to (first folder whose name is &amp;quot;templates&amp;quot;)
+      
+      set theWaitingForContext to (first flattened context whose name is &amp;quot;Waiting For&amp;quot;)
+      
+      set will autosave to false
+      -- set selected sidebar tab to
+      set projectsMoved to my moveActiveProjects(it, {})
+      set projectsMoved to projectsMoved or my moveNonActiveProjects(it)
+      set will autosave to true
+    on error errText number errNum
+      set will autosave to true
+      display dialog &amp;quot;Error: &amp;quot; &amp;amp; errNum &amp;amp; return &amp;amp; errText
+      return
+    end try
+    if projectsMoved is true then
+      set msg to &amp;quot;Please review projects.&amp;quot;
+      my notify(&amp;quot;Did some housekeeping!&amp;quot;, msg)
+    else
+      set msg to &amp;quot;I had nothing to do.&amp;quot;
+    end if
+  end tell
+end tell
+set lastRun to (current date)
+
+
+
+on moveNonActiveProjects(theContainer)
+  set projectsMoved to false
+  using terms from application &amp;quot;OmniFocus&amp;quot;
+    set theProjects to every flattened project of theContainer whose status is on hold ¬
+      and singleton action holder is false
+    repeat with aProject in theProjects
+      if completed by children of aProject is true then
+        -- do not complete projects when all tasks are done to avoid accidental completion
+        set completed by children of aProject to false
+      end if
+      set theResult to my reviewIfTaskModified(aProject)
+      if theResult is equal to 0 then
+        my reviewMonthly(aProject)
+      end if
+      set isProjectMoved to my moveProject(aProject, theOnHoldFolder)
+      set projectsMoved to projectsMoved or isProjectMoved
+    end repeat
+    
+    set theProjects to every flattened project of theContainer whose status is done ¬
+      and singleton action holder is false
+    repeat with aProject in theProjects
+      if completed by children of aProject is true then
+        -- do not complete projects whene all tasks are done to avoid accidental completion
+        set completed by children of aProject to false
+      end if
+      -- No need to change review interval
+      set isProjectMoved to my moveProject(aProject, theCompletedFolder)
+      set projectsMoved to projectsMoved or isProjectMoved
+    end repeat
+    
+    set theProjects to every flattened project of theContainer whose status is dropped ¬
+      and singleton action holder is false
+    repeat with aProject in theProjects
+      if completed by children of aProject is true then
+        -- do not complete projects when all tasks are done to avoid accidental completion
+        set completed by children of aProject to false
+      end if
+      -- No need to change review interval
+      set isProjectMoved to my moveProject(aProject, theDroppedFolder)
+      set projectsMoved to projectsMoved or isProjectMoved
+    end repeat
+  end using terms from
+  return projectsMoved
+end moveNonActiveProjects
+
+
+
+on moveActiveProjects(theContainer)
+  set projectsMoved to false
+  --  log &amp;quot;Executing Housekeeping Script&amp;quot;
+  using terms from application &amp;quot;OmniFocus&amp;quot;
+    set theProjects to every flattened project of theContainer whose status is active ¬
+      and singleton action holder is false
+    set projectsMoved to my moveActiveProjectsProjects(theProjects)
+  end using terms from
+  return projectsMoved
+end moveActiveProjects
+
+
+
+on moveActiveProjectsProjects(theProjects)
+  
+  using terms from application &amp;quot;OmniFocus&amp;quot;
+    set projectsMoved to false
+    repeat with aProject in theProjects
+      set projectContainer to container of aProject
+      if (class of projectContainer is not folder or (class of projectContainer is folder ¬
+        and projectContainer is not hidden)) then
+        
+        if folder of aProject is not theTemplateFolder then
+          
+          if completed by children of aProject is true then
+            set completed by children of aProject to false
+          end if
+          
+          my reviewIfTaskModified(aProject)
+          
+          -- Checks if there is a next task
+          -- If yes, then get context of next task
+          set theNextTask to next task of aProject
+          set isNoNextTask to false
+          set theNextTaskContextName to &amp;quot;****&amp;quot;
+          set isAlreadyProcessed to false
+          set isDeferredNextTask to false
+          
+          if theNextTask is missing value then
+            set theActiveTasks to ¬
+              (every flattened task of aProject whose completed is false ¬
+                and number of tasks is equal to 0)
+            if (count of theActiveTasks) is greater than or equal to 1 then
+              set theActiveTask to item 1 of theActiveTasks
+              if theActiveTask is not missing value then
+                if defer date of theActiveTask is not missing value then
+                  if defer date of theActiveTask is greater than (current date) then
+                    set isDeferredNextTask to true
+                  else
+                    set theNextTask to theActiveTask
+                    set theNextTaskContextName to name of context of theNextTask
+                  end if
+                else
+                  set theNextTask to theActiveTask
+                  set theNextTaskContextName to name of context of theNextTask
+                end if
+              else
+                set isNoNextTask to true
+              end if
+            else -- project has no next tasks
+              set isNoNextTask to true
+              set theWaitingForTasks to (every flattened task of aProject whose completed is false)
+              set isNoNextTask to true
+              repeat with theWaitingForTask in theWaitingForTasks
+                if context of theWaitingForTask is equal to theWaitingForContext then
+                  set theNextTask to theWaitingForTask
+                  set isNoNextTask to false
+                  if context of theNextTask is not missing value then
+                    set theNextTaskContextName to name of context of theNextTask
+                  end if
+                  exit repeat
+                end if
+              end repeat
+              
+            end if
+          else
+            -- If the next task is the project itself, consider there is no task left.
+            if id of theNextTask is equal to id of root task of aProject then
+              set isNoNextTask to true
+            else
+              set isNoNextTask to false
+              if context of theNextTask is not missing value then
+                set theNextTaskContextName to name of context of theNextTask
+              end if
+            end if
+          end if
+          
+          -- 
+          -- Process DEFERRED projects
+          -- 
+          if isAlreadyProcessed is false then
+            if defer date of aProject is not missing value then
+              set theCurrentDate to current date
+              set theCurrentDate to theCurrentDate - (theCurrentDate&#39;s time)
+              -- Second condition is to avoid the project being marked for review again and again 
+              -- if review date is today
+              if defer date of aProject is greater than or equal to my tomorrow() then
+                my setNextReviewDate(aProject, defer date of aProject)
+                set isProjectMoved to my moveProject(aProject, theDeferredFolder)
+                set projectsMoved to projectsMoved or isProjectMoved
+                set isAlreadyProcessed to true
+              end if
+            end if
+          end if
+          if isAlreadyProcessed is false then
+            if isDeferredNextTask then
+              if defer date of theActiveTask is greater than or equal to my tomorrow() then
+                my setNextReviewDate(aProject, defer date of theActiveTask)
+                set isProjectMoved to my moveProject(aProject, theDeferredFolder)
+                set projectsMoved to projectsMoved or isProjectMoved
+                set isAlreadyProcessed to true
+              end if
+            end if
+          end if
+          
+          --
+          -- Process WAITING FOR projects
+          --
+          if isAlreadyProcessed is false then
+            if theNextTaskContextName is in contextWaitingFor then
+              --
+              -- ...then it is waiting for but if waiting for more than twenty one days...
+              --
+              set theTimeDifference to (current date) - (modification date of theNextTask)
+              if theTimeDifference is greater than putOnHoldIfWaitingForTooLong ¬
+                and putOnHoldIfWaitingForTooLong is not equal to 0 then
+                --
+                -- ...then we were patient enough, change status and move it to on hold
+                --
+                my reviewDaily(aProject)
+                my setStatus(aProject, on hold)
+                set isProjectMoved to my moveProject(aProject, theOnHoldFolder)
+                set projectsMoved to projectsMoved or isProjectMoved
+                set isAlreadyProcessed to true
+              else
+                --
+                -- ...else it&#39;s really waiting for
+                --
+                if theTimeDifference is greater than sevenDays then
+                  -- waiting for more than seven days? Review weekly
+                  my reviewWeekly(aProject)
+                else
+                  -- waiting for less than one week? Review daily
+                  my reviewDaily(aProject)
+                end if
+                set isProjectMoved to my moveProject(aProject, theWaitingForFolder)
+                set projectsMoved to projectsMoved or isProjectMoved
+                set isAlreadyProcessed to true
+              end if
+            end if
+          end if
+          
+          --
+          -- Process STALLED projects
+          -- 
+          if isAlreadyProcessed is false then
+            if isNoNextTask is true or theNextTaskContextName is in contextStalled then
+              my reviewDaily(aProject)
+              set isProjectMoved to my moveProject(aProject, theStalledFolder)
+              set projectsMoved to projectsMoved or isProjectMoved
+              set isAlreadyProcessed to true
+            end if
+          end if
+          
+          --
+          -- Process ACTIVE projects
+          --
+          if isAlreadyProcessed is false then
+            my reviewDaily(aProject)
+            if folder of aProject is not theActiveFolder then
+              set isProjectMoved to my moveProject(aProject, theActiveFolder)
+              set projectsMoved to projectsMoved or isProjectMoved
+              set isAlreadyProcessed to true
+            end if
+          end if
+          
+        end if
+      end if
+      
+    end repeat
+  end using terms from
+  return projectsMoved
+end moveActiveProjectsProjects
+
+(*
+Changes the status of a project and logs it.
+*)
+on setStatus(aProject, aStatus)
+  tell application &amp;quot;OmniFocus&amp;quot;
+    tell front document
+      if status of aProject is not aStatus then
+        set status of aProject to aStatus
+        log &amp;quot;Changed status of project: &amp;quot; &amp;amp; (name of aProject)
+      end if
+    end tell
+  end tell
+end setStatus
+
+(*
+  Moves a Project to a new folder
+*)
+on moveProject(aProject, aFolder)
+  set projectMoved to false
+  tell application &amp;quot;OmniFocus&amp;quot;
+    tell front document
+      if folder of aProject is not aFolder then
+        my reviewNow(aProject)
+        move aProject to (beginning of sections of aFolder)
+        set projectMoved to true
+        log &amp;quot;Moved project: &amp;quot; &amp;amp; (name of aProject)
+      end if
+    end tell
+  end tell
+  return projectMoved
+end moveProject
+
+(*
+  Mark a project for review if a task has been modified
+*)
+on reviewIfTaskModified(aProject)
+  tell application &amp;quot;OmniFocus&amp;quot;
+    tell front document
+      set theTasks to (every flattened task of aProject ¬
+        whose modification date is greater than lastRun and completed is false)
+      if (count of theTasks) is greater than 0 then
+        my reviewNow(aProject)
+        return 1
+      else
+        return 0
+      end if
+    end tell
+  end tell
+end reviewIfTaskModified
+
+(*
+  Gets tomorrow, midnight.
+*)
+on tomorrow()
+  copy (current date) to theDate
+  return (theDate + oneDay - (theDate&#39;s time))
+end tomorrow
+
+on reviewNow(aProject)
+  set theNextReview to current date
+  -- note: do not change review interval in this case
+  my setNextReviewDate(aProject, theNextReview)
+end reviewNow
+
+on reviewDaily(aProject)
+  set theNextReview to my tomorrow()
+  tell application &amp;quot;OmniFocus&amp;quot;
+    tell front document
+      set _ri to {unit:(day), steps:(1), fixed:(false)}
+      my setReviewInterval(aProject, _ri)
+      my setNextReviewDate(aProject, theNextReview)
+    end tell
+  end tell
+end reviewDaily
+
+on reviewWeekly(aProject)
+  -- Set the next weekly review to next Monday
+set theNextReview to ¬
+	DateOfThisInstanceOfThisWeekdayBeforeOrAfterThisDate(current date, Monday, 1)
+	  
+  using terms from application &amp;quot;OmniFocus&amp;quot;
+    set _ri to {unit:(week), steps:(1), fixed:(false)}
+  end using terms from
+  tell application &amp;quot;OmniFocus&amp;quot;
+    tell front document
+      my setReviewInterval(aProject, _ri)
+      my setNextReviewDate(aProject, theNextReview)
+    end tell
+  end tell
+end reviewWeekly
+
+(*
+  Sets the next review date to the next first Monday of a Month
+  (this month if first Monday not already passed)
+  (next month if first Monday already passed)
+*)
+on reviewMonthly(aProject)
+  copy (current date) to theNextReview
+	if (weekday of theNextReview is Monday) ¬
+	and (day of theNextReview ≤ 7) and (theNextReview &amp;gt; (current date)) then
+    -- do nothing because next review is already first Monday and in the future
+  else
+    set theNextReview&#39;s day to 32
+    set theNextReview&#39;s day to 1
+    -- That stuff below is to always set the monthly review on the first Monday of the Month
+    set dateOffset to {1, 0, 6, 5, 4, 3, 2}
+    set theOffset to item ((weekday of theNextReview) as integer) of dateOffset
+    set theNextReview&#39;s day to 1 + theOffset
+    set theNextReview to theNextReview - (theNextReview&#39;s time)
+    tell application &amp;quot;OmniFocus&amp;quot;
+      tell front document
+        set _ri to {unit:(month), steps:(1), fixed:(false)}
+        my setReviewInterval(aProject, _ri)
+        my setNextReviewDate(aProject, theNextReview)
+      end tell
+    end tell
+  end if
+end reviewMonthly
+
+on setReviewInterval(aProject, _ri)
+  tell application &amp;quot;OmniFocus&amp;quot;
+    tell front document
+      if review interval of aProject is not equal to _ri then
+        set review interval of aProject to _ri
+        log &amp;quot;Changed review interval: &amp;quot; &amp;amp; (name of aProject)
+      end if
+    end tell
+  end tell
+end setReviewInterval
+
+(*
+  Sets the review date for the project to the date specified, but only if:
+  - the project&#39;s review date is greater than today (is in the future)
+  - the project&#39;s review date is not already equal to the new review date
+  If the review date is a Saturday or Sunday, sets it to the next Monday
+*)
+on setNextReviewDate(aProject, aDate)
+  tell application &amp;quot;OmniFocus&amp;quot;
+    tell front document
+      -- Skip Saturdays and Sundays, use Monday instead, and remove Date&#39;s time.
+      set aDate to (my skipWeekends(aDate)) - (aDate&#39;s time)
+      -- Only change review date if it is greater than now and is different from the new date
+      if next review date of aProject is greater than (current date) ¬
+        and next review date of aProject is not equal to aDate then
+        set next review date of aProject to aDate
+        log &amp;quot;Changed review date: &amp;quot; &amp;amp; (name of aProject)
+      end if
+    end tell
+  end tell
+end setNextReviewDate
+
+on skipWeekends(aDate)
+  if weekday of aDate is Saturday then
+    set aDate to aDate + 2 * oneDay
+  else if weekday of aDate is Sunday then
+    set aDate to aDate + oneDay
+  end if
+  return aDate
+end skipWeekends
+
+on DateOfThisInstanceOfThisWeekdayBeforeOrAfterThisDate(d, w, i) -- returns a date
+  -- Keep an note of whether the instance value *starts* as zero
+  set instanceIsZero to (i is 0)
+  -- Increment negative instances to compensate for the following subtraction loop
+  if i &amp;lt; 0 and d&#39;s weekday is not w then set i to i + 1
+  -- Subtract a day at a time until the required weekday is reached
+  repeat until d&#39;s weekday is w
+    set d to d - days
+    -- Increment an original zero instance to 1 if subtracting from Sunday into Saturday 
+    if instanceIsZero and d&#39;s weekday is Saturday then set i to 1
+  end repeat
+  -- Add (adjusted instance) * weeks to the date just obtained and zero the time
+  d + i * weeks - (d&#39;s time)
+end DateOfThisInstanceOfThisWeekdayBeforeOrAfterThisDate
+
+(*
+  Uses Notification Center to display a notification message.
+  theTitle – a string giving the notification title
+  theDescription – a string describing the notification event
+*)
+on notify(theTitle, theDescription)
+  display notification theDescription with title scriptSuiteName subtitle theTitle
+end notify
+
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Nomade digital, étape 4 : sauvegarder pour éviter  la perte de données</title>
+      <link>https://www.pierremorsa.com/post/2017-09-04-Nomade-digital-etape-4-sauvegarder-pour-eviter-perte-donn%C3%A9es/</link>
+      <pubDate>Mon, 04 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pierremorsa.com/post/2017-09-04-Nomade-digital-etape-4-sauvegarder-pour-eviter-perte-donn%C3%A9es/</guid>
+      <description>
+
+&lt;p&gt;J&amp;rsquo;emporte mon ordinateur ou mon iPad un peu partout. Le risque de le perdre ou de le casser  est donc bien réel ; par exemple en 2015 je me suis fait voler mon MacBook Pro dans le TGV.&lt;/p&gt;
+
+&lt;p&gt;En fait, la vraie question n&amp;rsquo;est pas de savoir si vous risquez de perdre des données, mais quand cela va arriver. Car cela fini toujours par arriver. Et lorsque cela se produit, pleurer ne sert à rien. Il faut avoir une sauvegarde de ses données. Ce message a beau être rappelé fréquemment, le nombre d&amp;rsquo;utilisateurs qui ne font aucune sauvegarde est hallucinant.&lt;/p&gt;
+
+&lt;p&gt;Aussi voici un petit guide expliquant les risques et les solutions pour s&amp;rsquo;en prémunir. Je n&amp;rsquo;ai pas expliqué en détail le fonctionnement de chaque solution, sinon cet article aurait fait 100 pages.&lt;/p&gt;
+
+&lt;h2 id=&#34;comprendre-les-différents-risques-de-perte-de-données&#34;&gt;Comprendre les différents risques de perte de données&lt;/h2&gt;
+
+&lt;p&gt;Différents types d&amp;rsquo;incidents peuvent entraîner une perte de données ; une bonne stratégie de sauvegarde va vous protéger contre tous les risques.&lt;/p&gt;
+
+&lt;p&gt;En voici une liste non exhaustive, plus ou moins classé du plus probable au moins probable :&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Vous modifiez un document et vous rendez compte plus tard que vous voulez revenir en arrière pour une raison ou une autre.&lt;/li&gt;
+&lt;li&gt;Vous effacez un ou plusieurs documents par erreur.&lt;/li&gt;
+&lt;li&gt;Votre ordinateur ou un disque tombe en panne.&lt;/li&gt;
+&lt;li&gt;Votre ordinateur et &lt;em&gt;toutes&lt;/em&gt; vos sauvegardes locales sont volés.&lt;/li&gt;
+&lt;li&gt;Votre ordinateur est hacké (par exemple ransomware).&lt;/li&gt;
+&lt;li&gt;Votre compte Cloud est hacké et détruit.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Une stratégie de sauvegarde idéale va donc vous prémunir contre tous les cas cités. Pour se faire elle doit :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Garder un historique des versions récentes de vos documents pendant un certain temps, par exemple les 4 dernières semaines.&lt;/li&gt;
+&lt;li&gt;Garder une copie à jour de tous vos documents importants ailleurs que chez vous, par exemple dans le Cloud.&lt;/li&gt;
+&lt;li&gt;Avoir une copie de sauvegarde déconnectée pour qu&amp;rsquo;elle ne soit pas endommagée par un éventuel ransomware (par exemple sur un disque dur stocké séparément). Ce cas est celui qui est le moins souvent pris en compte.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;raid-sauvegarde&#34;&gt;RAID ≠ sauvegarde&lt;/h2&gt;
+
+&lt;p&gt;Une précision importante avant d&amp;rsquo;aborder les différentes stratégies de sauvegarde : les systèmes RAID ont pour objectif d&amp;rsquo;améliorer le taux de disponibilité et la vitesse, ils ne sont pas une protection contre la perte de données. De fait, un système RAID 1 ou plus ne couvre que le cas 3, un disque tombe en panne. Le RAID 0 &lt;em&gt;augmente&lt;/em&gt; même le risque de perdre des données au lieu de le diminuer.&lt;/p&gt;
+
+&lt;p&gt;Un système RAID ne vous protégera pas contre les cas 1, 2, 4, 5 et 6 !&lt;/p&gt;
+
+&lt;h2 id=&#34;sauvegarde-locale-avec-time-machine&#34;&gt;Sauvegarde locale avec Time Machine&lt;/h2&gt;
+
+&lt;p&gt;Time Machine va vous couvrir contre les cas 1, 2 et 3, ce qui est déjà pas mal du tout.&lt;/p&gt;
+
+&lt;p&gt;Le matériel nécessaire se limite à un disque externe d&amp;rsquo;une taille au moins équivalente à la somme des disques que vous voulez sauvegarder.&lt;/p&gt;
+
+&lt;p&gt;Time Machine est fourni en standard sur tous les Mac depuis plusieurs années. Pour l&amp;rsquo;activer connectez votre disque externe qui servira aux sauvegardes, ouvrez les Préférences Système et sélectionnez d&amp;rsquo;icône de Time Machine.&lt;/p&gt;
+
+&lt;p&gt;Inconvénients : Time Machine n&amp;rsquo;est pas à 100% infaillible, il peut lui arriver dans de très rares cas de perdre les pédales sans vous en informer. La restauration des données avec Time Machine est également assez lente.&lt;/p&gt;
+
+&lt;h2 id=&#34;sauvegarde-locale-avec-ccc-superduper-ou-chronosync&#34;&gt;Sauvegarde locale avec CCC, SuperDuper ou ChronoSync&lt;/h2&gt;
+
+&lt;p&gt;Ces trois outils ont bonne réputation. Ils sont particulièrement efficaces pour se prémunir contre le cas 3. Bien configurés ils peuvent vous protéger contre les cas 1 et 2, même si Time Machine est plus simple pour ces deux cas.&lt;/p&gt;
+
+&lt;p&gt;Ils permettent de créer un « clone » de vos disques, autrement dit une copie identique. Dans le cas 3, si votre ordinateur tombe en panne il suffit de connecter le disque clone à un autre Mac et de démarrer sur celui-ci. Si pour vous la disponibilité de votre environnement de production est importante c&amp;rsquo;est une excellent solution pour ne pas perdre de temps, et elle m&amp;rsquo;a déjà sorti de situations bien difficiles suite à un gros crash système. L&amp;rsquo;idéal est d&amp;rsquo;utiliser un SSD en USB 3 ; cette solution est à la fois rapide &lt;strong&gt;et&lt;/strong&gt; compatible avec tous les ordinateurs récents, contrairement à une connexion Thunderbolt.&lt;/p&gt;
+
+&lt;h2 id=&#34;sauvegarde-déportée-dans-le-cloud&#34;&gt;Sauvegarde déportée dans le Cloud&lt;/h2&gt;
+
+&lt;p&gt;Les solutions précédentes vous protègent contre la perte locale de données, mais que faire si vous perdez tous vos disques locaux, suite à un vol ou un incendie ? La bonne stratégie pour se protéger contre ce risque est de faire une copie de ses documents dans le Cloud. Attention cependant à conserver le nom d&amp;rsquo;utilisateur et le mot de passe quelque part et pas seulement sur votre disque dur local !!!&lt;/p&gt;
+
+&lt;p&gt;À noter que Dropbox conserve également une copie des versions récentes. C&amp;rsquo;est une double sécurité avec Time Machine.&lt;/p&gt;
+
+&lt;h2 id=&#34;sauvegarde-déconnectée-et-idéalement-déportée&#34;&gt;Sauvegarde déconnectée (et idéalement déportée)&lt;/h2&gt;
+
+&lt;p&gt;Il reste le cas des ransomware. Le ransomware va rendre inaccessibles tous les disques connectés à votre machine, c&amp;rsquo;est à dire les disques principaux mais aussi toutes les sauvegardes locales connectées à l&amp;rsquo;ordinateur ! Avec l&amp;rsquo;évolution actuelle, il est également possible que les ransomware futurs bloquent l&amp;rsquo;accès à vos sauvegardes dans le Cloud (scénario vraiment très pessimiste je l&amp;rsquo;avoue, qui à ma connaissance ne s&amp;rsquo;est pas encore produit).&lt;/p&gt;
+
+&lt;p&gt;La stratégie pour se prémunir contre ce cas est de garder une copie de sauvegarde &lt;em&gt;déconnectée&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;L&amp;rsquo;idéal est de faire ce qu&amp;rsquo;on appelle une rotation des disques de sauvegarde, par exemple avec deux disques différents. Les semaines impaires vous sauvegardez sur le disque 1 et le disque 2 reste déconnecté, les semaines paires vous faites l&amp;rsquo;inverse. Bonne nouvelle, Time Machine offre justement la possibilité d&amp;rsquo;alterner entre différents disques de sauvegarde.&lt;/p&gt;
+
+&lt;h2 id=&#34;ne-pas-compter-que-sur-le-cloud&#34;&gt;Ne pas compter que sur le Cloud&lt;/h2&gt;
+
+&lt;p&gt;Reste le cas numéro 6, votre compte Cloud est hacké. Pour vous protéger contre ce cas, ne stockez pas vos documents uniquement dans le Cloud.&lt;/p&gt;
+
+&lt;p&gt;Également, ne gardez pas que la copie locale synchronisée directement par Dropbox. Si les hackers détruisent les données dans le Cloud, l&amp;rsquo;application de Dropbox va automatiquement supprimer votre copie locale !&lt;/p&gt;
+
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;La sauvegarde de base avec Time Machine, CCC, SuperDuper, ChronoSync ou tout autre outil similaire est indispensable. Ne pas la faire est tout simplement inconscient.&lt;/p&gt;
+
+&lt;p&gt;Pour les niveaux de sauvegarde supplémentaires, c&amp;rsquo;est à vous de juger quel est le risque acceptable. Dans mon cas c&amp;rsquo;est clair, quel que soit le scénario je ne peux pas me permettre de perdre les données de mon entreprise.&lt;/p&gt;
+
+&lt;p&gt;La sauvegarde des documents a un coût qui est souvent non pris en compte lors de l&amp;rsquo;acquisition d&amp;rsquo;un ordinateur et qui n&amp;rsquo;est pas très motivant, pourtant il vaut mieux prendre une machine un peu moins chère avec en plus une solution de sauvegarde et être certain de ne pas perdre ses documents.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Test de solutions pour se connecter directement à Dropbox et OneDrive</title>
+      <link>https://www.pierremorsa.com/post/2017-07-24-test-solutions-connecter-directement-dropbox-onedrive/</link>
+      <pubDate>Mon, 24 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pierremorsa.com/post/2017-07-24-test-solutions-connecter-directement-dropbox-onedrive/</guid>
+      <description>
+
+&lt;p&gt;Pour faire court, je ne recommande aucune des solutions testées. En effet, aucune de ces Apps n&amp;rsquo;est assez fiable &lt;strong&gt;et&lt;/strong&gt; performante pour offrir un niveau de productivité satisfaisant.&lt;/p&gt;
+
+&lt;h2 id=&#34;pourquoi-utiliser-une-solution-pour-se-connecter-directement-à-dropbox-et-onedrive&#34;&gt;Pourquoi utiliser une solution pour se connecter directement à Dropbox et OneDrive ?&lt;/h2&gt;
+
+&lt;p&gt;Les Apps Dropbox et OneDrive officielles fonctionnent bien (l&amp;rsquo;App de Dropbox restant la plus fiable et la plus performante). Alors pourquoi diable vouloir utiliser une solution tierce ? Pour deux raisons :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Tout d&amp;rsquo;abord cela évite d&amp;rsquo;être tributaire de certains aspects peu plaisants des clients officiels. Par exemple Dropbox simule une fausse boîte de dialogue pour vous faire saisir votre mot de passe administrateur, un comportement totalement inacceptable.&lt;/li&gt;
+&lt;li&gt;Ensuite, les clients officiels vous obligent d&amp;rsquo;avoir une copie en local pour pouvoir travailler dessus. Résultat, vous avez beau disposer de 1 To dans le Cloud, vous êtes limité par votre maigre disque SSD de quelques centaines de Go.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Il est bien sûr possible de ne synchroniser que certains dossiers, et de laisser une copie des autres uniquement dans le Cloud. Mais que faire lorsque vous voulez accéder à ces documents fréquemment ? Passer par le client web est une solution, mais il serait bien plus agréable de pouvoir accéder à ces documents directement depuis le Finder, comme si on accédait à un serveur distant classique. Et c&amp;rsquo;est justement cette fonctionnalité qu&amp;rsquo;offrent les clients tiers.&lt;/p&gt;
+
+&lt;h2 id=&#34;les-candidats&#34;&gt;Les candidats&lt;/h2&gt;
+
+&lt;p&gt;Après avoir pas mal écumé différents sites, il s&amp;rsquo;avère qu&amp;rsquo;il y a trois candidats plus sérieux que les autres :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;CloudMounter&lt;/li&gt;
+&lt;li&gt;ExpanDrive&lt;/li&gt;
+&lt;li&gt;Mountain Duck (basé sur Cyberduck).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Ces trois candidats font tous les trois la même chose : ils vous  permettent de vous connecter à Dropbox, OneDrive et d&amp;rsquo;autres services Cloud directement depuis le Finder comme s&amp;rsquo;il s&amp;rsquo;agissait simplement d&amp;rsquo;un serveur de fichiers distant.&lt;/p&gt;
+
+&lt;h2 id=&#34;les-sous-doués-se-connectent-au-cloud&#34;&gt;Les sous-doués se connectent au Cloud&lt;/h2&gt;
+
+&lt;p&gt;Mais&amp;hellip; Mais aucune de ces trois solutions ne fonctionne de manière satisfaisante.&lt;/p&gt;
+
+&lt;p&gt;CloudMounter se connecte, certes. Je n&amp;rsquo;ai pas relevé de dysfonctionnement majeur, certes. Mais&amp;hellip; la vitesse de connexion est beaucoup trop lente pour être réellement exploitable. Il faut souvent attendre plusieurs dizaines de secondes, voire plus d&amp;rsquo;une minute pour simplement lister le contenu d&amp;rsquo;un répertoire. J&amp;rsquo;ai assez rapidement craqué et abandonné cette option.&lt;/p&gt;
+
+&lt;p&gt;ExpanDrive est de loin le plus rapide des trois candidats. Il utilise un mécanisme de cache local qui rend tout très rapide et agréable. Mais&amp;hellip; il est rempli de bugs qui ne semblent jamais être corrigés malgré les mises à jour régulières. Par exemple, les caractères accentués vont poser problème sur les fichiers stockés dans Dropbox. Les opérations de copie et de suppression échouent régulièrement pour différentes raisons et lorsque cela arrive la seule solution consiste à aller effacer le cache manuellement. Malgré de nombreux essais je ne suis jamais parvenu à rendre cette solution fiable.&lt;/p&gt;
+
+&lt;p&gt;Enfin Mountain Duck s&amp;rsquo;appuie sur le moteur de Cyberduck, ce qui devrait être un gage de qualité. Malheureusement Mountain Duck souffre également de problèmes de lenteur rédhibitoires. En l&amp;rsquo;utilisant j&amp;rsquo;ai parfois eu l&amp;rsquo;impression d&amp;rsquo;être revenu dans les années 2000, où certaines opérations de copie déclenchaient systématiquement un gel complet du Finder et l&amp;rsquo;apparition de la roue colorée de la mort.&lt;/p&gt;
+
+&lt;p&gt;En l&amp;rsquo;état aucune de ces trois solutions n&amp;rsquo;est réellement exploitable efficacement au quotidien, je ne peux donc pas vous en recommander une. Cependant je garde espoir, et j&amp;rsquo;essaie régulièrement les nouvelles versions en espérant enfin trouver le Graal du Cloud.&lt;/p&gt;
+
+&lt;h2 id=&#34;quelques-notes-supplémentaires&#34;&gt;Quelques notes supplémentaires&lt;/h2&gt;
+
+&lt;p&gt;Cyberduck, déjà mentionné plus haut, offre une alternative viable mais finalement pas plus pratique que le client Web pour accéder directement aux fichiers stockés sur Dropbox. De plus Cyberduck (comme la prochaine version de Mountain Duck) intègre directement Cryptomator, la solution de chiffrage des documents dans le Cloud dont je parlais la semaine dernière.&lt;/p&gt;
+
+&lt;p&gt;Eltima, l&amp;rsquo;éditeur de CloudMounter, a un moment donné fait une promo sur son site pour MacKeeper, un pourriciel de la pire espèce. Cela ne me donne vraiment pas confiance dans cet éditeur, à tort ou à raison.&lt;/p&gt;
+
+&lt;p&gt;Enfin je garde un œil ouvert sur Transmit 5, la mythique nouvelle version du client FTP de Panic, qui &lt;em&gt;pourrait&lt;/em&gt; intégrer ce genre de fonctionnalité.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>La meilleure solution de chiffrage des documents dans le Cloud</title>
+      <link>https://www.pierremorsa.com/post/2017-07-17-meilleure-solution-de-chiffrage-cloud-cryptomator/</link>
+      <pubDate>Mon, 17 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pierremorsa.com/post/2017-07-17-meilleure-solution-de-chiffrage-cloud-cryptomator/</guid>
+      <description>
+
+&lt;p&gt;Après avoir testé plusieurs solutions de chiffrage des documents dans le Cloud mon choix s&amp;rsquo;est porté sur Cryptomator. C&amp;rsquo;est une solution gratuite, rapide, fiable et offrant un bon niveau de sécurité tout en restant simple à utiliser. Cryptomator est également intégré à d&amp;rsquo;autres solutions comme Cyberduck et Mountain Duck. Elle est également open source, ce qui signifie qu&amp;rsquo;aucun éditeur ne pourra prendre vos données en « otage » d&amp;rsquo;un abonnement obligatoire.&lt;/p&gt;
+
+&lt;h2 id=&#34;pourquoi-chiffrer-ses-documents-dans-le-cloud&#34;&gt;Pourquoi chiffrer ses documents dans le Cloud ?&lt;/h2&gt;
+
+&lt;p&gt;Stocker ses documents dans le Cloud, c&amp;rsquo;est potentiellement les mettre à la merci des hackers, qu&amp;rsquo;ils soient criminels ou supportés par un gouvernement. Ne croyez pas sur parole les communiqués des services comme Dropbox ou OneDrive qui vous disent que vos documents sont protégés ; pratiquement tous ont été victimes d&amp;rsquo;intrusions plus ou moins graves sur leurs serveurs. De plus leurs employés ainsi que certaines agences gouvernementales ont accès à vos documents.&lt;/p&gt;
+
+&lt;p&gt;Si les documents que vous stockez dans le Cloud ne contiennent pas de données sensibles, pas besoin de se prendre la tête, une solution de chiffrage supplémentaire n&amp;rsquo;est pas nécessaire. Mais si vous y stockez des documents contenant par exemple des coordonnées bancaires, des mots de passe ou des données de vos clients, il vaut mieux les chiffrer.&lt;/p&gt;
+
+&lt;p&gt;Le chiffrage est un sujet complexe, aussi je tiens à préciser que vos documents ne sont pas protégés dans le Cloud si vous avez chiffré vos documents localement avec une solution comme FileVault ou Bitlocker. Les documents envoyés dans le Cloud ne bénéficient pas de ce chiffrage.&lt;/p&gt;
+
+&lt;h2 id=&#34;mon-choix-cryptomator&#34;&gt;Mon choix : Cryptomator&lt;/h2&gt;
+
+&lt;p&gt;Après avoir testé différentes solutions, Cryptomator est actuellement la seule solution à satisfaire tous ces critères :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Être open source : s&amp;rsquo;il y a bien un domaine dans lequel l&amp;rsquo;open source a tout son sens, c&amp;rsquo;est dans celui du chiffrage ; en effet seules les solutions open source peuvent être garanties sans porte dérobée (et encore, normalement il faut dans ce cas aussi compiler le code source soi-même après avoir vérifié la signature des fichiers).&lt;/li&gt;
+&lt;li&gt;Multi plateforme : Cryptomator est disponible sur macOS, Windows, Linux, iOS et Android. Seules les versions iOS et Android sont payantes.&lt;/li&gt;
+&lt;li&gt;Offrir un mécanisme de chiffrage suffisamment solide.&lt;/li&gt;
+&lt;li&gt;Autoriser la synchronisation fichier par fichier, voire par bloc modifié. Une solution comme VeraCrypt qui impose de tout resynchroniser pour le changement d&amp;rsquo;un octet n&amp;rsquo;est pas utilisable.&lt;/li&gt;
+&lt;li&gt;Autoriser la gestion des conflits dans le cas où plusieurs utilisateurs modifient le même fichier en même temps.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;faiblesses-de-cryptomator&#34;&gt;Faiblesses de Cryptomator&lt;/h3&gt;
+
+&lt;p&gt;La faiblesse principale de Cryptomator est que les fichiers chiffrés font la même taille que les fichiers non chiffrés. Sans être expert, cela doit fortement faciliter le cassage de la clé de chiffrage si un hacker possède une copie de fichier chiffrée et une copie non chiffrée. Normalement c&amp;rsquo;est un scénario qui ne doit pas se produire, mais si vous copiez des fichiers déjà présents dans Dropbox vers Cryptomator, alors Dropbox possédera une copie chiffrée et une copie non chiffrée du même document.&lt;/p&gt;
+
+&lt;h2 id=&#34;les-autres-solutions&#34;&gt;Les autres solutions&lt;/h2&gt;
+
+&lt;p&gt;VeraCrypt est le successeur spirituel du célèbre TrueCrypt. Cependant la philosophie de conception de VeraCrypt en fait un outil destiné au chiffrage de disques locaux plutôt que de documents stockés dans le Cloud.&lt;/p&gt;
+
+&lt;p&gt;BoxCryptor existe depuis plusieurs années, et a un fonctionnement similaire à Cryptomator. Mais le code source est fermé et BoxCryptor nécessite un abonnement payant sans pour autant offrir de bénéfices par rapport à Cryptomator. De plus si la maison mère de BoxCryptor met la clé sous la porte vous n&amp;rsquo;aurez plus aucun moyen de récupérer vos données.&lt;/p&gt;
+
+&lt;p&gt;CloudMounter offre un mécanisme de chiffrage intégré, mais le code source est fermé et impossible d&amp;rsquo;avoir des informations sur l&amp;rsquo;algorithme de chiffrage utilisé. De plus l&amp;rsquo;accès à Dropbox depuis CloudMounter est insupportablement lent.&lt;/p&gt;
+
+&lt;p&gt;Cyberduck et Mountain Duck intègrent Cryptomator. Si pendant mes tests Cyberduck a bien fonctionné je ne suis pas parvenu à faire fonctionner Mountain Duck de manière satisfaisante, la connexion s&amp;rsquo;interrompant constamment lors des transfers.&lt;/p&gt;
+
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;Le niveau de sécurité par défaut de Dropbox ou OneDrive est suffisant pour des documents ne nécessitant pas de précautions particulières, mais insuffisant pour les documents sensibles : je ne recommande pas de stocker des coordonnées bancaires, mots de passe ou des données client sensibles dans le Cloud sans chiffrage complémentaire. De toutes les solutions que j&amp;rsquo;ai pu essayer, Cryptomator est celle qui offre le meilleur compromis facilité d&amp;rsquo;utilisation - sécurité.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Un script AppleScript pour envoyer tous les emails vers OmniFocus</title>
+      <link>https://www.pierremorsa.com/post/2017-07-10-script-applescript-fusion-boite-de-reception-mail-omnifocus/</link>
+      <pubDate>Mon, 10 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pierremorsa.com/post/2017-07-10-script-applescript-fusion-boite-de-reception-mail-omnifocus/</guid>
+      <description>
+
+&lt;p&gt;Suite à &lt;a href=&#34;https://www.pierremorsa.com/post/2017-06-12-test-omnifocus-2&#34;&gt;mon article sur OmniFocus 2&lt;/a&gt;, un lecteur m&amp;rsquo;a demandé si je pouvais partager le script qui me sert à fusionner les boîtes de réceptions de Apple Mail et OmniFocus 2. Le voilà.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Attention 1 : à la première exécution le script va créer une tâche OmniFocus pour tous les emails dans la boîte de réception, si vous en avez beaucoup vous risquez de vous retrouver avec des milliers de tâches OmniFocus en plus !&lt;/strong&gt; Pour éviter ce problème, ne laissez pas vos vieux emails traîner dans la boîte de réception, déplacez-les vers un dossier Archive.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Attention 2 : n&amp;rsquo;exécutez jamais du code AppleScript sans en vérifier le contenu et la provenance, il peut être dangereux.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Attention 3 : vérifiez que vous comprenez ce que fait le script et que cela correspond à votre besoin. AppleScript requiert un certain niveau de connaissance technique. Je ne suis pas responsable de ce que le script peut faire sur votre machine.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;use AppleScript version &amp;quot;2.4&amp;quot; -- Yosemite (10.10) or later
+use scripting additions
+
+property pLastID : 0
+property pInboxName : &amp;quot;INBOX&amp;quot;
+property pArchiveBoxName : &amp;quot;Archive&amp;quot;
+
+on run
+	
+	set cbs to ASCII character 92
+	set crt to ASCII character 13
+	
+	tell application &amp;quot;Mail&amp;quot;
+		set theMessage to &amp;quot;&amp;quot;
+		set theFlaggedMessages to ¬
+			(messages of mailbox pInboxName of first account) ¬
+				whose flag index is equal to 5
+		if (count of theFlaggedMessages) is greater than 0 then
+			repeat with theMessage in theFlaggedMessages
+				set theTask to my findOmnifocusTask(theMessage)
+				if theTask is missing value then
+					set flag index of theMessage to -1
+					my archiveMessage(theMessage)
+				end if
+			end repeat
+		end if
+		set theInbox to mailbox pInboxName of first account
+		set theInboxMessages to ¬
+			(messages of mailbox pInboxName of first account) ¬
+				whose id is greater than pLastID
+		
+		if (count of theInboxMessages) is greater than 0 then
+			delay 10
+			repeat with theMessage in theInboxMessages
+				set theSender to sender of theMessage as string
+				set theSubject to subject of theMessage as string
+				set theID to id of theMessage
+				set theTitle to theSender &amp;amp; &amp;quot; — &amp;quot; &amp;amp; theSubject
+				set theNote to (&amp;quot;message://%3c&amp;quot; &amp;amp; message id of ¬
+					theMessage &amp;amp; &amp;quot;%3e&amp;quot; &amp;amp; crt &amp;amp; crt) as rich text
+				set theNote to (theNote &amp;amp; content of theMessage)
+				set theAttachments to &amp;quot;&amp;quot;
+				set theAttachmentsCount to count of ¬
+					mail attachment of theMessage
+				if theAttachmentsCount is greater than 0 then
+					set theMailAttachments to ¬
+						mail attachments of theMessage
+					repeat with theMailAttachment in theMailAttachments
+						set theAttachments to theAttachments &amp;amp; ¬
+							name of theMailAttachment &amp;amp; crt
+					end repeat
+					set theNote to ¬
+						theNote &amp;amp; crt &amp;amp; crt &amp;amp; &amp;quot;Attachments:&amp;quot; &amp;amp; ¬
+						crt &amp;amp; theAttachments
+				end if
+				set theTaskID to my makeOmniFocusTask(theTitle, theNote)
+				-- set background color of theMessage to none
+				set flag index of theMessage to 5
+				set read status of theMessage to true
+				-- my archiveMessage(theMessage) -- disabled, too buggy.
+				set theID to id of theMessage
+				if theID is greater than pLastID then
+					set pLastID to theID
+				end if
+			end repeat
+		end if
+	end tell
+	
+end run
+
+on findOmnifocusTask(theMessage)
+	using terms from application &amp;quot;Mail&amp;quot;
+		set theMessageID to (message id of theMessage) as string
+	end using terms from
+	tell application &amp;quot;OmniFocus&amp;quot;
+		tell default document
+			try
+				set theTask to first flattened task whose completed is false ¬
+					and note contains theMessageID
+			on error
+				set theTask to missing value
+			end try
+		end tell
+	end tell
+	return theTask
+end findOmnifocusTask
+
+on makeOmniFocusTask(theTitle, theNote)
+	tell application &amp;quot;OmniFocus&amp;quot;
+		tell default document
+			set theTask to make new inbox task with properties ¬
+				{name:theTitle, note:theNote}
+		end tell
+	end tell
+	set theTaskID to &amp;quot;omnifocus://%3c&amp;quot; &amp;amp; id of theTask &amp;amp; &amp;quot;%3e&amp;quot;
+	return theTaskID
+end makeOmniFocusTask
+
+on archiveMessage(theMessage)
+	tell application &amp;quot;Mail&amp;quot;
+		set theAccount to account of mailbox of theMessage
+		set theMailboxArchive to item 1 of ((mailboxes of theAccount) ¬
+			whose name is pArchiveBoxName)
+		-- The following code did work too to move the message: 
+		-- set mailbox of theMessage to theMailboxArchive
+		move theMessage to theMailboxArchive
+	end tell
+end archiveMessage
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;comment-s-en-servir&#34;&gt;Comment s&amp;rsquo;en servir ?&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Lancer l&amp;rsquo;éditeur de Scripts (Script Editor en anglais, AppleScript Editor dans les anciennes versions de macOS)&lt;/li&gt;
+&lt;li&gt;Créer un nouveau script, copier-coller le contenu du script ci-dessus, et sauvegarder le script à l&amp;rsquo;endroit suivant dans votre répertoire utilisateur : &lt;code&gt;/Bibliothèque/Application Scripts/com.apple.mail&amp;quot;&lt;/code&gt; (attention, je ne suis pas certain du nom du répertoire Application Scripts en français, si quelqu&amp;rsquo;un le connaît vous pouvez me l&amp;rsquo;indiquer sur Twitter ou par email). J&amp;rsquo;ai appelé le fichier de script &lt;code&gt;rule → omnifocus-sendto&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Créer une règle dans Apple Mail qui va lancer le script automatiquement.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/07/rule-mail-omnifocus.jpg&#34; alt=&#34;Règle Apple Mail vers OmniFocus&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;que-va-faire-le-script&#34;&gt;Que va faire le script ?&lt;/h2&gt;
+
+&lt;p&gt;Le script va créer une tâche dans OmniFocus pour &lt;strong&gt;tous&lt;/strong&gt; les emails qui sont dans votre boîte de réception, et va leur ajouter un drapeau de couleur violette (la couleur d&amp;rsquo;OmniFocus) pour indiquer qu&amp;rsquo;une tâche correspondante a été créée.&lt;/p&gt;
+
+&lt;p&gt;À chaque fois que le script est exécuté (donc à chaque fois que vous recevez au moins un nouvel email), le script vérifie si la tâche correspondante dans OmniFocus existe encore ET n&amp;rsquo;est pas complétée. Si ce n&amp;rsquo;est pas le cas (la tâche a été complétée ou supprimée) alors le script enlève le drapeau violet de l&amp;rsquo;email et le déplace vers le dossier Archive.&lt;/p&gt;
+
+&lt;h2 id=&#34;notes-techniques&#34;&gt;Notes techniques&lt;/h2&gt;
+
+&lt;p&gt;Les connaisseurs verront que je n&amp;rsquo;utilise pas la formulation recommandée    &lt;code&gt;on perform mail action with messages...&lt;/code&gt; pour déclencher le traitement. C&amp;rsquo;est simplement parce que elle est trop buggée, et ce depuis des années. Au lieu de cela j&amp;rsquo;utilise une technique pour identifier les nouveaux emails qui est de garder en mémoire l&amp;rsquo;ID du dernier email qui a été traité (&lt;code&gt;pLastID&lt;/code&gt;).&lt;/p&gt;
+
+&lt;p&gt;Il y a une procédure nommée archiveMessage. Ne changez pas le script pour archiver le message dès sa réception ; il y a un bug dans Mail qui fait que certains messages risquent d&amp;rsquo;être perdus si vous le faites (je crois que c&amp;rsquo;est lié au fait que Mail archive le message alors qu&amp;rsquo;il n&amp;rsquo;a pas fini d&amp;rsquo;être chargé depuis le serveur, mais je ne suis pas certain).&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>OmniFocus 2 affiche la boîte de réception dans les projets</title>
+      <link>https://www.pierremorsa.com/post/2017-06-26-omnifocus-affiche-boite-de-reception-dans-projets/</link>
+      <pubDate>Mon, 26 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pierremorsa.com/post/2017-06-26-omnifocus-affiche-boite-de-reception-dans-projets/</guid>
+      <description>&lt;p&gt;il y a quelques semaines j&amp;rsquo;ai publié un test d&amp;rsquo;OmniFocus 2. Un des griefs principaux que je faisais était l&amp;rsquo;impossibilité d&amp;rsquo;afficher la boîte de réception en même temps que les projets. Et bien magie, OmniFocus 2.10 vient d&amp;rsquo;ajouter cette fonctionnalité !&lt;/p&gt;
+
+&lt;p&gt;C&amp;rsquo;est beaucoup plus logique et plus rapide de traiter sa boîte de réception de cette manière : on traite les différentes actions, et celles qui doivent aller dans un projet peuvent être directement glissées-déposées dans le bon projet, au bon endroit.&lt;/p&gt;
+
+&lt;p&gt;Pour l&amp;rsquo;activer, allez dans les préférences d&amp;rsquo;OmniFocus, onglet organisation, et cochez la case pour afficher la boîte de réception dans les projets.&lt;/p&gt;
+
+&lt;p&gt;J&amp;rsquo;espère que Omni Group continuera de faire ces améliorations au fil du temps.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Bien s&#39;organiser avec OmniFocus 2</title>
+      <link>https://www.pierremorsa.com/post/2017-06-12-test-omnifocus-2/</link>
+      <pubDate>Mon, 12 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pierremorsa.com/post/2017-06-12-test-omnifocus-2/</guid>
+      <description>
+
+&lt;p&gt;OmniFocus 2 est un outil de gestion des tâches basé sur la méthode GTD, disponible pour Mac, iPad et iPhone. Après avoir essayé différentes solutions, c&amp;rsquo;est celle-ci qui a retenu mon choix, car c&amp;rsquo;est la solution la plus complète et la plus puissante, et surtout elle peut être personnalisée avec AppleScript, le langage d&amp;rsquo;automatisation d&amp;rsquo;Apple.&lt;/p&gt;
+
+&lt;p&gt;Plutôt qu&amp;rsquo;un test classique, j&amp;rsquo;ai voulu décrire comment OmniFocus s&amp;rsquo;en sort dans une utilisation quotidienne pour quelqu&amp;rsquo;un qui utilise la méthodologie GTD.&lt;/p&gt;
+
+&lt;h2 id=&#34;quelques-points-importants-sur-omnifocus-2&#34;&gt;Quelques points importants sur OmniFocus 2&lt;/h2&gt;
+
+&lt;p&gt;Premier point qui peut surprendre, le prix. Aujourd&amp;rsquo;hui nous sommes habitués à avoir une pléthore d&amp;rsquo;applications gratuites. Ce n&amp;rsquo;est pas le cas d&amp;rsquo;OmniFocus, qui coûte environ 80€ dans sa version Pro. Si vous n&amp;rsquo;avez pas envie de payer pour une application, celle-ci n&amp;rsquo;est pas faite pour vous.&lt;/p&gt;
+
+&lt;p&gt;Le deuxième point à mentionner d&amp;rsquo;entrée de jeu, c&amp;rsquo;est la relative complexité d&amp;rsquo;OmniFocus 2. Si vous n&amp;rsquo;êtes pas familier avec la méthode GTD alors les nombreuses fonctionnalités d&amp;rsquo;OmniFocus 2 ne vous seront probablement pas beaucoup plus utiles qu&amp;rsquo;une simple liste de tâches classique.&lt;/p&gt;
+
+&lt;p&gt;Ces deux points ne sont pas faits pour vous rebuter ? Parfait, alors partons à la découverte de cet outil formidable !&lt;/p&gt;
+
+&lt;h2 id=&#34;interface&#34;&gt;Interface&lt;/h2&gt;
+
+&lt;p&gt;L&amp;rsquo;interface d&amp;rsquo;OmniFocus est similaire sur Mac, iPad et iPhone, même si elle tient compte des particularités de chaque appareil.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/06/omnifocus.jpg&#34; alt=&#34;OmniFocus Mac iPhone et iPad&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Les interfaces, c&amp;rsquo;est vraiment une question de goût. Des trois c&amp;rsquo;est la version Mac que je préfère. Je trouve qu&amp;rsquo;il est plus simple d&amp;rsquo;accéder aux détails des tâches, et surtout on peut utiliser AppleScript pour l&amp;rsquo;automatiser. De plus, elle offre plus d&amp;rsquo;options de personnalisation, par exemple le choix entre un mode compact et fluide.&lt;/p&gt;
+
+&lt;p&gt;Depuis la version 2.5 il est de nouveau possible de personnaliser les polices et les couleurs d&amp;rsquo;OmniFocus Mac avec des thèmes mais il faut avoir le cœur bien accroché ! Cette opération sera cependant simplifiée par l&amp;rsquo;utilisation du petit outil dédié OmniFocusColors.&lt;/p&gt;
+
+&lt;p&gt;Au final les différentes interfaces font le boulot efficacement, et c&amp;rsquo;est ce qu&amp;rsquo;on leur demande. Pour le reste de l&amp;rsquo;article, je vais me focaliser sur la version Mac qui est celle que j&amp;rsquo;utilise 90% du temps.&lt;/p&gt;
+
+&lt;h2 id=&#34;un-système-pensé-pour-gtd&#34;&gt;Un système pensé pour GTD&lt;/h2&gt;
+
+&lt;p&gt;Comme déjà mentionné, cela n&amp;rsquo;a pas beaucoup de sens d&amp;rsquo;utiliser OmniFocus si vous ne connaissez pas la méthodologie GTD. On y retrouve toutes les étapes du processus GTD classique :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Collecter les tâches dans la boîte de réception (Inbox)&lt;/li&gt;
+&lt;li&gt;Organiser par projet&lt;/li&gt;
+&lt;li&gt;Exécuter des tâches par contexte&lt;/li&gt;
+&lt;li&gt;Revoir les projets&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Le diable est dans les détails. Même si je trouve qu&amp;rsquo;OmniFocus est l&amp;rsquo;application la plus adaptée à la méthodologie GTD, je regrette que le processus ne soit pas plus fluide. Ce que je veux dire par là, c&amp;rsquo;est que les onglets &amp;ldquo;Inbox&amp;rdquo;, &amp;ldquo;Project&amp;rdquo;, &amp;ldquo;Review&amp;rdquo; sont visibles en permanence ; l&amp;rsquo;utilisateur a alors tendance à y passer plus de temps que nécessaire,
+alors qu&amp;rsquo;ils devraient être utilisés le moins possible. De plus, j&amp;rsquo;aimerais que l&amp;rsquo;interface s&amp;rsquo;adapte plus intelligemment : voir les projets lorsqu&amp;rsquo;on trie sa boîte de réception, faire disparaître certains éléments lorsqu&amp;rsquo;ils sont inutiles, etc.&lt;/p&gt;
+
+&lt;p&gt;Mais attaquons-nous au principal. Comment est-ce que OmniFocus s&amp;rsquo;en sort en tant qu&amp;rsquo;outil GTD ? Revoyons chaque étape du processus.&lt;/p&gt;
+
+&lt;h2 id=&#34;1-collecter-les-tâches-dans-la-boîte-de-réception&#34;&gt;1. Collecter les tâches dans la boîte de réception&lt;/h2&gt;
+
+&lt;p&gt;La boîte de réception sert de fourre-tout dans lequel on stocke tous les éléments susceptibles de devenir une tâche. Vous vous rappelez tout d&amp;rsquo;un coup que vous devez acheter des fleurs pour la fête des mères ? Vous ajoutez une tâche dans la boîte de réception.&lt;/p&gt;
+
+&lt;p&gt;OmniFocus offre un raccourci clavier qui permet d&amp;rsquo;afficher une fenêtre pour saisir une tâche rapidement, sans devoir quitter l&amp;rsquo;application en cours d&amp;rsquo;utilisation. Si une tâche vous vient à l&amp;rsquo;esprit, vous tapez le raccourci, entrez la tâche et fermez la fenêtre. Vous pouvez l&amp;rsquo;oublier en sachant qu&amp;rsquo;elle est bien au chaud dans votre boîte de réception et qu&amp;rsquo;elle sera traitée en temps voulu.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/06/omnifocus-quick-entry.jpg&#34; alt=&#34;OmniFocus Mac iPhone et iPad&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;2-traiter-sa-boîte-de-réception&#34;&gt;2. Traiter sa boîte de réception&lt;/h2&gt;
+
+&lt;p&gt;Environ trois fois par jour, je traite toutes les tâches en attente dans ma boîte de réception (le matin en me levant, vers la fin de la matinée et fin d&amp;rsquo;après midi).&lt;/p&gt;
+
+&lt;p&gt;La façon de procéder d&amp;rsquo;OmniFocus est simple. On clique sur l&amp;rsquo;onglet &amp;ldquo;Inbox&amp;rdquo;, on regarde chaque tâche en suivant le processus de décision GTD : est-ce qu&amp;rsquo;on peut la faire en moins de deux minutes ? Oui, alors on la fait tout de suite puis on la marque comme complétée. Sinon on lui attribue un projet et un contexte. La tâche va alors automatiquement disparaître de la boîte de réception et aller s&amp;rsquo;ajouter &lt;em&gt;à la fin de la liste de tâches du projet&lt;/em&gt; qui lui a été assigné.&lt;/p&gt;
+
+&lt;p&gt;À cet étape du processus, il y a quelque chose qui me chagrine : j&amp;rsquo;aimerais vraiment n&amp;rsquo;avoir qu&amp;rsquo;une seule boîte de réception à traiter, mais j&amp;rsquo;en ai deux. Celle d&amp;rsquo;OmniFocus et celle d&amp;rsquo;Apple Mail. OmniFocus pourrait fusionner sa boîte de réception avec Apple Mail, pour n&amp;rsquo;avoir à traiter qu&amp;rsquo;une seule boîte de réception. Heureusement, j&amp;rsquo;ai mis au point une solution : un AppleScript qui prend les emails reçus dans Apple Mail et les ajoute directement dans la boîte de réception d&amp;rsquo;OmniFocus, avec un lien vers le mail d&amp;rsquo;origine. Ces emails ont également un petit drapeau violet dans Mail tant qu&amp;rsquo;ils restent en tâche ouverte dans OmniFocus.&lt;/p&gt;
+
+&lt;p&gt;De manière générale, c&amp;rsquo;est un des plus gros reproches que je fais à OmniFocus : il est pensé par « fonctionnalités » plus que par « déroulement du processus ». C&amp;rsquo;est flagrant dans ce cas, car l&amp;rsquo;idéal serait de voir les tâches dans la boîte de réception, et en dessous la liste des projets, pour pouvoir simplement glisser-déposer les tâches dans le bon projet et au bon endroit. Omni Group, l&amp;rsquo;éditeur, a promis de remédier à ce problème. En attendant la solution de contournement recommandée est simplement d&amp;rsquo;ouvrir deux fenêtres, une qui affiche le contenu de la boîte de réception et une qui affiche la liste des projets, et de glisser-déposer les tâches entre les deux.&lt;/p&gt;
+
+&lt;h2 id=&#34;3-organiser-les-projets&#34;&gt;3. Organiser les projets&lt;/h2&gt;
+
+&lt;p&gt;L&amp;rsquo;étape suivante logique, c&amp;rsquo;est d&amp;rsquo;organiser les projets. Autrement dit, de prendre les tâches affectées au projet et les organiser dans un ordre d&amp;rsquo;exécution logique. Dans OmniFocus, les projets et groupes de tâches peuvent être « séquentiels » ou « parallèles ». Dans un projet séquentiel, une tâche doit être complétée avant que la suivante ne soit réalisable. Dans un projet parallèle, toutes les tâches non complétées et affectées à un contexte actif peuvent être exécutées. Si on prend comme exemple la liste de tâches suivantes :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Rédiger le document&lt;/li&gt;
+&lt;li&gt;Insérer les images&lt;/li&gt;
+&lt;li&gt;Demander le droit d&amp;rsquo;utiliser les images&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Dans un projet séquentiel, « rédiger le document » devra être complété avant que la tâche « insérer les images » ne devienne disponible. Dans un projet parallèle, on pourra indifféremment commencer par rédiger le document, insérer les images ou demander le droit de les utiliser. Personnellement, partant du principe qu&amp;rsquo;on ne peut faire qu&amp;rsquo;une chose à la fois, pratiquement tous mes projets sont séquentiels, et je réserve le mode parallèle à des cas bien précis. Utiliser le mode séquentiel me force aussi à organiser les choses de manière logique avant de commencer à travailler, ce qui plus tard évite de perdre du temps à me demander par quoi commencer puis quoi faire ensuite.&lt;/p&gt;
+
+&lt;h2 id=&#34;4-revoir-les-projets&#34;&gt;4. Revoir les projets&lt;/h2&gt;
+
+&lt;p&gt;Régulièrement, il faut revoir ses projets. Même après l&amp;rsquo;étape d&amp;rsquo;organisation, il peut être utile de faire une mini-revue, pour être sûr de n&amp;rsquo;avoir rien oublié. Pour moi, avoir cette certitude d&amp;rsquo;avoir tout traité est important, car lors de l&amp;rsquo;étape suivante, l&amp;rsquo;exécution des tâches, je passe en mode « autopilote » ; je concentre toute mon attention sur l&amp;rsquo;exécution des tâches sans perdre d&amp;rsquo;énergie à me demander que faire maintenant ou si ce que je fais est la bonne tâche, car tout cela je m&amp;rsquo;en suis assuré lors des étapes 1 à 4.&lt;/p&gt;
+
+&lt;p&gt;Dans Omnifocus, il est possible de définir une fréquence de revue des projets, de journalière à annuelle. Dans la pratique, mes projets actifs ont une fréquence de revue journalière, mes projets « waiting for » (en attente de) une fréquence de revue hebdomadaire, les projets repoussés à une date ultérieure ont une date de revue à la date à laquelle le projet redevient actif. Omnifocus étant assez « bête » a ce sujet, il est incapable de définir une fréquence de revue lui-même en fonction du statut du projet. De la même manière, il n&amp;rsquo;est pas assez intelligent pour éviter de définir la prochaine date de revue un week-end. Heureusement, AppleScript à la rescousse, j&amp;rsquo;ai un script qui modifie la fréquence et la prochaine date de revue des projets en fonction de leur statut ; c&amp;rsquo;es là la vraie force d&amp;rsquo;OmniFocus par rapport à tous les concurrents : si une fonctionnalité ne nous convient pas ou n&amp;rsquo;existe pas, on peut la créer soi-même !&lt;/p&gt;
+
+&lt;h2 id=&#34;5-exécuter-les-tâches-par-contexte&#34;&gt;5. Exécuter les tâches « par contexte »&lt;/h2&gt;
+
+&lt;p&gt;Évidemment, c&amp;rsquo;est un des piliers de GTD : les tâches se font en fonction du contexte dans lequel on se trouve ; autrement dit, lorsque je suis devant mon Mac seules les tâches que je peux exécuter devant mon Mac vont s&amp;rsquo;afficher dans le contexte @mac. Si je fais les courses, seules les tâches que je peux exécuter en faisant les courses vont s&amp;rsquo;afficher. C&amp;rsquo;est un des principes clés de GTD, qui poursuit toujours le même but : pouvoir exécuter les tâches en mode « autopilote », sans interrompre l&amp;rsquo;exécution par des prises de décisions inutiles qui font perdre de l&amp;rsquo;énergie et entraînent un risque de procrastination, style la prochaine tâche est de poster la lettre, ah mais je peux pas, je suis pas au bon endroit, bon, qu&amp;rsquo;est-ce que je fais après ?&lt;/p&gt;
+
+&lt;p&gt;Le système de contexte de GTD a été créé à une époque où cela se faisait plutôt sur papier ou sans outils adaptés. OmniFocus ne permet d&amp;rsquo;attribuer qu&amp;rsquo;un seul contexte à une tâche. Un système d&amp;rsquo;étiquettes serait aujourd&amp;rsquo;hui probablement plus souple et plus efficace (pouvoir par exemple attribuer les contextes @voyage et @gare à une même tâche).&lt;/p&gt;
+
+&lt;p&gt;Peu de choses à dire sur les contextes, c&amp;rsquo;est simple et ça marche bien. Un des avantages d&amp;rsquo;OmniFocus est de permettre de personnaliser l&amp;rsquo;affichage des tâches dans un contexte en fonction de ses préférences. Si je reprends mon exemple précédent de trois tâches :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Rédiger le document (fait)&lt;/li&gt;
+&lt;li&gt;Insérer les images (à faire)&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Demander le droit d&amp;rsquo;utiliser les images (à faire)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Si je demande d&amp;rsquo;afficher les tâches disponibles, OmniFocus va afficher la tâche Insérer pour un projet séquentiel, et les tâches Insérer et Demander pour un projet parallèle.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Si je demande d&amp;rsquo;afficher seulement la première tâche disponible, OmniFocus va afficher la tâche Insérer uniquement, que le projet soit séquentiel pour parallèle.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Maintenant que nous avons couvert toutes les étapes du processus GTD, attardons-nous sur quelques fonctionnalités qui font d&amp;rsquo;OmniFocus un outil bien plus puissant que tous les concurrents. Et commençons par les perspectives.&lt;/p&gt;
+
+&lt;h2 id=&#34;définir-des-perspectives-personnalisées&#34;&gt;Définir des perspectives personnalisées&lt;/h2&gt;
+
+&lt;p&gt;Les options d&amp;rsquo;affichage et de filtrage d&amp;rsquo;OmniFocus sont très nombreuses, et permettent de couvrir presque tous les cas de figure. Mais vous n&amp;rsquo;avez probablement pas envie de redéfinir l&amp;rsquo;ensemble des filtres et critères à chaque fois. Heureusement, OmniFocus vous permet de sauvegarder une vue et ses options d&amp;rsquo;affichage dans des « perspectives ». Pour revenir à votre vue préférée, il suffit alors de cliquer sur son icône dans la barre latérale.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/06/omnifocus-perspectives.jpg&#34; alt=&#34;OmniFocus Mac iPhone et iPad&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Voici quelques exemples de ce qu&amp;rsquo;il est possible de faire avec les perspectives :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Créer une perspective pour n&amp;rsquo;afficher que les tâches disponibles dans un ensemble de contextes précis.&lt;/li&gt;
+&lt;li&gt;N&amp;rsquo;afficher que les projets en cours d&amp;rsquo;exécution, pour lesquels aucune tâche n&amp;rsquo;est active.&lt;/li&gt;
+&lt;li&gt;Afficher toutes les tâches dont la date d&amp;rsquo;échéance est aujourd&amp;rsquo;hui.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;synchronisation-push&#34;&gt;Synchronisation &amp;ldquo;push&amp;rdquo;&lt;/h2&gt;
+
+&lt;p&gt;Omni Group propose plusieurs méthodes pour synchroniser vos données entre vos différents appareils : via leur serveurs (plus simple) ou via votre propre serveur (plus sécurisé). Personnellement j&amp;rsquo;utilise la synchronisation via leurs serveurs. La configuration est assez simple et la synchronisation rapide.&lt;/p&gt;
+
+&lt;p&gt;OmniFocus peut utiliser la synchronisation &amp;ldquo;push&amp;rdquo;, autrement dit lorsqu&amp;rsquo;un élément est modifié sur un appareil, les modifications sont envoyées presque instantanément sur les autres appareils. Celle-ci peut être désactivée si vous le souhaitez.&lt;/p&gt;
+
+&lt;p&gt;À noter que ce service est &lt;strong&gt;totalement gratuit&lt;/strong&gt;, ce qui aide à faire passer le coût initial de la licence.&lt;/p&gt;
+
+&lt;h2 id=&#34;intégration-mail&#34;&gt;Intégration mail&lt;/h2&gt;
+
+&lt;p&gt;Une fonctionnalité très utile est la possibilité de définir une adresse mail spéciale. Tous les emails que vous envoyez à cette adresse vont être automatiquement convertis en tâche. Ça marche très bien !&lt;/p&gt;
+
+&lt;h2 id=&#34;en-conclusion&#34;&gt;En conclusion&lt;/h2&gt;
+
+&lt;p&gt;OmniFocus 2 reste la solution GTD la plus puissante, toutes plateformes confondues, et nous utilisateurs de Mac sommes bien chanceux de l&amp;rsquo;avoir. La possibilité d&amp;rsquo;utiliser AppleScript avec la version Mac permet de créer virtuellement n&amp;rsquo;importe quelle fonctionnalité supplémentaire ou d&amp;rsquo;adapter les fonctionnalités existantes. Mon seul regret concernant OmniFocus est un « workflow » (processus de travail) parfois perfectible dans les détails, qui pourrait rendre l&amp;rsquo;utilisation de l&amp;rsquo;outil plus simple et plus rapide.&lt;/p&gt;
+
+&lt;p&gt;Le prix peut certes paraître élevé, mais au final Omni offre gratuitement l&amp;rsquo;utilisation d&amp;rsquo;une solution de synchronisation puissante et efficace là où tous les concurrents font payer un abonnement qui revient au final bien plus cher.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Test de Microsoft OneDrive sur Mac</title>
+      <link>https://www.pierremorsa.com/post/2017-05-15-test-de-microsoft-onedrive-mac/</link>
+      <pubDate>Mon, 15 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pierremorsa.com/post/2017-05-15-test-de-microsoft-onedrive-mac/</guid>
+      <description>
+
+&lt;p&gt;En résumé : si vous avez déjà Dropbox et que vous n&amp;rsquo;avez pas besoin des fonctions de collaboration de Office Online, restez sur Dropbox. OneDrive fonctionne correctement, mais est plus lent que Dropbox et offre moins de fonctionnalités. Son seul avantage est l&amp;rsquo;intégration plus poussée, mais très perfectible, avec Office Online.&lt;/p&gt;
+
+&lt;p&gt;Si vous vous demandez pourquoi lire mon test plutôt que celui d&amp;rsquo;un site spécialisé, c&amp;rsquo;est parce que j&amp;rsquo;utilise Office 365, Dropbox et OneDrive tous les jours. De plus, je suis totalement indépendant de Microsoft, je n&amp;rsquo;ai pas à être gentil avec eux pour préserver mon droit d&amp;rsquo;accès à quoi que ce soit.&lt;/p&gt;
+
+&lt;h2 id=&#34;onedrive-les-bases&#34;&gt;OneDrive : les bases&lt;/h2&gt;
+
+&lt;p&gt;OneDrive est un des services de stockage dans le Cloud de Microsoft. Parce que rien n&amp;rsquo;est jamais assez compliqué chez Microsoft, OneDrive est un service différent de OneDrive for Business, il ne faut donc pas confondre les deux. Un peu comme Skype et Skype for Business, qui sont deux trucs différents aussi. Et Office et Office for Business sont différents mais très similaires et compatibles. J&amp;rsquo;espère que vous suivez toujours.&lt;/p&gt;
+
+&lt;p&gt;Il y a trois manières d&amp;rsquo;accéder à OneDrive depuis son Mac :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Via l&amp;rsquo;interface web en utilisant un navigateur comme Safari ou Firefox.&lt;/li&gt;
+&lt;li&gt;Via l&amp;rsquo;app OneDrive téléchargeable gratuitement depuis l&amp;rsquo;App Store.&lt;/li&gt;
+&lt;li&gt;Via une des applications Office 365 : Word, Excel ou PowerPoint. Les autres, comme Microsoft Publisher, ne sont pas disponibles sur Mac, mais franchement vous ne ratez rien.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;L&amp;rsquo;app OneDrive va créer une copie locale des fichiers OneDrive stockés dans le Cloud, et il est possible de limiter la copie locale à une liste de dossiers sélectionnés. L&amp;rsquo;avantage, c&amp;rsquo;est que l&amp;rsquo;ouverture et la sauvegarde de fichiers en local est beaucoup plus rapide que sur un serveur distant.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/04/onedrive-cloud-local.jpg&#34; alt=&#34;OneDrive Local et Cloud&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Notez bien la différence entre &lt;strong&gt;OneDrive Local&lt;/strong&gt; et &lt;strong&gt;OneDrive Cloud&lt;/strong&gt;, car c&amp;rsquo;est déterminant pour la suite de l&amp;rsquo;article.&lt;/p&gt;
+
+&lt;p&gt;En théorie avec l&amp;rsquo;app OneDrive on a le meilleur des deux mondes : le stockage dans le cloud avec les fonctions de collaboration et de partage d&amp;rsquo;Office 365, et la vitesse d&amp;rsquo;accès aux fichiers du OneDrive local. Mais malheureusement ce n&amp;rsquo;est pas le cas, la faute à des petits défauts d&amp;rsquo;intégration qui viennent tout gâcher.&lt;/p&gt;
+
+&lt;h2 id=&#34;premier-point-qui-fâche-c-est-lent&#34;&gt;Premier point qui fâche : c&amp;rsquo;est lent&lt;/h2&gt;
+
+&lt;p&gt;Le service de Microsoft est trop lent. Par exemple j&amp;rsquo;ai essayé d&amp;rsquo;ouvrir une présentation de 30 Mo dans le Cloud OneDrive depuis PowerPoint, et il a fallu plus d&amp;rsquo;une dizaine de minutes pour la télécharger et l&amp;rsquo;ouvrir (débit misérable de quelques centaines de ko sur une connexion câble de 100 Mbps). Peut-être serez-vous plus chanceux que moi sur ce point.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/04/onedrive-cestlent.jpg&#34; alt=&#34;OneDrive C&#39;est lent&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;une-intégration-cloud-local-à-revoir&#34;&gt;Une intégration cloud - local à revoir&lt;/h2&gt;
+
+&lt;p&gt;Le truc le plus frustrant avec OneDrive Mac, c&amp;rsquo;est que lorsque vous ouvrez un document Office dans votre dossier OneDrive &lt;strong&gt;local&lt;/strong&gt;, Office est trop bête pour comprendre qu&amp;rsquo;il s&amp;rsquo;agit d&amp;rsquo;un document déjà stocké dans le cloud. Si vous essayez d&amp;rsquo;obtenir un lien pour partager le document avec d&amp;rsquo;autres personnes, il va vous dire qu&amp;rsquo;il faut d&amp;rsquo;abord sauver le document sur&amp;hellip; OneDrive (sous-entendu OneDrive &lt;strong&gt;Cloud&lt;/strong&gt;), &lt;em&gt;alors que c&amp;rsquo;est déjà le cas&lt;/em&gt;. Pour obtenir le lien, il faut donc fermer la copie locale, et ouvrir la copie Cloud&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;&amp;hellip; Et lorsque vous essayez d&amp;rsquo;ouvrir la copie OneDrive &lt;strong&gt;Cloud&lt;/strong&gt;, Office n&amp;rsquo;est pas bien malin non plus. Il se rend pas compte qu&amp;rsquo;une copie locale complète existe déjà et il télécharge à nouveau 100% du document à une allure d&amp;rsquo;escargot (franchement, c&amp;rsquo;est vraiment lent comparé à Dropbox). Mais au moins vous pouvez obtenir le fameux lien de partage du document.&lt;/p&gt;
+
+&lt;p&gt;Vous êtes donc obligé de choisir entre éditer la copie locale d&amp;rsquo;un document en bénéficiant de la vitesse ou éditer la copie cloud en bénéficiant des options de collaboration et de partage. OneDrive ne devrait pas nous forcer à choisir et devrait nous permettre de bénéficier du meilleur des deux mondes sans que l&amp;rsquo;utilisateur n&amp;rsquo;aie à se poser de question.&lt;/p&gt;
+
+&lt;h2 id=&#34;la-raison-d-utiliser-onedrive-l-édition-collaborative-de-documents&#34;&gt;LA raison d&amp;rsquo;utiliser OneDrive : l&amp;rsquo;édition collaborative de documents&lt;/h2&gt;
+
+&lt;p&gt;Il y a une raison bien précise pour laquelle j&amp;rsquo;ai voulu utiliser OneDrive. C&amp;rsquo;est que mon métier m&amp;rsquo;amène très souvent à partager et à collaborer sur des documents Office avec des collègues ou des clients.&lt;/p&gt;
+
+&lt;p&gt;Malheureusement là encore, il reste trop de bugs pour que cela soit réellement efficace au-delà d&amp;rsquo;une collaboration très simple. Par exemple il m&amp;rsquo;est arrivé plusieurs fois qu&amp;rsquo;un document se retrouve verrouillé en accès pour une raison inconnue, ou que PowerPoint multiplie de manière anarchique les « Masters » de slides comme d&amp;rsquo;autres les petits pains lors d&amp;rsquo;une édition collaborative à plusieurs. De plus comme mentionné plus haut si vous ouvrez la copie OneDrive Locale, Office n&amp;rsquo;est pas assez intelligent et ne comprend pas qu&amp;rsquo;il s&amp;rsquo;agit d&amp;rsquo;un document disponible dans OneDrive Cloud, et ne vous fait pas bénéficier des fonctions d&amp;rsquo;édition collaborative.&lt;/p&gt;
+
+&lt;p&gt;Au final c&amp;rsquo;est bien mieux qu&amp;rsquo;Office pré-365, mais insuffisant face à des outils comme Google Docs où l&amp;rsquo;édition collaborative fonctionne sans efforts.&lt;/p&gt;
+
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;Je tire une dernière fois sur l&amp;rsquo;ambulance. OneDrive est incapable de gérer tous les caractères dans les noms de fichiers, alors que Dropbox le fait sans aucun problème depuis des années. Enfin la fonction de sauvegarde des différentes versions de documents de Dropbox est bien plus sécurisante et aboutie que celle de OneDrive.&lt;/p&gt;
+
+&lt;p&gt;En l&amp;rsquo;état il est donc impossible de recommander OneDrive face à Dropbox. Pourtant Microsoft n&amp;rsquo;est pas loin, en réalité il n&amp;rsquo;y a que deux choses à améliorer pour faire de OneDrive un bon service :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Améliorer la vitesse&lt;/li&gt;
+&lt;li&gt;Corriger l&amp;rsquo;intégration fichiers locaux - cloud pour la rendre totalement transparente lorsqu&amp;rsquo;on utilise Office 365.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Allez Microsoft, un effort et OneDrive peut devenir une bonne solution de stockage Cloud.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/04/onedrive-crottemoji.jpg&#34; alt=&#34;OneDrive Local et Cloud&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Oui, cette dernière image est totalement inutile.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Utiliser une souris et une tablette graphique en même temps</title>
+      <link>https://www.pierremorsa.com/post/2017-04-24-utiliser-souris-et-tablette-graphique/</link>
+      <pubDate>Mon, 24 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pierremorsa.com/post/2017-04-24-utiliser-souris-et-tablette-graphique/</guid>
+      <description>&lt;p&gt;Si vous utilisez un ordinateur régulièrement depuis plusieurs années, il y a de fortes chances pour que vous ayez développé des douleurs dans les mains. Celles-ci n&amp;rsquo;ont en effet pas été conçues pour taper sur un clavier et manipuler une souris ou un trackpad plusieurs heures par jour.&lt;/p&gt;
+
+&lt;p&gt;J&amp;rsquo;ai déjà expliqué être passé à un &lt;a href=&#34;https://www.pierremorsa.com/blog/bureau-debout-pour-20-euros/&#34;&gt;bureau debout&lt;/a&gt; et &lt;a href=&#34;https://www.pierremorsa.com/post/2017-02-13-7-ans-clavier-bepo&#34;&gt; à la disposition clavier BÉPO&lt;/a&gt; pour réduire les douleurs articulaires, et ce sont des solutions efficaces quoique assez extrême. Mais ce n&amp;rsquo;était pas suffisant pour résoudre tous mes problèmes de douleur dans les articulations ; il fallait encore trouver une solution pour la souris. Ne faisant pas les choses à moitié, car une demi-souris c&amp;rsquo;est pas très pratique, j&amp;rsquo;ai donc opté pour une solution originale. J&amp;rsquo;utilise encore une souris, mais de la main gauche au lieu de la main droite. Au début c&amp;rsquo;est très compliqué, on rate les éléments d&amp;rsquo;interface, on clique sur le mauvais bouton, mais petit à petit on s&amp;rsquo;y fait. Mais surtout, en combinaison avec la souris, j&amp;rsquo;utilise une tablette graphique Wacom de taille moyenne (surface utile d&amp;rsquo;environ une feuille A5) de la main droite (je précise Wacom, parce que d&amp;rsquo;une part c&amp;rsquo;est pratiquement la seule marque qui fabrique ce genre de périphérique).&lt;/p&gt;
+
+&lt;p&gt;Combiner souris + tablette graphique présente le gros avantage de bénéficier des qualités uniques de chacun de ces appareils. La tablette Wacom est sans égale pour dessiner, pour retoucher une image ou pour réaliser de grands mouvements précis d&amp;rsquo;un bout à l&amp;rsquo;autre de l&amp;rsquo;écran. La souris, elle, présente l&amp;rsquo;avantage de pouvoir faire des ajustements pixel par pixel plus facilement que la tablette. En effet, avec la tablette graphique, lorsqu&amp;rsquo;on relève la pointe du stylet de la tablette il arrive que le curseur « dérape » d&amp;rsquo;un ou deux pixels, réduisant à néant les efforts d&amp;rsquo;alignement. De par sa conception la souris n&amp;rsquo;a pas ce problème. Aussi bizarre que cela puisse paraître, il m&amp;rsquo;arrive souvent d&amp;rsquo;utiliser les deux en même temps. La tablette Wacom pour faire des déplacements rapides à un autre point de l&amp;rsquo;écran et les retouches, et la souris pour réaliser des alignements précis. C&amp;rsquo;est devenu complètement naturel. D&amp;rsquo;autres personnes utilisent tablette et souris, mais l&amp;rsquo;originalité de mon système vient de l&amp;rsquo;utilisation simultanée d&amp;rsquo;un périphérique main gauche et main droite.&lt;/p&gt;
+
+&lt;p&gt;Au niveau purement articulaire, mes doigts me disent merci. D&amp;rsquo;une part la position du stylet de la tablette graphique est bien plus ergonomique que la souris. Et d&amp;rsquo;autre part, comme je répartis les efforts mécaniques entre deux périphériques, chaque main est moins sollicitée.&lt;/p&gt;
+
+&lt;p&gt;Cette solution me convient, mais est liée à mon utilisation très particulière de l&amp;rsquo;ordinateur, principalement PowerPoint et un peu d&amp;rsquo;illustration. En matière d&amp;rsquo;ergonomie, s&amp;rsquo;il y a une chose dont je suis convaincu, c&amp;rsquo;est que pour faire disparaître les douleurs, chaque petit détail compte : la posture du corps, les périphériques employés, leur disposition, la hauteur du bureau, etc. Chaque personne est différente, et une solution unique ne peut convenir à tous.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Automatiser ses tâches sur Mac</title>
+      <link>https://www.pierremorsa.com/post/2017-03-06-automatiser-taches-mac/</link>
+      <pubDate>Mon, 06 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pierremorsa.com/post/2017-03-06-automatiser-taches-mac/</guid>
+      <description>
+
+&lt;p&gt;Je l&amp;rsquo;avoue. Je suis un fanboy de l&amp;rsquo;automatisation des tâches sur Mac. Pour moi :&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;Automatisation &amp;gt; Délégation &amp;gt; Répétition manuelle&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Autrement dit, par ordre d&amp;rsquo;efficacité l&amp;rsquo;idéal est d&amp;rsquo;abord d&amp;rsquo;automatiser une tâche. Si ce n&amp;rsquo;est pas possible, essayer de la déléguer, mais ce n&amp;rsquo;est pas très sympa pour la personne qui hérite de cette tâche répétitive. En dernier recours on peut faire la tâche répétitive soi-même, encore et encore et encore et encore, comme un Shadok condamné à pomper pour l&amp;rsquo;éternité.&lt;/p&gt;
+
+&lt;p&gt;Les avantages de l&amp;rsquo;automatisation vont bien plus loin que simplement un gain de temps :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Automatiser une tâche me force à définir un processus « standard » le plus simple, le plus structuré et surtout &lt;strong&gt;le plus fiable possible&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Cela me force à mieux comprendre chaque étape de mon travail quotidien. Je peux mieux identifier les étapes qui créent réellement de la valeur et les étapes qui doivent être supprimées ou simplifiées.&lt;/li&gt;
+&lt;li&gt;Au lieu de répéter bêtement la même chose tous les jours, l&amp;rsquo;automatisation me permet de développer de nouvelles compétences très utiles.&lt;/li&gt;
+&lt;li&gt;Je réduis fortement le risque d&amp;rsquo;erreur humaine, ce qui est particulièrement important avec quelqu&amp;rsquo;un comme moi !&lt;/li&gt;
+&lt;li&gt;L&amp;rsquo;automatisation augmente le savoir-faire interne de l&amp;rsquo;entreprise au lieu l&amp;rsquo;externaliser bêtement.&lt;/li&gt;
+&lt;li&gt;Passé le petit investissement en temps initial, cela coûte beaucoup, beaucoup moins cher que la délégation.&lt;/li&gt;
+&lt;li&gt;Les tâches automatisées n&amp;rsquo;ont pas besoin d&amp;rsquo;être dans « l&amp;rsquo;inbox », ou y restent beaucoup moins de temps, ce qui libère l&amp;rsquo;esprit et permet de se concentrer sur les tâches réellement importantes.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Évidemment seules les tâches répondant à certains critères valent la peine d&amp;rsquo;être automatisées : ce sont celles qui sont répétitives, fréquentes, suivent un processus identique à chaque fois et sont « numérisables », autrement dit réalisables sur ordinateur. Il faut aussi bien soupeser le gain de temps potentiel face au temps de développement et surtout &lt;strong&gt;le temps de maintenance au fil du temps&lt;/strong&gt;, certains mécanismes d&amp;rsquo;automatisation ayant tendance à se « casser » au bout d&amp;rsquo;un temps, surtout ceux devant simuler des clics sur des éléments d&amp;rsquo;interface comme des boutons ou des images.&lt;/p&gt;
+
+&lt;h2 id=&#34;ma-boîte-à-outils-pour-automatiser-les-tâches-sur-mac&#34;&gt;Ma boîte à outils pour automatiser les tâches sur Mac&lt;/h2&gt;
+
+&lt;p&gt;La simplicité et la fiabilité de l&amp;rsquo;automatisation sont des critères essentiels. C&amp;rsquo;est pourquoi je n&amp;rsquo;utilise que des outils dont j&amp;rsquo;ai pu éprouver la fiabilité. Le cœur de mon système repose sur quatre applications et un service Web :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.keyboardmaestro.com/main/&#34;&gt;&lt;strong&gt;Keyboard Maestro&lt;/strong&gt;&lt;/a&gt; : crée des Macros très évoluées sur Mac. Une Macro est une séquence d&amp;rsquo;actions automatisées. Par exemple, Keyboard Maestro peut redimensionner une image, la convertir et la sauvegarder dans un format précis. C&amp;rsquo;est aussi le programme que j&amp;rsquo;utilise pour tous les raccourcis texte (par exemple si je tape l&amp;rsquo;abréviation « eml », mon adresse email s&amp;rsquo;insère automatiquement)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.noodlesoft.com&#34;&gt;&lt;strong&gt;Hazel&lt;/strong&gt;&lt;/a&gt; : automatise une série d&amp;rsquo;actions sur les fichiers d&amp;rsquo;un répertoire de votre ordinateur. Vous pouvez trier automatiquement des fichiers par type dans des sous-répertoires, les renommer, etc.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://latenightsw.com&#34;&gt;&lt;strong&gt;Script Debugger pour AppleScript&lt;/strong&gt;&lt;/a&gt; : le langage de Script d&amp;rsquo;Apple permet de piloter certaines applications. Ironiquement la suite Office de Microsoft jouit d&amp;rsquo;un meilleur support d&amp;rsquo;Applescript que les applications d&amp;rsquo;Apple ! Vous pouvez utiliser l&amp;rsquo;application Script Editor fournie avec chaque Mac pour développer en AppleScript, mais Script Debugger offre un bien meilleur confort de développement pour les scripts complexes.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://fakeapp.com&#34;&gt;&lt;strong&gt;Fake&lt;/strong&gt;&lt;/a&gt; : un navigateur web qui dispose également de commandes pour automatiser certaines actions, comme remplir un formulaire ou cliquer sur des boutons html. C&amp;rsquo;est une perle que pratiquement personne ne connaît.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://zapier.com&#34;&gt;&lt;strong&gt;Zapier&lt;/strong&gt;&lt;/a&gt; : un service web qui connecte des services Web entre eux et exécute des actions automatiquement. Zapier permet par exemple de poster automatiquement un message sur Slack lorsque vous recevez un email sur gmail, ou de stocker toutes les pièces jointes reçues dans son email dans un répertoire sur Dropbox.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Dans la capture d&amp;rsquo;écran ci-dessous je montre par exemple la palette Keyboard Maestro qui reprend les commandes les plus fréquentes pour Hugo, l&amp;rsquo;outil que j&amp;rsquo;utilise pour générer mon blog.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/03/keyboard-maestro-palette.jpg&#34; alt=&#34;Une palette Keyboard Maestro&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ces applications (à l&amp;rsquo;exception de Zapier) ne sont disponibles que sur Mac, mais il existe probablement l&amp;rsquo;équivalent sur Windows. J&amp;rsquo;utilise Keyboard Maestro en priorité, car c&amp;rsquo;est la solution la plus simple et la plus rapide, et AppleScript en dernier recours, car son utilisation requiert souvent plus de temps de débogage.&lt;/p&gt;
+
+&lt;p&gt;En termes de difficulté je dirais que Zapier et Keyboard Maestro peuvent être utilisés par des utilisateurs normaux, Fake et Hazel par des utilisateurs avertis (Hazel étant potentiellement dangereux en cas de mauvaise manipulation) et AppleScript par les personnes connaissant au minimum les bases de la programmation et prêtes à supporter la syntaxe bizarre de ce langage.&lt;/p&gt;
+
+&lt;h2 id=&#34;exemples-de-tâches-automatisées&#34;&gt;Exemples de tâches automatisées&lt;/h2&gt;
+
+&lt;p&gt;Automatiser, c&amp;rsquo;est bien, mais concrètement, que peut-on faire ? Un premier exemple est la revue des factures impayées. Chaque semaine j&amp;rsquo;ai un système automatique qui passe en revue les factures en retard de paiement dans Filemaker Pro, et en poste la liste sur Slack pour avertir les responsables. Dans une petite structure telle que la nôtre le fait de revoir les factures manuellement ferait perdre du temps précieux à quelqu&amp;rsquo;un. De plus il y a peu de chances que cette revue se fasse à intervalle aussi réguliers, et à chaque fois cela implique un risque d&amp;rsquo;erreurs. L&amp;rsquo;automatisation résoud tous ces problèmes.&lt;/p&gt;
+
+&lt;p&gt;En termes d&amp;rsquo;automatisation, la seule limite est l&amp;rsquo;imagination (et le choix des bons outils) ! Voici d&amp;rsquo;autres exemples de ce que j&amp;rsquo;ai automatisé :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Hazel + scanner ScanSnap S1300i : Classer automatiquement le courrier reçu et lui affecter une catégorie pour le retrouver plus facilement plus tard.&lt;/li&gt;
+&lt;li&gt;Keyboard Maestro + AppleScript + PowerPoint : Un système élaboré pour simplifier et accélérer la création des présentations (si vous regardez quelqu&amp;rsquo;un créer une présentation PowerPoint, vous vous rendrez compte à quel point on passe finalement peu de temps à saisir le contenu et énormément de temps à le mettre en forme).&lt;/li&gt;
+&lt;li&gt;Keyboard Maestro + Mail : gestion de modèles types d&amp;rsquo;emails.&lt;/li&gt;
+&lt;li&gt;Keyboard Maestro : raccourcis pour insérer les mots ou les phrases les plus souvent utilisées (par exemple taper eml insère mon adresse email, iossrt insère le numéro de SIRET de mon entreprise). À noter que j&amp;rsquo;aurais pu utiliser un outil dédié, comme TextExpander out TypeIt4Me, mais je reste fidèle à ma philosophie d&amp;rsquo;utiliser le moins d&amp;rsquo;outils possibles.&lt;/li&gt;
+&lt;li&gt;Zapier + Site Web + Slack : publication d&amp;rsquo;un nouveau message sur Slack lorsqu&amp;rsquo;une nouvelle demande d&amp;rsquo;information est envoyée via le site web.&lt;/li&gt;
+&lt;li&gt;AppleScript + Omnifocus : organisation automatique des projets en fonction de leur statut, signalisation des projets bloqués (qui n&amp;rsquo;ont plus aucune tâche active), calcul intelligent des dates de revue des projets, etc.&lt;/li&gt;
+&lt;li&gt;Organisation automatique de mes fenêtres en fonction de l&amp;rsquo;application utilisée pour optimiser l&amp;rsquo;espace de travail à l&amp;rsquo;écran.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Ce n&amp;rsquo;est qu&amp;rsquo;un aperçu, très loin d&amp;rsquo;être exhaustif, des tâches que j&amp;rsquo;ai automatisées au fil des années. J&amp;rsquo;estime que le cumul du temps gagné par chaque automatisation représente &lt;strong&gt;1 à 2 heures par jour&lt;/strong&gt;. Soit l&amp;rsquo;équivalent d&amp;rsquo;une journée de travail par semaine ! Et c&amp;rsquo;est sans compter le gain de fiabilité dans l&amp;rsquo;exécution.&lt;/p&gt;
+
+&lt;p&gt;Si vous avez des exemples d&amp;rsquo;automatisation que vous voulez partager n&amp;rsquo;hésitez pas à me les envoyer !&lt;/p&gt;
+
+&lt;p&gt;Note : je rappelle que je ne suis pas sponsorisé, et que tous les outils cités ici ont été achetés avec mes propres Deniers, parce que je pense que ce sont les meilleurs.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Pourquoi le chiffrage de bout en bout est indispensable</title>
+      <link>https://www.pierremorsa.com/post/2016-12-12-chiffrage-de-bout-en-bout-indispensable/</link>
+      <pubDate>Mon, 12 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pierremorsa.com/post/2016-12-12-chiffrage-de-bout-en-bout-indispensable/</guid>
+      <description>
+
+&lt;p&gt;&lt;strong&gt;Avertissement : la sécurité informatique est un sujet très complexe et difficile à mettre en œuvre. Je ne suis moi-même pas un expert en sécurité, mais je base cet article sur ce que j&amp;rsquo;ai pu lire sur différents sites. Mais à vous de vous documenter plus si vous souhaitez vérifier la sécurité des applications listées ci-dessous.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Saviez-vous que chaque email que vous envoyez peut être très facilement lu par des personnes mal intentionnées ? Non seulement les emails ne sont pas chiffrés sur votre machine, mais ils ne sont pas chiffrés non plus sur les serveurs distants. Pire, ils ne sont pas chiffrés non plus pendant le transfert de votre machine à celle de votre correspondant ! L&amp;rsquo;email standard est le niveau 0 de la sécurité : il n&amp;rsquo;y a aucun chiffrage, que ce soit au niveau du stockage ou au niveau du transport ! Concrètement cela signifie que n&amp;rsquo;importe quelle agence à trois lettres qui souhaite lire vos emails peut le faire très facilement. C&amp;rsquo;est d&amp;rsquo;ailleurs assez ironique de voir à quel point les grandes entreprises si jalouses de leurs secrets n&amp;rsquo;hésitent pas à utiliser l&amp;rsquo;email pour envoyer des documents confidentiels.&lt;/p&gt;
+
+&lt;p&gt;Évidemment la parade à cela, c&amp;rsquo;est le chiffrage. Le problème c&amp;rsquo;est que le chiffrage, c&amp;rsquo;est loin d&amp;rsquo;être simple. Autant pour des raisons mathématiques que techniques et surtout politiques.&lt;/p&gt;
+
+&lt;h2 id=&#34;le-chiffrage-et-la-sécurité-nationale&#34;&gt;Le chiffrage et la sécurité nationale&lt;/h2&gt;
+
+&lt;p&gt;Les solutions de chiffrage efficaces sont souvent présentées comme des armes pour les terroristes, les pédophiles et autres êtres malfaisants. On arrête l&amp;rsquo;hypocrisie. La France et bien d&amp;rsquo;autres pays n&amp;rsquo;ont aucun remords à vendre des armes bien réelles et des systèmes de surveillance électronique à des dictatures. Comble de l&amp;rsquo;ironie, ces superbes deals sont protégés par l&amp;rsquo;excuse du secret défense ! Il faut voir aussi à quel point nos démocraties sont promptes à condamner le Great Firewall of China alors qu&amp;rsquo;elles-mêmes bloquent de plus en plus facilement ce qu&amp;rsquo;elles considèrent comme contraire à leurs intérêts. Alors bien sûr que les sites qui font l&amp;rsquo;apologie du terrorisme ne sont pas acceptables, mais sans cadre légal démocratique strict la dérive totalitaire est très facile.&lt;/p&gt;
+
+&lt;p&gt;La réalité c&amp;rsquo;est que sur le point de la surveillance nos pays sont bien mieux équipés que la plupart des dictatures. Dans un réflexe spontané d&amp;rsquo;auto-préservation les États démocratiques font tout pour surveiller les individus au détriment du respect de leurs libertés et de leur vie privée et sans aucune réflexion sur les dégâts potentiels à long terme.&lt;/p&gt;
+
+&lt;h2 id=&#34;le-chiffrage-des-transmissions-de-données-ce-n-est-pas-le-vrai-chiffrage&#34;&gt;Le chiffrage des transmissions de données ce n&amp;rsquo;est pas le vrai chiffrage !&lt;/h2&gt;
+
+&lt;p&gt;Lorsque vous voyez l&amp;rsquo;icône du cadenas dans votre navigateur web vous pouvez vous croire protégé. Faux. Archi-faux. Ce qui est chiffré c&amp;rsquo;est uniquement la transmission des données entre votre machine et le serveur situé quelque part ailleurs sur terre.  Toute personne qui a accès à votre machine ou la machine à distance pourra accéder à vos données. Quelques exemples de services qui ne chiffrent que la transmission des données ? Voilà :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;gmail&lt;/li&gt;
+&lt;li&gt;Dropbox&lt;/li&gt;
+&lt;li&gt;OneDrive&lt;/li&gt;
+&lt;li&gt;iCloud&lt;/li&gt;
+&lt;li&gt;Hotmail&lt;/li&gt;
+&lt;li&gt;Slack&lt;/li&gt;
+&lt;li&gt;Facebook&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Je continue ? 99,99% des services internet ne chiffrent nos données que durant la transmission. Par exemple une personne mal intentionnée qui accède à la machine sur laquelle sont stockées vos fichiers Dropbox peut les lire sans aucune difficulté. Certaines données, comme le mot de passe, sont souvent chiffrées, c&amp;rsquo;est vrai (avec différentes méthodes comme le hash et le salt trop longues à décrire ici), mais toutes les autres données sont stockées sans aucun chiffrage.&lt;/p&gt;
+
+&lt;h2 id=&#34;le-chiffrage-de-bout-en-bout-seule-véritable-solution-sécurisée&#34;&gt;Le chiffrage de bout en bout, seule véritable solution sécurisée&lt;/h2&gt;
+
+&lt;p&gt;Pour avoir des données réellement sécurisées, il faut utiliser ce qu&amp;rsquo;on appelle le chiffrage de bout en bout. Les données sont chiffrées partout. Seul le propriétaire, et éventuellement le destinataire, doivent pouvoir lire les données. De plus il faut que la mise en œuvre du chiffrage soit : &lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;fiable, ce qui est très difficile à faire (par exemple la NSA a poussé à l&amp;rsquo;adoption de certains algorithmes de chiffrage comportant des faiblesses qui rendent le déchiffrage beaucoup plus facile),&lt;/li&gt;
+&lt;li&gt;auditable pour vérifier qu&amp;rsquo;elle ne comporte pas de « porte dérobée » (par exemple via un mot de passe secret qui permettrait à une agence de renseignement d&amp;rsquo;accéder à vos données),&lt;/li&gt;
+&lt;li&gt;chiffre également ce qu&amp;rsquo;on appelle les méta-data ou du moins en minimise l&amp;rsquo;empreinte. Un exemple de méta-data c&amp;rsquo;est la liste des appels que vous avez passé depuis votre téléphone ; ce sont des données supplémentaires qui sont nécessaires pour transmettre les données principales, mais qui peuvent être utilisées contre vous.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;La liste de services internet qui respectent ces critères pour le chiffrement de bout en bout est incroyablement courte. Pour plusieurs raisons. Premièrement, comme déjà évoqué, c&amp;rsquo;est très difficile à mettre en œuvre correctement et cela demande un niveau de compétences spécifiques très élevé. Deuxièmement les agences de surveillance font tout pour empêcher le développement de ces solutions. Voici néanmoins une liste de solutions qui, au mieux de mes connaissances, utilisent le chiffrage de bout en bout.&lt;/p&gt;
+
+&lt;h2 id=&#34;email-protonmail&#34;&gt;Email: Protonmail&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://www.protonmail.com&#34;&gt;Protonmail&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Protonmail est un service d&amp;rsquo;email sécurisé basé en Suisse. Attention, il ne fonctionnera de manière sécurisée que lorsque les emails sont échangées entre adresses @protonmail.com - si vous envoyez un email à une autre adresse, par exemple @gmail.com, cet email ne sera pas chiffré. C&amp;rsquo;est une limitation impossible à contourner à cause du fonctionnement non chiffré des messageries email classiques. Le service fonctionne bien, mais par contre il possède plusieurs faiblesses potentielles. La première est l&amp;rsquo;utilisation de JavaScript dans le navigateur pour assurer le chiffrage qui ne permet pas de garantir une sécurité à 100% (compromission des serveurs de Protonmail, man in the middle attack). L&amp;rsquo;utilisation de l&amp;rsquo;App iOS ou Android permet de résoudre ce problème. La deuxième est que vos clés de chiffrement sont stockées sur leurs serveurs. Néanmoins Protonmail semble un excellent compromis entre sécurité et facilité d&amp;rsquo;utilisation.&lt;/p&gt;
+
+&lt;p&gt;À noter que pour freiner l&amp;rsquo;adoption de Protonmail celui-ci a mystérieusement disparu des résultats de recherche de Google pendant plusieurs mois. Google n&amp;rsquo;a jamais fourni d&amp;rsquo;explication, mais on peut penser que la concurrence que Protonmail représente pour gmail n&amp;rsquo;y est pas étrangère.&lt;/p&gt;
+
+&lt;h2 id=&#34;messagerie-instantanée-signal&#34;&gt;Messagerie instantanée : Signal&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://whispersystems.org/#page-top&#34;&gt;Signal&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Signal est à l&amp;rsquo;heure actuelle une des seules messageries instantanées qui supporte le chiffrage de bout en bout de manière suffisamment fiable et auditée.&lt;/p&gt;
+
+&lt;p&gt;Oubliez WhatsApp ou Skype. WhatsApp a été racheté par Facebook. Microsoft a modifié l&amp;rsquo;architecture de Skype pour permettre à la NSA d&amp;rsquo;écouter toutes les conversations.&lt;/p&gt;
+
+&lt;h2 id=&#34;gtd-omnifocus&#34;&gt;GTD : Omnifocus&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.omnigroup.com/omnifocus/&#34;&gt;Omnifocus&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Omnifocus 2 utilise les serveurs de Omni Group pour la synchronisation entre appareils et supporte le chiffrage de sa base de données de bout en bout. Le chiffrage a lieu &lt;em&gt;avant&lt;/em&gt; que les données ne quittent vos appareils. Cela signifie que les données stockées sur les serveurs de Omni Group sont illisibles pour toutes les personnes qui ne disposent pas du mot de passe ; même les employés de Omni Group ne peuvent y accéder.&lt;/p&gt;
+
+&lt;p&gt;C&amp;rsquo;est un excellent pas dans la bonne direction, même si comme souvent il est impossible d&amp;rsquo;être certain qu&amp;rsquo;aucune porte dérobée n&amp;rsquo;existe.&lt;/p&gt;
+
+&lt;h2 id=&#34;disque-dur-truecrypt-ou-veracrypt-avertissement&#34;&gt;Disque Dur : TrueCrypt ou VeraCrypt (Avertissement !)&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.grc.com/misc/truecrypt/truecrypt.htm&#34;&gt;TrueCrypt&lt;/a&gt;
+&lt;a href=&#34;https://veracrypt.codeplex.com&#34;&gt;VeraCrypt&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Vous pouvez utiliser TrueCrypt version 7.1a (la dernière vraie version de TrueCrypt, les versions plus récentes n&amp;rsquo;étant pas fiables). Mais attention, le projet n&amp;rsquo;est plus maintenu, après l&amp;rsquo;abandon brutal du projet par l&amp;rsquo;équipe de développement.&lt;/p&gt;
+
+&lt;p&gt;Vous pouvez également vous tourner vers son successeur, VeraCrypt. Même si ces solutions ne sont pas parfaites, ce sont celles qui ont le moins de risques de comporter une porte dérobée cachée.&lt;/p&gt;
+
+&lt;p&gt;Pour chiffrer le contenu de votre disque dur, vous pouvez faire confiance aux solutions standard fournies par Apple (FileVault) ou Microsoft (Bitlocker). Mais il faut savoir que &lt;a href=&#34;http://arstechnica.com/security/2016/08/microsoft-secure-boot-firmware-snafu-leaks-golden-key/&#34;&gt;Microsoft a laissé échapper par mégarde la clé de la porte dérobée pour accéder au contenu des disques lors du Secure Boot&amp;hellip;&lt;/a&gt;. À l&amp;rsquo;heure actuelle aucun élément ne permet d&amp;rsquo;incriminer Apple, mais rien ne permet de garantir que FileVault ne comporte pas une porte dérobée. Par simplicité FileVault est la solution que j&amp;rsquo;utilise pour protéger mes données en cas de vol.&lt;/p&gt;
+
+&lt;h2 id=&#34;en-conclusion&#34;&gt;En conclusion&amp;hellip;&lt;/h2&gt;
+
+&lt;p&gt;Je veux encore rappeler que je ne suis pas un expert de la sécurité et que de nos jours en termes de sécurité on ne peut être sûr de rien. Adopter ces solutions chiffrées de bout en bout, c&amp;rsquo;est bien, mais vous allez vite vous rendre compte de la limite principale : l&amp;rsquo;humain. 90% des utilisateurs se fichent de la sécurité de leurs données et ne voudront pas utiliser Protonmail ou Signal. Tant pis pour eux. Je suis personnellement convaincu que ces solutions doivent être supportées activement pour permettre leur développement et leur adoption par un nombre croissant d&amp;rsquo;utilisateurs.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Quelques trucs en plus pour votre site Hugo</title>
+      <link>https://www.pierremorsa.com/post/2016-08-16-quelques-trucs-en-plus-pour-votre-site-hugo/</link>
+      <pubDate>Tue, 16 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pierremorsa.com/post/2016-08-16-quelques-trucs-en-plus-pour-votre-site-hugo/</guid>
+      <description>
+
+&lt;p&gt;Si vous avez suivi mon guide pour &lt;a href=&#34;https://www.pierremorsa.com/post/2016-08-08-comment-migrer-un-blog-wordpress-sous-hugo/&#34;&gt;migrer un blog Wordpress ou un site Wordpress vers Hugo&lt;/a&gt;, cet article vous donne quelques trucs utiles en plus.&lt;/p&gt;
+
+&lt;h2 id=&#34;faciliter-l-indexation-du-site-avec-sitemap-xml&#34;&gt;Faciliter l&amp;rsquo;indexation du site avec sitemap.xml&lt;/h2&gt;
+
+&lt;p&gt;Hugo génère automatiquement une &amp;ldquo;sitemap&amp;rdquo; de votre site appelée sitemap.xml. Renseignez celle-ci dans les Google Webmaster tools pour garantir la bonne indexation de votre site par le moteur de recherche.&lt;/p&gt;
+
+&lt;h2 id=&#34;intégrer-google-analytics&#34;&gt;Intégrer Google Analytics&lt;/h2&gt;
+
+&lt;p&gt;Mon blog n&amp;rsquo;utilise aucun &amp;ldquo;tracker&amp;rdquo;, mais Hugo fournit l&amp;rsquo;intégration avec Google Analytics en standard.
+Il suffit d&amp;rsquo;ajouter la ligne suivante dans le fichier config.toml
+&lt;code&gt;googleAnalytics = &amp;quot;UA-123-45&amp;quot;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Remplacez UA-123-45 par votre code d&amp;rsquo;identification Google Analytics.&lt;/p&gt;
+
+&lt;h2 id=&#34;générer-un-fichier-robots-txt&#34;&gt;Générer un fichier robots.txt&lt;/h2&gt;
+
+&lt;p&gt;Hugo dispose de la capacité de générer un fichier robots.txt à partir d&amp;rsquo;un template comme le reste des pages du site. Pour plus d&amp;rsquo;informations visitez la page d&amp;rsquo;aide &lt;a href=&#34;http://gohugo.io/extras/robots-txt/&#34;&gt;Custom Robots&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;résoudre-le-problème-des-accents-dans-les-liens-hugo-sur-mac&#34;&gt;Résoudre le problème des accents dans les liens Hugo sur Mac&lt;/h2&gt;
+
+&lt;p&gt;Il existe un problème connu avec les liens ou les noms de catégories accentués avec Hugo sur Mac. C&amp;rsquo;est un problème spécifique à la façon dont le Mac encode les caractères accentués : il utilise le code Unicode NFD (l&amp;rsquo;accent et la lettre sont stockés séparément comme deux caractères) alors que Hugo utilise le code NFC (le caractère accentué est stocké comme un caractère unique).&lt;/p&gt;
+
+&lt;p&gt;Si vous avez un nom de catégorie avec un accent, comme par exemple « Présenter en public », cela va fonctionner localement sur le Mac mais pas sur le serveur distant. La solution préconisée consiste à utiliser rsync pour faire la synchronisation des fichiers. De plus c&amp;rsquo;est beaucoup plus rapide que d&amp;rsquo;utiliser un client sftp ! Le truc est d&amp;rsquo;utiliser l&amp;rsquo;option &lt;code&gt;--iconv=utf-8-mac,utf-8&lt;/code&gt; qui forcera la conversion des caractères accentués du format NFD au format NFC. La commande rsync complète que j&amp;rsquo;utilise est la suivante :
+&lt;code&gt;rsync -a --exclude &#39;.DS_Store&#39; --iconv=utf-8-mac,utf-8 --progress public/ user@serveurdistant:/chemin/distant/&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Si je décompose les options, cela donne :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;-a&lt;/code&gt; pour utiliser le mode archive de rsync&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;--exclude &#39;.DS_Store&#39;&lt;/code&gt; pour exclure les fichiers .DS_Store de la synchronisation.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;--iconv=utf-8-mac,utf-8&lt;/code&gt; est l&amp;rsquo;option magique qui force la conversion des caractères accentués du format NFD au format NFC.&lt;/li&gt;
+&lt;li&gt;L&amp;rsquo;option &lt;code&gt;--progress&lt;/code&gt; n&amp;rsquo;est pas indispensable, elle permet juste d&amp;rsquo;afficher la progression de la synchronisation.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;public/&lt;/code&gt; est le nom du répertoire local contenant les fichiers générés par Hugo (&lt;strong&gt;attention le / à la fin de public/ est très important sinon rsync créera un répertoire nommé &amp;ldquo;public&amp;rdquo; sur le serveur distant&lt;/strong&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;user@serveurdistant:/chemin/distant/&lt;/code&gt; contient le nom d&amp;rsquo;utilisateur, le nom du serveur et le chemin où il faut copier les fichiers (c&amp;rsquo;est le répertoire du serveur web contenant les fichiers de votre site).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;obtenir-plus-d-aide&#34;&gt;Obtenir plus d&amp;rsquo;aide&lt;/h2&gt;
+
+&lt;p&gt;Si vous êtes bloqués et ne trouvez pas la réponse à votre problème il vous reste une solution : visiter le forum de Hugo (en anglais) : &lt;a href=&#34;https://discuss.gohugo.io&#34;&gt;Forum de discussion Hugo&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Comment migrer un blog Wordpress vers Hugo</title>
+      <link>https://www.pierremorsa.com/post/2016-08-08-comment-migrer-un-blog-wordpress-sous-hugo/</link>
+      <pubDate>Mon, 08 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pierremorsa.com/post/2016-08-08-comment-migrer-un-blog-wordpress-sous-hugo/</guid>
+      <description>
+
+&lt;p&gt;Courant du mois de juin 2016 j&amp;rsquo;ai &lt;a href=&#34;http://gohugo.io&#34;&gt;migré mon blog de Wordpress vers Hugo&lt;/a&gt;. Je détaille ici la méthode que j&amp;rsquo;ai suivi pour les personnes qui souhaitent faire la même chose. Ce guide est loin d&amp;rsquo;être complet ; si vous vous retrouvez bloqué à une étape, consultez la documentation officielle. Si vous voulez suggérer des améliorations ou des corrections pour le guide contactez-moi directement à monprénom.monnom@pierremorsa.com&lt;/p&gt;
+
+&lt;p&gt;Avant de commencer, Sachez que si gérer un blog sur Hugo a des avantages et est à mon goût bien plus agréable que Wordpress, cela demande plus de connaissances techniques. Si vous n&amp;rsquo;avez jamais utilisé la ligne de commande sous Unix, si pour vous Apache n&amp;rsquo;évoque rien d&amp;rsquo;autre que les Indiens, je vous conseille de rester sur Wordpress.&lt;/p&gt;
+
+&lt;p&gt;Dans tous les cas :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Lisez tout le guide jusqu&amp;rsquo;au bout de la fin de manière complète et exhaustive avant de vous lancer dans l&amp;rsquo;aventure.&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Gardez une copie de sauvegarde de votre site Wordpress, et surtout ne le désactivez pas avant la fin de la migration.&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Ce guide peut contenir des erreurs ou des instructions qui font exploser votre blog, vous vous lancez dans l&amp;rsquo;aventure à vos risques et périls et sous votre entière responsabilité.&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Vous allez fatalement rencontrer un problème non documenté dans ce guide, une bonne connaissance de l&amp;rsquo;anglais est nécessaire pour consulter la documentation complète de Hugo.&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Ça c&amp;rsquo;est dit. Perso je ne lis jamais toutes les instructions avant de me lancer dans un truc risqué. Je préfère tout péter, paniquer et lire après.&lt;/p&gt;
+
+&lt;h2 id=&#34;pourquoi-migrer-de-wordpress-vers-hugo&#34;&gt;Pourquoi migrer de Wordpress vers Hugo ?&lt;/h2&gt;
+
+&lt;p&gt;La philosophie de Hugo est radicalement différente de celle de Wordpress. Pour schématiser, chaque fois qu&amp;rsquo;un visiteur charge une page sur Wordpress, Wordpress reconstruit toute la page avant de l&amp;rsquo;envoyer au visiteur. Hugo construit toutes les page une seule fois, on envoie les pages sur le serveur Web Apache ou autre qui se charge d&amp;rsquo;envoyer les pages statiques préconstruites au visiteur.&lt;/p&gt;
+
+&lt;p&gt;Pour moi les deux grands avantages de Hugo sont la vitesse et la sécurité. Le désavantage est l&amp;rsquo;impossibilité de servir du contenu &amp;ldquo;dynamique&amp;rdquo;, par exemple des commentaires&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;, un compteur ou du contenu qui changerait à une date précise&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:2&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;. Les avantages et désavantages de Wordpress sont exactement à l&amp;rsquo;opposé.&lt;/p&gt;
+
+&lt;p&gt;Testez bien Hugo avant de décider si oui ou non cette solution peut convenir pour votre blog.&lt;/p&gt;
+
+&lt;h2 id=&#34;installer-hugo-sur-votre-ordinateur&#34;&gt;Installer Hugo sur votre ordinateur&lt;/h2&gt;
+
+&lt;p&gt;J&amp;rsquo;ai installé Hugo sur un Mac, mais il est disponible pour d&amp;rsquo;autres plateformes, dont Linux et Windows. Pour le télécharger, allez sur la page Github &lt;a href=&#34;https://github.com/spf13/hugo/releases&#34;&gt;des versions de Hugo&lt;/a&gt;. Ensuite, le mieux est de l&amp;rsquo;installer dans un des répertoires d&amp;rsquo;où il sera accessible depuis la ligne de commande. Je l&amp;rsquo;ai mis dans
+&lt;code&gt;/usr/local/bin/&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Lancez le terminal et faites un test. Tapez
+&lt;code&gt;hugo help&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Vous devriez voir s&amp;rsquo;afficher l&amp;rsquo;aide de Hugo. Si cela fonctionne, félicitations, vous venez d&amp;rsquo;installer Hugo ! Vous pouvez maintenant passer à l&amp;rsquo;étape suivante : créer votre premier site, dans ce cas votre blog.&lt;/p&gt;
+
+&lt;h2 id=&#34;créer-votre-blog-sur-hugo&#34;&gt;Créer votre blog sur Hugo&lt;/h2&gt;
+
+&lt;p&gt;Assurez-vous avant toute chose d&amp;rsquo;être dans le bon répertoire. Si nécessaire déplacez-vous jusque dans le bon répertoire à coups de cd. Prêt ? Pour créer le site, il suffit de taper
+&lt;code&gt;hugo new site nom-du-site&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Par exemple pour créer www.pierremorsa.com il faut taper &lt;code&gt;hugo new site www.pierremorsa.com&lt;/code&gt; - le nom du répertoire n&amp;rsquo;a pas réellement d&amp;rsquo;importance et j&amp;rsquo;aurais pu créer www.pierremorsa.com avec la commande &lt;code&gt;hugo new site toto&lt;/code&gt;, Hugo aurait alors créé mon site dans un répertoire nommé toto.&lt;/p&gt;
+
+&lt;p&gt;Hugo va automatiquement créer presque toute la structure nécessaire à un nouveau site, à l&amp;rsquo;exception de deux éléments indispensables : le thème et bien sûr le contenu.&lt;/p&gt;
+
+&lt;h2 id=&#34;ajouter-un-thème&#34;&gt;Ajouter un thème&lt;/h2&gt;
+
+&lt;p&gt;À la louche, le concept des thèmes de Hugo est similaire à celui de Wordpress. Dans le détail, il est très différent. On choisit un thème, et Hugo se charge de définir le look et la structure des pages. Et tout comme pour Wordpress l&amp;rsquo;idéal est de partir d&amp;rsquo;un thème existant.&lt;/p&gt;
+
+&lt;p&gt;Allez sur &lt;a href=&#34;http://themes.gohugo.io&#34;&gt;le répertoire des thèmes Hugo&lt;/a&gt; et choisissez un thème qui vous plaît et convient à un blog. Mon blog utilise une version modifiée du thème &lt;a href=&#34;http://themes.gohugo.io/future-imperfect/&#34;&gt;Hugo Future Imperfect&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Téléchargez le thème, dézippez-le si nécessaire, puis faites glisser le dossier dans le répertoire themes de votre site.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;nom-du-site
+    - themes
+        - répertoire du thème
+            - fichiers du thème
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;configurer-le-site&#34;&gt;Configurer le site&lt;/h2&gt;
+
+&lt;p&gt;Une fois le thème installé, il ne reste qu&amp;rsquo;une étape avant de pouvoir passer au contenu : configurer le site. Tout se passe dans le fichier au doux nom de
+&lt;code&gt;config.toml&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Contrairement à Wordpress, il ne suffit pas de prendre un nouveau thème et l&amp;rsquo;activer pour que ça marche, chaque thème requiert une configuration spécifique du fichier config.toml ou il ne fonctionnera pas correctement. Oui, c&amp;rsquo;est moins facile que sur Wordpress mais c&amp;rsquo;est une approche différente.&lt;/p&gt;
+
+&lt;p&gt;Commencez par &lt;strong&gt;copier&lt;/strong&gt; (pas déplacer) le fichier exemple &lt;code&gt;/votre-site/themes/nom-du-theme/exampleSite/config.toml&lt;/code&gt; vers le répertoire racine de votre site &lt;code&gt;/nom-du-site/config.toml&lt;/code&gt;. C&amp;rsquo;est la copie que nous allons modifier, l&amp;rsquo;original pourra être utile pour revenir en arrière si vous cassez tout (notez que je dis nous modifions, vous cassez, mais je casse tout régulièrement).&lt;/p&gt;
+
+&lt;p&gt;Si vous avez une barbe ou une moustache d&amp;rsquo;ingénieur ou un t-shirt Grateful Dead vous savez comment utiliser &lt;code&gt;vi&lt;/code&gt; &lt;code&gt;pico&lt;/code&gt; &lt;code&gt;nano&lt;/code&gt; et autres pour éditer le fichier. Perso j&amp;rsquo;ai vraiment l&amp;rsquo;air moche avec une moustache, je préfère les éditeurs graphiques comme Textmate ou Espresso.&lt;/p&gt;
+
+&lt;p&gt;Le fichier de configuration contient tous les paramètres spécifiques au site : son nom, son url, et si le thème est fait correctement tous les textes à traduire dans une autre langue si nécessaire (et si vous lisez ce blog c&amp;rsquo;est probablement que vous allez les traduire en français).&lt;/p&gt;
+
+&lt;p&gt;Vous pouvez indiquer à Hugo le thème à utiliser comme option de la ligne de commande à chaque fois, mais je trouve qu&amp;rsquo;il est plus simple de le configurer une bonne fois pour toute dans le fichier config.toml. Pour ce faire, ajoutez au début la ligne
+&lt;code&gt;theme = &amp;quot;nom_du-theme&amp;quot;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;nom-du-theme est le nom exact du répertoire contenant le thème. Il faut bien inclure les guillemets autour du nom, et il ne faut renseigner que le nom du répertoire du thème, pas le chemin complet.&lt;/p&gt;
+
+&lt;h2 id=&#34;démarrer-le-serveur-de-test-de-hugo&#34;&gt;Démarrer le serveur de test de Hugo&lt;/h2&gt;
+
+&lt;p&gt;Hugo dispose d&amp;rsquo;un serveur web intégré qui rafraîchit en temps réel les pages chaque fois que vous modifiez quelque chose sur le site, que ce soit le contenu, la configuration ou un élément du thème comme les styles css ou le code d&amp;rsquo;une page. Cela permet de savoir presque instantanément si les modifications que l&amp;rsquo;on vient de faire fonctionnent correctement. Mais&amp;hellip; allez-vous me dire, Hugo est un générateur de sites et il doit pourtant reconstruire les pages à chaque fois, comment cela peut-il être aussi rapide ?  Simplement parce que Hugo est très rapide ; il met environ 1 ms (oui millisecondes) pour construire une page. Bref, démarrons le serveur de test avec la commande
+&lt;code&gt;hugo server&lt;/code&gt;
+Voilà. Lancez votre navigateur préféré et allez sur
+&lt;code&gt;localhost:1313&lt;/code&gt;
+C&amp;rsquo;est l&amp;rsquo;adresse du serveur de test, et vous devriez immédiatement voir votre page d&amp;rsquo;accueil s&amp;rsquo;afficher.&lt;/p&gt;
+
+&lt;p&gt;Attention, si l&amp;rsquo;url de votre site contient un sous-répertoire, par exemple &lt;code&gt;http://monsite.com/fr/&lt;/code&gt; vous devez taper &lt;code&gt;localhost:1313/fr/&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;écrire-votre-premier-article&#34;&gt;Écrire votre premier article&lt;/h2&gt;
+
+&lt;p&gt;Pour créer un nouvel article (post en anglais) Appelé Toto sous Hugo, tapez
+&lt;code&gt;hugo new /post/toto.md&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Cette commande va créer un nouveau fichier nommé &lt;code&gt;toto.md&lt;/code&gt; contenant les informations de l&amp;rsquo;article dans le répertoire &lt;code&gt;/nom-du-site/content/post/toto.md&lt;/code&gt;. Cet article est accessible à l&amp;rsquo;url de test &lt;code&gt;localhost:1313/post/toto/&lt;/code&gt;. Vous pouvez très bien décider que vos articles vont dans le répertoire &lt;code&gt;/content/article/&lt;/code&gt; et taper la commande &lt;code&gt;hugo new /article/toto.md&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Il n&amp;rsquo;est pas obligatoire d&amp;rsquo;appeler tous vos articles Toto (ha ha ha), mais pour éviter les problèmes liés aux noms de fichiers je vous conseille de n&amp;rsquo;utiliser que les lettres minuscules a - z non accentuées, les chiffres 0 - 9, le tiret simple - et le &amp;ldquo;underscore&amp;rdquo; _.&lt;/p&gt;
+
+&lt;p&gt;Dernier truc, au bout d&amp;rsquo;un temps il va devenir difficile de retrouver vos petits, aussi je préfixe le nom de mes fichiers d&amp;rsquo;article avec la date de publication. Par exemple :
+&lt;code&gt;/content/post/2016-08-05-comment-devenir-maitre-du-monde-avec-un-elastique-et-trois-trombones.md&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Une fois le fichier article créé, ouvrez-le dans un éditeur texte. Même Notepad et TextEdit peuvent convenir, mais je vous conseille d&amp;rsquo;en utiliser un supportant la syntaxe Markdown. Par exemple cet article a été entièrement écrit dans IA Writer, mais vous pouvez très bien utiliser un éditeur hexadécimal si c&amp;rsquo;est trop simple pour vous.&lt;/p&gt;
+
+&lt;p&gt;Un fichier article se comporte de deux parties :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Le Front Matter, entouré de signes +++, &amp;mdash; ou ===. Sans rentrer dans les détails, le front matter peut être au format TOML (+++), YAML (&amp;mdash;) ou JSON (===).&lt;/li&gt;
+&lt;li&gt;Le contenu de l&amp;rsquo;article lui-même, au format Markdown et constitué de tout le contenu situé sous le front matter.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Voici un exemple de Front Matter au format TOML :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;+++
+title      = &amp;quot;Devenir nomade digital&amp;quot;
+author     = &amp;quot;Pierre Morsa&amp;quot;
+date       = &amp;quot;2016-08-01&amp;quot;
+categories = [ &amp;quot;Lifehacks&amp;quot; ]
+draft      = false
++++
+
+Contenu de l&#39;article bla bla bla...
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Le front matter contient les informations de l&amp;rsquo;article : la date, le titre, l&amp;rsquo;url, la description, le statut (draft ou publié), les tags et catégories, etc. Je ne vais pas décrire ici en détail toutes les possibilités, je vous conseille de vous référer à la &lt;a href=&#34;http://gohugo.io/overview/introduction/&#34;&gt;documentation de Hugo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Le répertoire &lt;code&gt;/nom-du-site/archetypes/&lt;/code&gt; permet de définir le front matter par défaut pour un type de contenu précis (post, page, article sont des types de contenus). Référez-vous à la documentation de Hugo pour en savoir plus.&lt;/p&gt;
+
+&lt;p&gt;Maintenant, il ne reste plus qu&amp;rsquo;à écrire votre article au format Markdown. À chaque fois que vous sauvegardez le fichier la page est reconstruite automatiquement par Hugo et rafraîchie par le serveur interne dans votre browser favori. Difficile de faire plus simple !&lt;/p&gt;
+
+&lt;p&gt;Important : à ce stade, toutes les pages générées sont encore en local sur votre ordinateur, rien n&amp;rsquo;est publié sur Internet ni sur Minitel. Nous verrons plus loin comment publier le site généré sur le serveur web.&lt;/p&gt;
+
+&lt;h2 id=&#34;en-savoir-un-peu-plus-sur-la-structure-de-hugo&#34;&gt;En savoir un peu plus sur la structure de Hugo&lt;/h2&gt;
+
+&lt;p&gt;Avant d&amp;rsquo;aller plus loin, il est utile de comprendre à quoi correspondent tous les répertoires dans votre site.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;/archetypes/&lt;/code&gt; permet de définir les front matter par défaut pour les différents types de contenu.
+&lt;code&gt;/content/&lt;/code&gt; accueille le contenu de votre site, comme les pages ou les articles.
+&lt;code&gt;/data/&lt;/code&gt; contient les fichiers de données structurées. Pour un blog, vous n&amp;rsquo;en aurez probablement pas besoin.
+&lt;code&gt;/layout/&lt;/code&gt; est le répertoire qui contient les fichiers personnalisés définissant la structure des pages comme la page d&amp;rsquo;accueil, les articles, les listes d&amp;rsquo;articles par tag ou taxonomie, etc. (voir plus bas le fonctionnement de ce répertoire avec les thèmes).
+&lt;code&gt;/public/&lt;/code&gt; contient les pages statiques générées. C&amp;rsquo;est le contenu de ce répertoire qu&amp;rsquo;il faudra publier sur votre site web. S&amp;rsquo;il est vide c&amp;rsquo;est que vous n&amp;rsquo;avez pas encore généré le site (voir plus bas, lancer le serveur interne Hugo n&amp;rsquo;est pas suffisant).
+&lt;code&gt;/static/&lt;/code&gt; contient tous les fichiers qui ne changent pas, ou rarement. En particulier les styles css, le code JavaScript (que ce site n&amp;rsquo;utilise pas) et les images.&lt;/p&gt;
+
+&lt;p&gt;Lors de la génération des pages Hugo va d&amp;rsquo;abord essayer de trouver un fichier dans les répertoires propres du site, puis s&amp;rsquo;il ne le trouve pas il prendra celui du thème. Par exemple il cherchera d&amp;rsquo;abord le fichier &lt;code&gt;styles.css&lt;/code&gt; dans &lt;code&gt;/static/css/&lt;/code&gt; et s&amp;rsquo;il ne le trouve pas il cherchera le fichier dans &lt;code&gt;/themes/nom-du-theme/static/css/&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Pour modifier un thème, il vaut mieux ne pas toucher aux fichiers originaux, mais en faire une copie dans le répertoire propre et modifier cette copie. Honnêtement le fonctionnement des thèmes pourrait être amélioré sur Hugo.&lt;/p&gt;
+
+&lt;h3 id=&#34;la-différence-entre-content-et-data&#34;&gt;la différence entre /content/ et /data/&lt;/h3&gt;
+
+&lt;p&gt;Vous pouvez vous demander pourquoi il existe à la fois les répertoires /content/ et /data/. De manière générale, si vous avez du contenu qui correspond à une page, par exemple un article, il va dans /content/. S&amp;rsquo;il s&amp;rsquo;agit de données structurées ne correspondant pas au texte principal de la page, c&amp;rsquo;est du /data/. Voici quelques exemples plus concrets :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Le texte d&amp;rsquo;une page va dans /content/&lt;/li&gt;
+&lt;li&gt;Le texte d&amp;rsquo;un article va dans /content/&lt;/li&gt;
+&lt;li&gt;Une liste des membres de votre équipe va dans /data/&lt;/li&gt;
+&lt;li&gt;Une liste de caractéristiques produits va dans /data/&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Ce n&amp;rsquo;est qu&amp;rsquo;une liste indicative, en effet cela dépend aussi de la façon dont le thème est construit et dont votre site est structuré.&lt;/p&gt;
+
+&lt;h2 id=&#34;récupérer-le-contenu-de-votre-blog-wordpress&#34;&gt;Récupérer le contenu de votre blog Wordpress&lt;/h2&gt;
+
+&lt;p&gt;Maintenant que vous avez un beau nouveau blog sous Hugo, il faut passer à l&amp;rsquo;étape pénible. J&amp;rsquo;ai nommé la migration des données de Wordpress vers Hugo. Selon le nombre d&amp;rsquo;articles de votre blog cette étape peut être très (très très) longue et surtout très chiante.&lt;/p&gt;
+
+&lt;p&gt;IL existe un &lt;a href=&#34;https://github.com/SchumacherFM/wordpress-to-hugo-exporter&#34;&gt;module d&amp;rsquo;export de Wordpress vers Hugo&lt;/a&gt; qui récupère toutes les pages et tous les articles en incluant le front matter, mais il ne marche pas très bien ou pas du tout. À la place vous pouvez utiliser &lt;a href=&#34;https://github.com/thomasf/exitwp&#34;&gt;ExitWP&lt;/a&gt;. Il faut ensuite recopier les fichiers articles dans le répertoire &lt;code&gt;/content/post/&lt;/code&gt; et les images dans &lt;code&gt;/static/nom-du-repertoire-images/&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Vous allez donc avoir après la migration :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;nom-du-site
+    - content
+        - post
+            - Les articles récupérés
+    - static
+        - img
+            - Les images récupérées
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Lorsque j&amp;rsquo;ai récupéré mes articles, j&amp;rsquo;ai eu la surprise de constater qu&amp;rsquo;au fil du temps Wordpress avait accumulé des articles au format texte avec différents encodages de caractères et d&amp;rsquo;autres au format HTML. J&amp;rsquo;ai donc du passer pas mal de temps à réparer les caractères accentués qui avaient été modifiés ou perdus. Vient ensuite l&amp;rsquo;étape la plus pénible : vous devrez si nécessaire recréer tous les liens vers les images.&lt;/p&gt;
+
+&lt;h2 id=&#34;récupérer-les-commentaires-de-votre-blog&#34;&gt;Récupérer les commentaires de votre blog&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Attention : je n&amp;rsquo;ai personnellement pas essayé cette étape, je ne peux donc pas garantir qu&amp;rsquo;elle fonctionne ou vous aider à résoudre d&amp;rsquo;éventuels problèmes techniques.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Hugo propose en standard l&amp;rsquo;intégration avec Disqus, une plateforme de commentaires en ligne. Si vous voulez conserver les commentaires sur vos articles, la méthode préconisée est de :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;À partir de Wordpress, faire migrer les commentaires de Wordpress vers Disqus en utilisant un plugin Wordpress.&lt;/li&gt;
+&lt;li&gt;Une fois les commentaires migrés, reconnecter les commentaires Disqus à votre blog sous Hugo.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;D&amp;rsquo;autres Blogueurs expliquent avoir effectué la manœuvre avec succès, mais encore une fois je ne l&amp;rsquo;ai pas fait, donc je suis incapable de vous aider ou de vous mettre en garde contre d&amp;rsquo;éventuelles galères.&lt;/p&gt;
+
+&lt;h2 id=&#34;générer-le-site&#34;&gt;Générer le site&lt;/h2&gt;
+
+&lt;p&gt;À partir de la ligne de commande, tapez
+&lt;code&gt;hugo&lt;/code&gt;
+C&amp;rsquo;est tout ! Même avec des milliers de pages, cela ne prend que quelques secondes. Hugo va génère le site statique dans le répertoire &lt;code&gt;/nom-du-site/public/&lt;/code&gt;. C&amp;rsquo;est le contenu de ce répertoire que vous allez maintenant copier vers la racine du site sur votre serveur Web.&lt;/p&gt;
+
+&lt;h2 id=&#34;télécharger-les-pages-sur-le-serveur-web&#34;&gt;Télécharger les pages sur le serveur Web&lt;/h2&gt;
+
+&lt;p&gt;Note du 2016-08-16 : désormais je recommande rsync comme méthode de téléchargement des pages sur le serveur Web. &lt;a href=&#34;https://www.pierremorsa.com/post/2016-08-16-quelques-trucs-en-plus-pour-votre-site-hugo/&#34;&gt;Voir pourquoi dans cet article&lt;/a&gt;. C&amp;rsquo;est plus rapide, et cela résout un problème précis lié aux urls avec accents sur Mac.&lt;/p&gt;
+
+&lt;p&gt;Je n&amp;rsquo;explique pas ici comment créer un site sur Apache ou nginx ou autre, parce que cela prendrait trop de temps, qu&amp;rsquo;il existe déjà plein de guides en ligne, et que cela peut varier selon la plateforme, l&amp;rsquo;hébergeur et l&amp;rsquo;âge de Curtis Newton (vous savez, le Capitaine Flam).&lt;/p&gt;
+
+&lt;p&gt;Comme je n&amp;rsquo;ai pas de moustache, pour télécharger les pages sur le serveur j&amp;rsquo;utilise Transmit, un programme de transfert ftp et sftp que j&amp;rsquo;utilise depuis des années, mais n&amp;rsquo;importe quel autre méthode de transfert peut faire l&amp;rsquo;affaire. Copiez &lt;strong&gt;tout&lt;/strong&gt; le contenu de &lt;code&gt;/public/&lt;/code&gt; vers le répertoire racine de votre site public, mais pas le répertoire &lt;code&gt;/public/&lt;/code&gt; lui-même.&lt;/p&gt;
+
+&lt;p&gt;Si le site ne fonctionne pas sur le serveur public alors qu&amp;rsquo;il fonctionne bien sur le serveur interne de Hugo, commencez par :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Paniquer.&lt;/li&gt;
+&lt;li&gt;Vérifier que l&amp;rsquo;url du site est bien renseigné dans le fichier &lt;code&gt;config.toml&lt;/code&gt; (une de mes erreurs préférées est de laisser l&amp;rsquo;url de mon site de test sandboxing au lieu de l&amp;rsquo;url du site de production).&lt;/li&gt;
+&lt;li&gt;Si ça ne marche toujours pas, vérifiez que vous avez bien copié les bons fichiers au bon endroit : tout le contenu de &lt;code&gt;/votre-site/public/&lt;/code&gt; doit être copié dans &lt;code&gt;/chemin-de-votre-serveur-public/votre-site/&lt;/code&gt;. Les fichiers ne doivent pas être dans un sous-répertoire /public/ sur le serveur public.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Note : le serveur interne de Hugo est excellent pour développer et tester son site en temps réel, mais il n&amp;rsquo;est pas fait pour être utilisé en production. C&amp;rsquo;est possible mais c&amp;rsquo;est à vos risques et périls.&lt;/p&gt;
+
+&lt;h2 id=&#34;rigolez-des-problèmes-de-sécurité-des-blogs-sur-wordpress&#34;&gt;Rigolez des problèmes de sécurité des blogs sur Wordpress&lt;/h2&gt;
+
+&lt;p&gt;Et voilà. Testez votre site. Émerveillez-vous de sa vitesse. Faites des Oh et des Ah. Ricanez méchamment à la vue de tous ces blogs Wordpress à la merci des Hackers de 7 ans. Fini les mises à jour de plugins qui foirent !&lt;/p&gt;
+
+&lt;p&gt;Même si ce tutoriel prend l&amp;rsquo;exemple d&amp;rsquo;un blog, Hugo peut très bien servir à générer n&amp;rsquo;importe quel type de site statique, par exemple le site &lt;a href=&#34;https://presentationzen.training&#34;&gt;presentationzen.training&lt;/a&gt; est entièrement réalisé sur Hugo.&lt;/p&gt;
+
+&lt;p&gt;Si vous avez des questions ou des suggestions sur ce tutoriel, vous pouvez me les envoyer par email (monprénom.monnom@pierremorsa.com).&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;Ce n&amp;rsquo;est pas tout à fait vrai car Hugo supporte de manière native l&amp;rsquo;intégration avec Disqus, une plateforme de commentaires. J&amp;rsquo;ai choisi de ne pas l&amp;rsquo;utiliser car elle utilise JavaScript et elle enregistre vos visites de site en site.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34;&gt;Pas tout à fait vrai non plus, JavaScript permettant de contourner certaines limites, mais pas toutes.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:2&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

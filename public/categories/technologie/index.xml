@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>technologie on Pierre Morsa</title>
+    <link>https://www.pierremorsa.com/categories/technologie/index.xml</link>
+    <description>Recent content in technologie on Pierre Morsa</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <atom:link href="/categories/technologie/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Nomade digital, étape 4 : sauvegarder pour éviter la perte de données</title>
+      <link>https://www.pierremorsa.com/post/2017-09-04-Nomade-digital-etape-4-sauvegarder-pour-eviter-perte-donn%C3%A9es/</link>
+      <pubDate>Mon, 04 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pierremorsa.com/post/2017-09-04-Nomade-digital-etape-4-sauvegarder-pour-eviter-perte-donn%C3%A9es/</guid>
+      <description>
+
+&lt;p&gt;J&amp;rsquo;emporte mon ordinateur ou mon iPad un peu partout. Le risque de le perdre ou de le casser  est donc bien réel ; par exemple en 2015 je me suis fait voler mon MacBook Pro dans le TGV.&lt;/p&gt;
+
+&lt;p&gt;En fait, la vraie question n&amp;rsquo;est pas de savoir si vous risquez de perdre des données, mais quand cela va arriver. Car cela fini toujours par arriver. Et lorsque cela se produit, pleurer ne sert à rien. Il faut avoir une sauvegarde de ses données. Ce message a beau être rappelé fréquemment, le nombre d&amp;rsquo;utilisateurs qui ne font aucune sauvegarde est hallucinant.&lt;/p&gt;
+
+&lt;p&gt;Aussi voici un petit guide expliquant les risques et les solutions pour s&amp;rsquo;en prémunir. Je n&amp;rsquo;ai pas expliqué en détail le fonctionnement de chaque solution, sinon cet article aurait fait 100 pages.&lt;/p&gt;
+
+&lt;h2 id=&#34;comprendre-les-différents-risques-de-perte-de-données&#34;&gt;Comprendre les différents risques de perte de données&lt;/h2&gt;
+
+&lt;p&gt;Différents types d&amp;rsquo;incidents peuvent entraîner une perte de données ; une bonne stratégie de sauvegarde va vous protéger contre tous les risques.&lt;/p&gt;
+
+&lt;p&gt;En voici une liste non exhaustive, plus ou moins classé du plus probable au moins probable :&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Vous modifiez un document et vous rendez compte plus tard que vous voulez revenir en arrière pour une raison ou une autre.&lt;/li&gt;
+&lt;li&gt;Vous effacez un ou plusieurs documents par erreur.&lt;/li&gt;
+&lt;li&gt;Votre ordinateur ou un disque tombe en panne.&lt;/li&gt;
+&lt;li&gt;Votre ordinateur et &lt;em&gt;toutes&lt;/em&gt; vos sauvegardes locales sont volés.&lt;/li&gt;
+&lt;li&gt;Votre ordinateur est hacké (par exemple ransomware).&lt;/li&gt;
+&lt;li&gt;Votre compte Cloud est hacké et détruit.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Une stratégie de sauvegarde idéale va donc vous prémunir contre tous les cas cités. Pour se faire elle doit :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Garder un historique des versions récentes de vos documents pendant un certain temps, par exemple les 4 dernières semaines.&lt;/li&gt;
+&lt;li&gt;Garder une copie à jour de tous vos documents importants ailleurs que chez vous, par exemple dans le Cloud.&lt;/li&gt;
+&lt;li&gt;Avoir une copie de sauvegarde déconnectée pour qu&amp;rsquo;elle ne soit pas endommagée par un éventuel ransomware (par exemple sur un disque dur stocké séparément). Ce cas est celui qui est le moins souvent pris en compte.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;raid-sauvegarde&#34;&gt;RAID ≠ sauvegarde&lt;/h2&gt;
+
+&lt;p&gt;Une précision importante avant d&amp;rsquo;aborder les différentes stratégies de sauvegarde : les systèmes RAID ont pour objectif d&amp;rsquo;améliorer le taux de disponibilité et la vitesse, ils ne sont pas une protection contre la perte de données. De fait, un système RAID 1 ou plus ne couvre que le cas 3, un disque tombe en panne. Le RAID 0 &lt;em&gt;augmente&lt;/em&gt; même le risque de perdre des données au lieu de le diminuer.&lt;/p&gt;
+
+&lt;p&gt;Un système RAID ne vous protégera pas contre les cas 1, 2, 4, 5 et 6 !&lt;/p&gt;
+
+&lt;h2 id=&#34;sauvegarde-locale-avec-time-machine&#34;&gt;Sauvegarde locale avec Time Machine&lt;/h2&gt;
+
+&lt;p&gt;Time Machine va vous couvrir contre les cas 1, 2 et 3, ce qui est déjà pas mal du tout.&lt;/p&gt;
+
+&lt;p&gt;Le matériel nécessaire se limite à un disque externe d&amp;rsquo;une taille au moins équivalente à la somme des disques que vous voulez sauvegarder.&lt;/p&gt;
+
+&lt;p&gt;Time Machine est fourni en standard sur tous les Mac depuis plusieurs années. Pour l&amp;rsquo;activer connectez votre disque externe qui servira aux sauvegardes, ouvrez les Préférences Système et sélectionnez d&amp;rsquo;icône de Time Machine.&lt;/p&gt;
+
+&lt;p&gt;Inconvénients : Time Machine n&amp;rsquo;est pas à 100% infaillible, il peut lui arriver dans de très rares cas de perdre les pédales sans vous en informer. La restauration des données avec Time Machine est également assez lente.&lt;/p&gt;
+
+&lt;h2 id=&#34;sauvegarde-locale-avec-ccc-superduper-ou-chronosync&#34;&gt;Sauvegarde locale avec CCC, SuperDuper ou ChronoSync&lt;/h2&gt;
+
+&lt;p&gt;Ces trois outils ont bonne réputation. Ils sont particulièrement efficaces pour se prémunir contre le cas 3. Bien configurés ils peuvent vous protéger contre les cas 1 et 2, même si Time Machine est plus simple pour ces deux cas.&lt;/p&gt;
+
+&lt;p&gt;Ils permettent de créer un « clone » de vos disques, autrement dit une copie identique. Dans le cas 3, si votre ordinateur tombe en panne il suffit de connecter le disque clone à un autre Mac et de démarrer sur celui-ci. Si pour vous la disponibilité de votre environnement de production est importante c&amp;rsquo;est une excellent solution pour ne pas perdre de temps, et elle m&amp;rsquo;a déjà sorti de situations bien difficiles suite à un gros crash système. L&amp;rsquo;idéal est d&amp;rsquo;utiliser un SSD en USB 3 ; cette solution est à la fois rapide &lt;strong&gt;et&lt;/strong&gt; compatible avec tous les ordinateurs récents, contrairement à une connexion Thunderbolt.&lt;/p&gt;
+
+&lt;h2 id=&#34;sauvegarde-déportée-dans-le-cloud&#34;&gt;Sauvegarde déportée dans le Cloud&lt;/h2&gt;
+
+&lt;p&gt;Les solutions précédentes vous protègent contre la perte locale de données, mais que faire si vous perdez tous vos disques locaux, suite à un vol ou un incendie ? La bonne stratégie pour se protéger contre ce risque est de faire une copie de ses documents dans le Cloud. Attention cependant à conserver le nom d&amp;rsquo;utilisateur et le mot de passe quelque part et pas seulement sur votre disque dur local !!!&lt;/p&gt;
+
+&lt;p&gt;À noter que Dropbox conserve également une copie des versions récentes. C&amp;rsquo;est une double sécurité avec Time Machine.&lt;/p&gt;
+
+&lt;h2 id=&#34;sauvegarde-déconnectée-et-idéalement-déportée&#34;&gt;Sauvegarde déconnectée (et idéalement déportée)&lt;/h2&gt;
+
+&lt;p&gt;Il reste le cas des ransomware. Le ransomware va rendre inaccessibles tous les disques connectés à votre machine, c&amp;rsquo;est à dire les disques principaux mais aussi toutes les sauvegardes locales connectées à l&amp;rsquo;ordinateur ! Avec l&amp;rsquo;évolution actuelle, il est également possible que les ransomware futurs bloquent l&amp;rsquo;accès à vos sauvegardes dans le Cloud (scénario vraiment très pessimiste je l&amp;rsquo;avoue, qui à ma connaissance ne s&amp;rsquo;est pas encore produit).&lt;/p&gt;
+
+&lt;p&gt;La stratégie pour se prémunir contre ce cas est de garder une copie de sauvegarde &lt;em&gt;déconnectée&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;L&amp;rsquo;idéal est de faire ce qu&amp;rsquo;on appelle une rotation des disques de sauvegarde, par exemple avec deux disques différents. Les semaines impaires vous sauvegardez sur le disque 1 et le disque 2 reste déconnecté, les semaines paires vous faites l&amp;rsquo;inverse. Bonne nouvelle, Time Machine offre justement la possibilité d&amp;rsquo;alterner entre différents disques de sauvegarde.&lt;/p&gt;
+
+&lt;h2 id=&#34;ne-pas-compter-que-sur-le-cloud&#34;&gt;Ne pas compter que sur le Cloud&lt;/h2&gt;
+
+&lt;p&gt;Reste le cas numéro 6, votre compte Cloud est hacké. Pour vous protéger contre ce cas, ne stockez pas vos documents uniquement dans le Cloud.&lt;/p&gt;
+
+&lt;p&gt;Également, ne gardez pas que la copie locale synchronisée directement par Dropbox. Si les hackers détruisent les données dans le Cloud, l&amp;rsquo;application de Dropbox va automatiquement supprimer votre copie locale !&lt;/p&gt;
+
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;La sauvegarde de base avec Time Machine, CCC, SuperDuper, ChronoSync ou tout autre outil similaire est indispensable. Ne pas la faire est tout simplement inconscient.&lt;/p&gt;
+
+&lt;p&gt;Pour les niveaux de sauvegarde supplémentaires, c&amp;rsquo;est à vous de juger quel est le risque acceptable. Dans mon cas c&amp;rsquo;est clair, quel que soit le scénario je ne peux pas me permettre de perdre les données de mon entreprise.&lt;/p&gt;
+
+&lt;p&gt;La sauvegarde des documents a un coût qui est souvent non pris en compte lors de l&amp;rsquo;acquisition d&amp;rsquo;un ordinateur et qui n&amp;rsquo;est pas très motivant, pourtant il vaut mieux prendre une machine un peu moins chère avec en plus une solution de sauvegarde et être certain de ne pas perdre ses documents.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

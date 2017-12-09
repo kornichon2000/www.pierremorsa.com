@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>nomade-digital on Pierre Morsa</title>
+    <link>https://www.pierremorsa.com/categories/nomade-digital/index.xml</link>
+    <description>Recent content in nomade-digital on Pierre Morsa</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <atom:link href="/categories/nomade-digital/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Nomade digital, étape 4 : sauvegarder pour éviter  la perte de données</title>
+      <link>https://www.pierremorsa.com/post/2017-09-04-Nomade-digital-etape-4-sauvegarder-pour-eviter-perte-donn%C3%A9es/</link>
+      <pubDate>Mon, 04 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pierremorsa.com/post/2017-09-04-Nomade-digital-etape-4-sauvegarder-pour-eviter-perte-donn%C3%A9es/</guid>
+      <description>
+
+&lt;p&gt;J&amp;rsquo;emporte mon ordinateur ou mon iPad un peu partout. Le risque de le perdre ou de le casser  est donc bien réel ; par exemple en 2015 je me suis fait voler mon MacBook Pro dans le TGV.&lt;/p&gt;
+
+&lt;p&gt;En fait, la vraie question n&amp;rsquo;est pas de savoir si vous risquez de perdre des données, mais quand cela va arriver. Car cela fini toujours par arriver. Et lorsque cela se produit, pleurer ne sert à rien. Il faut avoir une sauvegarde de ses données. Ce message a beau être rappelé fréquemment, le nombre d&amp;rsquo;utilisateurs qui ne font aucune sauvegarde est hallucinant.&lt;/p&gt;
+
+&lt;p&gt;Aussi voici un petit guide expliquant les risques et les solutions pour s&amp;rsquo;en prémunir. Je n&amp;rsquo;ai pas expliqué en détail le fonctionnement de chaque solution, sinon cet article aurait fait 100 pages.&lt;/p&gt;
+
+&lt;h2 id=&#34;comprendre-les-différents-risques-de-perte-de-données&#34;&gt;Comprendre les différents risques de perte de données&lt;/h2&gt;
+
+&lt;p&gt;Différents types d&amp;rsquo;incidents peuvent entraîner une perte de données ; une bonne stratégie de sauvegarde va vous protéger contre tous les risques.&lt;/p&gt;
+
+&lt;p&gt;En voici une liste non exhaustive, plus ou moins classé du plus probable au moins probable :&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Vous modifiez un document et vous rendez compte plus tard que vous voulez revenir en arrière pour une raison ou une autre.&lt;/li&gt;
+&lt;li&gt;Vous effacez un ou plusieurs documents par erreur.&lt;/li&gt;
+&lt;li&gt;Votre ordinateur ou un disque tombe en panne.&lt;/li&gt;
+&lt;li&gt;Votre ordinateur et &lt;em&gt;toutes&lt;/em&gt; vos sauvegardes locales sont volés.&lt;/li&gt;
+&lt;li&gt;Votre ordinateur est hacké (par exemple ransomware).&lt;/li&gt;
+&lt;li&gt;Votre compte Cloud est hacké et détruit.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Une stratégie de sauvegarde idéale va donc vous prémunir contre tous les cas cités. Pour se faire elle doit :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Garder un historique des versions récentes de vos documents pendant un certain temps, par exemple les 4 dernières semaines.&lt;/li&gt;
+&lt;li&gt;Garder une copie à jour de tous vos documents importants ailleurs que chez vous, par exemple dans le Cloud.&lt;/li&gt;
+&lt;li&gt;Avoir une copie de sauvegarde déconnectée pour qu&amp;rsquo;elle ne soit pas endommagée par un éventuel ransomware (par exemple sur un disque dur stocké séparément). Ce cas est celui qui est le moins souvent pris en compte.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;raid-sauvegarde&#34;&gt;RAID ≠ sauvegarde&lt;/h2&gt;
+
+&lt;p&gt;Une précision importante avant d&amp;rsquo;aborder les différentes stratégies de sauvegarde : les systèmes RAID ont pour objectif d&amp;rsquo;améliorer le taux de disponibilité et la vitesse, ils ne sont pas une protection contre la perte de données. De fait, un système RAID 1 ou plus ne couvre que le cas 3, un disque tombe en panne. Le RAID 0 &lt;em&gt;augmente&lt;/em&gt; même le risque de perdre des données au lieu de le diminuer.&lt;/p&gt;
+
+&lt;p&gt;Un système RAID ne vous protégera pas contre les cas 1, 2, 4, 5 et 6 !&lt;/p&gt;
+
+&lt;h2 id=&#34;sauvegarde-locale-avec-time-machine&#34;&gt;Sauvegarde locale avec Time Machine&lt;/h2&gt;
+
+&lt;p&gt;Time Machine va vous couvrir contre les cas 1, 2 et 3, ce qui est déjà pas mal du tout.&lt;/p&gt;
+
+&lt;p&gt;Le matériel nécessaire se limite à un disque externe d&amp;rsquo;une taille au moins équivalente à la somme des disques que vous voulez sauvegarder.&lt;/p&gt;
+
+&lt;p&gt;Time Machine est fourni en standard sur tous les Mac depuis plusieurs années. Pour l&amp;rsquo;activer connectez votre disque externe qui servira aux sauvegardes, ouvrez les Préférences Système et sélectionnez d&amp;rsquo;icône de Time Machine.&lt;/p&gt;
+
+&lt;p&gt;Inconvénients : Time Machine n&amp;rsquo;est pas à 100% infaillible, il peut lui arriver dans de très rares cas de perdre les pédales sans vous en informer. La restauration des données avec Time Machine est également assez lente.&lt;/p&gt;
+
+&lt;h2 id=&#34;sauvegarde-locale-avec-ccc-superduper-ou-chronosync&#34;&gt;Sauvegarde locale avec CCC, SuperDuper ou ChronoSync&lt;/h2&gt;
+
+&lt;p&gt;Ces trois outils ont bonne réputation. Ils sont particulièrement efficaces pour se prémunir contre le cas 3. Bien configurés ils peuvent vous protéger contre les cas 1 et 2, même si Time Machine est plus simple pour ces deux cas.&lt;/p&gt;
+
+&lt;p&gt;Ils permettent de créer un « clone » de vos disques, autrement dit une copie identique. Dans le cas 3, si votre ordinateur tombe en panne il suffit de connecter le disque clone à un autre Mac et de démarrer sur celui-ci. Si pour vous la disponibilité de votre environnement de production est importante c&amp;rsquo;est une excellent solution pour ne pas perdre de temps, et elle m&amp;rsquo;a déjà sorti de situations bien difficiles suite à un gros crash système. L&amp;rsquo;idéal est d&amp;rsquo;utiliser un SSD en USB 3 ; cette solution est à la fois rapide &lt;strong&gt;et&lt;/strong&gt; compatible avec tous les ordinateurs récents, contrairement à une connexion Thunderbolt.&lt;/p&gt;
+
+&lt;h2 id=&#34;sauvegarde-déportée-dans-le-cloud&#34;&gt;Sauvegarde déportée dans le Cloud&lt;/h2&gt;
+
+&lt;p&gt;Les solutions précédentes vous protègent contre la perte locale de données, mais que faire si vous perdez tous vos disques locaux, suite à un vol ou un incendie ? La bonne stratégie pour se protéger contre ce risque est de faire une copie de ses documents dans le Cloud. Attention cependant à conserver le nom d&amp;rsquo;utilisateur et le mot de passe quelque part et pas seulement sur votre disque dur local !!!&lt;/p&gt;
+
+&lt;p&gt;À noter que Dropbox conserve également une copie des versions récentes. C&amp;rsquo;est une double sécurité avec Time Machine.&lt;/p&gt;
+
+&lt;h2 id=&#34;sauvegarde-déconnectée-et-idéalement-déportée&#34;&gt;Sauvegarde déconnectée (et idéalement déportée)&lt;/h2&gt;
+
+&lt;p&gt;Il reste le cas des ransomware. Le ransomware va rendre inaccessibles tous les disques connectés à votre machine, c&amp;rsquo;est à dire les disques principaux mais aussi toutes les sauvegardes locales connectées à l&amp;rsquo;ordinateur ! Avec l&amp;rsquo;évolution actuelle, il est également possible que les ransomware futurs bloquent l&amp;rsquo;accès à vos sauvegardes dans le Cloud (scénario vraiment très pessimiste je l&amp;rsquo;avoue, qui à ma connaissance ne s&amp;rsquo;est pas encore produit).&lt;/p&gt;
+
+&lt;p&gt;La stratégie pour se prémunir contre ce cas est de garder une copie de sauvegarde &lt;em&gt;déconnectée&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;L&amp;rsquo;idéal est de faire ce qu&amp;rsquo;on appelle une rotation des disques de sauvegarde, par exemple avec deux disques différents. Les semaines impaires vous sauvegardez sur le disque 1 et le disque 2 reste déconnecté, les semaines paires vous faites l&amp;rsquo;inverse. Bonne nouvelle, Time Machine offre justement la possibilité d&amp;rsquo;alterner entre différents disques de sauvegarde.&lt;/p&gt;
+
+&lt;h2 id=&#34;ne-pas-compter-que-sur-le-cloud&#34;&gt;Ne pas compter que sur le Cloud&lt;/h2&gt;
+
+&lt;p&gt;Reste le cas numéro 6, votre compte Cloud est hacké. Pour vous protéger contre ce cas, ne stockez pas vos documents uniquement dans le Cloud.&lt;/p&gt;
+
+&lt;p&gt;Également, ne gardez pas que la copie locale synchronisée directement par Dropbox. Si les hackers détruisent les données dans le Cloud, l&amp;rsquo;application de Dropbox va automatiquement supprimer votre copie locale !&lt;/p&gt;
+
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;La sauvegarde de base avec Time Machine, CCC, SuperDuper, ChronoSync ou tout autre outil similaire est indispensable. Ne pas la faire est tout simplement inconscient.&lt;/p&gt;
+
+&lt;p&gt;Pour les niveaux de sauvegarde supplémentaires, c&amp;rsquo;est à vous de juger quel est le risque acceptable. Dans mon cas c&amp;rsquo;est clair, quel que soit le scénario je ne peux pas me permettre de perdre les données de mon entreprise.&lt;/p&gt;
+
+&lt;p&gt;La sauvegarde des documents a un coût qui est souvent non pris en compte lors de l&amp;rsquo;acquisition d&amp;rsquo;un ordinateur et qui n&amp;rsquo;est pas très motivant, pourtant il vaut mieux prendre une machine un peu moins chère avec en plus une solution de sauvegarde et être certain de ne pas perdre ses documents.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>7 idées pour rendre l&#39;iPad réellement utile</title>
+      <link>https://www.pierremorsa.com/post/2017-04-10-sept-idees-pour-rendre-l-ipad-utile/</link>
+      <pubDate>Mon, 10 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pierremorsa.com/post/2017-04-10-sept-idees-pour-rendre-l-ipad-utile/</guid>
+      <description>&lt;p&gt;Suite au vol de mon MacBook Pro Retina dans le train en 2015, j&amp;rsquo;ai décidé de voyager avec des gadgets moins chers lorsque c&amp;rsquo;est possible. Disposant déjà d&amp;rsquo;un iPad Mini, je l&amp;rsquo;ai naturellement choisi comme alternative ultra-nomade. Mais je me suis vite rendu compte de la dure réalité : beaucoup de tâches me prennent deux, trois, dix fois plus de temps sur l&amp;rsquo;iPad, voire sont simplement impossibles. Pour certaines tâches, c&amp;rsquo;est normal. Je ne me suis jamais attendu à pouvoir créer une présentation PowerPoint efficacement sur iPad. Mais pour d&amp;rsquo;autres tâches le problème est lié aux contraintes imposées par Apple. Par exemple copier un fichier de l&amp;rsquo;iPad vers une clé USB est tout simplement impossible sans l&amp;rsquo;achat d&amp;rsquo;une clé spéciale.&lt;/p&gt;
+
+&lt;p&gt;Après deux ans d&amp;rsquo;utilisation de l&amp;rsquo;iPad en tant qu&amp;rsquo;outil de productivité, voici à mon avis sept choses qui doivent être améliorées sur l&amp;rsquo;iPad pour le rendre réellement productif au jour le jour.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Mettre un port USB C. Lightning c&amp;rsquo;est peut-être cool, mais impossible de connecter une clé USB pour donner un fichier à un client. Même pas possible d&amp;rsquo;échanger simplement un fichier entre iPad et MacBook dernière génération !!! Bien sûr l&amp;rsquo;USB C n&amp;rsquo;est pas encore très répandu, mais il va devenir la norme dans les années qui viennent.&lt;/li&gt;
+&lt;li&gt;Faire vraiment fonctionner les claviers externes. À l&amp;rsquo;heure actuelle impossible d&amp;rsquo;utiliser la disposition BÉPO avec un clavier externe, les dispositions clavier non standard n&amp;rsquo;étant pas prises en compte (par exemple sur Mac il est possible d&amp;rsquo;utiliser la disposition BÉPO avec un clavier AZERTY, QWERTY ou SZRBOTJ, peu importe, la disposition logique étant indépendante de la disposition physique des touches).&lt;/li&gt;
+&lt;li&gt;Intégrer un Finder (ou équivalent). Ne pas pouvoir organiser ses fichiers en dossiers par projet est tout simplement idiot pour les professionnels. Pour l&amp;rsquo;instant j&amp;rsquo;utilise Dropbox et Onedrive pour pallier à ce manque, mais je préférerais une solution native.&lt;/li&gt;
+&lt;li&gt;Arrêter le racket sur les adaptateurs. Plus de 60€ pour un adaptateur Lightning - VGA, ça suffit.&lt;/li&gt;
+&lt;li&gt;Généraliser l&amp;rsquo;affichage côte à côte de deux applications. Pour l&amp;rsquo;instant cela ne fonctionne qu&amp;rsquo;avec certaines applications.&lt;/li&gt;
+&lt;li&gt;Autoriser le glisser-déposer d&amp;rsquo;une application à une autre. Ce geste tout simple et naturel sur Mac ne fonctionne pas sur iPad.&lt;/li&gt;
+&lt;li&gt;Et surtout : autoriser l&amp;rsquo;utilisation d&amp;rsquo;une souris ou d&amp;rsquo;un trackpad (!!!) - Ça a l&amp;rsquo;air d&amp;rsquo;être complètement idiot comme idée, mais réfléchissez bien, l&amp;rsquo;utilisation d&amp;rsquo;une souris comme alternative au doigt sur l&amp;rsquo;iPad permettrait de gagner grandement en précision et en productivité.  Imaginez simplement sélectionner du texte avec une souris au lieu du doigt ! Même des programmes comme Excel ou PowerPoint deviendraient agréables à utiliser sur iPad. Même pas besoin d&amp;rsquo;adapter l&amp;rsquo;interface tactile, celle-ci étant parfaitement adaptée à la souris (l&amp;rsquo;inverse n&amp;rsquo;étant pas vrai, une interface conçue pour la souris est quasi inutilisable en tactile).&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;En faisant cette liste je me rends compte au final qu&amp;rsquo;il n&amp;rsquo;en faut pas beaucoup pour éliminer les principales contraintes de l&amp;rsquo;iPad, mais Apple étant Apple, je doute qu&amp;rsquo;ils fassent les changements réellement utiles. En attendant j&amp;rsquo;ai craqué et j&amp;rsquo;ai repris mon Mac pour les voyages.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Nomade Digital, étape 3 : shit happens</title>
+      <link>https://www.pierremorsa.com/post/2017-03-20-shit-happens/</link>
+      <pubDate>Mon, 20 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pierremorsa.com/post/2017-03-20-shit-happens/</guid>
+      <description>
+
+&lt;p&gt;Aujourd&amp;rsquo;hui j&amp;rsquo;ai simplement envie de reposter cette vidéo.&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/4nHsTCCpxk0&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;J&amp;rsquo;ai envie de la poster parce que elle est juste parfaite. L&amp;rsquo;attitude de la personne interviewée. L&amp;rsquo;attitude du premier enfant qui rentre, puis le plus jeune qui arrive, et enfin l&amp;rsquo;attitude de la maman qui vient les rechercher en catastrophe.&lt;/p&gt;
+
+&lt;p&gt;Certains vont rigoler, se moquer de lui et dire à quel point c&amp;rsquo;est stupide. Mais je peux dire que soit ces personnes n&amp;rsquo;ont pas d&amp;rsquo;enfants, soit elles n&amp;rsquo;ont jamais travaillé depuis leur domicile. Personnellement je retiens qu&amp;rsquo;il a l&amp;rsquo;air d&amp;rsquo;être un super papa et que ses enfants ont l&amp;rsquo;air très heureux ! La démarche de la petite fille est juste géniale !&lt;/p&gt;
+
+&lt;p&gt;Mais là où les gens voient juste une vidéo marrante, je vois un choix de vie. En effet, on peut choisir de vivre sans avoir ce risque, travailler dans un environnement 100% « professionnel » dans les bureaux de l&amp;rsquo;entreprise, et ne voir ses enfants que le soir à 21h lorsqu&amp;rsquo;on est crevé et super énervé. Ou on peut choisir de vivre en acceptant les petits désagréments du travail à domicile, et passer du temps de qualité avec ses enfants et les voir grandir. C&amp;rsquo;est le choix que j&amp;rsquo;ai fait.&lt;/p&gt;
+
+&lt;p&gt;J&amp;rsquo;aurais pu être cette personne, si seulement j&amp;rsquo;avais quelque chose d&amp;rsquo;assez intéressant à dire pour être interviewé par la BBC. La porte de mon bureau ne ferme pas à clé, mes enfants ont leur chambre juste à côté, et j&amp;rsquo;ai déjà eu plusieurs cas où ils m&amp;rsquo;ont interrompu pendant une conversation sur Skype. Mais cela fait partie des petits désagréments de la vie du travailleur à distance. Pour rien au monde je ne voudrais abandonner cette vie pour retourner m&amp;rsquo;enfermer dans les locaux d&amp;rsquo;une grande entreprise.&lt;/p&gt;
+
+&lt;h2 id=&#34;le-joli-profil-public-c-est-bien-mais-on-fait-tous-des-conneries&#34;&gt;Le joli profil public c&amp;rsquo;est bien, mais on fait tous des conneries&lt;/h2&gt;
+
+&lt;p&gt;Lorsqu&amp;rsquo;on regarde la page Facebook des gens, on a l&amp;rsquo;impression de regarder des êtres parfaits, qui ne mangent que des mets succulents et ne vont jamais au McDo. Vous-même si vous lisez mon blog vous pensez peut-être que je suis super organisé avec mon système GTD en acier mercerisé. Sauf que non. Il y a quelques mois j&amp;rsquo;ai commis la plus grosse erreur de ma carrière : je me suis trompé de date pour une après-midi de coaching. Étant déjà occupé ailleurs, mon client a dû trouver une solution sans moi. Ça ne m&amp;rsquo;était jamais arrivé, mais cela prouve que malgré tous les trucs GTD et autres, je ne suis pas infaillible.&lt;/p&gt;
+
+&lt;h2 id=&#34;la-vie-n-a-pas-de-commande-annuler-alors-fuck&#34;&gt;La vie n&amp;rsquo;a pas de commande annuler, alors fuck&lt;/h2&gt;
+
+&lt;p&gt;Ben oui, une fois que le problème est arrivé, on ne peut pas revenir en arrière. Alors fuck. En termes plus polis, je veux dire par là que je vois trop de personnes revivre le problème pendant des jours, des semaines, voire des mois et gaspiller leur énergie à se dire j&amp;rsquo;aurais dû faire ça, oh la la que va-t-on penser de moi, etc. Ce qui est fait est fait. On fait comme les pilotes de coures après un crash. On fait reset dans sa tête, on se concentre sur la tâche en cours, et au prochain passage on fait la petite correction nécessaire pour améliorer sa trajectoire.&lt;/p&gt;
+
+&lt;p&gt;Du crash on tire une opportunité pour s&amp;rsquo;améliorer.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Nomade digital, étape 2 : être efficace en télétravail</title>
+      <link>https://www.pierremorsa.com/post/2016-12-05-nomade-digital-etape-2-efficace-teletravail/</link>
+      <pubDate>Mon, 05 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pierremorsa.com/post/2016-12-05-nomade-digital-etape-2-efficace-teletravail/</guid>
+      <description>
+
+&lt;p&gt;Suite de mes réflexions en tant que nomade digital. Vous pouvez trouver les autres articles sur le sujet &lt;a href=&#34;https://www.pierremorsa.com/post/2016-08-01-devenir-nomade-digital/&#34;&gt;ici&lt;/a&gt; et &lt;a href=&#34;https://www.pierremorsa.com/post/2016-09-26-nomade-digital-etape-1/&#34;&gt;ici&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Finalement être nomade digital, c&amp;rsquo;est simplement être un télétravailleur à temps plein. Beaucoup de personnes qui rêvent du télétravail sans en avoir fait l&amp;rsquo;expérience s&amp;rsquo;imaginent que c&amp;rsquo;est la liberté absolue. Elles ont raison. Et c&amp;rsquo;est bien là le problème.&lt;/p&gt;
+
+&lt;p&gt;Car &lt;strong&gt;« en situation de liberté absolue l&amp;rsquo;activité prioritaire est l&amp;rsquo;activité qu&amp;rsquo;on a envie de faire. »&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Et lorsqu&amp;rsquo;on a le choix, aucune contrainte, l&amp;rsquo;activité qu&amp;rsquo;on a envie de faire à n&amp;rsquo;importe quel moment de la journée c&amp;rsquo;est très rarement le travail. Tout devient tentation. Les vidéos de chats sur Youtube prennent une dimension métaphysique insoupçonnée. Les tweets de pâtisseries deviennent incroyablement passionnants. Même ranger la cuisine pourrait devenir intéressant (enfin, faut pas déconner non plus).&lt;/p&gt;
+
+&lt;p&gt;Résultat &lt;strong&gt;« la liberté absolue nous enferme dans une prison d&amp;rsquo;improductivité. »&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Alors que faire ? C&amp;rsquo;est simple. Puisque la liberté absolue n&amp;rsquo;incite pas à travailler, il faut se créer un système limitant cette liberté. C&amp;rsquo;est le paradoxe du travail à distance : &lt;strong&gt;pour pouvoir être plus libre, il faut être capable de s&amp;rsquo;imposer soi-même des contraintes&lt;/strong&gt;. Il n&amp;rsquo;existe pas de système unique fonctionnant pour tout le monde, un système de contraintes pourra fonctionner fantastiquement bien pour Toto et être totalement inefficace pour Titi. C&amp;rsquo;est un exemple, je n&amp;rsquo;ai rien contre les Titi.&lt;/p&gt;
+
+&lt;p&gt;Au fil des années j&amp;rsquo;ai mis en place un &lt;strong&gt;système de productivité&lt;/strong&gt; qui m&amp;rsquo;aide à tenir mes engagements jour après jour. GTD fait partie de ce système mais ne suffit pas. Mon système est constitué d&amp;rsquo;un ensemble de règles qui structurent ma journée de travail.&lt;/p&gt;
+
+&lt;h2 id=&#34;6-exemples-de-règles-pour-le-télétravail&#34;&gt;6 exemples de règles pour le télétravail&lt;/h2&gt;
+
+&lt;p&gt;Voici quelques exemples de règles de télétravail que j&amp;rsquo;applique :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Réserver un endroit au travail&lt;/strong&gt;. Que ce soit une pièce entière, un bureau ou un simple coin de table, essayez de toujours travailler au même endroit. Au fil du temps lorsque vous serez à cet endroit il vous sera plus naturel de vous mettre en mode travail. Pour moi c&amp;rsquo;est mon célèbre &lt;a href=&#34;https://www.pierremorsa.com/blog/bureau-debout-pour-20-euros/&#34;&gt;bureau debout à 20€.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Adopter des horaires réguliers&lt;/strong&gt;. Que ce soit le traditionnel 9h à 17h ou des horaires plus exotiques comme 22h à 2h ou 6h à 11h, essayez de démarrer et terminer le travail tous les jours à la même heure.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Habillez-vous pour le travail&lt;/strong&gt;. Ne restez pas en pyjama pantoufles, lavez-vous, habillez-vous bien, comme si vous deviez rencontrer vos collègues. Ça vous aidera à vous mettre dans l&amp;rsquo;ambiance « travail ».&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Limitez les distractions&lt;/strong&gt;. Coupez les notifications inutiles, ne vérifiez pas votre email en permanence, ne laissez pas vos enfants vous déranger pendant le travail, empêchez votre chat de venir se coucher sur le clavier, etc.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Établissez une limite claire et séparez nettement travail et privé&lt;/strong&gt;. Réserver un endroit et un horaire au travail c&amp;rsquo;est bien, mais veillez également que le travail ne s&amp;rsquo;immisce pas partout dans votre vie. Le week-end c&amp;rsquo;est le week-end, le travail n&amp;rsquo;y a pas sa place, ni dans les discussions, ni dans votre esprit.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Ouvrez et fermez la journée de travail&lt;/strong&gt;. Dans le même esprit,  échauffez votre cerveau avec quelques tâches faciles au début de la journée de travail et fermez officiellement la journée de travail, par exemple en effectuant une revue quotidienne de vos tâches et projets.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Mais alors, finalement, le télétravail, c&amp;rsquo;est autant de contraintes que d&amp;rsquo;être au bureau ??? Et oui, il n&amp;rsquo;y a pas de magie, le télétravail c&amp;rsquo;est le travail ! Mais avec deux différences fondamentales. Premièrement, vous êtes libre de choisir le système de contraintes qui vous convient le mieux plutôt que de « subir » le système existant, et ça c&amp;rsquo;est un énorme avantage pour les personnes qui ont l&amp;rsquo;auto-discipline nécessaire. Deuxièmement il est beaucoup plus facile de gérer les interruptions externes lorsqu&amp;rsquo;on est en télétravail.&lt;/p&gt;
+
+&lt;p&gt;Pour conclure, et de mon expérience générale, la capacité à travailler à distance d&amp;rsquo;une personne dépend directement de sa capacité à s&amp;rsquo;imposer les contraintes nécessaires, et donc de sa capacité d&amp;rsquo;auto-discipline. Comme tout, cette capacité d&amp;rsquo;auto-discipline se travaille. Mais ce sera pour un autre article&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Nomade digital, étape 1</title>
+      <link>https://www.pierremorsa.com/post/2016-09-26-nomade-digital-etape-1/</link>
+      <pubDate>Mon, 26 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pierremorsa.com/post/2016-09-26-nomade-digital-etape-1/</guid>
+      <description>&lt;p&gt;Après avoir réfléchi à l&amp;rsquo;idée du nomade digital, j&amp;rsquo;en suis venu à une conclusion simple : que voyager autour du monde soit réaliste ou non, j&amp;rsquo;ai envie que mon mode de travail soit celui d&amp;rsquo;un nomade digital, même si je ne bouge pas de chez moi. Je n&amp;rsquo;aime pas beaucoup Paris, et le bénéfice d&amp;rsquo;aller moins souvent dans cette ville me suffit pour vouloir me lancer dans l&amp;rsquo;aventure. Et puis je suis déjà semi-nomade. Je vais à Paris une ou deux fois maximum par semaine. Arriver à zéro fois doit bien être possible. Mais pour cela je dois faire des choix clairs, et mettre en place les outils adaptés.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Choix 1&lt;/strong&gt; : le coaching et la formation se font souvent en face à face, et sont donc adaptés au travail à distance. Je vais donc me focaliser sur la création de présentation : création de la structure, de l&amp;rsquo;histoire et des slides.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Choix 2&lt;/strong&gt; : je vais me focaliser sur les clients qui n&amp;rsquo;ont pas besoin de réunions en face à face et qui préfèrent travailler via email, téléphone et Skype. Cela éliminera un petit nombre de clients, mais aujourd&amp;rsquo;hui c&amp;rsquo;est tout à fait jouable.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Outil 1&lt;/strong&gt; : une meilleure vente en ligne de l&amp;rsquo;offre de création de présentations. Si je ne suis pas présent physiquement il faut que je sois plus visible sur Internet. Je vais donc travailler pour renforcer et améliorer la visibilité de l&amp;rsquo;offre création de présentations sur le site de ma société, et simplifier le processus de paiement en ligne.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Outil 2&lt;/strong&gt; : un processus clair. Pour éviter les malentendus, je vais créer un petit document ou une page qui explique dès le début comment je travaille. Cela évitera aux personnes qui veulent absolument une réunion en face à face de perdre leur temps.&lt;/p&gt;
+
+&lt;p&gt;Voilà, c&amp;rsquo;est le début de ma stratégie pour pouvoir devenir nomade digital. L&amp;rsquo;avantage, c&amp;rsquo;est que si les outil sont efficaces, ils seront bénéfiques non seulement pour moi, mais pour les autres créateurs de présentations de la société.&lt;/p&gt;
+
+&lt;p&gt;La dernière question est de savoir si c&amp;rsquo;est réaliste. Aujourd&amp;rsquo;hui il existe des tas de sociétés qui vendent des services plus ou moins complexes uniquement en ligne. Le challenge pour moi est de rendre notre service suffisamment simple et attractif pour que les visiteurs travaillent avec nous. Et le seul moyen d&amp;rsquo;y arriver c&amp;rsquo;est d&amp;rsquo;essayer !&lt;/p&gt;
+
+&lt;p&gt;Si jamais vous avez des conseils pour m&amp;rsquo;aider à réussir mon challenge de devenir nomade digital, je suis preneur !&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,374 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        
+            
+                <title>Un script AppleScript pour envoyer tous les emails vers OmniFocus</title>
+            
+        
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="generator" content="Hugo 0.18.1" />
+        
+
+
+        
+            <meta name="author" content="Pierre Morsa">
+        
+        
+            
+                <meta name="description" content="Le Blog de Pierre Morsa | Ideas on Stage Partner &#43; Creative Director">
+            
+        
+
+        
+        
+            
+        
+
+        
+        
+            <link rel="stylesheet" href="/css/main.css" />
+        
+
+        
+        
+        
+
+    </head>
+    <body>
+
+        
+        <div id="wrapper">
+
+
+
+<section id="header">
+        <h1><a href="/">Pierre Morsa</a></h1>
+</section>
+
+
+    
+    <div id="main">
+        
+        
+        <article class="post">
+    <header>
+    <div class="title">
+            <h2><a href="/post/2017-07-10-script-applescript-fusion-boite-de-reception-mail-omnifocus/">
+            Un script AppleScript pour envoyer tous les emails vers OmniFocus
+            </a></h2>
+        
+    </div>
+    <div class="meta">
+        
+            
+        
+
+        <time class="published"
+            datetime='2017-07-10'>
+            2017-07-10</time>
+    </div>
+</header>
+
+    
+
+    <div id="content">
+        
+
+<p>Suite à <a href="/post/2017-06-12-test-omnifocus-2">mon article sur OmniFocus 2</a>, un lecteur m&rsquo;a demandé si je pouvais partager le script qui me sert à fusionner les boîtes de réceptions de Apple Mail et OmniFocus 2. Le voilà.</p>
+
+<p><strong>Attention 1 : à la première exécution le script va créer une tâche OmniFocus pour tous les emails dans la boîte de réception, si vous en avez beaucoup vous risquez de vous retrouver avec des milliers de tâches OmniFocus en plus !</strong> Pour éviter ce problème, ne laissez pas vos vieux emails traîner dans la boîte de réception, déplacez-les vers un dossier Archive.</p>
+
+<p><strong>Attention 2 : n&rsquo;exécutez jamais du code AppleScript sans en vérifier le contenu et la provenance, il peut être dangereux.</strong></p>
+
+<p><strong>Attention 3 : vérifiez que vous comprenez ce que fait le script et que cela correspond à votre besoin. AppleScript requiert un certain niveau de connaissance technique. Je ne suis pas responsable de ce que le script peut faire sur votre machine.</strong></p>
+
+<pre><code>use AppleScript version &quot;2.4&quot; -- Yosemite (10.10) or later
+use scripting additions
+
+property pLastID : 0
+property pInboxName : &quot;INBOX&quot;
+property pArchiveBoxName : &quot;Archive&quot;
+
+on run
+	
+	set cbs to ASCII character 92
+	set crt to ASCII character 13
+	
+	tell application &quot;Mail&quot;
+		set theMessage to &quot;&quot;
+		set theFlaggedMessages to ¬
+			(messages of mailbox pInboxName of first account) ¬
+				whose flag index is equal to 5
+		if (count of theFlaggedMessages) is greater than 0 then
+			repeat with theMessage in theFlaggedMessages
+				set theTask to my findOmnifocusTask(theMessage)
+				if theTask is missing value then
+					set flag index of theMessage to -1
+					my archiveMessage(theMessage)
+				end if
+			end repeat
+		end if
+		set theInbox to mailbox pInboxName of first account
+		set theInboxMessages to ¬
+			(messages of mailbox pInboxName of first account) ¬
+				whose id is greater than pLastID
+		
+		if (count of theInboxMessages) is greater than 0 then
+			delay 10
+			repeat with theMessage in theInboxMessages
+				set theSender to sender of theMessage as string
+				set theSubject to subject of theMessage as string
+				set theID to id of theMessage
+				set theTitle to theSender &amp; &quot; — &quot; &amp; theSubject
+				set theNote to (&quot;message://%3c&quot; &amp; message id of ¬
+					theMessage &amp; &quot;%3e&quot; &amp; crt &amp; crt) as rich text
+				set theNote to (theNote &amp; content of theMessage)
+				set theAttachments to &quot;&quot;
+				set theAttachmentsCount to count of ¬
+					mail attachment of theMessage
+				if theAttachmentsCount is greater than 0 then
+					set theMailAttachments to ¬
+						mail attachments of theMessage
+					repeat with theMailAttachment in theMailAttachments
+						set theAttachments to theAttachments &amp; ¬
+							name of theMailAttachment &amp; crt
+					end repeat
+					set theNote to ¬
+						theNote &amp; crt &amp; crt &amp; &quot;Attachments:&quot; &amp; ¬
+						crt &amp; theAttachments
+				end if
+				set theTaskID to my makeOmniFocusTask(theTitle, theNote)
+				-- set background color of theMessage to none
+				set flag index of theMessage to 5
+				set read status of theMessage to true
+				-- my archiveMessage(theMessage) -- disabled, too buggy.
+				set theID to id of theMessage
+				if theID is greater than pLastID then
+					set pLastID to theID
+				end if
+			end repeat
+		end if
+	end tell
+	
+end run
+
+on findOmnifocusTask(theMessage)
+	using terms from application &quot;Mail&quot;
+		set theMessageID to (message id of theMessage) as string
+	end using terms from
+	tell application &quot;OmniFocus&quot;
+		tell default document
+			try
+				set theTask to first flattened task whose completed is false ¬
+					and note contains theMessageID
+			on error
+				set theTask to missing value
+			end try
+		end tell
+	end tell
+	return theTask
+end findOmnifocusTask
+
+on makeOmniFocusTask(theTitle, theNote)
+	tell application &quot;OmniFocus&quot;
+		tell default document
+			set theTask to make new inbox task with properties ¬
+				{name:theTitle, note:theNote}
+		end tell
+	end tell
+	set theTaskID to &quot;omnifocus://%3c&quot; &amp; id of theTask &amp; &quot;%3e&quot;
+	return theTaskID
+end makeOmniFocusTask
+
+on archiveMessage(theMessage)
+	tell application &quot;Mail&quot;
+		set theAccount to account of mailbox of theMessage
+		set theMailboxArchive to item 1 of ((mailboxes of theAccount) ¬
+			whose name is pArchiveBoxName)
+		-- The following code did work too to move the message: 
+		-- set mailbox of theMessage to theMailboxArchive
+		move theMessage to theMailboxArchive
+	end tell
+end archiveMessage
+
+</code></pre>
+
+<h2 id="comment-s-en-servir">Comment s&rsquo;en servir ?</h2>
+
+<ul>
+<li>Lancer l&rsquo;éditeur de Scripts (Script Editor en anglais, AppleScript Editor dans les anciennes versions de macOS)</li>
+<li>Créer un nouveau script, copier-coller le contenu du script ci-dessus, et sauvegarder le script à l&rsquo;endroit suivant dans votre répertoire utilisateur : <code>/Bibliothèque/Application Scripts/com.apple.mail&quot;</code> (attention, je ne suis pas certain du nom du répertoire Application Scripts en français, si quelqu&rsquo;un le connaît vous pouvez me l&rsquo;indiquer sur Twitter ou par email). J&rsquo;ai appelé le fichier de script <code>rule → omnifocus-sendto</code></li>
+<li>Créer une règle dans Apple Mail qui va lancer le script automatiquement.</li>
+</ul>
+
+<p><img src="/pictures/2017/07/rule-mail-omnifocus.jpg" alt="Règle Apple Mail vers OmniFocus" /></p>
+
+<h2 id="que-va-faire-le-script">Que va faire le script ?</h2>
+
+<p>Le script va créer une tâche dans OmniFocus pour <strong>tous</strong> les emails qui sont dans votre boîte de réception, et va leur ajouter un drapeau de couleur violette (la couleur d&rsquo;OmniFocus) pour indiquer qu&rsquo;une tâche correspondante a été créée.</p>
+
+<p>À chaque fois que le script est exécuté (donc à chaque fois que vous recevez au moins un nouvel email), le script vérifie si la tâche correspondante dans OmniFocus existe encore ET n&rsquo;est pas complétée. Si ce n&rsquo;est pas le cas (la tâche a été complétée ou supprimée) alors le script enlève le drapeau violet de l&rsquo;email et le déplace vers le dossier Archive.</p>
+
+<h2 id="notes-techniques">Notes techniques</h2>
+
+<p>Les connaisseurs verront que je n&rsquo;utilise pas la formulation recommandée    <code>on perform mail action with messages...</code> pour déclencher le traitement. C&rsquo;est simplement parce que elle est trop buggée, et ce depuis des années. Au lieu de cela j&rsquo;utilise une technique pour identifier les nouveaux emails qui est de garder en mémoire l&rsquo;ID du dernier email qui a été traité (<code>pLastID</code>).</p>
+
+<p>Il y a une procédure nommée archiveMessage. Ne changez pas le script pour archiver le message dès sa réception ; il y a un bug dans Mail qui fait que certains messages risquent d&rsquo;être perdus si vous le faites (je crois que c&rsquo;est lié au fait que Mail archive le message alors qu&rsquo;il n&rsquo;a pas fini d&rsquo;être chargé depuis le serveur, mais je ne suis pas certain).</p>
+
+    </div>
+
+    <footer>
+    </footer>
+</article>
+
+    </div>
+    
+<section id="sidebar">
+
+    
+        <section id="intro">
+            
+            
+                
+                    <a href="/"><img src="/pictures/main/pierre-morsa-avatar.jpg" class="intro-circle" width="" alt="Pierre Morsa" /></a>
+                
+            
+            
+                <header>
+                    <h2>Pierre Morsa</h2>
+                    <p>Présenter en public, Getting Things Done, Lifehacks, Technomagie etc.</p>
+                </header>
+            
+            
+        </section>
+
+
+    
+    
+    
+    
+        <section id="categories">
+            <ul class="posts">
+                
+                    
+                
+
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/pr%C3%A9senter-en-public/">Présenter en public</a>
+                                <span style="float:right;">45</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/gtd-getting-things-done/">GTD Getting Things Done</a>
+                                <span style="float:right;">29</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/lifehacks/">Lifehacks</a>
+                                <span style="float:right;">18</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/technomagie/">Technomagie</a>
+                                <span style="float:right;">17</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/nouvelles/">Nouvelles</a>
+                                <span style="float:right;">14</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/startup/">Startup</a>
+                                <span style="float:right;">13</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/nomade-digital/">Nomade Digital</a>
+                                <span style="float:right;">5</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/storytelling/">Storytelling</a>
+                                <span style="float:right;">3</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/tedx/">TEDx</a>
+                                <span style="float:right;">3</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/cr%C3%A9ativit%C3%A9/">Créativité</a>
+                                <span style="float:right;">1</span>
+                            </header>
+                        </article>
+                    </li>
+                
+            </ul>
+        </section>
+    
+
+    
+        <section class="blurb">
+            <p>Pierre Morsa est Partner + Creative Director chez <a href='https://www.ideasonstage.com'>Ideas on Stage</a>, la première agence globale de création de présentations. <br>Pour me contacter écrivez-moi à<br>p i e r r e . m o r s a @ p i e r r e m o r s a . c o m</p>
+
+            <ul class="actions">
+                <li><a href="/about/" class="button">En savoir Plus</a></li>
+            </ul>
+        </section>
+
+    
+        <section id="footer">
+            <p class="copyright">Site garanti sans cookies et sans JavaScript. Le contenu est en copie libre : vous pouvez tout copier et réutiliser librement.</p>
+        </section>
+
+</section>
+
+        </div>
+    </body>
+</html>
+

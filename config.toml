@@ -1,0 +1,52 @@
+baseurl                  = "https://www.pierremorsa.com/"
+languageCode             = "fr"
+title                    = "Pierre Morsa"
+theme                    = "hugo-future-imperfect"
+preserveTaxonomyNames    = true
+paginate                 = 5
+
+[params]
+    # Sets the meta tag description, usually reserved for the main page
+    description          = "Le Blog de Pierre Morsa | Ideas on Stage Partner + Creative Director"
+    # Social media buttons that appear on the sidebar
+    socialAppearAtTop    = false
+    socialAppearAtBottom = false
+    # set this to the section name if section is not post
+    viewMorePostLink     = "/blog/"
+
+# Optional Params
+    categoriesByCount    = true
+    includeReadingTime   = false
+    # The set of favicons used are based on the write-up from this link:
+    # https://github.com/audreyr/favicon-cheat-sheet
+    # Please see the favicon partial template for more information
+    loadFavicon          = false
+    faviconVersion       = ""
+
+# parms.intro will appear on the sidebar
+# This is optional, but it's suggested to use
+[params.intro]
+    header    	= "Pierre Morsa"
+    paragraph 	= "Présenter en public, Getting Things Done, Lifehacks, Technomagie etc."
+    about     	= "Pierre Morsa est Partner + Creative Director chez <a href='https://www.ideasonstage.com'>Ideas on Stage</a>, la première agence globale de création de présentations. <br>Pour me contacter écrivez-moi à<br>p i e r r e . m o r s a @ p i e r r e m o r s a . c o m"
+    button		= "En savoir Plus"
+
+# This will also appear on the sidebar.
+# A width of less than 100px is recommended
+# This is optional
+[params.intro.pic]
+    src       = "/pictures/main/pierre-morsa-avatar.jpg"
+    # modify your picture in the shape of a circle or
+    # future imperfect's hexagonal shape
+    circle    = true
+    imperfect = false
+    width     = ""
+    alt       = "Pierre Morsa"
+
+[params.footer]
+	copyright	= "Site garanti sans cookies et sans JavaScript. Le contenu est en copie libre : vous pouvez tout copier et réutiliser librement. "
+
+# Adjust the amount of recent posts on the sidebar.
+# This is optional. The default value 5 will be used
+[params.postAmount]
+    sidebar = 5

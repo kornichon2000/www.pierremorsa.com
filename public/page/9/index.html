@@ -1,0 +1,512 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        
+            
+                <title>Pierre Morsa</title>
+            
+        
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="generator" content="Hugo 0.18.1" />
+        
+
+
+        
+        
+            
+                <meta name="description" content="Le Blog de Pierre Morsa | Ideas on Stage Partner &#43; Creative Director">
+            
+        
+
+        
+        
+            
+        
+
+        
+        
+            <link rel="stylesheet" href="/css/main.css" />
+        
+
+        
+        
+        
+          <link href="https://www.pierremorsa.com/index.xml" rel="alternate" type="application/rss+xml" title="Pierre Morsa" />
+          <link href="https://www.pierremorsa.com/index.xml" rel="feed" type="application/rss+xml" title="Pierre Morsa" />
+        
+
+    </head>
+    <body>
+
+        
+        <div id="wrapper">
+
+
+
+<section id="header">
+        <h1><a href="/">Pierre Morsa</a></h1>
+</section>
+
+
+    
+    <div id="main">
+        
+            
+        
+
+        
+            <article class="post">
+    <header>
+    <div class="title">
+            <h2><a href="/post/2017-03-06-automatiser-taches-mac/">
+            Automatiser ses tâches sur Mac
+            </a></h2>
+        
+    </div>
+    <div class="meta">
+        
+            
+        
+
+        <time class="published"
+            datetime='2017-03-06'>
+            2017-03-06</time>
+    </div>
+</header>
+
+    
+
+    <div id="content">
+        
+
+<p>Je l&rsquo;avoue. Je suis un fanboy de l&rsquo;automatisation des tâches sur Mac. Pour moi :</p>
+
+<p><code>Automatisation &gt; Délégation &gt; Répétition manuelle</code></p>
+
+<p>Autrement dit, par ordre d&rsquo;efficacité l&rsquo;idéal est d&rsquo;abord d&rsquo;automatiser une tâche. Si ce n&rsquo;est pas possible, essayer de la déléguer, mais ce n&rsquo;est pas très sympa pour la personne qui hérite de cette tâche répétitive. En dernier recours on peut faire la tâche répétitive soi-même, encore et encore et encore et encore, comme un Shadok condamné à pomper pour l&rsquo;éternité.</p>
+
+<p>Les avantages de l&rsquo;automatisation vont bien plus loin que simplement un gain de temps :</p>
+
+<ul>
+<li>Automatiser une tâche me force à définir un processus « standard » le plus simple, le plus structuré et surtout <strong>le plus fiable possible</strong>.</li>
+<li>Cela me force à mieux comprendre chaque étape de mon travail quotidien. Je peux mieux identifier les étapes qui créent réellement de la valeur et les étapes qui doivent être supprimées ou simplifiées.</li>
+<li>Au lieu de répéter bêtement la même chose tous les jours, l&rsquo;automatisation me permet de développer de nouvelles compétences très utiles.</li>
+<li>Je réduis fortement le risque d&rsquo;erreur humaine, ce qui est particulièrement important avec quelqu&rsquo;un comme moi !</li>
+<li>L&rsquo;automatisation augmente le savoir-faire interne de l&rsquo;entreprise au lieu l&rsquo;externaliser bêtement.</li>
+<li>Passé le petit investissement en temps initial, cela coûte beaucoup, beaucoup moins cher que la délégation.</li>
+<li>Les tâches automatisées n&rsquo;ont pas besoin d&rsquo;être dans « l&rsquo;inbox », ou y restent beaucoup moins de temps, ce qui libère l&rsquo;esprit et permet de se concentrer sur les tâches réellement importantes.</li>
+</ul>
+
+<p>Évidemment seules les tâches répondant à certains critères valent la peine d&rsquo;être automatisées : ce sont celles qui sont répétitives, fréquentes, suivent un processus identique à chaque fois et sont « numérisables », autrement dit réalisables sur ordinateur. Il faut aussi bien soupeser le gain de temps potentiel face au temps de développement et surtout <strong>le temps de maintenance au fil du temps</strong>, certains mécanismes d&rsquo;automatisation ayant tendance à se « casser » au bout d&rsquo;un temps, surtout ceux devant simuler des clics sur des éléments d&rsquo;interface comme des boutons ou des images.</p>
+
+<h2 id="ma-boîte-à-outils-pour-automatiser-les-tâches-sur-mac">Ma boîte à outils pour automatiser les tâches sur Mac</h2>
+
+<p>La simplicité et la fiabilité de l&rsquo;automatisation sont des critères essentiels. C&rsquo;est pourquoi je n&rsquo;utilise que des outils dont j&rsquo;ai pu éprouver la fiabilité. Le cœur de mon système repose sur quatre applications et un service Web :</p>
+
+<ul>
+<li><a href="http://www.keyboardmaestro.com/main/"><strong>Keyboard Maestro</strong></a> : crée des Macros très évoluées sur Mac. Une Macro est une séquence d&rsquo;actions automatisées. Par exemple, Keyboard Maestro peut redimensionner une image, la convertir et la sauvegarder dans un format précis. C&rsquo;est aussi le programme que j&rsquo;utilise pour tous les raccourcis texte (par exemple si je tape l&rsquo;abréviation « eml », mon adresse email s&rsquo;insère automatiquement)</li>
+<li><a href="https://www.noodlesoft.com"><strong>Hazel</strong></a> : automatise une série d&rsquo;actions sur les fichiers d&rsquo;un répertoire de votre ordinateur. Vous pouvez trier automatiquement des fichiers par type dans des sous-répertoires, les renommer, etc.</li>
+<li><a href="http://latenightsw.com"><strong>Script Debugger pour AppleScript</strong></a> : le langage de Script d&rsquo;Apple permet de piloter certaines applications. Ironiquement la suite Office de Microsoft jouit d&rsquo;un meilleur support d&rsquo;Applescript que les applications d&rsquo;Apple ! Vous pouvez utiliser l&rsquo;application Script Editor fournie avec chaque Mac pour développer en AppleScript, mais Script Debugger offre un bien meilleur confort de développement pour les scripts complexes.</li>
+<li><a href="http://fakeapp.com"><strong>Fake</strong></a> : un navigateur web qui dispose également de commandes pour automatiser certaines actions, comme remplir un formulaire ou cliquer sur des boutons html. C&rsquo;est une perle que pratiquement personne ne connaît.</li>
+<li><a href="https://zapier.com"><strong>Zapier</strong></a> : un service web qui connecte des services Web entre eux et exécute des actions automatiquement. Zapier permet par exemple de poster automatiquement un message sur Slack lorsque vous recevez un email sur gmail, ou de stocker toutes les pièces jointes reçues dans son email dans un répertoire sur Dropbox.</li>
+</ul>
+
+<p>Dans la capture d&rsquo;écran ci-dessous je montre par exemple la palette Keyboard Maestro qui reprend les commandes les plus fréquentes pour Hugo, l&rsquo;outil que j&rsquo;utilise pour générer mon blog.</p>
+
+<p><img src="/pictures/2017/03/keyboard-maestro-palette.jpg" alt="Une palette Keyboard Maestro" /></p>
+
+<p>Ces applications (à l&rsquo;exception de Zapier) ne sont disponibles que sur Mac, mais il existe probablement l&rsquo;équivalent sur Windows. J&rsquo;utilise Keyboard Maestro en priorité, car c&rsquo;est la solution la plus simple et la plus rapide, et AppleScript en dernier recours, car son utilisation requiert souvent plus de temps de débogage.</p>
+
+<p>En termes de difficulté je dirais que Zapier et Keyboard Maestro peuvent être utilisés par des utilisateurs normaux, Fake et Hazel par des utilisateurs avertis (Hazel étant potentiellement dangereux en cas de mauvaise manipulation) et AppleScript par les personnes connaissant au minimum les bases de la programmation et prêtes à supporter la syntaxe bizarre de ce langage.</p>
+
+<h2 id="exemples-de-tâches-automatisées">Exemples de tâches automatisées</h2>
+
+<p>Automatiser, c&rsquo;est bien, mais concrètement, que peut-on faire ? Un premier exemple est la revue des factures impayées. Chaque semaine j&rsquo;ai un système automatique qui passe en revue les factures en retard de paiement dans Filemaker Pro, et en poste la liste sur Slack pour avertir les responsables. Dans une petite structure telle que la nôtre le fait de revoir les factures manuellement ferait perdre du temps précieux à quelqu&rsquo;un. De plus il y a peu de chances que cette revue se fasse à intervalle aussi réguliers, et à chaque fois cela implique un risque d&rsquo;erreurs. L&rsquo;automatisation résoud tous ces problèmes.</p>
+
+<p>En termes d&rsquo;automatisation, la seule limite est l&rsquo;imagination (et le choix des bons outils) ! Voici d&rsquo;autres exemples de ce que j&rsquo;ai automatisé :</p>
+
+<ul>
+<li>Hazel + scanner ScanSnap S1300i : Classer automatiquement le courrier reçu et lui affecter une catégorie pour le retrouver plus facilement plus tard.</li>
+<li>Keyboard Maestro + AppleScript + PowerPoint : Un système élaboré pour simplifier et accélérer la création des présentations (si vous regardez quelqu&rsquo;un créer une présentation PowerPoint, vous vous rendrez compte à quel point on passe finalement peu de temps à saisir le contenu et énormément de temps à le mettre en forme).</li>
+<li>Keyboard Maestro + Mail : gestion de modèles types d&rsquo;emails.</li>
+<li>Keyboard Maestro : raccourcis pour insérer les mots ou les phrases les plus souvent utilisées (par exemple taper eml insère mon adresse email, iossrt insère le numéro de SIRET de mon entreprise). À noter que j&rsquo;aurais pu utiliser un outil dédié, comme TextExpander out TypeIt4Me, mais je reste fidèle à ma philosophie d&rsquo;utiliser le moins d&rsquo;outils possibles.</li>
+<li>Zapier + Site Web + Slack : publication d&rsquo;un nouveau message sur Slack lorsqu&rsquo;une nouvelle demande d&rsquo;information est envoyée via le site web.</li>
+<li>AppleScript + Omnifocus : organisation automatique des projets en fonction de leur statut, signalisation des projets bloqués (qui n&rsquo;ont plus aucune tâche active), calcul intelligent des dates de revue des projets, etc.</li>
+<li>Organisation automatique de mes fenêtres en fonction de l&rsquo;application utilisée pour optimiser l&rsquo;espace de travail à l&rsquo;écran.</li>
+</ul>
+
+<p>Ce n&rsquo;est qu&rsquo;un aperçu, très loin d&rsquo;être exhaustif, des tâches que j&rsquo;ai automatisées au fil des années. J&rsquo;estime que le cumul du temps gagné par chaque automatisation représente <strong>1 à 2 heures par jour</strong>. Soit l&rsquo;équivalent d&rsquo;une journée de travail par semaine ! Et c&rsquo;est sans compter le gain de fiabilité dans l&rsquo;exécution.</p>
+
+<p>Si vous avez des exemples d&rsquo;automatisation que vous voulez partager n&rsquo;hésitez pas à me les envoyer !</p>
+
+<p>Note : je rappelle que je ne suis pas sponsorisé, et que tous les outils cités ici ont été achetés avec mes propres Deniers, parce que je pense que ce sont les meilleurs.</p>
+
+    </div>
+
+    <footer>
+    </footer>
+</article>
+
+        
+            <article class="post">
+    <header>
+    <div class="title">
+            <h2><a href="/post/2017-02-27-commencez-la-journee-par-des-taches-d-echauffement/">
+            Démarrer la journée de travail par un échauffement GTD
+            </a></h2>
+        
+    </div>
+    <div class="meta">
+        
+            
+        
+
+        <time class="published"
+            datetime='2017-02-27'>
+            2017-02-27</time>
+    </div>
+</header>
+
+    
+
+    <div id="content">
+        <p>Le conseil classique que tout le monde donne est de commencer la journée par la tâche la plus difficile et la plus importante de la journée. Mais ça ne fonctionne pas pour moi ; au saut du lit je ne suis pas encore complètement opérationnel, et j&rsquo;ai besoin d&rsquo;un peu de temps et de café avant d&rsquo;attaquer les tâches les plus difficiles.</p>
+
+<p>C&rsquo;est pourquoi je préfère ouvrir ma journée de travail en m&rsquo;échauffant avec quelques tâches très simples, toujours les mêmes : nettoyer ma boîte de réception et faire ma revue quotidienne dans OmniFocus. Ensuite j&rsquo;élimine d&rsquo;entrée de jeu quelques tâches très rapides, comme signer un document, générer une ou deux factures &hellip; bref, que des petites tâches simples et rapides, ne nécessitant aucun effort mental.</p>
+
+<p>Après 30 minutes j&rsquo;ai déjà pu cocher plusieurs actions comme faites, et cela met ma productivité de bonne humeur pour le reste de la journée !</p>
+
+    </div>
+
+    <footer>
+    </footer>
+</article>
+
+        
+            <article class="post">
+    <header>
+    <div class="title">
+            <h2><a href="/post/2017-02-20-18-minutes-duree-optimale-presentation/">
+            18 minutes, la durée optimale d&#39;une présentation ?
+            </a></h2>
+        
+    </div>
+    <div class="meta">
+        
+            
+        
+
+        <time class="published"
+            datetime='2017-02-20'>
+            2017-02-20</time>
+    </div>
+</header>
+
+    
+
+    <div id="content">
+        <p>Si vous connaissez les conférences TED et TEDx, vous avez probablement entendu parler de la règle des 18 minutes : les présentations doivent respecter une règle stricte, ne pas dépasser 18 minutes. Tout le monde s&rsquo;y plie, du présentateur inconnu aux plus grandes célébrités.</p>
+
+<p>Mais pourquoi 18 minutes ? Pourquoi pas 10, 20 ou 30 minutes ? En réalité <strong>la règle des 18 minutes maximum pour une présentation ne repose sur aucune étude scientifique</strong>. Il s&rsquo;agit juste de la durée maximum que le fondateur de TED a choisi par préférence personnelle.</p>
+
+<p>Et dans la pratique ? Dans bien des cas 18 minutes c&rsquo;est déjà long pour une présentation au format TEDx. Les meilleures présentations sont souvent plus courtes, entre 10 et 15 minutes, car les présentateurs ont souvent mieux synthétisé et simplifié leur message.</p>
+
+<p>Le mieux est de prendre le temps de 18 minutes comme un temps maximal à ne pas dépasser, mais si possible de faire plus court. Il vaut bien mieux avoir un contenu excellent de 7 minutes qu&rsquo;un contenu moyen de 18 minutes.</p>
+
+    </div>
+
+    <footer>
+    </footer>
+</article>
+
+        
+            <article class="post">
+    <header>
+    <div class="title">
+            <h2><a href="/post/2017-02-13-7-ans-clavier-bepo/">
+            7 ans avec la disposition clavier BÉPO
+            </a></h2>
+        
+    </div>
+    <div class="meta">
+        
+            
+        
+
+        <time class="published"
+            datetime='2017-02-13'>
+            2017-02-13</time>
+    </div>
+</header>
+
+    
+
+    <div id="content">
+        
+
+<p>Connaissez-vous le BÉPO ? C&rsquo;est une disposition de clavier optimisée pour le français proposée comme alternative au bon vieux AZERTY. <a href="https://bepo.fr/wiki/Accueil">Voilà à quoi ressemble la disposition des touches sur un clavier BÉPO (image appartenant à https://bepo.fr)</a> :</p>
+
+<p><img src="/pictures/2017/02/carte-bepo-complete.png" alt="Disposition clavier BÉPO" /></p>
+
+<p>J&rsquo;ai découvert le BÉPO il y a environ 7 ans. À l&rsquo;époque j&rsquo;avais des douleurs dans les articulations des mains à force d&rsquo;utiliser des souris et des claviers d&rsquo;ordinateurs tous les jours. Aujourd&rsquo;hui je tape encore du texte tous les jours, mais je n&rsquo;ai plus de douleurs. Pourtant je n&rsquo;ai pas changé de clavier (un clavier standard Apple), je tape toujours autant et je n&rsquo;ai pas rajeuni, donc ces trois paramètres peuvent être éliminés. J&rsquo;attribue donc la disparition des douleurs en partie à l&rsquo;utilisation du BÉPO<sup class="footnote-ref" id="fnref:1"><a rel="footnote" href="#fn:1">1</a></sup>. Pourquoi ? Parce que la position des touches a été optimisées statistiquement pour limiter le mouvement des doigts lorsqu&rsquo;on écrit en langue française. Ainsi en BÉPO deux frappes de touches sur trois se font sur les touches de la ligne de repos (celle ou les doigts se reposent par défaut). Sur AZERTY, c&rsquo;est seulement une frappe sur cinq ! Et qui dit moins de mouvements dit moins de stress pour les articulations et les tendons des mains.</p>
+
+<h2 id="les-avantages-du-bépo">Les avantages du BÉPO</h2>
+
+<p>Je suis très heureux d&rsquo;être passé au BÉPO, et ce pour plusieurs raisons.</p>
+
+<ul>
+<li>Moins de douleurs car moins de mouvements de doigts. C&rsquo;est pour moi l&rsquo;avantage principal de cette disposition.</li>
+<li>Une vitesse de frappe en théorie plus rapide. Je dis en théorie, car personnellement je tapais déjà très vite en AZERTY et ma vitesse en BÉPO est similaire mais pas plus rapide.</li>
+<li>Un accès à la typographie française amélioré : les majuscules accentuées, par exemple, sont accessibles très facilement, contrairement à l&rsquo;AZERTY. L&rsquo;accès à certaines subtilités typographiques telles que l&rsquo;espace insécable, l&rsquo;espace fine insécable et les guillemets français sont également bien plus simples.</li>
+<li>Un accès à toutes les langues européennes. Il est parfaitement possible de taper simplement en anglais ou en espagnol en utilisant la disposition BÉPO (même si évidemment l&rsquo;optimisation de la disposition des caractères disparaît).</li>
+</ul>
+
+<h2 id="les-problèmes-du-bépo">Les problèmes du BÉPO</h2>
+
+<p>Tout n&rsquo;est pas rose dans l&rsquo;utilisation du BÉPO. Je liste ici les inconvénients majeurs.</p>
+
+<ul>
+<li>Le problème principal est la courbe d&rsquo;apprentissage, très raide. Il m&rsquo;a fallu plusieurs années pour remplacer les réflexes acquis pendant des années sur AZERTY et me sentir totalement à l&rsquo;aise sur BÉPO. Les premières semaines, je n&rsquo;arrivais péniblement qu&rsquo;à taper quelques mots par minute !</li>
+<li>Aucun appareil n&rsquo;est vendu avec la possibilité d&rsquo;avoir le clavier BÉPO au lieu de l&rsquo;AZERTY. Il existe des claviers externes BÉPO et des autocollants à placer sur les touches, mais la meilleure solution consiste simplement à apprendre la disposition BÉPO par cœur. J&rsquo;ai tapé cet article sur un clavier Mac AZERTY configuré en BÉPO</li>
+<li>Le BÉPO marche bien sur les ordinateurs, mais son support sur les smartphones et les tablettes reste très perfectible. La faute en particulier à certains fabricants comme Apple qui limitent fortement les possibilités d&rsquo;extension.</li>
+<li>Les raccourcis clavier BÉPO sont difficiles à mémoriser, et moins bien organisés. Par exemple, les touches couper, copier et coller sont côte à côte en AZERTY mais elles sont éparpillées partout sur le clavier en BÉPO.</li>
+<li>Certains logiciels, en particulier les jeux, ne fonctionnent pas en BÉPO, ce qui peut causer une grosse confusion pour l&rsquo;utilisateur.</li>
+</ul>
+
+<h2 id="la-compatibilité-du-bépo">La compatibilité du BÉPO</h2>
+
+<p><a href="https://bepo.fr/wiki/Accueil">Le site officiel BÉPO</a> est très bien fait et explique tous les détails. Je me contenterai juste de mentionner que la disposition BÉPO est disponible sur Mac, Windows, Linux et Android. Elle est également supportée sur iPhone et iPad <a href="http://iosbepo.me/fr/index.html">grâce au travail de Gauthier Diependalle</a>, mais sujette aux limites imposées par Apple (en particulier il est impossible d&rsquo;utiliser un clavier externe avec la disposition BÉPO, ce que je trouve très frustrant).</p>
+
+<h2 id="en-conclusion">En conclusion&hellip;</h2>
+
+<p>Vous avez des douleurs récurrentes dans les mains et les avant-bras liées à l&rsquo;utilisation du clavier AZERTY <strong>et</strong> vous avez beaucoup de patience ? Ou vous n&rsquo;avez pas encore appris a taper à dix doigts et voulez en profiter pour apprendre une disposition optimisée ? Alors je vous recommande d&rsquo;essayer le BÉPO.</p>
+
+<p>Si par contre vous ne tapez pas beaucoup de texte sur ordinateur, si vous utilisez principalement une tablette ou un smartphone, ou si vous êtes déjà très rapide en AZERTY, il n&rsquo;est probablement pas très sage d&rsquo;investir beaucoup de temps dans l&rsquo;apprentissage du BÉPO.</p>
+
+<p>Pour en savoir plus, rendez-vous sur <a href="https://bepo.fr/wiki/Accueil">le site officiel BÉPO</a></p>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:1">Et aussi à l&rsquo;utilisation simultanée d&rsquo;une souris et d&rsquo;une tablette Wacom, mais ça ce sera pour un autre article.
+ <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
+</ol>
+</div>
+
+    </div>
+
+    <footer>
+    </footer>
+</article>
+
+        
+            <article class="post">
+    <header>
+    <div class="title">
+            <h2><a href="/post/2017-02-06-petit-truc-qui-manque-apple-aujourdhui/">
+            Le petit truc qui me manque dans l&#39;Apple d&#39;aujourd&#39;hui
+            </a></h2>
+        
+    </div>
+    <div class="meta">
+        
+            
+        
+
+        <time class="published"
+            datetime='2017-02-06'>
+            2017-02-06</time>
+    </div>
+</header>
+
+    
+
+    <div id="content">
+        <p>La cote d&rsquo;amour d&rsquo;Apple n&rsquo;est plus aussi élevée qu&rsquo;avant. Moi-même, je me surprends à accueillir avec une relative indifférence les annonces de nouvelles machines.</p>
+
+<p>Pourtant à part le départ de Steve Jobs, rien n&rsquo;a changé. Le marketing Apple est toujours le même : l&rsquo;utilisation de personnages célèbres, de textes légèrement pompeux ne date pas d&rsquo;hier. Les prix élitistes, voire délirants, sont une tradition ; quelle gamme Mac démarrait à 5500 Dollars ? Le Mac II en 1987. Les prises de décision comme retirer la sortie casque ou passer au tout USB C sont une vieille habitude. Et les Mac ont <strong>toujours</strong> eu, à prix égal, des performances brutes moins élevées qu&rsquo;un PC équivalent. Et qu&rsquo;on ne vienne pas me dire que la qualité Apple a baissé. Mon Apple //c est tombé deux fois en panne (OK, je suis coupable pour une des pannes), mon Mac SE 2 fois également, et mon G4 Cube avait un disque dur si bruyant que le silence promis par l&rsquo;absence de ventilateur était inaudible ! Et à l&rsquo;époque, la machine partait en service après-vente pour 2 mois (!) avant de revenir avec une facture délirante.</p>
+
+<p>Mais alors, si tout est pareil, si Apple n&rsquo;a pas changé, pourquoi est-ce que la recette ne fonctionne plus aussi bien qu&rsquo;avant ? Pourquoi tant de grogne partout sur internet ?</p>
+
+<p>Alors, c&rsquo;est que quelque chose d&rsquo;autre est cassé. Mais quoi ? C&rsquo;est la vision. Autrement dit la capacité d&rsquo;imposer la direction à suivre à l&rsquo;industrie High Tech. Si on y repense, Apple n&rsquo;est jamais aussi forte que lorsqu&rsquo;elle montre la voie : avec l&rsquo;Apple ][, avec le Mac, avec l&rsquo;iPod, l&rsquo;iPhone, même l&rsquo;iPad et l&rsquo;Apple Watch. Et jamais aussi faible que lorsqu&rsquo;elle n&rsquo;a pas de vision claire. Le seul produit qui fait un peu exception à cette règle, à mon humble avis, est le Newton : excellente vision (si, si !), mais trop peu réaliste par rapport aux possibilités technologiques de l&rsquo;époque.</p>
+
+<p>Une entreprise comme Tesla a une vision forte de l&rsquo;avenir, alors que l&rsquo;Apple de début 2017 ne propose rien de bien concret. Même Microsoft, avec Satya Nadella, a réussi à proposer une vision claire, ce qui manquait sous l&rsquo;ère Ballmer.</p>
+
+<p>Sans cette vision, difficile de savoir dans quelle direction innover. Sans cette vision, difficile de justifier des marges élevées pour des produits peu différents des concurrents. Sans cette vision, difficile d&rsquo;attirer les esprits les plus brillants. Et donc difficile de concevoir les meilleurs produits, ce qui reste le cœur de métier d&rsquo;Apple.</p>
+
+    </div>
+
+    <footer>
+    </footer>
+</article>
+
+        
+
+        
+<ul class="actions pagination">
+    
+        <li><a href="/page/8/"
+                class="button big previous">Page Précédente</a></li>
+    
+
+    
+        <li><a href="/page/10/"
+                class="button big next">Page Suivante</a></li>
+    
+</ul>
+
+    </div>
+    
+<section id="sidebar">
+
+    
+        <section id="intro">
+            
+            
+                
+                    <a href="/"><img src="/pictures/main/pierre-morsa-avatar.jpg" class="intro-circle" width="" alt="Pierre Morsa" /></a>
+                
+            
+            
+                <header>
+                    <h2>Pierre Morsa</h2>
+                    <p>Présenter en public, Getting Things Done, Lifehacks, Technomagie etc.</p>
+                </header>
+            
+            
+                <b><a href="https://www.pierremorsa.com/index.xml" type="application/rss+xml"
+                    target="_blank" title="RSS" class="fa fa-rss">S'ABONNER AU FLUX RSS</a></b>
+            
+        </section>
+
+
+    
+    
+    
+    
+        <section id="categories">
+            <ul class="posts">
+                
+                    
+                
+
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/pr%C3%A9senter-en-public/">Présenter en public</a>
+                                <span style="float:right;">45</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/gtd-getting-things-done/">GTD Getting Things Done</a>
+                                <span style="float:right;">29</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/lifehacks/">Lifehacks</a>
+                                <span style="float:right;">18</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/technomagie/">Technomagie</a>
+                                <span style="float:right;">17</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/nouvelles/">Nouvelles</a>
+                                <span style="float:right;">14</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/startup/">Startup</a>
+                                <span style="float:right;">13</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/nomade-digital/">Nomade Digital</a>
+                                <span style="float:right;">5</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/storytelling/">Storytelling</a>
+                                <span style="float:right;">3</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/tedx/">TEDx</a>
+                                <span style="float:right;">3</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/cr%C3%A9ativit%C3%A9/">Créativité</a>
+                                <span style="float:right;">1</span>
+                            </header>
+                        </article>
+                    </li>
+                
+            </ul>
+        </section>
+    
+
+    
+        <section class="blurb">
+            <p>Pierre Morsa est Partner + Creative Director chez <a href='https://www.ideasonstage.com'>Ideas on Stage</a>, la première agence globale de création de présentations. <br>Pour me contacter écrivez-moi à<br>p i e r r e . m o r s a @ p i e r r e m o r s a . c o m</p>
+
+            <ul class="actions">
+                <li><a href="/about/" class="button">En savoir Plus</a></li>
+            </ul>
+        </section>
+
+    
+        <section id="footer">
+            <p class="copyright">Site garanti sans cookies et sans JavaScript. Le contenu est en copie libre : vous pouvez tout copier et réutiliser librement.</p>
+        </section>
+
+</section>
+
+        </div>
+    </body>
+</html>
+
+

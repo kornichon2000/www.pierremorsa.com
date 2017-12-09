@@ -1,0 +1,826 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>lifehacks on Pierre Morsa</title>
+    <link>https://www.pierremorsa.com/categories/lifehacks/index.xml</link>
+    <description>Recent content in lifehacks on Pierre Morsa</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <atom:link href="/categories/lifehacks/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Non, je n&#39;automatise pas tout !</title>
+      <link>https://www.pierremorsa.com/post/2017-09-18-non-je-n-automatise-pas-tout/</link>
+      <pubDate>Mon, 18 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pierremorsa.com/post/2017-09-18-non-je-n-automatise-pas-tout/</guid>
+      <description>&lt;p&gt;Vous le savez, je suis un grand partisan de l&amp;rsquo;automatisation pour économiser du temps. Pourtant ce n&amp;rsquo;est pas vrai pour tout. Par exemple je fais mon café du matin à &lt;a href=&#34;https://en.wikipedia.org/wiki/AeroPress&#34;&gt;l&amp;rsquo;Aeropress&lt;/a&gt;, une méthode assez originale pour préparer le café. Chaque matin je mouds les grains de café à la main, je fais bouillir l&amp;rsquo;eau et j&amp;rsquo;utilise ensuite l&amp;rsquo;Aeropress pour faire le café. La solution automatique serait d&amp;rsquo;utiliser une machine à expresso à dosettes. Mais le problème c&amp;rsquo;est que je trouve que les cafés faits avec une machine à expresso sont trop courts. De plus pour le matin je trouve le goût du café fait à l&amp;rsquo;Aeropress plus doux et plus savoureux.&lt;/p&gt;
+
+&lt;p&gt;Et lorsque je travaille le bois, le seul appareil électrique que j&amp;rsquo;utilise est une foreuse. Je fais tout le reste à la main. C&amp;rsquo;est (beaucoup) plus lent et fatiguant, mais c&amp;rsquo;est bien plus gratifiant, même si en raison de mes compétences très limitées le résultat n&amp;rsquo;est pas toujours à la hauteur !&lt;/p&gt;
+
+&lt;p&gt;C&amp;rsquo;est également ce que je fais lorsque je prépare un gâteau. Je n&amp;rsquo;utilise aucun appareil électrique, je fais tout à la main. De nouveau je trouve que le résultat est bien plus gratifiant, même si au final le goût est exactement le même.&lt;/p&gt;
+
+&lt;p&gt;Le point commun de toutes ces tâches manuelles ?&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Je n&amp;rsquo;ai pas besoin qu&amp;rsquo;elles soient &amp;ldquo;productives&amp;rdquo;,&lt;/li&gt;
+&lt;li&gt;Je ne produits que des quantités très limitées,&lt;/li&gt;
+&lt;li&gt;Les faire à la main me détend.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;L&amp;rsquo;automatisation c&amp;rsquo;est bien, mais parfois prendre le temps de bien faire les choses est tellement plus gratifiant.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>La force des contraintes pour les startups</title>
+      <link>https://www.pierremorsa.com/post/2017-07-31-la-force-des-contraintes/</link>
+      <pubDate>Mon, 31 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pierremorsa.com/post/2017-07-31-la-force-des-contraintes/</guid>
+      <description>&lt;p&gt;L&amp;rsquo;été dernier j&amp;rsquo;ai observé mes enfants jouer aux LEGO à 4 avec des amies. Ils ont passé des heures à inventer des histoires. Le truc, c&amp;rsquo;est que comme nous étions en vacances ils ne disposaient que d&amp;rsquo;un nombre limité de briques au lieu d&amp;rsquo;avoir à leur disposition leur immense bac à LEGO. Résultat : au lieu de perdre des heures à chercher la bonne pièce et à passer du temps à construire sans objectif et sans fin claire, ils ont utilisé le peu de pièces à leur disposition pour raconter des histoires et jouer ensemble. Autrement dit, la contrainte du faible nombre de pièces disponibles les a naturellement poussés à faire preuve de plus de créativité, à agir et finalement mieux utiliser les LEGO !&lt;/p&gt;
+
+&lt;p&gt;Ce qui vaut pour un groupe d&amp;rsquo;enfants vaut aussi pour un groupe d&amp;rsquo;adultes. Sans contraintes, notre esprit est comme perdu au milieu d&amp;rsquo;un océan de possibilités. Et lorsque notre cerveau fait face à trop de choix, il se produit un phénomène psychologique connu : il renonce à choisir ; autrement dit, il se bloque.&lt;/p&gt;
+
+&lt;p&gt;Que se passe-t-il ensuite ? La discussion remplace l&amp;rsquo;action. Les participants passent leur temps à échanger pendant tout le temps disponible, et 5 minutes avant la fin se rendent compte qu&amp;rsquo;ils n&amp;rsquo;ont pas avancé. Sous la contrainte du temps devenue bien réelle, ils se dépêchent de formaliser quelque chose. Pour réellement libérer l&amp;rsquo;intelligence collective et la créativité d&amp;rsquo;un groupe, il faut leur imposer les bonnes contraintes.&lt;/p&gt;
+
+&lt;p&gt;La société Nest est un bon exemple de ce qui se passe lorsqu&amp;rsquo;il n&amp;rsquo;y a pas de contraintes ; rachetée par Google, cette startup qui avait lancé un thermostat intelligent&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; a bénéficié d&amp;rsquo;un budget &amp;ldquo;quasi illimité&amp;rdquo; pendant plusieurs années. Résultat ? Presque aucun nouveau produit n&amp;rsquo;est sorti, des décisions très stupides ont été prises par les dirigeants, et les problèmes des produits existants n&amp;rsquo;ont pas été corrigés.&lt;/p&gt;
+
+&lt;p&gt;À l&amp;rsquo;inverse, beaucoup de bons produits ont eu des contraintes fortes dès le départ. Par exemple les concepteurs du TGV ont toujours fait très attention de minimiser le nombre de composants complètement nouveaux pour limiter les problèmes potentiels. La taille du Palm Pilot a été définie comme une contrainte dès le départ. L&amp;rsquo;équipe de développement du Macintosh était incroyablement petite pour un projet de cette envergure ; même aujourd&amp;rsquo;hui le budget du département R&amp;amp;D d&amp;rsquo;Apple reste bien faible&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:2&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; par rapport à ses concurrents directs.&lt;/p&gt;
+
+&lt;p&gt;Autre exemple : lors de réunions, il est facile de s&amp;rsquo;enthousiasmer et d&amp;rsquo;avoir plein de bonnes idées. Faisons trois sites web ! On pourrait aussi faire des podcasts toutes les semaines ! Et aussi des vidéos sur Youtube ! Alors que dans la réalité ces personnes n&amp;rsquo;arrivent même pas à écrire un article court chaque mois. Avoir des idées est important, mais savoir en éliminer en faisant des choix contraignants l&amp;rsquo;est encore plus.&lt;/p&gt;
+
+&lt;p&gt;Ce phénomène n&amp;rsquo;épargne pas les startups. Beaucoup d&amp;rsquo;entre elles s&amp;rsquo;imaginent avoir touché les jackpot après avoir levé 1 million (d&amp;rsquo;Euros, de Dollars, de Patates, ça n&amp;rsquo;a pas d&amp;rsquo;importance). Tout d&amp;rsquo;un coup, un grand nombre de contraintes disparaissent. Elles embauchent à tour de bras, lancent des tas d&amp;rsquo;actions au retour sur investissement incertain, et 1 an plus tard elles se retrouvent de nouveau en manque de liquidités, mais avec des frais fixes qui ont explosé ! Certaines startups très connues que le grand public prend pour des succès phénoménaux sont en réalité dans une situation toujours précaire.&lt;/p&gt;
+
+&lt;p&gt;Aussi si vous créez un produit, un service, une startup, un nouveau projet, une question essentielle à se poser est : « quelles sont les bonnes contraintes qui vont nous aider à atteindre l&amp;rsquo;objectif ? » Les bonnes contraintes vont focaliser la startup, l&amp;rsquo;aider à trouver sa voie et à avancer plus vite et dans la bonne direction.&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;réfléchissez trois fois avant d&amp;rsquo;acheter un produit qui se vante d&amp;rsquo;être capable d&amp;rsquo;apprendre tout seul le comportement désiré de l&amp;rsquo;utilisateur.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34;&gt;le budget R&amp;amp;D d&amp;rsquo;Apple a toujours été historiquement faible par rapport à la moyenne de l&amp;rsquo;industrie, même s&amp;rsquo;il a substatiellement augmenté ces dernières années.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:2&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Test de solutions pour se connecter directement à Dropbox et OneDrive</title>
+      <link>https://www.pierremorsa.com/post/2017-07-24-test-solutions-connecter-directement-dropbox-onedrive/</link>
+      <pubDate>Mon, 24 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pierremorsa.com/post/2017-07-24-test-solutions-connecter-directement-dropbox-onedrive/</guid>
+      <description>
+
+&lt;p&gt;Pour faire court, je ne recommande aucune des solutions testées. En effet, aucune de ces Apps n&amp;rsquo;est assez fiable &lt;strong&gt;et&lt;/strong&gt; performante pour offrir un niveau de productivité satisfaisant.&lt;/p&gt;
+
+&lt;h2 id=&#34;pourquoi-utiliser-une-solution-pour-se-connecter-directement-à-dropbox-et-onedrive&#34;&gt;Pourquoi utiliser une solution pour se connecter directement à Dropbox et OneDrive ?&lt;/h2&gt;
+
+&lt;p&gt;Les Apps Dropbox et OneDrive officielles fonctionnent bien (l&amp;rsquo;App de Dropbox restant la plus fiable et la plus performante). Alors pourquoi diable vouloir utiliser une solution tierce ? Pour deux raisons :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Tout d&amp;rsquo;abord cela évite d&amp;rsquo;être tributaire de certains aspects peu plaisants des clients officiels. Par exemple Dropbox simule une fausse boîte de dialogue pour vous faire saisir votre mot de passe administrateur, un comportement totalement inacceptable.&lt;/li&gt;
+&lt;li&gt;Ensuite, les clients officiels vous obligent d&amp;rsquo;avoir une copie en local pour pouvoir travailler dessus. Résultat, vous avez beau disposer de 1 To dans le Cloud, vous êtes limité par votre maigre disque SSD de quelques centaines de Go.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Il est bien sûr possible de ne synchroniser que certains dossiers, et de laisser une copie des autres uniquement dans le Cloud. Mais que faire lorsque vous voulez accéder à ces documents fréquemment ? Passer par le client web est une solution, mais il serait bien plus agréable de pouvoir accéder à ces documents directement depuis le Finder, comme si on accédait à un serveur distant classique. Et c&amp;rsquo;est justement cette fonctionnalité qu&amp;rsquo;offrent les clients tiers.&lt;/p&gt;
+
+&lt;h2 id=&#34;les-candidats&#34;&gt;Les candidats&lt;/h2&gt;
+
+&lt;p&gt;Après avoir pas mal écumé différents sites, il s&amp;rsquo;avère qu&amp;rsquo;il y a trois candidats plus sérieux que les autres :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;CloudMounter&lt;/li&gt;
+&lt;li&gt;ExpanDrive&lt;/li&gt;
+&lt;li&gt;Mountain Duck (basé sur Cyberduck).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Ces trois candidats font tous les trois la même chose : ils vous  permettent de vous connecter à Dropbox, OneDrive et d&amp;rsquo;autres services Cloud directement depuis le Finder comme s&amp;rsquo;il s&amp;rsquo;agissait simplement d&amp;rsquo;un serveur de fichiers distant.&lt;/p&gt;
+
+&lt;h2 id=&#34;les-sous-doués-se-connectent-au-cloud&#34;&gt;Les sous-doués se connectent au Cloud&lt;/h2&gt;
+
+&lt;p&gt;Mais&amp;hellip; Mais aucune de ces trois solutions ne fonctionne de manière satisfaisante.&lt;/p&gt;
+
+&lt;p&gt;CloudMounter se connecte, certes. Je n&amp;rsquo;ai pas relevé de dysfonctionnement majeur, certes. Mais&amp;hellip; la vitesse de connexion est beaucoup trop lente pour être réellement exploitable. Il faut souvent attendre plusieurs dizaines de secondes, voire plus d&amp;rsquo;une minute pour simplement lister le contenu d&amp;rsquo;un répertoire. J&amp;rsquo;ai assez rapidement craqué et abandonné cette option.&lt;/p&gt;
+
+&lt;p&gt;ExpanDrive est de loin le plus rapide des trois candidats. Il utilise un mécanisme de cache local qui rend tout très rapide et agréable. Mais&amp;hellip; il est rempli de bugs qui ne semblent jamais être corrigés malgré les mises à jour régulières. Par exemple, les caractères accentués vont poser problème sur les fichiers stockés dans Dropbox. Les opérations de copie et de suppression échouent régulièrement pour différentes raisons et lorsque cela arrive la seule solution consiste à aller effacer le cache manuellement. Malgré de nombreux essais je ne suis jamais parvenu à rendre cette solution fiable.&lt;/p&gt;
+
+&lt;p&gt;Enfin Mountain Duck s&amp;rsquo;appuie sur le moteur de Cyberduck, ce qui devrait être un gage de qualité. Malheureusement Mountain Duck souffre également de problèmes de lenteur rédhibitoires. En l&amp;rsquo;utilisant j&amp;rsquo;ai parfois eu l&amp;rsquo;impression d&amp;rsquo;être revenu dans les années 2000, où certaines opérations de copie déclenchaient systématiquement un gel complet du Finder et l&amp;rsquo;apparition de la roue colorée de la mort.&lt;/p&gt;
+
+&lt;p&gt;En l&amp;rsquo;état aucune de ces trois solutions n&amp;rsquo;est réellement exploitable efficacement au quotidien, je ne peux donc pas vous en recommander une. Cependant je garde espoir, et j&amp;rsquo;essaie régulièrement les nouvelles versions en espérant enfin trouver le Graal du Cloud.&lt;/p&gt;
+
+&lt;h2 id=&#34;quelques-notes-supplémentaires&#34;&gt;Quelques notes supplémentaires&lt;/h2&gt;
+
+&lt;p&gt;Cyberduck, déjà mentionné plus haut, offre une alternative viable mais finalement pas plus pratique que le client Web pour accéder directement aux fichiers stockés sur Dropbox. De plus Cyberduck (comme la prochaine version de Mountain Duck) intègre directement Cryptomator, la solution de chiffrage des documents dans le Cloud dont je parlais la semaine dernière.&lt;/p&gt;
+
+&lt;p&gt;Eltima, l&amp;rsquo;éditeur de CloudMounter, a un moment donné fait une promo sur son site pour MacKeeper, un pourriciel de la pire espèce. Cela ne me donne vraiment pas confiance dans cet éditeur, à tort ou à raison.&lt;/p&gt;
+
+&lt;p&gt;Enfin je garde un œil ouvert sur Transmit 5, la mythique nouvelle version du client FTP de Panic, qui &lt;em&gt;pourrait&lt;/em&gt; intégrer ce genre de fonctionnalité.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>La meilleure solution de chiffrage des documents dans le Cloud</title>
+      <link>https://www.pierremorsa.com/post/2017-07-17-meilleure-solution-de-chiffrage-cloud-cryptomator/</link>
+      <pubDate>Mon, 17 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pierremorsa.com/post/2017-07-17-meilleure-solution-de-chiffrage-cloud-cryptomator/</guid>
+      <description>
+
+&lt;p&gt;Après avoir testé plusieurs solutions de chiffrage des documents dans le Cloud mon choix s&amp;rsquo;est porté sur Cryptomator. C&amp;rsquo;est une solution gratuite, rapide, fiable et offrant un bon niveau de sécurité tout en restant simple à utiliser. Cryptomator est également intégré à d&amp;rsquo;autres solutions comme Cyberduck et Mountain Duck. Elle est également open source, ce qui signifie qu&amp;rsquo;aucun éditeur ne pourra prendre vos données en « otage » d&amp;rsquo;un abonnement obligatoire.&lt;/p&gt;
+
+&lt;h2 id=&#34;pourquoi-chiffrer-ses-documents-dans-le-cloud&#34;&gt;Pourquoi chiffrer ses documents dans le Cloud ?&lt;/h2&gt;
+
+&lt;p&gt;Stocker ses documents dans le Cloud, c&amp;rsquo;est potentiellement les mettre à la merci des hackers, qu&amp;rsquo;ils soient criminels ou supportés par un gouvernement. Ne croyez pas sur parole les communiqués des services comme Dropbox ou OneDrive qui vous disent que vos documents sont protégés ; pratiquement tous ont été victimes d&amp;rsquo;intrusions plus ou moins graves sur leurs serveurs. De plus leurs employés ainsi que certaines agences gouvernementales ont accès à vos documents.&lt;/p&gt;
+
+&lt;p&gt;Si les documents que vous stockez dans le Cloud ne contiennent pas de données sensibles, pas besoin de se prendre la tête, une solution de chiffrage supplémentaire n&amp;rsquo;est pas nécessaire. Mais si vous y stockez des documents contenant par exemple des coordonnées bancaires, des mots de passe ou des données de vos clients, il vaut mieux les chiffrer.&lt;/p&gt;
+
+&lt;p&gt;Le chiffrage est un sujet complexe, aussi je tiens à préciser que vos documents ne sont pas protégés dans le Cloud si vous avez chiffré vos documents localement avec une solution comme FileVault ou Bitlocker. Les documents envoyés dans le Cloud ne bénéficient pas de ce chiffrage.&lt;/p&gt;
+
+&lt;h2 id=&#34;mon-choix-cryptomator&#34;&gt;Mon choix : Cryptomator&lt;/h2&gt;
+
+&lt;p&gt;Après avoir testé différentes solutions, Cryptomator est actuellement la seule solution à satisfaire tous ces critères :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Être open source : s&amp;rsquo;il y a bien un domaine dans lequel l&amp;rsquo;open source a tout son sens, c&amp;rsquo;est dans celui du chiffrage ; en effet seules les solutions open source peuvent être garanties sans porte dérobée (et encore, normalement il faut dans ce cas aussi compiler le code source soi-même après avoir vérifié la signature des fichiers).&lt;/li&gt;
+&lt;li&gt;Multi plateforme : Cryptomator est disponible sur macOS, Windows, Linux, iOS et Android. Seules les versions iOS et Android sont payantes.&lt;/li&gt;
+&lt;li&gt;Offrir un mécanisme de chiffrage suffisamment solide.&lt;/li&gt;
+&lt;li&gt;Autoriser la synchronisation fichier par fichier, voire par bloc modifié. Une solution comme VeraCrypt qui impose de tout resynchroniser pour le changement d&amp;rsquo;un octet n&amp;rsquo;est pas utilisable.&lt;/li&gt;
+&lt;li&gt;Autoriser la gestion des conflits dans le cas où plusieurs utilisateurs modifient le même fichier en même temps.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;faiblesses-de-cryptomator&#34;&gt;Faiblesses de Cryptomator&lt;/h3&gt;
+
+&lt;p&gt;La faiblesse principale de Cryptomator est que les fichiers chiffrés font la même taille que les fichiers non chiffrés. Sans être expert, cela doit fortement faciliter le cassage de la clé de chiffrage si un hacker possède une copie de fichier chiffrée et une copie non chiffrée. Normalement c&amp;rsquo;est un scénario qui ne doit pas se produire, mais si vous copiez des fichiers déjà présents dans Dropbox vers Cryptomator, alors Dropbox possédera une copie chiffrée et une copie non chiffrée du même document.&lt;/p&gt;
+
+&lt;h2 id=&#34;les-autres-solutions&#34;&gt;Les autres solutions&lt;/h2&gt;
+
+&lt;p&gt;VeraCrypt est le successeur spirituel du célèbre TrueCrypt. Cependant la philosophie de conception de VeraCrypt en fait un outil destiné au chiffrage de disques locaux plutôt que de documents stockés dans le Cloud.&lt;/p&gt;
+
+&lt;p&gt;BoxCryptor existe depuis plusieurs années, et a un fonctionnement similaire à Cryptomator. Mais le code source est fermé et BoxCryptor nécessite un abonnement payant sans pour autant offrir de bénéfices par rapport à Cryptomator. De plus si la maison mère de BoxCryptor met la clé sous la porte vous n&amp;rsquo;aurez plus aucun moyen de récupérer vos données.&lt;/p&gt;
+
+&lt;p&gt;CloudMounter offre un mécanisme de chiffrage intégré, mais le code source est fermé et impossible d&amp;rsquo;avoir des informations sur l&amp;rsquo;algorithme de chiffrage utilisé. De plus l&amp;rsquo;accès à Dropbox depuis CloudMounter est insupportablement lent.&lt;/p&gt;
+
+&lt;p&gt;Cyberduck et Mountain Duck intègrent Cryptomator. Si pendant mes tests Cyberduck a bien fonctionné je ne suis pas parvenu à faire fonctionner Mountain Duck de manière satisfaisante, la connexion s&amp;rsquo;interrompant constamment lors des transfers.&lt;/p&gt;
+
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;Le niveau de sécurité par défaut de Dropbox ou OneDrive est suffisant pour des documents ne nécessitant pas de précautions particulières, mais insuffisant pour les documents sensibles : je ne recommande pas de stocker des coordonnées bancaires, mots de passe ou des données client sensibles dans le Cloud sans chiffrage complémentaire. De toutes les solutions que j&amp;rsquo;ai pu essayer, Cryptomator est celle qui offre le meilleur compromis facilité d&amp;rsquo;utilisation - sécurité.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Un script AppleScript pour envoyer tous les emails vers OmniFocus</title>
+      <link>https://www.pierremorsa.com/post/2017-07-10-script-applescript-fusion-boite-de-reception-mail-omnifocus/</link>
+      <pubDate>Mon, 10 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pierremorsa.com/post/2017-07-10-script-applescript-fusion-boite-de-reception-mail-omnifocus/</guid>
+      <description>
+
+&lt;p&gt;Suite à &lt;a href=&#34;https://www.pierremorsa.com/post/2017-06-12-test-omnifocus-2&#34;&gt;mon article sur OmniFocus 2&lt;/a&gt;, un lecteur m&amp;rsquo;a demandé si je pouvais partager le script qui me sert à fusionner les boîtes de réceptions de Apple Mail et OmniFocus 2. Le voilà.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Attention 1 : à la première exécution le script va créer une tâche OmniFocus pour tous les emails dans la boîte de réception, si vous en avez beaucoup vous risquez de vous retrouver avec des milliers de tâches OmniFocus en plus !&lt;/strong&gt; Pour éviter ce problème, ne laissez pas vos vieux emails traîner dans la boîte de réception, déplacez-les vers un dossier Archive.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Attention 2 : n&amp;rsquo;exécutez jamais du code AppleScript sans en vérifier le contenu et la provenance, il peut être dangereux.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Attention 3 : vérifiez que vous comprenez ce que fait le script et que cela correspond à votre besoin. AppleScript requiert un certain niveau de connaissance technique. Je ne suis pas responsable de ce que le script peut faire sur votre machine.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;use AppleScript version &amp;quot;2.4&amp;quot; -- Yosemite (10.10) or later
+use scripting additions
+
+property pLastID : 0
+property pInboxName : &amp;quot;INBOX&amp;quot;
+property pArchiveBoxName : &amp;quot;Archive&amp;quot;
+
+on run
+	
+	set cbs to ASCII character 92
+	set crt to ASCII character 13
+	
+	tell application &amp;quot;Mail&amp;quot;
+		set theMessage to &amp;quot;&amp;quot;
+		set theFlaggedMessages to ¬
+			(messages of mailbox pInboxName of first account) ¬
+				whose flag index is equal to 5
+		if (count of theFlaggedMessages) is greater than 0 then
+			repeat with theMessage in theFlaggedMessages
+				set theTask to my findOmnifocusTask(theMessage)
+				if theTask is missing value then
+					set flag index of theMessage to -1
+					my archiveMessage(theMessage)
+				end if
+			end repeat
+		end if
+		set theInbox to mailbox pInboxName of first account
+		set theInboxMessages to ¬
+			(messages of mailbox pInboxName of first account) ¬
+				whose id is greater than pLastID
+		
+		if (count of theInboxMessages) is greater than 0 then
+			delay 10
+			repeat with theMessage in theInboxMessages
+				set theSender to sender of theMessage as string
+				set theSubject to subject of theMessage as string
+				set theID to id of theMessage
+				set theTitle to theSender &amp;amp; &amp;quot; — &amp;quot; &amp;amp; theSubject
+				set theNote to (&amp;quot;message://%3c&amp;quot; &amp;amp; message id of ¬
+					theMessage &amp;amp; &amp;quot;%3e&amp;quot; &amp;amp; crt &amp;amp; crt) as rich text
+				set theNote to (theNote &amp;amp; content of theMessage)
+				set theAttachments to &amp;quot;&amp;quot;
+				set theAttachmentsCount to count of ¬
+					mail attachment of theMessage
+				if theAttachmentsCount is greater than 0 then
+					set theMailAttachments to ¬
+						mail attachments of theMessage
+					repeat with theMailAttachment in theMailAttachments
+						set theAttachments to theAttachments &amp;amp; ¬
+							name of theMailAttachment &amp;amp; crt
+					end repeat
+					set theNote to ¬
+						theNote &amp;amp; crt &amp;amp; crt &amp;amp; &amp;quot;Attachments:&amp;quot; &amp;amp; ¬
+						crt &amp;amp; theAttachments
+				end if
+				set theTaskID to my makeOmniFocusTask(theTitle, theNote)
+				-- set background color of theMessage to none
+				set flag index of theMessage to 5
+				set read status of theMessage to true
+				-- my archiveMessage(theMessage) -- disabled, too buggy.
+				set theID to id of theMessage
+				if theID is greater than pLastID then
+					set pLastID to theID
+				end if
+			end repeat
+		end if
+	end tell
+	
+end run
+
+on findOmnifocusTask(theMessage)
+	using terms from application &amp;quot;Mail&amp;quot;
+		set theMessageID to (message id of theMessage) as string
+	end using terms from
+	tell application &amp;quot;OmniFocus&amp;quot;
+		tell default document
+			try
+				set theTask to first flattened task whose completed is false ¬
+					and note contains theMessageID
+			on error
+				set theTask to missing value
+			end try
+		end tell
+	end tell
+	return theTask
+end findOmnifocusTask
+
+on makeOmniFocusTask(theTitle, theNote)
+	tell application &amp;quot;OmniFocus&amp;quot;
+		tell default document
+			set theTask to make new inbox task with properties ¬
+				{name:theTitle, note:theNote}
+		end tell
+	end tell
+	set theTaskID to &amp;quot;omnifocus://%3c&amp;quot; &amp;amp; id of theTask &amp;amp; &amp;quot;%3e&amp;quot;
+	return theTaskID
+end makeOmniFocusTask
+
+on archiveMessage(theMessage)
+	tell application &amp;quot;Mail&amp;quot;
+		set theAccount to account of mailbox of theMessage
+		set theMailboxArchive to item 1 of ((mailboxes of theAccount) ¬
+			whose name is pArchiveBoxName)
+		-- The following code did work too to move the message: 
+		-- set mailbox of theMessage to theMailboxArchive
+		move theMessage to theMailboxArchive
+	end tell
+end archiveMessage
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;comment-s-en-servir&#34;&gt;Comment s&amp;rsquo;en servir ?&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Lancer l&amp;rsquo;éditeur de Scripts (Script Editor en anglais, AppleScript Editor dans les anciennes versions de macOS)&lt;/li&gt;
+&lt;li&gt;Créer un nouveau script, copier-coller le contenu du script ci-dessus, et sauvegarder le script à l&amp;rsquo;endroit suivant dans votre répertoire utilisateur : &lt;code&gt;/Bibliothèque/Application Scripts/com.apple.mail&amp;quot;&lt;/code&gt; (attention, je ne suis pas certain du nom du répertoire Application Scripts en français, si quelqu&amp;rsquo;un le connaît vous pouvez me l&amp;rsquo;indiquer sur Twitter ou par email). J&amp;rsquo;ai appelé le fichier de script &lt;code&gt;rule → omnifocus-sendto&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Créer une règle dans Apple Mail qui va lancer le script automatiquement.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/07/rule-mail-omnifocus.jpg&#34; alt=&#34;Règle Apple Mail vers OmniFocus&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;que-va-faire-le-script&#34;&gt;Que va faire le script ?&lt;/h2&gt;
+
+&lt;p&gt;Le script va créer une tâche dans OmniFocus pour &lt;strong&gt;tous&lt;/strong&gt; les emails qui sont dans votre boîte de réception, et va leur ajouter un drapeau de couleur violette (la couleur d&amp;rsquo;OmniFocus) pour indiquer qu&amp;rsquo;une tâche correspondante a été créée.&lt;/p&gt;
+
+&lt;p&gt;À chaque fois que le script est exécuté (donc à chaque fois que vous recevez au moins un nouvel email), le script vérifie si la tâche correspondante dans OmniFocus existe encore ET n&amp;rsquo;est pas complétée. Si ce n&amp;rsquo;est pas le cas (la tâche a été complétée ou supprimée) alors le script enlève le drapeau violet de l&amp;rsquo;email et le déplace vers le dossier Archive.&lt;/p&gt;
+
+&lt;h2 id=&#34;notes-techniques&#34;&gt;Notes techniques&lt;/h2&gt;
+
+&lt;p&gt;Les connaisseurs verront que je n&amp;rsquo;utilise pas la formulation recommandée    &lt;code&gt;on perform mail action with messages...&lt;/code&gt; pour déclencher le traitement. C&amp;rsquo;est simplement parce que elle est trop buggée, et ce depuis des années. Au lieu de cela j&amp;rsquo;utilise une technique pour identifier les nouveaux emails qui est de garder en mémoire l&amp;rsquo;ID du dernier email qui a été traité (&lt;code&gt;pLastID&lt;/code&gt;).&lt;/p&gt;
+
+&lt;p&gt;Il y a une procédure nommée archiveMessage. Ne changez pas le script pour archiver le message dès sa réception ; il y a un bug dans Mail qui fait que certains messages risquent d&amp;rsquo;être perdus si vous le faites (je crois que c&amp;rsquo;est lié au fait que Mail archive le message alors qu&amp;rsquo;il n&amp;rsquo;a pas fini d&amp;rsquo;être chargé depuis le serveur, mais je ne suis pas certain).&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>OmniFocus 2 affiche la boîte de réception dans les projets</title>
+      <link>https://www.pierremorsa.com/post/2017-06-26-omnifocus-affiche-boite-de-reception-dans-projets/</link>
+      <pubDate>Mon, 26 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pierremorsa.com/post/2017-06-26-omnifocus-affiche-boite-de-reception-dans-projets/</guid>
+      <description>&lt;p&gt;il y a quelques semaines j&amp;rsquo;ai publié un test d&amp;rsquo;OmniFocus 2. Un des griefs principaux que je faisais était l&amp;rsquo;impossibilité d&amp;rsquo;afficher la boîte de réception en même temps que les projets. Et bien magie, OmniFocus 2.10 vient d&amp;rsquo;ajouter cette fonctionnalité !&lt;/p&gt;
+
+&lt;p&gt;C&amp;rsquo;est beaucoup plus logique et plus rapide de traiter sa boîte de réception de cette manière : on traite les différentes actions, et celles qui doivent aller dans un projet peuvent être directement glissées-déposées dans le bon projet, au bon endroit.&lt;/p&gt;
+
+&lt;p&gt;Pour l&amp;rsquo;activer, allez dans les préférences d&amp;rsquo;OmniFocus, onglet organisation, et cochez la case pour afficher la boîte de réception dans les projets.&lt;/p&gt;
+
+&lt;p&gt;J&amp;rsquo;espère que Omni Group continuera de faire ces améliorations au fil du temps.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Bien s&#39;organiser avec OmniFocus 2</title>
+      <link>https://www.pierremorsa.com/post/2017-06-12-test-omnifocus-2/</link>
+      <pubDate>Mon, 12 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pierremorsa.com/post/2017-06-12-test-omnifocus-2/</guid>
+      <description>
+
+&lt;p&gt;OmniFocus 2 est un outil de gestion des tâches basé sur la méthode GTD, disponible pour Mac, iPad et iPhone. Après avoir essayé différentes solutions, c&amp;rsquo;est celle-ci qui a retenu mon choix, car c&amp;rsquo;est la solution la plus complète et la plus puissante, et surtout elle peut être personnalisée avec AppleScript, le langage d&amp;rsquo;automatisation d&amp;rsquo;Apple.&lt;/p&gt;
+
+&lt;p&gt;Plutôt qu&amp;rsquo;un test classique, j&amp;rsquo;ai voulu décrire comment OmniFocus s&amp;rsquo;en sort dans une utilisation quotidienne pour quelqu&amp;rsquo;un qui utilise la méthodologie GTD.&lt;/p&gt;
+
+&lt;h2 id=&#34;quelques-points-importants-sur-omnifocus-2&#34;&gt;Quelques points importants sur OmniFocus 2&lt;/h2&gt;
+
+&lt;p&gt;Premier point qui peut surprendre, le prix. Aujourd&amp;rsquo;hui nous sommes habitués à avoir une pléthore d&amp;rsquo;applications gratuites. Ce n&amp;rsquo;est pas le cas d&amp;rsquo;OmniFocus, qui coûte environ 80€ dans sa version Pro. Si vous n&amp;rsquo;avez pas envie de payer pour une application, celle-ci n&amp;rsquo;est pas faite pour vous.&lt;/p&gt;
+
+&lt;p&gt;Le deuxième point à mentionner d&amp;rsquo;entrée de jeu, c&amp;rsquo;est la relative complexité d&amp;rsquo;OmniFocus 2. Si vous n&amp;rsquo;êtes pas familier avec la méthode GTD alors les nombreuses fonctionnalités d&amp;rsquo;OmniFocus 2 ne vous seront probablement pas beaucoup plus utiles qu&amp;rsquo;une simple liste de tâches classique.&lt;/p&gt;
+
+&lt;p&gt;Ces deux points ne sont pas faits pour vous rebuter ? Parfait, alors partons à la découverte de cet outil formidable !&lt;/p&gt;
+
+&lt;h2 id=&#34;interface&#34;&gt;Interface&lt;/h2&gt;
+
+&lt;p&gt;L&amp;rsquo;interface d&amp;rsquo;OmniFocus est similaire sur Mac, iPad et iPhone, même si elle tient compte des particularités de chaque appareil.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/06/omnifocus.jpg&#34; alt=&#34;OmniFocus Mac iPhone et iPad&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Les interfaces, c&amp;rsquo;est vraiment une question de goût. Des trois c&amp;rsquo;est la version Mac que je préfère. Je trouve qu&amp;rsquo;il est plus simple d&amp;rsquo;accéder aux détails des tâches, et surtout on peut utiliser AppleScript pour l&amp;rsquo;automatiser. De plus, elle offre plus d&amp;rsquo;options de personnalisation, par exemple le choix entre un mode compact et fluide.&lt;/p&gt;
+
+&lt;p&gt;Depuis la version 2.5 il est de nouveau possible de personnaliser les polices et les couleurs d&amp;rsquo;OmniFocus Mac avec des thèmes mais il faut avoir le cœur bien accroché ! Cette opération sera cependant simplifiée par l&amp;rsquo;utilisation du petit outil dédié OmniFocusColors.&lt;/p&gt;
+
+&lt;p&gt;Au final les différentes interfaces font le boulot efficacement, et c&amp;rsquo;est ce qu&amp;rsquo;on leur demande. Pour le reste de l&amp;rsquo;article, je vais me focaliser sur la version Mac qui est celle que j&amp;rsquo;utilise 90% du temps.&lt;/p&gt;
+
+&lt;h2 id=&#34;un-système-pensé-pour-gtd&#34;&gt;Un système pensé pour GTD&lt;/h2&gt;
+
+&lt;p&gt;Comme déjà mentionné, cela n&amp;rsquo;a pas beaucoup de sens d&amp;rsquo;utiliser OmniFocus si vous ne connaissez pas la méthodologie GTD. On y retrouve toutes les étapes du processus GTD classique :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Collecter les tâches dans la boîte de réception (Inbox)&lt;/li&gt;
+&lt;li&gt;Organiser par projet&lt;/li&gt;
+&lt;li&gt;Exécuter des tâches par contexte&lt;/li&gt;
+&lt;li&gt;Revoir les projets&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Le diable est dans les détails. Même si je trouve qu&amp;rsquo;OmniFocus est l&amp;rsquo;application la plus adaptée à la méthodologie GTD, je regrette que le processus ne soit pas plus fluide. Ce que je veux dire par là, c&amp;rsquo;est que les onglets &amp;ldquo;Inbox&amp;rdquo;, &amp;ldquo;Project&amp;rdquo;, &amp;ldquo;Review&amp;rdquo; sont visibles en permanence ; l&amp;rsquo;utilisateur a alors tendance à y passer plus de temps que nécessaire,
+alors qu&amp;rsquo;ils devraient être utilisés le moins possible. De plus, j&amp;rsquo;aimerais que l&amp;rsquo;interface s&amp;rsquo;adapte plus intelligemment : voir les projets lorsqu&amp;rsquo;on trie sa boîte de réception, faire disparaître certains éléments lorsqu&amp;rsquo;ils sont inutiles, etc.&lt;/p&gt;
+
+&lt;p&gt;Mais attaquons-nous au principal. Comment est-ce que OmniFocus s&amp;rsquo;en sort en tant qu&amp;rsquo;outil GTD ? Revoyons chaque étape du processus.&lt;/p&gt;
+
+&lt;h2 id=&#34;1-collecter-les-tâches-dans-la-boîte-de-réception&#34;&gt;1. Collecter les tâches dans la boîte de réception&lt;/h2&gt;
+
+&lt;p&gt;La boîte de réception sert de fourre-tout dans lequel on stocke tous les éléments susceptibles de devenir une tâche. Vous vous rappelez tout d&amp;rsquo;un coup que vous devez acheter des fleurs pour la fête des mères ? Vous ajoutez une tâche dans la boîte de réception.&lt;/p&gt;
+
+&lt;p&gt;OmniFocus offre un raccourci clavier qui permet d&amp;rsquo;afficher une fenêtre pour saisir une tâche rapidement, sans devoir quitter l&amp;rsquo;application en cours d&amp;rsquo;utilisation. Si une tâche vous vient à l&amp;rsquo;esprit, vous tapez le raccourci, entrez la tâche et fermez la fenêtre. Vous pouvez l&amp;rsquo;oublier en sachant qu&amp;rsquo;elle est bien au chaud dans votre boîte de réception et qu&amp;rsquo;elle sera traitée en temps voulu.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/06/omnifocus-quick-entry.jpg&#34; alt=&#34;OmniFocus Mac iPhone et iPad&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;2-traiter-sa-boîte-de-réception&#34;&gt;2. Traiter sa boîte de réception&lt;/h2&gt;
+
+&lt;p&gt;Environ trois fois par jour, je traite toutes les tâches en attente dans ma boîte de réception (le matin en me levant, vers la fin de la matinée et fin d&amp;rsquo;après midi).&lt;/p&gt;
+
+&lt;p&gt;La façon de procéder d&amp;rsquo;OmniFocus est simple. On clique sur l&amp;rsquo;onglet &amp;ldquo;Inbox&amp;rdquo;, on regarde chaque tâche en suivant le processus de décision GTD : est-ce qu&amp;rsquo;on peut la faire en moins de deux minutes ? Oui, alors on la fait tout de suite puis on la marque comme complétée. Sinon on lui attribue un projet et un contexte. La tâche va alors automatiquement disparaître de la boîte de réception et aller s&amp;rsquo;ajouter &lt;em&gt;à la fin de la liste de tâches du projet&lt;/em&gt; qui lui a été assigné.&lt;/p&gt;
+
+&lt;p&gt;À cet étape du processus, il y a quelque chose qui me chagrine : j&amp;rsquo;aimerais vraiment n&amp;rsquo;avoir qu&amp;rsquo;une seule boîte de réception à traiter, mais j&amp;rsquo;en ai deux. Celle d&amp;rsquo;OmniFocus et celle d&amp;rsquo;Apple Mail. OmniFocus pourrait fusionner sa boîte de réception avec Apple Mail, pour n&amp;rsquo;avoir à traiter qu&amp;rsquo;une seule boîte de réception. Heureusement, j&amp;rsquo;ai mis au point une solution : un AppleScript qui prend les emails reçus dans Apple Mail et les ajoute directement dans la boîte de réception d&amp;rsquo;OmniFocus, avec un lien vers le mail d&amp;rsquo;origine. Ces emails ont également un petit drapeau violet dans Mail tant qu&amp;rsquo;ils restent en tâche ouverte dans OmniFocus.&lt;/p&gt;
+
+&lt;p&gt;De manière générale, c&amp;rsquo;est un des plus gros reproches que je fais à OmniFocus : il est pensé par « fonctionnalités » plus que par « déroulement du processus ». C&amp;rsquo;est flagrant dans ce cas, car l&amp;rsquo;idéal serait de voir les tâches dans la boîte de réception, et en dessous la liste des projets, pour pouvoir simplement glisser-déposer les tâches dans le bon projet et au bon endroit. Omni Group, l&amp;rsquo;éditeur, a promis de remédier à ce problème. En attendant la solution de contournement recommandée est simplement d&amp;rsquo;ouvrir deux fenêtres, une qui affiche le contenu de la boîte de réception et une qui affiche la liste des projets, et de glisser-déposer les tâches entre les deux.&lt;/p&gt;
+
+&lt;h2 id=&#34;3-organiser-les-projets&#34;&gt;3. Organiser les projets&lt;/h2&gt;
+
+&lt;p&gt;L&amp;rsquo;étape suivante logique, c&amp;rsquo;est d&amp;rsquo;organiser les projets. Autrement dit, de prendre les tâches affectées au projet et les organiser dans un ordre d&amp;rsquo;exécution logique. Dans OmniFocus, les projets et groupes de tâches peuvent être « séquentiels » ou « parallèles ». Dans un projet séquentiel, une tâche doit être complétée avant que la suivante ne soit réalisable. Dans un projet parallèle, toutes les tâches non complétées et affectées à un contexte actif peuvent être exécutées. Si on prend comme exemple la liste de tâches suivantes :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Rédiger le document&lt;/li&gt;
+&lt;li&gt;Insérer les images&lt;/li&gt;
+&lt;li&gt;Demander le droit d&amp;rsquo;utiliser les images&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Dans un projet séquentiel, « rédiger le document » devra être complété avant que la tâche « insérer les images » ne devienne disponible. Dans un projet parallèle, on pourra indifféremment commencer par rédiger le document, insérer les images ou demander le droit de les utiliser. Personnellement, partant du principe qu&amp;rsquo;on ne peut faire qu&amp;rsquo;une chose à la fois, pratiquement tous mes projets sont séquentiels, et je réserve le mode parallèle à des cas bien précis. Utiliser le mode séquentiel me force aussi à organiser les choses de manière logique avant de commencer à travailler, ce qui plus tard évite de perdre du temps à me demander par quoi commencer puis quoi faire ensuite.&lt;/p&gt;
+
+&lt;h2 id=&#34;4-revoir-les-projets&#34;&gt;4. Revoir les projets&lt;/h2&gt;
+
+&lt;p&gt;Régulièrement, il faut revoir ses projets. Même après l&amp;rsquo;étape d&amp;rsquo;organisation, il peut être utile de faire une mini-revue, pour être sûr de n&amp;rsquo;avoir rien oublié. Pour moi, avoir cette certitude d&amp;rsquo;avoir tout traité est important, car lors de l&amp;rsquo;étape suivante, l&amp;rsquo;exécution des tâches, je passe en mode « autopilote » ; je concentre toute mon attention sur l&amp;rsquo;exécution des tâches sans perdre d&amp;rsquo;énergie à me demander que faire maintenant ou si ce que je fais est la bonne tâche, car tout cela je m&amp;rsquo;en suis assuré lors des étapes 1 à 4.&lt;/p&gt;
+
+&lt;p&gt;Dans Omnifocus, il est possible de définir une fréquence de revue des projets, de journalière à annuelle. Dans la pratique, mes projets actifs ont une fréquence de revue journalière, mes projets « waiting for » (en attente de) une fréquence de revue hebdomadaire, les projets repoussés à une date ultérieure ont une date de revue à la date à laquelle le projet redevient actif. Omnifocus étant assez « bête » a ce sujet, il est incapable de définir une fréquence de revue lui-même en fonction du statut du projet. De la même manière, il n&amp;rsquo;est pas assez intelligent pour éviter de définir la prochaine date de revue un week-end. Heureusement, AppleScript à la rescousse, j&amp;rsquo;ai un script qui modifie la fréquence et la prochaine date de revue des projets en fonction de leur statut ; c&amp;rsquo;es là la vraie force d&amp;rsquo;OmniFocus par rapport à tous les concurrents : si une fonctionnalité ne nous convient pas ou n&amp;rsquo;existe pas, on peut la créer soi-même !&lt;/p&gt;
+
+&lt;h2 id=&#34;5-exécuter-les-tâches-par-contexte&#34;&gt;5. Exécuter les tâches « par contexte »&lt;/h2&gt;
+
+&lt;p&gt;Évidemment, c&amp;rsquo;est un des piliers de GTD : les tâches se font en fonction du contexte dans lequel on se trouve ; autrement dit, lorsque je suis devant mon Mac seules les tâches que je peux exécuter devant mon Mac vont s&amp;rsquo;afficher dans le contexte @mac. Si je fais les courses, seules les tâches que je peux exécuter en faisant les courses vont s&amp;rsquo;afficher. C&amp;rsquo;est un des principes clés de GTD, qui poursuit toujours le même but : pouvoir exécuter les tâches en mode « autopilote », sans interrompre l&amp;rsquo;exécution par des prises de décisions inutiles qui font perdre de l&amp;rsquo;énergie et entraînent un risque de procrastination, style la prochaine tâche est de poster la lettre, ah mais je peux pas, je suis pas au bon endroit, bon, qu&amp;rsquo;est-ce que je fais après ?&lt;/p&gt;
+
+&lt;p&gt;Le système de contexte de GTD a été créé à une époque où cela se faisait plutôt sur papier ou sans outils adaptés. OmniFocus ne permet d&amp;rsquo;attribuer qu&amp;rsquo;un seul contexte à une tâche. Un système d&amp;rsquo;étiquettes serait aujourd&amp;rsquo;hui probablement plus souple et plus efficace (pouvoir par exemple attribuer les contextes @voyage et @gare à une même tâche).&lt;/p&gt;
+
+&lt;p&gt;Peu de choses à dire sur les contextes, c&amp;rsquo;est simple et ça marche bien. Un des avantages d&amp;rsquo;OmniFocus est de permettre de personnaliser l&amp;rsquo;affichage des tâches dans un contexte en fonction de ses préférences. Si je reprends mon exemple précédent de trois tâches :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Rédiger le document (fait)&lt;/li&gt;
+&lt;li&gt;Insérer les images (à faire)&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Demander le droit d&amp;rsquo;utiliser les images (à faire)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Si je demande d&amp;rsquo;afficher les tâches disponibles, OmniFocus va afficher la tâche Insérer pour un projet séquentiel, et les tâches Insérer et Demander pour un projet parallèle.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Si je demande d&amp;rsquo;afficher seulement la première tâche disponible, OmniFocus va afficher la tâche Insérer uniquement, que le projet soit séquentiel pour parallèle.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Maintenant que nous avons couvert toutes les étapes du processus GTD, attardons-nous sur quelques fonctionnalités qui font d&amp;rsquo;OmniFocus un outil bien plus puissant que tous les concurrents. Et commençons par les perspectives.&lt;/p&gt;
+
+&lt;h2 id=&#34;définir-des-perspectives-personnalisées&#34;&gt;Définir des perspectives personnalisées&lt;/h2&gt;
+
+&lt;p&gt;Les options d&amp;rsquo;affichage et de filtrage d&amp;rsquo;OmniFocus sont très nombreuses, et permettent de couvrir presque tous les cas de figure. Mais vous n&amp;rsquo;avez probablement pas envie de redéfinir l&amp;rsquo;ensemble des filtres et critères à chaque fois. Heureusement, OmniFocus vous permet de sauvegarder une vue et ses options d&amp;rsquo;affichage dans des « perspectives ». Pour revenir à votre vue préférée, il suffit alors de cliquer sur son icône dans la barre latérale.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/06/omnifocus-perspectives.jpg&#34; alt=&#34;OmniFocus Mac iPhone et iPad&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Voici quelques exemples de ce qu&amp;rsquo;il est possible de faire avec les perspectives :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Créer une perspective pour n&amp;rsquo;afficher que les tâches disponibles dans un ensemble de contextes précis.&lt;/li&gt;
+&lt;li&gt;N&amp;rsquo;afficher que les projets en cours d&amp;rsquo;exécution, pour lesquels aucune tâche n&amp;rsquo;est active.&lt;/li&gt;
+&lt;li&gt;Afficher toutes les tâches dont la date d&amp;rsquo;échéance est aujourd&amp;rsquo;hui.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;synchronisation-push&#34;&gt;Synchronisation &amp;ldquo;push&amp;rdquo;&lt;/h2&gt;
+
+&lt;p&gt;Omni Group propose plusieurs méthodes pour synchroniser vos données entre vos différents appareils : via leur serveurs (plus simple) ou via votre propre serveur (plus sécurisé). Personnellement j&amp;rsquo;utilise la synchronisation via leurs serveurs. La configuration est assez simple et la synchronisation rapide.&lt;/p&gt;
+
+&lt;p&gt;OmniFocus peut utiliser la synchronisation &amp;ldquo;push&amp;rdquo;, autrement dit lorsqu&amp;rsquo;un élément est modifié sur un appareil, les modifications sont envoyées presque instantanément sur les autres appareils. Celle-ci peut être désactivée si vous le souhaitez.&lt;/p&gt;
+
+&lt;p&gt;À noter que ce service est &lt;strong&gt;totalement gratuit&lt;/strong&gt;, ce qui aide à faire passer le coût initial de la licence.&lt;/p&gt;
+
+&lt;h2 id=&#34;intégration-mail&#34;&gt;Intégration mail&lt;/h2&gt;
+
+&lt;p&gt;Une fonctionnalité très utile est la possibilité de définir une adresse mail spéciale. Tous les emails que vous envoyez à cette adresse vont être automatiquement convertis en tâche. Ça marche très bien !&lt;/p&gt;
+
+&lt;h2 id=&#34;en-conclusion&#34;&gt;En conclusion&lt;/h2&gt;
+
+&lt;p&gt;OmniFocus 2 reste la solution GTD la plus puissante, toutes plateformes confondues, et nous utilisateurs de Mac sommes bien chanceux de l&amp;rsquo;avoir. La possibilité d&amp;rsquo;utiliser AppleScript avec la version Mac permet de créer virtuellement n&amp;rsquo;importe quelle fonctionnalité supplémentaire ou d&amp;rsquo;adapter les fonctionnalités existantes. Mon seul regret concernant OmniFocus est un « workflow » (processus de travail) parfois perfectible dans les détails, qui pourrait rendre l&amp;rsquo;utilisation de l&amp;rsquo;outil plus simple et plus rapide.&lt;/p&gt;
+
+&lt;p&gt;Le prix peut certes paraître élevé, mais au final Omni offre gratuitement l&amp;rsquo;utilisation d&amp;rsquo;une solution de synchronisation puissante et efficace là où tous les concurrents font payer un abonnement qui revient au final bien plus cher.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Test de Microsoft OneDrive sur Mac</title>
+      <link>https://www.pierremorsa.com/post/2017-05-15-test-de-microsoft-onedrive-mac/</link>
+      <pubDate>Mon, 15 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pierremorsa.com/post/2017-05-15-test-de-microsoft-onedrive-mac/</guid>
+      <description>
+
+&lt;p&gt;En résumé : si vous avez déjà Dropbox et que vous n&amp;rsquo;avez pas besoin des fonctions de collaboration de Office Online, restez sur Dropbox. OneDrive fonctionne correctement, mais est plus lent que Dropbox et offre moins de fonctionnalités. Son seul avantage est l&amp;rsquo;intégration plus poussée, mais très perfectible, avec Office Online.&lt;/p&gt;
+
+&lt;p&gt;Si vous vous demandez pourquoi lire mon test plutôt que celui d&amp;rsquo;un site spécialisé, c&amp;rsquo;est parce que j&amp;rsquo;utilise Office 365, Dropbox et OneDrive tous les jours. De plus, je suis totalement indépendant de Microsoft, je n&amp;rsquo;ai pas à être gentil avec eux pour préserver mon droit d&amp;rsquo;accès à quoi que ce soit.&lt;/p&gt;
+
+&lt;h2 id=&#34;onedrive-les-bases&#34;&gt;OneDrive : les bases&lt;/h2&gt;
+
+&lt;p&gt;OneDrive est un des services de stockage dans le Cloud de Microsoft. Parce que rien n&amp;rsquo;est jamais assez compliqué chez Microsoft, OneDrive est un service différent de OneDrive for Business, il ne faut donc pas confondre les deux. Un peu comme Skype et Skype for Business, qui sont deux trucs différents aussi. Et Office et Office for Business sont différents mais très similaires et compatibles. J&amp;rsquo;espère que vous suivez toujours.&lt;/p&gt;
+
+&lt;p&gt;Il y a trois manières d&amp;rsquo;accéder à OneDrive depuis son Mac :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Via l&amp;rsquo;interface web en utilisant un navigateur comme Safari ou Firefox.&lt;/li&gt;
+&lt;li&gt;Via l&amp;rsquo;app OneDrive téléchargeable gratuitement depuis l&amp;rsquo;App Store.&lt;/li&gt;
+&lt;li&gt;Via une des applications Office 365 : Word, Excel ou PowerPoint. Les autres, comme Microsoft Publisher, ne sont pas disponibles sur Mac, mais franchement vous ne ratez rien.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;L&amp;rsquo;app OneDrive va créer une copie locale des fichiers OneDrive stockés dans le Cloud, et il est possible de limiter la copie locale à une liste de dossiers sélectionnés. L&amp;rsquo;avantage, c&amp;rsquo;est que l&amp;rsquo;ouverture et la sauvegarde de fichiers en local est beaucoup plus rapide que sur un serveur distant.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/04/onedrive-cloud-local.jpg&#34; alt=&#34;OneDrive Local et Cloud&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Notez bien la différence entre &lt;strong&gt;OneDrive Local&lt;/strong&gt; et &lt;strong&gt;OneDrive Cloud&lt;/strong&gt;, car c&amp;rsquo;est déterminant pour la suite de l&amp;rsquo;article.&lt;/p&gt;
+
+&lt;p&gt;En théorie avec l&amp;rsquo;app OneDrive on a le meilleur des deux mondes : le stockage dans le cloud avec les fonctions de collaboration et de partage d&amp;rsquo;Office 365, et la vitesse d&amp;rsquo;accès aux fichiers du OneDrive local. Mais malheureusement ce n&amp;rsquo;est pas le cas, la faute à des petits défauts d&amp;rsquo;intégration qui viennent tout gâcher.&lt;/p&gt;
+
+&lt;h2 id=&#34;premier-point-qui-fâche-c-est-lent&#34;&gt;Premier point qui fâche : c&amp;rsquo;est lent&lt;/h2&gt;
+
+&lt;p&gt;Le service de Microsoft est trop lent. Par exemple j&amp;rsquo;ai essayé d&amp;rsquo;ouvrir une présentation de 30 Mo dans le Cloud OneDrive depuis PowerPoint, et il a fallu plus d&amp;rsquo;une dizaine de minutes pour la télécharger et l&amp;rsquo;ouvrir (débit misérable de quelques centaines de ko sur une connexion câble de 100 Mbps). Peut-être serez-vous plus chanceux que moi sur ce point.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/04/onedrive-cestlent.jpg&#34; alt=&#34;OneDrive C&#39;est lent&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;une-intégration-cloud-local-à-revoir&#34;&gt;Une intégration cloud - local à revoir&lt;/h2&gt;
+
+&lt;p&gt;Le truc le plus frustrant avec OneDrive Mac, c&amp;rsquo;est que lorsque vous ouvrez un document Office dans votre dossier OneDrive &lt;strong&gt;local&lt;/strong&gt;, Office est trop bête pour comprendre qu&amp;rsquo;il s&amp;rsquo;agit d&amp;rsquo;un document déjà stocké dans le cloud. Si vous essayez d&amp;rsquo;obtenir un lien pour partager le document avec d&amp;rsquo;autres personnes, il va vous dire qu&amp;rsquo;il faut d&amp;rsquo;abord sauver le document sur&amp;hellip; OneDrive (sous-entendu OneDrive &lt;strong&gt;Cloud&lt;/strong&gt;), &lt;em&gt;alors que c&amp;rsquo;est déjà le cas&lt;/em&gt;. Pour obtenir le lien, il faut donc fermer la copie locale, et ouvrir la copie Cloud&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;&amp;hellip; Et lorsque vous essayez d&amp;rsquo;ouvrir la copie OneDrive &lt;strong&gt;Cloud&lt;/strong&gt;, Office n&amp;rsquo;est pas bien malin non plus. Il se rend pas compte qu&amp;rsquo;une copie locale complète existe déjà et il télécharge à nouveau 100% du document à une allure d&amp;rsquo;escargot (franchement, c&amp;rsquo;est vraiment lent comparé à Dropbox). Mais au moins vous pouvez obtenir le fameux lien de partage du document.&lt;/p&gt;
+
+&lt;p&gt;Vous êtes donc obligé de choisir entre éditer la copie locale d&amp;rsquo;un document en bénéficiant de la vitesse ou éditer la copie cloud en bénéficiant des options de collaboration et de partage. OneDrive ne devrait pas nous forcer à choisir et devrait nous permettre de bénéficier du meilleur des deux mondes sans que l&amp;rsquo;utilisateur n&amp;rsquo;aie à se poser de question.&lt;/p&gt;
+
+&lt;h2 id=&#34;la-raison-d-utiliser-onedrive-l-édition-collaborative-de-documents&#34;&gt;LA raison d&amp;rsquo;utiliser OneDrive : l&amp;rsquo;édition collaborative de documents&lt;/h2&gt;
+
+&lt;p&gt;Il y a une raison bien précise pour laquelle j&amp;rsquo;ai voulu utiliser OneDrive. C&amp;rsquo;est que mon métier m&amp;rsquo;amène très souvent à partager et à collaborer sur des documents Office avec des collègues ou des clients.&lt;/p&gt;
+
+&lt;p&gt;Malheureusement là encore, il reste trop de bugs pour que cela soit réellement efficace au-delà d&amp;rsquo;une collaboration très simple. Par exemple il m&amp;rsquo;est arrivé plusieurs fois qu&amp;rsquo;un document se retrouve verrouillé en accès pour une raison inconnue, ou que PowerPoint multiplie de manière anarchique les « Masters » de slides comme d&amp;rsquo;autres les petits pains lors d&amp;rsquo;une édition collaborative à plusieurs. De plus comme mentionné plus haut si vous ouvrez la copie OneDrive Locale, Office n&amp;rsquo;est pas assez intelligent et ne comprend pas qu&amp;rsquo;il s&amp;rsquo;agit d&amp;rsquo;un document disponible dans OneDrive Cloud, et ne vous fait pas bénéficier des fonctions d&amp;rsquo;édition collaborative.&lt;/p&gt;
+
+&lt;p&gt;Au final c&amp;rsquo;est bien mieux qu&amp;rsquo;Office pré-365, mais insuffisant face à des outils comme Google Docs où l&amp;rsquo;édition collaborative fonctionne sans efforts.&lt;/p&gt;
+
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;Je tire une dernière fois sur l&amp;rsquo;ambulance. OneDrive est incapable de gérer tous les caractères dans les noms de fichiers, alors que Dropbox le fait sans aucun problème depuis des années. Enfin la fonction de sauvegarde des différentes versions de documents de Dropbox est bien plus sécurisante et aboutie que celle de OneDrive.&lt;/p&gt;
+
+&lt;p&gt;En l&amp;rsquo;état il est donc impossible de recommander OneDrive face à Dropbox. Pourtant Microsoft n&amp;rsquo;est pas loin, en réalité il n&amp;rsquo;y a que deux choses à améliorer pour faire de OneDrive un bon service :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Améliorer la vitesse&lt;/li&gt;
+&lt;li&gt;Corriger l&amp;rsquo;intégration fichiers locaux - cloud pour la rendre totalement transparente lorsqu&amp;rsquo;on utilise Office 365.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Allez Microsoft, un effort et OneDrive peut devenir une bonne solution de stockage Cloud.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/04/onedrive-crottemoji.jpg&#34; alt=&#34;OneDrive Local et Cloud&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Oui, cette dernière image est totalement inutile.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Utiliser une souris et une tablette graphique en même temps</title>
+      <link>https://www.pierremorsa.com/post/2017-04-24-utiliser-souris-et-tablette-graphique/</link>
+      <pubDate>Mon, 24 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pierremorsa.com/post/2017-04-24-utiliser-souris-et-tablette-graphique/</guid>
+      <description>&lt;p&gt;Si vous utilisez un ordinateur régulièrement depuis plusieurs années, il y a de fortes chances pour que vous ayez développé des douleurs dans les mains. Celles-ci n&amp;rsquo;ont en effet pas été conçues pour taper sur un clavier et manipuler une souris ou un trackpad plusieurs heures par jour.&lt;/p&gt;
+
+&lt;p&gt;J&amp;rsquo;ai déjà expliqué être passé à un &lt;a href=&#34;https://www.pierremorsa.com/blog/bureau-debout-pour-20-euros/&#34;&gt;bureau debout&lt;/a&gt; et &lt;a href=&#34;https://www.pierremorsa.com/post/2017-02-13-7-ans-clavier-bepo&#34;&gt; à la disposition clavier BÉPO&lt;/a&gt; pour réduire les douleurs articulaires, et ce sont des solutions efficaces quoique assez extrême. Mais ce n&amp;rsquo;était pas suffisant pour résoudre tous mes problèmes de douleur dans les articulations ; il fallait encore trouver une solution pour la souris. Ne faisant pas les choses à moitié, car une demi-souris c&amp;rsquo;est pas très pratique, j&amp;rsquo;ai donc opté pour une solution originale. J&amp;rsquo;utilise encore une souris, mais de la main gauche au lieu de la main droite. Au début c&amp;rsquo;est très compliqué, on rate les éléments d&amp;rsquo;interface, on clique sur le mauvais bouton, mais petit à petit on s&amp;rsquo;y fait. Mais surtout, en combinaison avec la souris, j&amp;rsquo;utilise une tablette graphique Wacom de taille moyenne (surface utile d&amp;rsquo;environ une feuille A5) de la main droite (je précise Wacom, parce que d&amp;rsquo;une part c&amp;rsquo;est pratiquement la seule marque qui fabrique ce genre de périphérique).&lt;/p&gt;
+
+&lt;p&gt;Combiner souris + tablette graphique présente le gros avantage de bénéficier des qualités uniques de chacun de ces appareils. La tablette Wacom est sans égale pour dessiner, pour retoucher une image ou pour réaliser de grands mouvements précis d&amp;rsquo;un bout à l&amp;rsquo;autre de l&amp;rsquo;écran. La souris, elle, présente l&amp;rsquo;avantage de pouvoir faire des ajustements pixel par pixel plus facilement que la tablette. En effet, avec la tablette graphique, lorsqu&amp;rsquo;on relève la pointe du stylet de la tablette il arrive que le curseur « dérape » d&amp;rsquo;un ou deux pixels, réduisant à néant les efforts d&amp;rsquo;alignement. De par sa conception la souris n&amp;rsquo;a pas ce problème. Aussi bizarre que cela puisse paraître, il m&amp;rsquo;arrive souvent d&amp;rsquo;utiliser les deux en même temps. La tablette Wacom pour faire des déplacements rapides à un autre point de l&amp;rsquo;écran et les retouches, et la souris pour réaliser des alignements précis. C&amp;rsquo;est devenu complètement naturel. D&amp;rsquo;autres personnes utilisent tablette et souris, mais l&amp;rsquo;originalité de mon système vient de l&amp;rsquo;utilisation simultanée d&amp;rsquo;un périphérique main gauche et main droite.&lt;/p&gt;
+
+&lt;p&gt;Au niveau purement articulaire, mes doigts me disent merci. D&amp;rsquo;une part la position du stylet de la tablette graphique est bien plus ergonomique que la souris. Et d&amp;rsquo;autre part, comme je répartis les efforts mécaniques entre deux périphériques, chaque main est moins sollicitée.&lt;/p&gt;
+
+&lt;p&gt;Cette solution me convient, mais est liée à mon utilisation très particulière de l&amp;rsquo;ordinateur, principalement PowerPoint et un peu d&amp;rsquo;illustration. En matière d&amp;rsquo;ergonomie, s&amp;rsquo;il y a une chose dont je suis convaincu, c&amp;rsquo;est que pour faire disparaître les douleurs, chaque petit détail compte : la posture du corps, les périphériques employés, leur disposition, la hauteur du bureau, etc. Chaque personne est différente, et une solution unique ne peut convenir à tous.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>7 idées pour rendre l&#39;iPad réellement utile</title>
+      <link>https://www.pierremorsa.com/post/2017-04-10-sept-idees-pour-rendre-l-ipad-utile/</link>
+      <pubDate>Mon, 10 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pierremorsa.com/post/2017-04-10-sept-idees-pour-rendre-l-ipad-utile/</guid>
+      <description>&lt;p&gt;Suite au vol de mon MacBook Pro Retina dans le train en 2015, j&amp;rsquo;ai décidé de voyager avec des gadgets moins chers lorsque c&amp;rsquo;est possible. Disposant déjà d&amp;rsquo;un iPad Mini, je l&amp;rsquo;ai naturellement choisi comme alternative ultra-nomade. Mais je me suis vite rendu compte de la dure réalité : beaucoup de tâches me prennent deux, trois, dix fois plus de temps sur l&amp;rsquo;iPad, voire sont simplement impossibles. Pour certaines tâches, c&amp;rsquo;est normal. Je ne me suis jamais attendu à pouvoir créer une présentation PowerPoint efficacement sur iPad. Mais pour d&amp;rsquo;autres tâches le problème est lié aux contraintes imposées par Apple. Par exemple copier un fichier de l&amp;rsquo;iPad vers une clé USB est tout simplement impossible sans l&amp;rsquo;achat d&amp;rsquo;une clé spéciale.&lt;/p&gt;
+
+&lt;p&gt;Après deux ans d&amp;rsquo;utilisation de l&amp;rsquo;iPad en tant qu&amp;rsquo;outil de productivité, voici à mon avis sept choses qui doivent être améliorées sur l&amp;rsquo;iPad pour le rendre réellement productif au jour le jour.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Mettre un port USB C. Lightning c&amp;rsquo;est peut-être cool, mais impossible de connecter une clé USB pour donner un fichier à un client. Même pas possible d&amp;rsquo;échanger simplement un fichier entre iPad et MacBook dernière génération !!! Bien sûr l&amp;rsquo;USB C n&amp;rsquo;est pas encore très répandu, mais il va devenir la norme dans les années qui viennent.&lt;/li&gt;
+&lt;li&gt;Faire vraiment fonctionner les claviers externes. À l&amp;rsquo;heure actuelle impossible d&amp;rsquo;utiliser la disposition BÉPO avec un clavier externe, les dispositions clavier non standard n&amp;rsquo;étant pas prises en compte (par exemple sur Mac il est possible d&amp;rsquo;utiliser la disposition BÉPO avec un clavier AZERTY, QWERTY ou SZRBOTJ, peu importe, la disposition logique étant indépendante de la disposition physique des touches).&lt;/li&gt;
+&lt;li&gt;Intégrer un Finder (ou équivalent). Ne pas pouvoir organiser ses fichiers en dossiers par projet est tout simplement idiot pour les professionnels. Pour l&amp;rsquo;instant j&amp;rsquo;utilise Dropbox et Onedrive pour pallier à ce manque, mais je préférerais une solution native.&lt;/li&gt;
+&lt;li&gt;Arrêter le racket sur les adaptateurs. Plus de 60€ pour un adaptateur Lightning - VGA, ça suffit.&lt;/li&gt;
+&lt;li&gt;Généraliser l&amp;rsquo;affichage côte à côte de deux applications. Pour l&amp;rsquo;instant cela ne fonctionne qu&amp;rsquo;avec certaines applications.&lt;/li&gt;
+&lt;li&gt;Autoriser le glisser-déposer d&amp;rsquo;une application à une autre. Ce geste tout simple et naturel sur Mac ne fonctionne pas sur iPad.&lt;/li&gt;
+&lt;li&gt;Et surtout : autoriser l&amp;rsquo;utilisation d&amp;rsquo;une souris ou d&amp;rsquo;un trackpad (!!!) - Ça a l&amp;rsquo;air d&amp;rsquo;être complètement idiot comme idée, mais réfléchissez bien, l&amp;rsquo;utilisation d&amp;rsquo;une souris comme alternative au doigt sur l&amp;rsquo;iPad permettrait de gagner grandement en précision et en productivité.  Imaginez simplement sélectionner du texte avec une souris au lieu du doigt ! Même des programmes comme Excel ou PowerPoint deviendraient agréables à utiliser sur iPad. Même pas besoin d&amp;rsquo;adapter l&amp;rsquo;interface tactile, celle-ci étant parfaitement adaptée à la souris (l&amp;rsquo;inverse n&amp;rsquo;étant pas vrai, une interface conçue pour la souris est quasi inutilisable en tactile).&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;En faisant cette liste je me rends compte au final qu&amp;rsquo;il n&amp;rsquo;en faut pas beaucoup pour éliminer les principales contraintes de l&amp;rsquo;iPad, mais Apple étant Apple, je doute qu&amp;rsquo;ils fassent les changements réellement utiles. En attendant j&amp;rsquo;ai craqué et j&amp;rsquo;ai repris mon Mac pour les voyages.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Nomade Digital, étape 3 : shit happens</title>
+      <link>https://www.pierremorsa.com/post/2017-03-20-shit-happens/</link>
+      <pubDate>Mon, 20 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pierremorsa.com/post/2017-03-20-shit-happens/</guid>
+      <description>
+
+&lt;p&gt;Aujourd&amp;rsquo;hui j&amp;rsquo;ai simplement envie de reposter cette vidéo.&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/4nHsTCCpxk0&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;J&amp;rsquo;ai envie de la poster parce que elle est juste parfaite. L&amp;rsquo;attitude de la personne interviewée. L&amp;rsquo;attitude du premier enfant qui rentre, puis le plus jeune qui arrive, et enfin l&amp;rsquo;attitude de la maman qui vient les rechercher en catastrophe.&lt;/p&gt;
+
+&lt;p&gt;Certains vont rigoler, se moquer de lui et dire à quel point c&amp;rsquo;est stupide. Mais je peux dire que soit ces personnes n&amp;rsquo;ont pas d&amp;rsquo;enfants, soit elles n&amp;rsquo;ont jamais travaillé depuis leur domicile. Personnellement je retiens qu&amp;rsquo;il a l&amp;rsquo;air d&amp;rsquo;être un super papa et que ses enfants ont l&amp;rsquo;air très heureux ! La démarche de la petite fille est juste géniale !&lt;/p&gt;
+
+&lt;p&gt;Mais là où les gens voient juste une vidéo marrante, je vois un choix de vie. En effet, on peut choisir de vivre sans avoir ce risque, travailler dans un environnement 100% « professionnel » dans les bureaux de l&amp;rsquo;entreprise, et ne voir ses enfants que le soir à 21h lorsqu&amp;rsquo;on est crevé et super énervé. Ou on peut choisir de vivre en acceptant les petits désagréments du travail à domicile, et passer du temps de qualité avec ses enfants et les voir grandir. C&amp;rsquo;est le choix que j&amp;rsquo;ai fait.&lt;/p&gt;
+
+&lt;p&gt;J&amp;rsquo;aurais pu être cette personne, si seulement j&amp;rsquo;avais quelque chose d&amp;rsquo;assez intéressant à dire pour être interviewé par la BBC. La porte de mon bureau ne ferme pas à clé, mes enfants ont leur chambre juste à côté, et j&amp;rsquo;ai déjà eu plusieurs cas où ils m&amp;rsquo;ont interrompu pendant une conversation sur Skype. Mais cela fait partie des petits désagréments de la vie du travailleur à distance. Pour rien au monde je ne voudrais abandonner cette vie pour retourner m&amp;rsquo;enfermer dans les locaux d&amp;rsquo;une grande entreprise.&lt;/p&gt;
+
+&lt;h2 id=&#34;le-joli-profil-public-c-est-bien-mais-on-fait-tous-des-conneries&#34;&gt;Le joli profil public c&amp;rsquo;est bien, mais on fait tous des conneries&lt;/h2&gt;
+
+&lt;p&gt;Lorsqu&amp;rsquo;on regarde la page Facebook des gens, on a l&amp;rsquo;impression de regarder des êtres parfaits, qui ne mangent que des mets succulents et ne vont jamais au McDo. Vous-même si vous lisez mon blog vous pensez peut-être que je suis super organisé avec mon système GTD en acier mercerisé. Sauf que non. Il y a quelques mois j&amp;rsquo;ai commis la plus grosse erreur de ma carrière : je me suis trompé de date pour une après-midi de coaching. Étant déjà occupé ailleurs, mon client a dû trouver une solution sans moi. Ça ne m&amp;rsquo;était jamais arrivé, mais cela prouve que malgré tous les trucs GTD et autres, je ne suis pas infaillible.&lt;/p&gt;
+
+&lt;h2 id=&#34;la-vie-n-a-pas-de-commande-annuler-alors-fuck&#34;&gt;La vie n&amp;rsquo;a pas de commande annuler, alors fuck&lt;/h2&gt;
+
+&lt;p&gt;Ben oui, une fois que le problème est arrivé, on ne peut pas revenir en arrière. Alors fuck. En termes plus polis, je veux dire par là que je vois trop de personnes revivre le problème pendant des jours, des semaines, voire des mois et gaspiller leur énergie à se dire j&amp;rsquo;aurais dû faire ça, oh la la que va-t-on penser de moi, etc. Ce qui est fait est fait. On fait comme les pilotes de coures après un crash. On fait reset dans sa tête, on se concentre sur la tâche en cours, et au prochain passage on fait la petite correction nécessaire pour améliorer sa trajectoire.&lt;/p&gt;
+
+&lt;p&gt;Du crash on tire une opportunité pour s&amp;rsquo;améliorer.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Automatiser ses tâches sur Mac</title>
+      <link>https://www.pierremorsa.com/post/2017-03-06-automatiser-taches-mac/</link>
+      <pubDate>Mon, 06 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pierremorsa.com/post/2017-03-06-automatiser-taches-mac/</guid>
+      <description>
+
+&lt;p&gt;Je l&amp;rsquo;avoue. Je suis un fanboy de l&amp;rsquo;automatisation des tâches sur Mac. Pour moi :&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;Automatisation &amp;gt; Délégation &amp;gt; Répétition manuelle&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Autrement dit, par ordre d&amp;rsquo;efficacité l&amp;rsquo;idéal est d&amp;rsquo;abord d&amp;rsquo;automatiser une tâche. Si ce n&amp;rsquo;est pas possible, essayer de la déléguer, mais ce n&amp;rsquo;est pas très sympa pour la personne qui hérite de cette tâche répétitive. En dernier recours on peut faire la tâche répétitive soi-même, encore et encore et encore et encore, comme un Shadok condamné à pomper pour l&amp;rsquo;éternité.&lt;/p&gt;
+
+&lt;p&gt;Les avantages de l&amp;rsquo;automatisation vont bien plus loin que simplement un gain de temps :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Automatiser une tâche me force à définir un processus « standard » le plus simple, le plus structuré et surtout &lt;strong&gt;le plus fiable possible&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Cela me force à mieux comprendre chaque étape de mon travail quotidien. Je peux mieux identifier les étapes qui créent réellement de la valeur et les étapes qui doivent être supprimées ou simplifiées.&lt;/li&gt;
+&lt;li&gt;Au lieu de répéter bêtement la même chose tous les jours, l&amp;rsquo;automatisation me permet de développer de nouvelles compétences très utiles.&lt;/li&gt;
+&lt;li&gt;Je réduis fortement le risque d&amp;rsquo;erreur humaine, ce qui est particulièrement important avec quelqu&amp;rsquo;un comme moi !&lt;/li&gt;
+&lt;li&gt;L&amp;rsquo;automatisation augmente le savoir-faire interne de l&amp;rsquo;entreprise au lieu l&amp;rsquo;externaliser bêtement.&lt;/li&gt;
+&lt;li&gt;Passé le petit investissement en temps initial, cela coûte beaucoup, beaucoup moins cher que la délégation.&lt;/li&gt;
+&lt;li&gt;Les tâches automatisées n&amp;rsquo;ont pas besoin d&amp;rsquo;être dans « l&amp;rsquo;inbox », ou y restent beaucoup moins de temps, ce qui libère l&amp;rsquo;esprit et permet de se concentrer sur les tâches réellement importantes.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Évidemment seules les tâches répondant à certains critères valent la peine d&amp;rsquo;être automatisées : ce sont celles qui sont répétitives, fréquentes, suivent un processus identique à chaque fois et sont « numérisables », autrement dit réalisables sur ordinateur. Il faut aussi bien soupeser le gain de temps potentiel face au temps de développement et surtout &lt;strong&gt;le temps de maintenance au fil du temps&lt;/strong&gt;, certains mécanismes d&amp;rsquo;automatisation ayant tendance à se « casser » au bout d&amp;rsquo;un temps, surtout ceux devant simuler des clics sur des éléments d&amp;rsquo;interface comme des boutons ou des images.&lt;/p&gt;
+
+&lt;h2 id=&#34;ma-boîte-à-outils-pour-automatiser-les-tâches-sur-mac&#34;&gt;Ma boîte à outils pour automatiser les tâches sur Mac&lt;/h2&gt;
+
+&lt;p&gt;La simplicité et la fiabilité de l&amp;rsquo;automatisation sont des critères essentiels. C&amp;rsquo;est pourquoi je n&amp;rsquo;utilise que des outils dont j&amp;rsquo;ai pu éprouver la fiabilité. Le cœur de mon système repose sur quatre applications et un service Web :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.keyboardmaestro.com/main/&#34;&gt;&lt;strong&gt;Keyboard Maestro&lt;/strong&gt;&lt;/a&gt; : crée des Macros très évoluées sur Mac. Une Macro est une séquence d&amp;rsquo;actions automatisées. Par exemple, Keyboard Maestro peut redimensionner une image, la convertir et la sauvegarder dans un format précis. C&amp;rsquo;est aussi le programme que j&amp;rsquo;utilise pour tous les raccourcis texte (par exemple si je tape l&amp;rsquo;abréviation « eml », mon adresse email s&amp;rsquo;insère automatiquement)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.noodlesoft.com&#34;&gt;&lt;strong&gt;Hazel&lt;/strong&gt;&lt;/a&gt; : automatise une série d&amp;rsquo;actions sur les fichiers d&amp;rsquo;un répertoire de votre ordinateur. Vous pouvez trier automatiquement des fichiers par type dans des sous-répertoires, les renommer, etc.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://latenightsw.com&#34;&gt;&lt;strong&gt;Script Debugger pour AppleScript&lt;/strong&gt;&lt;/a&gt; : le langage de Script d&amp;rsquo;Apple permet de piloter certaines applications. Ironiquement la suite Office de Microsoft jouit d&amp;rsquo;un meilleur support d&amp;rsquo;Applescript que les applications d&amp;rsquo;Apple ! Vous pouvez utiliser l&amp;rsquo;application Script Editor fournie avec chaque Mac pour développer en AppleScript, mais Script Debugger offre un bien meilleur confort de développement pour les scripts complexes.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://fakeapp.com&#34;&gt;&lt;strong&gt;Fake&lt;/strong&gt;&lt;/a&gt; : un navigateur web qui dispose également de commandes pour automatiser certaines actions, comme remplir un formulaire ou cliquer sur des boutons html. C&amp;rsquo;est une perle que pratiquement personne ne connaît.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://zapier.com&#34;&gt;&lt;strong&gt;Zapier&lt;/strong&gt;&lt;/a&gt; : un service web qui connecte des services Web entre eux et exécute des actions automatiquement. Zapier permet par exemple de poster automatiquement un message sur Slack lorsque vous recevez un email sur gmail, ou de stocker toutes les pièces jointes reçues dans son email dans un répertoire sur Dropbox.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Dans la capture d&amp;rsquo;écran ci-dessous je montre par exemple la palette Keyboard Maestro qui reprend les commandes les plus fréquentes pour Hugo, l&amp;rsquo;outil que j&amp;rsquo;utilise pour générer mon blog.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/03/keyboard-maestro-palette.jpg&#34; alt=&#34;Une palette Keyboard Maestro&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ces applications (à l&amp;rsquo;exception de Zapier) ne sont disponibles que sur Mac, mais il existe probablement l&amp;rsquo;équivalent sur Windows. J&amp;rsquo;utilise Keyboard Maestro en priorité, car c&amp;rsquo;est la solution la plus simple et la plus rapide, et AppleScript en dernier recours, car son utilisation requiert souvent plus de temps de débogage.&lt;/p&gt;
+
+&lt;p&gt;En termes de difficulté je dirais que Zapier et Keyboard Maestro peuvent être utilisés par des utilisateurs normaux, Fake et Hazel par des utilisateurs avertis (Hazel étant potentiellement dangereux en cas de mauvaise manipulation) et AppleScript par les personnes connaissant au minimum les bases de la programmation et prêtes à supporter la syntaxe bizarre de ce langage.&lt;/p&gt;
+
+&lt;h2 id=&#34;exemples-de-tâches-automatisées&#34;&gt;Exemples de tâches automatisées&lt;/h2&gt;
+
+&lt;p&gt;Automatiser, c&amp;rsquo;est bien, mais concrètement, que peut-on faire ? Un premier exemple est la revue des factures impayées. Chaque semaine j&amp;rsquo;ai un système automatique qui passe en revue les factures en retard de paiement dans Filemaker Pro, et en poste la liste sur Slack pour avertir les responsables. Dans une petite structure telle que la nôtre le fait de revoir les factures manuellement ferait perdre du temps précieux à quelqu&amp;rsquo;un. De plus il y a peu de chances que cette revue se fasse à intervalle aussi réguliers, et à chaque fois cela implique un risque d&amp;rsquo;erreurs. L&amp;rsquo;automatisation résoud tous ces problèmes.&lt;/p&gt;
+
+&lt;p&gt;En termes d&amp;rsquo;automatisation, la seule limite est l&amp;rsquo;imagination (et le choix des bons outils) ! Voici d&amp;rsquo;autres exemples de ce que j&amp;rsquo;ai automatisé :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Hazel + scanner ScanSnap S1300i : Classer automatiquement le courrier reçu et lui affecter une catégorie pour le retrouver plus facilement plus tard.&lt;/li&gt;
+&lt;li&gt;Keyboard Maestro + AppleScript + PowerPoint : Un système élaboré pour simplifier et accélérer la création des présentations (si vous regardez quelqu&amp;rsquo;un créer une présentation PowerPoint, vous vous rendrez compte à quel point on passe finalement peu de temps à saisir le contenu et énormément de temps à le mettre en forme).&lt;/li&gt;
+&lt;li&gt;Keyboard Maestro + Mail : gestion de modèles types d&amp;rsquo;emails.&lt;/li&gt;
+&lt;li&gt;Keyboard Maestro : raccourcis pour insérer les mots ou les phrases les plus souvent utilisées (par exemple taper eml insère mon adresse email, iossrt insère le numéro de SIRET de mon entreprise). À noter que j&amp;rsquo;aurais pu utiliser un outil dédié, comme TextExpander out TypeIt4Me, mais je reste fidèle à ma philosophie d&amp;rsquo;utiliser le moins d&amp;rsquo;outils possibles.&lt;/li&gt;
+&lt;li&gt;Zapier + Site Web + Slack : publication d&amp;rsquo;un nouveau message sur Slack lorsqu&amp;rsquo;une nouvelle demande d&amp;rsquo;information est envoyée via le site web.&lt;/li&gt;
+&lt;li&gt;AppleScript + Omnifocus : organisation automatique des projets en fonction de leur statut, signalisation des projets bloqués (qui n&amp;rsquo;ont plus aucune tâche active), calcul intelligent des dates de revue des projets, etc.&lt;/li&gt;
+&lt;li&gt;Organisation automatique de mes fenêtres en fonction de l&amp;rsquo;application utilisée pour optimiser l&amp;rsquo;espace de travail à l&amp;rsquo;écran.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Ce n&amp;rsquo;est qu&amp;rsquo;un aperçu, très loin d&amp;rsquo;être exhaustif, des tâches que j&amp;rsquo;ai automatisées au fil des années. J&amp;rsquo;estime que le cumul du temps gagné par chaque automatisation représente &lt;strong&gt;1 à 2 heures par jour&lt;/strong&gt;. Soit l&amp;rsquo;équivalent d&amp;rsquo;une journée de travail par semaine ! Et c&amp;rsquo;est sans compter le gain de fiabilité dans l&amp;rsquo;exécution.&lt;/p&gt;
+
+&lt;p&gt;Si vous avez des exemples d&amp;rsquo;automatisation que vous voulez partager n&amp;rsquo;hésitez pas à me les envoyer !&lt;/p&gt;
+
+&lt;p&gt;Note : je rappelle que je ne suis pas sponsorisé, et que tous les outils cités ici ont été achetés avec mes propres Deniers, parce que je pense que ce sont les meilleurs.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>7 ans avec la disposition clavier BÉPO</title>
+      <link>https://www.pierremorsa.com/post/2017-02-13-7-ans-clavier-bepo/</link>
+      <pubDate>Mon, 13 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pierremorsa.com/post/2017-02-13-7-ans-clavier-bepo/</guid>
+      <description>
+
+&lt;p&gt;Connaissez-vous le BÉPO ? C&amp;rsquo;est une disposition de clavier optimisée pour le français proposée comme alternative au bon vieux AZERTY. &lt;a href=&#34;https://bepo.fr/wiki/Accueil&#34;&gt;Voilà à quoi ressemble la disposition des touches sur un clavier BÉPO (image appartenant à https://bepo.fr)&lt;/a&gt; :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/02/carte-bepo-complete.png&#34; alt=&#34;Disposition clavier BÉPO&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;J&amp;rsquo;ai découvert le BÉPO il y a environ 7 ans. À l&amp;rsquo;époque j&amp;rsquo;avais des douleurs dans les articulations des mains à force d&amp;rsquo;utiliser des souris et des claviers d&amp;rsquo;ordinateurs tous les jours. Aujourd&amp;rsquo;hui je tape encore du texte tous les jours, mais je n&amp;rsquo;ai plus de douleurs. Pourtant je n&amp;rsquo;ai pas changé de clavier (un clavier standard Apple), je tape toujours autant et je n&amp;rsquo;ai pas rajeuni, donc ces trois paramètres peuvent être éliminés. J&amp;rsquo;attribue donc la disparition des douleurs en partie à l&amp;rsquo;utilisation du BÉPO&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. Pourquoi ? Parce que la position des touches a été optimisées statistiquement pour limiter le mouvement des doigts lorsqu&amp;rsquo;on écrit en langue française. Ainsi en BÉPO deux frappes de touches sur trois se font sur les touches de la ligne de repos (celle ou les doigts se reposent par défaut). Sur AZERTY, c&amp;rsquo;est seulement une frappe sur cinq ! Et qui dit moins de mouvements dit moins de stress pour les articulations et les tendons des mains.&lt;/p&gt;
+
+&lt;h2 id=&#34;les-avantages-du-bépo&#34;&gt;Les avantages du BÉPO&lt;/h2&gt;
+
+&lt;p&gt;Je suis très heureux d&amp;rsquo;être passé au BÉPO, et ce pour plusieurs raisons.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Moins de douleurs car moins de mouvements de doigts. C&amp;rsquo;est pour moi l&amp;rsquo;avantage principal de cette disposition.&lt;/li&gt;
+&lt;li&gt;Une vitesse de frappe en théorie plus rapide. Je dis en théorie, car personnellement je tapais déjà très vite en AZERTY et ma vitesse en BÉPO est similaire mais pas plus rapide.&lt;/li&gt;
+&lt;li&gt;Un accès à la typographie française amélioré : les majuscules accentuées, par exemple, sont accessibles très facilement, contrairement à l&amp;rsquo;AZERTY. L&amp;rsquo;accès à certaines subtilités typographiques telles que l&amp;rsquo;espace insécable, l&amp;rsquo;espace fine insécable et les guillemets français sont également bien plus simples.&lt;/li&gt;
+&lt;li&gt;Un accès à toutes les langues européennes. Il est parfaitement possible de taper simplement en anglais ou en espagnol en utilisant la disposition BÉPO (même si évidemment l&amp;rsquo;optimisation de la disposition des caractères disparaît).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;les-problèmes-du-bépo&#34;&gt;Les problèmes du BÉPO&lt;/h2&gt;
+
+&lt;p&gt;Tout n&amp;rsquo;est pas rose dans l&amp;rsquo;utilisation du BÉPO. Je liste ici les inconvénients majeurs.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Le problème principal est la courbe d&amp;rsquo;apprentissage, très raide. Il m&amp;rsquo;a fallu plusieurs années pour remplacer les réflexes acquis pendant des années sur AZERTY et me sentir totalement à l&amp;rsquo;aise sur BÉPO. Les premières semaines, je n&amp;rsquo;arrivais péniblement qu&amp;rsquo;à taper quelques mots par minute !&lt;/li&gt;
+&lt;li&gt;Aucun appareil n&amp;rsquo;est vendu avec la possibilité d&amp;rsquo;avoir le clavier BÉPO au lieu de l&amp;rsquo;AZERTY. Il existe des claviers externes BÉPO et des autocollants à placer sur les touches, mais la meilleure solution consiste simplement à apprendre la disposition BÉPO par cœur. J&amp;rsquo;ai tapé cet article sur un clavier Mac AZERTY configuré en BÉPO&lt;/li&gt;
+&lt;li&gt;Le BÉPO marche bien sur les ordinateurs, mais son support sur les smartphones et les tablettes reste très perfectible. La faute en particulier à certains fabricants comme Apple qui limitent fortement les possibilités d&amp;rsquo;extension.&lt;/li&gt;
+&lt;li&gt;Les raccourcis clavier BÉPO sont difficiles à mémoriser, et moins bien organisés. Par exemple, les touches couper, copier et coller sont côte à côte en AZERTY mais elles sont éparpillées partout sur le clavier en BÉPO.&lt;/li&gt;
+&lt;li&gt;Certains logiciels, en particulier les jeux, ne fonctionnent pas en BÉPO, ce qui peut causer une grosse confusion pour l&amp;rsquo;utilisateur.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;la-compatibilité-du-bépo&#34;&gt;La compatibilité du BÉPO&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://bepo.fr/wiki/Accueil&#34;&gt;Le site officiel BÉPO&lt;/a&gt; est très bien fait et explique tous les détails. Je me contenterai juste de mentionner que la disposition BÉPO est disponible sur Mac, Windows, Linux et Android. Elle est également supportée sur iPhone et iPad &lt;a href=&#34;http://iosbepo.me/fr/index.html&#34;&gt;grâce au travail de Gauthier Diependalle&lt;/a&gt;, mais sujette aux limites imposées par Apple (en particulier il est impossible d&amp;rsquo;utiliser un clavier externe avec la disposition BÉPO, ce que je trouve très frustrant).&lt;/p&gt;
+
+&lt;h2 id=&#34;en-conclusion&#34;&gt;En conclusion&amp;hellip;&lt;/h2&gt;
+
+&lt;p&gt;Vous avez des douleurs récurrentes dans les mains et les avant-bras liées à l&amp;rsquo;utilisation du clavier AZERTY &lt;strong&gt;et&lt;/strong&gt; vous avez beaucoup de patience ? Ou vous n&amp;rsquo;avez pas encore appris a taper à dix doigts et voulez en profiter pour apprendre une disposition optimisée ? Alors je vous recommande d&amp;rsquo;essayer le BÉPO.&lt;/p&gt;
+
+&lt;p&gt;Si par contre vous ne tapez pas beaucoup de texte sur ordinateur, si vous utilisez principalement une tablette ou un smartphone, ou si vous êtes déjà très rapide en AZERTY, il n&amp;rsquo;est probablement pas très sage d&amp;rsquo;investir beaucoup de temps dans l&amp;rsquo;apprentissage du BÉPO.&lt;/p&gt;
+
+&lt;p&gt;Pour en savoir plus, rendez-vous sur &lt;a href=&#34;https://bepo.fr/wiki/Accueil&#34;&gt;le site officiel BÉPO&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;Et aussi à l&amp;rsquo;utilisation simultanée d&amp;rsquo;une souris et d&amp;rsquo;une tablette Wacom, mais ça ce sera pour un autre article.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Nomade digital, étape 2 : être efficace en télétravail</title>
+      <link>https://www.pierremorsa.com/post/2016-12-05-nomade-digital-etape-2-efficace-teletravail/</link>
+      <pubDate>Mon, 05 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pierremorsa.com/post/2016-12-05-nomade-digital-etape-2-efficace-teletravail/</guid>
+      <description>
+
+&lt;p&gt;Suite de mes réflexions en tant que nomade digital. Vous pouvez trouver les autres articles sur le sujet &lt;a href=&#34;https://www.pierremorsa.com/post/2016-08-01-devenir-nomade-digital/&#34;&gt;ici&lt;/a&gt; et &lt;a href=&#34;https://www.pierremorsa.com/post/2016-09-26-nomade-digital-etape-1/&#34;&gt;ici&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Finalement être nomade digital, c&amp;rsquo;est simplement être un télétravailleur à temps plein. Beaucoup de personnes qui rêvent du télétravail sans en avoir fait l&amp;rsquo;expérience s&amp;rsquo;imaginent que c&amp;rsquo;est la liberté absolue. Elles ont raison. Et c&amp;rsquo;est bien là le problème.&lt;/p&gt;
+
+&lt;p&gt;Car &lt;strong&gt;« en situation de liberté absolue l&amp;rsquo;activité prioritaire est l&amp;rsquo;activité qu&amp;rsquo;on a envie de faire. »&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Et lorsqu&amp;rsquo;on a le choix, aucune contrainte, l&amp;rsquo;activité qu&amp;rsquo;on a envie de faire à n&amp;rsquo;importe quel moment de la journée c&amp;rsquo;est très rarement le travail. Tout devient tentation. Les vidéos de chats sur Youtube prennent une dimension métaphysique insoupçonnée. Les tweets de pâtisseries deviennent incroyablement passionnants. Même ranger la cuisine pourrait devenir intéressant (enfin, faut pas déconner non plus).&lt;/p&gt;
+
+&lt;p&gt;Résultat &lt;strong&gt;« la liberté absolue nous enferme dans une prison d&amp;rsquo;improductivité. »&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Alors que faire ? C&amp;rsquo;est simple. Puisque la liberté absolue n&amp;rsquo;incite pas à travailler, il faut se créer un système limitant cette liberté. C&amp;rsquo;est le paradoxe du travail à distance : &lt;strong&gt;pour pouvoir être plus libre, il faut être capable de s&amp;rsquo;imposer soi-même des contraintes&lt;/strong&gt;. Il n&amp;rsquo;existe pas de système unique fonctionnant pour tout le monde, un système de contraintes pourra fonctionner fantastiquement bien pour Toto et être totalement inefficace pour Titi. C&amp;rsquo;est un exemple, je n&amp;rsquo;ai rien contre les Titi.&lt;/p&gt;
+
+&lt;p&gt;Au fil des années j&amp;rsquo;ai mis en place un &lt;strong&gt;système de productivité&lt;/strong&gt; qui m&amp;rsquo;aide à tenir mes engagements jour après jour. GTD fait partie de ce système mais ne suffit pas. Mon système est constitué d&amp;rsquo;un ensemble de règles qui structurent ma journée de travail.&lt;/p&gt;
+
+&lt;h2 id=&#34;6-exemples-de-règles-pour-le-télétravail&#34;&gt;6 exemples de règles pour le télétravail&lt;/h2&gt;
+
+&lt;p&gt;Voici quelques exemples de règles de télétravail que j&amp;rsquo;applique :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Réserver un endroit au travail&lt;/strong&gt;. Que ce soit une pièce entière, un bureau ou un simple coin de table, essayez de toujours travailler au même endroit. Au fil du temps lorsque vous serez à cet endroit il vous sera plus naturel de vous mettre en mode travail. Pour moi c&amp;rsquo;est mon célèbre &lt;a href=&#34;https://www.pierremorsa.com/blog/bureau-debout-pour-20-euros/&#34;&gt;bureau debout à 20€.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Adopter des horaires réguliers&lt;/strong&gt;. Que ce soit le traditionnel 9h à 17h ou des horaires plus exotiques comme 22h à 2h ou 6h à 11h, essayez de démarrer et terminer le travail tous les jours à la même heure.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Habillez-vous pour le travail&lt;/strong&gt;. Ne restez pas en pyjama pantoufles, lavez-vous, habillez-vous bien, comme si vous deviez rencontrer vos collègues. Ça vous aidera à vous mettre dans l&amp;rsquo;ambiance « travail ».&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Limitez les distractions&lt;/strong&gt;. Coupez les notifications inutiles, ne vérifiez pas votre email en permanence, ne laissez pas vos enfants vous déranger pendant le travail, empêchez votre chat de venir se coucher sur le clavier, etc.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Établissez une limite claire et séparez nettement travail et privé&lt;/strong&gt;. Réserver un endroit et un horaire au travail c&amp;rsquo;est bien, mais veillez également que le travail ne s&amp;rsquo;immisce pas partout dans votre vie. Le week-end c&amp;rsquo;est le week-end, le travail n&amp;rsquo;y a pas sa place, ni dans les discussions, ni dans votre esprit.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Ouvrez et fermez la journée de travail&lt;/strong&gt;. Dans le même esprit,  échauffez votre cerveau avec quelques tâches faciles au début de la journée de travail et fermez officiellement la journée de travail, par exemple en effectuant une revue quotidienne de vos tâches et projets.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Mais alors, finalement, le télétravail, c&amp;rsquo;est autant de contraintes que d&amp;rsquo;être au bureau ??? Et oui, il n&amp;rsquo;y a pas de magie, le télétravail c&amp;rsquo;est le travail ! Mais avec deux différences fondamentales. Premièrement, vous êtes libre de choisir le système de contraintes qui vous convient le mieux plutôt que de « subir » le système existant, et ça c&amp;rsquo;est un énorme avantage pour les personnes qui ont l&amp;rsquo;auto-discipline nécessaire. Deuxièmement il est beaucoup plus facile de gérer les interruptions externes lorsqu&amp;rsquo;on est en télétravail.&lt;/p&gt;
+
+&lt;p&gt;Pour conclure, et de mon expérience générale, la capacité à travailler à distance d&amp;rsquo;une personne dépend directement de sa capacité à s&amp;rsquo;imposer les contraintes nécessaires, et donc de sa capacité d&amp;rsquo;auto-discipline. Comme tout, cette capacité d&amp;rsquo;auto-discipline se travaille. Mais ce sera pour un autre article&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Nomade digital, étape 1</title>
+      <link>https://www.pierremorsa.com/post/2016-09-26-nomade-digital-etape-1/</link>
+      <pubDate>Mon, 26 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pierremorsa.com/post/2016-09-26-nomade-digital-etape-1/</guid>
+      <description>&lt;p&gt;Après avoir réfléchi à l&amp;rsquo;idée du nomade digital, j&amp;rsquo;en suis venu à une conclusion simple : que voyager autour du monde soit réaliste ou non, j&amp;rsquo;ai envie que mon mode de travail soit celui d&amp;rsquo;un nomade digital, même si je ne bouge pas de chez moi. Je n&amp;rsquo;aime pas beaucoup Paris, et le bénéfice d&amp;rsquo;aller moins souvent dans cette ville me suffit pour vouloir me lancer dans l&amp;rsquo;aventure. Et puis je suis déjà semi-nomade. Je vais à Paris une ou deux fois maximum par semaine. Arriver à zéro fois doit bien être possible. Mais pour cela je dois faire des choix clairs, et mettre en place les outils adaptés.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Choix 1&lt;/strong&gt; : le coaching et la formation se font souvent en face à face, et sont donc adaptés au travail à distance. Je vais donc me focaliser sur la création de présentation : création de la structure, de l&amp;rsquo;histoire et des slides.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Choix 2&lt;/strong&gt; : je vais me focaliser sur les clients qui n&amp;rsquo;ont pas besoin de réunions en face à face et qui préfèrent travailler via email, téléphone et Skype. Cela éliminera un petit nombre de clients, mais aujourd&amp;rsquo;hui c&amp;rsquo;est tout à fait jouable.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Outil 1&lt;/strong&gt; : une meilleure vente en ligne de l&amp;rsquo;offre de création de présentations. Si je ne suis pas présent physiquement il faut que je sois plus visible sur Internet. Je vais donc travailler pour renforcer et améliorer la visibilité de l&amp;rsquo;offre création de présentations sur le site de ma société, et simplifier le processus de paiement en ligne.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Outil 2&lt;/strong&gt; : un processus clair. Pour éviter les malentendus, je vais créer un petit document ou une page qui explique dès le début comment je travaille. Cela évitera aux personnes qui veulent absolument une réunion en face à face de perdre leur temps.&lt;/p&gt;
+
+&lt;p&gt;Voilà, c&amp;rsquo;est le début de ma stratégie pour pouvoir devenir nomade digital. L&amp;rsquo;avantage, c&amp;rsquo;est que si les outil sont efficaces, ils seront bénéfiques non seulement pour moi, mais pour les autres créateurs de présentations de la société.&lt;/p&gt;
+
+&lt;p&gt;La dernière question est de savoir si c&amp;rsquo;est réaliste. Aujourd&amp;rsquo;hui il existe des tas de sociétés qui vendent des services plus ou moins complexes uniquement en ligne. Le challenge pour moi est de rendre notre service suffisamment simple et attractif pour que les visiteurs travaillent avec nous. Et le seul moyen d&amp;rsquo;y arriver c&amp;rsquo;est d&amp;rsquo;essayer !&lt;/p&gt;
+
+&lt;p&gt;Si jamais vous avez des conseils pour m&amp;rsquo;aider à réussir mon challenge de devenir nomade digital, je suis preneur !&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
