@@ -1,9 +1,10 @@
 +++
-title      = "Pourquoi le discours de Donald Trump est-il crédible ?"
-author     = "Pierre Morsa"
-date       = "2017-12-11"
-categories = [ "Présenter en public", "Storytelling" ]
-draft      = false
+title       = "Pourquoi le discours de Donald Trump est-il crédible ?"
+author      = "Pierre Morsa"
+date        = "2017-12-11"
+publishdate = "2017-12-11T05:00:00+01:00" 
+categories  = [ "Présenter en public", "Storytelling" ]
+draft       = false
 +++
 
 Pourquoi Donald Trump est-il crédible ? Je veux dire, pas crédible pour vous ou moi. Mais pourquoi est-il crédible pour pratiquement 50% des américains ? Après tout, n'a-t-il pas échoué à tenir plusieurs de ses promesses, comme supprimer l'Obamacare, fermer les frontières à toute immigration et construire un mur à la frontière mexicaine financé par le Mexique ? N'a-t-il pas été pris plusieurs fois en flagrant délit de mensonge, ou tout du moins n'a-t-il pas une vision très approximative de la réalité ? Alors, qu'est-ce qui alimente la crédibilité de Trump ?
