@@ -1,5 +1,5 @@
 +++
-title      = "Pourquoi Donald Trump est-il crédible ?"
+title      = "Pourquoi le discours de Donald Trump est-il crédible ?"
 author     = "Pierre Morsa"
 date       = "2017-12-11"
 categories = [ "Présenter en public", "Storytelling" ]
