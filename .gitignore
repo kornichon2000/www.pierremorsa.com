@@ -1,2 +1,7 @@
 
 *.espressostorage
+.DS_Store
+.DS_Store
+static/pictures/2017/.DS_Store
+www.pierremorsa.com.esproj/user.pmorsa.espressostorage
+themes/hugo-future-imperfect/static/css/main.css
