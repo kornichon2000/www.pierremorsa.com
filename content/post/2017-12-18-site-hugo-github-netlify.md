@@ -11,7 +11,7 @@ Dans cette première partie je vous propose un tutoriel pas à pas pour créer l
 
 Ce blog est une sorte de cobaye. Je lui fais subir des tas d'expériences lorsque je veux tester ce que cela donne. À l'origine c'était une simple page web, puis il a migré sur Joomla un des premiers « CMS » 100% Web, puis sur Wordpress qui était et est encore la solution préférée de beaucoup de sites. Fatigué des problèmes à répétition de WordPress (sécurité, mise à jour des plugins, etc.) j'ai fini par migrer en 2016 vers un site statique généré par le génial [Hugo](http://gohugo.io).
 
-Le site étant constitué de simples pages html et un peu de CSS (et pour ceux qui le veulent du JavaScript) n'importe quel hébergeur peut accueillir un site généré avec Hugo. Il est même possible de le faire depuis Dropbox ou Github. Jusqu'il y a peu ce blog était encore chez un hébergeur classique, mais depuis la semaine dernière il tourne avec le couple [Github](https://github.com) + [Netlify](https://www.netlify.com). Github stocke tout le contenu et tout le « code » du site (à mon sens ce n'est pas vraiment du code car ça n'exécute rien, mais plutôt des données structurées), et Netlify sert les pages depuis son CDN. À en croire ce test, le résultat en termes de performances me semble plutôt probant :
+usqu'il y a peu ce blog était encore chez un hébergeur classique, mais depuis la semaine dernière il tourne avec le couple [Github](https://github.com) + [Netlify](https://www.netlify.com). Github stocke tout le contenu et tout le « code » du site (à mon sens ce n'est pas vraiment du code car ça n'exécute rien, mais plutôt des données structurées), et Netlify sert les pages depuis son CDN. À en croire ce test, le résultat en termes de performances me semble plutôt probant :
 
 ![Testmysite Pierremorsa Com](/pictures/2017/12/testmysite-pierremorsa-com.jpg)
 
@@ -43,9 +43,7 @@ Ci-dessous vous trouverez la procédure que j'ai suivie pour migrer ce blog vers
 [Pour les total flemmards vous pouvez télécharger directement le fichier ici](/files/netlify.toml)
 
 ## Mettez le code du blog sur Github
-Si vous ne connaissez pas du tout Github, à la base c'est une solution pour gérer différentes versions d'un « répertoire ». C'est très utile pour les développeurs, qui peuvent ainsi garder une version stable de leur code et en parallèle travailler sur des nouvelles versions sans devoir tout dupliquer.
-
-Je prends comme hypothèse que vous utilisez le terminal pour 
+Si vous ne connaissez pas du tout Github, à la base c'est une solution pour gérer différentes versions d'un « répertoire ». C'est très utile pour les développeurs, qui peuvent ainsi garder une version stable de leur code et en parallèle travailler sur des nouvelles versions sans devoir tout dupliquer. Qui peut le plus peut le moins. Github peut servir à « versionner » des répertoires de documents, et dans notre cas le code source d'un site.
 
 ### Créez un compte Github
 Je ne vais pas expliquer cette partie, il suffit d'aller sur [github.com](https://github.com) et de se créer un compte, c'est à la portée du premier utilisateur de Facebook venu. Gardez bien le nom d'utilisateur et le mot de passe car nous allons en avoir besoin.
@@ -54,9 +52,12 @@ Je ne vais pas expliquer cette partie, il suffit d'aller sur [github.com](https:
 À partir du terminal, allez dans le répertoire qui contient le code du site. Par exemple ```~/Sites/Hugo/www.testtoto.com/```
 
 Une fois dans le bon répertoire tapez la commande suivante pour initialiser le répertoire Github :
+
 ```git init```
 
-Vous devriez avoir un message du genre ```Initialized [empty] Git repository in ~/Sites/Hugo/www.testtoto.com/.git/```
+Vous devriez avoir un message du genre 
+
+```Initialized [empty] Git repository in ~/Sites/Hugo/www.testtoto.com/.git/```
 
 Voilà, c'est tout, on pourrait tout faire depuis la ligne de commande en tapant des tas de trucs qui font intelligent mais ça me casse les pieds. Je vais donc utiliser le client Github Desktop pour la suite.
  
@@ -68,7 +69,9 @@ Pour ce faire cliquez sur le lien ci-dessous :
 Une fois installé, lancez Github Desktop, et configurez-le pour vous connecter à votre compte Github.
 
 ### Ajoutez votre répertoire git local à Github Desktop
-Si l'application ne vous le propose pas par défaut commencez par ajouter votre repository : ```File → Add Local Repository...```
+Si l'application ne vous le propose pas par défaut commencez par ajouter votre repository : 
+
+```File → Add Local Repository...```
 
 ![Github Add Local Repository](/pictures/2017/12/github-add-local-repository.jpg)
 
