@@ -17,7 +17,7 @@ Il serait facile de se moquer des électeurs de Trump et de leur « manque » 
 
 Que l'on soit de gauche ou de droite, démocrate ou républicain, vert ou rouge, nos valeurs occupent une part très importante dans notre processus de décision.
 
-C'est pourquoi **Trump reste crédible tant que son discours reste crédible vis-à-vis des valeurs de son électorat, et non vis-à-vis des faits.** Ce qui peut tuer Trump, c'est de déclarer du jour au lendemain que l'Obamacare est finalement un plan génial et qu'il faut le maintenir coûte que coûte. Ou de dire que le mur à la frontière du Mexique est une connerie. Ça, ça va le décrédibiliser, car c'est déclarations seraient contraires aux valeurs identitaires de son électorat.
+C'est pourquoi **Trump reste crédible tant que son discours reste crédible vis-à-vis des valeurs de son électorat, et non vis-à-vis des faits.** Ce qui peut tuer Trump, c'est de déclarer du jour au lendemain que l'Obamacare est finalement un plan génial et qu'il faut le maintenir coûte que coûte. Ou de dire que le mur à la frontière du Mexique est une connerie. Ça, ça va le décrédibiliser, car ces déclarations seraient contraires aux valeurs identitaires de son électorat.
 
 Notre Ego s'accorde assez bien du fait de s'identifier à des valeurs que nous ne respectons absolument pas en pratique ; ou plus exactement il va réussir à tordre la réalité pour qu'elle s'accorde avec l'image qu'il s'est construit de nous-mêmes. C'est pourquoi certains Nazis étaient à la fois des pères exemplaires et des monstres de barbarie. Un des grands drames de l'humanité est que notre Ego s'accorde très bien de ses contradictions, aussi horribles soient elles, tant que l'image qu'il a construit de nous-mêmes reste conforme aux valeurs auxquelles il s'identifie.
 
