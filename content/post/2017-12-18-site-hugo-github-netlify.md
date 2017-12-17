@@ -11,7 +11,7 @@ Dans cette première partie je vous propose un tutoriel pas à pas pour créer l
 
 Ce blog est une sorte de cobaye. Je lui fais subir des tas d'expériences lorsque je veux tester ce que cela donne. À l'origine c'était une simple page web, puis il a migré sur Joomla un des premiers « CMS » 100% Web, puis sur Wordpress qui était et est encore la solution préférée de beaucoup de sites. Fatigué des problèmes à répétition de WordPress (sécurité, mise à jour des plugins, etc.) j'ai fini par migrer en 2016 vers un site statique généré par le génial [Hugo](http://gohugo.io).
 
-usqu'il y a peu ce blog était encore chez un hébergeur classique, mais depuis la semaine dernière il tourne avec le couple [Github](https://github.com) + [Netlify](https://www.netlify.com). Github stocke tout le contenu et tout le « code » du site (à mon sens ce n'est pas vraiment du code car ça n'exécute rien, mais plutôt des données structurées), et Netlify sert les pages depuis son CDN. À en croire ce test, le résultat en termes de performances me semble plutôt probant :
+Jusqu'il y a peu ce blog était encore chez un hébergeur classique, mais depuis la semaine dernière il tourne avec le couple [Github](https://github.com) + [Netlify](https://www.netlify.com). Github stocke tout le contenu et tout le « code » du site (à mon sens ce n'est pas vraiment du code car ça n'exécute rien, mais plutôt des données structurées), et Netlify sert les pages depuis son CDN. À en croire ce test, le résultat en termes de performances me semble plutôt probant :
 
 ![Testmysite Pierremorsa Com](/pictures/2017/12/testmysite-pierremorsa-com.jpg)
 

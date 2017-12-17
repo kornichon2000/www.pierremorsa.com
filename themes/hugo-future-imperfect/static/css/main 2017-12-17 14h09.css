@@ -932,8 +932,6 @@ body {
     -webkit-flex-direction: row-reverse;
     -ms-flex-direction: row-reverse;
     flex-direction: row-reverse;
-    justify-content: center;
-    align-items: flex-start;
     -moz-transition: opacity 0.5s ease;
     -webkit-transition: opacity 0.5s ease;
     -ms-transition: opacity 0.5s ease;
@@ -941,13 +939,14 @@ body {
     margin: 0 auto;
     opacity: 1;
     padding: 2em;
-    max-width: 1024px;
-    width: 100%;
+    max-width: 100%;
+    width: 90em;
 }
 
 @media screen and (max-width:980px) {
     #wrapper {
         display: block;
+        width: 100%;
     }
 }
 
