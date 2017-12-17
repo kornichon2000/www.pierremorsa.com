@@ -130,7 +130,7 @@ p {
     margin: 0 0 2em 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4 {
     color: #3c3b3b;
     font-weight: 800;
     letter-spacing: 0.1em;
@@ -139,7 +139,7 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
 }
 
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+h1 a, h2 a, h3 a, h4 a {
     color: inherit;
     border-bottom: 0;
 }
@@ -153,14 +153,6 @@ h3 {
 }
 
 h4 {
-    font-size: 0.7em;
-}
-
-h5 {
-    font-size: 0.7em;
-}
-
-h6 {
     font-size: 0.7em;
 }
 
@@ -209,7 +201,8 @@ pre code {
 
 @media screen and (max-width:1280px) {
     pre {
-        width: 480px;
+        width: 100%;
+		max-width: 480px;
     }
 }
 
@@ -288,12 +281,12 @@ button,
     color: #3c3b3b !important;
     cursor: pointer;
     display: inline-block;
-    font-size: 0.6em;
+    font-size: 0.7em;
     font-weight: 800;
     height: 4.8125em;
     letter-spacing: 0.25em;
     line-height: 4.8125em;
-    padding: 0 2.5em;
+    padding: 0 3em;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
@@ -309,44 +302,6 @@ button:hover,
 button:hover:active,
 .button:hover:active {
     background-color: rgba(46, 186, 174, 0.05);
-}
-
-button:before,
-button:after,
-.button:before,
-.button:after {
-    color: #aaaaaa;
-    position: relative;
-}
-
-button:before,
-.button:before {
-    left: -1em;
-    padding: 0 0 0 0.75em;
-}
-
-button:after,
-.button:after {
-    left: 1em;
-    padding: 0 0.75em 0 0;
-}
-
-button.fit,
-.button.fit {
-    display: block;
-    margin: 0 0 1em 0;
-    width: 100%;
-}
-
-button.big,
-.button.big {
-    font-size: 0.7em;
-    padding: 0 3em;
-}
-
-button.small,
-.button.small {
-    font-size: 0.5em;
 }
 
 button.disabled,
@@ -373,29 +328,6 @@ label {
     font-size: 0.9em;
     font-weight: 700;
     margin: 0 0 1em 0;
-}
-
-.icon {
-    text-decoration: none;
-    border-bottom: none;
-    position: relative;
-}
-
-.icon:before {
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
-    text-transform: none !important;
-}
-
-.icon > .label {
-    display: none;
-}
-
-.icon.suffix:before {
-    float: right;
 }
 
 .image {
@@ -789,8 +721,7 @@ dl dd {
     .post {
         border-left: 0;
         border-right: 0;
-        left: -3em;
-        width: calc(100% + (3em * 2));
+        width: calc(100%);
     }
 
     .post > header {
@@ -834,32 +765,10 @@ dl dd {
         width: 100%;
     }
 
-    .post > header .meta > * {
-		border-left: 0;
-		margin: 1em 0 0 0;
-		padding-left: 0;
-    }
-
-    .post > header .meta > :first-child {
-        border-left: 0;
-        margin-left: 0;
-        padding-left: 0;
-    }
-
     .post > header .meta .published {
         margin-bottom: 0;
         margin-top: 0;
     }
-
-    .post > .image.featured {
-        margin-left: -1.5em;
-        margin-top: calc(-1.5em - 1px);
-        width: calc(100% + 3em);
-    }
-}
-
-section.special, article.special {
-    text-align: center;
 }
 
 header p {
@@ -932,13 +841,16 @@ body {
     -webkit-flex-direction: row-reverse;
     -ms-flex-direction: row-reverse;
     flex-direction: row-reverse;
+	-moz-justify-content: center;
+	-webkit-justify-content: center;
+	-ms-justify-content: center;
     justify-content: center;
     align-items: flex-start;
     -moz-transition: opacity 0.5s ease;
     -webkit-transition: opacity 0.5s ease;
     -ms-transition: opacity 0.5s ease;
     transition: opacity 0.5s ease;
-    margin: 0 auto;
+    margin: auto;
     opacity: 1;
     padding: 2em;
     max-width: 1024px;
@@ -948,6 +860,7 @@ body {
 @media screen and (max-width:980px) {
     #wrapper {
         display: block;
+        padding: 0;
     }
 }
 
@@ -982,9 +895,19 @@ body {
         border-top: solid 1px rgba(160, 160, 160, 0.3);
         margin: 3em 0 0 0;
         min-width: 0;
-        padding: 3em 0 0 0;
+        padding: 3em;
         width: 100%;
     }
+}
+
+#navigation {
+	padding: 0;
+}
+
+@media screen and (max-width:980px) {
+	#navigation {
+		padding: 0 3em;			
+	}
 }
 
 #intro a {
