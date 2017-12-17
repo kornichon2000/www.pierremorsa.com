@@ -27,8 +27,10 @@ paginate                 = 5
 # This is optional, but it's suggested to use
 [params.intro]
     header    	= "Pierre Morsa"
+    headerleft  = "Pierre"
+    headerright = "Morsa"
     paragraph 	= "Présenter en public, Getting Things Done, Lifehacks, Technomagie etc."
-    about     	= "Pierre Morsa est Partner + Creative Director chez <a href='https://www.ideasonstage.com'>Ideas on Stage</a>, la première agence globale de création de présentations. <br>Pour me contacter écrivez-moi à<br>p i e r r e . m o r s a @ p i e r r e m o r s a . c o m"
+    about     	= "Pierre Morsa est Partner + Creative Director chez <a href='https://www.ideasonstage.com'>Ideas on Stage</a>, la première agence globale de création de présentations. <br>Pour me contacter écrivez-moi à<br>p i e r r e . m o r s a @ pierremorsa.com"
     button		= "En savoir Plus"
 
 # This will also appear on the sidebar.

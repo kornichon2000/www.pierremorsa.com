@@ -340,46 +340,6 @@ label {
     display: block;
 }
 
-.image.left, .image.right {
-    max-width: 40%;
-}
-
-.image.left img, .image.right img {
-    width: 100%;
-}
-
-.image.left {
-    float: left;
-    padding: 0 1.5em 1em 0;
-    top: 0.25em;
-}
-
-.image.right {
-    float: right;
-    padding: 0 0 1em 1.5em;
-    top: 0.25em;
-}
-
-.image.fit {
-    display: block;
-    margin: 0 0 2em 0;
-    width: 100%;
-}
-
-.image.fit img {
-    width: 100%;
-}
-
-.image.featured {
-    display: block;
-    margin: 0 0 3em 0;
-    width: 100%;
-}
-
-.image.featured img {
-    width: 100%;
-}
-
 @media screen and (max-width:980px) {
     .image.featured {
         margin: 0 0 1.5em 0;
@@ -688,7 +648,7 @@ dl dd {
 }
 
 .post > header .meta .published {
-    color: #3c3b3b;
+    color: #bbbbbb;
     display: block;
     font-family: Helvetica, sans-serif;
     font-size: 0.7em;
@@ -697,24 +657,6 @@ dl dd {
     margin-top: 0.5em;
     text-transform: uppercase;
     white-space: nowrap;
-}
-
-.post > .image.featured {
-    overflow: hidden;
-}
-
-.post > .image.featured img {
-    -moz-transition: -moz-transform 0.2s ease-out;
-    -webkit-transition: -webkit-transform 0.2s ease-out;
-    -ms-transition: -ms-transform 0.2s ease-out;
-    transition: transform 0.2s ease-out;
-}
-
-.post > .image.featured:hover img {
-    -moz-transform: scale(1.05);
-    -webkit-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    transform: scale(1.05);
 }
 
 @media screen and (max-width:980px) {
@@ -818,6 +760,7 @@ body {
 }
 
 #header h1 a {
+	color: #bbbbbb;
     font-size: 0.7em;
 }
 
@@ -936,6 +879,10 @@ body {
     width: 4.5em;
 }
 
+#intro header {
+	padding-top: 3em;
+}
+
 #intro header h2 {
     font-size: 2em;
     font-weight: 900;
@@ -952,10 +899,12 @@ body {
 	}
 
     #intro header h2 {
+    	color: #bbbbbb;
         font-size: 1.25em;
     }
 
     #intro header p {
+    	color: #bbbbbb;
         font-size: 0.7em;
     }
 
@@ -973,7 +922,7 @@ body {
 }
 
 #footer .copyright {
-    color: #aaaaaa;
+    color: #bbbbbb;
     font-size: 0.5em;
     font-weight: 400;
     letter-spacing: 0.25em;
