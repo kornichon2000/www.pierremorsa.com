@@ -1,6 +1,6 @@
 baseurl                  = "https://www.pierremorsa.com/"
 languageCode             = "fr"
-title                    = "Pierre Morsa | Présenter en public et Getting Things Done"
+title                    = "Pierre Morsa | Présenter en public et GTD"
 theme                    = "hugo-future-imperfect"
 preserveTaxonomyNames    = true
 paginate                 = 5

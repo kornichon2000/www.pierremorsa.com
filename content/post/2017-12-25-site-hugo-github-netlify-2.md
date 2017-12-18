@@ -4,7 +4,7 @@ author      = "Pierre Morsa"
 date        = "2017-12-25"
 publishdate = "2017-12-25T05:00:00+01:00" 
 categories  = [ "Technomagie" ]
-draft       = false
+draft       = true
 +++
 
 Dans cette deuxième partie nous allons voir comment configurer Netlify pour servir les pages du site. Si vous ne l'avez pas lue je vous conseille de démarrer par la [partie 1 de l'article qui explique comment déplacer le code du site dans Github](/post/2017-12-18-site-hugo-github-netlify-1).
