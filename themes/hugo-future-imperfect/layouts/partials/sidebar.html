@@ -20,7 +20,7 @@
             {{ end }}
             {{ if .RSSLink }}
                 <b><a href="{{ .RSSLink }}" type="application/rss+xml"
-                    target="_blank" title="RSS" class="fa fa-rss">S'ABONNER AU FLUX RSS</a></b>
+                    target="_blank" title="RSS" class="button">{{ with .Site.Params.localized.button.rss }}{{ . | markdownify }}{{ end }}</a></b>
             {{ end }}
         </section>
 
@@ -56,7 +56,7 @@
             <p>{{ with .Site.Params.intro.about }}{{ . | markdownify }}{{ end }}</p>
 
             <ul class="actions">
-                <li><a href="/about/" class="button">{{ with .Site.Params.intro.button }}{{ . | markdownify }}{{ end }}</a></li>
+                <li><a href="/about/" class="button">{{ with .Site.Params.localized.button.about }}{{ . | markdownify }}{{ end }}</a></li>
             </ul>
         </section>
 

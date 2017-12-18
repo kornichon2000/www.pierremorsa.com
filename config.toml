@@ -1,13 +1,13 @@
 baseurl                  = "https://www.pierremorsa.com/"
 languageCode             = "fr"
-title                    = "Pierre Morsa"
+title                    = "Pierre Morsa | Présenter en public et Getting Things Done"
 theme                    = "hugo-future-imperfect"
 preserveTaxonomyNames    = true
 paginate                 = 5
 
 [params]
     # Sets the meta tag description, usually reserved for the main page
-    description          = "Le Blog de Pierre Morsa | Ideas on Stage Partner + Creative Director"
+    description          = "Le blog de Pierre Morsa, co-fondateur et Creative Director d'Ideas on Stage, une agence spécialisée dans les présentations en public."
     # Social media buttons that appear on the sidebar
     socialAppearAtTop    = false
     socialAppearAtBottom = false
@@ -31,7 +31,6 @@ paginate                 = 5
     headerright = "Morsa"
     paragraph 	= "Présenter en public, Getting Things Done, Lifehacks, Technomagie etc."
     about     	= "Pierre Morsa est Partner + Creative Director chez <a href='https://www.ideasonstage.com'>Ideas on Stage</a>, la première agence globale de création de présentations. <br>Pour me contacter écrivez-moi à<br>p i e r r e . m o r s a @ pierremorsa.com"
-    button		= "En savoir Plus"
 
 # This will also appear on the sidebar.
 # A width of less than 100px is recommended
@@ -52,3 +51,10 @@ paginate                 = 5
 # This is optional. The default value 5 will be used
 [params.postAmount]
     sidebar = 5
+
+# Localization of text strings
+[params.localized.button]
+	about		= "En savoir plus"
+	previous	= "Page précédente" 
+	next 		= "Page suivante"
+	rss			= "S'abonner au fil RSS"
