@@ -46,7 +46,11 @@ Ci-dessous vous trouverez la procédure que j'ai suivie pour migrer ce blog vers
 Si vous ne connaissez pas du tout Github, à la base c'est une solution pour gérer différentes versions d'un « répertoire ». C'est très utile pour les développeurs, qui peuvent ainsi garder une version stable de leur code et en parallèle travailler sur des nouvelles versions sans devoir tout dupliquer. Qui peut le plus peut le moins. Github peut servir à « versionner » des répertoires de documents, et dans notre cas le code source d'un site.
 
 ### Créez un compte Github
-Je ne vais pas expliquer cette partie, il suffit d'aller sur [github.com](https://github.com) et de se créer un compte, c'est à la portée du premier utilisateur de Facebook venu. Gardez bien le nom d'utilisateur et le mot de passe car nous allons en avoir besoin.
+Je ne vais pas expliquer cette partie, il suffit d'aller sur [github.com](https://github.com) et de se créer un compte, c'est à la portée du premier utilisateur de Facebook venu. Si comme pour moi laisser le code source de votre site accessible à tous n'est pas un souci, vous pouvez créer un compte gratuit, sinon il faudra payer 7$ par mois pour avoir un repository privé. Gardez bien le nom d'utilisateur et le mot de passe car nous allons en avoir besoin.
+
+Si vous ne connaissez pas le fonctionnement de Github je vous conseille de lire le guide de démarrage car ce n'est pas forcément intuitif, surtout si vous n'avez jamais fait de développement.
+
+**Par contre pas besoin de démarrer un nouveau projet, car nous allons utiliser le répertoire existant sur votre ordi.** 
 
 ### Initialisez le « repository » Github
 À partir du terminal, allez dans le répertoire qui contient le code du site. Par exemple ```~/Sites/Hugo/www.testtoto.com/```
@@ -57,7 +61,7 @@ Une fois dans le bon répertoire tapez la commande suivante pour initialiser le 
 
 Vous devriez avoir un message du genre 
 
-```Initialized [empty] Git repository in ~/Sites/Hugo/www.testtoto.com/.git/```
+```Initialized empty Git repository in ~/Sites/Hugo/www.testtoto.com/.git/```
 
 Voilà, c'est tout, on pourrait tout faire depuis la ligne de commande en tapant des tas de trucs qui font intelligent mais ça me casse les pieds. Je vais donc utiliser le client Github Desktop pour la suite.
  
@@ -66,7 +70,7 @@ Pour ce faire cliquez sur le lien ci-dessous :
 
 [Github Desktop](https://desktop.github.com)
 
-Une fois installé, lancez Github Desktop, et configurez-le pour vous connecter à votre compte Github.
+Une fois installé, lancez Github Desktop, et utilisez votre nom d'utilisateur et mot de passe pour vous connecter à votre compte Github.
 
 ### Ajoutez votre répertoire git local à Github Desktop
 Si l'application ne vous le propose pas par défaut commencez par ajouter votre repository : 
@@ -75,11 +79,27 @@ Si l'application ne vous le propose pas par défaut commencez par ajouter votre 
 
 ![Github Add Local Repository](/pictures/2017/12/github-add-local-repository.jpg)
 
-Attention : avant de lancer la copie de vos fichiers vers Github, vérifiez qu'il n'y a pas d'autres répertoires .git cachés dans les sous-répertoires, sinon vous risquez d'avoir des erreurs.
+Attention : avant de lancer la copie de vos fichiers vers Github, vérifiez qu'il n'y a pas d'autres répertoires .git cachés dans les sous-répertoires, en particulier dans les répertoires des thèmes, sinon vous risquez d'avoir des erreurs.
 
 Voilà, normalement la barre du haut doit ressembler à ça :
 ![Github Desktop Top Bar](/pictures/2017/12/github-desktop-top-bar.jpg)
 
-Il suffit maintenant de cliquer sur le bouton **Publish repository** et tous les fichiers locaux vont être copiés vers Github. L'avantage est que vous pouvez désormais synchroniser vos modifications locales et en ligne (dans le clllowwd comme on dit). Cependant pour se faire il faut comprendre un minimum les notions de « branch » et « commit » sinon vous risquez de galérer. J'essaierai de prendre le temps de les expliquer dans un autre billet. Pour la suite du tutoriel je vais prendre l'hypothèse que vous modifiez les fichiers uniquement depuis le répertoire local.
+Si nécessaire faites un commit de tous les changements sur la branche master (par défaut master est la branche principale de votre projet, celle qui fait office de référence pour la version « stable » de votre code). L'opération de commit « officialise » les changements, cela signifie, « c'est bon ces changements sont validés et peuvent être publiés ».
 
-Votre site est désormais sur GitHub. Vous bénéficiez désormais de la gestion des versions, qui est la raison d'être de git. Dans la partie 2 nous verrons comment configurer Netlify pour automatiser le déploiement du site et servir les pages aux visiteurs.
+![Github Commit Hugo Repository](/pictures/2017/12/github-commit-hugo-repository.jpg)
+
+Il suffit maintenant de cliquer sur le bouton **Publish repository** et tous les fichiers locaux vont être copiés vers Github. 
+
+![Github Publish Hugo Repository](/pictures/2017/12/github-publish-hugo-repository.jpg)
+
+L'avantage est que vous pouvez désormais synchroniser vos modifications locales et en ligne (dans le clllowwd comme on dit). Cependant pour se faire il faut bien comprendre les notions de « branch » et « commit » sinon vous risquez de galérer. J'essaierai de prendre le temps de les expliquer plus en détail dans un autre billet. Pour la suite du tutoriel je vais prendre l'hypothèse que vous modifiez les fichiers uniquement depuis le répertoire local.
+
+Votre site est désormais sur GitHub. Si vous rafraîchissez la page vous devriez le voir apparaître dans la liste des repositories. 
+
+![Github Your Hugo Repository](/pictures/2017/12/github-your-hugo-repository.jpg)
+
+Vous bénéficiez désormais de la gestion des versions, qui est la raison d'être de git. [Dans la partie 2 nous allons voir comment configurer Netlify pour automatiser le déploiement du site et servir les pages aux visiteurs.](/post/2017-12-25-site-hugo-github-netlify-2)
+
+Révisions :
+
+* 2017-12-21 : amélioration de l'explication de certaines étapes en particulier pour Github.
