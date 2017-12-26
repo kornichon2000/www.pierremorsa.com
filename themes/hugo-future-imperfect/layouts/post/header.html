@@ -1,21 +1,9 @@
-<header>
-    <div class="title">
-            <h2><a href="{{ .URL }}">
-            {{ .Title }}
-            </a></h2>
-        {{ with .Description }}
-            <p>{{ . }}</p>
-        {{ end }}
-    </div>
-    <div class="meta">
-        {{ if .Site.Params.orderByPublishDate }}
-            {{ $.Scratch.Set "dateType" .PublishDate }}
-        {{ else }}
-            {{ $.Scratch.Set "dateType" .Date }}
-        {{ end }}
-
-        <time class="published"
-            datetime='{{ ($.Scratch.Get "dateType").Format "2006-01-02" }}'>
-            {{ ($.Scratch.Get "dateType").Format "2006-01-02" }}</time>
-    </div>
-</header>
+					<header>
+					    <div class="title">
+					        <h2><a href="{{ .URL }}">{{ .Title }}</a></h2>
+					    </div>
+					    <div class="meta">
+							{{- $.Scratch.Set "dateType" .PublishDate }}
+					        <time class="published" datetime='{{ ($.Scratch.Get "dateType").Format "2006-01-02" }}'>{{ ($.Scratch.Get "dateType").Format "2006-01-02" }}</time>
+					    </div>
+					</header>

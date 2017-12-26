@@ -1,19 +1,17 @@
+{{ "<!-- template:index -->" | safeHTML }}
 {{ partial "header" . }}
 {{ partial "navbar" . }}
-    <!-- Main -->
-    <div id="main">
-        {{ if .Site.Params.orderByPublishDate }}
-            {{ $paginator := .Paginate (where .Data.Pages.ByPublishDate.Reverse "Type" "post") }}
-        {{ else }}
-            {{ $paginator := .Paginate (where .Site.Pages "Type" "post") }}
-        {{ end }}
-
-        {{ range .Paginator.Pages }}
-            {{ .Render "content-single" }}
-        {{ end }}
-
-        {{ partial "pagination" . }}
-    </div>
-    {{ partial "sidebar" . }}
+		    <div id="main">
+{{- if .Site.Params.orderByPublishDate }}
+	{{- $paginator := .Paginate (where .Data.Pages.ByPublishDate.Reverse "Type" "post") }}
+{{- else }}
+    {{- $paginator := .Paginate (where .Site.Pages "Type" "post") }}
+{{- end }}
+{{- range .Paginator.Pages }}
+    {{ .Render "content-single" }}
+{{- end }}
+{{ partial "pagination" . }}
+		    </div>{{ "<!-- main -->" | safeHTML }}
+{{ partial "sidebar" . }}
 {{ partial "footer" . }}
 
