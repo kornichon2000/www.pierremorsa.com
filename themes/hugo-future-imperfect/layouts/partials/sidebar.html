@@ -1,3 +1,4 @@
+			{{ "<!-- layouts:partials:sidebar -->" | safeHTML }}
 			<section id="sidebar">
 			    <section id="intro">
 			            {{- $pic := .Site.Params.intro.pic }}
@@ -15,10 +16,8 @@
 			            <p>{{ .paragraph | safeHTML }}</p>
 			        </header>
 			            {{- end }}
-			            {{- if .RSSLink }}
 			        <b><a href="{{ .RSSLink }}" type="application/rss+xml"
 			                    target="_blank" title="RSS" class="button">{{ with .Site.Params.localized.button.rss }}{{ . | markdownify }}{{ end }}</a></b>
-			            {{- end }}
 			    </section>{{ "<!-- intro -->" | safeHTML }}
 			    {{- if ne ($.Scratch.Get "showCategories") false }}
 		        <section id="categories">
@@ -41,7 +40,6 @@
 		            </ul>
 		        </section>{{ "<!-- categories -->" | safeHTML }}
 			    {{- end }}
-			
 		        <section class="blurb">
 		            <p>{{ with .Site.Params.intro.about }}{{ . | markdownify }}{{ end }}</p>
 		            <ul class="actions">

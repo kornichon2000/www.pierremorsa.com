@@ -1,16 +1,14 @@
-{{ partial "general-title" . }}
-
-{{ partial "header" . }}
+{{ "<!-- layouts:taxonomy:category -->" | safeHTML }}
+{{- partial "general-title" . }}
+{{- partial "header" . }}
 {{ partial "navbar" . }}
-    <!-- Main -->
-    <div id="main">
-        <h1>{{ .Title }}</h1>
-        {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
-        {{ range $paginator.Pages }}
-            {{ .Render "content-list" }}
-        {{ end }}
-
-        {{ partial "pagination" . }}
-    </div>
-    {{ partial "sidebar" . }}
+		    <div id="main">
+		        <h1>{{ .Title }}</h1>
+		        {{- $paginator := .Paginate (where .Data.Pages "Type" "post") }}
+		        {{- range $paginator.Pages }}
+{{ .Render "content-list" }}
+		        {{- end }}
+{{ partial "pagination" . }}
+		    </div>{{ "<!-- main -->" | safeHTML }}
+{{ partial "sidebar" . }}
 {{ partial "footer" . }}

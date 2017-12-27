@@ -1,4 +1,4 @@
-{{ "<!-- template:index -->" | safeHTML }}
+{{ "<!-- layouts:index -->" | safeHTML }}
 {{ partial "header" . }}
 {{ partial "navbar" . }}
 		    <div id="main">
@@ -8,7 +8,7 @@
     {{- $paginator := .Paginate (where .Site.Pages "Type" "post") }}
 {{- end }}
 {{- range .Paginator.Pages }}
-    {{ .Render "content-single" }}
+{{ .Render "content-single" }}
 {{- end }}
 {{ partial "pagination" . }}
 		    </div>{{ "<!-- main -->" | safeHTML }}

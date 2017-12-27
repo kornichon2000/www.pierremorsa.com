@@ -1,6 +1,7 @@
-			<article class="post">
+				{{ "<!-- layouts:post:content-single -->" | safeHTML }}
+				<article class="post">
 {{ .Render "header" }}
 					<div id="content">
 {{ .Content }}
-				    </div>
+				    </div>{{ "<!-- content -->" | safeHTML }}
 				</article>
