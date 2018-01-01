@@ -1,4 +1,4 @@
-<section id="header">
-	<h1><a href="/">{{ with .Site.Title }}{{ . }}{{ end }}</a></h1>
-</section>
-
+			{{ "<!-- layouts:partials:navbar -->" | safeHTML }}
+			<section id="header">
+				<h1><a href="/">{{ with .Site.Title }}{{ . }}{{ end }}</a></h1>
+			</section>{{ "<!-- header -->" | safeHTML }}

@@ -1,68 +1,52 @@
-<!-- Sidebar -->
-<section id="sidebar">
-
-    <!-- Intro -->
-        <section id="intro">
-            {{ $pic := .Site.Params.intro.pic }}
-            {{ with $pic.src }}
-                {{ if $pic.circle }}
-                    <a href="/"><img src="{{ . }}" class="intro-circle" width="{{ $pic.width }}" alt="{{ $pic.alt }}" /></a>
-                {{ else if $pic.imperfect }}
-                    <a href="/" class="logo"><img src="{{ . }}" alt="{{ $pic.alt }}" /></a>
-                {{ else }}
-                    <a href="/"><img src="{{ . }}" width="{{ $pic.width }}" alt="{{ $pic.alt }}" /></a>
-                {{ end }}
-            {{ end }}
-            {{ with .Site.Params.intro }}
-                <header>
-                    <p>{{ .paragraph | safeHTML }}</p>
-                </header>
-            {{ end }}
-            {{ if .RSSLink }}
-                <b><a href="{{ .RSSLink }}" type="application/rss+xml"
-                    target="_blank" title="RSS" class="button">{{ with .Site.Params.localized.button.rss }}{{ . | markdownify }}{{ end }}</a></b>
-            {{ end }}
-        </section>
-
-
-    <!-- This if statement only applies if someone goes to the /categories url -->
-    <!-- Otherwise this section is shown for all other links -->
-    {{ if ne ($.Scratch.Get "showCategories") false }}
-    <!-- Categories List -->
-        <section id="categories">
-            <ul class="posts">
-                {{ if .Site.Params.categoriesByCount }}
-                    {{ $.Scratch.Set "categories" .Site.Taxonomies.categories.ByCount }}
-                {{ else }}
-                    {{ $.Scratch.Set "categories" .Site.Taxonomies.categories.Alphabetical }}
-                {{ end }}
-
-                {{ range $key, $value := $.Scratch.Get "categories" }}
-                    <li>
-                        <article>
-                            <header>
-                                <a href="/categories/{{ $value.Name | urlize }}/">{{ $value.Name }}</a>
-                                <span style="float:right;">{{ $value.Count }}</span>
-                            </header>
-                        </article>
-                    </li>
-                {{ end }}
-            </ul>
-        </section>
-    {{ end }}
-
-    <!-- About -->
-        <section class="blurb">
-            <p>{{ with .Site.Params.intro.about }}{{ . | markdownify }}{{ end }}</p>
-
-            <ul class="actions">
-                <li><a href="/about/" class="button">{{ with .Site.Params.localized.button.about }}{{ . | markdownify }}{{ end }}</a></li>
-            </ul>
-        </section>
-
-    <!-- Footer -->
-        <section id="footer">
-            <p class="copyright">{{ with .Site.Params.footer.copyright }}{{ . | markdownify }}{{ end }}</p>
-        </section>
-
-</section>
+			{{ "<!-- layouts:partials:sidebar -->" | safeHTML }}
+			<section id="sidebar">
+			    <section id="intro">
+			            {{- $pic := .Site.Params.intro.pic }}
+			            {{- with $pic.src }}
+			                {{- if $pic.circle }}
+			        <a href="/"><img src="{{ . }}" class="intro-circle" width="{{ $pic.width }}" alt="{{ $pic.alt }}" /></a>
+			                {{- else if $pic.imperfect }}
+			        <a href="/" class="logo"><img src="{{ . }}" alt="{{ $pic.alt }}" /></a>
+			                {{- else }}
+			        <a href="/"><img src="{{ . }}" width="{{ $pic.width }}" alt="{{ $pic.alt }}" /></a>
+			                {{- end }}
+			            {{- end }}
+			            {{- with .Site.Params.intro }}
+			        <header>
+			            <p>{{ .paragraph | safeHTML }}</p>
+			        </header>
+			            {{- end }}
+			        <b><a href="{{ .RSSLink }}" type="application/rss+xml"
+			                    target="_blank" title="RSS" class="button">{{ with .Site.Params.localized.button.rss }}{{ . | markdownify }}{{ end }}</a></b>
+			    </section>{{ "<!-- intro -->" | safeHTML }}
+			    {{- if ne ($.Scratch.Get "showCategories") false }}
+		        <section id="categories">
+		            <ul class="posts">
+		                {{- if .Site.Params.categoriesByCount }}
+		                    {{- $.Scratch.Set "categories" .Site.Taxonomies.categories.ByCount }}
+		                {{- else }}
+		                    {{- $.Scratch.Set "categories" .Site.Taxonomies.categories.Alphabetical }}
+		                {{- end }}
+		                {{- range $key, $value := $.Scratch.Get "categories" }}
+	                    <li>
+	                        <article>
+	                            <header>
+	                                <a href="/categories/{{ $value.Name | urlize }}/">{{ $value.Name }}</a>
+	                                <span style="float:right;">{{ $value.Count }}</span>
+	                            </header>
+	                        </article>
+	                    </li>
+		                {{- end }}
+		            </ul>
+		        </section>{{ "<!-- categories -->" | safeHTML }}
+			    {{- end }}
+		        <section class="blurb">
+		            <p>{{ with .Site.Params.intro.about }}{{ . | markdownify }}{{ end }}</p>
+		            <ul class="actions">
+		                <li><a href="/about/" class="button">{{ with .Site.Params.localized.button.about }}{{ . | markdownify }}{{ end }}</a></li>
+		            </ul>
+		        </section>{{ "<!-- blurb -->" | safeHTML }}
+		        <section id="footer">
+		            <p class="copyright">{{ with .Site.Params.footer.copyright }}{{ . | markdownify }}{{ end }}</p>
+		        </section>{{ "<!-- footer -->" | safeHTML }}
+			</section>{{ "<!-- sidebar -->" | safeHTML }}
