@@ -4,7 +4,7 @@ author      = "Pierre Morsa"
 date        = "2018-01-29"
 publishdate = "2018-01-29T05:00:00+01:00" 
 categories  = [ "Storytelling" ]
-draft       = true
+draft       = false
 +++
 
 Comment une marque peut-elle subtilement influencer son positionnement et son image en changeant le fil narratif de son HISTOIRE ? Pour l'expliquer je vais prendre l'exemple d'Apple et du lancement de l'iPhone X.
