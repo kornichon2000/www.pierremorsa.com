@@ -1,8 +1,8 @@
 +++
 title       = "Changer le fil narratif : l'exemple de l'iPhone X"
 author      = "Pierre Morsa"
-date        = "2018-01-15"
-publishdate = "2018-01-15T05:00:00+01:00" 
+date        = "2018-01-29"
+publishdate = "2018-01-29T05:00:00+01:00" 
 categories  = [ "Storytelling" ]
 draft       = false
 +++
