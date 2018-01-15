@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>gtd-getting-things-done on Pierre Morsa</title>
-    <link>https://www.pierremorsa.com/categories/gtd-getting-things-done/index.xml</link>
-    <description>Recent content in gtd-getting-things-done on Pierre Morsa</description>
+    <title>GTD Getting Things Done on Pierre Morsa | Présenter en public et GTD</title>
+    <link>https://www.pierremorsa.com/categories/gtd-getting-things-done/</link>
+    <description>Recent content in GTD Getting Things Done on Pierre Morsa | Présenter en public et GTD</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr</language>
-    <atom:link href="/categories/gtd-getting-things-done/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 02 Oct 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/categories/gtd-getting-things-done/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Contrôler PowerPoint avec un contrôleur MIDI</title>

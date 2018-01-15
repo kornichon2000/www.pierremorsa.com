@@ -19,6 +19,22 @@
 			        <b><a href="{{ .RSSLink }}" type="application/rss+xml"
 			                    target="_blank" title="RSS" class="button">{{ with .Site.Params.localized.button.rss }}{{ . | markdownify }}{{ end }}</a></b>
 			    </section>{{ "<!-- intro -->" | safeHTML }}
+				<section id="links">       
+					<header>
+					    <p>Les sites que je soutiens</p>
+					</header>
+					{{- $URL := .URL }}
+					{{- $.Scratch.Set "count" 0 }}
+					{{- range .Site.Data.links }}		
+						{{- $.Scratch.Add "count" 1 }}
+					<div class="link">
+						<a href="{{ .link }}">
+				    		<img src="/pictures/links/{{ .picture }}">
+				    		<p>{{ .description }}</p>
+				    	</a>
+					</div>
+					{{- end }}				
+				</section>{{ "<!-- links -->" | safeHTML }}
 			    {{- if ne ($.Scratch.Get "showCategories") false }}
 		        <section id="categories">
 		            <ul class="posts">
@@ -31,8 +47,8 @@
 	                    <li>
 	                        <article>
 	                            <header>
-	                                <a href="/categories/{{ $value.Name | urlize }}/">{{ $value.Name }}</a>
-	                                <span style="float:right;">{{ $value.Count }}</span>
+	                                <a href="/categories/{{ $value.Name | urlize }}/" class="text-small">{{ $value.Name }}</a>
+	                                <span style="float:right;" class="text-small">{{ $value.Count }}</span>
 	                            </header>
 	                        </article>
 	                    </li>

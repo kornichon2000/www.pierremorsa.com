@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>tedx on Pierre Morsa</title>
-    <link>https://www.pierremorsa.com/categories/tedx/index.xml</link>
-    <description>Recent content in tedx on Pierre Morsa</description>
+    <title>TEDx on Pierre Morsa | Présenter en public et GTD</title>
+    <link>https://www.pierremorsa.com/categories/tedx/</link>
+    <description>Recent content in TEDx on Pierre Morsa | Présenter en public et GTD</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr</language>
-    <atom:link href="/categories/tedx/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 20 Feb 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/categories/tedx/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>18 minutes, la durée optimale d&#39;une présentation ?</title>

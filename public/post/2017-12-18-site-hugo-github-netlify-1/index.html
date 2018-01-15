@@ -1,0 +1,282 @@
+<!-- layouts:post:single -->
+<!-- layouts:partials:header -->
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Pierre Morsa | Présenter en public et GTD</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="generator" content="Hugo 0.31.1" />
+		<!-- layouts:partials:favicon -->
+    	<link rel="apple-touch-icon-precomposed" href='/favicon/apple-touch-icon-precomposed.png'>
+    	<link rel="icon" href='/favicon/favicon.png'>
+        <meta name="author" content="Pierre Morsa">
+        <meta name="description" content="Le blog de Pierre Morsa, co-fondateur et Creative Director d&#39;Ideas on Stage, une agence spécialisée dans les présentations en public.">
+		<link rel="stylesheet" href="/css/main.css" />
+    </head>
+    <body>
+        <div id="wrapper">
+			<!-- layouts:partials:navbar -->
+			<section id="header">
+				<h1><a href="/">Pierre Morsa | Présenter en public et GTD</a></h1>
+			</section><!-- header -->
+		    <div id="main">
+				<!-- layouts:post:content-single -->
+				<article class="post">
+					<!-- layouts:post:header -->
+					<header>
+					    <div class="title">
+					        <h2><a href="/post/2017-12-18-site-hugo-github-netlify-1/">Héberger gratuitement un site Hugo avec Github et Netlify (1/2)</a></h2>
+					    </div><!-- title -->
+					    <div class="meta">
+					        <time class="published" datetime='2017-12-18'>2017-12-18</time>
+					    </div><!-- meta -->
+					</header>
+					<div id="content">
+
+
+<p>Dans cette première partie je vous propose un tutoriel pas à pas pour créer le fichier netlify.toml, et héberger le code du site sur Github.</p>
+
+<p>Ce blog est une sorte de cobaye. Je lui fais subir des tas d&rsquo;expériences lorsque je veux tester ce que cela donne. À l&rsquo;origine c&rsquo;était une simple page web, puis il a migré sur Joomla un des premiers « CMS » 100% Web, puis sur Wordpress qui était et est encore la solution préférée de beaucoup de sites. Fatigué des problèmes à répétition de WordPress (sécurité, mise à jour des plugins, etc.) j&rsquo;ai fini par migrer en 2016 vers un site statique généré par le génial <a href="http://gohugo.io">Hugo</a>.</p>
+
+<p>Jusqu&rsquo;il y a peu ce blog était encore chez un hébergeur classique, mais depuis la semaine dernière il tourne avec le couple <a href="https://github.com">Github</a> + <a href="https://www.netlify.com">Netlify</a>. Github stocke tout le contenu et tout le « code » du site (à mon sens ce n&rsquo;est pas vraiment du code car ça n&rsquo;exécute rien, mais plutôt des données structurées), et Netlify sert les pages depuis son CDN. À en croire ce test, le résultat en termes de performances me semble plutôt probant :</p>
+
+<p><img src="/pictures/2017/12/testmysite-pierremorsa-com.jpg" alt="Testmysite Pierremorsa Com" /></p>
+
+<p>Évidemment ce test risque de ne pas être 100% impartial vu qu&rsquo;il est proposé depuis le site de Netlify. Cependant mon autre site <a href="htts://www.ideasonstage.com">Ideas on Stage</a> a un score presque parfait alors qu&rsquo;il n&rsquo;est pas hébergé par Netlify mais par le tandem Dreamhost + Cloudflare, donc je crois à une certaine objectivité.</p>
+
+<p>Je dois dire que je suis très impressionné par Netlify. Son avantage ce n&rsquo;est pas que la rapidité. C&rsquo;est aussi tous les outils qui vont autour. En tandem avec Github, il est possible de tester autant de branches différentes que l&rsquo;on veut (une branche, c&rsquo;est un peu comme une « version alternative d&rsquo;un site»). Il est également possible de faire un « rollback », autrement dit de revenir simplement à la version précédente du site en cas de problème. En utilisant un webhook déclenché depuis Zapier j&rsquo;ai même pu automatiser la publication des nouveaux articles à intervalles réguliers, ce qui était plus difficile à faire avec mon système précédent.</p>
+
+<p>Le seul désavantage c&rsquo;est que je n&rsquo;ai plus du tout de statistiques, car je n&rsquo;avais que les chiffres collectés par défaut par mon hébergeur. C&rsquo;est facile à résoudre en intégrant Google Analytics, mais ce blog étant garanti 100% sans JavaScript je ne l&rsquo;utiliserai pas, et pour moi ce n&rsquo;est pas gênant.</p>
+
+<p>Coût total de l&rsquo;hébergement avec cette solution : 0€. Oui c&rsquo;est assez dingue, ça ne coûte rien pour les versions de base. la seule partie qui reste payante est le nom de domaine.</p>
+
+<p>Ci-dessous vous trouverez la procédure que j&rsquo;ai suivie pour migrer ce blog vers Github + Netlify. Je l&rsquo;ai réalisé depuis un Mac, mais c&rsquo;est très similaire depuis n&rsquo;importe quel autre système. Pour suivre ce tutoriel il vaut mieux :</p>
+
+<ul>
+<li>Savoir vous servir un peu du terminal</li>
+<li>Comprendre les notions Github de « commit », « branch », « pull » et « push »</li>
+<li>Comprendre comment un DNS fonctionne</li>
+</ul>
+
+<h2 id="créez-un-fichier-netlify-toml">Créez un fichier netlify.toml</h2>
+
+<p>À la racine du site, dans le même répertoire que celui qui contient déjà <code>config.toml</code> il faut ajouter un fichier nommé <code>netlify.toml</code>, qui contiendra les versions de Hugo à utiliser par Netlify pour compiler le site. Voici le contenu de mon fichier netlify.toml :</p>
+
+<pre><code>[context.production.environment]
+  HUGO_VERSION = &quot;0.31&quot;
+  
+[context.deploy-preview.environment]
+  HUGO_VERSION = &quot;0.31&quot;
+</code></pre>
+
+<p><a href="/files/netlify.toml">Pour les total flemmards vous pouvez télécharger directement le fichier ici</a></p>
+
+<h2 id="mettez-le-code-du-blog-sur-github">Mettez le code du blog sur Github</h2>
+
+<p>Si vous ne connaissez pas du tout Github, à la base c&rsquo;est une solution pour gérer différentes versions d&rsquo;un « répertoire ». C&rsquo;est très utile pour les développeurs, qui peuvent ainsi garder une version stable de leur code et en parallèle travailler sur des nouvelles versions sans devoir tout dupliquer. Qui peut le plus peut le moins. Github peut servir à « versionner » des répertoires de documents, et dans notre cas le code source d&rsquo;un site.</p>
+
+<h3 id="créez-un-compte-github">Créez un compte Github</h3>
+
+<p>Je ne vais pas expliquer cette partie, il suffit d&rsquo;aller sur <a href="https://github.com">github.com</a> et de se créer un compte, c&rsquo;est à la portée du premier utilisateur de Facebook venu. Si comme pour moi laisser le code source de votre site accessible à tous n&rsquo;est pas un souci, vous pouvez créer un compte gratuit, sinon il faudra payer 7$ par mois pour avoir un repository privé. Gardez bien le nom d&rsquo;utilisateur et le mot de passe car nous allons en avoir besoin.</p>
+
+<p>Si vous ne connaissez pas le fonctionnement de Github je vous conseille de lire le guide de démarrage car ce n&rsquo;est pas forcément intuitif, surtout si vous n&rsquo;avez jamais fait de développement.</p>
+
+<p><strong>Par contre pas besoin de démarrer un nouveau projet, car nous allons utiliser le répertoire existant sur votre ordi.</strong></p>
+
+<h3 id="initialisez-le-repository-github">Initialisez le « repository » Github</h3>
+
+<p>À partir du terminal, allez dans le répertoire qui contient le code du site. Par exemple <code>~/Sites/Hugo/www.testtoto.com/</code></p>
+
+<p>Une fois dans le bon répertoire tapez la commande suivante pour initialiser le répertoire Github :</p>
+
+<p><code>git init</code></p>
+
+<p>Vous devriez avoir un message du genre</p>
+
+<p><code>Initialized empty Git repository in ~/Sites/Hugo/www.testtoto.com/.git/</code></p>
+
+<p>Voilà, c&rsquo;est tout, on pourrait tout faire depuis la ligne de commande en tapant des tas de trucs qui font intelligent mais ça me casse les pieds. Je vais donc utiliser le client Github Desktop pour la suite.</p>
+
+<h3 id="téléchargez-et-installez-github-desktop">Téléchargez et installez Github Desktop.</h3>
+
+<p>Pour ce faire cliquez sur le lien ci-dessous :</p>
+
+<p><a href="https://desktop.github.com">Github Desktop</a></p>
+
+<p>Une fois installé, lancez Github Desktop, et utilisez votre nom d&rsquo;utilisateur et mot de passe pour vous connecter à votre compte Github.</p>
+
+<h3 id="ajoutez-votre-répertoire-git-local-à-github-desktop">Ajoutez votre répertoire git local à Github Desktop</h3>
+
+<p>Si l&rsquo;application ne vous le propose pas par défaut commencez par ajouter votre repository :</p>
+
+<p><code>File → Add Local Repository...</code></p>
+
+<p><img src="/pictures/2017/12/github-add-local-repository.jpg" alt="Github Add Local Repository" /></p>
+
+<p>Attention : avant de lancer la copie de vos fichiers vers Github, vérifiez qu&rsquo;il n&rsquo;y a pas d&rsquo;autres répertoires .git cachés dans les sous-répertoires, en particulier dans les répertoires des thèmes, sinon vous risquez d&rsquo;avoir des erreurs.</p>
+
+<p>Voilà, normalement la barre du haut doit ressembler à ça :
+<img src="/pictures/2017/12/github-desktop-top-bar.jpg" alt="Github Desktop Top Bar" /></p>
+
+<p>Si nécessaire faites un commit de tous les changements sur la branche master (par défaut master est la branche principale de votre projet, celle qui fait office de référence pour la version « stable » de votre code). L&rsquo;opération de commit « officialise » les changements, cela signifie, « c&rsquo;est bon ces changements sont validés et peuvent être publiés ».</p>
+
+<p><img src="/pictures/2017/12/github-commit-hugo-repository.jpg" alt="Github Commit Hugo Repository" /></p>
+
+<p>Il suffit maintenant de cliquer sur le bouton <strong>Publish repository</strong> et tous les fichiers locaux vont être copiés vers Github.</p>
+
+<p><img src="/pictures/2017/12/github-publish-hugo-repository.jpg" alt="Github Publish Hugo Repository" /></p>
+
+<p>L&rsquo;avantage est que vous pouvez désormais synchroniser vos modifications locales et en ligne (dans le clllowwd comme on dit). Cependant pour se faire il faut bien comprendre les notions de « branch » et « commit » sinon vous risquez de galérer. J&rsquo;essaierai de prendre le temps de les expliquer plus en détail dans un autre billet. Pour la suite du tutoriel je vais prendre l&rsquo;hypothèse que vous modifiez les fichiers uniquement depuis le répertoire local.</p>
+
+<p>Votre site est désormais sur GitHub. Si vous rafraîchissez la page vous devriez le voir apparaître dans la liste des repositories.</p>
+
+<p><img src="/pictures/2017/12/github-your-hugo-repository.jpg" alt="Github Your Hugo Repository" /></p>
+
+<p>Vous bénéficiez désormais de la gestion des versions, qui est la raison d&rsquo;être de git. <a href="/post/2017-12-25-site-hugo-github-netlify-2">Dans la partie 2 nous allons voir comment configurer Netlify pour automatiser le déploiement du site et servir les pages aux visiteurs.</a></p>
+
+<p>Révisions :</p>
+
+<ul>
+<li>2017-12-21 : amélioration de l&rsquo;explication de certaines étapes en particulier pour Github.</li>
+</ul>
+
+				    </div><!-- content -->
+				</article>
+
+		    </div><!-- main -->
+			<!-- layouts:partials:sidebar -->
+			<section id="sidebar">
+			    <section id="intro">
+			        <a href="/"><img src="/pictures/main/pierre-morsa-avatar.jpg" class="intro-circle" width="" alt="Pierre Morsa" /></a>
+			        <header>
+			            <p>Présenter en public, Getting Things Done, Lifehacks, Technomagie etc.</p>
+			        </header>
+			        <b><a href="" type="application/rss+xml"
+			                    target="_blank" title="RSS" class="button">S&rsquo;abonner au fil RSS</a></b>
+			    </section><!-- intro -->
+				<section id="links">       
+					<header>
+					    <p>Les sites que je soutiens</p>
+					</header>
+					<div class="link">
+						<a href="https://www.codingandbricks.com/">
+				    		<img src="/pictures/links/codingandbricks.jpg">
+				    		<p>Ateliers LEGO SeriousPlay® pour les entreprises</p>
+				    	</a>
+					</div>
+					<div class="link">
+						<a href="https://www.ideasonstage.fr/">
+				    		<img src="/pictures/links/ideasonstage.jpg">
+				    		<p>Le spécialiste des présentations en public</p>
+				    	</a>
+					</div>				
+				</section><!-- links -->
+		        <section id="categories">
+		            <ul class="posts">
+	                    <li>
+	                        <article>
+	                            <header>
+	                                <a href="/categories/pr%C3%A9senter-en-public/" class="text-small">Présenter en public</a>
+	                                <span style="float:right;" class="text-small">46</span>
+	                            </header>
+	                        </article>
+	                    </li>
+	                    <li>
+	                        <article>
+	                            <header>
+	                                <a href="/categories/gtd-getting-things-done/" class="text-small">GTD Getting Things Done</a>
+	                                <span style="float:right;" class="text-small">29</span>
+	                            </header>
+	                        </article>
+	                    </li>
+	                    <li>
+	                        <article>
+	                            <header>
+	                                <a href="/categories/technomagie/" class="text-small">Technomagie</a>
+	                                <span style="float:right;" class="text-small">20</span>
+	                            </header>
+	                        </article>
+	                    </li>
+	                    <li>
+	                        <article>
+	                            <header>
+	                                <a href="/categories/lifehacks/" class="text-small">Lifehacks</a>
+	                                <span style="float:right;" class="text-small">18</span>
+	                            </header>
+	                        </article>
+	                    </li>
+	                    <li>
+	                        <article>
+	                            <header>
+	                                <a href="/categories/nouvelles/" class="text-small">Nouvelles</a>
+	                                <span style="float:right;" class="text-small">15</span>
+	                            </header>
+	                        </article>
+	                    </li>
+	                    <li>
+	                        <article>
+	                            <header>
+	                                <a href="/categories/startup/" class="text-small">Startup</a>
+	                                <span style="float:right;" class="text-small">13</span>
+	                            </header>
+	                        </article>
+	                    </li>
+	                    <li>
+	                        <article>
+	                            <header>
+	                                <a href="/categories/nomade-digital/" class="text-small">Nomade Digital</a>
+	                                <span style="float:right;" class="text-small">5</span>
+	                            </header>
+	                        </article>
+	                    </li>
+	                    <li>
+	                        <article>
+	                            <header>
+	                                <a href="/categories/storytelling/" class="text-small">Storytelling</a>
+	                                <span style="float:right;" class="text-small">3</span>
+	                            </header>
+	                        </article>
+	                    </li>
+	                    <li>
+	                        <article>
+	                            <header>
+	                                <a href="/categories/tedx/" class="text-small">TEDx</a>
+	                                <span style="float:right;" class="text-small">3</span>
+	                            </header>
+	                        </article>
+	                    </li>
+	                    <li>
+	                        <article>
+	                            <header>
+	                                <a href="/categories/art-oratoire/" class="text-small">Art Oratoire</a>
+	                                <span style="float:right;" class="text-small">1</span>
+	                            </header>
+	                        </article>
+	                    </li>
+	                    <li>
+	                        <article>
+	                            <header>
+	                                <a href="/categories/cr%C3%A9ativit%C3%A9/" class="text-small">Créativité</a>
+	                                <span style="float:right;" class="text-small">1</span>
+	                            </header>
+	                        </article>
+	                    </li>
+		            </ul>
+		        </section><!-- categories -->
+		        <section class="blurb">
+		            <p>Pierre Morsa est Partner + Creative Director chez <a href='https://www.ideasonstage.com'>Ideas on Stage</a>, la première agence globale de création de présentations. <br>Pour me contacter écrivez-moi à<br>p i e r r e . m o r s a @ pierremorsa.com</p>
+		            <ul class="actions">
+		                <li><a href="/about/" class="button">En savoir plus</a></li>
+		            </ul>
+		        </section><!-- blurb -->
+		        <section id="footer">
+		            <p class="copyright">Site garanti sans cookies et sans JavaScript. Le contenu est en copie libre : vous pouvez tout copier et réutiliser librement.</p>
+		        </section><!-- footer -->
+			</section><!-- sidebar -->
+		<!-- layouts:partials:footer -->
+        </div><!-- wrapper -->
+        
+    </body>        
+</html>
+

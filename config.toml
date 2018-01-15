@@ -1,4 +1,5 @@
 baseurl                  = "https://www.pierremorsa.com/"
+language				 = "fr"
 languageCode             = "fr"
 title                    = "Pierre Morsa | Présenter en public et GTD"
 theme                    = "hugo-future-imperfect"

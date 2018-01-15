@@ -1,12 +1,57 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>nouvelles on Pierre Morsa</title>
-    <link>https://www.pierremorsa.com/categories/nouvelles/index.xml</link>
-    <description>Recent content in nouvelles on Pierre Morsa</description>
+    <title>Nouvelles on Pierre Morsa | Présenter en public et GTD</title>
+    <link>https://www.pierremorsa.com/categories/nouvelles/</link>
+    <description>Recent content in Nouvelles on Pierre Morsa | Présenter en public et GTD</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr</language>
-    <atom:link href="/categories/nouvelles/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 15 Jan 2018 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/categories/nouvelles/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Obsolescence programmée ou naturelle ?</title>
+      <link>https://www.pierremorsa.com/post/2018-01-15-obsolescence-programmee-ou-naturelle/</link>
+      <pubDate>Mon, 15 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pierremorsa.com/post/2018-01-15-obsolescence-programmee-ou-naturelle/</guid>
+      <description>&lt;p&gt;Si vous avez un appareil qui résiste au temps et qui conserve son utilité au fil des années, c&amp;rsquo;est génial. C&amp;rsquo;est qu&amp;rsquo;il a été bien conçu&amp;hellip; ou qu&amp;rsquo;il n&amp;rsquo;y a aucune innovation dans son domaine. Exemple : mes parents ont un aspirateur Nilfisk qui a plus de 40 ans. Je crois qu&amp;rsquo;il a été fabriqué alors que je n&amp;rsquo;étais pas encore né. Il fonctionne encore, et il fonctionnera encore après moi. Il est construit comme un tank, en acier inoxydable, et le tuyau est fabriqué dans une sorte de tissu hyper résistant. Mais sa puissance est anémique par rapport aux aspirateurs récents.&lt;/p&gt;
+
+&lt;p&gt;Si votre appareil tombe en panne ou casse après quelques utilisations, ce n&amp;rsquo;est pas de l&amp;rsquo;obsolescence programmée. C&amp;rsquo;est juste une grosse merde. Qui ne vous donnera pas envie de racheter un appareil de la même marque. On fabriquait déjà plein de merdes il y a 100 ans. C&amp;rsquo;est d&amp;rsquo;ailleurs une des raisons pour lesquelles parmi les objets de votre quotidien si peu sont anciens. C&amp;rsquo;est juste que ceux qui ont survécu étaient d&amp;rsquo;une qualité exceptionnelle et on conservé leur utilité au fil du temps. Les autres ont fini à la poubelle. Exemple : l&amp;rsquo;aspirateur que j&amp;rsquo;ai acheté il y a quelque années. Il était léger, performant et sans sac. Mais après un an il tombait déjà en ruine. Les pièces en plastique étaient bien trop fragiles.&lt;/p&gt;
+
+&lt;p&gt;Si vous abandonnez un appareil car vous ne l&amp;rsquo;utilisez plus, c&amp;rsquo;est de l&amp;rsquo;obsolescence naturelle. Les objets deviennent obsolètes d&amp;rsquo;eux-mêmes parce que le monde change. Exemple : le lecteur de DVD. Le pot de chambre. Ces objets deviennent des vieilleries. Libre à vous de continuer à utiliser un pot de chambre parce que vous pensez que les industriels des toilettes complotent contre vous.&lt;/p&gt;
+
+&lt;p&gt;Si vous abandonnez un objet parce que vous ne l&amp;rsquo;aimez plus, c&amp;rsquo;est de l&amp;rsquo;obsolescence naturelle. Je m&amp;rsquo;explique. Lorsque vous jetez un pantalon en bon état parce que la mode a changé, le pantalon a perdu sa fonction de « marqueur social ». Vous changez de pantalon de peur de ne plus avoir la reconnaissance sociale qui y est associée. Oui je sais, c&amp;rsquo;est con. Si vous utilisez un objet obsolète pour le plaisir c&amp;rsquo;est de la nostalgie.&lt;/p&gt;
+
+&lt;p&gt;Si vous abandonnez un objet parce que il y en a un nouveau mieux plus super qui est sorti, c&amp;rsquo;est de l&amp;rsquo;obsolescence naturelle. Exemple : l&amp;rsquo;iPhone. Freiner ce genre d&amp;rsquo;obsolescence, c&amp;rsquo;est ralentir le progrès. Ça n&amp;rsquo;a aucun sens. Tôt ou tard un concurrent innovera et passera devant. La nature a horreur du statu quo.&lt;/p&gt;
+
+&lt;p&gt;Si vous jetez un objet parce qu&amp;rsquo;il a perdu son utilité de lui-même au fil du temps, c&amp;rsquo;est de l&amp;rsquo;obsolescence naturelle. Exemple : les produits frais.&lt;/p&gt;
+
+&lt;p&gt;Si vous abandonnez un objet parce qu&amp;rsquo;il ne fonctionne plus à cause d&amp;rsquo;une durée de vie volontairement limitée par le fabricant alors c&amp;rsquo;est de l&amp;rsquo;obsolescence programmée. Exemple : les cartouches d&amp;rsquo;encre de certaines imprimantes, qui contiennent encore de l&amp;rsquo;encre parfaitement fonctionnelle mais que l&amp;rsquo;imprimante refuse d&amp;rsquo;utiliser sous prétexte qu&amp;rsquo;elle a dépassé une date limite.&lt;/p&gt;
+
+&lt;p&gt;Ironie de l&amp;rsquo;histoire, Nous sommes le meilleur exemple d&amp;rsquo;obsolescence programmée. Sans notre espérance de vie limitée inséparable du processus d&amp;rsquo;évolution des espèces nous serions toujours des trucs barbotants dans une grande mare. Et nous ne serions pas en train de nous demander si l&amp;rsquo;iPhone machin est mieux que le Galaxy truc.&lt;/p&gt;
+
+&lt;p&gt;La véritable obsolescence programmée est plus rare que ce que l&amp;rsquo;on croit. En général ce qu&amp;rsquo;on prend comme une volonté de « saboter » les objets tient plutôt d&amp;rsquo;une volonté de réduire au maximum le coût de production et donc de faire les pièces qui coûtent le moins cher possible, quitte à les rendre plus fragiles. Cela vient aussi d&amp;rsquo;erreurs des ingénieurs qui conçoivent des appareils avec des pièces trop faibles pour supporter l&amp;rsquo;effort demandé. Concevoir un excellent appareil prend du temps et est très difficile. Par contre pas de pitié pour les industriels qui limitent artificiellement la durée de vie de leur produit.&lt;/p&gt;
+
+&lt;p&gt;Si j&amp;rsquo;ai écrit ce billet c&amp;rsquo;est parce que on arrive aujourd&amp;rsquo;hui à des situations paradoxales. Par exemple certains fabricants de smartphones (alias mobiles multifonctions si vous avez du temps à perdre) ne proposent aucune mise à jour de leurs appareils après leur fabrication. À l&amp;rsquo;inverse Apple est le fabricant qui offre les mises à jour régulières les plus longues et les plus fiables de l&amp;rsquo;industrie, y compris pour des modèles d&amp;rsquo;iPhone datant d&amp;rsquo;il y a plusieurs années. On a donc d&amp;rsquo;un côté des fabricants qui n&amp;rsquo;offrent aucune mise à jour pour garantir l&amp;rsquo;avenir de leurs terminaux ; rapidement ces smartphones se retrouvent exposés aux dernières failles de sécurité et incapables de faire tourner les nouvelles versions des Apps. De l&amp;rsquo;autre côté on a un fabricant qui assure les mises à jour régulières de ses appareils pendant des années, les protégeant contre les dernières failles de sécurité et offrant pratiquement toutes les dernières évolutions. Pourtant des associations et même de nombreux « journalistes » tapent sur Apple sans prendre le temps de réfléchir sur ce qui se passe chez les autres fabricants de smartphones.&lt;/p&gt;
+
+&lt;p&gt;Je ne veux pas faire non plus l&amp;rsquo;apologie d&amp;rsquo;Apple, qui n&amp;rsquo;est pas exempte de reproches. Il y a le problème du ralentissement des téléphones lié au vieillissement des batteries. La façon dont Apple a procédé, en douce, est impardonnable. Et il y a un autre point qui sème le doute : même avant l&amp;rsquo;introduction du ralentissement pour préserver la batterie, les iPhones avaient tendance à ralentir au fil des nouvelles versions du système. Même si je crois qu&amp;rsquo;il s&amp;rsquo;agit plus d&amp;rsquo;une conséquence inévitable liée à la complexification du système plus que d&amp;rsquo;une volonté délibérée de ralentir les terminaux, maintenant que la controverse est lancée Apple doit faire un effort de ce côté et garantir une excellente expérience utilisateur sur les anciens modèles d&amp;rsquo;iPhone. Et oui, je trouve que le prix des iPhones est trop élevé ; si je devais acheter un appareil aujourd&amp;rsquo;hui je prendrais un iPhone SE (ou son remplaçant) plutôt qu&amp;rsquo;un 6s 16GB, simplement parce que je trouve que mettre autant d&amp;rsquo;argent dans un smartphone n&amp;rsquo;est pas raisonnable.&lt;/p&gt;
+
+&lt;p&gt;Mais sérieux, les journalistes, les associations, regardez du côté des produits des concurrents. Faites une étude comparative sérieuse. Allez, je vous donne quelques critères significatifs :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Autonomie du téléphone après 1 an&lt;/li&gt;
+&lt;li&gt;Niveau de « réparabilité » de l&amp;rsquo;appareil, tel qu&amp;rsquo;évalué par exemple par iFixIt&lt;/li&gt;
+&lt;li&gt;Nombre de problèmes par téléphone&lt;/li&gt;
+&lt;li&gt;Durée de vie totale (car beaucoup d&amp;rsquo;iPhones ont une seconde vie après leur premier propriétaire !)&lt;/li&gt;
+&lt;li&gt;Nombre de mises à jour reçues après la commercialisation&lt;/li&gt;
+&lt;li&gt;Efforts de recyclage des produits&lt;/li&gt;
+&lt;li&gt;Mesures pour vérifier les conditions des employés dans les usines&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Vous verrez qu&amp;rsquo;Apple n&amp;rsquo;est pas un bon élève partout. Mais vous verrez aussi que Apple n&amp;rsquo;est probablement pas le plus mauvais des fabricants de smartphones.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Une journée à la LEGO House à Billund, Danemark</title>
