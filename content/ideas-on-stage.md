@@ -3,10 +3,14 @@ title = "L'histoire d'Ideas on Stage"
 date = "2018-01-15"
 +++
 
-Ideas on Stage est né de mon envie de révolutionner le monde des présentations en entreprise. J'ai démarré en tant qu'auto-entrepreneur. Un de mes tout premiers clients a été Yann Arthus-Bertrand, le célèbre photographe, avec qui j'ai travaillé pour l'aider à se préparer pour TED 2009. J'ai ensuite rapidement enchaîné vers d'autres clients prestigieux, comme HEC.
 
-En 2010 j'ai été rejoint dans l'aventure par Phil Waknell, et en avril 2010 la SARL Ideas on Stage était officiellement née ! La première année a été passée à tout mettre en place. Outils, méthodologie, et beaucoup de démarches administratives.
 
-Le succès a été rapidement au rendez-vous, car nous sommes arrivés juste au bon moment, au décollage de l'écosystème Web français, à l'essor des événements TEDx et à l'envie des conférences et des entreprises de renouveler les traditionnels événements.
+Ideas on Stage est né de mon envie de révolutionner le monde des présentations en entreprise. En 2006, après avoir assisté pendant des années à des présentations ennuyeuses, je décide de rechercher une autre façon de présenter en public. C'est comme cela que je découvre Présentation Zen, le blog de Garr Reynolds. Je suis tout de suite convaincu de l'intérêt de changer radicalement la façon de communiquer sur scène.
+
+Après plusieurs années de préparation, je démarre en tant qu'auto-entrepreneur en 2009. Un de mes premiers clients est Yann Arthus-Bertrand, le célèbre photographe, avec qui j'ai l'honneur de collaborer sur plusieurs projets. J'enchaîne rapidement avec d'autres clients prestigieux, comme HEC, mais le statut d'auto-entrepreneur, encore peu connu a l'époque, se révèle vite être compliqué à faire accepter aux entreprises.
+
+En 2010 je suis rejoint dans l'aventure par Phil Waknell, qui vient de terminer son Executive MBA à HEC. En avril 2010 la SARL Ideas on Stage est officiellement née ! Nous passons la première année a consolider notre réseau et à tout mettre en place. Outils, méthodologie, et beaucoup de démarches administratives. Nos premiers locaux sont dans le dixième arrondissement, en colocation avec la première promotion de startups du Camping. Ils sont plutôt moches, mais qu'importe, on a la foi !
+
+Et nous avons raison. Le succès vient rapidement, car nous sommes au bon endroit au bon moment. le début des années 2010 voit en effet le décollage de l'écosystème web français qui cherche désespérément à relever le niveau de ses *pitchs*. C'est aussi l'essor des événements TEDx à travers le monde. De nouvelles conférences qui se veulent différentes voient le jour partout. Les entreprises, si frileuses au départ, embrassent avec enthousiasme le nouvel art de présenter en public.
 
 Aujourd'hui nous sommes une équipe extrêmement soudée aux compétences reconnues dans le monde entier. Nos clients sont principalement en France, États-Unis, Espagne et Italie. Nous ne comptons pas nous arrêter en si bon chemin, et nous voulons continuer à nous développer dans tous les pays européens.
