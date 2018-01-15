@@ -1,10 +1,7 @@
 +++
-title = "L'histoire d'Ideas on Stage"
+title = "L'histoire d'Ideas on Stage | Pierre Morsa"
 date = "2018-01-15"
 +++
-
-
-
 Ideas on Stage est né de mon envie de révolutionner le monde des présentations en entreprise. En 2006, après avoir assisté pendant des années à des présentations ennuyeuses, je décide de rechercher une autre façon de présenter en public. C'est comme cela que je découvre Présentation Zen, le blog de Garr Reynolds. Je suis tout de suite convaincu de l'intérêt de changer radicalement la façon de communiquer sur scène.
 
 Après plusieurs années de préparation, je démarre en tant qu'auto-entrepreneur en 2009. Un de mes premiers clients est Yann Arthus-Bertrand, le célèbre photographe, avec qui j'ai l'honneur de collaborer sur plusieurs projets. J'enchaîne rapidement avec d'autres clients prestigieux, comme HEC, mais le statut d'auto-entrepreneur, encore peu connu a l'époque, se révèle vite être compliqué à faire accepter aux entreprises.
