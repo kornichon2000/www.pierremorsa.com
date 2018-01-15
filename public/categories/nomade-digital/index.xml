@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>nomade-digital on Pierre Morsa</title>
-    <link>https://www.pierremorsa.com/categories/nomade-digital/index.xml</link>
-    <description>Recent content in nomade-digital on Pierre Morsa</description>
+    <title>Nomade Digital on Pierre Morsa | Présenter en public et GTD</title>
+    <link>https://www.pierremorsa.com/categories/nomade-digital/</link>
+    <description>Recent content in Nomade Digital on Pierre Morsa | Présenter en public et GTD</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr</language>
-    <atom:link href="/categories/nomade-digital/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 04 Sep 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/categories/nomade-digital/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Nomade digital, étape 4 : sauvegarder pour éviter  la perte de données</title>
-      <link>https://www.pierremorsa.com/post/2017-09-04-Nomade-digital-etape-4-sauvegarder-pour-eviter-perte-donn%C3%A9es/</link>
+      <link>https://www.pierremorsa.com/post/2017-09-04-nomade-digital-etape-4-sauvegarder-pour-eviter-perte-donn%C3%A9es/</link>
       <pubDate>Mon, 04 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://www.pierremorsa.com/post/2017-09-04-Nomade-digital-etape-4-sauvegarder-pour-eviter-perte-donn%C3%A9es/</guid>
+      <guid>https://www.pierremorsa.com/post/2017-09-04-nomade-digital-etape-4-sauvegarder-pour-eviter-perte-donn%C3%A9es/</guid>
       <description>
 
 &lt;p&gt;J&amp;rsquo;emporte mon ordinateur ou mon iPad un peu partout. Le risque de le perdre ou de le casser  est donc bien réel ; par exemple en 2015 je me suis fait voler mon MacBook Pro dans le TGV.&lt;/p&gt;

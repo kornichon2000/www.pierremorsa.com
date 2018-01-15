@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>startup on Pierre Morsa</title>
-    <link>https://www.pierremorsa.com/categories/startup/index.xml</link>
-    <description>Recent content in startup on Pierre Morsa</description>
+    <title>Startup on Pierre Morsa | Présenter en public et GTD</title>
+    <link>https://www.pierremorsa.com/categories/startup/</link>
+    <description>Recent content in Startup on Pierre Morsa | Présenter en public et GTD</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr</language>
-    <atom:link href="/categories/startup/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 04 Dec 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/categories/startup/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Êtes-vous certain d&#39;avoir le bon logo ?</title>

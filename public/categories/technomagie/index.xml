@@ -1,12 +1,310 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>technomagie on Pierre Morsa</title>
-    <link>https://www.pierremorsa.com/categories/technomagie/index.xml</link>
-    <description>Recent content in technomagie on Pierre Morsa</description>
+    <title>Technomagie on Pierre Morsa | Présenter en public et GTD</title>
+    <link>https://www.pierremorsa.com/categories/technomagie/</link>
+    <description>Recent content in Technomagie on Pierre Morsa | Présenter en public et GTD</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr</language>
-    <atom:link href="/categories/technomagie/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 Jan 2018 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/categories/technomagie/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Le top 20 de mes Apps Mac en 2017</title>
+      <link>https://www.pierremorsa.com/post/2018-01-01-top-20-apps-mac-2017/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pierremorsa.com/post/2018-01-01-top-20-apps-mac-2017/</guid>
+      <description>&lt;p&gt;C&amp;rsquo;est parfois difficile de savoir exactement quelles sont les applications que l&amp;rsquo;on utilise le plus souvent. Cependant depuis le milieu de l&amp;rsquo;année dernière j&amp;rsquo;utilise Timing (voir en position 9) pour suivre exactement le nombre d&amp;rsquo;heures à facturer à mes clients. Je peux donc vous donner avec assez de précision le top 20 des applications Mac que j&amp;rsquo;ai le plus utilisé entre juillet et décembre 2017, la numéro 1 étant la plus utilisée.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;20. Skype&lt;/strong&gt;. La statistique est un peu faussée car Skype fonctionne souvent en arrière-plan et j&amp;rsquo;ai un document ou une page web ouverte au premier plan. Le temps est donc compté pour la page web ou le document. Cependant Skype reste effectivement l&amp;rsquo;application de vidéoconférence que j&amp;rsquo;utilise le plus, car pratiquement tout le monde sait s&amp;rsquo;en servir.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;19. S-Gear&lt;/strong&gt;. C&amp;rsquo;est l&amp;rsquo;ampli virtuel que j&amp;rsquo;utilise lorsque je joue de la guitare électrique. Jouant assez peu, je suis étonné qu&amp;rsquo;elle apparaisse dans le top 20.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;18. Espresso&lt;/strong&gt;. L&amp;rsquo;éditeur de sites que j&amp;rsquo;utilise pour éditer le code des sites web, principalement pierremorsa.com et ideasonstage.com.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;17. iTunes&lt;/strong&gt;. Comme Skype, iTunes fonctionne en tâche de fond et son utilisation est forcément sous-estimée. Sinon je pense que ce serait l&amp;rsquo;application numéro 1 de la liste.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;16. Microsoft Word&lt;/strong&gt;. Word reste le traitement de texte de référence pour échanger des documents avec mes clients. Mais je préfère nettement utiliser une application légère comme IA Writer pour écrire (voir position 3).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;15. FileMaker Pro&lt;/strong&gt;. Principalement pour gérer la base de données de mon entreprise. Cependant FileMaker Pro commence à montrer son âge, et c&amp;rsquo;est vrai que depuis le début de la société des solutions de CRM Web abordables sont apparues. De plus la nouvelle politique de licences de Filemaker ne me plaît pas du tout.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;14. Calendar&lt;/strong&gt;. Pour gérer mes rendez-vous. J&amp;rsquo;ai utilisé Fantastical un moment, mais j&amp;rsquo;ai été découragé par le prix de la mise à jour vers la version 2.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;13. Affinity Designer&lt;/strong&gt;. Ce programme me sert à créer des documents à imprimer ou des infographies lorsque je ne peux pas les créer directement dans PowerPoint. La seule fonctionnalité qui me manque par rapport à Illustrator est la possibilité de définir un calque pour imprimer du « blanc de soutien ».&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;12. Affinity Photo&lt;/strong&gt;. Complément parfait d&amp;rsquo;Affinity Designer, je m&amp;rsquo;en sers pour détourer les photos et effectuer des retouches ou des montages.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;11. Keynote&lt;/strong&gt;. Si PowerPoint est l&amp;rsquo;application que j&amp;rsquo;utilise pour créer des présentations pour mes clients, mes propres présentations sont encore sous Keynote pour des raisons historiques. Cependant vu la direction prise par Apple j&amp;rsquo;utilise de moins en moins Keynote.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;10. Slack&lt;/strong&gt;. Pour communiquer avec le reste de mon équipe. (J&amp;rsquo;ai compté le temps total passé sur Slack, App + Safari).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;9. Timing&lt;/strong&gt;. C&amp;rsquo;est l&amp;rsquo;application de suivi du temps passé qui me permet de connaître exactement le temps passé sur une tâche à facturer à un client. Et accessoirement celle qui me permet de vous donner ces statistiques.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;8. Script Debugger&lt;/strong&gt;. Le meilleur éditeur AppleScript de la planète !&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;7. Mail&lt;/strong&gt;. Au fil des années j&amp;rsquo;ai essayé des tas de clients email différents, mais je reviens toujours à Apple Mail. J&amp;rsquo;y ai cependant ajouté le plugin « Mail Act-On » qui me permet de créer des modèles d&amp;rsquo;email, des raccourcis et de fixer une heure d&amp;rsquo;envoi pour les emails.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;6. OmniFocus&lt;/strong&gt;. Le gestionnaire de tâches à la sauce GTD que j&amp;rsquo;utilise depuis plusieurs années.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;5. Keyboard Maestro&lt;/strong&gt;. Le programme qui me sert à automatiser les tâches répétitives.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;4. Finder&lt;/strong&gt;. Pour gérer les fichiers. Probablement l&amp;rsquo;application la plus emblématique du manque de véritable intérêt d&amp;rsquo;Apple pour le Mac. Si vous regardez le Finder de Mac OS X 1.0 et le Finder de macOS High Sierra, vous verrez à quel point il y a eu peu de progrès de l&amp;rsquo;interface. Fixer la taille des colonnes est toujours aussi bordélique. Les utilisateurs lambda sont toujours aussi perdus dans la hiérarchie des éléments.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;3. IA Writer&lt;/strong&gt;. C&amp;rsquo;est le programme que j&amp;rsquo;utilise pour écrire, en particulier les articles de ce blog. Il est simple et sans fioritures, et c&amp;rsquo;est exactement ce que j&amp;rsquo;apprécie.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;2. Microsoft PowerPoint&lt;/strong&gt;. Par la force de mon métier, c&amp;rsquo;est le programme que j&amp;rsquo;utilise tout le temps.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;1. Safari&lt;/strong&gt;. De nos jours, qu&amp;rsquo;est-ce qu&amp;rsquo;on ne fait pas dans un browser ?&lt;/p&gt;
+
+&lt;p&gt;Je n&amp;rsquo;ai volontairement pas donné de liens directs vers les sites des éditeurs car je ne voulais pas que cela ressemble à une incitation à l&amp;rsquo;achat, ce n&amp;rsquo;est pas l&amp;rsquo;objectif. Je veux également donner une mention honorable à certains programmes qui n&amp;rsquo;apparaissent pas dans cette liste car ils sont soit automatisés, soit en tâche de fond, mais je les utilise tous les jours :&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Amphetamine&lt;/strong&gt;. Un petit programme qui empêche le Mac de passer en veille ou d&amp;rsquo;éteindre l&amp;rsquo;écran. Très pratique lorsqu&amp;rsquo;on présente.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Fake&lt;/strong&gt;. C&amp;rsquo;est un browser web basé sur Webkit comme Safari, mais qui permet d&amp;rsquo;automatiser certaines actions.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Chronosync&lt;/strong&gt;. Le programme qui me sert à sauvegarder mes données en plus de Time Machine. Fiable, puissant mais parfois un peu compliqué à configurer.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Little Snitch&lt;/strong&gt;. Le meilleur firewall pour Mac.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Cryptomator&lt;/strong&gt;. Pour ajouter une couche de sécurité aux documents sauvegardés dans le Cloud.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Viscosity&lt;/strong&gt;. Un programme qui gère OpenVPN.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Quicksilver&lt;/strong&gt;. Le lanceur d&amp;rsquo;applications que j&amp;rsquo;utilise depuis très, très longtemps. Je me suis habitué à son fonctionnement particulier depuis sa toute première version. J&amp;rsquo;ai essayé Launchbar et Alfred, mais je suis toujours revenu à Quicksilver.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Héberger gratuitement un site Hugo avec Github et Netlify (2/2)</title>
+      <link>https://www.pierremorsa.com/post/2017-12-25-site-hugo-github-netlify-2/</link>
+      <pubDate>Mon, 25 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pierremorsa.com/post/2017-12-25-site-hugo-github-netlify-2/</guid>
+      <description>
+
+&lt;p&gt;Dans cette deuxième partie nous allons voir comment configurer Netlify pour servir les pages du site. Si vous ne l&amp;rsquo;avez pas lue je vous conseille de démarrer par la &lt;a href=&#34;https://www.pierremorsa.com/post/2017-12-18-site-hugo-github-netlify-1&#34;&gt;partie 1 de l&amp;rsquo;article qui explique comment déplacer le code du site dans Github&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Le truc génial avec Netlify, c&amp;rsquo;est qu&amp;rsquo;il s&amp;rsquo;occupe de faire tout ce qui est généralement bien pénible à configurer :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Il va être le serveur web des pages&lt;/li&gt;
+&lt;li&gt;Il est CDN (Content Distributed Network) pour accélérer la performance du site, et prend entièrement à sa charge la gestion du rafraîchissement du cache. Fini les arrachages de cheveux parce que le cache ne s&amp;rsquo;est pas mis à jour correctement.&lt;/li&gt;
+&lt;li&gt;Il offre un DNS très rapide pour réduire la latence de connexion.&lt;/li&gt;
+&lt;li&gt;Il gère le https pour vous (si vous le souhaitez), et force la redirection de http vers https.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Pour pas un roro, c&amp;rsquo;est déjà super. Mais si en plus je vous dis que Netlify :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Compile automatiquement le site hugo pour vous à partir du repository Github&lt;/li&gt;
+&lt;li&gt;Déploie automatiquement la branche compilée&lt;/li&gt;
+&lt;li&gt;Permet de tester autant de branches alternatives (versions de test ou versions futures par exemple) que souhaité&lt;/li&gt;
+&lt;li&gt;Permet de faire du A/B testing automatiquement&lt;/li&gt;
+&lt;li&gt;Permet de faire un rollback (retour en arrière) simplement en cas de catastrophe.&lt;/li&gt;
+&lt;li&gt;Offre un système de gestion de contenu hyper rapide (CMS).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Et tout ça toujours pour zéro roros ? Elle est pas belle la vie ?&lt;/p&gt;
+
+&lt;h2 id=&#34;configurer-netlify&#34;&gt;Configurer Netlify&lt;/h2&gt;
+
+&lt;p&gt;C&amp;rsquo;est bien beau tout ça, mais du coup ça doit sûrement être compliqué de tout paramétrer. Ben non. La magie de Netlify c&amp;rsquo;est que tout reste super simple.&lt;/p&gt;
+
+&lt;h3 id=&#34;créer-un-compte-netlify&#34;&gt;Créer un compte Netlify&lt;/h3&gt;
+
+&lt;p&gt;Pour créer un compte Netlify, identifiez-vous avec votre compte Github.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/12/netlify-signin-github.jpg&#34; alt=&#34;Netlify Signin Github&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Pourquoi avec votre compte Github ? Parce que&amp;hellip; Netlify va automatiquement vous proposer les différents projets que vous avez stockés sur Github. Donnez l&amp;rsquo;autorisation à Netlify d&amp;rsquo;accéder à votre compte Github. Voilà, vous venez de configurer votre compte Netlify.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/12/netlify-authorize-github.jpg&#34; alt=&#34;Netlify Authorize Github&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;ajouter-son-site-hugo-sur-netlify&#34;&gt;Ajouter son site Hugo sur Netlify&lt;/h3&gt;
+
+&lt;p&gt;Pour ajouter un site commençons par cliquer sur le bouton « New site from Git ».&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/12/netlify-new-site-from-git.jpg&#34; alt=&#34;Netlify New Site From Git&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ensuite, il faut choisir « Github » (ou une des autres options  si votre code est hébergé chez GitLab ou un autre).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/12/netlify-create-a-new-site-from-github.jpg&#34; alt=&#34;Netlify Create A New Site From Github&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Il faut de nouveau autoriser Netlify à accéder aux repositories GitHub.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/12/netlify-github-additional-permissions.jpg&#34; alt=&#34;Netlify Github Additional Permissions&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Sélectionnez alors le repository qui contient le code de votre site, dans mon cas « www.testtoto.com ».&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/12/netlify-new-site-choose.jpg&#34; alt=&#34;Netlify New Site Choose&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Il ne reste désormais plus que quelques informations à fournir :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Vous pouvez normalement laisser le nom de la branche à déployer à « master » (comme expliqué dans l&amp;rsquo;article précédent, c&amp;rsquo;est le nom par défaut de la version « validée »).&lt;/li&gt;
+&lt;li&gt;La « Build command » est simplement&amp;hellip; &lt;code&gt;hugo&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Le nom du répertoire de publication est &lt;code&gt;public&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Une fois ces informations renseignées, vous pouvez cliquer sur « Deploy Site ». En général la compilation et publication d&amp;rsquo;un site prend entre quelques secondes et quelques minutes maximum.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/12/netlify-new-site-added.jpg&#34; alt=&#34;Netlify New Site Added&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Netlify attribue automatiquement un URL au nouveau site qu&amp;rsquo;il gère. Dans mon exemple cet URL est &lt;a href=&#34;http://eager-hugle-1657a8.netlify.com -&#34;&gt;http://eager-hugle-1657a8.netlify.com -&lt;/a&gt; Le site est désormais accessible directement à cet URL, mais il ne vous convient certainement pas. Nous allons donc maintenant passer aux étapes 2 et 3 : la configuration d&amp;rsquo;un nom de domaine personnalisé et du https.&lt;/p&gt;
+
+&lt;h3 id=&#34;configurer-le-nom-de-domaine&#34;&gt;Configurer le nom de domaine&lt;/h3&gt;
+
+&lt;p&gt;Mon nom de domaine est pierremorsa.com, et je l&amp;rsquo;ai acheté il y a un bout de temps&amp;hellip; Pour le configurer, il y a deux solutions :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Modifier les informations du DNS existant pour pointer vers les serveurs de Netlify.&lt;/li&gt;
+&lt;li&gt;Ou utiliser les serveurs DNS de Netlify.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Je ne vais décrire ici que la deuxième option, utiliser les serveurs DNS de Netlify. Ils se vantent d&amp;rsquo;avoir les serveurs DNS les plus rapides du monde. J&amp;rsquo;ignore si c&amp;rsquo;est vrai.&lt;/p&gt;
+
+&lt;p&gt;Cette opération est rendue la plus simple possible par Netlify, mais elle reste malgré tout assez délicate, et parfois un peu déroutante, car il y a un temps de latence entre le moment où l&amp;rsquo;on demande la modification des paramètres d&amp;rsquo;un DNS et le moment où ces changements deviennent effectifs partout dans le monde. C&amp;rsquo;est une opération à faire le moins souvent possible.&lt;/p&gt;
+
+&lt;p&gt;Cliquez sur « Set up a custom domain ». Si vous avez loupé cet écran, cliquez simplement sur « Domain settings » → Domain management → Domains et cela reviendra au même.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/12/netlify-add-custom-domain.jpg&#34; alt=&#34;Netlify Add Custom Domain&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Cliquez ensuite sur « Add custom domain », entrez le nom de votre domaine, puis sur Save.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/12/netlify-add-custom-domain-2.jpg&#34; alt=&#34;Netlify Add Custom Domain 2&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;À ce niveau, vous allez probablement avoir une erreur. Cliquez sur le message « Check DNS configuration ». Cliquez alors sur « Set up Netlify DNS for votredomaine.com ».&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/12/netlify-setup-dns.jpg&#34; alt=&#34;Netlify Setup Dns&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Dans l&amp;rsquo;écran qui apparaît, cliquez sur Create DNS zone.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/12/netlify-create-dns-zone.jpg&#34; alt=&#34;Netlify Create Dns Zone&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Netlify crée alors les données de base pour le DNS, mais vous pouvez allez avoir besoin d&amp;rsquo;ajouter des infos manuellement. Encore une fois, c&amp;rsquo;est la partie la plus « compliquée » du processus car chaque cas est différent. Par exemple si vous avez un service d&amp;rsquo;email lié à votre nom de domaine (dans mon exemple email@testtoto.com) vous devrez configurer correctement les données DNS de votre service d&amp;rsquo;email sinon vos emails vont se perdre dans la nature.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Une fois cette étape effectuée, allez sur le service chez qui vous avez enregistré votre nom de domaine, et modifiez les serveurs DNS actuels par ceux de Netlify.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Une fois cette étape terminée, et une fois que les serveurs DNS dans le monde se seront mis à jour, votre site Hugo www.votresite.com sera servi par Netlify hyper rapidement ! Il ne vous restera plus qu&amp;rsquo;à activer le https pour que tout soit parfait ; l&amp;rsquo;opération étant très simple, je ne la détaillerai pas ici.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Héberger gratuitement un site Hugo avec Github et Netlify (1/2)</title>
+      <link>https://www.pierremorsa.com/post/2017-12-18-site-hugo-github-netlify-1/</link>
+      <pubDate>Mon, 18 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pierremorsa.com/post/2017-12-18-site-hugo-github-netlify-1/</guid>
+      <description>
+
+&lt;p&gt;Dans cette première partie je vous propose un tutoriel pas à pas pour créer le fichier netlify.toml, et héberger le code du site sur Github.&lt;/p&gt;
+
+&lt;p&gt;Ce blog est une sorte de cobaye. Je lui fais subir des tas d&amp;rsquo;expériences lorsque je veux tester ce que cela donne. À l&amp;rsquo;origine c&amp;rsquo;était une simple page web, puis il a migré sur Joomla un des premiers « CMS » 100% Web, puis sur Wordpress qui était et est encore la solution préférée de beaucoup de sites. Fatigué des problèmes à répétition de WordPress (sécurité, mise à jour des plugins, etc.) j&amp;rsquo;ai fini par migrer en 2016 vers un site statique généré par le génial &lt;a href=&#34;http://gohugo.io&#34;&gt;Hugo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Jusqu&amp;rsquo;il y a peu ce blog était encore chez un hébergeur classique, mais depuis la semaine dernière il tourne avec le couple &lt;a href=&#34;https://github.com&#34;&gt;Github&lt;/a&gt; + &lt;a href=&#34;https://www.netlify.com&#34;&gt;Netlify&lt;/a&gt;. Github stocke tout le contenu et tout le « code » du site (à mon sens ce n&amp;rsquo;est pas vraiment du code car ça n&amp;rsquo;exécute rien, mais plutôt des données structurées), et Netlify sert les pages depuis son CDN. À en croire ce test, le résultat en termes de performances me semble plutôt probant :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/12/testmysite-pierremorsa-com.jpg&#34; alt=&#34;Testmysite Pierremorsa Com&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Évidemment ce test risque de ne pas être 100% impartial vu qu&amp;rsquo;il est proposé depuis le site de Netlify. Cependant mon autre site &lt;a href=&#34;htts://www.ideasonstage.com&#34;&gt;Ideas on Stage&lt;/a&gt; a un score presque parfait alors qu&amp;rsquo;il n&amp;rsquo;est pas hébergé par Netlify mais par le tandem Dreamhost + Cloudflare, donc je crois à une certaine objectivité.&lt;/p&gt;
+
+&lt;p&gt;Je dois dire que je suis très impressionné par Netlify. Son avantage ce n&amp;rsquo;est pas que la rapidité. C&amp;rsquo;est aussi tous les outils qui vont autour. En tandem avec Github, il est possible de tester autant de branches différentes que l&amp;rsquo;on veut (une branche, c&amp;rsquo;est un peu comme une « version alternative d&amp;rsquo;un site»). Il est également possible de faire un « rollback », autrement dit de revenir simplement à la version précédente du site en cas de problème. En utilisant un webhook déclenché depuis Zapier j&amp;rsquo;ai même pu automatiser la publication des nouveaux articles à intervalles réguliers, ce qui était plus difficile à faire avec mon système précédent.&lt;/p&gt;
+
+&lt;p&gt;Le seul désavantage c&amp;rsquo;est que je n&amp;rsquo;ai plus du tout de statistiques, car je n&amp;rsquo;avais que les chiffres collectés par défaut par mon hébergeur. C&amp;rsquo;est facile à résoudre en intégrant Google Analytics, mais ce blog étant garanti 100% sans JavaScript je ne l&amp;rsquo;utiliserai pas, et pour moi ce n&amp;rsquo;est pas gênant.&lt;/p&gt;
+
+&lt;p&gt;Coût total de l&amp;rsquo;hébergement avec cette solution : 0€. Oui c&amp;rsquo;est assez dingue, ça ne coûte rien pour les versions de base. la seule partie qui reste payante est le nom de domaine.&lt;/p&gt;
+
+&lt;p&gt;Ci-dessous vous trouverez la procédure que j&amp;rsquo;ai suivie pour migrer ce blog vers Github + Netlify. Je l&amp;rsquo;ai réalisé depuis un Mac, mais c&amp;rsquo;est très similaire depuis n&amp;rsquo;importe quel autre système. Pour suivre ce tutoriel il vaut mieux :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Savoir vous servir un peu du terminal&lt;/li&gt;
+&lt;li&gt;Comprendre les notions Github de « commit », « branch », « pull » et « push »&lt;/li&gt;
+&lt;li&gt;Comprendre comment un DNS fonctionne&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;créez-un-fichier-netlify-toml&#34;&gt;Créez un fichier netlify.toml&lt;/h2&gt;
+
+&lt;p&gt;À la racine du site, dans le même répertoire que celui qui contient déjà &lt;code&gt;config.toml&lt;/code&gt; il faut ajouter un fichier nommé &lt;code&gt;netlify.toml&lt;/code&gt;, qui contiendra les versions de Hugo à utiliser par Netlify pour compiler le site. Voici le contenu de mon fichier netlify.toml :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[context.production.environment]
+  HUGO_VERSION = &amp;quot;0.31&amp;quot;
+  
+[context.deploy-preview.environment]
+  HUGO_VERSION = &amp;quot;0.31&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.pierremorsa.com/files/netlify.toml&#34;&gt;Pour les total flemmards vous pouvez télécharger directement le fichier ici&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;mettez-le-code-du-blog-sur-github&#34;&gt;Mettez le code du blog sur Github&lt;/h2&gt;
+
+&lt;p&gt;Si vous ne connaissez pas du tout Github, à la base c&amp;rsquo;est une solution pour gérer différentes versions d&amp;rsquo;un « répertoire ». C&amp;rsquo;est très utile pour les développeurs, qui peuvent ainsi garder une version stable de leur code et en parallèle travailler sur des nouvelles versions sans devoir tout dupliquer. Qui peut le plus peut le moins. Github peut servir à « versionner » des répertoires de documents, et dans notre cas le code source d&amp;rsquo;un site.&lt;/p&gt;
+
+&lt;h3 id=&#34;créez-un-compte-github&#34;&gt;Créez un compte Github&lt;/h3&gt;
+
+&lt;p&gt;Je ne vais pas expliquer cette partie, il suffit d&amp;rsquo;aller sur &lt;a href=&#34;https://github.com&#34;&gt;github.com&lt;/a&gt; et de se créer un compte, c&amp;rsquo;est à la portée du premier utilisateur de Facebook venu. Si comme pour moi laisser le code source de votre site accessible à tous n&amp;rsquo;est pas un souci, vous pouvez créer un compte gratuit, sinon il faudra payer 7$ par mois pour avoir un repository privé. Gardez bien le nom d&amp;rsquo;utilisateur et le mot de passe car nous allons en avoir besoin.&lt;/p&gt;
+
+&lt;p&gt;Si vous ne connaissez pas le fonctionnement de Github je vous conseille de lire le guide de démarrage car ce n&amp;rsquo;est pas forcément intuitif, surtout si vous n&amp;rsquo;avez jamais fait de développement.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Par contre pas besoin de démarrer un nouveau projet, car nous allons utiliser le répertoire existant sur votre ordi.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;initialisez-le-repository-github&#34;&gt;Initialisez le « repository » Github&lt;/h3&gt;
+
+&lt;p&gt;À partir du terminal, allez dans le répertoire qui contient le code du site. Par exemple &lt;code&gt;~/Sites/Hugo/www.testtoto.com/&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Une fois dans le bon répertoire tapez la commande suivante pour initialiser le répertoire Github :&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;git init&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Vous devriez avoir un message du genre&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;Initialized empty Git repository in ~/Sites/Hugo/www.testtoto.com/.git/&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Voilà, c&amp;rsquo;est tout, on pourrait tout faire depuis la ligne de commande en tapant des tas de trucs qui font intelligent mais ça me casse les pieds. Je vais donc utiliser le client Github Desktop pour la suite.&lt;/p&gt;
+
+&lt;h3 id=&#34;téléchargez-et-installez-github-desktop&#34;&gt;Téléchargez et installez Github Desktop.&lt;/h3&gt;
+
+&lt;p&gt;Pour ce faire cliquez sur le lien ci-dessous :&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://desktop.github.com&#34;&gt;Github Desktop&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Une fois installé, lancez Github Desktop, et utilisez votre nom d&amp;rsquo;utilisateur et mot de passe pour vous connecter à votre compte Github.&lt;/p&gt;
+
+&lt;h3 id=&#34;ajoutez-votre-répertoire-git-local-à-github-desktop&#34;&gt;Ajoutez votre répertoire git local à Github Desktop&lt;/h3&gt;
+
+&lt;p&gt;Si l&amp;rsquo;application ne vous le propose pas par défaut commencez par ajouter votre repository :&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;File → Add Local Repository...&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/12/github-add-local-repository.jpg&#34; alt=&#34;Github Add Local Repository&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Attention : avant de lancer la copie de vos fichiers vers Github, vérifiez qu&amp;rsquo;il n&amp;rsquo;y a pas d&amp;rsquo;autres répertoires .git cachés dans les sous-répertoires, en particulier dans les répertoires des thèmes, sinon vous risquez d&amp;rsquo;avoir des erreurs.&lt;/p&gt;
+
+&lt;p&gt;Voilà, normalement la barre du haut doit ressembler à ça :
+&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/12/github-desktop-top-bar.jpg&#34; alt=&#34;Github Desktop Top Bar&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Si nécessaire faites un commit de tous les changements sur la branche master (par défaut master est la branche principale de votre projet, celle qui fait office de référence pour la version « stable » de votre code). L&amp;rsquo;opération de commit « officialise » les changements, cela signifie, « c&amp;rsquo;est bon ces changements sont validés et peuvent être publiés ».&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/12/github-commit-hugo-repository.jpg&#34; alt=&#34;Github Commit Hugo Repository&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Il suffit maintenant de cliquer sur le bouton &lt;strong&gt;Publish repository&lt;/strong&gt; et tous les fichiers locaux vont être copiés vers Github.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/12/github-publish-hugo-repository.jpg&#34; alt=&#34;Github Publish Hugo Repository&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;L&amp;rsquo;avantage est que vous pouvez désormais synchroniser vos modifications locales et en ligne (dans le clllowwd comme on dit). Cependant pour se faire il faut bien comprendre les notions de « branch » et « commit » sinon vous risquez de galérer. J&amp;rsquo;essaierai de prendre le temps de les expliquer plus en détail dans un autre billet. Pour la suite du tutoriel je vais prendre l&amp;rsquo;hypothèse que vous modifiez les fichiers uniquement depuis le répertoire local.&lt;/p&gt;
+
+&lt;p&gt;Votre site est désormais sur GitHub. Si vous rafraîchissez la page vous devriez le voir apparaître dans la liste des repositories.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/12/github-your-hugo-repository.jpg&#34; alt=&#34;Github Your Hugo Repository&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Vous bénéficiez désormais de la gestion des versions, qui est la raison d&amp;rsquo;être de git. &lt;a href=&#34;https://www.pierremorsa.com/post/2017-12-25-site-hugo-github-netlify-2&#34;&gt;Dans la partie 2 nous allons voir comment configurer Netlify pour automatiser le déploiement du site et servir les pages aux visiteurs.&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Révisions :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;2017-12-21 : amélioration de l&amp;rsquo;explication de certaines étapes en particulier pour Github.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>Ajouter un formulaire de contact dans Hugo</title>
@@ -741,10 +1039,10 @@ end notify
     
     <item>
       <title>Nomade digital, étape 4 : sauvegarder pour éviter  la perte de données</title>
-      <link>https://www.pierremorsa.com/post/2017-09-04-Nomade-digital-etape-4-sauvegarder-pour-eviter-perte-donn%C3%A9es/</link>
+      <link>https://www.pierremorsa.com/post/2017-09-04-nomade-digital-etape-4-sauvegarder-pour-eviter-perte-donn%C3%A9es/</link>
       <pubDate>Mon, 04 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://www.pierremorsa.com/post/2017-09-04-Nomade-digital-etape-4-sauvegarder-pour-eviter-perte-donn%C3%A9es/</guid>
+      <guid>https://www.pierremorsa.com/post/2017-09-04-nomade-digital-etape-4-sauvegarder-pour-eviter-perte-donn%C3%A9es/</guid>
       <description>
 
 &lt;p&gt;J&amp;rsquo;emporte mon ordinateur ou mon iPad un peu partout. Le risque de le perdre ou de le casser  est donc bien réel ; par exemple en 2015 je me suis fait voler mon MacBook Pro dans le TGV.&lt;/p&gt;
@@ -1399,384 +1697,6 @@ alors qu&amp;rsquo;ils devraient être utilisés le moins possible. De plus, j&a
 &lt;p&gt;Si vous avez des exemples d&amp;rsquo;automatisation que vous voulez partager n&amp;rsquo;hésitez pas à me les envoyer !&lt;/p&gt;
 
 &lt;p&gt;Note : je rappelle que je ne suis pas sponsorisé, et que tous les outils cités ici ont été achetés avec mes propres Deniers, parce que je pense que ce sont les meilleurs.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Pourquoi le chiffrage de bout en bout est indispensable</title>
-      <link>https://www.pierremorsa.com/post/2016-12-12-chiffrage-de-bout-en-bout-indispensable/</link>
-      <pubDate>Mon, 12 Dec 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.pierremorsa.com/post/2016-12-12-chiffrage-de-bout-en-bout-indispensable/</guid>
-      <description>
-
-&lt;p&gt;&lt;strong&gt;Avertissement : la sécurité informatique est un sujet très complexe et difficile à mettre en œuvre. Je ne suis moi-même pas un expert en sécurité, mais je base cet article sur ce que j&amp;rsquo;ai pu lire sur différents sites. Mais à vous de vous documenter plus si vous souhaitez vérifier la sécurité des applications listées ci-dessous.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Saviez-vous que chaque email que vous envoyez peut être très facilement lu par des personnes mal intentionnées ? Non seulement les emails ne sont pas chiffrés sur votre machine, mais ils ne sont pas chiffrés non plus sur les serveurs distants. Pire, ils ne sont pas chiffrés non plus pendant le transfert de votre machine à celle de votre correspondant ! L&amp;rsquo;email standard est le niveau 0 de la sécurité : il n&amp;rsquo;y a aucun chiffrage, que ce soit au niveau du stockage ou au niveau du transport ! Concrètement cela signifie que n&amp;rsquo;importe quelle agence à trois lettres qui souhaite lire vos emails peut le faire très facilement. C&amp;rsquo;est d&amp;rsquo;ailleurs assez ironique de voir à quel point les grandes entreprises si jalouses de leurs secrets n&amp;rsquo;hésitent pas à utiliser l&amp;rsquo;email pour envoyer des documents confidentiels.&lt;/p&gt;
-
-&lt;p&gt;Évidemment la parade à cela, c&amp;rsquo;est le chiffrage. Le problème c&amp;rsquo;est que le chiffrage, c&amp;rsquo;est loin d&amp;rsquo;être simple. Autant pour des raisons mathématiques que techniques et surtout politiques.&lt;/p&gt;
-
-&lt;h2 id=&#34;le-chiffrage-et-la-sécurité-nationale&#34;&gt;Le chiffrage et la sécurité nationale&lt;/h2&gt;
-
-&lt;p&gt;Les solutions de chiffrage efficaces sont souvent présentées comme des armes pour les terroristes, les pédophiles et autres êtres malfaisants. On arrête l&amp;rsquo;hypocrisie. La France et bien d&amp;rsquo;autres pays n&amp;rsquo;ont aucun remords à vendre des armes bien réelles et des systèmes de surveillance électronique à des dictatures. Comble de l&amp;rsquo;ironie, ces superbes deals sont protégés par l&amp;rsquo;excuse du secret défense ! Il faut voir aussi à quel point nos démocraties sont promptes à condamner le Great Firewall of China alors qu&amp;rsquo;elles-mêmes bloquent de plus en plus facilement ce qu&amp;rsquo;elles considèrent comme contraire à leurs intérêts. Alors bien sûr que les sites qui font l&amp;rsquo;apologie du terrorisme ne sont pas acceptables, mais sans cadre légal démocratique strict la dérive totalitaire est très facile.&lt;/p&gt;
-
-&lt;p&gt;La réalité c&amp;rsquo;est que sur le point de la surveillance nos pays sont bien mieux équipés que la plupart des dictatures. Dans un réflexe spontané d&amp;rsquo;auto-préservation les États démocratiques font tout pour surveiller les individus au détriment du respect de leurs libertés et de leur vie privée et sans aucune réflexion sur les dégâts potentiels à long terme.&lt;/p&gt;
-
-&lt;h2 id=&#34;le-chiffrage-des-transmissions-de-données-ce-n-est-pas-le-vrai-chiffrage&#34;&gt;Le chiffrage des transmissions de données ce n&amp;rsquo;est pas le vrai chiffrage !&lt;/h2&gt;
-
-&lt;p&gt;Lorsque vous voyez l&amp;rsquo;icône du cadenas dans votre navigateur web vous pouvez vous croire protégé. Faux. Archi-faux. Ce qui est chiffré c&amp;rsquo;est uniquement la transmission des données entre votre machine et le serveur situé quelque part ailleurs sur terre.  Toute personne qui a accès à votre machine ou la machine à distance pourra accéder à vos données. Quelques exemples de services qui ne chiffrent que la transmission des données ? Voilà :&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;gmail&lt;/li&gt;
-&lt;li&gt;Dropbox&lt;/li&gt;
-&lt;li&gt;OneDrive&lt;/li&gt;
-&lt;li&gt;iCloud&lt;/li&gt;
-&lt;li&gt;Hotmail&lt;/li&gt;
-&lt;li&gt;Slack&lt;/li&gt;
-&lt;li&gt;Facebook&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Je continue ? 99,99% des services internet ne chiffrent nos données que durant la transmission. Par exemple une personne mal intentionnée qui accède à la machine sur laquelle sont stockées vos fichiers Dropbox peut les lire sans aucune difficulté. Certaines données, comme le mot de passe, sont souvent chiffrées, c&amp;rsquo;est vrai (avec différentes méthodes comme le hash et le salt trop longues à décrire ici), mais toutes les autres données sont stockées sans aucun chiffrage.&lt;/p&gt;
-
-&lt;h2 id=&#34;le-chiffrage-de-bout-en-bout-seule-véritable-solution-sécurisée&#34;&gt;Le chiffrage de bout en bout, seule véritable solution sécurisée&lt;/h2&gt;
-
-&lt;p&gt;Pour avoir des données réellement sécurisées, il faut utiliser ce qu&amp;rsquo;on appelle le chiffrage de bout en bout. Les données sont chiffrées partout. Seul le propriétaire, et éventuellement le destinataire, doivent pouvoir lire les données. De plus il faut que la mise en œuvre du chiffrage soit : &lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;fiable, ce qui est très difficile à faire (par exemple la NSA a poussé à l&amp;rsquo;adoption de certains algorithmes de chiffrage comportant des faiblesses qui rendent le déchiffrage beaucoup plus facile),&lt;/li&gt;
-&lt;li&gt;auditable pour vérifier qu&amp;rsquo;elle ne comporte pas de « porte dérobée » (par exemple via un mot de passe secret qui permettrait à une agence de renseignement d&amp;rsquo;accéder à vos données),&lt;/li&gt;
-&lt;li&gt;chiffre également ce qu&amp;rsquo;on appelle les méta-data ou du moins en minimise l&amp;rsquo;empreinte. Un exemple de méta-data c&amp;rsquo;est la liste des appels que vous avez passé depuis votre téléphone ; ce sont des données supplémentaires qui sont nécessaires pour transmettre les données principales, mais qui peuvent être utilisées contre vous.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;La liste de services internet qui respectent ces critères pour le chiffrement de bout en bout est incroyablement courte. Pour plusieurs raisons. Premièrement, comme déjà évoqué, c&amp;rsquo;est très difficile à mettre en œuvre correctement et cela demande un niveau de compétences spécifiques très élevé. Deuxièmement les agences de surveillance font tout pour empêcher le développement de ces solutions. Voici néanmoins une liste de solutions qui, au mieux de mes connaissances, utilisent le chiffrage de bout en bout.&lt;/p&gt;
-
-&lt;h2 id=&#34;email-protonmail&#34;&gt;Email: Protonmail&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://www.protonmail.com&#34;&gt;Protonmail&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Protonmail est un service d&amp;rsquo;email sécurisé basé en Suisse. Attention, il ne fonctionnera de manière sécurisée que lorsque les emails sont échangées entre adresses @protonmail.com - si vous envoyez un email à une autre adresse, par exemple @gmail.com, cet email ne sera pas chiffré. C&amp;rsquo;est une limitation impossible à contourner à cause du fonctionnement non chiffré des messageries email classiques. Le service fonctionne bien, mais par contre il possède plusieurs faiblesses potentielles. La première est l&amp;rsquo;utilisation de JavaScript dans le navigateur pour assurer le chiffrage qui ne permet pas de garantir une sécurité à 100% (compromission des serveurs de Protonmail, man in the middle attack). L&amp;rsquo;utilisation de l&amp;rsquo;App iOS ou Android permet de résoudre ce problème. La deuxième est que vos clés de chiffrement sont stockées sur leurs serveurs. Néanmoins Protonmail semble un excellent compromis entre sécurité et facilité d&amp;rsquo;utilisation.&lt;/p&gt;
-
-&lt;p&gt;À noter que pour freiner l&amp;rsquo;adoption de Protonmail celui-ci a mystérieusement disparu des résultats de recherche de Google pendant plusieurs mois. Google n&amp;rsquo;a jamais fourni d&amp;rsquo;explication, mais on peut penser que la concurrence que Protonmail représente pour gmail n&amp;rsquo;y est pas étrangère.&lt;/p&gt;
-
-&lt;h2 id=&#34;messagerie-instantanée-signal&#34;&gt;Messagerie instantanée : Signal&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://whispersystems.org/#page-top&#34;&gt;Signal&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Signal est à l&amp;rsquo;heure actuelle une des seules messageries instantanées qui supporte le chiffrage de bout en bout de manière suffisamment fiable et auditée.&lt;/p&gt;
-
-&lt;p&gt;Oubliez WhatsApp ou Skype. WhatsApp a été racheté par Facebook. Microsoft a modifié l&amp;rsquo;architecture de Skype pour permettre à la NSA d&amp;rsquo;écouter toutes les conversations.&lt;/p&gt;
-
-&lt;h2 id=&#34;gtd-omnifocus&#34;&gt;GTD : Omnifocus&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.omnigroup.com/omnifocus/&#34;&gt;Omnifocus&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Omnifocus 2 utilise les serveurs de Omni Group pour la synchronisation entre appareils et supporte le chiffrage de sa base de données de bout en bout. Le chiffrage a lieu &lt;em&gt;avant&lt;/em&gt; que les données ne quittent vos appareils. Cela signifie que les données stockées sur les serveurs de Omni Group sont illisibles pour toutes les personnes qui ne disposent pas du mot de passe ; même les employés de Omni Group ne peuvent y accéder.&lt;/p&gt;
-
-&lt;p&gt;C&amp;rsquo;est un excellent pas dans la bonne direction, même si comme souvent il est impossible d&amp;rsquo;être certain qu&amp;rsquo;aucune porte dérobée n&amp;rsquo;existe.&lt;/p&gt;
-
-&lt;h2 id=&#34;disque-dur-truecrypt-ou-veracrypt-avertissement&#34;&gt;Disque Dur : TrueCrypt ou VeraCrypt (Avertissement !)&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.grc.com/misc/truecrypt/truecrypt.htm&#34;&gt;TrueCrypt&lt;/a&gt;
-&lt;a href=&#34;https://veracrypt.codeplex.com&#34;&gt;VeraCrypt&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Vous pouvez utiliser TrueCrypt version 7.1a (la dernière vraie version de TrueCrypt, les versions plus récentes n&amp;rsquo;étant pas fiables). Mais attention, le projet n&amp;rsquo;est plus maintenu, après l&amp;rsquo;abandon brutal du projet par l&amp;rsquo;équipe de développement.&lt;/p&gt;
-
-&lt;p&gt;Vous pouvez également vous tourner vers son successeur, VeraCrypt. Même si ces solutions ne sont pas parfaites, ce sont celles qui ont le moins de risques de comporter une porte dérobée cachée.&lt;/p&gt;
-
-&lt;p&gt;Pour chiffrer le contenu de votre disque dur, vous pouvez faire confiance aux solutions standard fournies par Apple (FileVault) ou Microsoft (Bitlocker). Mais il faut savoir que &lt;a href=&#34;http://arstechnica.com/security/2016/08/microsoft-secure-boot-firmware-snafu-leaks-golden-key/&#34;&gt;Microsoft a laissé échapper par mégarde la clé de la porte dérobée pour accéder au contenu des disques lors du Secure Boot&amp;hellip;&lt;/a&gt;. À l&amp;rsquo;heure actuelle aucun élément ne permet d&amp;rsquo;incriminer Apple, mais rien ne permet de garantir que FileVault ne comporte pas une porte dérobée. Par simplicité FileVault est la solution que j&amp;rsquo;utilise pour protéger mes données en cas de vol.&lt;/p&gt;
-
-&lt;h2 id=&#34;en-conclusion&#34;&gt;En conclusion&amp;hellip;&lt;/h2&gt;
-
-&lt;p&gt;Je veux encore rappeler que je ne suis pas un expert de la sécurité et que de nos jours en termes de sécurité on ne peut être sûr de rien. Adopter ces solutions chiffrées de bout en bout, c&amp;rsquo;est bien, mais vous allez vite vous rendre compte de la limite principale : l&amp;rsquo;humain. 90% des utilisateurs se fichent de la sécurité de leurs données et ne voudront pas utiliser Protonmail ou Signal. Tant pis pour eux. Je suis personnellement convaincu que ces solutions doivent être supportées activement pour permettre leur développement et leur adoption par un nombre croissant d&amp;rsquo;utilisateurs.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Quelques trucs en plus pour votre site Hugo</title>
-      <link>https://www.pierremorsa.com/post/2016-08-16-quelques-trucs-en-plus-pour-votre-site-hugo/</link>
-      <pubDate>Tue, 16 Aug 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.pierremorsa.com/post/2016-08-16-quelques-trucs-en-plus-pour-votre-site-hugo/</guid>
-      <description>
-
-&lt;p&gt;Si vous avez suivi mon guide pour &lt;a href=&#34;https://www.pierremorsa.com/post/2016-08-08-comment-migrer-un-blog-wordpress-sous-hugo/&#34;&gt;migrer un blog Wordpress ou un site Wordpress vers Hugo&lt;/a&gt;, cet article vous donne quelques trucs utiles en plus.&lt;/p&gt;
-
-&lt;h2 id=&#34;faciliter-l-indexation-du-site-avec-sitemap-xml&#34;&gt;Faciliter l&amp;rsquo;indexation du site avec sitemap.xml&lt;/h2&gt;
-
-&lt;p&gt;Hugo génère automatiquement une &amp;ldquo;sitemap&amp;rdquo; de votre site appelée sitemap.xml. Renseignez celle-ci dans les Google Webmaster tools pour garantir la bonne indexation de votre site par le moteur de recherche.&lt;/p&gt;
-
-&lt;h2 id=&#34;intégrer-google-analytics&#34;&gt;Intégrer Google Analytics&lt;/h2&gt;
-
-&lt;p&gt;Mon blog n&amp;rsquo;utilise aucun &amp;ldquo;tracker&amp;rdquo;, mais Hugo fournit l&amp;rsquo;intégration avec Google Analytics en standard.
-Il suffit d&amp;rsquo;ajouter la ligne suivante dans le fichier config.toml
-&lt;code&gt;googleAnalytics = &amp;quot;UA-123-45&amp;quot;&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Remplacez UA-123-45 par votre code d&amp;rsquo;identification Google Analytics.&lt;/p&gt;
-
-&lt;h2 id=&#34;générer-un-fichier-robots-txt&#34;&gt;Générer un fichier robots.txt&lt;/h2&gt;
-
-&lt;p&gt;Hugo dispose de la capacité de générer un fichier robots.txt à partir d&amp;rsquo;un template comme le reste des pages du site. Pour plus d&amp;rsquo;informations visitez la page d&amp;rsquo;aide &lt;a href=&#34;http://gohugo.io/extras/robots-txt/&#34;&gt;Custom Robots&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&#34;résoudre-le-problème-des-accents-dans-les-liens-hugo-sur-mac&#34;&gt;Résoudre le problème des accents dans les liens Hugo sur Mac&lt;/h2&gt;
-
-&lt;p&gt;Il existe un problème connu avec les liens ou les noms de catégories accentués avec Hugo sur Mac. C&amp;rsquo;est un problème spécifique à la façon dont le Mac encode les caractères accentués : il utilise le code Unicode NFD (l&amp;rsquo;accent et la lettre sont stockés séparément comme deux caractères) alors que Hugo utilise le code NFC (le caractère accentué est stocké comme un caractère unique).&lt;/p&gt;
-
-&lt;p&gt;Si vous avez un nom de catégorie avec un accent, comme par exemple « Présenter en public », cela va fonctionner localement sur le Mac mais pas sur le serveur distant. La solution préconisée consiste à utiliser rsync pour faire la synchronisation des fichiers. De plus c&amp;rsquo;est beaucoup plus rapide que d&amp;rsquo;utiliser un client sftp ! Le truc est d&amp;rsquo;utiliser l&amp;rsquo;option &lt;code&gt;--iconv=utf-8-mac,utf-8&lt;/code&gt; qui forcera la conversion des caractères accentués du format NFD au format NFC. La commande rsync complète que j&amp;rsquo;utilise est la suivante :
-&lt;code&gt;rsync -a --exclude &#39;.DS_Store&#39; --iconv=utf-8-mac,utf-8 --progress public/ user@serveurdistant:/chemin/distant/&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Si je décompose les options, cela donne :&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;-a&lt;/code&gt; pour utiliser le mode archive de rsync&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;--exclude &#39;.DS_Store&#39;&lt;/code&gt; pour exclure les fichiers .DS_Store de la synchronisation.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;--iconv=utf-8-mac,utf-8&lt;/code&gt; est l&amp;rsquo;option magique qui force la conversion des caractères accentués du format NFD au format NFC.&lt;/li&gt;
-&lt;li&gt;L&amp;rsquo;option &lt;code&gt;--progress&lt;/code&gt; n&amp;rsquo;est pas indispensable, elle permet juste d&amp;rsquo;afficher la progression de la synchronisation.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;public/&lt;/code&gt; est le nom du répertoire local contenant les fichiers générés par Hugo (&lt;strong&gt;attention le / à la fin de public/ est très important sinon rsync créera un répertoire nommé &amp;ldquo;public&amp;rdquo; sur le serveur distant&lt;/strong&gt;).&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;user@serveurdistant:/chemin/distant/&lt;/code&gt; contient le nom d&amp;rsquo;utilisateur, le nom du serveur et le chemin où il faut copier les fichiers (c&amp;rsquo;est le répertoire du serveur web contenant les fichiers de votre site).&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;obtenir-plus-d-aide&#34;&gt;Obtenir plus d&amp;rsquo;aide&lt;/h2&gt;
-
-&lt;p&gt;Si vous êtes bloqués et ne trouvez pas la réponse à votre problème il vous reste une solution : visiter le forum de Hugo (en anglais) : &lt;a href=&#34;https://discuss.gohugo.io&#34;&gt;Forum de discussion Hugo&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Comment migrer un blog Wordpress vers Hugo</title>
-      <link>https://www.pierremorsa.com/post/2016-08-08-comment-migrer-un-blog-wordpress-sous-hugo/</link>
-      <pubDate>Mon, 08 Aug 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.pierremorsa.com/post/2016-08-08-comment-migrer-un-blog-wordpress-sous-hugo/</guid>
-      <description>
-
-&lt;p&gt;Courant du mois de juin 2016 j&amp;rsquo;ai &lt;a href=&#34;http://gohugo.io&#34;&gt;migré mon blog de Wordpress vers Hugo&lt;/a&gt;. Je détaille ici la méthode que j&amp;rsquo;ai suivi pour les personnes qui souhaitent faire la même chose. Ce guide est loin d&amp;rsquo;être complet ; si vous vous retrouvez bloqué à une étape, consultez la documentation officielle. Si vous voulez suggérer des améliorations ou des corrections pour le guide contactez-moi directement à monprénom.monnom@pierremorsa.com&lt;/p&gt;
-
-&lt;p&gt;Avant de commencer, Sachez que si gérer un blog sur Hugo a des avantages et est à mon goût bien plus agréable que Wordpress, cela demande plus de connaissances techniques. Si vous n&amp;rsquo;avez jamais utilisé la ligne de commande sous Unix, si pour vous Apache n&amp;rsquo;évoque rien d&amp;rsquo;autre que les Indiens, je vous conseille de rester sur Wordpress.&lt;/p&gt;
-
-&lt;p&gt;Dans tous les cas :&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Lisez tout le guide jusqu&amp;rsquo;au bout de la fin de manière complète et exhaustive avant de vous lancer dans l&amp;rsquo;aventure.&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Gardez une copie de sauvegarde de votre site Wordpress, et surtout ne le désactivez pas avant la fin de la migration.&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Ce guide peut contenir des erreurs ou des instructions qui font exploser votre blog, vous vous lancez dans l&amp;rsquo;aventure à vos risques et périls et sous votre entière responsabilité.&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Vous allez fatalement rencontrer un problème non documenté dans ce guide, une bonne connaissance de l&amp;rsquo;anglais est nécessaire pour consulter la documentation complète de Hugo.&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Ça c&amp;rsquo;est dit. Perso je ne lis jamais toutes les instructions avant de me lancer dans un truc risqué. Je préfère tout péter, paniquer et lire après.&lt;/p&gt;
-
-&lt;h2 id=&#34;pourquoi-migrer-de-wordpress-vers-hugo&#34;&gt;Pourquoi migrer de Wordpress vers Hugo ?&lt;/h2&gt;
-
-&lt;p&gt;La philosophie de Hugo est radicalement différente de celle de Wordpress. Pour schématiser, chaque fois qu&amp;rsquo;un visiteur charge une page sur Wordpress, Wordpress reconstruit toute la page avant de l&amp;rsquo;envoyer au visiteur. Hugo construit toutes les page une seule fois, on envoie les pages sur le serveur Web Apache ou autre qui se charge d&amp;rsquo;envoyer les pages statiques préconstruites au visiteur.&lt;/p&gt;
-
-&lt;p&gt;Pour moi les deux grands avantages de Hugo sont la vitesse et la sécurité. Le désavantage est l&amp;rsquo;impossibilité de servir du contenu &amp;ldquo;dynamique&amp;rdquo;, par exemple des commentaires&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;, un compteur ou du contenu qui changerait à une date précise&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:2&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;. Les avantages et désavantages de Wordpress sont exactement à l&amp;rsquo;opposé.&lt;/p&gt;
-
-&lt;p&gt;Testez bien Hugo avant de décider si oui ou non cette solution peut convenir pour votre blog.&lt;/p&gt;
-
-&lt;h2 id=&#34;installer-hugo-sur-votre-ordinateur&#34;&gt;Installer Hugo sur votre ordinateur&lt;/h2&gt;
-
-&lt;p&gt;J&amp;rsquo;ai installé Hugo sur un Mac, mais il est disponible pour d&amp;rsquo;autres plateformes, dont Linux et Windows. Pour le télécharger, allez sur la page Github &lt;a href=&#34;https://github.com/spf13/hugo/releases&#34;&gt;des versions de Hugo&lt;/a&gt;. Ensuite, le mieux est de l&amp;rsquo;installer dans un des répertoires d&amp;rsquo;où il sera accessible depuis la ligne de commande. Je l&amp;rsquo;ai mis dans
-&lt;code&gt;/usr/local/bin/&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Lancez le terminal et faites un test. Tapez
-&lt;code&gt;hugo help&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Vous devriez voir s&amp;rsquo;afficher l&amp;rsquo;aide de Hugo. Si cela fonctionne, félicitations, vous venez d&amp;rsquo;installer Hugo ! Vous pouvez maintenant passer à l&amp;rsquo;étape suivante : créer votre premier site, dans ce cas votre blog.&lt;/p&gt;
-
-&lt;h2 id=&#34;créer-votre-blog-sur-hugo&#34;&gt;Créer votre blog sur Hugo&lt;/h2&gt;
-
-&lt;p&gt;Assurez-vous avant toute chose d&amp;rsquo;être dans le bon répertoire. Si nécessaire déplacez-vous jusque dans le bon répertoire à coups de cd. Prêt ? Pour créer le site, il suffit de taper
-&lt;code&gt;hugo new site nom-du-site&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Par exemple pour créer www.pierremorsa.com il faut taper &lt;code&gt;hugo new site www.pierremorsa.com&lt;/code&gt; - le nom du répertoire n&amp;rsquo;a pas réellement d&amp;rsquo;importance et j&amp;rsquo;aurais pu créer www.pierremorsa.com avec la commande &lt;code&gt;hugo new site toto&lt;/code&gt;, Hugo aurait alors créé mon site dans un répertoire nommé toto.&lt;/p&gt;
-
-&lt;p&gt;Hugo va automatiquement créer presque toute la structure nécessaire à un nouveau site, à l&amp;rsquo;exception de deux éléments indispensables : le thème et bien sûr le contenu.&lt;/p&gt;
-
-&lt;h2 id=&#34;ajouter-un-thème&#34;&gt;Ajouter un thème&lt;/h2&gt;
-
-&lt;p&gt;À la louche, le concept des thèmes de Hugo est similaire à celui de Wordpress. Dans le détail, il est très différent. On choisit un thème, et Hugo se charge de définir le look et la structure des pages. Et tout comme pour Wordpress l&amp;rsquo;idéal est de partir d&amp;rsquo;un thème existant.&lt;/p&gt;
-
-&lt;p&gt;Allez sur &lt;a href=&#34;http://themes.gohugo.io&#34;&gt;le répertoire des thèmes Hugo&lt;/a&gt; et choisissez un thème qui vous plaît et convient à un blog. Mon blog utilise une version modifiée du thème &lt;a href=&#34;http://themes.gohugo.io/future-imperfect/&#34;&gt;Hugo Future Imperfect&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Téléchargez le thème, dézippez-le si nécessaire, puis faites glisser le dossier dans le répertoire themes de votre site.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;nom-du-site
-    - themes
-        - répertoire du thème
-            - fichiers du thème
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;configurer-le-site&#34;&gt;Configurer le site&lt;/h2&gt;
-
-&lt;p&gt;Une fois le thème installé, il ne reste qu&amp;rsquo;une étape avant de pouvoir passer au contenu : configurer le site. Tout se passe dans le fichier au doux nom de
-&lt;code&gt;config.toml&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Contrairement à Wordpress, il ne suffit pas de prendre un nouveau thème et l&amp;rsquo;activer pour que ça marche, chaque thème requiert une configuration spécifique du fichier config.toml ou il ne fonctionnera pas correctement. Oui, c&amp;rsquo;est moins facile que sur Wordpress mais c&amp;rsquo;est une approche différente.&lt;/p&gt;
-
-&lt;p&gt;Commencez par &lt;strong&gt;copier&lt;/strong&gt; (pas déplacer) le fichier exemple &lt;code&gt;/votre-site/themes/nom-du-theme/exampleSite/config.toml&lt;/code&gt; vers le répertoire racine de votre site &lt;code&gt;/nom-du-site/config.toml&lt;/code&gt;. C&amp;rsquo;est la copie que nous allons modifier, l&amp;rsquo;original pourra être utile pour revenir en arrière si vous cassez tout (notez que je dis nous modifions, vous cassez, mais je casse tout régulièrement).&lt;/p&gt;
-
-&lt;p&gt;Si vous avez une barbe ou une moustache d&amp;rsquo;ingénieur ou un t-shirt Grateful Dead vous savez comment utiliser &lt;code&gt;vi&lt;/code&gt; &lt;code&gt;pico&lt;/code&gt; &lt;code&gt;nano&lt;/code&gt; et autres pour éditer le fichier. Perso j&amp;rsquo;ai vraiment l&amp;rsquo;air moche avec une moustache, je préfère les éditeurs graphiques comme Textmate ou Espresso.&lt;/p&gt;
-
-&lt;p&gt;Le fichier de configuration contient tous les paramètres spécifiques au site : son nom, son url, et si le thème est fait correctement tous les textes à traduire dans une autre langue si nécessaire (et si vous lisez ce blog c&amp;rsquo;est probablement que vous allez les traduire en français).&lt;/p&gt;
-
-&lt;p&gt;Vous pouvez indiquer à Hugo le thème à utiliser comme option de la ligne de commande à chaque fois, mais je trouve qu&amp;rsquo;il est plus simple de le configurer une bonne fois pour toute dans le fichier config.toml. Pour ce faire, ajoutez au début la ligne
-&lt;code&gt;theme = &amp;quot;nom_du-theme&amp;quot;&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;nom-du-theme est le nom exact du répertoire contenant le thème. Il faut bien inclure les guillemets autour du nom, et il ne faut renseigner que le nom du répertoire du thème, pas le chemin complet.&lt;/p&gt;
-
-&lt;h2 id=&#34;démarrer-le-serveur-de-test-de-hugo&#34;&gt;Démarrer le serveur de test de Hugo&lt;/h2&gt;
-
-&lt;p&gt;Hugo dispose d&amp;rsquo;un serveur web intégré qui rafraîchit en temps réel les pages chaque fois que vous modifiez quelque chose sur le site, que ce soit le contenu, la configuration ou un élément du thème comme les styles css ou le code d&amp;rsquo;une page. Cela permet de savoir presque instantanément si les modifications que l&amp;rsquo;on vient de faire fonctionnent correctement. Mais&amp;hellip; allez-vous me dire, Hugo est un générateur de sites et il doit pourtant reconstruire les pages à chaque fois, comment cela peut-il être aussi rapide ?  Simplement parce que Hugo est très rapide ; il met environ 1 ms (oui millisecondes) pour construire une page. Bref, démarrons le serveur de test avec la commande
-&lt;code&gt;hugo server&lt;/code&gt;
-Voilà. Lancez votre navigateur préféré et allez sur
-&lt;code&gt;localhost:1313&lt;/code&gt;
-C&amp;rsquo;est l&amp;rsquo;adresse du serveur de test, et vous devriez immédiatement voir votre page d&amp;rsquo;accueil s&amp;rsquo;afficher.&lt;/p&gt;
-
-&lt;p&gt;Attention, si l&amp;rsquo;url de votre site contient un sous-répertoire, par exemple &lt;code&gt;http://monsite.com/fr/&lt;/code&gt; vous devez taper &lt;code&gt;localhost:1313/fr/&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h2 id=&#34;écrire-votre-premier-article&#34;&gt;Écrire votre premier article&lt;/h2&gt;
-
-&lt;p&gt;Pour créer un nouvel article (post en anglais) Appelé Toto sous Hugo, tapez
-&lt;code&gt;hugo new /post/toto.md&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Cette commande va créer un nouveau fichier nommé &lt;code&gt;toto.md&lt;/code&gt; contenant les informations de l&amp;rsquo;article dans le répertoire &lt;code&gt;/nom-du-site/content/post/toto.md&lt;/code&gt;. Cet article est accessible à l&amp;rsquo;url de test &lt;code&gt;localhost:1313/post/toto/&lt;/code&gt;. Vous pouvez très bien décider que vos articles vont dans le répertoire &lt;code&gt;/content/article/&lt;/code&gt; et taper la commande &lt;code&gt;hugo new /article/toto.md&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Il n&amp;rsquo;est pas obligatoire d&amp;rsquo;appeler tous vos articles Toto (ha ha ha), mais pour éviter les problèmes liés aux noms de fichiers je vous conseille de n&amp;rsquo;utiliser que les lettres minuscules a - z non accentuées, les chiffres 0 - 9, le tiret simple - et le &amp;ldquo;underscore&amp;rdquo; _.&lt;/p&gt;
-
-&lt;p&gt;Dernier truc, au bout d&amp;rsquo;un temps il va devenir difficile de retrouver vos petits, aussi je préfixe le nom de mes fichiers d&amp;rsquo;article avec la date de publication. Par exemple :
-&lt;code&gt;/content/post/2016-08-05-comment-devenir-maitre-du-monde-avec-un-elastique-et-trois-trombones.md&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Une fois le fichier article créé, ouvrez-le dans un éditeur texte. Même Notepad et TextEdit peuvent convenir, mais je vous conseille d&amp;rsquo;en utiliser un supportant la syntaxe Markdown. Par exemple cet article a été entièrement écrit dans IA Writer, mais vous pouvez très bien utiliser un éditeur hexadécimal si c&amp;rsquo;est trop simple pour vous.&lt;/p&gt;
-
-&lt;p&gt;Un fichier article se comporte de deux parties :&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Le Front Matter, entouré de signes +++, &amp;mdash; ou ===. Sans rentrer dans les détails, le front matter peut être au format TOML (+++), YAML (&amp;mdash;) ou JSON (===).&lt;/li&gt;
-&lt;li&gt;Le contenu de l&amp;rsquo;article lui-même, au format Markdown et constitué de tout le contenu situé sous le front matter.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Voici un exemple de Front Matter au format TOML :&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;+++
-title      = &amp;quot;Devenir nomade digital&amp;quot;
-author     = &amp;quot;Pierre Morsa&amp;quot;
-date       = &amp;quot;2016-08-01&amp;quot;
-categories = [ &amp;quot;Lifehacks&amp;quot; ]
-draft      = false
-+++
-
-Contenu de l&#39;article bla bla bla...
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Le front matter contient les informations de l&amp;rsquo;article : la date, le titre, l&amp;rsquo;url, la description, le statut (draft ou publié), les tags et catégories, etc. Je ne vais pas décrire ici en détail toutes les possibilités, je vous conseille de vous référer à la &lt;a href=&#34;http://gohugo.io/overview/introduction/&#34;&gt;documentation de Hugo&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Le répertoire &lt;code&gt;/nom-du-site/archetypes/&lt;/code&gt; permet de définir le front matter par défaut pour un type de contenu précis (post, page, article sont des types de contenus). Référez-vous à la documentation de Hugo pour en savoir plus.&lt;/p&gt;
-
-&lt;p&gt;Maintenant, il ne reste plus qu&amp;rsquo;à écrire votre article au format Markdown. À chaque fois que vous sauvegardez le fichier la page est reconstruite automatiquement par Hugo et rafraîchie par le serveur interne dans votre browser favori. Difficile de faire plus simple !&lt;/p&gt;
-
-&lt;p&gt;Important : à ce stade, toutes les pages générées sont encore en local sur votre ordinateur, rien n&amp;rsquo;est publié sur Internet ni sur Minitel. Nous verrons plus loin comment publier le site généré sur le serveur web.&lt;/p&gt;
-
-&lt;h2 id=&#34;en-savoir-un-peu-plus-sur-la-structure-de-hugo&#34;&gt;En savoir un peu plus sur la structure de Hugo&lt;/h2&gt;
-
-&lt;p&gt;Avant d&amp;rsquo;aller plus loin, il est utile de comprendre à quoi correspondent tous les répertoires dans votre site.&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;/archetypes/&lt;/code&gt; permet de définir les front matter par défaut pour les différents types de contenu.
-&lt;code&gt;/content/&lt;/code&gt; accueille le contenu de votre site, comme les pages ou les articles.
-&lt;code&gt;/data/&lt;/code&gt; contient les fichiers de données structurées. Pour un blog, vous n&amp;rsquo;en aurez probablement pas besoin.
-&lt;code&gt;/layout/&lt;/code&gt; est le répertoire qui contient les fichiers personnalisés définissant la structure des pages comme la page d&amp;rsquo;accueil, les articles, les listes d&amp;rsquo;articles par tag ou taxonomie, etc. (voir plus bas le fonctionnement de ce répertoire avec les thèmes).
-&lt;code&gt;/public/&lt;/code&gt; contient les pages statiques générées. C&amp;rsquo;est le contenu de ce répertoire qu&amp;rsquo;il faudra publier sur votre site web. S&amp;rsquo;il est vide c&amp;rsquo;est que vous n&amp;rsquo;avez pas encore généré le site (voir plus bas, lancer le serveur interne Hugo n&amp;rsquo;est pas suffisant).
-&lt;code&gt;/static/&lt;/code&gt; contient tous les fichiers qui ne changent pas, ou rarement. En particulier les styles css, le code JavaScript (que ce site n&amp;rsquo;utilise pas) et les images.&lt;/p&gt;
-
-&lt;p&gt;Lors de la génération des pages Hugo va d&amp;rsquo;abord essayer de trouver un fichier dans les répertoires propres du site, puis s&amp;rsquo;il ne le trouve pas il prendra celui du thème. Par exemple il cherchera d&amp;rsquo;abord le fichier &lt;code&gt;styles.css&lt;/code&gt; dans &lt;code&gt;/static/css/&lt;/code&gt; et s&amp;rsquo;il ne le trouve pas il cherchera le fichier dans &lt;code&gt;/themes/nom-du-theme/static/css/&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Pour modifier un thème, il vaut mieux ne pas toucher aux fichiers originaux, mais en faire une copie dans le répertoire propre et modifier cette copie. Honnêtement le fonctionnement des thèmes pourrait être amélioré sur Hugo.&lt;/p&gt;
-
-&lt;h3 id=&#34;la-différence-entre-content-et-data&#34;&gt;la différence entre /content/ et /data/&lt;/h3&gt;
-
-&lt;p&gt;Vous pouvez vous demander pourquoi il existe à la fois les répertoires /content/ et /data/. De manière générale, si vous avez du contenu qui correspond à une page, par exemple un article, il va dans /content/. S&amp;rsquo;il s&amp;rsquo;agit de données structurées ne correspondant pas au texte principal de la page, c&amp;rsquo;est du /data/. Voici quelques exemples plus concrets :&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Le texte d&amp;rsquo;une page va dans /content/&lt;/li&gt;
-&lt;li&gt;Le texte d&amp;rsquo;un article va dans /content/&lt;/li&gt;
-&lt;li&gt;Une liste des membres de votre équipe va dans /data/&lt;/li&gt;
-&lt;li&gt;Une liste de caractéristiques produits va dans /data/&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Ce n&amp;rsquo;est qu&amp;rsquo;une liste indicative, en effet cela dépend aussi de la façon dont le thème est construit et dont votre site est structuré.&lt;/p&gt;
-
-&lt;h2 id=&#34;récupérer-le-contenu-de-votre-blog-wordpress&#34;&gt;Récupérer le contenu de votre blog Wordpress&lt;/h2&gt;
-
-&lt;p&gt;Maintenant que vous avez un beau nouveau blog sous Hugo, il faut passer à l&amp;rsquo;étape pénible. J&amp;rsquo;ai nommé la migration des données de Wordpress vers Hugo. Selon le nombre d&amp;rsquo;articles de votre blog cette étape peut être très (très très) longue et surtout très chiante.&lt;/p&gt;
-
-&lt;p&gt;IL existe un &lt;a href=&#34;https://github.com/SchumacherFM/wordpress-to-hugo-exporter&#34;&gt;module d&amp;rsquo;export de Wordpress vers Hugo&lt;/a&gt; qui récupère toutes les pages et tous les articles en incluant le front matter, mais il ne marche pas très bien ou pas du tout. À la place vous pouvez utiliser &lt;a href=&#34;https://github.com/thomasf/exitwp&#34;&gt;ExitWP&lt;/a&gt;. Il faut ensuite recopier les fichiers articles dans le répertoire &lt;code&gt;/content/post/&lt;/code&gt; et les images dans &lt;code&gt;/static/nom-du-repertoire-images/&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Vous allez donc avoir après la migration :&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;nom-du-site
-    - content
-        - post
-            - Les articles récupérés
-    - static
-        - img
-            - Les images récupérées
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Lorsque j&amp;rsquo;ai récupéré mes articles, j&amp;rsquo;ai eu la surprise de constater qu&amp;rsquo;au fil du temps Wordpress avait accumulé des articles au format texte avec différents encodages de caractères et d&amp;rsquo;autres au format HTML. J&amp;rsquo;ai donc du passer pas mal de temps à réparer les caractères accentués qui avaient été modifiés ou perdus. Vient ensuite l&amp;rsquo;étape la plus pénible : vous devrez si nécessaire recréer tous les liens vers les images.&lt;/p&gt;
-
-&lt;h2 id=&#34;récupérer-les-commentaires-de-votre-blog&#34;&gt;Récupérer les commentaires de votre blog&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Attention : je n&amp;rsquo;ai personnellement pas essayé cette étape, je ne peux donc pas garantir qu&amp;rsquo;elle fonctionne ou vous aider à résoudre d&amp;rsquo;éventuels problèmes techniques.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Hugo propose en standard l&amp;rsquo;intégration avec Disqus, une plateforme de commentaires en ligne. Si vous voulez conserver les commentaires sur vos articles, la méthode préconisée est de :&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;À partir de Wordpress, faire migrer les commentaires de Wordpress vers Disqus en utilisant un plugin Wordpress.&lt;/li&gt;
-&lt;li&gt;Une fois les commentaires migrés, reconnecter les commentaires Disqus à votre blog sous Hugo.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;D&amp;rsquo;autres Blogueurs expliquent avoir effectué la manœuvre avec succès, mais encore une fois je ne l&amp;rsquo;ai pas fait, donc je suis incapable de vous aider ou de vous mettre en garde contre d&amp;rsquo;éventuelles galères.&lt;/p&gt;
-
-&lt;h2 id=&#34;générer-le-site&#34;&gt;Générer le site&lt;/h2&gt;
-
-&lt;p&gt;À partir de la ligne de commande, tapez
-&lt;code&gt;hugo&lt;/code&gt;
-C&amp;rsquo;est tout ! Même avec des milliers de pages, cela ne prend que quelques secondes. Hugo va génère le site statique dans le répertoire &lt;code&gt;/nom-du-site/public/&lt;/code&gt;. C&amp;rsquo;est le contenu de ce répertoire que vous allez maintenant copier vers la racine du site sur votre serveur Web.&lt;/p&gt;
-
-&lt;h2 id=&#34;télécharger-les-pages-sur-le-serveur-web&#34;&gt;Télécharger les pages sur le serveur Web&lt;/h2&gt;
-
-&lt;p&gt;Note du 2016-08-16 : désormais je recommande rsync comme méthode de téléchargement des pages sur le serveur Web. &lt;a href=&#34;https://www.pierremorsa.com/post/2016-08-16-quelques-trucs-en-plus-pour-votre-site-hugo/&#34;&gt;Voir pourquoi dans cet article&lt;/a&gt;. C&amp;rsquo;est plus rapide, et cela résout un problème précis lié aux urls avec accents sur Mac.&lt;/p&gt;
-
-&lt;p&gt;Je n&amp;rsquo;explique pas ici comment créer un site sur Apache ou nginx ou autre, parce que cela prendrait trop de temps, qu&amp;rsquo;il existe déjà plein de guides en ligne, et que cela peut varier selon la plateforme, l&amp;rsquo;hébergeur et l&amp;rsquo;âge de Curtis Newton (vous savez, le Capitaine Flam).&lt;/p&gt;
-
-&lt;p&gt;Comme je n&amp;rsquo;ai pas de moustache, pour télécharger les pages sur le serveur j&amp;rsquo;utilise Transmit, un programme de transfert ftp et sftp que j&amp;rsquo;utilise depuis des années, mais n&amp;rsquo;importe quel autre méthode de transfert peut faire l&amp;rsquo;affaire. Copiez &lt;strong&gt;tout&lt;/strong&gt; le contenu de &lt;code&gt;/public/&lt;/code&gt; vers le répertoire racine de votre site public, mais pas le répertoire &lt;code&gt;/public/&lt;/code&gt; lui-même.&lt;/p&gt;
-
-&lt;p&gt;Si le site ne fonctionne pas sur le serveur public alors qu&amp;rsquo;il fonctionne bien sur le serveur interne de Hugo, commencez par :&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Paniquer.&lt;/li&gt;
-&lt;li&gt;Vérifier que l&amp;rsquo;url du site est bien renseigné dans le fichier &lt;code&gt;config.toml&lt;/code&gt; (une de mes erreurs préférées est de laisser l&amp;rsquo;url de mon site de test sandboxing au lieu de l&amp;rsquo;url du site de production).&lt;/li&gt;
-&lt;li&gt;Si ça ne marche toujours pas, vérifiez que vous avez bien copié les bons fichiers au bon endroit : tout le contenu de &lt;code&gt;/votre-site/public/&lt;/code&gt; doit être copié dans &lt;code&gt;/chemin-de-votre-serveur-public/votre-site/&lt;/code&gt;. Les fichiers ne doivent pas être dans un sous-répertoire /public/ sur le serveur public.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Note : le serveur interne de Hugo est excellent pour développer et tester son site en temps réel, mais il n&amp;rsquo;est pas fait pour être utilisé en production. C&amp;rsquo;est possible mais c&amp;rsquo;est à vos risques et périls.&lt;/p&gt;
-
-&lt;h2 id=&#34;rigolez-des-problèmes-de-sécurité-des-blogs-sur-wordpress&#34;&gt;Rigolez des problèmes de sécurité des blogs sur Wordpress&lt;/h2&gt;
-
-&lt;p&gt;Et voilà. Testez votre site. Émerveillez-vous de sa vitesse. Faites des Oh et des Ah. Ricanez méchamment à la vue de tous ces blogs Wordpress à la merci des Hackers de 7 ans. Fini les mises à jour de plugins qui foirent !&lt;/p&gt;
-
-&lt;p&gt;Même si ce tutoriel prend l&amp;rsquo;exemple d&amp;rsquo;un blog, Hugo peut très bien servir à générer n&amp;rsquo;importe quel type de site statique, par exemple le site &lt;a href=&#34;https://presentationzen.training&#34;&gt;presentationzen.training&lt;/a&gt; est entièrement réalisé sur Hugo.&lt;/p&gt;
-
-&lt;p&gt;Si vous avez des questions ou des suggestions sur ce tutoriel, vous pouvez me les envoyer par email (monprénom.monnom@pierremorsa.com).&lt;/p&gt;
-&lt;div class=&#34;footnotes&#34;&gt;
-
-&lt;hr /&gt;
-
-&lt;ol&gt;
-&lt;li id=&#34;fn:1&#34;&gt;Ce n&amp;rsquo;est pas tout à fait vrai car Hugo supporte de manière native l&amp;rsquo;intégration avec Disqus, une plateforme de commentaires. J&amp;rsquo;ai choisi de ne pas l&amp;rsquo;utiliser car elle utilise JavaScript et elle enregistre vos visites de site en site.
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li id=&#34;fn:2&#34;&gt;Pas tout à fait vrai non plus, JavaScript permettant de contourner certaines limites, mais pas toutes.
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:2&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
 </description>
     </item>
     

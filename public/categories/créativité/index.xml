@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>créativité on Pierre Morsa</title>
-    <link>https://www.pierremorsa.com/categories/cr%C3%A9ativit%C3%A9/index.xml</link>
-    <description>Recent content in créativité on Pierre Morsa</description>
+    <title>Créativité on Pierre Morsa | Présenter en public et GTD</title>
+    <link>https://www.pierremorsa.com/categories/cr%C3%A9ativit%C3%A9/</link>
+    <description>Recent content in Créativité on Pierre Morsa | Présenter en public et GTD</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr</language>
-    <atom:link href="/categories/cr%C3%A9ativit%C3%A9/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 06 Nov 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/categories/cr%C3%A9ativit%C3%A9/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Une journée à la LEGO House à Billund, Danemark</title>

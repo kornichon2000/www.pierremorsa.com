@@ -1,13 +1,370 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Pierre Morsa</title>
-    <link>https://www.pierremorsa.com/post/index.xml</link>
-    <description>Recent content in Posts on Pierre Morsa</description>
+    <title>Posts on Pierre Morsa | Présenter en public et GTD</title>
+    <link>https://www.pierremorsa.com/post/</link>
+    <description>Recent content in Posts on Pierre Morsa | Présenter en public et GTD</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr</language>
-    <lastBuildDate>Mon, 11 Dec 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 15 Jan 2018 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/post/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Obsolescence programmée ou naturelle ?</title>
+      <link>https://www.pierremorsa.com/post/2018-01-15-obsolescence-programmee-ou-naturelle/</link>
+      <pubDate>Mon, 15 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pierremorsa.com/post/2018-01-15-obsolescence-programmee-ou-naturelle/</guid>
+      <description>&lt;p&gt;Si vous avez un appareil qui résiste au temps et qui conserve son utilité au fil des années, c&amp;rsquo;est génial. C&amp;rsquo;est qu&amp;rsquo;il a été bien conçu&amp;hellip; ou qu&amp;rsquo;il n&amp;rsquo;y a aucune innovation dans son domaine. Exemple : mes parents ont un aspirateur Nilfisk qui a plus de 40 ans. Je crois qu&amp;rsquo;il a été fabriqué alors que je n&amp;rsquo;étais pas encore né. Il fonctionne encore, et il fonctionnera encore après moi. Il est construit comme un tank, en acier inoxydable, et le tuyau est fabriqué dans une sorte de tissu hyper résistant. Mais sa puissance est anémique par rapport aux aspirateurs récents.&lt;/p&gt;
+
+&lt;p&gt;Si votre appareil tombe en panne ou casse après quelques utilisations, ce n&amp;rsquo;est pas de l&amp;rsquo;obsolescence programmée. C&amp;rsquo;est juste une grosse merde. Qui ne vous donnera pas envie de racheter un appareil de la même marque. On fabriquait déjà plein de merdes il y a 100 ans. C&amp;rsquo;est d&amp;rsquo;ailleurs une des raisons pour lesquelles parmi les objets de votre quotidien si peu sont anciens. C&amp;rsquo;est juste que ceux qui ont survécu étaient d&amp;rsquo;une qualité exceptionnelle et on conservé leur utilité au fil du temps. Les autres ont fini à la poubelle. Exemple : l&amp;rsquo;aspirateur que j&amp;rsquo;ai acheté il y a quelque années. Il était léger, performant et sans sac. Mais après un an il tombait déjà en ruine. Les pièces en plastique étaient bien trop fragiles.&lt;/p&gt;
+
+&lt;p&gt;Si vous abandonnez un appareil car vous ne l&amp;rsquo;utilisez plus, c&amp;rsquo;est de l&amp;rsquo;obsolescence naturelle. Les objets deviennent obsolètes d&amp;rsquo;eux-mêmes parce que le monde change. Exemple : le lecteur de DVD. Le pot de chambre. Ces objets deviennent des vieilleries. Libre à vous de continuer à utiliser un pot de chambre parce que vous pensez que les industriels des toilettes complotent contre vous.&lt;/p&gt;
+
+&lt;p&gt;Si vous abandonnez un objet parce que vous ne l&amp;rsquo;aimez plus, c&amp;rsquo;est de l&amp;rsquo;obsolescence naturelle. Je m&amp;rsquo;explique. Lorsque vous jetez un pantalon en bon état parce que la mode a changé, le pantalon a perdu sa fonction de « marqueur social ». Vous changez de pantalon de peur de ne plus avoir la reconnaissance sociale qui y est associée. Oui je sais, c&amp;rsquo;est con. Si vous utilisez un objet obsolète pour le plaisir c&amp;rsquo;est de la nostalgie.&lt;/p&gt;
+
+&lt;p&gt;Si vous abandonnez un objet parce que il y en a un nouveau mieux plus super qui est sorti, c&amp;rsquo;est de l&amp;rsquo;obsolescence naturelle. Exemple : l&amp;rsquo;iPhone. Freiner ce genre d&amp;rsquo;obsolescence, c&amp;rsquo;est ralentir le progrès. Ça n&amp;rsquo;a aucun sens. Tôt ou tard un concurrent innovera et passera devant. La nature a horreur du statu quo.&lt;/p&gt;
+
+&lt;p&gt;Si vous jetez un objet parce qu&amp;rsquo;il a perdu son utilité de lui-même au fil du temps, c&amp;rsquo;est de l&amp;rsquo;obsolescence naturelle. Exemple : les produits frais.&lt;/p&gt;
+
+&lt;p&gt;Si vous abandonnez un objet parce qu&amp;rsquo;il ne fonctionne plus à cause d&amp;rsquo;une durée de vie volontairement limitée par le fabricant alors c&amp;rsquo;est de l&amp;rsquo;obsolescence programmée. Exemple : les cartouches d&amp;rsquo;encre de certaines imprimantes, qui contiennent encore de l&amp;rsquo;encre parfaitement fonctionnelle mais que l&amp;rsquo;imprimante refuse d&amp;rsquo;utiliser sous prétexte qu&amp;rsquo;elle a dépassé une date limite.&lt;/p&gt;
+
+&lt;p&gt;Ironie de l&amp;rsquo;histoire, Nous sommes le meilleur exemple d&amp;rsquo;obsolescence programmée. Sans notre espérance de vie limitée inséparable du processus d&amp;rsquo;évolution des espèces nous serions toujours des trucs barbotants dans une grande mare. Et nous ne serions pas en train de nous demander si l&amp;rsquo;iPhone machin est mieux que le Galaxy truc.&lt;/p&gt;
+
+&lt;p&gt;La véritable obsolescence programmée est plus rare que ce que l&amp;rsquo;on croit. En général ce qu&amp;rsquo;on prend comme une volonté de « saboter » les objets tient plutôt d&amp;rsquo;une volonté de réduire au maximum le coût de production et donc de faire les pièces qui coûtent le moins cher possible, quitte à les rendre plus fragiles. Cela vient aussi d&amp;rsquo;erreurs des ingénieurs qui conçoivent des appareils avec des pièces trop faibles pour supporter l&amp;rsquo;effort demandé. Concevoir un excellent appareil prend du temps et est très difficile. Par contre pas de pitié pour les industriels qui limitent artificiellement la durée de vie de leur produit.&lt;/p&gt;
+
+&lt;p&gt;Si j&amp;rsquo;ai écrit ce billet c&amp;rsquo;est parce que on arrive aujourd&amp;rsquo;hui à des situations paradoxales. Par exemple certains fabricants de smartphones (alias mobiles multifonctions si vous avez du temps à perdre) ne proposent aucune mise à jour de leurs appareils après leur fabrication. À l&amp;rsquo;inverse Apple est le fabricant qui offre les mises à jour régulières les plus longues et les plus fiables de l&amp;rsquo;industrie, y compris pour des modèles d&amp;rsquo;iPhone datant d&amp;rsquo;il y a plusieurs années. On a donc d&amp;rsquo;un côté des fabricants qui n&amp;rsquo;offrent aucune mise à jour pour garantir l&amp;rsquo;avenir de leurs terminaux ; rapidement ces smartphones se retrouvent exposés aux dernières failles de sécurité et incapables de faire tourner les nouvelles versions des Apps. De l&amp;rsquo;autre côté on a un fabricant qui assure les mises à jour régulières de ses appareils pendant des années, les protégeant contre les dernières failles de sécurité et offrant pratiquement toutes les dernières évolutions. Pourtant des associations et même de nombreux « journalistes » tapent sur Apple sans prendre le temps de réfléchir sur ce qui se passe chez les autres fabricants de smartphones.&lt;/p&gt;
+
+&lt;p&gt;Je ne veux pas faire non plus l&amp;rsquo;apologie d&amp;rsquo;Apple, qui n&amp;rsquo;est pas exempte de reproches. Il y a le problème du ralentissement des téléphones lié au vieillissement des batteries. La façon dont Apple a procédé, en douce, est impardonnable. Et il y a un autre point qui sème le doute : même avant l&amp;rsquo;introduction du ralentissement pour préserver la batterie, les iPhones avaient tendance à ralentir au fil des nouvelles versions du système. Même si je crois qu&amp;rsquo;il s&amp;rsquo;agit plus d&amp;rsquo;une conséquence inévitable liée à la complexification du système plus que d&amp;rsquo;une volonté délibérée de ralentir les terminaux, maintenant que la controverse est lancée Apple doit faire un effort de ce côté et garantir une excellente expérience utilisateur sur les anciens modèles d&amp;rsquo;iPhone. Et oui, je trouve que le prix des iPhones est trop élevé ; si je devais acheter un appareil aujourd&amp;rsquo;hui je prendrais un iPhone SE (ou son remplaçant) plutôt qu&amp;rsquo;un 6s 16GB, simplement parce que je trouve que mettre autant d&amp;rsquo;argent dans un smartphone n&amp;rsquo;est pas raisonnable.&lt;/p&gt;
+
+&lt;p&gt;Mais sérieux, les journalistes, les associations, regardez du côté des produits des concurrents. Faites une étude comparative sérieuse. Allez, je vous donne quelques critères significatifs :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Autonomie du téléphone après 1 an&lt;/li&gt;
+&lt;li&gt;Niveau de « réparabilité » de l&amp;rsquo;appareil, tel qu&amp;rsquo;évalué par exemple par iFixIt&lt;/li&gt;
+&lt;li&gt;Nombre de problèmes par téléphone&lt;/li&gt;
+&lt;li&gt;Durée de vie totale (car beaucoup d&amp;rsquo;iPhones ont une seconde vie après leur premier propriétaire !)&lt;/li&gt;
+&lt;li&gt;Nombre de mises à jour reçues après la commercialisation&lt;/li&gt;
+&lt;li&gt;Efforts de recyclage des produits&lt;/li&gt;
+&lt;li&gt;Mesures pour vérifier les conditions des employés dans les usines&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Vous verrez qu&amp;rsquo;Apple n&amp;rsquo;est pas un bon élève partout. Mais vous verrez aussi que Apple n&amp;rsquo;est probablement pas le plus mauvais des fabricants de smartphones.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Comment arrêter de bouger sans arrêt lorsqu&#39;on parle en public</title>
+      <link>https://www.pierremorsa.com/post/2018-01-08-comment-eliminer-deplacements-involontaires-quand-on-p-parle-en-public/</link>
+      <pubDate>Mon, 08 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pierremorsa.com/post/2018-01-08-comment-eliminer-deplacements-involontaires-quand-on-p-parle-en-public/</guid>
+      <description>&lt;p&gt;Lorsqu&amp;rsquo;on présente, il y a deux types de mouvements. Il y a les mouvements que l&amp;rsquo;on fait avec intention, qui sont cohérents avec notre posture et notre discours. Et il y a les mouvements involontaires, qui sont une action de dérivation pour gérer notre stress, et qui parasitent la communication. Un de ces mouvements parasites est le « piétinement ». Le présentateur bouge sur place, il se balance d&amp;rsquo;un pied sur l&amp;rsquo;autre, d&amp;rsquo;avant en arrière. Il bouge sans arrêt, mais sans jamais aller nulle part. Je vais vous expliquer aujourd&amp;rsquo;hui un exercice très simple pour résoudre ce problème.&lt;/p&gt;
+
+&lt;p&gt;Avant tout, il faut se rendre compte que l&amp;rsquo;on a ce problème. En effet de nombreux orateurs ne sont même pas conscients qu&amp;rsquo;il bougent sans cesse sur place. La première action est donc de vous filmer pendant quelques minutes avec la caméra de votre smartphone ou autre, puis de vérifier comment vous vous déplacez. Si vous bougez sur place, je vous conseille de faire l&amp;rsquo;exercice suivant, tout simple et ludique.&lt;/p&gt;
+
+&lt;p&gt;Achetez un journal traditionnel, avec les grandes pages non attachées, style Le Monde. Non seulement vous allez soutenir la presse, mais en plus nous allons en avoir besoin pour l&amp;rsquo;exercice. Prenez quelques pages et utilisez-les pour recouvrir le sol là où vous vous tenez pour présenter. Maintenant, placez-vous sur les feuilles de journal, et entraînez-vous à parler. Dès que vous allez bouger vous allez entendre le bruit du journal sous vos pieds, ce qui va vous forcer à vous stabiliser !&lt;/p&gt;
+
+&lt;p&gt;Cet exercice ludique va vous aider à vous débarrasser des déplacements involontaires. N&amp;rsquo;hésitez pas à continuer à pratiquer les déplacements volontaires, cohérents pour augmenter votre présence sur scène. N&amp;rsquo;oubliez pas non plus de travailler le regard, qui est un point d&amp;rsquo;ancrage très important.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Le top 20 de mes Apps Mac en 2017</title>
+      <link>https://www.pierremorsa.com/post/2018-01-01-top-20-apps-mac-2017/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pierremorsa.com/post/2018-01-01-top-20-apps-mac-2017/</guid>
+      <description>&lt;p&gt;C&amp;rsquo;est parfois difficile de savoir exactement quelles sont les applications que l&amp;rsquo;on utilise le plus souvent. Cependant depuis le milieu de l&amp;rsquo;année dernière j&amp;rsquo;utilise Timing (voir en position 9) pour suivre exactement le nombre d&amp;rsquo;heures à facturer à mes clients. Je peux donc vous donner avec assez de précision le top 20 des applications Mac que j&amp;rsquo;ai le plus utilisé entre juillet et décembre 2017, la numéro 1 étant la plus utilisée.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;20. Skype&lt;/strong&gt;. La statistique est un peu faussée car Skype fonctionne souvent en arrière-plan et j&amp;rsquo;ai un document ou une page web ouverte au premier plan. Le temps est donc compté pour la page web ou le document. Cependant Skype reste effectivement l&amp;rsquo;application de vidéoconférence que j&amp;rsquo;utilise le plus, car pratiquement tout le monde sait s&amp;rsquo;en servir.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;19. S-Gear&lt;/strong&gt;. C&amp;rsquo;est l&amp;rsquo;ampli virtuel que j&amp;rsquo;utilise lorsque je joue de la guitare électrique. Jouant assez peu, je suis étonné qu&amp;rsquo;elle apparaisse dans le top 20.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;18. Espresso&lt;/strong&gt;. L&amp;rsquo;éditeur de sites que j&amp;rsquo;utilise pour éditer le code des sites web, principalement pierremorsa.com et ideasonstage.com.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;17. iTunes&lt;/strong&gt;. Comme Skype, iTunes fonctionne en tâche de fond et son utilisation est forcément sous-estimée. Sinon je pense que ce serait l&amp;rsquo;application numéro 1 de la liste.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;16. Microsoft Word&lt;/strong&gt;. Word reste le traitement de texte de référence pour échanger des documents avec mes clients. Mais je préfère nettement utiliser une application légère comme IA Writer pour écrire (voir position 3).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;15. FileMaker Pro&lt;/strong&gt;. Principalement pour gérer la base de données de mon entreprise. Cependant FileMaker Pro commence à montrer son âge, et c&amp;rsquo;est vrai que depuis le début de la société des solutions de CRM Web abordables sont apparues. De plus la nouvelle politique de licences de Filemaker ne me plaît pas du tout.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;14. Calendar&lt;/strong&gt;. Pour gérer mes rendez-vous. J&amp;rsquo;ai utilisé Fantastical un moment, mais j&amp;rsquo;ai été découragé par le prix de la mise à jour vers la version 2.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;13. Affinity Designer&lt;/strong&gt;. Ce programme me sert à créer des documents à imprimer ou des infographies lorsque je ne peux pas les créer directement dans PowerPoint. La seule fonctionnalité qui me manque par rapport à Illustrator est la possibilité de définir un calque pour imprimer du « blanc de soutien ».&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;12. Affinity Photo&lt;/strong&gt;. Complément parfait d&amp;rsquo;Affinity Designer, je m&amp;rsquo;en sers pour détourer les photos et effectuer des retouches ou des montages.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;11. Keynote&lt;/strong&gt;. Si PowerPoint est l&amp;rsquo;application que j&amp;rsquo;utilise pour créer des présentations pour mes clients, mes propres présentations sont encore sous Keynote pour des raisons historiques. Cependant vu la direction prise par Apple j&amp;rsquo;utilise de moins en moins Keynote.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;10. Slack&lt;/strong&gt;. Pour communiquer avec le reste de mon équipe. (J&amp;rsquo;ai compté le temps total passé sur Slack, App + Safari).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;9. Timing&lt;/strong&gt;. C&amp;rsquo;est l&amp;rsquo;application de suivi du temps passé qui me permet de connaître exactement le temps passé sur une tâche à facturer à un client. Et accessoirement celle qui me permet de vous donner ces statistiques.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;8. Script Debugger&lt;/strong&gt;. Le meilleur éditeur AppleScript de la planète !&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;7. Mail&lt;/strong&gt;. Au fil des années j&amp;rsquo;ai essayé des tas de clients email différents, mais je reviens toujours à Apple Mail. J&amp;rsquo;y ai cependant ajouté le plugin « Mail Act-On » qui me permet de créer des modèles d&amp;rsquo;email, des raccourcis et de fixer une heure d&amp;rsquo;envoi pour les emails.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;6. OmniFocus&lt;/strong&gt;. Le gestionnaire de tâches à la sauce GTD que j&amp;rsquo;utilise depuis plusieurs années.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;5. Keyboard Maestro&lt;/strong&gt;. Le programme qui me sert à automatiser les tâches répétitives.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;4. Finder&lt;/strong&gt;. Pour gérer les fichiers. Probablement l&amp;rsquo;application la plus emblématique du manque de véritable intérêt d&amp;rsquo;Apple pour le Mac. Si vous regardez le Finder de Mac OS X 1.0 et le Finder de macOS High Sierra, vous verrez à quel point il y a eu peu de progrès de l&amp;rsquo;interface. Fixer la taille des colonnes est toujours aussi bordélique. Les utilisateurs lambda sont toujours aussi perdus dans la hiérarchie des éléments.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;3. IA Writer&lt;/strong&gt;. C&amp;rsquo;est le programme que j&amp;rsquo;utilise pour écrire, en particulier les articles de ce blog. Il est simple et sans fioritures, et c&amp;rsquo;est exactement ce que j&amp;rsquo;apprécie.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;2. Microsoft PowerPoint&lt;/strong&gt;. Par la force de mon métier, c&amp;rsquo;est le programme que j&amp;rsquo;utilise tout le temps.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;1. Safari&lt;/strong&gt;. De nos jours, qu&amp;rsquo;est-ce qu&amp;rsquo;on ne fait pas dans un browser ?&lt;/p&gt;
+
+&lt;p&gt;Je n&amp;rsquo;ai volontairement pas donné de liens directs vers les sites des éditeurs car je ne voulais pas que cela ressemble à une incitation à l&amp;rsquo;achat, ce n&amp;rsquo;est pas l&amp;rsquo;objectif. Je veux également donner une mention honorable à certains programmes qui n&amp;rsquo;apparaissent pas dans cette liste car ils sont soit automatisés, soit en tâche de fond, mais je les utilise tous les jours :&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Amphetamine&lt;/strong&gt;. Un petit programme qui empêche le Mac de passer en veille ou d&amp;rsquo;éteindre l&amp;rsquo;écran. Très pratique lorsqu&amp;rsquo;on présente.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Fake&lt;/strong&gt;. C&amp;rsquo;est un browser web basé sur Webkit comme Safari, mais qui permet d&amp;rsquo;automatiser certaines actions.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Chronosync&lt;/strong&gt;. Le programme qui me sert à sauvegarder mes données en plus de Time Machine. Fiable, puissant mais parfois un peu compliqué à configurer.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Little Snitch&lt;/strong&gt;. Le meilleur firewall pour Mac.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Cryptomator&lt;/strong&gt;. Pour ajouter une couche de sécurité aux documents sauvegardés dans le Cloud.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Viscosity&lt;/strong&gt;. Un programme qui gère OpenVPN.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Quicksilver&lt;/strong&gt;. Le lanceur d&amp;rsquo;applications que j&amp;rsquo;utilise depuis très, très longtemps. Je me suis habitué à son fonctionnement particulier depuis sa toute première version. J&amp;rsquo;ai essayé Launchbar et Alfred, mais je suis toujours revenu à Quicksilver.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Héberger gratuitement un site Hugo avec Github et Netlify (2/2)</title>
+      <link>https://www.pierremorsa.com/post/2017-12-25-site-hugo-github-netlify-2/</link>
+      <pubDate>Mon, 25 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pierremorsa.com/post/2017-12-25-site-hugo-github-netlify-2/</guid>
+      <description>
+
+&lt;p&gt;Dans cette deuxième partie nous allons voir comment configurer Netlify pour servir les pages du site. Si vous ne l&amp;rsquo;avez pas lue je vous conseille de démarrer par la &lt;a href=&#34;https://www.pierremorsa.com/post/2017-12-18-site-hugo-github-netlify-1&#34;&gt;partie 1 de l&amp;rsquo;article qui explique comment déplacer le code du site dans Github&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Le truc génial avec Netlify, c&amp;rsquo;est qu&amp;rsquo;il s&amp;rsquo;occupe de faire tout ce qui est généralement bien pénible à configurer :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Il va être le serveur web des pages&lt;/li&gt;
+&lt;li&gt;Il est CDN (Content Distributed Network) pour accélérer la performance du site, et prend entièrement à sa charge la gestion du rafraîchissement du cache. Fini les arrachages de cheveux parce que le cache ne s&amp;rsquo;est pas mis à jour correctement.&lt;/li&gt;
+&lt;li&gt;Il offre un DNS très rapide pour réduire la latence de connexion.&lt;/li&gt;
+&lt;li&gt;Il gère le https pour vous (si vous le souhaitez), et force la redirection de http vers https.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Pour pas un roro, c&amp;rsquo;est déjà super. Mais si en plus je vous dis que Netlify :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Compile automatiquement le site hugo pour vous à partir du repository Github&lt;/li&gt;
+&lt;li&gt;Déploie automatiquement la branche compilée&lt;/li&gt;
+&lt;li&gt;Permet de tester autant de branches alternatives (versions de test ou versions futures par exemple) que souhaité&lt;/li&gt;
+&lt;li&gt;Permet de faire du A/B testing automatiquement&lt;/li&gt;
+&lt;li&gt;Permet de faire un rollback (retour en arrière) simplement en cas de catastrophe.&lt;/li&gt;
+&lt;li&gt;Offre un système de gestion de contenu hyper rapide (CMS).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Et tout ça toujours pour zéro roros ? Elle est pas belle la vie ?&lt;/p&gt;
+
+&lt;h2 id=&#34;configurer-netlify&#34;&gt;Configurer Netlify&lt;/h2&gt;
+
+&lt;p&gt;C&amp;rsquo;est bien beau tout ça, mais du coup ça doit sûrement être compliqué de tout paramétrer. Ben non. La magie de Netlify c&amp;rsquo;est que tout reste super simple.&lt;/p&gt;
+
+&lt;h3 id=&#34;créer-un-compte-netlify&#34;&gt;Créer un compte Netlify&lt;/h3&gt;
+
+&lt;p&gt;Pour créer un compte Netlify, identifiez-vous avec votre compte Github.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/12/netlify-signin-github.jpg&#34; alt=&#34;Netlify Signin Github&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Pourquoi avec votre compte Github ? Parce que&amp;hellip; Netlify va automatiquement vous proposer les différents projets que vous avez stockés sur Github. Donnez l&amp;rsquo;autorisation à Netlify d&amp;rsquo;accéder à votre compte Github. Voilà, vous venez de configurer votre compte Netlify.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/12/netlify-authorize-github.jpg&#34; alt=&#34;Netlify Authorize Github&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;ajouter-son-site-hugo-sur-netlify&#34;&gt;Ajouter son site Hugo sur Netlify&lt;/h3&gt;
+
+&lt;p&gt;Pour ajouter un site commençons par cliquer sur le bouton « New site from Git ».&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/12/netlify-new-site-from-git.jpg&#34; alt=&#34;Netlify New Site From Git&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ensuite, il faut choisir « Github » (ou une des autres options  si votre code est hébergé chez GitLab ou un autre).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/12/netlify-create-a-new-site-from-github.jpg&#34; alt=&#34;Netlify Create A New Site From Github&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Il faut de nouveau autoriser Netlify à accéder aux repositories GitHub.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/12/netlify-github-additional-permissions.jpg&#34; alt=&#34;Netlify Github Additional Permissions&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Sélectionnez alors le repository qui contient le code de votre site, dans mon cas « www.testtoto.com ».&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/12/netlify-new-site-choose.jpg&#34; alt=&#34;Netlify New Site Choose&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Il ne reste désormais plus que quelques informations à fournir :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Vous pouvez normalement laisser le nom de la branche à déployer à « master » (comme expliqué dans l&amp;rsquo;article précédent, c&amp;rsquo;est le nom par défaut de la version « validée »).&lt;/li&gt;
+&lt;li&gt;La « Build command » est simplement&amp;hellip; &lt;code&gt;hugo&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Le nom du répertoire de publication est &lt;code&gt;public&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Une fois ces informations renseignées, vous pouvez cliquer sur « Deploy Site ». En général la compilation et publication d&amp;rsquo;un site prend entre quelques secondes et quelques minutes maximum.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/12/netlify-new-site-added.jpg&#34; alt=&#34;Netlify New Site Added&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Netlify attribue automatiquement un URL au nouveau site qu&amp;rsquo;il gère. Dans mon exemple cet URL est &lt;a href=&#34;http://eager-hugle-1657a8.netlify.com -&#34;&gt;http://eager-hugle-1657a8.netlify.com -&lt;/a&gt; Le site est désormais accessible directement à cet URL, mais il ne vous convient certainement pas. Nous allons donc maintenant passer aux étapes 2 et 3 : la configuration d&amp;rsquo;un nom de domaine personnalisé et du https.&lt;/p&gt;
+
+&lt;h3 id=&#34;configurer-le-nom-de-domaine&#34;&gt;Configurer le nom de domaine&lt;/h3&gt;
+
+&lt;p&gt;Mon nom de domaine est pierremorsa.com, et je l&amp;rsquo;ai acheté il y a un bout de temps&amp;hellip; Pour le configurer, il y a deux solutions :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Modifier les informations du DNS existant pour pointer vers les serveurs de Netlify.&lt;/li&gt;
+&lt;li&gt;Ou utiliser les serveurs DNS de Netlify.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Je ne vais décrire ici que la deuxième option, utiliser les serveurs DNS de Netlify. Ils se vantent d&amp;rsquo;avoir les serveurs DNS les plus rapides du monde. J&amp;rsquo;ignore si c&amp;rsquo;est vrai.&lt;/p&gt;
+
+&lt;p&gt;Cette opération est rendue la plus simple possible par Netlify, mais elle reste malgré tout assez délicate, et parfois un peu déroutante, car il y a un temps de latence entre le moment où l&amp;rsquo;on demande la modification des paramètres d&amp;rsquo;un DNS et le moment où ces changements deviennent effectifs partout dans le monde. C&amp;rsquo;est une opération à faire le moins souvent possible.&lt;/p&gt;
+
+&lt;p&gt;Cliquez sur « Set up a custom domain ». Si vous avez loupé cet écran, cliquez simplement sur « Domain settings » → Domain management → Domains et cela reviendra au même.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/12/netlify-add-custom-domain.jpg&#34; alt=&#34;Netlify Add Custom Domain&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Cliquez ensuite sur « Add custom domain », entrez le nom de votre domaine, puis sur Save.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/12/netlify-add-custom-domain-2.jpg&#34; alt=&#34;Netlify Add Custom Domain 2&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;À ce niveau, vous allez probablement avoir une erreur. Cliquez sur le message « Check DNS configuration ». Cliquez alors sur « Set up Netlify DNS for votredomaine.com ».&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/12/netlify-setup-dns.jpg&#34; alt=&#34;Netlify Setup Dns&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Dans l&amp;rsquo;écran qui apparaît, cliquez sur Create DNS zone.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/12/netlify-create-dns-zone.jpg&#34; alt=&#34;Netlify Create Dns Zone&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Netlify crée alors les données de base pour le DNS, mais vous pouvez allez avoir besoin d&amp;rsquo;ajouter des infos manuellement. Encore une fois, c&amp;rsquo;est la partie la plus « compliquée » du processus car chaque cas est différent. Par exemple si vous avez un service d&amp;rsquo;email lié à votre nom de domaine (dans mon exemple email@testtoto.com) vous devrez configurer correctement les données DNS de votre service d&amp;rsquo;email sinon vos emails vont se perdre dans la nature.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Une fois cette étape effectuée, allez sur le service chez qui vous avez enregistré votre nom de domaine, et modifiez les serveurs DNS actuels par ceux de Netlify.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Une fois cette étape terminée, et une fois que les serveurs DNS dans le monde se seront mis à jour, votre site Hugo www.votresite.com sera servi par Netlify hyper rapidement ! Il ne vous restera plus qu&amp;rsquo;à activer le https pour que tout soit parfait ; l&amp;rsquo;opération étant très simple, je ne la détaillerai pas ici.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Héberger gratuitement un site Hugo avec Github et Netlify (1/2)</title>
+      <link>https://www.pierremorsa.com/post/2017-12-18-site-hugo-github-netlify-1/</link>
+      <pubDate>Mon, 18 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pierremorsa.com/post/2017-12-18-site-hugo-github-netlify-1/</guid>
+      <description>
+
+&lt;p&gt;Dans cette première partie je vous propose un tutoriel pas à pas pour créer le fichier netlify.toml, et héberger le code du site sur Github.&lt;/p&gt;
+
+&lt;p&gt;Ce blog est une sorte de cobaye. Je lui fais subir des tas d&amp;rsquo;expériences lorsque je veux tester ce que cela donne. À l&amp;rsquo;origine c&amp;rsquo;était une simple page web, puis il a migré sur Joomla un des premiers « CMS » 100% Web, puis sur Wordpress qui était et est encore la solution préférée de beaucoup de sites. Fatigué des problèmes à répétition de WordPress (sécurité, mise à jour des plugins, etc.) j&amp;rsquo;ai fini par migrer en 2016 vers un site statique généré par le génial &lt;a href=&#34;http://gohugo.io&#34;&gt;Hugo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Jusqu&amp;rsquo;il y a peu ce blog était encore chez un hébergeur classique, mais depuis la semaine dernière il tourne avec le couple &lt;a href=&#34;https://github.com&#34;&gt;Github&lt;/a&gt; + &lt;a href=&#34;https://www.netlify.com&#34;&gt;Netlify&lt;/a&gt;. Github stocke tout le contenu et tout le « code » du site (à mon sens ce n&amp;rsquo;est pas vraiment du code car ça n&amp;rsquo;exécute rien, mais plutôt des données structurées), et Netlify sert les pages depuis son CDN. À en croire ce test, le résultat en termes de performances me semble plutôt probant :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/12/testmysite-pierremorsa-com.jpg&#34; alt=&#34;Testmysite Pierremorsa Com&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Évidemment ce test risque de ne pas être 100% impartial vu qu&amp;rsquo;il est proposé depuis le site de Netlify. Cependant mon autre site &lt;a href=&#34;htts://www.ideasonstage.com&#34;&gt;Ideas on Stage&lt;/a&gt; a un score presque parfait alors qu&amp;rsquo;il n&amp;rsquo;est pas hébergé par Netlify mais par le tandem Dreamhost + Cloudflare, donc je crois à une certaine objectivité.&lt;/p&gt;
+
+&lt;p&gt;Je dois dire que je suis très impressionné par Netlify. Son avantage ce n&amp;rsquo;est pas que la rapidité. C&amp;rsquo;est aussi tous les outils qui vont autour. En tandem avec Github, il est possible de tester autant de branches différentes que l&amp;rsquo;on veut (une branche, c&amp;rsquo;est un peu comme une « version alternative d&amp;rsquo;un site»). Il est également possible de faire un « rollback », autrement dit de revenir simplement à la version précédente du site en cas de problème. En utilisant un webhook déclenché depuis Zapier j&amp;rsquo;ai même pu automatiser la publication des nouveaux articles à intervalles réguliers, ce qui était plus difficile à faire avec mon système précédent.&lt;/p&gt;
+
+&lt;p&gt;Le seul désavantage c&amp;rsquo;est que je n&amp;rsquo;ai plus du tout de statistiques, car je n&amp;rsquo;avais que les chiffres collectés par défaut par mon hébergeur. C&amp;rsquo;est facile à résoudre en intégrant Google Analytics, mais ce blog étant garanti 100% sans JavaScript je ne l&amp;rsquo;utiliserai pas, et pour moi ce n&amp;rsquo;est pas gênant.&lt;/p&gt;
+
+&lt;p&gt;Coût total de l&amp;rsquo;hébergement avec cette solution : 0€. Oui c&amp;rsquo;est assez dingue, ça ne coûte rien pour les versions de base. la seule partie qui reste payante est le nom de domaine.&lt;/p&gt;
+
+&lt;p&gt;Ci-dessous vous trouverez la procédure que j&amp;rsquo;ai suivie pour migrer ce blog vers Github + Netlify. Je l&amp;rsquo;ai réalisé depuis un Mac, mais c&amp;rsquo;est très similaire depuis n&amp;rsquo;importe quel autre système. Pour suivre ce tutoriel il vaut mieux :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Savoir vous servir un peu du terminal&lt;/li&gt;
+&lt;li&gt;Comprendre les notions Github de « commit », « branch », « pull » et « push »&lt;/li&gt;
+&lt;li&gt;Comprendre comment un DNS fonctionne&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;créez-un-fichier-netlify-toml&#34;&gt;Créez un fichier netlify.toml&lt;/h2&gt;
+
+&lt;p&gt;À la racine du site, dans le même répertoire que celui qui contient déjà &lt;code&gt;config.toml&lt;/code&gt; il faut ajouter un fichier nommé &lt;code&gt;netlify.toml&lt;/code&gt;, qui contiendra les versions de Hugo à utiliser par Netlify pour compiler le site. Voici le contenu de mon fichier netlify.toml :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[context.production.environment]
+  HUGO_VERSION = &amp;quot;0.31&amp;quot;
+  
+[context.deploy-preview.environment]
+  HUGO_VERSION = &amp;quot;0.31&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.pierremorsa.com/files/netlify.toml&#34;&gt;Pour les total flemmards vous pouvez télécharger directement le fichier ici&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;mettez-le-code-du-blog-sur-github&#34;&gt;Mettez le code du blog sur Github&lt;/h2&gt;
+
+&lt;p&gt;Si vous ne connaissez pas du tout Github, à la base c&amp;rsquo;est une solution pour gérer différentes versions d&amp;rsquo;un « répertoire ». C&amp;rsquo;est très utile pour les développeurs, qui peuvent ainsi garder une version stable de leur code et en parallèle travailler sur des nouvelles versions sans devoir tout dupliquer. Qui peut le plus peut le moins. Github peut servir à « versionner » des répertoires de documents, et dans notre cas le code source d&amp;rsquo;un site.&lt;/p&gt;
+
+&lt;h3 id=&#34;créez-un-compte-github&#34;&gt;Créez un compte Github&lt;/h3&gt;
+
+&lt;p&gt;Je ne vais pas expliquer cette partie, il suffit d&amp;rsquo;aller sur &lt;a href=&#34;https://github.com&#34;&gt;github.com&lt;/a&gt; et de se créer un compte, c&amp;rsquo;est à la portée du premier utilisateur de Facebook venu. Si comme pour moi laisser le code source de votre site accessible à tous n&amp;rsquo;est pas un souci, vous pouvez créer un compte gratuit, sinon il faudra payer 7$ par mois pour avoir un repository privé. Gardez bien le nom d&amp;rsquo;utilisateur et le mot de passe car nous allons en avoir besoin.&lt;/p&gt;
+
+&lt;p&gt;Si vous ne connaissez pas le fonctionnement de Github je vous conseille de lire le guide de démarrage car ce n&amp;rsquo;est pas forcément intuitif, surtout si vous n&amp;rsquo;avez jamais fait de développement.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Par contre pas besoin de démarrer un nouveau projet, car nous allons utiliser le répertoire existant sur votre ordi.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;initialisez-le-repository-github&#34;&gt;Initialisez le « repository » Github&lt;/h3&gt;
+
+&lt;p&gt;À partir du terminal, allez dans le répertoire qui contient le code du site. Par exemple &lt;code&gt;~/Sites/Hugo/www.testtoto.com/&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Une fois dans le bon répertoire tapez la commande suivante pour initialiser le répertoire Github :&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;git init&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Vous devriez avoir un message du genre&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;Initialized empty Git repository in ~/Sites/Hugo/www.testtoto.com/.git/&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Voilà, c&amp;rsquo;est tout, on pourrait tout faire depuis la ligne de commande en tapant des tas de trucs qui font intelligent mais ça me casse les pieds. Je vais donc utiliser le client Github Desktop pour la suite.&lt;/p&gt;
+
+&lt;h3 id=&#34;téléchargez-et-installez-github-desktop&#34;&gt;Téléchargez et installez Github Desktop.&lt;/h3&gt;
+
+&lt;p&gt;Pour ce faire cliquez sur le lien ci-dessous :&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://desktop.github.com&#34;&gt;Github Desktop&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Une fois installé, lancez Github Desktop, et utilisez votre nom d&amp;rsquo;utilisateur et mot de passe pour vous connecter à votre compte Github.&lt;/p&gt;
+
+&lt;h3 id=&#34;ajoutez-votre-répertoire-git-local-à-github-desktop&#34;&gt;Ajoutez votre répertoire git local à Github Desktop&lt;/h3&gt;
+
+&lt;p&gt;Si l&amp;rsquo;application ne vous le propose pas par défaut commencez par ajouter votre repository :&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;File → Add Local Repository...&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/12/github-add-local-repository.jpg&#34; alt=&#34;Github Add Local Repository&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Attention : avant de lancer la copie de vos fichiers vers Github, vérifiez qu&amp;rsquo;il n&amp;rsquo;y a pas d&amp;rsquo;autres répertoires .git cachés dans les sous-répertoires, en particulier dans les répertoires des thèmes, sinon vous risquez d&amp;rsquo;avoir des erreurs.&lt;/p&gt;
+
+&lt;p&gt;Voilà, normalement la barre du haut doit ressembler à ça :
+&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/12/github-desktop-top-bar.jpg&#34; alt=&#34;Github Desktop Top Bar&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Si nécessaire faites un commit de tous les changements sur la branche master (par défaut master est la branche principale de votre projet, celle qui fait office de référence pour la version « stable » de votre code). L&amp;rsquo;opération de commit « officialise » les changements, cela signifie, « c&amp;rsquo;est bon ces changements sont validés et peuvent être publiés ».&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/12/github-commit-hugo-repository.jpg&#34; alt=&#34;Github Commit Hugo Repository&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Il suffit maintenant de cliquer sur le bouton &lt;strong&gt;Publish repository&lt;/strong&gt; et tous les fichiers locaux vont être copiés vers Github.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/12/github-publish-hugo-repository.jpg&#34; alt=&#34;Github Publish Hugo Repository&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;L&amp;rsquo;avantage est que vous pouvez désormais synchroniser vos modifications locales et en ligne (dans le clllowwd comme on dit). Cependant pour se faire il faut bien comprendre les notions de « branch » et « commit » sinon vous risquez de galérer. J&amp;rsquo;essaierai de prendre le temps de les expliquer plus en détail dans un autre billet. Pour la suite du tutoriel je vais prendre l&amp;rsquo;hypothèse que vous modifiez les fichiers uniquement depuis le répertoire local.&lt;/p&gt;
+
+&lt;p&gt;Votre site est désormais sur GitHub. Si vous rafraîchissez la page vous devriez le voir apparaître dans la liste des repositories.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/12/github-your-hugo-repository.jpg&#34; alt=&#34;Github Your Hugo Repository&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Vous bénéficiez désormais de la gestion des versions, qui est la raison d&amp;rsquo;être de git. &lt;a href=&#34;https://www.pierremorsa.com/post/2017-12-25-site-hugo-github-netlify-2&#34;&gt;Dans la partie 2 nous allons voir comment configurer Netlify pour automatiser le déploiement du site et servir les pages aux visiteurs.&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Révisions :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;2017-12-21 : amélioration de l&amp;rsquo;explication de certaines étapes en particulier pour Github.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>Pourquoi le discours de Donald Trump est-il crédible ?</title>
@@ -25,7 +382,7 @@
 
 &lt;p&gt;Que l&amp;rsquo;on soit de gauche ou de droite, démocrate ou républicain, vert ou rouge, nos valeurs occupent une part très importante dans notre processus de décision.&lt;/p&gt;
 
-&lt;p&gt;C&amp;rsquo;est pourquoi &lt;strong&gt;Trump reste crédible tant que son discours reste crédible vis-à-vis des valeurs de son électorat, et non vis-à-vis des faits.&lt;/strong&gt; Ce qui peut tuer Trump, c&amp;rsquo;est de déclarer du jour au lendemain que l&amp;rsquo;Obamacare est finalement un plan génial et qu&amp;rsquo;il faut le maintenir coûte que coûte. Ou de dire que le mur à la frontière du Mexique est une connerie. Ça, ça va le décrédibiliser, car c&amp;rsquo;est déclarations seraient contraires aux valeurs identitaires de son électorat.&lt;/p&gt;
+&lt;p&gt;C&amp;rsquo;est pourquoi &lt;strong&gt;Trump reste crédible tant que son discours reste crédible vis-à-vis des valeurs de son électorat, et non vis-à-vis des faits.&lt;/strong&gt; Ce qui peut tuer Trump, c&amp;rsquo;est de déclarer du jour au lendemain que l&amp;rsquo;Obamacare est finalement un plan génial et qu&amp;rsquo;il faut le maintenir coûte que coûte. Ou de dire que le mur à la frontière du Mexique est une connerie. Ça, ça va le décrédibiliser, car ces déclarations seraient contraires aux valeurs identitaires de son électorat.&lt;/p&gt;
 
 &lt;p&gt;Notre Ego s&amp;rsquo;accorde assez bien du fait de s&amp;rsquo;identifier à des valeurs que nous ne respectons absolument pas en pratique ; ou plus exactement il va réussir à tordre la réalité pour qu&amp;rsquo;elle s&amp;rsquo;accorde avec l&amp;rsquo;image qu&amp;rsquo;il s&amp;rsquo;est construit de nous-mêmes. C&amp;rsquo;est pourquoi certains Nazis étaient à la fois des pères exemplaires et des monstres de barbarie. Un des grands drames de l&amp;rsquo;humanité est que notre Ego s&amp;rsquo;accorde très bien de ses contradictions, aussi horribles soient elles, tant que l&amp;rsquo;image qu&amp;rsquo;il a construit de nous-mêmes reste conforme aux valeurs auxquelles il s&amp;rsquo;identifie.&lt;/p&gt;
 
@@ -453,697 +810,6 @@ Le responsable communication dit que si Amazon réussit, c&amp;rsquo;est parce q
 &lt;p&gt;Si vous travaillez sur la présentation de quelqu&amp;rsquo;un d&amp;rsquo;autre, s&amp;rsquo;il vous plaît ne changez pas les durées des animations sans demander la permission au présentateur &lt;em&gt;avant&lt;/em&gt;. Votre responsabilité est de vous assurer que la présentation fonctionne correctement telle que le présentateur l&amp;rsquo;a fournie, et si nécessaire de l&amp;rsquo;avertir si vous pensez qu&amp;rsquo;il a fait une erreur ou quelque chose qui ne fonctionnera pas. Mais ce n&amp;rsquo;est en aucun cas de décider à la place du présentateur &lt;em&gt;comment&lt;/em&gt; il doit présenter. Si vous le faites et qu&amp;rsquo;un présentateur important se plaint (qu&amp;rsquo;il soit réellement important ou non), vous allez avoir pas mal d&amp;rsquo;ennuis que vous auriez pu facilement éviter. J&amp;rsquo;ai déjà reçu un email incendiaire de la part des organisateurs d&amp;rsquo;une conférence parce que un intervenant étranger très important s&amp;rsquo;était plaint que j&amp;rsquo;avais « cassé » sa présentation ; en fait elle s&amp;rsquo;affichait mal parce qu&amp;rsquo;il l&amp;rsquo;avait regardée sur son iPhone au lieu de l&amp;rsquo;ouvrir dans PowerPoint, mais c&amp;rsquo;est toujours des moments délicats à gérer.&lt;/p&gt;
 
 &lt;p&gt;Et pour les animations que s&amp;rsquo;est-il finalement passé ? Elles n&amp;rsquo;étaient pas trop compliquées à refaire, et chaque groupe qui avait des durées prédéfinies précises a travaillé avec le graphiste pour les rétablir. Mais ce moment de panique de dernière minute aurait pu être facilement évité en appliquant les conseils de ce billet. De plus certaines animations compliquées auraient pu être impossibles à reconstruire correctement.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Contrôler PowerPoint avec un contrôleur MIDI</title>
-      <link>https://www.pierremorsa.com/post/2017-10-02-controler-powerpoint-avec-controleur-midi/</link>
-      <pubDate>Mon, 02 Oct 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.pierremorsa.com/post/2017-10-02-controler-powerpoint-avec-controleur-midi/</guid>
-      <description>&lt;p&gt;Keyboard Maestro fait partie du top 5 des programmes que j&amp;rsquo;utilise tout le temps pour simplifier ou automatiser mon travail sur Mac. J&amp;rsquo;ai déjà donné quelques exemples d&amp;rsquo;actions possibles dans cet article. Depuis la semaine dernière Keyboard Maestro 8 est disponible. Je ne vais pas lister toutes les nouveautés ici, elles sont trop nombreuses, pour cela &lt;a href=&#34;https://wiki.keyboardmaestro.com/manual/Whats_New&#34;&gt;rendez vous directement sur la page officielle&lt;/a&gt; (en anglais).&lt;/p&gt;
-
-&lt;p&gt;Je vais juste évoquer l&amp;rsquo;amélioration de la partie MIDI ; il est désormais possible de déclencher des actions à partir d&amp;rsquo;un contrôleur MIDI.&lt;/p&gt;
-
-&lt;p&gt;J&amp;rsquo;ai un vieux contrôleur MIDI indestructible qui ressemble à un truc sorti d&amp;rsquo;un film de SF des années 60. Normalement je m&amp;rsquo;en sers pour contrôler les amplis virtuels de guitare, mais pour la démo je l&amp;rsquo;ai utilisé pour contrôler&amp;hellip; PowerPoint ! Et pourquoi pas après tout ? Lorsqu&amp;rsquo;on tourne le bouton 1 la transparence de l&amp;rsquo;objet change. Le bouton 2 change l&amp;rsquo;épaisseur du trait. Le bouton 3 change la taille de la police de caractères, etc. Lorsqu&amp;rsquo;on appuie sur le bouton au dessus cela applique le réglage à l&amp;rsquo;objet sélectionné (par exemple si le bouton est réglé sur une taille de police 24, appuyer sur le bouton va mettre le texte sélectionné en taille 24).&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/10/ibk10control.jpg&#34; alt=&#34;Controleur MIDI&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;L&amp;rsquo;avantage de ce contrôleur MIDI est d&amp;rsquo;utiliser des boutons à rotation « infinie », par opposition aux boutons qui se bloquent sur la butée lorsqu&amp;rsquo;ils ont atteint leur valeur minimum ou maximum. Cela permet de définir la valeur de départ du bouton de manière logicielle. La petite barre sur l&amp;rsquo;écran LCD représente la valeur courante du bouton.&lt;/p&gt;
-
-&lt;p&gt;Ça demande un peu de bricolage pour tout faire fonctionner, mais une fois au point c&amp;rsquo;est très rigolo de pouvoir régler les paramètres de PowerPoint avec des molettes. Le gain de productivité est (très) discutable, mais je l&amp;rsquo;ai fait pour montrer les possibilités du contrôle MIDI de Keyboard Maestro 8.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Trier automatiquement ses projets par statut</title>
-      <link>https://www.pierremorsa.com/post/2017-09-25-comment-je-trie-projets-omnifocus/</link>
-      <pubDate>Mon, 25 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.pierremorsa.com/post/2017-09-25-comment-je-trie-projets-omnifocus/</guid>
-      <description>&lt;p&gt;Comment trier ses projets dans OmniFocus ? Professionnel vs. personnel ? Par priorité ? Par date d&amp;rsquo;échéance ? Personnellement je les trie par statut. Si vous regardez l&amp;rsquo;image ci-dessous vous verrez que j&amp;rsquo;ai des dossiers nommés « active » (actifs), « stalled » (bloqué), « waiting for » (en attente), etc.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/09/projets-omnifocus.jpg&#34; alt=&#34;Projets OmniFocus&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Pourquoi ai-je choisi de trier mes projets de cette manière ? Parce que cela me permet d&amp;rsquo;identifier en un coup d&amp;rsquo;œil les projets sur lesquels je dois travailler, ceux que je dois débloquer, ceux qui sont en attente de quelque chose, etc.&lt;/p&gt;
-
-&lt;p&gt;Évidemment cette organisation est un peu pénible s&amp;rsquo;il faut trier manuellement les projets dans les dossiers en fonction de l&amp;rsquo;évolution de leur statut. C&amp;rsquo;est pourquoi j&amp;rsquo;ai écrit un script AppleScript appelé « housekeeping » qui va classer chaque projet automatiquement dans le bon dossier selon son statut. Vous trouverez le code du script ci-dessous. Je l&amp;rsquo;ai fait un peu à l&amp;rsquo;arrache, c&amp;rsquo;est loin d&amp;rsquo;être un exemple de code propre, et il faudra sûrement l&amp;rsquo;adapter un peu pour qu&amp;rsquo;il fonctionne chez vous, néanmoins j&amp;rsquo;espère qu&amp;rsquo;il peut vous aider si vous voulez faire quelque chose de similaire.&lt;/p&gt;
-
-&lt;p&gt;Ce script fait également d&amp;rsquo;autres choses : il définit la prochaine date de revue de manière plus « intelligente » : par exemple si la prochaine date de revue tombe un week-end il va déplacer la date de revue au lundi suivant, il va définir la fréquence de revue selon que le projet soit actif ou en attente, etc.&lt;/p&gt;
-
-&lt;p&gt;J&amp;rsquo;ai codé « en dur » certaines chaînes de caractères comme un gros goret, donc pour que le script fonctionne vous devez absolument avoir des dossiers nommés &amp;ldquo;active&amp;rdquo;, &amp;ldquo;stalled&amp;rdquo;, &amp;ldquo;waiting for&amp;rdquo;, &amp;ldquo;deferred&amp;rdquo;, &amp;ldquo;on hold&amp;rdquo;, &amp;ldquo;completed&amp;rdquo;, &amp;ldquo;dropped&amp;rdquo;, &amp;ldquo;templates&amp;rdquo; et un contexte nommé &amp;ldquo;Waiting for&amp;rdquo;. L&amp;rsquo;alternative étant d&amp;rsquo;éditer les chaînes de caractères dans le script utiliser d&amp;rsquo;autres noms. Il y a peut-être d&amp;rsquo;autres chose qu&amp;rsquo;il faudra vérifier pour qu&amp;rsquo;il fonctionne correctement. Pour rappel, ce genre de script est quasi impossible à débugger dans l&amp;rsquo;éditeur de scripts fourni en standard par Apple, à la place j&amp;rsquo;utilise Script Debugger de Late Night Software, un outil indispensable pour tout AppleScripter qui se respecte.&lt;/p&gt;
-
-&lt;p&gt;Et concernant le débat tabulations contre espaces, l&amp;rsquo;exemple ici utilise des espaces parce que les tabulations prenaient trop de place, mais mon script original utilise bien des tabulations !&lt;/p&gt;
-
-&lt;p&gt;Enfin il y a quelques bouts de code que j&amp;rsquo;ai piqué à gauche et à droite sur internet, mais je n&amp;rsquo;arrive plus à retrouver où, donc je tiens à m&amp;rsquo;en excuser auprès de leurs auteurs originaux. Les développeurs un peu expérimentés les reconnaîtront sûrement, parce que le style du code est clairement différent.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Attention : je ne suis pas responsable des problèmes que peut occasionner ce script, utilisez-le à vos risques et périls !!!&lt;/strong&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;(*
-  This script does the following:
-  1. Sort projects in folders based on status
-    - flagged
-    - active
-    - stalled
-    - waiting for
-    - defered
-    - completed
-    - dropped
-  2. Set review date to now for:
-    - Projects modified since last run
-    - Projects moved
-
-  3. Set review interval to weekly for:
-    - Projects that are active, stalled or waiting for
-
-  4. A few other things
-*)
-
-property fiveMinutes : 300
-property oneDay : 86400
-property sevenDays : 604800
-property fourteenDays : 1209600
-property twentyoneDays : 1814400
-property sixtyDays : 51840000
-property twelveWeeks : 7257600
-property changeGracePeriod : 0 -- 240
-property contextWaitingFor : {&amp;quot;waiting for&amp;quot;}
-property contextStalled : {&amp;quot;object&amp;quot;, &amp;quot;reference&amp;quot;}
--- if script was never run set last run to 5 minutes ago by default
-property lastRun : (current date) - fiveMinutes
-property putOnHoldIfWaitingForTooLong : sixtyDays
-
-global theFlaggedFolder
-global theActiveFolder
-global theStalledFolder
-global theWaitingForFolder
-global theDeferredFolder
-global theOnHoldFolder
-global theCompletedFolder
-global theDroppedFolder
-global theTemplateFolder
-
-global theWaitingForContext
-
-property scriptSuiteName : &amp;quot;Projects Housekeeping&amp;quot;
-
-tell application &amp;quot;OmniFocus&amp;quot;
-  tell front document
-    
-    compact
-    try
-      -- set theFlaggedFolder to (first folder whose name is &amp;quot;flagged&amp;quot;)
-      set theActiveFolder to (first folder whose name is &amp;quot;active&amp;quot;)
-      set theStalledFolder to (first folder whose name is &amp;quot;stalled&amp;quot;)
-      set theWaitingForFolder to (first folder whose name is &amp;quot;waiting for&amp;quot;)
-      set theDeferredFolder to (first folder whose name is &amp;quot;deferred&amp;quot;)
-      set theOnHoldFolder to (first folder whose name is &amp;quot;on hold&amp;quot;)
-      set theCompletedFolder to (first folder whose name is &amp;quot;completed&amp;quot;)
-      set theDroppedFolder to (first folder whose name is &amp;quot;dropped&amp;quot;)
-      set theTemplateFolder to (first folder whose name is &amp;quot;templates&amp;quot;)
-      
-      set theWaitingForContext to (first flattened context whose name is &amp;quot;Waiting For&amp;quot;)
-      
-      set will autosave to false
-      -- set selected sidebar tab to
-      set projectsMoved to my moveActiveProjects(it, {})
-      set projectsMoved to projectsMoved or my moveNonActiveProjects(it)
-      set will autosave to true
-    on error errText number errNum
-      set will autosave to true
-      display dialog &amp;quot;Error: &amp;quot; &amp;amp; errNum &amp;amp; return &amp;amp; errText
-      return
-    end try
-    if projectsMoved is true then
-      set msg to &amp;quot;Please review projects.&amp;quot;
-      my notify(&amp;quot;Did some housekeeping!&amp;quot;, msg)
-    else
-      set msg to &amp;quot;I had nothing to do.&amp;quot;
-    end if
-  end tell
-end tell
-set lastRun to (current date)
-
-
-
-on moveNonActiveProjects(theContainer)
-  set projectsMoved to false
-  using terms from application &amp;quot;OmniFocus&amp;quot;
-    set theProjects to every flattened project of theContainer whose status is on hold ¬
-      and singleton action holder is false
-    repeat with aProject in theProjects
-      if completed by children of aProject is true then
-        -- do not complete projects when all tasks are done to avoid accidental completion
-        set completed by children of aProject to false
-      end if
-      set theResult to my reviewIfTaskModified(aProject)
-      if theResult is equal to 0 then
-        my reviewMonthly(aProject)
-      end if
-      set isProjectMoved to my moveProject(aProject, theOnHoldFolder)
-      set projectsMoved to projectsMoved or isProjectMoved
-    end repeat
-    
-    set theProjects to every flattened project of theContainer whose status is done ¬
-      and singleton action holder is false
-    repeat with aProject in theProjects
-      if completed by children of aProject is true then
-        -- do not complete projects whene all tasks are done to avoid accidental completion
-        set completed by children of aProject to false
-      end if
-      -- No need to change review interval
-      set isProjectMoved to my moveProject(aProject, theCompletedFolder)
-      set projectsMoved to projectsMoved or isProjectMoved
-    end repeat
-    
-    set theProjects to every flattened project of theContainer whose status is dropped ¬
-      and singleton action holder is false
-    repeat with aProject in theProjects
-      if completed by children of aProject is true then
-        -- do not complete projects when all tasks are done to avoid accidental completion
-        set completed by children of aProject to false
-      end if
-      -- No need to change review interval
-      set isProjectMoved to my moveProject(aProject, theDroppedFolder)
-      set projectsMoved to projectsMoved or isProjectMoved
-    end repeat
-  end using terms from
-  return projectsMoved
-end moveNonActiveProjects
-
-
-
-on moveActiveProjects(theContainer)
-  set projectsMoved to false
-  --  log &amp;quot;Executing Housekeeping Script&amp;quot;
-  using terms from application &amp;quot;OmniFocus&amp;quot;
-    set theProjects to every flattened project of theContainer whose status is active ¬
-      and singleton action holder is false
-    set projectsMoved to my moveActiveProjectsProjects(theProjects)
-  end using terms from
-  return projectsMoved
-end moveActiveProjects
-
-
-
-on moveActiveProjectsProjects(theProjects)
-  
-  using terms from application &amp;quot;OmniFocus&amp;quot;
-    set projectsMoved to false
-    repeat with aProject in theProjects
-      set projectContainer to container of aProject
-      if (class of projectContainer is not folder or (class of projectContainer is folder ¬
-        and projectContainer is not hidden)) then
-        
-        if folder of aProject is not theTemplateFolder then
-          
-          if completed by children of aProject is true then
-            set completed by children of aProject to false
-          end if
-          
-          my reviewIfTaskModified(aProject)
-          
-          -- Checks if there is a next task
-          -- If yes, then get context of next task
-          set theNextTask to next task of aProject
-          set isNoNextTask to false
-          set theNextTaskContextName to &amp;quot;****&amp;quot;
-          set isAlreadyProcessed to false
-          set isDeferredNextTask to false
-          
-          if theNextTask is missing value then
-            set theActiveTasks to ¬
-              (every flattened task of aProject whose completed is false ¬
-                and number of tasks is equal to 0)
-            if (count of theActiveTasks) is greater than or equal to 1 then
-              set theActiveTask to item 1 of theActiveTasks
-              if theActiveTask is not missing value then
-                if defer date of theActiveTask is not missing value then
-                  if defer date of theActiveTask is greater than (current date) then
-                    set isDeferredNextTask to true
-                  else
-                    set theNextTask to theActiveTask
-                    set theNextTaskContextName to name of context of theNextTask
-                  end if
-                else
-                  set theNextTask to theActiveTask
-                  set theNextTaskContextName to name of context of theNextTask
-                end if
-              else
-                set isNoNextTask to true
-              end if
-            else -- project has no next tasks
-              set isNoNextTask to true
-              set theWaitingForTasks to (every flattened task of aProject whose completed is false)
-              set isNoNextTask to true
-              repeat with theWaitingForTask in theWaitingForTasks
-                if context of theWaitingForTask is equal to theWaitingForContext then
-                  set theNextTask to theWaitingForTask
-                  set isNoNextTask to false
-                  if context of theNextTask is not missing value then
-                    set theNextTaskContextName to name of context of theNextTask
-                  end if
-                  exit repeat
-                end if
-              end repeat
-              
-            end if
-          else
-            -- If the next task is the project itself, consider there is no task left.
-            if id of theNextTask is equal to id of root task of aProject then
-              set isNoNextTask to true
-            else
-              set isNoNextTask to false
-              if context of theNextTask is not missing value then
-                set theNextTaskContextName to name of context of theNextTask
-              end if
-            end if
-          end if
-          
-          -- 
-          -- Process DEFERRED projects
-          -- 
-          if isAlreadyProcessed is false then
-            if defer date of aProject is not missing value then
-              set theCurrentDate to current date
-              set theCurrentDate to theCurrentDate - (theCurrentDate&#39;s time)
-              -- Second condition is to avoid the project being marked for review again and again 
-              -- if review date is today
-              if defer date of aProject is greater than or equal to my tomorrow() then
-                my setNextReviewDate(aProject, defer date of aProject)
-                set isProjectMoved to my moveProject(aProject, theDeferredFolder)
-                set projectsMoved to projectsMoved or isProjectMoved
-                set isAlreadyProcessed to true
-              end if
-            end if
-          end if
-          if isAlreadyProcessed is false then
-            if isDeferredNextTask then
-              if defer date of theActiveTask is greater than or equal to my tomorrow() then
-                my setNextReviewDate(aProject, defer date of theActiveTask)
-                set isProjectMoved to my moveProject(aProject, theDeferredFolder)
-                set projectsMoved to projectsMoved or isProjectMoved
-                set isAlreadyProcessed to true
-              end if
-            end if
-          end if
-          
-          --
-          -- Process WAITING FOR projects
-          --
-          if isAlreadyProcessed is false then
-            if theNextTaskContextName is in contextWaitingFor then
-              --
-              -- ...then it is waiting for but if waiting for more than twenty one days...
-              --
-              set theTimeDifference to (current date) - (modification date of theNextTask)
-              if theTimeDifference is greater than putOnHoldIfWaitingForTooLong ¬
-                and putOnHoldIfWaitingForTooLong is not equal to 0 then
-                --
-                -- ...then we were patient enough, change status and move it to on hold
-                --
-                my reviewDaily(aProject)
-                my setStatus(aProject, on hold)
-                set isProjectMoved to my moveProject(aProject, theOnHoldFolder)
-                set projectsMoved to projectsMoved or isProjectMoved
-                set isAlreadyProcessed to true
-              else
-                --
-                -- ...else it&#39;s really waiting for
-                --
-                if theTimeDifference is greater than sevenDays then
-                  -- waiting for more than seven days? Review weekly
-                  my reviewWeekly(aProject)
-                else
-                  -- waiting for less than one week? Review daily
-                  my reviewDaily(aProject)
-                end if
-                set isProjectMoved to my moveProject(aProject, theWaitingForFolder)
-                set projectsMoved to projectsMoved or isProjectMoved
-                set isAlreadyProcessed to true
-              end if
-            end if
-          end if
-          
-          --
-          -- Process STALLED projects
-          -- 
-          if isAlreadyProcessed is false then
-            if isNoNextTask is true or theNextTaskContextName is in contextStalled then
-              my reviewDaily(aProject)
-              set isProjectMoved to my moveProject(aProject, theStalledFolder)
-              set projectsMoved to projectsMoved or isProjectMoved
-              set isAlreadyProcessed to true
-            end if
-          end if
-          
-          --
-          -- Process ACTIVE projects
-          --
-          if isAlreadyProcessed is false then
-            my reviewDaily(aProject)
-            if folder of aProject is not theActiveFolder then
-              set isProjectMoved to my moveProject(aProject, theActiveFolder)
-              set projectsMoved to projectsMoved or isProjectMoved
-              set isAlreadyProcessed to true
-            end if
-          end if
-          
-        end if
-      end if
-      
-    end repeat
-  end using terms from
-  return projectsMoved
-end moveActiveProjectsProjects
-
-(*
-Changes the status of a project and logs it.
-*)
-on setStatus(aProject, aStatus)
-  tell application &amp;quot;OmniFocus&amp;quot;
-    tell front document
-      if status of aProject is not aStatus then
-        set status of aProject to aStatus
-        log &amp;quot;Changed status of project: &amp;quot; &amp;amp; (name of aProject)
-      end if
-    end tell
-  end tell
-end setStatus
-
-(*
-  Moves a Project to a new folder
-*)
-on moveProject(aProject, aFolder)
-  set projectMoved to false
-  tell application &amp;quot;OmniFocus&amp;quot;
-    tell front document
-      if folder of aProject is not aFolder then
-        my reviewNow(aProject)
-        move aProject to (beginning of sections of aFolder)
-        set projectMoved to true
-        log &amp;quot;Moved project: &amp;quot; &amp;amp; (name of aProject)
-      end if
-    end tell
-  end tell
-  return projectMoved
-end moveProject
-
-(*
-  Mark a project for review if a task has been modified
-*)
-on reviewIfTaskModified(aProject)
-  tell application &amp;quot;OmniFocus&amp;quot;
-    tell front document
-      set theTasks to (every flattened task of aProject ¬
-        whose modification date is greater than lastRun and completed is false)
-      if (count of theTasks) is greater than 0 then
-        my reviewNow(aProject)
-        return 1
-      else
-        return 0
-      end if
-    end tell
-  end tell
-end reviewIfTaskModified
-
-(*
-  Gets tomorrow, midnight.
-*)
-on tomorrow()
-  copy (current date) to theDate
-  return (theDate + oneDay - (theDate&#39;s time))
-end tomorrow
-
-on reviewNow(aProject)
-  set theNextReview to current date
-  -- note: do not change review interval in this case
-  my setNextReviewDate(aProject, theNextReview)
-end reviewNow
-
-on reviewDaily(aProject)
-  set theNextReview to my tomorrow()
-  tell application &amp;quot;OmniFocus&amp;quot;
-    tell front document
-      set _ri to {unit:(day), steps:(1), fixed:(false)}
-      my setReviewInterval(aProject, _ri)
-      my setNextReviewDate(aProject, theNextReview)
-    end tell
-  end tell
-end reviewDaily
-
-on reviewWeekly(aProject)
-  -- Set the next weekly review to next Monday
-set theNextReview to ¬
-	DateOfThisInstanceOfThisWeekdayBeforeOrAfterThisDate(current date, Monday, 1)
-	  
-  using terms from application &amp;quot;OmniFocus&amp;quot;
-    set _ri to {unit:(week), steps:(1), fixed:(false)}
-  end using terms from
-  tell application &amp;quot;OmniFocus&amp;quot;
-    tell front document
-      my setReviewInterval(aProject, _ri)
-      my setNextReviewDate(aProject, theNextReview)
-    end tell
-  end tell
-end reviewWeekly
-
-(*
-  Sets the next review date to the next first Monday of a Month
-  (this month if first Monday not already passed)
-  (next month if first Monday already passed)
-*)
-on reviewMonthly(aProject)
-  copy (current date) to theNextReview
-	if (weekday of theNextReview is Monday) ¬
-	and (day of theNextReview ≤ 7) and (theNextReview &amp;gt; (current date)) then
-    -- do nothing because next review is already first Monday and in the future
-  else
-    set theNextReview&#39;s day to 32
-    set theNextReview&#39;s day to 1
-    -- That stuff below is to always set the monthly review on the first Monday of the Month
-    set dateOffset to {1, 0, 6, 5, 4, 3, 2}
-    set theOffset to item ((weekday of theNextReview) as integer) of dateOffset
-    set theNextReview&#39;s day to 1 + theOffset
-    set theNextReview to theNextReview - (theNextReview&#39;s time)
-    tell application &amp;quot;OmniFocus&amp;quot;
-      tell front document
-        set _ri to {unit:(month), steps:(1), fixed:(false)}
-        my setReviewInterval(aProject, _ri)
-        my setNextReviewDate(aProject, theNextReview)
-      end tell
-    end tell
-  end if
-end reviewMonthly
-
-on setReviewInterval(aProject, _ri)
-  tell application &amp;quot;OmniFocus&amp;quot;
-    tell front document
-      if review interval of aProject is not equal to _ri then
-        set review interval of aProject to _ri
-        log &amp;quot;Changed review interval: &amp;quot; &amp;amp; (name of aProject)
-      end if
-    end tell
-  end tell
-end setReviewInterval
-
-(*
-  Sets the review date for the project to the date specified, but only if:
-  - the project&#39;s review date is greater than today (is in the future)
-  - the project&#39;s review date is not already equal to the new review date
-  If the review date is a Saturday or Sunday, sets it to the next Monday
-*)
-on setNextReviewDate(aProject, aDate)
-  tell application &amp;quot;OmniFocus&amp;quot;
-    tell front document
-      -- Skip Saturdays and Sundays, use Monday instead, and remove Date&#39;s time.
-      set aDate to (my skipWeekends(aDate)) - (aDate&#39;s time)
-      -- Only change review date if it is greater than now and is different from the new date
-      if next review date of aProject is greater than (current date) ¬
-        and next review date of aProject is not equal to aDate then
-        set next review date of aProject to aDate
-        log &amp;quot;Changed review date: &amp;quot; &amp;amp; (name of aProject)
-      end if
-    end tell
-  end tell
-end setNextReviewDate
-
-on skipWeekends(aDate)
-  if weekday of aDate is Saturday then
-    set aDate to aDate + 2 * oneDay
-  else if weekday of aDate is Sunday then
-    set aDate to aDate + oneDay
-  end if
-  return aDate
-end skipWeekends
-
-on DateOfThisInstanceOfThisWeekdayBeforeOrAfterThisDate(d, w, i) -- returns a date
-  -- Keep an note of whether the instance value *starts* as zero
-  set instanceIsZero to (i is 0)
-  -- Increment negative instances to compensate for the following subtraction loop
-  if i &amp;lt; 0 and d&#39;s weekday is not w then set i to i + 1
-  -- Subtract a day at a time until the required weekday is reached
-  repeat until d&#39;s weekday is w
-    set d to d - days
-    -- Increment an original zero instance to 1 if subtracting from Sunday into Saturday 
-    if instanceIsZero and d&#39;s weekday is Saturday then set i to 1
-  end repeat
-  -- Add (adjusted instance) * weeks to the date just obtained and zero the time
-  d + i * weeks - (d&#39;s time)
-end DateOfThisInstanceOfThisWeekdayBeforeOrAfterThisDate
-
-(*
-  Uses Notification Center to display a notification message.
-  theTitle – a string giving the notification title
-  theDescription – a string describing the notification event
-*)
-on notify(theTitle, theDescription)
-  display notification theDescription with title scriptSuiteName subtitle theTitle
-end notify
-
-&lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Non, je n&#39;automatise pas tout !</title>
-      <link>https://www.pierremorsa.com/post/2017-09-18-non-je-n-automatise-pas-tout/</link>
-      <pubDate>Mon, 18 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.pierremorsa.com/post/2017-09-18-non-je-n-automatise-pas-tout/</guid>
-      <description>&lt;p&gt;Vous le savez, je suis un grand partisan de l&amp;rsquo;automatisation pour économiser du temps. Pourtant ce n&amp;rsquo;est pas vrai pour tout. Par exemple je fais mon café du matin à &lt;a href=&#34;https://en.wikipedia.org/wiki/AeroPress&#34;&gt;l&amp;rsquo;Aeropress&lt;/a&gt;, une méthode assez originale pour préparer le café. Chaque matin je mouds les grains de café à la main, je fais bouillir l&amp;rsquo;eau et j&amp;rsquo;utilise ensuite l&amp;rsquo;Aeropress pour faire le café. La solution automatique serait d&amp;rsquo;utiliser une machine à expresso à dosettes. Mais le problème c&amp;rsquo;est que je trouve que les cafés faits avec une machine à expresso sont trop courts. De plus pour le matin je trouve le goût du café fait à l&amp;rsquo;Aeropress plus doux et plus savoureux.&lt;/p&gt;
-
-&lt;p&gt;Et lorsque je travaille le bois, le seul appareil électrique que j&amp;rsquo;utilise est une foreuse. Je fais tout le reste à la main. C&amp;rsquo;est (beaucoup) plus lent et fatiguant, mais c&amp;rsquo;est bien plus gratifiant, même si en raison de mes compétences très limitées le résultat n&amp;rsquo;est pas toujours à la hauteur !&lt;/p&gt;
-
-&lt;p&gt;C&amp;rsquo;est également ce que je fais lorsque je prépare un gâteau. Je n&amp;rsquo;utilise aucun appareil électrique, je fais tout à la main. De nouveau je trouve que le résultat est bien plus gratifiant, même si au final le goût est exactement le même.&lt;/p&gt;
-
-&lt;p&gt;Le point commun de toutes ces tâches manuelles ?&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Je n&amp;rsquo;ai pas besoin qu&amp;rsquo;elles soient &amp;ldquo;productives&amp;rdquo;,&lt;/li&gt;
-&lt;li&gt;Je ne produits que des quantités très limitées,&lt;/li&gt;
-&lt;li&gt;Les faire à la main me détend.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;L&amp;rsquo;automatisation c&amp;rsquo;est bien, mais parfois prendre le temps de bien faire les choses est tellement plus gratifiant.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>De la valeur sociale d&#39;un produit</title>
-      <link>https://www.pierremorsa.com/post/2017-09-11-valeur-sociale-des-produits-et-services/</link>
-      <pubDate>Mon, 11 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.pierremorsa.com/post/2017-09-11-valeur-sociale-des-produits-et-services/</guid>
-      <description>&lt;p&gt;Qu&amp;rsquo;est-ce qui fait la valeur d&amp;rsquo;un produit ou d&amp;rsquo;un service ? Son utilité bien sûr. C&amp;rsquo;est la valeur d&amp;rsquo;usage, ce que la personne va faire avec ce produit. Il y a aussi la valeur globale, qui est constituée par l&amp;rsquo;ensemble des usages possibles du produit, et non pas simplement du cas d&amp;rsquo;usage d&amp;rsquo;une personne en particulier.  Mais il y a une troisième valeur qui est tout aussi importante et souvent ignorée par les startups : c&amp;rsquo;est sa valeur sociale, la façon dont le produit va renforcer votre position sociale.&lt;/p&gt;
-
-&lt;p&gt;Au delà du savoir faire, cette valeur sociale est &lt;strong&gt;le&lt;/strong&gt; différenciateur des grandes marques. Que ce soit une marque de vêtements, de voitures ou de high-tech, une grande partie de leur valeur est le renforcement de notre image qu&amp;rsquo;elles nous procurent face à nous-mêmes et face aux autres.&lt;/p&gt;
-
-&lt;p&gt;La valeur sociale est particulièrement évidente dans l&amp;rsquo;industrie du luxe. Certaines voitures sont vendues beaucoup plus cher, et avec des marges beaucoup plus élevées, car le renforcement du statut social qu&amp;rsquo;elles procurent est beaucoup plus élevé. De la même manière les marques de vêtement passent dépensent beaucoup d&amp;rsquo;énergie à s&amp;rsquo;assurer que leur valeur sociale soit bien établie et corresponde à leur cible de clientèle.&lt;/p&gt;
-
-&lt;p&gt;Cette valeur sociale est également présente dans l&amp;rsquo;industrie des services. Par exemple certaines personnes vont choisir la banque postale ou une banque « prestigieuse » non pas sur des critères objectifs, mais uniquement parce que celle-ci correspond à l&amp;rsquo;image sociale qu&amp;rsquo;ils veulent renvoyer. En tant qu&amp;rsquo;ancien consultant, je sais aussi très bien que le choix d&amp;rsquo;un cabinet de conseil pour certains clients est plus une affaire d&amp;rsquo;image qu&amp;rsquo;autre chose ; peu l&amp;rsquo;admettront, mais ils veulent montrer qu&amp;rsquo;ils peuvent se payer McKidney ou Boson Consulting Goop.&lt;/p&gt;
-
-&lt;p&gt;Au fond, c&amp;rsquo;est complètement con. C&amp;rsquo;est une illusion totale. De nombreuses voitures « normales » sont aussi bonnes, voire meilleures que les voitures de très grand luxe, parce que elles sont produites en plus haut volume et peuvent ainsi bénéficier d&amp;rsquo;un meilleur développement. De nombreux cabinets de conseil avec une image « haut de gamme » vont juste envoyer des analystes très intelligents mais sans expérience. Mais le fait est là : nous ne voulons pas admettre que la publicité nous influence alors que c&amp;rsquo;est clairement le cas, et nous ne voulons pas admettre que nous prenons des décisions irrationnelles basée sur la valeur sociale alors que c&amp;rsquo;est clairement le cas.&lt;/p&gt;
-
-&lt;p&gt;Pourtant, obnubilées par leur idée géniale trop de Startups oublient de développer cette valeur sociale ; et ce n&amp;rsquo;est pas parce qu&amp;rsquo;on crée une startup qui utilise les réseaux sociaux que l&amp;rsquo;on crée automatiquement cette valeur sociale ! Un exemple emblématique est le Segway. Ses concepteurs étaient tellement persuadés du côté génial et révolutionnaire de leur moyen de transport qu&amp;rsquo;ils n&amp;rsquo;ont pas vu que celui-ci avait une valeur sociale &lt;em&gt;négative&lt;/em&gt;, celle de vous donner une image de zozo.&lt;/p&gt;
-
-&lt;p&gt;Google Glass a également souffert d&amp;rsquo;une valeur sociale négative. En caricaturant, il a suffi d&amp;rsquo;une photo de Robert Scoble sous sa douche pour que Google Glass soit classé dans la catégorie « produit pour les geeks débiles ». Dans le cas de Google Glass ce déficit de valeur sociale peut être compensé par la valeur d&amp;rsquo;usage, et l&amp;rsquo;initiative de Google de relancer Google Glass pour des marchés professionnels de niche est probablement la bonne stratégie.&lt;/p&gt;
-
-&lt;p&gt;Au fil du temps la valeur sociale d&amp;rsquo;un produit peut évoluer. Par exemple dans les années 80 la valeur sociale d&amp;rsquo;un ordinateur était négative. En posséder un et en utiliser un vous classait dans la catégorie des « geeks » et à l&amp;rsquo;époque le terme n&amp;rsquo;était pas positif du tout. Mais petit à petit sa valeur d&amp;rsquo;usage, sa banalisation et la « dégeekisation » de son image par des marques comme Apple ont augmenté sa valeur sociale jusqu&amp;rsquo;à la rendre positive.&lt;/p&gt;
-
-&lt;p&gt;Enfin la valeur sociale seule n&amp;rsquo;est pas suffisante non plus. Le produit ou le service doit avoir une valeur d&amp;rsquo;usage et une valeur globale suffisantes. Vertu, la marque de téléphones de luxe, en a fait les frais : en admettant que la valeur sociale de la marque était positive (ce qui n&amp;rsquo;est pas certain), la valeur d&amp;rsquo;usage de leurs produits était trop faible.&lt;/p&gt;
-
-&lt;p&gt;Alors vous pouvez me croire ou non. Mais si le produit ou le service de votre startup n&amp;rsquo;a pas de valeur sociale suffisante il aura beaucoup de mal à prendre son envol, et dans ce cas il vaut mieux vous adresser à des marchés professionnels de niche où cette valeur sociale a moins d&amp;rsquo;importance.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Nomade digital, étape 4 : sauvegarder pour éviter  la perte de données</title>
-      <link>https://www.pierremorsa.com/post/2017-09-04-Nomade-digital-etape-4-sauvegarder-pour-eviter-perte-donn%C3%A9es/</link>
-      <pubDate>Mon, 04 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.pierremorsa.com/post/2017-09-04-Nomade-digital-etape-4-sauvegarder-pour-eviter-perte-donn%C3%A9es/</guid>
-      <description>
-
-&lt;p&gt;J&amp;rsquo;emporte mon ordinateur ou mon iPad un peu partout. Le risque de le perdre ou de le casser  est donc bien réel ; par exemple en 2015 je me suis fait voler mon MacBook Pro dans le TGV.&lt;/p&gt;
-
-&lt;p&gt;En fait, la vraie question n&amp;rsquo;est pas de savoir si vous risquez de perdre des données, mais quand cela va arriver. Car cela fini toujours par arriver. Et lorsque cela se produit, pleurer ne sert à rien. Il faut avoir une sauvegarde de ses données. Ce message a beau être rappelé fréquemment, le nombre d&amp;rsquo;utilisateurs qui ne font aucune sauvegarde est hallucinant.&lt;/p&gt;
-
-&lt;p&gt;Aussi voici un petit guide expliquant les risques et les solutions pour s&amp;rsquo;en prémunir. Je n&amp;rsquo;ai pas expliqué en détail le fonctionnement de chaque solution, sinon cet article aurait fait 100 pages.&lt;/p&gt;
-
-&lt;h2 id=&#34;comprendre-les-différents-risques-de-perte-de-données&#34;&gt;Comprendre les différents risques de perte de données&lt;/h2&gt;
-
-&lt;p&gt;Différents types d&amp;rsquo;incidents peuvent entraîner une perte de données ; une bonne stratégie de sauvegarde va vous protéger contre tous les risques.&lt;/p&gt;
-
-&lt;p&gt;En voici une liste non exhaustive, plus ou moins classé du plus probable au moins probable :&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Vous modifiez un document et vous rendez compte plus tard que vous voulez revenir en arrière pour une raison ou une autre.&lt;/li&gt;
-&lt;li&gt;Vous effacez un ou plusieurs documents par erreur.&lt;/li&gt;
-&lt;li&gt;Votre ordinateur ou un disque tombe en panne.&lt;/li&gt;
-&lt;li&gt;Votre ordinateur et &lt;em&gt;toutes&lt;/em&gt; vos sauvegardes locales sont volés.&lt;/li&gt;
-&lt;li&gt;Votre ordinateur est hacké (par exemple ransomware).&lt;/li&gt;
-&lt;li&gt;Votre compte Cloud est hacké et détruit.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Une stratégie de sauvegarde idéale va donc vous prémunir contre tous les cas cités. Pour se faire elle doit :&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Garder un historique des versions récentes de vos documents pendant un certain temps, par exemple les 4 dernières semaines.&lt;/li&gt;
-&lt;li&gt;Garder une copie à jour de tous vos documents importants ailleurs que chez vous, par exemple dans le Cloud.&lt;/li&gt;
-&lt;li&gt;Avoir une copie de sauvegarde déconnectée pour qu&amp;rsquo;elle ne soit pas endommagée par un éventuel ransomware (par exemple sur un disque dur stocké séparément). Ce cas est celui qui est le moins souvent pris en compte.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;raid-sauvegarde&#34;&gt;RAID ≠ sauvegarde&lt;/h2&gt;
-
-&lt;p&gt;Une précision importante avant d&amp;rsquo;aborder les différentes stratégies de sauvegarde : les systèmes RAID ont pour objectif d&amp;rsquo;améliorer le taux de disponibilité et la vitesse, ils ne sont pas une protection contre la perte de données. De fait, un système RAID 1 ou plus ne couvre que le cas 3, un disque tombe en panne. Le RAID 0 &lt;em&gt;augmente&lt;/em&gt; même le risque de perdre des données au lieu de le diminuer.&lt;/p&gt;
-
-&lt;p&gt;Un système RAID ne vous protégera pas contre les cas 1, 2, 4, 5 et 6 !&lt;/p&gt;
-
-&lt;h2 id=&#34;sauvegarde-locale-avec-time-machine&#34;&gt;Sauvegarde locale avec Time Machine&lt;/h2&gt;
-
-&lt;p&gt;Time Machine va vous couvrir contre les cas 1, 2 et 3, ce qui est déjà pas mal du tout.&lt;/p&gt;
-
-&lt;p&gt;Le matériel nécessaire se limite à un disque externe d&amp;rsquo;une taille au moins équivalente à la somme des disques que vous voulez sauvegarder.&lt;/p&gt;
-
-&lt;p&gt;Time Machine est fourni en standard sur tous les Mac depuis plusieurs années. Pour l&amp;rsquo;activer connectez votre disque externe qui servira aux sauvegardes, ouvrez les Préférences Système et sélectionnez d&amp;rsquo;icône de Time Machine.&lt;/p&gt;
-
-&lt;p&gt;Inconvénients : Time Machine n&amp;rsquo;est pas à 100% infaillible, il peut lui arriver dans de très rares cas de perdre les pédales sans vous en informer. La restauration des données avec Time Machine est également assez lente.&lt;/p&gt;
-
-&lt;h2 id=&#34;sauvegarde-locale-avec-ccc-superduper-ou-chronosync&#34;&gt;Sauvegarde locale avec CCC, SuperDuper ou ChronoSync&lt;/h2&gt;
-
-&lt;p&gt;Ces trois outils ont bonne réputation. Ils sont particulièrement efficaces pour se prémunir contre le cas 3. Bien configurés ils peuvent vous protéger contre les cas 1 et 2, même si Time Machine est plus simple pour ces deux cas.&lt;/p&gt;
-
-&lt;p&gt;Ils permettent de créer un « clone » de vos disques, autrement dit une copie identique. Dans le cas 3, si votre ordinateur tombe en panne il suffit de connecter le disque clone à un autre Mac et de démarrer sur celui-ci. Si pour vous la disponibilité de votre environnement de production est importante c&amp;rsquo;est une excellent solution pour ne pas perdre de temps, et elle m&amp;rsquo;a déjà sorti de situations bien difficiles suite à un gros crash système. L&amp;rsquo;idéal est d&amp;rsquo;utiliser un SSD en USB 3 ; cette solution est à la fois rapide &lt;strong&gt;et&lt;/strong&gt; compatible avec tous les ordinateurs récents, contrairement à une connexion Thunderbolt.&lt;/p&gt;
-
-&lt;h2 id=&#34;sauvegarde-déportée-dans-le-cloud&#34;&gt;Sauvegarde déportée dans le Cloud&lt;/h2&gt;
-
-&lt;p&gt;Les solutions précédentes vous protègent contre la perte locale de données, mais que faire si vous perdez tous vos disques locaux, suite à un vol ou un incendie ? La bonne stratégie pour se protéger contre ce risque est de faire une copie de ses documents dans le Cloud. Attention cependant à conserver le nom d&amp;rsquo;utilisateur et le mot de passe quelque part et pas seulement sur votre disque dur local !!!&lt;/p&gt;
-
-&lt;p&gt;À noter que Dropbox conserve également une copie des versions récentes. C&amp;rsquo;est une double sécurité avec Time Machine.&lt;/p&gt;
-
-&lt;h2 id=&#34;sauvegarde-déconnectée-et-idéalement-déportée&#34;&gt;Sauvegarde déconnectée (et idéalement déportée)&lt;/h2&gt;
-
-&lt;p&gt;Il reste le cas des ransomware. Le ransomware va rendre inaccessibles tous les disques connectés à votre machine, c&amp;rsquo;est à dire les disques principaux mais aussi toutes les sauvegardes locales connectées à l&amp;rsquo;ordinateur ! Avec l&amp;rsquo;évolution actuelle, il est également possible que les ransomware futurs bloquent l&amp;rsquo;accès à vos sauvegardes dans le Cloud (scénario vraiment très pessimiste je l&amp;rsquo;avoue, qui à ma connaissance ne s&amp;rsquo;est pas encore produit).&lt;/p&gt;
-
-&lt;p&gt;La stratégie pour se prémunir contre ce cas est de garder une copie de sauvegarde &lt;em&gt;déconnectée&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;L&amp;rsquo;idéal est de faire ce qu&amp;rsquo;on appelle une rotation des disques de sauvegarde, par exemple avec deux disques différents. Les semaines impaires vous sauvegardez sur le disque 1 et le disque 2 reste déconnecté, les semaines paires vous faites l&amp;rsquo;inverse. Bonne nouvelle, Time Machine offre justement la possibilité d&amp;rsquo;alterner entre différents disques de sauvegarde.&lt;/p&gt;
-
-&lt;h2 id=&#34;ne-pas-compter-que-sur-le-cloud&#34;&gt;Ne pas compter que sur le Cloud&lt;/h2&gt;
-
-&lt;p&gt;Reste le cas numéro 6, votre compte Cloud est hacké. Pour vous protéger contre ce cas, ne stockez pas vos documents uniquement dans le Cloud.&lt;/p&gt;
-
-&lt;p&gt;Également, ne gardez pas que la copie locale synchronisée directement par Dropbox. Si les hackers détruisent les données dans le Cloud, l&amp;rsquo;application de Dropbox va automatiquement supprimer votre copie locale !&lt;/p&gt;
-
-&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
-
-&lt;p&gt;La sauvegarde de base avec Time Machine, CCC, SuperDuper, ChronoSync ou tout autre outil similaire est indispensable. Ne pas la faire est tout simplement inconscient.&lt;/p&gt;
-
-&lt;p&gt;Pour les niveaux de sauvegarde supplémentaires, c&amp;rsquo;est à vous de juger quel est le risque acceptable. Dans mon cas c&amp;rsquo;est clair, quel que soit le scénario je ne peux pas me permettre de perdre les données de mon entreprise.&lt;/p&gt;
-
-&lt;p&gt;La sauvegarde des documents a un coût qui est souvent non pris en compte lors de l&amp;rsquo;acquisition d&amp;rsquo;un ordinateur et qui n&amp;rsquo;est pas très motivant, pourtant il vaut mieux prendre une machine un peu moins chère avec en plus une solution de sauvegarde et être certain de ne pas perdre ses documents.&lt;/p&gt;
 </description>
     </item>
     

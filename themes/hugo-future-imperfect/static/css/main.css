@@ -513,8 +513,8 @@ ul.posts {
 
 ul.posts li {
     border-top: dotted 1px rgba(160, 160, 160, 0.3);
-    margin: 1.5em 0 0 0;
-    padding: 1.5em 0 0 0;
+    margin: 1em 0 0 0;
+    padding: 1em 0 0 0;
 }
 
 ul.posts li:first-child {
@@ -924,3 +924,27 @@ body {
     letter-spacing: 0.25em;
     text-transform: uppercase;
 }
+
+.link {
+	display: inline-block;
+	border: 1px solid rgba(160, 160, 160, 0.3);
+	width: 122px;
+	height: 92px;
+	margin-right: 10px;
+}
+
+.link a {
+	border: 0;
+}
+
+.link p {
+	font-size: 0.825em;
+}
+
+.text-small {
+	font-size: 0.825em;
+}
+
+
+
+

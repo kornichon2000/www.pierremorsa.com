@@ -1,0 +1,281 @@
+<!-- layouts:post:single -->
+<!-- layouts:partials:header -->
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Pierre Morsa | Présenter en public et GTD</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="generator" content="Hugo 0.31.1" />
+		<!-- layouts:partials:favicon -->
+    	<link rel="apple-touch-icon-precomposed" href='/favicon/apple-touch-icon-precomposed.png'>
+    	<link rel="icon" href='/favicon/favicon.png'>
+        <meta name="author" content="Pierre Morsa">
+        <meta name="description" content="Le blog de Pierre Morsa, co-fondateur et Creative Director d&#39;Ideas on Stage, une agence spécialisée dans les présentations en public.">
+		<link rel="stylesheet" href="/css/main.css" />
+    </head>
+    <body>
+        <div id="wrapper">
+			<!-- layouts:partials:navbar -->
+			<section id="header">
+				<h1><a href="/">Pierre Morsa | Présenter en public et GTD</a></h1>
+			</section><!-- header -->
+		    <div id="main">
+				<!-- layouts:post:content-single -->
+				<article class="post">
+					<!-- layouts:post:header -->
+					<header>
+					    <div class="title">
+					        <h2><a href="/post/2017-12-25-site-hugo-github-netlify-2/">Héberger gratuitement un site Hugo avec Github et Netlify (2/2)</a></h2>
+					    </div><!-- title -->
+					    <div class="meta">
+					        <time class="published" datetime='2017-12-25'>2017-12-25</time>
+					    </div><!-- meta -->
+					</header>
+					<div id="content">
+
+
+<p>Dans cette deuxième partie nous allons voir comment configurer Netlify pour servir les pages du site. Si vous ne l&rsquo;avez pas lue je vous conseille de démarrer par la <a href="/post/2017-12-18-site-hugo-github-netlify-1">partie 1 de l&rsquo;article qui explique comment déplacer le code du site dans Github</a>.</p>
+
+<p>Le truc génial avec Netlify, c&rsquo;est qu&rsquo;il s&rsquo;occupe de faire tout ce qui est généralement bien pénible à configurer :</p>
+
+<ul>
+<li>Il va être le serveur web des pages</li>
+<li>Il est CDN (Content Distributed Network) pour accélérer la performance du site, et prend entièrement à sa charge la gestion du rafraîchissement du cache. Fini les arrachages de cheveux parce que le cache ne s&rsquo;est pas mis à jour correctement.</li>
+<li>Il offre un DNS très rapide pour réduire la latence de connexion.</li>
+<li>Il gère le https pour vous (si vous le souhaitez), et force la redirection de http vers https.</li>
+</ul>
+
+<p>Pour pas un roro, c&rsquo;est déjà super. Mais si en plus je vous dis que Netlify :</p>
+
+<ul>
+<li>Compile automatiquement le site hugo pour vous à partir du repository Github</li>
+<li>Déploie automatiquement la branche compilée</li>
+<li>Permet de tester autant de branches alternatives (versions de test ou versions futures par exemple) que souhaité</li>
+<li>Permet de faire du A/B testing automatiquement</li>
+<li>Permet de faire un rollback (retour en arrière) simplement en cas de catastrophe.</li>
+<li>Offre un système de gestion de contenu hyper rapide (CMS).</li>
+</ul>
+
+<p>Et tout ça toujours pour zéro roros ? Elle est pas belle la vie ?</p>
+
+<h2 id="configurer-netlify">Configurer Netlify</h2>
+
+<p>C&rsquo;est bien beau tout ça, mais du coup ça doit sûrement être compliqué de tout paramétrer. Ben non. La magie de Netlify c&rsquo;est que tout reste super simple.</p>
+
+<h3 id="créer-un-compte-netlify">Créer un compte Netlify</h3>
+
+<p>Pour créer un compte Netlify, identifiez-vous avec votre compte Github.</p>
+
+<p><img src="/pictures/2017/12/netlify-signin-github.jpg" alt="Netlify Signin Github" /></p>
+
+<p>Pourquoi avec votre compte Github ? Parce que&hellip; Netlify va automatiquement vous proposer les différents projets que vous avez stockés sur Github. Donnez l&rsquo;autorisation à Netlify d&rsquo;accéder à votre compte Github. Voilà, vous venez de configurer votre compte Netlify.</p>
+
+<p><img src="/pictures/2017/12/netlify-authorize-github.jpg" alt="Netlify Authorize Github" /></p>
+
+<h3 id="ajouter-son-site-hugo-sur-netlify">Ajouter son site Hugo sur Netlify</h3>
+
+<p>Pour ajouter un site commençons par cliquer sur le bouton « New site from Git ».</p>
+
+<p><img src="/pictures/2017/12/netlify-new-site-from-git.jpg" alt="Netlify New Site From Git" /></p>
+
+<p>Ensuite, il faut choisir « Github » (ou une des autres options  si votre code est hébergé chez GitLab ou un autre).</p>
+
+<p><img src="/pictures/2017/12/netlify-create-a-new-site-from-github.jpg" alt="Netlify Create A New Site From Github" /></p>
+
+<p>Il faut de nouveau autoriser Netlify à accéder aux repositories GitHub.</p>
+
+<p><img src="/pictures/2017/12/netlify-github-additional-permissions.jpg" alt="Netlify Github Additional Permissions" /></p>
+
+<p>Sélectionnez alors le repository qui contient le code de votre site, dans mon cas « www.testtoto.com ».</p>
+
+<p><img src="/pictures/2017/12/netlify-new-site-choose.jpg" alt="Netlify New Site Choose" /></p>
+
+<p>Il ne reste désormais plus que quelques informations à fournir :</p>
+
+<ul>
+<li>Vous pouvez normalement laisser le nom de la branche à déployer à « master » (comme expliqué dans l&rsquo;article précédent, c&rsquo;est le nom par défaut de la version « validée »).</li>
+<li>La « Build command » est simplement&hellip; <code>hugo</code></li>
+<li>Le nom du répertoire de publication est <code>public</code></li>
+</ul>
+
+<p>Une fois ces informations renseignées, vous pouvez cliquer sur « Deploy Site ». En général la compilation et publication d&rsquo;un site prend entre quelques secondes et quelques minutes maximum.</p>
+
+<p><img src="/pictures/2017/12/netlify-new-site-added.jpg" alt="Netlify New Site Added" /></p>
+
+<p>Netlify attribue automatiquement un URL au nouveau site qu&rsquo;il gère. Dans mon exemple cet URL est <a href="http://eager-hugle-1657a8.netlify.com -">http://eager-hugle-1657a8.netlify.com -</a> Le site est désormais accessible directement à cet URL, mais il ne vous convient certainement pas. Nous allons donc maintenant passer aux étapes 2 et 3 : la configuration d&rsquo;un nom de domaine personnalisé et du https.</p>
+
+<h3 id="configurer-le-nom-de-domaine">Configurer le nom de domaine</h3>
+
+<p>Mon nom de domaine est pierremorsa.com, et je l&rsquo;ai acheté il y a un bout de temps&hellip; Pour le configurer, il y a deux solutions :</p>
+
+<ul>
+<li>Modifier les informations du DNS existant pour pointer vers les serveurs de Netlify.</li>
+<li>Ou utiliser les serveurs DNS de Netlify.</li>
+</ul>
+
+<p>Je ne vais décrire ici que la deuxième option, utiliser les serveurs DNS de Netlify. Ils se vantent d&rsquo;avoir les serveurs DNS les plus rapides du monde. J&rsquo;ignore si c&rsquo;est vrai.</p>
+
+<p>Cette opération est rendue la plus simple possible par Netlify, mais elle reste malgré tout assez délicate, et parfois un peu déroutante, car il y a un temps de latence entre le moment où l&rsquo;on demande la modification des paramètres d&rsquo;un DNS et le moment où ces changements deviennent effectifs partout dans le monde. C&rsquo;est une opération à faire le moins souvent possible.</p>
+
+<p>Cliquez sur « Set up a custom domain ». Si vous avez loupé cet écran, cliquez simplement sur « Domain settings » → Domain management → Domains et cela reviendra au même.</p>
+
+<p><img src="/pictures/2017/12/netlify-add-custom-domain.jpg" alt="Netlify Add Custom Domain" /></p>
+
+<p>Cliquez ensuite sur « Add custom domain », entrez le nom de votre domaine, puis sur Save.</p>
+
+<p><img src="/pictures/2017/12/netlify-add-custom-domain-2.jpg" alt="Netlify Add Custom Domain 2" /></p>
+
+<p>À ce niveau, vous allez probablement avoir une erreur. Cliquez sur le message « Check DNS configuration ». Cliquez alors sur « Set up Netlify DNS for votredomaine.com ».</p>
+
+<p><img src="/pictures/2017/12/netlify-setup-dns.jpg" alt="Netlify Setup Dns" /></p>
+
+<p>Dans l&rsquo;écran qui apparaît, cliquez sur Create DNS zone.</p>
+
+<p><img src="/pictures/2017/12/netlify-create-dns-zone.jpg" alt="Netlify Create Dns Zone" /></p>
+
+<p>Netlify crée alors les données de base pour le DNS, mais vous pouvez allez avoir besoin d&rsquo;ajouter des infos manuellement. Encore une fois, c&rsquo;est la partie la plus « compliquée » du processus car chaque cas est différent. Par exemple si vous avez un service d&rsquo;email lié à votre nom de domaine (dans mon exemple email@testtoto.com) vous devrez configurer correctement les données DNS de votre service d&rsquo;email sinon vos emails vont se perdre dans la nature.</p>
+
+<p><strong>Une fois cette étape effectuée, allez sur le service chez qui vous avez enregistré votre nom de domaine, et modifiez les serveurs DNS actuels par ceux de Netlify.</strong></p>
+
+<p>Une fois cette étape terminée, et une fois que les serveurs DNS dans le monde se seront mis à jour, votre site Hugo www.votresite.com sera servi par Netlify hyper rapidement ! Il ne vous restera plus qu&rsquo;à activer le https pour que tout soit parfait ; l&rsquo;opération étant très simple, je ne la détaillerai pas ici.</p>
+
+				    </div><!-- content -->
+				</article>
+
+		    </div><!-- main -->
+			<!-- layouts:partials:sidebar -->
+			<section id="sidebar">
+			    <section id="intro">
+			        <a href="/"><img src="/pictures/main/pierre-morsa-avatar.jpg" class="intro-circle" width="" alt="Pierre Morsa" /></a>
+			        <header>
+			            <p>Présenter en public, Getting Things Done, Lifehacks, Technomagie etc.</p>
+			        </header>
+			        <b><a href="" type="application/rss+xml"
+			                    target="_blank" title="RSS" class="button">S&rsquo;abonner au fil RSS</a></b>
+			    </section><!-- intro -->
+				<section id="links">       
+					<header>
+					    <p>Les sites que je soutiens</p>
+					</header>
+					<div class="link">
+						<a href="https://www.codingandbricks.com/">
+				    		<img src="/pictures/links/codingandbricks.jpg">
+				    		<p>Ateliers LEGO SeriousPlay® pour les entreprises</p>
+				    	</a>
+					</div>
+					<div class="link">
+						<a href="https://www.ideasonstage.fr/">
+				    		<img src="/pictures/links/ideasonstage.jpg">
+				    		<p>Le spécialiste des présentations en public</p>
+				    	</a>
+					</div>				
+				</section><!-- links -->
+		        <section id="categories">
+		            <ul class="posts">
+	                    <li>
+	                        <article>
+	                            <header>
+	                                <a href="/categories/pr%C3%A9senter-en-public/" class="text-small">Présenter en public</a>
+	                                <span style="float:right;" class="text-small">46</span>
+	                            </header>
+	                        </article>
+	                    </li>
+	                    <li>
+	                        <article>
+	                            <header>
+	                                <a href="/categories/gtd-getting-things-done/" class="text-small">GTD Getting Things Done</a>
+	                                <span style="float:right;" class="text-small">29</span>
+	                            </header>
+	                        </article>
+	                    </li>
+	                    <li>
+	                        <article>
+	                            <header>
+	                                <a href="/categories/technomagie/" class="text-small">Technomagie</a>
+	                                <span style="float:right;" class="text-small">20</span>
+	                            </header>
+	                        </article>
+	                    </li>
+	                    <li>
+	                        <article>
+	                            <header>
+	                                <a href="/categories/lifehacks/" class="text-small">Lifehacks</a>
+	                                <span style="float:right;" class="text-small">18</span>
+	                            </header>
+	                        </article>
+	                    </li>
+	                    <li>
+	                        <article>
+	                            <header>
+	                                <a href="/categories/nouvelles/" class="text-small">Nouvelles</a>
+	                                <span style="float:right;" class="text-small">15</span>
+	                            </header>
+	                        </article>
+	                    </li>
+	                    <li>
+	                        <article>
+	                            <header>
+	                                <a href="/categories/startup/" class="text-small">Startup</a>
+	                                <span style="float:right;" class="text-small">13</span>
+	                            </header>
+	                        </article>
+	                    </li>
+	                    <li>
+	                        <article>
+	                            <header>
+	                                <a href="/categories/nomade-digital/" class="text-small">Nomade Digital</a>
+	                                <span style="float:right;" class="text-small">5</span>
+	                            </header>
+	                        </article>
+	                    </li>
+	                    <li>
+	                        <article>
+	                            <header>
+	                                <a href="/categories/storytelling/" class="text-small">Storytelling</a>
+	                                <span style="float:right;" class="text-small">3</span>
+	                            </header>
+	                        </article>
+	                    </li>
+	                    <li>
+	                        <article>
+	                            <header>
+	                                <a href="/categories/tedx/" class="text-small">TEDx</a>
+	                                <span style="float:right;" class="text-small">3</span>
+	                            </header>
+	                        </article>
+	                    </li>
+	                    <li>
+	                        <article>
+	                            <header>
+	                                <a href="/categories/art-oratoire/" class="text-small">Art Oratoire</a>
+	                                <span style="float:right;" class="text-small">1</span>
+	                            </header>
+	                        </article>
+	                    </li>
+	                    <li>
+	                        <article>
+	                            <header>
+	                                <a href="/categories/cr%C3%A9ativit%C3%A9/" class="text-small">Créativité</a>
+	                                <span style="float:right;" class="text-small">1</span>
+	                            </header>
+	                        </article>
+	                    </li>
+		            </ul>
+		        </section><!-- categories -->
+		        <section class="blurb">
+		            <p>Pierre Morsa est Partner + Creative Director chez <a href='https://www.ideasonstage.com'>Ideas on Stage</a>, la première agence globale de création de présentations. <br>Pour me contacter écrivez-moi à<br>p i e r r e . m o r s a @ pierremorsa.com</p>
+		            <ul class="actions">
+		                <li><a href="/about/" class="button">En savoir plus</a></li>
+		            </ul>
+		        </section><!-- blurb -->
+		        <section id="footer">
+		            <p class="copyright">Site garanti sans cookies et sans JavaScript. Le contenu est en copie libre : vous pouvez tout copier et réutiliser librement.</p>
+		        </section><!-- footer -->
+			</section><!-- sidebar -->
+		<!-- layouts:partials:footer -->
+        </div><!-- wrapper -->
+        
+    </body>        
+</html>
+
