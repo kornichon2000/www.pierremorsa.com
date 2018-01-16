@@ -1,0 +1,16 @@
+			{{ "<!-- layouts:partials:links -->" | safeHTML }}
+			<div class="hide-sm">
+				<section id="links">       
+					{{- $URL := .URL }}
+					{{- $.Scratch.Set "count" 0 }}
+					{{- range .Site.Data.links }}		
+						{{- $.Scratch.Add "count" 1 }}
+					<div class="link">
+						<a href="{{ .link }}">
+				    		<img src="/pictures/links/{{ .picture }}">
+				    		<p>{{ .description }}</p>
+				    	</a>
+					</div>
+					{{- end }}				
+				</section>{{ "<!-- links -->" | safeHTML }}
+			</div>

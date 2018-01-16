@@ -19,7 +19,7 @@
 			        <b><a href="{{ .RSSLink }}" type="application/rss+xml"
 			                    target="_blank" title="RSS" class="button">{{ with .Site.Params.localized.button.rss }}{{ . | markdownify }}{{ end }}</a></b>
 			    </section>{{ "<!-- intro -->" | safeHTML }}
-				<section id="links">       
+				<section id="links" class="justify-left">      
 					<header>
 					    <p>Les sites que je soutiens</p>
 					</header>
@@ -27,7 +27,7 @@
 					{{- $.Scratch.Set "count" 0 }}
 					{{- range .Site.Data.links }}		
 						{{- $.Scratch.Add "count" 1 }}
-					<div class="link">
+					<div class="link link-left">
 						<a href="{{ .link }}">
 				    		<img src="/pictures/links/{{ .picture }}">
 				    		<p>{{ .description }}</p>
