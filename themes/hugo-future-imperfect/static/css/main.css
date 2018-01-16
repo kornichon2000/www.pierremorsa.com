@@ -594,7 +594,7 @@ dl dd {
     padding: 3em 3em 1em 3em;
     background: #ffffff;
     border: solid 1px rgba(160, 160, 160, 0.3);
-    margin: 0 0 3em 0;
+    margin: 0 0 2em 0;
     position: relative;
 }
 
@@ -925,12 +925,32 @@ body {
     text-transform: uppercase;
 }
 
+#links {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+#links.justify-left {
+	justify-content: left;
+}
+
 .link {
-	display: inline-block;
+	flex: none;
+	margin: auto;
+	width: 122px;
+	margin-bottom: 2em;
+}
+
+.link-left {
+	margin-left: 0px;
+	margin-bottom: 0px;
+}
+
+.link img {
 	border: 1px solid rgba(160, 160, 160, 0.3);
 	width: 122px;
-	height: 92px;
-	margin-right: 10px;
+	height: 92px;	
 }
 
 .link a {
@@ -939,12 +959,22 @@ body {
 
 .link p {
 	font-size: 0.825em;
+	margin-bottom: 0px;
 }
 
 .text-small {
 	font-size: 0.825em;
 }
 
+.hide-sm {
+	display: none;	
+}
 
+@media screen and (max-width:980px) {
+	.hide-sm {
+		display: block;
+	}
+
+}
 
 

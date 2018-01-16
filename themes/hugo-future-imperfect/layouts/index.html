@@ -7,8 +7,13 @@
 {{- else }}
     {{- $paginator := .Paginate (where .Site.Pages "Type" "post") }}
 {{- end }}
+{{- $.Scratch.Set "count" 0 }}
 {{- range .Paginator.Pages }}
+{{- $.Scratch.Add "count" 1 }}
 {{ .Render "content-single" }}
+{{- if eq ($.Scratch.Get "count") 1 }}
+{{ partial "links" . }}
+{{- end }}
 {{- end }}
 {{ partial "pagination" . }}
 		    </div>{{ "<!-- main -->" | safeHTML }}
