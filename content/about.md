@@ -6,7 +6,7 @@ date = "2014-04-09"
 Ce blog existe pour partager mes découvertes et mes humeurs. J'y parle des sujets qui m'intéressent, en particulier présenter en public, GTD, et le Life Hacking. Je ne gagne rien avec ce blog et aucun article n'est sponsorisé. Il y a juste deux liens, un vers Coding & Bricks, l'entreprise de mon épouse, et un vers Ideas on Stage, mon entreprise. Vous pouvez librement copier et réutiliser tout son contenu, aussi inintéressant soit-il. Ce site est garanti 0 cookies, 0 JavaScript.
 
 ## Coding & Bricks
-[Coding & Bricks](https://www.codingandbricks.com) est l'entreprise de mon épouse. Elle propose d'excellents ateliers LEGO SeriousPlay® pour les entreprises. Si vous ne connaissez pas LEGO SeriousPlay®, essayez, il n'y a pas mieux pour dynamiser une réunion et libérer la créativité et le potentiel de vos collaborateurs. 
+[Coding & Bricks](https://www.codingandbricks.com) est l'entreprise de mon épouse. Elle propose d'excellents ateliers avec la méthode LEGO Serious Play® pour les entreprises. Si vous ne connaissez pas LEGO Serious Play®, essayez, il n'y a pas mieux pour dynamiser une réunion et libérer la créativité et le potentiel de vos collaborateurs. 
 
 Coding & Bricks anime également régulièrement des ateliers pour les enfants et l'éducation.
 
