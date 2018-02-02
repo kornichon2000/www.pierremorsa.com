@@ -6,7 +6,7 @@ publishdate = "2018-02-26T05:00:00+01:00"
 categories  = [ "Présenter en public" ]
 draft       = false
 +++
-Si vous avez regardé le débat entre Emmanuel Macron et Marine Le Pen, vous vous souvenez sûrement de la fin, où Marine Le Pen part dans une sorte de délire sarcastique où elle adopte une stratégie (?) qui consiste à essayer de ridiculiser les propos de son opposant. « Ils sont là… dans les campagnes… »
+Si vous avez regardé le débat entre Emmanuel Macron et Marine Le Pen, vous vous souvenez sûrement de la fin, quand Marine Le Pen part dans une sorte de délire sarcastique où elle adopte une stratégie (?) qui consiste à essayer de ridiculiser les propos de son opposant. « Ils sont là… dans les campagnes… »
 
 Ça n'a pas fonctionné. Mais alors pas du tout. Pourquoi ?
 
