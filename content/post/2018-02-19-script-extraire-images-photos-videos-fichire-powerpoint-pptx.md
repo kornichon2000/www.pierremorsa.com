@@ -17,7 +17,7 @@ Même vous n'avez pas d'expérience avec AppleScript, ce n'est pas compliqué :
 * Ouvrez le script dans l'éditeur de script en double-cliquant dessus.
 * Appuyez sur le bouton "Run" (désolé je ne connais pas son nom en français).
 * Une boîte de dialogue apparaît et vous demande de sélectionner la présentation dont vous voulez extraire le contenu media.
-* Une fois la présentation sélectionnée, les fichiers sont extraits et un dossier nommé "ppt" doit apparaître au même endroit que la présentation originale. À l'intérieur se trouve un dossier media qui contient toutes les images, photos et vidéos de la présentation PowerPoint ! C'est Jamique !
+* Une fois la présentation sélectionnée, les fichiers sont extraits et un dossier nommé "ppt" doit apparaître au même endroit que la présentation originale. À l'intérieur se trouve un dossier media qui contient toutes les images, photos et vidéos de la présentation PowerPoint. C'est Magique !
 
 Vous pouvez très bien transformer le script en application vous-même. Pour cela, il suffit de le sauvegarder de la manière suivante :
 
