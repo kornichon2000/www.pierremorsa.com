@@ -7,7 +7,7 @@ categories  = [ "Lifehacks", "Technomagie" ]
 draft       = false
 +++
 
-J’expliquais dans ce billet de blog pourquoi il faut toujours proposer trois créneaux lorsqu’on demande un rendez-vous. Cela évite de nombreux allers-retours d’email inutiles. Cependant depuis j’ai trouvé un système encore meilleur : [youcanbook.me](https://youcanbook.me)
+[J’expliquais dans ce billet de blog pourquoi il faut toujours proposer trois créneaux lorsqu’on demande un rendez-vous](/post/2016-10-10-proposez-trois-dates-pour-fixer-un-rendez-vous-par-email). Cela évite de nombreux allers-retours d’email inutiles. Cependant depuis j’ai trouvé un système encore meilleur : [youcanbook.me](https://youcanbook.me)
 
 YouCanBookMe est une solution de réservation de rendez-vous en ligne. Plutôt que de donner trois dates, j’ai prédéfini les créneaux disponibles. Mon correspondant ayant plus de choix, il peut choisir le créneau qui lui convient le mieux. Cette solution est gratuite pour les fonctionnalités de base, qui je pense suffiront à la plupart des utilisateurs. La version payante offre une fonctionnalité très utile : la possibilité d’envoyer des emails et des SMS de rappel automatiques avant les rendez-vous, ce qui réduit fortement les risques d’« oublis ».
 
