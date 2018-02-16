@@ -12,4 +12,7 @@ Si vous avez regardé le débat entre Emmanuel Macron et Marine Le Pen, vous vo
 
 Parce qu’en étant sarcastique, on cesse de se comporter en adulte responsable. On évite le problème en se moquant. On n’apporte rien de constructif. On montre que sous la pression on est incapable de se comporter autrement que comme un enfant capricieux. Autrement dit on perd automatiquement sa posture de candidat présidentiable. Le sarcasme peut être mordant, drôle, cynique, effrayant ou effarant, mais il n’est jamais constructif.
 
-Peut-être vous demandez-vous « Mais Donald Trump alors ? » Donald Trump n’utilise pas vraiment le sarcasme. Ses tweets sont plutôt des attaques directes. Cela n’a pas du tout le même effet.
+Plus généralement une des techniques utilisées lors des débats est de se positionner comme étant l'adulte (responsable) face à un enfant (irresponsable). C'est ce qu'a parfaitement illustré la phrase restée célèbre de Mitterrand à Giscard d'Estaing : « Je ne suis pas votre élève, vous n'êtes pas mon professeur ! » Par cette phrase il affirmait son indépendance et son statut d'adulte responsable. Phrase pas du tout improvisée mais soigneusement préparée par ses équipes de communication.
+
+Le sarcasme peut être efficace dans certaines circonstances, lorsqu'on est humoriste par exemple, mais il est très risqué de l'utiliser lors d'un débat. S'il est utilisé, il doit l'être très ponctuellement, et il faut immédiatement rebondir dans une posture d'adulte sous peine de se discréditer soi-même.
+
