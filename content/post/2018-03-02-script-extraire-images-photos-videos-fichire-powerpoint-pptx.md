@@ -1,8 +1,8 @@
 +++
 title       = "Un script pour extraire les images, photos et vidéos d'un fichier PowerPoint"
 author      = "Pierre Morsa"
-date        = "2018-02-19"
-publishdate = "2018-02-19T05:00:00+01:00" 
+date        = "2018-03-02"
+publishdate = "2018-03-02T05:00:00+01:00" 
 categories  = [ "Lifehacks", "Technomagie" ]
 draft       = false
 +++
@@ -15,7 +15,7 @@ Même vous n’avez pas d’expérience avec AppleScript, ce n’est pas compliq
 
 * [Téléchargez le script en cliquant ici.](/files/extract-media-from-powerpoint.scpt)
 * Ouvrez le script dans l’éditeur de script en double-cliquant dessus.
-* Appuyez sur le bouton « Run » (désolé je ne connais pas son nom en français).
+* Appuyez sur le bouton « Run » (désolé je ne connais pas son nom en français, mais c'est le gros bouton avec une flèche).
 * Une boîte de dialogue apparaît et vous demande de sélectionner la présentation dont vous voulez extraire le contenu media.
 * Une fois la présentation sélectionnée, les fichiers sont extraits et un dossier nommé « ppt » doit apparaître au même endroit que la présentation originale. À l’intérieur se trouve un dossier media qui contient toutes les images, photos et vidéos de la présentation PowerPoint. C’est magique !
 
