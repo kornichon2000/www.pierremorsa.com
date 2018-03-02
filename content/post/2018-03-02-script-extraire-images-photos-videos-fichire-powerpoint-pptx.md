@@ -15,7 +15,7 @@ Même vous n’avez pas d’expérience avec AppleScript, ce n’est pas compliq
 
 * [Téléchargez le script en cliquant ici.](/files/extract-media-from-powerpoint.scpt)
 * Ouvrez le script dans l’éditeur de script en double-cliquant dessus.
-* Appuyez sur le bouton « Run » (désolé je ne connais pas son nom en français, mais c'est le gros bouton avec une flèche).
+* Appuyez sur le bouton « Run » (désolé je ne connais pas son nom en français, mais c’est le gros bouton avec une flèche).
 * Une boîte de dialogue apparaît et vous demande de sélectionner la présentation dont vous voulez extraire le contenu media.
 * Une fois la présentation sélectionnée, les fichiers sont extraits et un dossier nommé « ppt » doit apparaître au même endroit que la présentation originale. À l’intérieur se trouve un dossier media qui contient toutes les images, photos et vidéos de la présentation PowerPoint. C’est magique !
 
@@ -23,8 +23,8 @@ Vous pouvez très bien transformer le script en application vous-même. Pour cel
 
 * Sélectionnez le menu Fichier → Exporter...
 * Dans le format de fichier, sélectionnez Application
-* Cliquez sur Sauvegarder et voilà, le script est devenu une application à part entière !
+* Cliquez sur « Sauvegarder ». Et voilà, le script est devenu une application à part entière !
 
-![Extract Media From Powerpoint Export](/pictures/2018/02/extract-media-from-powerpoint-exportas.jpg)
+![Extract Media From PowerPoint Export](/pictures/2018/02/extract-media-from-powerpoint-exportas.jpg)
 
 Désormais il suffit de glisser-déposer la présentation PowerPoint sur l’icône de l’application pour lancer l’extraction, ou de double-cliquer sur l’application pour la lancer comme pour n’importe quelle autre.
