@@ -1,8 +1,8 @@
 +++
 title       = "Un script pour extraire les images, photos et vidéos d'un fichier PowerPoint"
 author      = "Pierre Morsa"
-date        = "2018-03-02"
-publishdate = "2018-03-02T05:00:00+01:00" 
+date        = "2018-03-05"
+publishdate = "2018-03-05T05:00:00+01:00" 
 categories  = [ "Lifehacks", "Technomagie" ]
 draft       = false
 +++
