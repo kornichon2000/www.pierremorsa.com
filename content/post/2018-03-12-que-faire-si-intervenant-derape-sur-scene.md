@@ -3,7 +3,7 @@ title       = "Que faire lorsqu'un de vos intervenants dérape sur scène ?"
 author      = "Pierre Morsa"
 date        = "2018-03-12"
 publishdate = "2018-03-12T05:00:00+01:00" 
-categories  = [ "Storytelling" ]
+categories  = [ "Présenter en public", "Storytelling" ]
 draft       = false
 +++
 Vous avez peut-être entendu parler de l'incident survenu à TEDxBrussels 2018. Un des organisateurs a expulsé une intervenante de la scène par la force parce que son contenu le dérangeait. TED a réagi en publiant un communiqué officiel sur son blog et en révoquant la licence TEDx de cet organisateur. Est-ce que cet intervenant aurait dû être invité par TEDxBrussels ? Probablement pas. Mais malgré le processus de sélection tous les organisateurs de conférence TEDx s'exposent au risque qu'un intervenant parte complètement en live. Pas la peine de se dire « oh non moi j'ai pris mes précautions ça ne peut pas m'arriver ». Ça peut arriver à n'importe qui. D'où ma question.
