@@ -12,11 +12,11 @@ Je sais, cela semble trop beau pour être vrai. Et ça l’est. L’e-cat est un
 
 Première chose que l’on fait lorsqu’on veut écrire un article comme celui est d’aller chercher des informations sur internet. Je tape donc Rossi e-cat dans DuckDuckGo. À ma grande surprise, la plupart des résultats que j’obtiens sont tous positifs. Ils parlent de l’e-cat en termes élogieux.
 
-![e-cat Duckduckgo](/pictures/2018/03/e-cat-duckduckgo.png)
+![e-cat Duckduckgo](/pictures/2018/03/e-cat-duckduckgo.jpg)
 
 Seule ligne mettant en doute les résultats, celui de New Energy Times : « Andrea Rossi and the e-cat con », en français « Andrea Rossi et l’arnaque e-cat » (et non pas le con d’e-cat). Je décide donc d’essayer la même requête avec Google France. Les résultats obtenus sont plus mitigés, mais la grande majorité des résultats soutiennent l’e-cat comme étant légitime.
 
-![e-cat Google.fr](/pictures/2018/03/e-cat-googlefr.png)
+![e-cat Google.fr](/pictures/2018/03/e-cat-googlefr.jpg)
 
 Parmi les sites défendant l’e-cat on retrouve quand même des sources « sérieuses ». Tiens, sur la page DuckDuckGo il y a Forbes et Business Insider (non repris dans la capture d’écran). Me serais-je trompé ? Suis-je en train d’accuser à tort un bon et honnête inventeur ? Mon blog serait-il devenu une pâle imitation de Voici France Dimanche ? En réalité, en prenant le temps de fouiller, je découvrirai plus tard que pratiquement tous ces résultats positifs sont maintenus par des membres de la communauté gravitant autour d’Andrea Rossi. Leçon 1 de bad storytelling : pour rendre votre arnaque crédible, arrangez-vous pour être le premier résultat sur Google. Pourtant, ce n’est pas parce que c’est le résultat le plus évident de la recherche que c’est la vérité.
 
