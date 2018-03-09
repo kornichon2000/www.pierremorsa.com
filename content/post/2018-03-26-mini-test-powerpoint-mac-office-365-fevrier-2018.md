@@ -1,10 +1,10 @@
 +++
 title       = "Mini test de la dernière version de PowerPoint Mac"
 author      = "Pierre Morsa"
-date        = "2018-03-19"
-publishdate = "2018-03-19T05:00:00+01:00" 
+date        = "2018-03-26"
+publishdate = "2018-03-26T05:00:00+01:00" 
 categories  = [ "Présenter en public" , "Technomagie" ]
-draft       = false
+draft       = true
 +++
 Il y a quelques semaines, Microsoft a publié une nouvelle version de PowerPoint qui cache plus de changements qu’il n’y paraît au premier abord. Outre les nouvelles fonctionnalités visibles comme la collaboration en temps réel, PowerPoint partage désormais une bonne partie de son code avec celui de PowerPoint Windows. Quel impact dans l’utilisation quotidienne de PowerPoint ? C’est ce que je vous propose de découvrir ici non pas à travers un test complet (pour cela il faudrait déjà que tous les changements soient documentés clairement par Microsoft), mais à travers un retour d’expérience basé sur quelques semaines d’utilisation.
 

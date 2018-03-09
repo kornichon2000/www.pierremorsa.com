@@ -1,8 +1,8 @@
 +++
 title       = "Utilisez Firefox au lieu de Safari pour tester votre connexion internet sur Mac"
 author      = "Pierre Morsa"
-date        = "2018-03-26"
-publishdate = "2018-03-26T05:00:00+01:00" 
+date        = "2018-04-09"
+publishdate = "2018-04-09T05:00:00+01:00" 
 categories  = [ "Technomagie" ]
 draft       = true
 +++
