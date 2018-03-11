@@ -1,12 +1,8 @@
 			{{ "<!-- layouts:partials:sidebar -->" | safeHTML }}
 			<section id="sidebar">
-			    <section id="intro">
-			        <a href="{{ .RSSLink }}" type="application/rss+xml"
-			                    target="_blank" title="RSS" class="button">{{ with .Site.Params.localized.button.rss }}{{ . | markdownify }}{{ end }}</a>
-			    </section>{{ "<!-- intro -->" | safeHTML }}
 				<section class="blurb">
 				    <p>{{ with .Site.Params.intro.about }}{{ . | markdownify }}{{ end }}</p>
-				        <a href="/about/" class="button">{{ with .Site.Params.localized.button.about }}{{ . | markdownify }}{{ end }}</a>
+				        <a href="/about/" class="button">{{ with .Site.Params.localized.button.about }}{{ . | markdownify }}{{ end }}</a>				        
 				</section>{{ "<!-- blurb -->" | safeHTML }}
 				<div class="hide-lg">
 					<section id="links" class="justify-left">
@@ -26,6 +22,9 @@
 						{{- end }}
 					</section>{{ "<!-- links -->" | safeHTML }}
 				</div>
+       		    <section id="rss">
+					<a href="{{ .RSSLink }}" type="application/rss+xml" target="_blank" title="RSS" class="button">{{ with .Site.Params.localized.button.rss }}{{ . | markdownify }}{{ end }}</a>					        
+       		    </section>{{ "<!-- intro -->" | safeHTML }}
 			    {{- if ne ($.Scratch.Get "showCategories") false }}
 		        <section id="categories">
 		            <ul class="posts">
