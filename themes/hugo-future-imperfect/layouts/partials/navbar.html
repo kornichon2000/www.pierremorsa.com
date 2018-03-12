@@ -1,4 +1,14 @@
 			{{ "<!-- layouts:partials:navbar -->" | safeHTML }}
 			<section id="header">
+    {{- $pic := .Site.Params.intro.pic }}
+    {{- with $pic.src }}
+        {{- if $pic.circle }}
+<a href="/"><img src="{{ . }}" class="intro-circle" width="48" alt="{{ $pic.alt }}" /></a>
+        {{- else if $pic.imperfect }}
+<a href="/" class="logo"><img src="{{ . }}" alt="{{ $pic.alt }}" /></a>
+        {{- else }}
+<a href="/"><img src="{{ . }}" width="{{ $pic.width }}" alt="{{ $pic.alt }}" /></a>
+        {{- end }}
+    {{- end }}
 				<h1><a href="/">{{ with .Site.Title }}{{ . }}{{ end }}</a></h1>
 			</section>{{ "<!-- header -->" | safeHTML }}
