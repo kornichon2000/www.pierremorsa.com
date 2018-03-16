@@ -34,7 +34,7 @@ Désormais les polices incorporées sont supportées sur Mac **si** la police a 
 * Vous voulez réduire la taille de la présentation en retirant la police incorporée.
 * Vous voulez utiliser le mode collaboratif temps réel sur Mac, et bizarrement cela ne fonctionnera pas tant que vous avez une police incorporée dans le fichier !
 
-Heureusement, cette situation n'est que transitoire, Microsoft a prévu d'implémenter la gestion complète des polices incorporées dans une future version.
+Heureusement, cette situation n’est que transitoire, Microsoft a prévu d’implémenter la gestion complète des polices incorporées dans une future version.
 
 ## AppleScript, ça fonctionne toujours !
 En fusionnant le code des versions Windows et Mac, on aurait pu craindre la perte du support d’AppleScript sur Mac. Mais il n’en est rien. Contrairement à un petit éditeur comme Apple disposant de moyens limités, Microsoft a les moyens de supporter AppleScript correctement dans Office 365 pour Mac. Pas de régression sur ce point donc.

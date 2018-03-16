@@ -1,5 +1,5 @@
 +++
-title       = "Résoudre le problème « Failed to Render » dans Apple Motion"
+title       = "Résoudre le problème « Failed to Render » dans Apple Motion et Final Cut Pro X"
 author      = "Pierre Morsa"
 date        = "2018-03-19"
 publishdate = "2018-03-19T05:00:00+01:00" 
@@ -12,6 +12,6 @@ J’utilise de temps en temps Apple Motion, lorsque je dois réaliser des animat
 
 La couleur de l’écran d’erreur étant particulièrement moche, pire encore que le bleu Windows, il fallait que je trouve une solution.
 
-Après vérification tous mes plug-ins externes étaient affectés par ce problème. J’ai contacté le support de Yanobox et FXFactory, et ceux-ci m’ont donné la solution : il s’agit d’un bug introduit par High Sierra sur certains MacBook Pro. Lorsqu’on utilise l’ordinateur avec un écran externe et que l’écran du MacBook Pro est fermé (le mode « palourde » avec lorsque l’ordi est fermé comme un coquillage), certaines ressources nécessaires ne sont pas mises à disposition par macOS.
+Après vérification tous mes plug-ins externes étaient affectés par ce problème, que ce soit dans Apple Motion ou Final Cut Pro X. J’ai contacté le support de Yanobox et FX Factory, et ceux-ci m’ont donné la solution : il s’agit d’un bug introduit par High Sierra sur certains MacBook Pro. Lorsqu’on utilise l’ordinateur avec un écran externe et que l’écran du MacBook Pro est fermé (le mode « palourde » lorsque l’ordi est fermé comme un coquillage), certaines ressources nécessaires ne sont pas mises à disposition par macOS.
 
-La solution en attendant qu’Apple corrige le problème ? Ne pas utiliser le MacBook Pro en mode « clamshell » : ouvrir l’écran du MacBook Pro, quitter et redémarrer Apple Motion. Le problème devrait être résolu.
+La solution en attendant qu’Apple corrige le problème ? Ne pas utiliser le MacBook Pro en mode « clamshell » : ouvrir l’écran du MacBook Pro, quitter et redémarrer Apple Motion ou Final Cut Pro X. Le problème devrait être résolu.
