@@ -2,7 +2,7 @@
 title       = "Copier-coller une illustration au format vectoriel de Affinity Designer vers PowerPoint"
 author      = "Pierre Morsa"
 date        = "2018-04-23"
-publishdate = "2018-03-23T05:00:00+01:00" 
+publishdate = "2018-04-23T05:00:00+01:00" 
 categories  = [ "Technomagie" ]
 draft       = false
 +++
