@@ -4,7 +4,7 @@ author      = "Pierre Morsa"
 date        = "2018-04-02"
 publishdate = "2018-04-02T05:00:00+01:00" 
 categories  = [ "Storytelling" ]
-draft       = true
+draft       = false
 +++
 Connaissez-vous l’e-cat ? Cela veut dire « Energy Catalyzer ». C’est un mécanisme de fusion à froid inventé par Andrea Rossi, un chercheur italien, au début des années 2011. Ce mécanisme a été mesuré comme produisant plus de 6 fois l’énergie qui lui était injectée pour un coût de revient très faible, ce qui en ferait une des sources de production d’énergie bien plus rentable et bien plus sûre que les méthodes de production existantes.
 

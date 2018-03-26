@@ -47,4 +47,4 @@ Ce n’est cependant pas parfait : le portage de l’environnement de développ
 Néanmoins je ne peux que saluer l’effort réalisé par Microsoft pour améliorer Visual Basic dans Office Mac.
 
 ## Conclusion
-Comme déjà mentionné au début de cet article, ce n’est pas une revue en profondeur de PowerPoint, mais plutôt un mon ressenti en utilisation quotidienne avancée. Mon opinion est assez critique, pourtant PowerPoint Mac évolue **enfin** dans le bon sens, même si certains bugs gâchent un peu le plaisir. Allez Microsoft, il ne manque qu’un peu de polissage pour rendre le tout bien plus agréable et fonctionnel.
+Comme déjà mentionné au début de cet article, ce n’est pas une revue en profondeur de PowerPoint, mais plutôt mon ressenti en utilisation quotidienne avancée. Mon opinion est assez critique, pourtant PowerPoint Mac évolue **enfin** dans le bon sens, même si certains bugs gâchent un peu le plaisir. Allez Microsoft, il ne manque qu’un peu de polissage pour rendre le tout bien plus agréable et fonctionnel.
