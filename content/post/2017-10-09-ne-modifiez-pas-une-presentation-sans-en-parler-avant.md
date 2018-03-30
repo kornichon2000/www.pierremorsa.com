@@ -6,7 +6,7 @@ categories = [ "Présenter en public" ]
 draft      = false
 +++
 
-Présent sur un événement la semaine dernière, je vais voir comme à mon habitude la personne en charge de la projection des présentations pour m'assurer qu'il a bien tout et qu'il n'a pas de question. En discutant cinq avec lui, à un moment il me dit :
+Présent sur un événement la semaine dernière, je vais voir comme à mon habitude la personne en charge de la projection des présentations pour m'assurer qu'il a bien tout et qu'il n'a pas de question. En discutant cinq avec lui, à un moment il me dit :
 
 « Il y avait des animations compliquées, j'ai retiré toutes les durées prédéfinies, de toutes façons ça ne marche jamais ».
 

@@ -10,7 +10,7 @@ Keyboard Maestro fait partie du top 5 des programmes que j'utilise tout le temps
 
 Je vais juste évoquer l'amélioration de la partie MIDI ; il est désormais possible de déclencher des actions à partir d'un contrôleur MIDI. 
 
-J'ai un vieux contrôleur MIDI indestructible qui ressemble à un truc sorti d'un film de SF des années 60. Normalement je m'en sers pour contrôler les amplis virtuels de guitare, mais pour la démo je l'ai utilisé pour contrôler... PowerPoint ! Et pourquoi pas après tout ? Lorsqu'on tourne le bouton 1 la transparence de l'objet change. Le bouton 2 change l'épaisseur du trait. Le bouton 3 change la taille de la police de caractères, etc. Lorsqu'on appuie sur le bouton au dessus cela applique le réglage à l'objet sélectionné (par exemple si le bouton est réglé sur une taille de police 24, appuyer sur le bouton va mettre le texte sélectionné en taille 24).
+J'ai un vieux contrôleur MIDI indestructible qui ressemble à un truc sorti d'un film de SF des années 60. Normalement je m'en sers pour contrôler les amplis virtuels de guitare, mais pour la démo je l'ai utilisé pour contrôler... PowerPoint ! Et pourquoi pas après tout ? Lorsqu'on tourne le bouton 1 la transparence de l'objet change. Le bouton 2 change l'épaisseur du trait. Le bouton 3 change la taille de la police de caractères, etc. Lorsqu'on appuie sur le bouton au dessus cela applique le réglage à l'objet sélectionné (par exemple si le bouton est réglé sur une taille de police 24, appuyer sur le bouton va mettre le texte sélectionné en taille 24).
 
 ![Controleur MIDI](/pictures/2017/10/ibk10control.jpg)
 
