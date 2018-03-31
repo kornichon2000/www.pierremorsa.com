@@ -4,7 +4,7 @@ author      = "Pierre Morsa"
 date        = "2018-04-09"
 publishdate = "2018-04-09T05:00:00+01:00" 
 categories  = [ "Technomagie" ]
-draft       = true
+draft       = false
 +++
 
 Depuis le mois de janvier j’ai la chance d’avoir une connexion internet rapide pour mon home office. Il y avait cependant quelque chose qui me chiffonnait : en dépit d’une connexion Gigabit sur chaque maillon (Ethernet et fibre), lorsque j’exécutais un test de performance avec nperf.com ou speedtest.net les débits descendants (téléchargement) restaient bloqués autour de 250 à 300Mbits. 
