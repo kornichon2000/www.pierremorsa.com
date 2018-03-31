@@ -6,6 +6,8 @@ publishdate = "2018-03-19T05:00:00+01:00"
 categories  = [ "Technomagie" ]
 draft       = false
 +++
+Mise à jour du 2018-03-31 : à priori macOS High Sierra 10.13.4 (c'est le .4 qui est important) règle le problème. Pour vérifier quelle est votre version de macOS, il faut aller dans le menu Pomme → À propos de ce Mac...
+
 J’utilise de temps en temps Apple Motion, lorsque je dois réaliser des animations qui dépassent les capacités de PowerPoint. Un de mes plug-ins préférés est Yanobox Nodes 2. Mais la semaine dernière j’ai été confronté à un message d’erreur que je n’avais jamais eu lorsque j’ai essayé d’insérer le plug-in dans Motion : « Plugin<Nodes 2>: Failed To Render ». 
 
 ![Plugin Nodes 2 Failed To Render](/pictures/2018/03/plugin-nodes-2-failed-to-render.jpg)
