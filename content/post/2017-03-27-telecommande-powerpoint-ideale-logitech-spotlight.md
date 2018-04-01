@@ -5,7 +5,6 @@ date       = "2017-03-27"
 categories = [ "Présenter en public" ]
 draft      = false
 +++
-
 J'ai une bonne et une mauvaise nouvelle. La bonne, c'est que j'ai enfin trouvé une télécommande PowerPoint avec une ergonomie correcte. La mauvaise, c'est qu'elle coûte un bras. Donc il ne faut pas en acheter deux, sinon vous ne pourrez plus l'utiliser[^1]. 
 
 Cette télécommande, c'est la Logitech Spotlight. Je ne l'ai moi-même pas achetée mais l'excellent site dédié au Mac [macg.co en a publié un test il y a quelques semaines.](http://www.macg.co/materiel/2017/03/prise-en-main-de-la-telecommande-de-presentation-logitech-spotlight-97698)
