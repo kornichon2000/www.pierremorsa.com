@@ -3,7 +3,7 @@ title      = "Désactiver un trackpad en panne sur un MacBook Pro"
 author     = "Pierre Morsa"
 date       = "2018-04-30"
 publishdate = "2018-04-30T05:00:00+01:00" 
-categories = [ "GTD Getting Things Done" ]
+categories = [ "Technomagie" ]
 draft      = true
 +++
 J'ai un MacBook Pro 15 pouces dont le trackpad est bloqué. Du coup impossible de l'utiliser correctement, l'ordinateur pensant que le bouton de la souris est enfoncé en permanence. Je pourrais le faire réparer, mais il date de 2010 et je n'ai pas trop envie qu'Apple me fasse payer le prix fort pour cette intervention. Heureusement il existe une solution qui consiste à désactiver le trackpad et utiliser une souris externe. 

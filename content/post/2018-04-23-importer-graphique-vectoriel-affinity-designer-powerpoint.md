@@ -3,7 +3,7 @@ title       = "Copier-coller une illustration au format vectoriel de Affinity De
 author      = "Pierre Morsa"
 date        = "2018-04-23"
 publishdate = "2018-04-23T05:00:00+01:00" 
-categories  = [ "Technomagie" ]
+categories  = [ "Présenter en public", "Technomagie" ]
 draft       = true
 +++
 Si, comme moi, vous travaillez souvent avec PowerPoint et Affinity Designer, vous avez dû remarquer que lorsque vous copiez un élément depuis Affinity Designer celui-ci est converti dans un format « bitmap » lorsqu’il est collé dans PowerPoint. L’élément résultant n’est donc plus vectoriel, et ne peut plus être édité.
