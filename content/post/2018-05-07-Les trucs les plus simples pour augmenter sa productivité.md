@@ -4,38 +4,32 @@ author     = "Pierre Morsa"
 date       = "2018-05-07"
 publishdate = "2018-05-07T05:00:00+01:00" 
 categories = [ "GTD Getting Things Done" ]
-draft      = true
+draft      = false
 +++
-Je ne suis pas adepte de l'achat d'objets pour améliorer sa productivité ou atteindre ses objectifs. Je n'ai jamais vu personne se mettre sérieusement au tennis simplement parce qu'il avait acheté une raquette. Pourtant il y a un objet qui permet d'augmenter sa productivité, immédiatement et sans effort, va satisfaire votre envie d'achat et vous rendre plus intelligent. Cet objet, c'est un grand moniteur. 
+Il existe un objet qui permet d’augmenter sa productivité, immédiatement, sans effort, et en satisfaisant votre envie d’achat. Cet objet, c’est un grand moniteur. Ou plus exactement, c’est d’augmenter la *résolution utile* disponible. La résolution utile, c’est celle qui détermine la quantité d’information utile qui peut être affichée. Comprendre la distinction entre résolution utile et matérielle demande une petite explication, ceci étant parfois très confus.
 
-C'est tout bête, mais le fait de pouvoir afficher une présentation en entier ou afficher deux documents côte à côte divise par deux ou trois le temps nécessaire pour réaliser une tâche donnée.
+## Distinguer résolution utile et résolution matérielle
+L’écran 15 pouces (38 cm de diagonale) de mon MacBook Pro a une *résolution matérielle* de 2880 x 1800 pixels. La résolution matérielle, c’est le nombre de pixels que l’écran est effectivement capable d’afficher. Cela peut sembler énorme, pourtant sa *résolution utile* par défaut est de « seulement » 1440 x 900 pixels. Pourquoi ? Parce que chaque élément d’information utilise quatre pixels au lieu d’un pour s’afficher, et ce afin de rendre l’image plus fine. Grâce à cette finesse, on ne voit plus les pixels individuels sur l’écran retina du MacBook Pro, l’image semble plus nette et lisse. Par contre, vous afficherez exactement la même quantité de texte que sur un vieux MacBook Pro 15 pouces non retina ayant une résolution matérielle 1440 x 900 pixels, car la résolution utile est identique : 1440 x 900 pixels.
 
-Alors, quel type de moniteur acheter ? Le truc, c'est que c'est la surface utile qui compte.
+Même constat pour les écrans de 24 pouces (60 centimètres). La résolution utile de ces écrans est en général de 1920 x 1080 pixels. En effet, même lorsqu’ils disposent d’une résolution 4K de 3840 x 2160 pixels, celle-ci ne peut pas être utilisée pour quadrupler la résolution utile : chaque élément affiché serait alors beaucoup trop petit. Tout comme sur l’écran du MacBook Pro Retina, cette résolution matérielle supplémentaire est utilisée pour affiner l’affichage des informations, et non pour en augmenter la quantité.
 
-Il faut bien distinguer la résolution « utile » et la résolution « retina ».
- 
-À mon sens un écran d'ordinateur n'a pas la même vocation qu'un écran de téléphone, et le gain de résolution doit être utilisé pour afficher plus de fenêtres, pas pour affiner l'affichage des fenêtres existantes. C'est pourquoi je préfère les écrans non retina.
+À l’inverse certains écrans de 40 pouces (100 cm, 1 mètre de diagonale) ont une résolution matérielle ridicule de 1920 x 1080 pixels. Dans ce cas, malgré un écran d’une taille géante, votre résolution utile sera également de 1920 x 1080 pixels, car elle sera limitée par la faible résolution matérielle.
 
-Pour apporter un gain de productivité mesurable, la taille *minimum* d'un moniteur externe doit être de 24" avec une résolution de 1920 x 1080 (Full HD). En dessous de cette taille la différence sera négligeable. Mon moniteur actuel fait 34" et a une résolution utile de 3440 x 1440 pixels. Je peux afficher une présentation ou une vidéo en Full HD et j'ai encore la place pour afficher les palettes d'outils autour. Aujourd'hui on trouve des moniteurs de 40" ayant une résolution utile de 3840 x  2160, ce qui correspond à là résolution utile de quatre écrans HD ! Cela peut sembler « trop », mais lorsqu'on jongle avec de grands documents ou plusieurs fenêtres en même temps le gain de confort et de productivité se fait immédiatement ressentir.
+## Quelle résolution utile viser ?
+Pour gagner en productivité, il est donc nécessaire d’augmenter en priorité la résolution utile, une résolution retina apportant un confort indéniable, mais n’augmentant pas la quantité d’information utile affichée.
 
-* La résolution minimum *non retina* du moniteur doit être d'au moins 1920 x 1080 (Full HD). 
+Pour déterminer si un écran externe apportera un gain de résolution utile, voici une liste des résolutions matérielles non retina (on voit les pixels individuels) et retina (chaque pixel utile utilise 4 pixels physiques pour affiner la qualité d’affichage) minimum à viser pour les tailles d’écran les plus courantes.
 
-## Un, deux, trois moniteurs ?
+* 24 pouces : 1920 x 1080 pixels non retina (Full HD) ou 3840 x 2160 pixels retina (4K)
+* 27 pouces : 2560 x 1440 pixels non retina ou 5120 x 2880 pixels retina (5K)
+* 32 - 34 pouces : 3440 x 1440 pixels (ces écrans sont souvent au format ultra widescreen).
+* 40 pouces ou plus : 3840 x 2160 pixels non retina (4K)
 
-il existe des trucs tout simples pour améliorer sa productivité. certains trucs 
+Remarquez comme un écran de 24 pouces retina 4K a le même nombre de pixels physiques qu’un écran de 40 pouces 4K. Ce qui compte ici c’est la différence de taille : un écran de 40 pouces 4K ne sera pas retina : il utilisera chaque pixel pour afficher de l’information utile. Si on faisait la même chose sur un écran 24 pouces 4K, tout serait presque quatre fois plus petit et le texte serait pratiquement illisible.
 
-Avec GTD et 
-Les trucs les plus simples pour augmenter sa productivité. Du plys simple au plus difficile
+## En conclusion
+Pour qu’un moniteur externe apporte un confort supplémentaire par rapport à l’écran intégré d’un ordinateur portable, il faut au minimum que celui-ci ait une diagonale de 24 pouces et une résolution non retina de 1920 x 1080 pixels, ou 3840 x 2160 pixels retina. Personnellement, mon choix est clair : pour gagner en productivité, il vaut mieux choisir un moniteur de 27 pouces avec une résolution utile de 2560 x 1440 pixels qu’un moniteur de 24 pouces avec une résolution retina de 3840 x 2160 pixels, car le moniteur 27 pouces permettra d’afficher plus d’informations.
 
-Utiliser un grand écran. C'est fou comme pouvoir afficher une présentation full HD en taille réelle et encore avoir la place pour afficher un document à côté change la vie.
+Essayez de choisir des combinaisons taille - résolution proches de celles données plus haut dans l’article. Évitez les combinaisons bâtardes comme un 20 pouces avec une résolution de 2560 x 1440 pixels : celle-ci est à la fois trop élevée pour être utilisée en résolution utile (les éléments seront trop petits) et trop faible pour être utilisée en résolution retina (les éléments seront trop gros et il n’y aura aucun gain de surface utile).
 
-Utiliser un ordi rapide
-
-aller dormir tot
-faire du sport
-taper à 10 doigts
-se mettre a gtd
-jeter facebook et twitter a la poubelle. Ou au moins les deplacer au purgatoire.
-apprendre a simplement faire (en restant detache du resultat)
-automatiser
-reduire les interruptions
+Enfin n’oubliez pas de vérifier que la carte graphique de votre ordinateur supporte la résolution de votre nouvel écran.
