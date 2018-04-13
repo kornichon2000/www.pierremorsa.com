@@ -31,7 +31,7 @@ paginate                 = 5
     headerleft  = "Pierre"
     headerright = "Morsa"
     paragraph 	= "Présenter en public, Getting Things Done, Lifehacks, Technomagie etc."
-    about     	= "Pierre Morsa est Partner + Creative Director chez <a href='https://www.pierremorsa.com/ideas-on-stage/'>Ideas on Stage</a>, la première agence globale de création de présentations. <br>Pour me contacter écrivez-moi à<br>p i e r r e . m o r s a @ pierremorsa.com"
+    about     	= "Pierre Morsa est Partner + Creative Director chez <a href='https://www.pierremorsa.com/ideas-on-stage/'>Ideas on Stage</a>, la première agence globale de création de présentations. <br><br>Pour me contacter écrivez-moi à<br><a href='m&#97;ilt&#111;&#58;&#112;i&#101;r%&#55;&#50;e&#46;%6D&#111;&#114;&#115;%61&#64;p&#109;&#46;m&#101;'>pierre&#46;morsa&#64;&#112;m&#46;m&#101;</a>"
 
 # This will also appear on the sidebar.
 # A width of less than 100px is recommended
