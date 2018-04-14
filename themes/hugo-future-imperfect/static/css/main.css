@@ -768,9 +768,15 @@ body {
 	color: #bbbbbb;
 }
 
-@media screen and (max-width:980px) {   
+@media screen and (max-width:320px) {   
     #header h1 {
     	font-size: 0.5em;
+    }
+}
+
+@media screen and (max-width:980px) {   
+    #header h1 {
+    	font-size: 0.7em;
     }
 }
 
@@ -903,7 +909,7 @@ body {
 
     #intro header p {
     	color: #bbbbbb;
-        font-size: 0.7em;
+        font-size: 1em;
     }
 
     #intro > :last-child {
@@ -972,6 +978,7 @@ body {
 .hide-lg {
 	display: none;
 }
+
 @media screen and (min-width:981px) {
 	.hide-lg {
 		display: block;

@@ -1,7 +1,7 @@
 					{{ "<!-- layouts:post:header -->" | safeHTML }}
 					<header>
 					    <div class="title">
-					        <h2><a href="{{ .URL }}">{{ .Title }}</a></h2>
+					        <h2><a href="{{ .URL }}">{{ .Title  | markdownify  }}</a></h2>
 					        {{- with .Description }}
 					        <p>{{ . }}</p>
 					        {{- end }}
