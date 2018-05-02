@@ -7,7 +7,7 @@ categories = [ "Technomagie" ]
 draft      = false
 +++
 
-Mise à jour du 2018-05-02 : le chevalier d'or du Taureau @DandumontP m'a fait remarquer que ce problème peut arriver parce que la batterie interne, située sous le trackpad, commence   à gonfler. Dans ce cas il vaut mieux faire remplacer la batterie du Mac.
+Mise à jour du 2018-05-02 : le chevalier d'or du Taureau [@DandumontP](https://twitter.com/DandumontP) m'a fait remarquer que ce problème peut arriver parce que la batterie interne, située sous le trackpad, commence   à gonfler. Dans ce cas il vaut mieux faire remplacer la batterie du Mac.
 
 J'ai un MacBook Pro 15 pouces dont le trackpad est bloqué. Du coup impossible de l'utiliser correctement, l'ordinateur pensant que le bouton de la souris est enfoncé en permanence. Je pourrais le faire réparer, mais il date de 2010 et je n'ai pas trop envie qu'Apple me fasse payer le prix fort pour cette intervention. Heureusement il existe une solution qui consiste à désactiver le trackpad et utiliser une souris externe. 
 
