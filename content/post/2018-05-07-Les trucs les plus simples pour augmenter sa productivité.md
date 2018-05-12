@@ -11,12 +11,12 @@ Il existe un objet qui permet d’augmenter sa productivité, immédiatement, sa
 ## Distinguer résolution utile et résolution matérielle
 L’écran 15 pouces (38 cm de diagonale) de mon MacBook Pro a une *résolution matérielle* de 2880 x 1800 pixels. La résolution matérielle, c’est le nombre de pixels que l’écran est effectivement capable d’afficher. Cela peut sembler énorme, pourtant sa *résolution utile* par défaut est de « seulement » 1440 x 900 pixels. Pourquoi ? Parce que chaque élément d’information utilise quatre pixels au lieu d’un pour s’afficher, et ce afin de rendre l’image plus fine. Grâce à cette finesse, on ne voit plus les pixels individuels sur l’écran retina du MacBook Pro, l’image semble plus nette et lisse. Par contre, vous afficherez exactement la même quantité de texte que sur un vieux MacBook Pro 15 pouces non retina ayant une résolution matérielle 1440 x 900 pixels, car la résolution utile est identique : 1440 x 900 pixels[^1].
 
-Même constat pour les écrans de 24 pouces (60 centimètres). La résolution utile de ces écrans est en général de 1920 x 1080 pixels. En effet, même lorsqu’ils disposent d’une résolution 4K de 3840 x 2160 pixels, celle-ci ne peut pas être utilisée pour quadrupler la résolution utile : chaque élément affiché serait alors beaucoup trop petit. Tout comme sur l’écran du MacBook Pro Retina, cette résolution matérielle supplémentaire est utilisée pour améliorer la qualité d'affichage des informations, et non pour en augmenter la quantité.
+Même constat pour les écrans de 24 pouces (60 centimètres). La résolution utile de ces écrans est en général de 1920 x 1080 pixels. En effet, même lorsqu’ils disposent d’une résolution 4K de 3840 x 2160 pixels, celle-ci ne peut pas être utilisée pour quadrupler la résolution utile : chaque élément affiché serait alors beaucoup trop petit. Tout comme sur l’écran du MacBook Pro Retina, cette résolution matérielle supplémentaire est utilisée pour améliorer la qualité d’affichage des informations, et non pour en augmenter la quantité.
 
 À l’inverse certains écrans de 40 pouces (100 cm, 1 mètre de diagonale) ont une résolution matérielle ridicule de 1920 x 1080 pixels. Dans ce cas, malgré un écran d’une taille géante, votre résolution utile sera également de 1920 x 1080 pixels, car elle sera limitée par la faible résolution matérielle.
 
 ## Quelle résolution utile viser ?
-Pour gagner en productivité, il est donc nécessaire d’augmenter en priorité la résolution utile, une résolution retina apportant une qualité d'affichage indéniable, mais n’augmentant pas la quantité d’information utile affichée.
+Pour gagner en productivité, il est donc nécessaire d’augmenter en priorité la résolution utile, une résolution retina apportant une qualité d’affichage indéniable, mais n’augmentant pas la quantité d’information utile affichée.
 
 Pour déterminer si un écran externe apportera un gain de résolution utile, voici une liste des résolutions matérielles non retina (on voit les pixels individuels) et retina (chaque pixel utile utilise 4 pixels physiques pour affiner la qualité d’affichage) minimum à viser pour les tailles d’écran les plus courantes.
 
@@ -34,4 +34,4 @@ Essayez de choisir des combinaisons taille - résolution proches de celles donn
 
 Enfin n’oubliez pas de vérifier que la carte graphique de votre ordinateur supporte la résolution de votre nouvel écran.
 
-[^1]: Je sais que ce n'est pas tout à fait vrai, le MacBook Pro Retina 15" pouvant simuler une résolution utile jusqu'à 1920 x 1200 pixels. J'ai cependant ignoré ce cas particulier pour simplifier l'explication.
+[^1]: Je sais que ce n’est pas tout à fait vrai, le MacBook Pro Retina 15" pouvant simuler une résolution utile jusqu’à 1920 x 1200 pixels. J’ai cependant ignoré ce cas particulier pour simplifier l’explication.
