@@ -4,7 +4,7 @@ author     = "Pierre Morsa"
 date       = "2018-07-02"
 publishdate = "2018-07-02T05:00:00+01:00" 
 categories = [ "GTD Getting Things Done" ]
-draft      = true
+draft      = false
 +++
 Cela vous est sûrement déjà arrivé : vous achetez un truc en pensant que cela va vous faire gagner en productivité. Mais petit à petit, vous réalisez que le bénéfice apporté est complètement anéanti par le besoin de maintenance de ce truc. Et que finalement le gain de productivité n'en est pas vraiment un. Pour éviter cela, j'ai une philosophie *low maintenance*, autrement dit « entretien minimum ».
 
