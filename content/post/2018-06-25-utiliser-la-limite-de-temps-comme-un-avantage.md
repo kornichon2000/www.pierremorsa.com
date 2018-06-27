@@ -10,4 +10,4 @@ Depuis quelques mois, nous utilisons Zoom pour réaliser nos vidéoconférences.
 
 Mais si au lieu de considérer cela comme un problème, on considérait cela comme un avantage ? C’est exactement ce que nous faisons : la vidéoconférence dure 40 minutes. Impossible de la faire durer plus longtemps. Cela nous force à nous concentrer sur l’essentiel, réduisant les discussions inutiles et les pertes de temps. Si un sujet n’a pas pu être traité, tant pis, il sera traité une autre fois.
 
-De manière générale, s'imposer une limite « dure » de temps est toujours bénéfique.
+De manière générale, s’imposer une limite « dure » de temps est toujours bénéfique.
