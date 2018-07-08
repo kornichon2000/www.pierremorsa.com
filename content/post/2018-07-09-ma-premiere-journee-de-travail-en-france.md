@@ -11,9 +11,13 @@ Tiens, la France et la Belgique vont taper dans un ballon ensemble mardi. Alors 
 À la sortie de l’école, j’avais été embauché à Bruxelles, par un très connu cabinet de conseil américain. Je revenais d’une mission en Allemagne, ma première, qui s’était très bien passée. Cela faisait un petit bout de temps que l’on m’avait dit que j’allais probablement aller travailler sur un projet à Lille.
 
 Un vendredi matin, le téléphone sonne. Un mec hyper énervé me parle :
+
 − Il faut absolument que tu viennes aujourd’hui.
+
 – Moi : OK, je vais regarder les horaires de trains.
+
 – Non non, il faut que tu viennes tout de suite, va louer une voiture.
+
 – Moi : euh, OK, j’y vais.
 
 Au son de la voix du mec, il me donne l’impression qu’il me reproche de ne pas avoir deviné que je devais être à Lille ce jour-là. Je pars donc chez Avis en quatrième vitesse louer une voiture et je me mets en route pour Lille. Après avoir un peu galéré pour trouver les bureaux du client (à l’époque il n’y avait pas encore de GPS), je me gare et je me présente à l’accueil. Là, je suis accueilli par un groupe de personnes hyper énervées, qui me regardent deux secondes, et me disent « on n’a pas le temps, attends ici ! ».
