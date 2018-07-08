@@ -12,11 +12,11 @@ Tiens, la France et la Belgique vont taper dans un ballon ensemble mardi. Alors 
 
 Un vendredi matin, le téléphone sonne. Un mec hyper énervé me parle :
 
-− Il faut absolument que tu viennes aujourd’hui.
+− Le mec : Il faut absolument que tu viennes aujourd’hui.
 
 – Moi : OK, je vais regarder les horaires de trains.
 
-– Non non, il faut que tu viennes tout de suite, va louer une voiture.
+– Le mec : Non non, il faut que tu viennes tout de suite, va louer une voiture.
 
 – Moi : euh, OK, j’y vais.
 
