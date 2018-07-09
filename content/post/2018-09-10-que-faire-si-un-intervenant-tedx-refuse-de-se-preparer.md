@@ -1,8 +1,8 @@
 +++
 title      = "Que faire si un de vos intervenants TEDx refuse de se préparer ?"
 author     = "Pierre Morsa"
-date        = "2018-07-09"
-publishdate = "2018-07-09T05:00:00+01:00" 
+date        = "2018-09-10"
+publishdate = "2018-07-10T05:00:00+01:00" 
 categories = [ "Présenter en public", "TEDx" ]
 draft      = true
 +++
