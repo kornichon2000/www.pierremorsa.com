@@ -22,7 +22,7 @@ Un vendredi matin, le téléphone sonne. Un mec hyper énervé me parle :
 
 Au son de la voix du mec, il me donne l’impression qu’il me reproche de ne pas avoir deviné que je devais être à Lille ce jour-là. Je pars donc chez Avis en quatrième vitesse louer une voiture et je me mets en route pour Lille. Après avoir un peu galéré pour trouver les bureaux du client (à l’époque il n’y avait pas encore de GPS), je me gare et je me présente à l’accueil. Là, je suis accueilli par un groupe de personnes hyper énervées, qui me regardent deux secondes, et me disent « on n’a pas le temps, attends ici ! ».
 
-J’attends. Quelques heures. Jusqu’à quatre heures de l’après-midi. À ce moment je les vois revenir encore plus énervés. Ils me regardent. Je leur demande ce que je peux faire. Ils me répondent : « on n’a pas le temps, on doit reprendre le train pour Paris ! » Et ils s’en vont, dare-dare, en me laissant là.
+J’attends. Quelques heures. Jusqu’à quatre heures de l’après-midi. À ce moment je les vois revenir encore plus énervés. Ils me regardent. Je leur demande ce que je peux faire. Ils me répondent : « on n’a pas le temps, on doit reprendre le train pour Paris ! Reviens lundi. » Et ils s’en vont dare-dare, en me laissant là.
 
 Ça, mesdames et messieurs, fut ma première journée de travail avec mes collègues ~~français~~ parisiens d’un certain cabinet de conseil.
 
