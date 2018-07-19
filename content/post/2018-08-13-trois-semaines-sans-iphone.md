@@ -7,4 +7,4 @@ categories  = [ "Nouvelles" ]
 draft       = false
 +++
 
-Je suis toujours vivant. Le monde ne s'est pas arrêté de tourner. Je ne me suis même pas perdu.
+Je suis toujours vivant. Le monde ne s’est pas arrêté de tourner. Je ne me suis même pas perdu.
