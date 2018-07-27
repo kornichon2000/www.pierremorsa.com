@@ -6,9 +6,9 @@ publishdate = "2018-07-30T05:00:00+01:00"
 categories = [ "Nouvelles" ]
 draft      = false
 +++
-Cet été je serai présent au [festival d'astronomie de Fleurance,](http://www.festival-astronomie.com) où j’aiderai Coding & Bricks à animer des ateliers de robotique et de programmation autour du thème de l’exploration spatiale. Si vous passez par là entre le 4 et le 10 août avec vos enfants, venez nous rendre visite !
+Cet été je serai présent au [festival d'astronomie de Fleurance,](http://www.festival-astronomie.com) où j’aiderai [Coding & Bricks](https://www.codingandbricks.com) à animer des ateliers de robotique et de programmation autour du thème de l’exploration spatiale. Si vous passez par là entre le 4 et le 10 août avec vos enfants, venez nous rendre visite !
 
-Pour l’occasion nous avons créé des cartes spéciales. La première reprend le principe du circuit, mais avec une astuce : le circuit est de difficulté progressive. Pourquoi ? Vous vous souvenez du principe « plancher bas, plafond haut » qui veut qu’une bonne activité soit accessible au plus grand nombre tout en offrant un challenge aux personnes plus expérimentées ? C’est exactement pour cela que le circuit a une difficulté progressive. Il commence par une ligne droite, et au fur et à mesure il devient de plus en plus difficile à suivre. Il y a également des repères sur le bord de la carte, pour que chaque participant puisse mesurer sa progression.
+Pour l’occasion nous avons créé des cartes spéciales. La première reprend le principe du circuit, mais avec une astuce : le circuit est de difficulté progressive. Pourquoi ? Vous vous souvenez du principe « [plancher bas, plafond haut](/post/2018-01-22-plancher-bas-plafond-haut/) » qui veut qu’une bonne activité soit accessible au plus grand nombre tout en offrant un challenge aux personnes plus expérimentées ? C’est exactement pour cela que le circuit a une difficulté progressive. Il commence par une ligne droite, et au fur et à mesure il devient de plus en plus difficile à suivre. Il y a également des repères sur le bord de la carte, pour que chaque participant puisse mesurer sa progression.
 
 ![Codingandbricks Circuit Ev3 Blanc](/pictures/2018/07/codingandbricks-circuit-ev3-blanc.jpg)
 
