@@ -4,7 +4,7 @@ author     = "Pierre Morsa"
 date        = "2018-09-03"
 publishdate = "2018-09-03T05:00:00+01:00" 
 categories = [ "Présenter en public", "TEDx" ]
-draft      = true
+draft      = false
 +++
 
 Mon blog n’est pas mon activité principale, et heureusement, vu qu’il ne me rapporte rien. Pourtant cela fait maintenant 2 ans que je publie un article chaque lundi, à l’exception de la pause estivale, alors qu’auparavant j’arrivais péniblement à publier 3 articles par an, et que cela se faisait toujours dans la douleur. En y réfléchissant, il y a plusieurs points qui m’ont permis de vaincre la procrastination. Les voici, sans ordre particulier. 
