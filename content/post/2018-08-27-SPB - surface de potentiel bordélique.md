@@ -1,6 +1,6 @@
 SPB : surface de potentiel bordélique.
 
-Vous avez besoin de vous organiser. De ranger. D'ordonner. Vous installez donc logiquement des étagères supplémentaires dans votre bureau.
+C'est le bordel dans votre bureau. Des papiers traînent partout.  Vous avez besoin de vous organiser. De ranger. D'ordonner. Vous manquez de place. Vous installez donc logiquement des étagères supplémentaires dans votre bureau.
 
 Vous ne venez pas de vous organiser. Vous venez d'augmenter votre PSB : votre Potentiel de Surface Bordélique. Petit à petit, le désordre va revenir. Inéluctablement. Et vous venez d'augmenter la surface sur laquelle il va pouvoir s'installer.
 

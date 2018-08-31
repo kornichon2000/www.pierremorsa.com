@@ -21,4 +21,4 @@ Le deuxième plan est une carte stylisée pour représenter le sol de Mars. On p
 
 Les cartes sont complétées de cratères qui ont été imprimés en 3D par le Fab Lab du Touquet.
 
-Ces prochaines semaines mon blog passe en mode pause estivale annuelle. Reprise des activités fin août !
+Mon blog passe en mode pause estivale annuelle. Reprise des activités fin août !
