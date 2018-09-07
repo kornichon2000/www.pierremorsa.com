@@ -1,5 +1,5 @@
 +++
-title      = "La vérité, c'est chiant"
+title      = "La réalité, c'est chiant"
 author     = "Pierre Morsa"
 date        = "2018-09-24"
 publishdate = "2018-09-24T05:00:00+01:00" 
@@ -8,9 +8,9 @@ draft      = false
 +++
 Il ne se passe pas une semaine sans que l’on ne découvre[^1] dans la presse un nouveau régime qui nous promet longue vie et prospérité. Ces régimes ont toujours les mêmes caractéristiques. Ils font des promesses incroyables. Ils se basent sur des explications scientifiques assez ténues et souvent contradictoires ou prises hors contexte. Ils excluent certains groupes d’aliments qui sont vus comme les philistins de la bouffe. Et ils sont défendus par une communauté à la ferveur quasi religieuse.
 
-Oui, certains de ces régimes font perdre du poids. Mais la vérité, c’est que ça fait des siècles qu’on connaît la solution pour être en bonne santé. Il suffit de manger et boire avec modération et faire un peu de sport régulièrement. La vérité, c’est que vivre centenaire ou plus est aussi lié à la loterie génétique et à la chance.
+Oui, certains de ces régimes font perdre du poids. Mais la réalité, c’est que ça fait des siècles qu’on connaît la solution pour être en bonne santé. Il suffit de manger et boire avec modération et faire un peu de sport régulièrement. La réalité, c’est que vivre centenaire ou plus est aussi lié à la loterie génétique et à la chance.
 
-C’est ennuyeux. C’est même très chiant. C’est exactement le genre de truc que te dirait le schtroumpf à lunettes avant de se prendre un gros coup de marteau sur la tête. Ça ne donne pas envie. Ça ne vend pas de livres ni de produits miracles. Ça ne crée pas de système de croyances. Mais c’est la vérité.
+C’est ennuyeux. C’est même très chiant. C’est exactement le genre de truc que te dirait le schtroumpf à lunettes avant de se prendre un gros coup de marteau sur la tête. Ça ne donne pas envie. Ça ne vend pas de livres ni de produits miracles. Ça ne crée pas de système de croyances. Mais c’est la réalité.
 
 Pour les startups, c’est pareil. On les entend parler de MVP, de pivot, de levée de fonds, des nouveaux locaux trop hype, du prochain Web Summit. Mais jamais de cash flow. Vous savez, le truc chiant, pas intéressant, qui détermine juste si tu mets la clé sous le paillasson à la fin du mois. De fait, le nombre de startups qui ne vivent que pour la prochaine levée de fonds est assez hallucinant. C’en est presque à croire que les investisseurs ont la fibre socialiste.
 
