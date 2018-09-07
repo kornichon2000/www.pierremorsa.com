@@ -4,7 +4,7 @@ author     = "Pierre Morsa"
 date        = "2018-09-10"
 publishdate = "2018-09-10T05:00:00+01:00" 
 categories = [ "Présenter en public", "TEDx" ]
-draft      = true
+draft      = false
 +++
 Si vous avez déjà organisé une conférence TEDx, vous avez peut-être dû faire face à cette situation. Un intervenant refuse de se préparer, en invoquant diverses raisons : il a l’habitude de parler en public, pas le temps, piscine...
 
