@@ -10,4 +10,4 @@ Imaginez une situation qui ne vous est probablement jamais arrivée. C’est le 
 
 Vous ne venez pas de vous organiser. Vous venez d’augmenter votre PSB : votre Potentiel de Surface Bordélique. Petit à petit, le désordre va revenir. Inéluctablement. Et vous venez d’augmenter la surface sur laquelle il va pouvoir s’installer.
 
-Car bien souvent, **ce n’est pas de place que nous manquons, mais d’un système efficace pour ranger au fur et à mesure**. Et parfois, nous avons le système, mais par paresse ou par oubli nous ne le mettons pas en pratique.
+Car bien souvent, **ce n’est pas de place que nous manquons, mais d’un système efficace pour éviter que le bazar ne s'accumule au fur et à mesure**. Et parfois, nous avons le système, mais par paresse ou par oubli nous ne le mettons pas en pratique.

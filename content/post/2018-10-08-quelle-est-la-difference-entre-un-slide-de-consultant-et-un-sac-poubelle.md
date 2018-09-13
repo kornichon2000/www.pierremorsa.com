@@ -1,8 +1,8 @@
 +++
 title      = "Quelle est la différence entre un slide de consultant et un sac poubelle ?"
 author     = "Pierre Morsa"
-date        = "2018-10-01"
-publishdate = "2018-10-01T05:00:00+01:00" 
+date        = "2018-10-08"
+publishdate = "2018-10-08T05:00:00+01:00" 
 categories = [ "Présenter en public" ]
 draft      = false
 +++
