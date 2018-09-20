@@ -1,5 +1,5 @@
 +++
-title      = "La réalité, c'est chiant"
+title      = "La réalité, c'est chiant."
 author     = "Pierre Morsa"
 date        = "2018-09-24"
 publishdate = "2018-09-24T05:00:00+01:00" 
@@ -20,6 +20,6 @@ Lors de sa première vie à Apple puis à NeXT, Steve Jobs avait l’habitude de
 
 Et ce qui fait la force d’un mec comme Warren Buffett, c’est qu’il regarde la réalité. Il s’attache à séparer les faits des croyances. Il refuse de se faire aveugler par le bling-bling de sociétés comme Uber ou Tesla. Il n’aurait jamais investi dans l’Apple génial et à la mode, mais bourrée de problèmes des années 80. L’Apple d’aujourd’hui dans laquelle il a investi n’est plus une startup, c’est une grosse machine bien huilée, qui maîtrise parfaitement le cycle de renouvellement de ses produits et est capable de prédire la demande avec une précision incroyable. La stratégie de Warren Buffett est ennuyeuse à mourir. Elle ne fait pas rêver. Elle est loin du glamour des « Hedge funds ». Mais elle fonctionne.
 
-Se baser sur la réalité, c’est ennuyeux. C’est schtroumpfàlunettique. Mais ça marche.
+Se baser sur la réalité, c’est ennuyeux. C’est schtroumpfàlunettique. Mais ça donne de bien meilleurs résultats.
 
 [^1]: En réalité, si vous connaissez un peu comment cela fonctionne, la « découverte » de ces régimes est fortement aidée par les agences de relations publiques.
