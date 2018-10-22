@@ -10,9 +10,7 @@ La semaine dernière mon épouse était à la conférence LEGO Serious Play, au 
 
 « Focus »
 
-Et la salle éclate de rire. Elle, ne comprend pas vraiment pourquoi, et continue comme si de rien était.
-
-La raison ? Lorsqu'on prononce Focus avec un accent français, un anglophone entend « fuck us ». Ce n'est pas tout à fait la même chose.
+Et la salle éclate de rire. Elle, ne comprend pas vraiment pourquoi, et continue comme si de rien était. La raison ? Lorsqu'on prononce Focus avec un accent français, un anglophone entend « fuck us ». Ce n'est pas tout à fait la même chose.
 
 C'est pareil avec « sheet ». Prononcé à la française, les anglophones entendent « shit ».
 
