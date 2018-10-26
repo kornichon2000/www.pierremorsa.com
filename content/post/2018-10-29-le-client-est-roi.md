@@ -4,7 +4,7 @@ author     = "Pierre Morsa"
 date        = "2018-10-29"
 publishdate = "2018-10-29T05:00:00+01:00" 
 categories = [ "Nouvelles" ]
-draft      = true
+draft      = false
 +++
 Le problème, c'est qu'un client roi a le pouvoir. Il a le pouvoir de faire réussir... ou de détruire une entreprise.
 
