@@ -4,7 +4,7 @@ author     = "Pierre Morsa"
 date        = "2018-10-29"
 publishdate = "2018-10-29T05:00:00+01:00" 
 categories = [ "Nouvelles" ]
-draft      = true
+draft      = false
 +++
 Le problème, c'est qu'un client roi a le pouvoir. Il a le pouvoir de faire réussir... ou de détruire une entreprise.
 
@@ -12,4 +12,4 @@ Prenons l'exemple de l'iPhone. Si Apple avait écouté le client, ils auraient l
 
 De nombreux éditeurs de logiciel ont également pu en faire l'expérience. « On s'en fiche des nouvelles fonctionnalités, tout ce qu'on veut, c'est que le logiciel soit plus stable ! » Une fois la nouvelle version disponible, aucun utilisateur ne l'achète car il n'y a aucune nouvelle fonctionnalité. À l'inverse, les développeurs qui se retrouvent à accepter toutes les demandes des clients se retrouvent rapidement avec une bouse impossible à maintenir.
 
-Le problème est le même pour les agences web, les designers, les architectes, etc. Dans tous les cas, le résultat obtenu sera meilleur si le pouvoir n'est pas donné à un client roi, mais à la personne qui a la meilleure vision des vrais besoins de demain et la compétence pour l'exécuter.
+Le problème est le même pour les agences web, les designers, les architectes, etc. Dans tous les cas, le résultat obtenu sera meilleur si le pouvoir n'est pas donné à un client roi, mais à la personne qui a la meilleure vision de l'objectif à atteindre et les compétences pour l'exécuter.
