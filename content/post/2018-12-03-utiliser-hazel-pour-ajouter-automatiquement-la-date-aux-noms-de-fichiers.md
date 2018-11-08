@@ -1,12 +1,11 @@
 +++
 date       = "2018-12-03"
-title      = "Supprimer des fichiers en masse dans Slack"
+title      = "Ajouter automatiquement la date aux noms de fichiers avec Hazel"
 author     = "Pierre Morsa"
 layout     = "post"
 categories = [ "Technomagie" ]
 draft      = false
 +++
-# Ajouter automatiquement la date aux noms de fichiers avec Hazel
 Hazel fait partie de mes outils d'automatisation indispensables avec Keyboard Maestro, Quicksilver et Applescript. Je vais montrer ici comment ajouter automatiquement à un nom de fichier la date à laquelle celui-ci a été ajouté. Cela peut être très utile, par exemple, pour classer facilement les documents scannés par date de réception.
 
 Pour cela, commencez par ajouter à Hazel le dossier contenant les documents à renommer.
