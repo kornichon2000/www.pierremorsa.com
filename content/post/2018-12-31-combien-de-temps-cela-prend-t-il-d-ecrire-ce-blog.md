@@ -1,6 +1,6 @@
 +++
 date       = "2018-12-31"
-title      = "Combien de temps cela prend-t-il d'écrire ce blog ?"
+title      = "Combien de temps cela prend-il d'écrire ce blog ?"
 author     = "Pierre Morsa"
 layout     = "post"
 categories = [ "Nouvelles" ]

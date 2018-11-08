@@ -1,5 +1,5 @@
 +++
-date       = "2018-11-26"
+date       = "2018-12-03"
 title      = "Supprimer des fichiers en masse dans Slack"
 author     = "Pierre Morsa"
 layout     = "post"
