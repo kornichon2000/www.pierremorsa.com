@@ -4,7 +4,7 @@ title      = "Éviter les fichiers impossibles à supprimer de la corbeille de m
 author     = "Pierre Morsa"
 layout     = "post"
 categories = [ "Technomagie" ]
-draft      = true
+draft      = false
 +++
 De temps en temps, lorsque vous essayez de vider la corbeille de votre Mac, vous pouvez avoir un message d’erreur vous disant que vous n’avez pas les droits de supprimer les fichiers. C’est gênant, d’autant plus que l’erreur ne va pas se résoudre toute seule. Pour moi, c’est d’autant plus gênant que cela cause une erreur lorsque Hazel essaie de faire le ménage de la corbeille.  C’est pourquoi j’utilise un script qui se déclenche chaque jour pour rendre tous les fichiers de la corbeille effaçables.
 
@@ -20,5 +20,4 @@ Il faut remplacer *yourhomefolder* par le nom de votre dossier utilisateur, *you
 Ensuite, j’ai mis ce script dans Keyboard Maestro, qui le déclenche tous les jours à minuit et 1 minute. Voici le résultat :
 
 ![Make Trash Files Deletable](/pictures/2018/12/make-trash-files-deletable.jpg)
- a
  
