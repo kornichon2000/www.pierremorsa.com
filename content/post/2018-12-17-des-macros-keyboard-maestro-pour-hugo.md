@@ -11,15 +11,15 @@ Je l'ai déjà avoué, je ne suis pas un "vrai" ; taper tout à la ligne de comm
 
 * Choisir le site sur lequel on veut travailler.
 * Créer un nouvel article
-* Démarrer le serveur interne Hugo
-* Arrêter le serveur interne Hugo
-* Générer le site statique
+* Démarrer le serveur local Hugo
+* Arrêter le serveur local Hugo
+* Générer ou non les articles futurs
 * Générer ou non les brouillons (drafts)
 * Nettoyer le répertoire cible
 
 [Vous pouvez télécharger les macros ici.](/files/hugo_macros.kmmacros.zip)
 
-Fournies sans garanties et je ne suis pas responsable des dégâts qui pourraient découler de leur utilisation, donc prudence.
+Macros fournies sans garanties et je ne suis pas responsable des dégâts qui pourraient découler de leur utilisation, donc prudence.
 
 Si nécessaire, décompressez le fichier téléchargé. Dans Keyboard Maestro créez une palette pour l'application Terminal. Importez les macros dedans. Une fois les macros installées et configurées, lancez le terminal. Une palette de macros Keyboard Maestro va apparaître. Il suffit de cliquer sur la commande voulue pour qu'elle s'exécute. Je vous recommande de toujours commencer par choisir le site sur lequel vous allez travailler.
 
