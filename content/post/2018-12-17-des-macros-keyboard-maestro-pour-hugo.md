@@ -4,7 +4,7 @@ title      = "Des macros Keyboard Maestro pour Hugo"
 author     = "Pierre Morsa"
 layout     = "post"
 categories = [ "Technomagie" ]
-draft      = true
+draft      = false
 +++
 
 Je l'ai déjà avoué, je ne suis pas un "vrai" ; taper tout à la ligne de commande, ça me casse les pieds. C'est pourquoi j'ai créé une palette de Macros avec Keyboard Maestro pour exécuter les commandes Hugo les plus fréquentes. Ces commandes sont :
@@ -17,9 +17,10 @@ Je l'ai déjà avoué, je ne suis pas un "vrai" ; taper tout à la ligne de comm
 * Générer ou non les brouillons (drafts)
 * Nettoyer le répertoire cible
 
-Vous pouvez télécharger les macros ici. Fournies sans garanties et je ne suis pas responsable des dégâts qui pourraient découler de leur utilisation, donc prudence.
+[Vous pouvez télécharger les macros ici.](/files/hugo_macros.kmmacros.zip)
 
-Dans Keyboard Maestro créez une palette pour l'application terminal. Importez les macros dedans. Une fois les macros installées et configurées, lancez le terminal. Une palette de macros Keyboard Maestro va apparaître. Il suffit de cliquer sur la commande voulue pour qu'elle s'exécute. Je vous recommande de toujours commencer par choisir le site sur lequel vous allez travailler.
+Fournies sans garanties et je ne suis pas responsable des dégâts qui pourraient découler de leur utilisation, donc prudence.
 
-Vous aurez peut-être besoin de personnaliser le chemin d'accès dans les macros, mais si vous utilisez Hugo et Keyboard Maestro vous êtes probablement adepte de la technomagie et cela devrait être simple pour vous.
+Si nécessaire, décompressez le fichier téléchargé. Dans Keyboard Maestro créez une palette pour l'application Terminal. Importez les macros dedans. Une fois les macros installées et configurées, lancez le terminal. Une palette de macros Keyboard Maestro va apparaître. Il suffit de cliquer sur la commande voulue pour qu'elle s'exécute. Je vous recommande de toujours commencer par choisir le site sur lequel vous allez travailler.
 
+Vous aurez peut-être besoin de personnaliser le chemin d'accès dans les macros. Le chemin par défaut que j'ai configuré est ~/Sites/Hugo. Si vous utilisez Hugo et Keyboard Maestro vous êtes probablement adepte de la technomagie et cela devrait être simple pour vous.
