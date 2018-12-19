@@ -19,7 +19,7 @@ Je l'ai déjà avoué, je ne suis pas un "vrai" ; taper tout à la ligne de comm
 
 [Vous pouvez télécharger les macros ici.](/files/hugo_macros.kmmacros.zip)
 
-Macros fournies sans garanties et je ne suis pas responsable des dégâts qui pourraient découler de leur utilisation, donc prudence.
+Macros fournies sans garanties et je ne suis pas responsable des dégâts qui pourraient découler de leur utilisation, donc prudence (même si le risque de problèmes est faible).
 
 Si nécessaire, décompressez le fichier téléchargé. Dans Keyboard Maestro créez une palette pour l'application Terminal. Importez les macros dedans. Une fois les macros installées et configurées, lancez le terminal. Une palette de macros Keyboard Maestro va apparaître. Il suffit de cliquer sur la commande voulue pour qu'elle s'exécute. Je vous recommande de toujours commencer par choisir le site sur lequel vous allez travailler.
 
