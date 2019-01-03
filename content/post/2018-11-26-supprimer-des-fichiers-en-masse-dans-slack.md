@@ -1,10 +1,11 @@
 +++
-date       = "2018-11-26"
-title      = "Supprimer des fichiers en masse dans Slack"
-author     = "Pierre Morsa"
-layout     = "post"
-categories = [ "Technomagie" ]
-draft      = false
+date        = "2018-11-26"
+publishdate = "2018-11-26T05:00:00+01:00" 
+title       = "Supprimer des fichiers en masse dans Slack"
+author      = "Pierre Morsa"
+layout      = "post"
+categories  = [ "Technomagie" ]
+draft       = false
 +++
 # Supprimer des fichiers en masse dans Slack
 J'ai un ami qui utilise la version gratuite de Slack pour sa startup. En discutant, il m'a évoqué un problème auquel il faisait face. Il était obligé de supprimer les fichiers un à un lorsqu'il atteignait la limite de place.

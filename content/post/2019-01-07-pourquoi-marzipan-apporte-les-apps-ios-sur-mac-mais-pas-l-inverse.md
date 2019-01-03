@@ -1,10 +1,11 @@
 +++
-date       = "2019-01-07"
-title      = "Pourquoi Marzipan porte les apps iOS sur Mac, mais pas les apps Mac sur iOS ?"
-author     = "Pierre Morsa"
-layout     = "post"
-categories = [ "Technomagie" ]
-draft      = false
+date        = "2019-01-07"
+publishdate = "2019-01-07T05:00:00+01:00" 
+title       = "Pourquoi Marzipan porte les apps iOS sur Mac, mais pas les apps Mac sur iOS ?"
+author      = "Pierre Morsa"
+layout      = "post"
+categories  = [ "Technomagie" ]
+draft       = false
 +++
 
 Fin 2018, Apple a présenté Marzipan, un système pour créer des apps iOS compatibles avec macOS. Certains y ont vu une excellente solution pour enrichir le catalogue d’applications Mac, qui est peut-être de qualité, mais loin d’avoir le dynamisme de l’écosystème d’iOS. Cela s’explique très simplement. Il y a en circulation autour d’un milliard de terminaux iOS, alors qu’on estime qu’il y a « seulement » cent millions de Mac en activité.

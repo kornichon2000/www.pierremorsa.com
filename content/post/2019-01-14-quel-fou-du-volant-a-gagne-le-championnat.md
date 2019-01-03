@@ -1,10 +1,11 @@
 +++
-date       = "2019-01-14"
-title      = "Quel fou du volant a gagné le championnat ?"
-author     = "Pierre Morsa"
-layout     = "post"
-categories = [ "Nouvelles" ]
-draft      = false
+date        = "2019-01-14"
+publishdate = "2019-01-14T05:00:00+01:00" 
+title       = "Quel fou du volant a gagné le championnat ?"
+author      = "Pierre Morsa"
+layout      = "post"
+categories  = [ "Nouvelles" ]
+draft       = false
 +++
 Aujourd'hui, je veux apporter une réponse à une question essentielle : si on fait le total des points accumulés lors de chaque épisode, quel fou du volant a gagné le championnat ? La seule chose certaine : comme Satanas et Diabolo finissaient toujours derniers, ils ne peuvent pas avoir gagné le championnat. Mais des autres, qui arrive en tête ?
 

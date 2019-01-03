@@ -1,6 +1,6 @@
 +++
 date        = "2018-11-12"
-publishdate = "2018-11-05T05:00:00+01:00" 
+publishdate = "2018-11-12T05:00:00+01:00" 
 title       = "Trop important pour être formé sur PowerPoint"
 author      = "Pierre Morsa"
 layout      = "post"

@@ -1,6 +1,6 @@
 +++
 date        = "2018-11-19"
-publishdate = "2018-11-05T05:00:00+01:00" 
+publishdate = "2018-11-19T05:00:00+01:00" 
 title       = "Comment lancer une macro Visual Basic depuis AppleScript"
 author      = "Pierre Morsa"
 layout      = "post"

@@ -1,10 +1,11 @@
 +++
-date       = "2018-12-17"
-title      = "Des macros Keyboard Maestro pour Hugo"
-author     = "Pierre Morsa"
-layout     = "post"
-categories = [ "Technomagie" ]
-draft      = false
+date        = "2018-12-17"
+publishdate = "2018-12-17T05:00:00+01:00" 
+title       = "Des macros Keyboard Maestro pour Hugo"
+author      = "Pierre Morsa"
+layout      = "post"
+categories  = [ "Technomagie" ]
+draft       = false
 +++
 
 Je l'ai déjà avoué, je ne suis pas un "vrai" ; taper tout à la ligne de commande, ça me casse les pieds. C'est pourquoi j'ai créé une palette de Macros avec Keyboard Maestro pour exécuter les commandes Hugo les plus fréquentes. Ces commandes sont :

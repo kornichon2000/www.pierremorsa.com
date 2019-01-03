@@ -1,10 +1,11 @@
 +++
-date       = "2018-12-31"
-title      = "Combien de temps cela prend-il d'écrire ce blog ?"
-author     = "Pierre Morsa"
-layout     = "post"
-categories = [ "Nouvelles" ]
-draft      = false
+date        = "2018-12-31"
+publishdate = "2018-12-31T05:00:00+01:00" 
+title       = "Combien de temps cela prend-il d'écrire ce blog ?"
+author      = "Pierre Morsa"
+layout      = "post"
+categories  = [ "Nouvelles" ]
+draft       = false
 +++
 Combien de temps cela prend-il d’écrire ce blog ? Plus précisément, combien de temps cela me prend-il chaque semaine pour écrire les articles ? Grâce à Timing je peux répondre à cette question précisément.
 

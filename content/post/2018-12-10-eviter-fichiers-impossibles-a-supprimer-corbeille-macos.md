@@ -1,10 +1,11 @@
 +++
-date       = "2018-12-10"
-title      = "Éviter les fichiers impossibles à supprimer de la corbeille de macOS"
-author     = "Pierre Morsa"
-layout     = "post"
-categories = [ "Technomagie" ]
-draft      = false
+date        = "2018-12-10"
+publishdate = "2018-12-10T05:00:00+01:00" 
+title       = "Éviter les fichiers impossibles à supprimer de la corbeille de macOS"
+author      = "Pierre Morsa"
+layout      = "post"
+categories  = [ "Technomagie" ]
+draft       = false
 +++
 De temps en temps, lorsque vous essayez de vider la corbeille de votre Mac, vous pouvez avoir un message d’erreur vous disant que vous n’avez pas les droits de supprimer les fichiers. C’est gênant, d’autant plus que l’erreur ne va pas se résoudre toute seule. Pour moi, c’est d’autant plus gênant que cela cause une erreur lorsque Hazel essaie de faire le ménage de la corbeille.  C’est pourquoi j’utilise un script qui se déclenche chaque jour pour rendre tous les fichiers de la corbeille effaçables.
 
