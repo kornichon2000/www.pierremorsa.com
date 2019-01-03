@@ -1,9 +1,7 @@
 +++
 date        = "2018-12-10"
-publishdate = "2018-12-10T05:00:00+01:00" 
 title       = "Éviter les fichiers impossibles à supprimer de la corbeille de macOS"
 author      = "Pierre Morsa"
-layout      = "post"
 categories  = [ "Technomagie" ]
 draft       = false
 +++

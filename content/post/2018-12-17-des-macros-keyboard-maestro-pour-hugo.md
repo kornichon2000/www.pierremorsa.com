@@ -1,9 +1,7 @@
 +++
 date        = "2018-12-17"
-publishdate = "2018-12-17T05:00:00+01:00" 
 title       = "Des macros Keyboard Maestro pour Hugo"
 author      = "Pierre Morsa"
-layout      = "post"
 categories  = [ "Technomagie" ]
 draft       = false
 +++

@@ -1,9 +1,7 @@
 +++
 date        = "2019-01-14"
-publishdate = "2019-01-14T05:00:00+01:00" 
 title       = "Quel fou du volant a gagné le championnat ?"
 author      = "Pierre Morsa"
-layout      = "post"
 categories  = [ "Nouvelles" ]
 draft       = false
 +++
