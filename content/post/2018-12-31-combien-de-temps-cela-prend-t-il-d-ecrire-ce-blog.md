@@ -10,4 +10,4 @@ Combien de temps cela prend-il d’écrire ce blog ? Plus précisément, combie
 
 Je passe en moyenne **entre deux heures et deux heures et demie par semaine à écrire et relire les articles de pierremorsa.com**. Pour moi c’est parfait, cela reste tout à fait acceptable et gérable dans une semaine normale.
 
-Il y a des semaines où j’écris beaucoup, et d’autres où je n’écris pas du tout. Mais l’important, c’est que j’écris.
+Il y a des semaines où j’écris beaucoup, et d’autres où je n’écris pas du tout. Mais l’important, c’est que j’écris. Un mot à la fois.
