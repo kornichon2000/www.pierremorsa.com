@@ -1,9 +1,7 @@
 +++
 date        = "2018-11-26"
-publishdate = "2018-11-26T05:00:00+01:00" 
 title       = "Supprimer des fichiers en masse dans Slack"
 author      = "Pierre Morsa"
-layout      = "post"
 categories  = [ "Technomagie" ]
 draft       = false
 +++

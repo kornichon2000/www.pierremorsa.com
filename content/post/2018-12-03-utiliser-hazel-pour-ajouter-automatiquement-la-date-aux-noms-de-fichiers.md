@@ -1,9 +1,7 @@
 +++
 date        = "2018-12-03"
-publishdate = "2018-12-03T05:00:00+01:00" 
 title       = "Ajouter automatiquement la date aux noms de fichiers avec Hazel"
 author      = "Pierre Morsa"
-layout      = "post"
 categories  = [ "Technomagie" ]
 draft       = false
 +++

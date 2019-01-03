@@ -1,9 +1,7 @@
 +++
 date        = "2019-01-07"
-publishdate = "2019-01-07T05:00:00+01:00" 
 title       = "Pourquoi Marzipan porte les apps iOS sur Mac, mais pas les apps Mac sur iOS ?"
 author      = "Pierre Morsa"
-layout      = "post"
 categories  = [ "Technomagie" ]
 draft       = false
 +++
