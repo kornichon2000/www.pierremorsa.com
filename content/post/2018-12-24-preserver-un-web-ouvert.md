@@ -1,10 +1,9 @@
 +++
-date       = "2018-12-24"
-title      = "Préserver un web ouvert"
-author     = "Pierre Morsa"
-layout     = "post"
-categories = [ "Nouvelles", "Technomagie" ]
-draft      = false
+date        = "2018-12-24"
+title       = "Préserver un web ouvert"
+author      = "Pierre Morsa"
+categories  = [ "Nouvelles", "Technomagie" ]
+draft       = false
 +++
 
 Le marché des navigateurs internet est dominé par un seul acteur. Microsoft. Nous sommes au milieu des années 2000 et Internet Explorer 6 a une part de marché de 95 %. Heureusement, à ce moment la Commission européenne intervient, et force Microsoft à séparer système d’exploitation et navigateur web. Quinze ans plus tard, le paysage a bien changé. Google Chrome est en position de force, Google ayant utilisé sa position dominante en tant que porte d’entrée du web pour « fortement inciter » les utilisateurs à passer à Chrome. Position tellement dominante que Microsoft, autrefois roi du web, vient de jeter l’éponge et va adopter Chromium, le moteur de rendu de Chrome, au cœur de son propre navigateur. Et c’est une très mauvaise nouvelle pour le web. Je vais expliquer pourquoi en racontant ce qu’il m’est arrivé cette semaine lorsque j’ai voulu utiliser une clé d’authentification matérielle.
