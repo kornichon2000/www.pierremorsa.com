@@ -1,5 +1,5 @@
 +++
-date        = "2019-01-14"
+date        = "2019-01-21"
 title       = "Quel fou du volant a gagné le championnat ?"
 author      = "Pierre Morsa"
 categories  = [ "Nouvelles" ]
