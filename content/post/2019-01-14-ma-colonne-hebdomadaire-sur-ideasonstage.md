@@ -1,7 +1,6 @@
 +++
 date        = "2019-01-14"
-title       = "Ma colonne hebdomadaire sur ideasonstage.com
-"
+title       = "Ma colonne hebdomadaire sur ideasonstage.com"
 author      = "Pierre Morsa"
 categories  = [ "Nouvelles", "Présenter en public" ]
 draft       = false
