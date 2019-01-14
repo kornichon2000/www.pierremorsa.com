@@ -23,7 +23,7 @@
 					</section>{{ "<!-- links -->" | safeHTML }}
 				</div>
        		    <section id="rss">
-					<a href="{{ .RSSLink }}" type="application/rss+xml" target="_blank" title="RSS" class="button">{{ with .Site.Params.localized.button.rss }}{{ . | markdownify }}{{ end }}</a>					        
+					<a rel="alternate" type="application/rss+xml" href="{{ .Site.RSSLink }}" title="RSS" class="button">{{ with .Site.Params.localized.button.rss }}{{ . | markdownify }}{{ end }}</a>					        
        		    </section>{{ "<!-- intro -->" | safeHTML }}
 			    {{- if ne ($.Scratch.Get "showCategories") false }}
 		        <section id="categories">
