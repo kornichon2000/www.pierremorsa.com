@@ -1,5 +1,5 @@
 +++
-date        = "2019-01-21"
+date        = "2019-02-04"
 title       = "Comment je lutte contre ma manie d’oublier des trucs"
 author      = "Pierre Morsa"
 categories  = [ "Lifehacks", "Getting Things Done" ]
