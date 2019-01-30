@@ -9,6 +9,7 @@ draft       = false
 Vous connaissez UBER, la société de taxi à la mode. Tout le monde loue son approche de startup digitale disruptive. Pourtant, ce n’est qu’un miroir aux alouettes. C’est le storytelling qu’UBER veut imposer, pour ne pas qu’on regarde la réalité.
 
 Lorsqu’on enlève le strass des mots comme « disruptif », « startup » et « digital », et que l’on considère UBER comme une grosse boîte venue pour conquérir les marchés à n’importe quel prix, on peut regarder les choses telles qu’elles sont. L’insolente réussite d’UBER est due à :
+
 * Une incroyable machine de PR qui lui a permis d’acquérir une notoriété mondiale gigantesque en très peu de temps. C’est incroyable à quel point nous sous-estimons l’importance de ce point de ce côté de l’Atlantique.
 * Le ~~non-respect~~ contournement des lois existantes pour conquérir des marchés réglementés, accélérant la précarisation des travailleurs.
 * Un énorme apport de capital lui permettant de vendre à perte et casser les prix du marché (en combinaison avec un coût du travail beaucoup moins élevé que pour les sociétés traditionnelles devant respecter la loi).
