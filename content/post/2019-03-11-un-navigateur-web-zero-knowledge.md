@@ -1,4 +1,7 @@
-2019-02-25 Un navigateur Zero Knowledge
+2019-03-11 Un navigateur Zero Knowledge
+# Le court destin de Do Not Track
+
+Safari vient d'abandonner Do Not Track. Le truc qui indiquait aux sites de ne pas vous pister sur le web, mais qu'aucun publicitaire n'a jamais respecté. Do Not Track est non seulement inutile, il est même néfaste, car il ajoute des "bits" d'information permettant de tracer votre empreinte numérique (fingerprinting).
 
 L'idéal serait que le futur du Web apporte un modèle « Zero Knowledge » (zéro connaissance), où des informations comme la lise des polices, le navigateur utilisé, la résolution de l'écran ou la liste des extensions installées ne serait pas communiquée aux serveurs. C'est tout à fait possible, et pour 99,99% des sites ces informations ne sont pas nécessaires dès lors qu'ils sont développés en respectant les standards du Web, supportés par tous les moteurs de rendus du marché, dont Webkit, Gecko et Chromium. 
 

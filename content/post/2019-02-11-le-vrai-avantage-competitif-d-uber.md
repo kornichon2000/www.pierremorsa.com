@@ -1,5 +1,5 @@
 +++
-date        = "2019-02-04"
+date        = "2019-02-11"
 title       = "Le vrai avantage compétitif d'UBER"
 author      = "Pierre Morsa"
 categories  = [ "Startup" ]

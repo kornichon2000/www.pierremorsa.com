@@ -1,5 +1,5 @@
 +++
-date        = "2019-02-11"
+date        = "2019-02-18"
 title       = "Le meilleur bloqueur de pub sur Mac : uBlock Origin"
 author      = "Pierre Morsa"
 categories  = [ "Lifehacks", "Technomagie" ]

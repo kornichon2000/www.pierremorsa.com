@@ -1,5 +1,5 @@
 +++
-date        = "2019-02-18"
+date        = "2019-02-25"
 title       = "Quelques extensions en complément de uBlock Origin"
 author      = "Pierre Morsa"
 categories  = [ "Lifehacks", "Nouvelles", "Présenter en public", "Technomagie", "TEDx" ]
