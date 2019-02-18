@@ -3,7 +3,7 @@ date        = "2019-02-18"
 title       = "Le meilleur bloqueur de pub sur Mac : uBlock Origin"
 author      = "Pierre Morsa"
 categories  = [ "Lifehacks", "Technomagie" ]
-draft       = true
+draft       = false
 +++
 Je n’ai bien sûr pas testé tous les bloqueurs de publicité existants. Cependant, parmi les solutions existantes, il n’y en a qu’une qui revienne systématiquement : [uBlock Origin](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/?src=search). Attention, pas uBlock tout court, mais uBlock Origin. C’est la seule extension qui soit à la fois répandue et qui ne se fasse pas payer pour laisser passer les pubs « acceptables ».
 

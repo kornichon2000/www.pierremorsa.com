@@ -3,7 +3,7 @@ date        = "2019-02-25"
 title       = "Quelques extensions en complément de uBlock Origin"
 author      = "Pierre Morsa"
 categories  = [ "Lifehacks", "Nouvelles", "Présenter en public", "Technomagie", "TEDx" ]
-draft       = true
+draft       = false
 +++
 La semaine dernière j'expliquais pourquoi j'étais repassé sur Firefox : pour pouvoir bénéficier de uBlock Origin, la meilleur extension pour bloquer la publicité. Mais c'est loin d'être suffisant pour éviter d'être suivi. En faisant quelques recherches, j'ai choisi les extensions suivantes pour compléter mon arsenal :
 
