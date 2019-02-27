@@ -13,7 +13,7 @@ Coding & Bricks anime également régulièrement des ateliers pour les enfants e
 ## Ideas on Stage et parcours professionnel
 [Vous pouvez en savoir plus sur l'histoire d'Ideas on Stage sur cette page.](/ideas-on-stage/)
 
-Dans la vie je suis Partner + Creative Director d'[Ideas on Stage][1], une société spécialisée dans les présentations en public. Je m'occupe plus particulièrement de la création des présentations pour nos clients (storytelling, visuels). Mes clients principaux sont des grands comptes (Chanel, EDF, Google, Kering, Safran, Société Générale, TV5MONDE...) J'ai également coaché les intervenants de nombreux événements TEDx, le Positive Economy Forum et d'autres grandes conférences. Enfin j'organise des ateliers sur l'art du pitch dans l'univers des Startups (50Partners, Euratechnologies, Le Comptoir, Le Camping, Start'inPost, Microsoft Ventures...)
+Dans la vie je suis Co-Founder + Creative Cat d'[Ideas on Stage][1], une société spécialisée dans les présentations en public. Je m'occupe plus particulièrement de la création des présentations pour nos clients (storytelling, visuels). Mes clients principaux sont des grands comptes (Chanel, EDF, Google, Kering, Safran, Société Générale, TV5MONDE...) J'ai également coaché les intervenants de nombreux événements TEDx, le Positive Economy Forum et d'autres grandes conférences. Enfin j'organise des ateliers sur l'art du pitch dans l'univers des Startups (50Partners, Euratechnologies, Le Comptoir, Le Camping, Start'inPost, Microsoft Ventures...)
 
 Je donne cours de « Hard Storytelling », autrement dit de storytelling basé sur les faits, pour le MBA spécialisé « communication publique et influence » de l'EFAP de Lille.
 
