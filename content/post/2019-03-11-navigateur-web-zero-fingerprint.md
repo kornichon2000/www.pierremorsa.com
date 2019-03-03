@@ -5,7 +5,6 @@ author      = "Pierre Morsa"
 categories  = [ "Nouvelles", "Technomagie" ]
 draft       = false
 +++
-
 Dans cet article, je voudrais passer un peu de temps pour expliquer pourquoi il est important que les navigateurs web fournissent une empreinte identique à tous les sites, pour tous les visiteurs, pour éviter un suivi non voulu.
 
 ## Do Not Track et RGPD ne fonctionnent pas
