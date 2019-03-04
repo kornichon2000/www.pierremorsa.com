@@ -97,13 +97,15 @@ J’aimerais par exemple que l’app de Slack arrête d’utiliser des animation
 ## Les polices ont l’air vraiment nazes
 Dans certains programmes, pas tous, l’affichage des polices est vraiment atroce (mon écran n’est pas Retina).
 
+Mise à jour du 2019-03-04 17h18 : Pierre Dandumont a un truc pour rétablir l'affichage des polices tel qu'il était avant Mojave, à découvrir [sur son blog le journal du lapin](https://www.journaldulapin.com/2018/10/02/mojave-rendu-police/)
+
 ## Il y a un bug pourri entre les claviers et FileVault
 C’est assez bizarre, mais FileVault désactive certains claviers externes. C’est peut-être une mesure de sécurité, mais c’est particulièrement pénible. Pour l’instant, je n’ai aucune solution et j’ai dû désactiver FileVault sur le Mac Mini. Heureusement, c’est une machine fixe, donc moins exposée au vol, mais j’espère qu’Apple corrigera le tir dans de futures versions de Mojave.
 
 Si jamais votre souris ou votre clavier sont désactivés au démarrage et que vous ne pouvez pas rentrer votre mot de passe, et que vous venez d’activer FileVault, ce bug en est probablement la raison. Dans ce cas il faut soit :
 
 * utiliser un autre clavier pour entrer le mot de passe au démarrage
-* ou attendre / essayer de redémarrer (je n’ai pas compris la séquence exacte à suivre) et Apple vous proposera de démarrer dans un mode spécial permettant de désactiver FileVault si vous en connaissez le mot de passe.
+* ou attendre / essayer de redémarrer (je n’ai pas compris la séquence exacte à suivre) et macOS vous proposera de démarrer dans un mode spécial permettant de désactiver FileVault si vous en connaissez le mot de passe.
 
 ## AppleScript survit, mais pour combien de temps ?
 AppleScript et l’automatisation telle que nous l’avons connue pendant des années sur Mac semblent vraiment sur la fin. Apple ne corrige plus les bugs AppleScript connus depuis des années, ses propres applications ne supportent plus le langage, et les restrictions de sécurité mises en place par Mojave ne font que compliquer les choses. On sent bien qu’Apple a envie de tuer AppleScript, mais n’a pas encore osé franchir le pas.
