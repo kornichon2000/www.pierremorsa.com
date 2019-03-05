@@ -33,12 +33,16 @@ Mojave 10.14.4 (pas encore sorti à l’heure où j’écris ces lignes) suppor
 	    color: #bbb;
 	}
 	
+	strong, b {
+    color: #fff;
+    font-weight: 700;
+	}
+
 	button,
 	.button {
 		color: #bbb !important;
 		box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5);
 	}
-	
 	
 	button.disabled,
 	button:disabled,
