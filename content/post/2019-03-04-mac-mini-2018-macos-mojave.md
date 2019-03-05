@@ -94,6 +94,8 @@ Franchement, elle était cool dans les années 2000, mais aujourd’hui elle ne
 
 J’aimerais par exemple que l’app de Slack arrête d’utiliser des animations à la con pour chaque redimensionnement de fenêtre. Ces animations sont tellement lentes qu’elles posent des problèmes pour la manipulation des fenêtres avec AppleScript. Je pense que c’est un problème lié à Electron/Chromium (mais je ne suis pas sûr).
 
+Mise à jour du 2019-03-05 16h23 : Guillaume Gète m’a fait remarquer que la transition cube est toujours là. La raison pour laquelle elle ne s’affichait plus chez moi est assez obscure, mais semble liée au fait que la migration ait engendré une différence de réglage écran différent entre les deux comptes utilisateurs (résolution, couleur ou autre, je ne sais pas). Du coup après avoir fait les tests, la transition cube est de retour chez moi, et je n’ai toujours pas trouvé de moyen fiable pour m’en débarrasser.
+
 ## Les polices ont l’air vraiment nazes
 Dans certains programmes, pas tous, l’affichage des polices est vraiment atroce (mon écran n’est pas Retina).
 
