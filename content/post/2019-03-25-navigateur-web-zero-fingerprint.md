@@ -1,5 +1,5 @@
 +++
-date        = "2019-03-11"
+date        = "2019-03-25"
 title       = "Le futur appartient aux navigateurs web « zero fingerprint »"
 author      = "Pierre Morsa"
 categories  = [ "Nouvelles", "Technomagie" ]
