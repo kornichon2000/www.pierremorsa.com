@@ -112,5 +112,8 @@ Si jamais votre souris ou votre clavier sont désactivés au démarrage et que v
 ## AppleScript survit, mais pour combien de temps ?
 AppleScript et l’automatisation telle que nous l’avons connue pendant des années sur Mac semblent vraiment sur la fin. Apple ne corrige plus les bugs AppleScript connus depuis des années, ses propres applications ne supportent plus le langage, et les restrictions de sécurité mises en place par Mojave ne font que compliquer les choses. On sent bien qu’Apple a envie de tuer AppleScript, mais n’a pas encore osé franchir le pas.
 
+## On arrête les apps Playskool
+Mise à jour du 2019-03-05 17h13 : je viens d'ouvrir l'App Store, et non, Le look Playskool avec des textes taille 200 points dans la barre latérale ne passe pas. « L'ipad ne peut pas afficher la même densité d'interface que le Mac ? On a la solution, on n'a qu'à réduire la densité de l'interface sur le Mac. »
+
 ## En conclusion
 À prix équivalent un ordinateur fixe comme le Mac Mini offre de bien meilleures performances que le plus rapide des MacBook Pro (excepté carte graphique). De plus, il y a bien moins de pièces sujettes au vieillissement, comme le clavier, le trackpad, la batterie ou même l’écran. Donc il y a, en théorie, moins de risques de pannes. Pour l’instant je suis très satisfait de mon nouveau Mac Mini. On verra s’il mettra fin à ma série de machines à problème de ces dernières années (MacBook Pro 17" 2009 vitre de l’écran qui se décolle, MacBook Pro Retina 2013 carte mère grillée, MacBook Pro Retina 2015 batterie qui gonfle et touche caps lock qui se déloge).
