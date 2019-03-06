@@ -979,7 +979,7 @@ body {
 @media (prefers-color-scheme: dark) {
     /* Overrides for Dark Mode. */
     body {
-        color: white;
+        color: #ddd;
         background: #222;
     }
 	
@@ -996,7 +996,7 @@ body {
 	}
 	
 	strong, b {
-	    color: #fff;
+	    color: #ddd;
 	    font-weight: 700;
 	}
 	
