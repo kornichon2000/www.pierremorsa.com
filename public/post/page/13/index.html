@@ -4,17 +4,18 @@
 
 <!-- layouts:partials:header -->
 <!DOCTYPE HTML>
-<html>
+<html lang="fr">
     <head>
         <title>Pierre Morsa | Présenter en public et GTD</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="generator" content="Hugo 0.31.1" />
+        <meta name="generator" content="Hugo 0.53" />
 		<!-- layouts:partials:favicon -->
     	<link rel="apple-touch-icon-precomposed" href='/favicon/apple-touch-icon-precomposed.png'>
     	<link rel="icon" href='/favicon/favicon.png'>
-        <meta name="author" content="">
-        <meta name="description" content="Le blog de Pierre Morsa, co-fondateur et Creative Director d&#39;Ideas on Stage, une agence spécialisée dans les présentations en public.">
+        <meta name="author" content="" />
+        <meta name="description" content="Le blog de Pierre Morsa, co-fondateur et Creative Director d&#39;Ideas on Stage, une agence spécialisée dans les présentations en public." />
+		<meta http-equiv="Content-Language" content="fr" />
 		<link rel="stylesheet" href="/css/main.css" />
         <link href="https://www.pierremorsa.com/post/index.xml" rel="alternate" type="application/rss+xml" title="Pierre Morsa | Présenter en public et GTD" />
         <link href="https://www.pierremorsa.com/post/index.xml" rel="feed" type="application/rss+xml" title="Pierre Morsa | Présenter en public et GTD" />
@@ -23,6 +24,7 @@
         <div id="wrapper">
 			<!-- layouts:partials:navbar -->
 			<section id="header">
+<a href="/"><img src="/pictures/main/pierre-morsa-avatar.png" class="intro-circle" width="48" alt="Pierre Morsa" /></a>
 				<h1><a href="/">Pierre Morsa | Présenter en public et GTD</a></h1>
 			</section><!-- header -->
     
@@ -38,16 +40,18 @@
 					<!-- layouts:post:header -->
 					<header>
 					    <div class="title">
-					        <h2><a href="/post/2016-11-21-utiliser-un-objet-pour-creer-un-effet-wow-en-presentation/">4 présentations qui utilisent un objet pour créer un moment unique</a></h2>
+					        <h2><a href="/post/2017-12-25-site-hugo-github-netlify-2/">Héberger gratuitement un site Hugo avec Github et Netlify (<sup>2</sup>&frasl;<sub>2</sub>)</a></h2>
 					    </div><!-- title -->
 					    <div class="meta">
-					        <time class="published" datetime='2016-11-21'>2016-11-21</time>
+					        <time class="published" datetime='2017-12-25'>2017-12-25</time>
 					    </div><!-- meta -->
 					</header>
-				    <p>Il y a quelques semaines j&rsquo;ai montré une vidéo de Steve Jobs présentant le Macintosh original, un excellent exemple d&rsquo;un lancement produit réussi. Un moment particulièrement impressionnant pour le public est ce moment où il sort lentement le Macintosh de son sac, sort la disquette de sa poche, l&rsquo;introduit dans le lecteur et fait démarrer le Mac. Cet effet de scène se base sur l&rsquo;utilisation efficace d&rsquo;objets. Un exemple valant mieux qu&rsquo;un long discours, j&rsquo;en ai sélectionné quelques uns pour montrer comment les meilleurs présentateurs utilisent les objets sur scène.</p>
+				    <p>Dans cette deuxième partie nous allons voir comment configurer Netlify pour servir les pages du site. Si vous ne l&rsquo;avez pas lue je vous conseille de démarrer par la partie 1 de l&rsquo;article qui explique comment déplacer le code du site dans Github.
+Le truc génial avec Netlify, c&rsquo;est qu&rsquo;il s&rsquo;occupe de faire tout ce qui est généralement bien pénible à configurer :
+ Il va être le serveur web des pages Il est CDN (Content Distributed Network) pour accélérer la performance du site, et prend entièrement à sa charge la gestion du rafraîchissement du cache.</p>
 				    <footer>
 				        <ul class="actions">
-				            <li><a href="/post/2016-11-21-utiliser-un-objet-pour-creer-un-effet-wow-en-presentation/" class="button big">Lire la suite</a></li>
+				            <li><a href="/post/2017-12-25-site-hugo-github-netlify-2/" class="button big">Lire la suite</a></li>
 				        </ul>
 				    </footer>
 				</article>
@@ -58,17 +62,17 @@
 					<!-- layouts:post:header -->
 					<header>
 					    <div class="title">
-					        <h2><a href="/post/2016-11-14-mes-contextes-gtd-edition-2016/">Mes contextes GTD, édition 2016</a></h2>
+					        <h2><a href="/post/2017-12-18-site-hugo-github-netlify-1/">Héberger gratuitement un site Hugo avec Github et Netlify (<sup>1</sup>&frasl;<sub>2</sub>)</a></h2>
 					    </div><!-- title -->
 					    <div class="meta">
-					        <time class="published" datetime='2016-11-14'>2016-11-14</time>
+					        <time class="published" datetime='2017-12-18'>2017-12-18</time>
 					    </div><!-- meta -->
 					</header>
-				    <p>S&rsquo;il y a bien une chose que je trouve difficile sur GTD, c&rsquo;est de définir une liste de contextes adaptée à ses besoins. Pour ceux que cela intéresse, voici la liste des contextes que j&rsquo;utilise aujourd&rsquo;hui :
- mac  filemaker  iphone ipad hereandnow errands waitingfor  J&rsquo;ai choisi un système de contextes structuré principalement autour de mes appareils, car c&rsquo;est ce qui détermine le mieux ce que je suis capable de faire à un moment donné !</p>
+				    <p>Dans cette première partie je vous propose un tutoriel pas à pas pour créer le fichier netlify.toml, et héberger le code du site sur Github.
+Ce blog est une sorte de cobaye. Je lui fais subir des tas d&rsquo;expériences lorsque je veux tester ce que cela donne. À l&rsquo;origine c&rsquo;était une simple page web, puis il a migré sur Joomla un des premiers « CMS » 100% Web, puis sur Wordpress qui était et est encore la solution préférée de beaucoup de sites.</p>
 				    <footer>
 				        <ul class="actions">
-				            <li><a href="/post/2016-11-14-mes-contextes-gtd-edition-2016/" class="button big">Lire la suite</a></li>
+				            <li><a href="/post/2017-12-18-site-hugo-github-netlify-1/" class="button big">Lire la suite</a></li>
 				        </ul>
 				    </footer>
 				</article>
@@ -79,16 +83,16 @@
 					<!-- layouts:post:header -->
 					<header>
 					    <div class="title">
-					        <h2><a href="/post/2016-11-07-la-recette-d-un-tedx-reussi/">La recette d&#39;un TEDx réussi</a></h2>
+					        <h2><a href="/post/2017-12-11-pourquoi-le-discours-de-donald-trump-est-il-credible/">Pourquoi le discours de Donald Trump est-il crédible ?</a></h2>
 					    </div><!-- title -->
 					    <div class="meta">
-					        <time class="published" datetime='2016-11-07'>2016-11-07</time>
+					        <time class="published" datetime='2017-12-11'>2017-12-11</time>
 					    </div><!-- meta -->
 					</header>
-				    <p>Qu&rsquo;est-ce qui fait un événement TEDx réussi ? La qualité des Speakers ? Oui, bien sûr. La qualité des organisateurs ? Sans aucun doute. Ce sont les ingrédients de base indispensables, mais ils ne sont pas suffisants pour créer un événement exceptionnel. Il y a autre chose. Après y avoir longuement réfléchi, je pense que cet élément, c&rsquo;est la recette de l&rsquo;événement. Tout comme un bon plat demande d&rsquo;avoir un équilibre entre les différentes saveurs, un événement TEDx réussi va équilibrer les différents sujets abordés pour concocter un programme particulièrement savoureux.</p>
+				    <p>Pourquoi Donald Trump est-il crédible ? Je veux dire, pas crédible pour vous ou moi. Mais pourquoi est-il crédible pour pratiquement 50% des américains ? Après tout, n&rsquo;a-t-il pas échoué à tenir plusieurs de ses promesses, comme supprimer l&rsquo;Obamacare, fermer les frontières à toute immigration et construire un mur à la frontière mexicaine financé par le Mexique ? N&rsquo;a-t-il pas été pris plusieurs fois en flagrant délit de mensonge, ou tout du moins n&rsquo;a-t-il pas une vision très approximative de la réalité ?</p>
 				    <footer>
 				        <ul class="actions">
-				            <li><a href="/post/2016-11-07-la-recette-d-un-tedx-reussi/" class="button big">Lire la suite</a></li>
+				            <li><a href="/post/2017-12-11-pourquoi-le-discours-de-donald-trump-est-il-credible/" class="button big">Lire la suite</a></li>
 				        </ul>
 				    </footer>
 				</article>
@@ -99,16 +103,18 @@
 					<!-- layouts:post:header -->
 					<header>
 					    <div class="title">
-					        <h2><a href="/post/2016-10-31-tim-cook-pour-une-poignee-de-dollars/">Tim Cook : pour une poignée de Dollars</a></h2>
+					        <h2><a href="/post/2017-12-04-etes-vous-certain-d-avoir-le-bon-logo/">Êtes-vous certain d&rsquo;avoir le bon logo ?</a></h2>
 					    </div><!-- title -->
 					    <div class="meta">
-					        <time class="published" datetime='2016-10-31'>2016-10-31</time>
+					        <time class="published" datetime='2017-12-04'>2017-12-04</time>
 					    </div><!-- meta -->
 					</header>
-				    <p>Si vous suivez l&rsquo;actualité d&rsquo;Apple vous êtes au courant qu&rsquo;un événement a eu lieu jeudi 27 octobre 2016 pour la présentation des nouveaux Macs. Pour replacer le contexte, cet événement était très attendu par les aficionados du Mac car cela faisait longtemps, très longtemps même, que de nouveaux produits n&rsquo;avaient pas été présentés. Imaginez, plus d&rsquo;un an et demi sans mise à jour des MacBook Pro, et plus de trois ans, oui, trois ans, sans mise à jour du Mac Pro, une machine censée répondre aux besoins des professionnels !</p>
+				    <p>Le logo est l&rsquo;âme d&rsquo;une startup. Son image, le reflet de son âme et de ses valeurs. Aussi je vais poser une question importante, vitale, essentielle :
+Êtes-vous sûr d&rsquo;avoir le bon logo ?
+A-t-il la bonne forme ? A-t-elle l&rsquo;air moderne, dans l&rsquo;air du temps ? Faut-il choisir l&rsquo;harmonie du cercle ou la brutale efficacité du carré ? Lequel s&rsquo;affichera mieux sur l&rsquo;écran d&rsquo;accueil d&rsquo;un iPhone ? Et d&rsquo;un téléphone Android ?</p>
 				    <footer>
 				        <ul class="actions">
-				            <li><a href="/post/2016-10-31-tim-cook-pour-une-poignee-de-dollars/" class="button big">Lire la suite</a></li>
+				            <li><a href="/post/2017-12-04-etes-vous-certain-d-avoir-le-bon-logo/" class="button big">Lire la suite</a></li>
 				        </ul>
 				    </footer>
 				</article>
@@ -119,17 +125,18 @@
 					<!-- layouts:post:header -->
 					<header>
 					    <div class="title">
-					        <h2><a href="/post/2016-10-24-comment-avoir-logos-blancs-slides-powerpoint/">Comment avoir des logos blancs pour ses slides PowerPoint</a></h2>
+					        <h2><a href="/post/2017-11-27-storytelling-is-dead/">Le storytelling est&hellip; mort ?</a></h2>
 					    </div><!-- title -->
 					    <div class="meta">
-					        <time class="published" datetime='2016-10-24'>2016-10-24</time>
+					        <time class="published" datetime='2017-11-27'>2017-11-27</time>
 					    </div><!-- meta -->
 					</header>
-				    <p>Aujourd&rsquo;hui je vais partager avec vous un de mes meilleurs trucs secrets pour les présentations PowerPoint. Vous avez déjà peut-être vu ces slides d&rsquo;Apple avec tous les logos de leurs partenaires en blanc sur fond noir. C&rsquo;est très joli, mais comment font-ils pour obtenir ces logos en blanc ? C&rsquo;est beaucoup plus facile qu&rsquo;il n&rsquo;y paraît.
-J&rsquo;explique ici une méthode pour y arriver ridiculement facilement avec Affinity Photo, un excellent logiciel de manipulation d&rsquo;images disponible sur le Mac App Store (et un jour sur Windows) et qui dispose d&rsquo;une fonction redoutable : « erase white paper ».</p>
+				    <p>La semaine dernière, quelqu&rsquo;un a tweeté cette image1.
+Sincères condoléances, sans autre forme de procès et sans aucune autopsie le storytelling est déclaré mort et enterré. Par contre, c&rsquo;est sûr, les affirmations gratuites sont bien vivantes, elles. Désolé pour ce monsieur, mais le storytelling est bien vivant, en pleine forme, et le sera tant qu&rsquo;il y a des humains sur terre.
+La preuve ? Chaque fois qu&rsquo;un nouveau film est réalisé, le storytelling est vivant.</p>
 				    <footer>
 				        <ul class="actions">
-				            <li><a href="/post/2016-10-24-comment-avoir-logos-blancs-slides-powerpoint/" class="button big">Lire la suite</a></li>
+				            <li><a href="/post/2017-11-27-storytelling-is-dead/" class="button big">Lire la suite</a></li>
 				        </ul>
 				    </footer>
 				</article>
@@ -146,46 +153,39 @@ J&rsquo;explique ici une méthode pour y arriver ridiculement facilement avec Af
     </div>
     			<!-- layouts:partials:sidebar -->
 			<section id="sidebar">
-			    <section id="intro">
-			        <a href="/"><img src="/pictures/main/pierre-morsa-avatar.jpg" class="intro-circle" width="" alt="Pierre Morsa" /></a>
-			        <header>
-			            <p>Présenter en public, Getting Things Done, Lifehacks, Technomagie etc.</p>
-			        </header>
-			        <b><a href="https://www.pierremorsa.com/post/index.xml" type="application/rss+xml"
-			                    target="_blank" title="RSS" class="button">S&rsquo;abonner au fil RSS</a></b>
-			    </section><!-- intro -->
-				<section id="links">       
-					<header>
-					    <p>Les sites que je soutiens</p>
-					</header>
-					<div class="link">
-						<a href="https://www.codingandbricks.com/">
-				    		<img src="/pictures/links/codingandbricks.jpg">
-				    		<p>Ateliers LEGO SeriousPlay® pour les entreprises</p>
-				    	</a>
-					</div>
-					<div class="link">
-						<a href="https://www.ideasonstage.fr/">
-				    		<img src="/pictures/links/ideasonstage.jpg">
-				    		<p>Le spécialiste des présentations en public</p>
-				    	</a>
-					</div>				
-				</section><!-- links -->
+				<section class="blurb">
+				    <p>Pierre Morsa est Partner + Creative Director chez <a href='https://www.pierremorsa.com/ideas-on-stage/'>Ideas on Stage</a>, la première agence globale de création de présentations. <br><br>Pour me contacter écrivez-moi à<br><a href='m&#97;ilt&#111;&#58;&#112;i&#101;r%&#55;&#50;e&#46;%6D&#111;&#114;&#115;%61&#64;p&#109;&#46;m&#101;'>pierre&#46;morsa&#64;&#112;m&#46;m&#101;</a></p>
+				        <a href="/about/" class="button">En savoir plus</a>				        
+				</section><!-- blurb -->
+				<div class="hide-lg">
+					<section id="links" class="justify-left">
+						<header>
+						    <p>Les sites que je soutiens</p>
+						</header>
+						<div class="link">
+							<a href="https://www.codingandbricks.com/">
+					    		<img src="/pictures/links/codingandbricks.jpg">
+					    		<p>Ateliers LEGO Serious Play® pour les entreprises</p>
+					    	</a>
+						</div>
+						<div class="link">
+							<a href="https://www.ideasonstage.fr/">
+					    		<img src="/pictures/links/ideasonstage.jpg">
+					    		<p>Le spécialiste des présentations en public</p>
+					    	</a>
+						</div>
+					</section><!-- links -->
+				</div>
+       		    <section id="rss">
+					<a rel="alternate" type="application/rss+xml" href="https://www.pierremorsa.com/index.xml" title="RSS" class="button">S&rsquo;abonner au fil RSS</a>					        
+       		    </section><!-- intro -->
 		        <section id="categories">
 		            <ul class="posts">
 	                    <li>
 	                        <article>
 	                            <header>
 	                                <a href="/categories/pr%C3%A9senter-en-public/" class="text-small">Présenter en public</a>
-	                                <span style="float:right;" class="text-small">46</span>
-	                            </header>
-	                        </article>
-	                    </li>
-	                    <li>
-	                        <article>
-	                            <header>
-	                                <a href="/categories/gtd-getting-things-done/" class="text-small">GTD Getting Things Done</a>
-	                                <span style="float:right;" class="text-small">29</span>
+	                                <span style="float:right;" class="text-small">63</span>
 	                            </header>
 	                        </article>
 	                    </li>
@@ -193,15 +193,15 @@ J&rsquo;explique ici une méthode pour y arriver ridiculement facilement avec Af
 	                        <article>
 	                            <header>
 	                                <a href="/categories/technomagie/" class="text-small">Technomagie</a>
-	                                <span style="float:right;" class="text-small">20</span>
+	                                <span style="float:right;" class="text-small">38</span>
 	                            </header>
 	                        </article>
 	                    </li>
 	                    <li>
 	                        <article>
 	                            <header>
-	                                <a href="/categories/lifehacks/" class="text-small">Lifehacks</a>
-	                                <span style="float:right;" class="text-small">18</span>
+	                                <a href="/categories/gtd-getting-things-done/" class="text-small">GTD Getting Things Done</a>
+	                                <span style="float:right;" class="text-small">36</span>
 	                            </header>
 	                        </article>
 	                    </li>
@@ -209,7 +209,15 @@ J&rsquo;explique ici une méthode pour y arriver ridiculement facilement avec Af
 	                        <article>
 	                            <header>
 	                                <a href="/categories/nouvelles/" class="text-small">Nouvelles</a>
-	                                <span style="float:right;" class="text-small">15</span>
+	                                <span style="float:right;" class="text-small">29</span>
+	                            </header>
+	                        </article>
+	                    </li>
+	                    <li>
+	                        <article>
+	                            <header>
+	                                <a href="/categories/lifehacks/" class="text-small">Lifehacks</a>
+	                                <span style="float:right;" class="text-small">23</span>
 	                            </header>
 	                        </article>
 	                    </li>
@@ -217,7 +225,23 @@ J&rsquo;explique ici une méthode pour y arriver ridiculement facilement avec Af
 	                        <article>
 	                            <header>
 	                                <a href="/categories/startup/" class="text-small">Startup</a>
-	                                <span style="float:right;" class="text-small">13</span>
+	                                <span style="float:right;" class="text-small">15</span>
+	                            </header>
+	                        </article>
+	                    </li>
+	                    <li>
+	                        <article>
+	                            <header>
+	                                <a href="/categories/tedx/" class="text-small">TEDx</a>
+	                                <span style="float:right;" class="text-small">9</span>
+	                            </header>
+	                        </article>
+	                    </li>
+	                    <li>
+	                        <article>
+	                            <header>
+	                                <a href="/categories/storytelling/" class="text-small">Storytelling</a>
+	                                <span style="float:right;" class="text-small">7</span>
 	                            </header>
 	                        </article>
 	                    </li>
@@ -226,22 +250,6 @@ J&rsquo;explique ici une méthode pour y arriver ridiculement facilement avec Af
 	                            <header>
 	                                <a href="/categories/nomade-digital/" class="text-small">Nomade Digital</a>
 	                                <span style="float:right;" class="text-small">5</span>
-	                            </header>
-	                        </article>
-	                    </li>
-	                    <li>
-	                        <article>
-	                            <header>
-	                                <a href="/categories/storytelling/" class="text-small">Storytelling</a>
-	                                <span style="float:right;" class="text-small">3</span>
-	                            </header>
-	                        </article>
-	                    </li>
-	                    <li>
-	                        <article>
-	                            <header>
-	                                <a href="/categories/tedx/" class="text-small">TEDx</a>
-	                                <span style="float:right;" class="text-small">3</span>
 	                            </header>
 	                        </article>
 	                    </li>
@@ -261,14 +269,24 @@ J&rsquo;explique ici une méthode pour y arriver ridiculement facilement avec Af
 	                            </header>
 	                        </article>
 	                    </li>
+	                    <li>
+	                        <article>
+	                            <header>
+	                                <a href="/categories/mac/" class="text-small">Mac</a>
+	                                <span style="float:right;" class="text-small">1</span>
+	                            </header>
+	                        </article>
+	                    </li>
+	                    <li>
+	                        <article>
+	                            <header>
+	                                <a href="/categories/opinions/" class="text-small">Opinions</a>
+	                                <span style="float:right;" class="text-small">1</span>
+	                            </header>
+	                        </article>
+	                    </li>
 		            </ul>
 		        </section><!-- categories -->
-		        <section class="blurb">
-		            <p>Pierre Morsa est Partner + Creative Director chez <a href='https://www.ideasonstage.com'>Ideas on Stage</a>, la première agence globale de création de présentations. <br>Pour me contacter écrivez-moi à<br>p i e r r e . m o r s a @ pierremorsa.com</p>
-		            <ul class="actions">
-		                <li><a href="/about/" class="button">En savoir plus</a></li>
-		            </ul>
-		        </section><!-- blurb -->
 		        <section id="footer">
 		            <p class="copyright">Site garanti sans cookies et sans JavaScript. Le contenu est en copie libre : vous pouvez tout copier et réutiliser librement.</p>
 		        </section><!-- footer -->

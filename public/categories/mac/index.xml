@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mac on Pierre Morsa | Présenter en public et GTD</title>
+    <link>https://www.pierremorsa.com/categories/mac/</link>
+    <description>Recent content in Mac on Pierre Morsa | Présenter en public et GTD</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Mon, 21 May 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.pierremorsa.com/categories/mac/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>La meilleure solution de récupération de disques sur Mac : Disk Warrior</title>
+      <link>https://www.pierremorsa.com/post/2018-05-21-meilleure-solution-recuperation-disques-mac-disk-warrior/</link>
+      <pubDate>Mon, 21 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pierremorsa.com/post/2018-05-21-meilleure-solution-recuperation-disques-mac-disk-warrior/</guid>
+      <description>Lorsque le gouvernement intersidéral ne sait plus faire face à ses problèmes de crash de disque dur ou de SSD, il ne fait pas appel au Capitaine Flam qui est un peu naze en informatique. Il fait appel à Disk Warrior. Ce super héros, méconnu du grand public, qui œuvre sur Mac depuis la nuit des temps.
+Pourquoi est-ce que je recommande Disk Warrior ? Déjà parce que contrairement aux autres solutions, il est « prudent » ; il ne va pas définitivement flinguer les données du disque problématique en essayant des opérations de récupération hasardeuses.</description>
+    </item>
+    
+  </channel>
+</rss>

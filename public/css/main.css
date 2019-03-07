@@ -181,7 +181,11 @@ code {
     font-family: "Courier New", monospace;
     font-size: 0.9em;
     margin: 0 0.25em;
-    padding: 0.25em 0.65em;
+	padding: 1em 1.5em;
+	display: block;
+	line-height: 1.75em;
+	width: auto;
+	white-space: pre-wrap;
 }
 
 pre {
@@ -189,27 +193,6 @@ pre {
     font-family: "Courier New", monospace;
     font-size: 0.9em;
     margin: 0 0 2em 0;
-    width: 720px;
-}
-
-pre code {
-    display: block;
-    line-height: 1.75em;
-    padding: 1em 1.5em;
-    overflow-x: auto;
-}
-
-@media screen and (max-width:1280px) {
-    pre {
-        width: 100%;
-		max-width: 480px;
-    }
-}
-
-@media screen and (max-width:980px) {
-    pre {
-        width: 100%;
-    }
 }
 
 hr {
@@ -277,7 +260,7 @@ button,
     transition: background-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
     background-color: transparent;
     border: 0;
-    box-shadow: inset 0 0 0 1px rgba(160, 160, 160, 0.3);
+    box-shadow: inset 0 0 0 1px rgba(128, 128, 128, 0.3);
     color: #3c3b3b !important;
     cursor: pointer;
     display: inline-block;
@@ -291,6 +274,7 @@ button,
     text-decoration: none;
     text-transform: uppercase;
     white-space: nowrap;
+    width: 100%;
 }
 
 button:hover,
@@ -313,6 +297,7 @@ button:disabled,
     -ms-pointer-events: none;
     pointer-events: none;
     color: rgba(160, 160, 160, 0.3) !important;
+	box-shadow: inset 0 0 0 1px rgba(160, 160, 160, 0.3);
 }
 
 button.disabled:before,
@@ -512,9 +497,10 @@ ul.posts {
 }
 
 ul.posts li {
-    border-top: dotted 1px rgba(160, 160, 160, 0.3);
-    margin: 1em 0 0 0;
-    padding: 1em 0 0 0;
+	border: 0;
+    margin: 0.5em 0 0 0;
+    padding: 0.5em 0 0 0;
+    color: #888;
 }
 
 ul.posts li:first-child {
@@ -594,7 +580,7 @@ dl dd {
     padding: 3em 3em 1em 3em;
     background: #ffffff;
     border: solid 1px rgba(160, 160, 160, 0.3);
-    margin: 0 0 3em 0;
+    margin: 0 0 2em 0;
     position: relative;
 }
 
@@ -724,7 +710,7 @@ header p {
 }
 
 body {
-    padding-top: 3.5em;
+    padding-top: 6em;
 }
 
 #header {
@@ -732,14 +718,15 @@ body {
     display: -webkit-flex;
     display: -ms-flex;
     display: flex;
+    flex-direction: column;
     -moz-justify-content: center;
     -webkit-justify-content: center;
     -ms-justify-content: center;
     justify-content: center;
+    align-items: center;
     background-color: #ffffff;
     border-bottom: solid 1px rgba(160, 160, 160, 0.3);
-    height: 3.5em;
-    line-height: 3.5em;
+    height: 6em;
     position: fixed;
     left: 0;
     top: 0;
@@ -750,24 +737,30 @@ body {
 #header a {
     color: inherit;
     text-decoration: none;
+    border: none;
+    padding: 0;
+    margin: 0;
 }
 
 #header h1 {
-    height: inherit;
-    line-height: inherit;
     padding: 0;
+    margin: 0;
     white-space: nowrap;
 }
 
 #header h1 a {
 	color: #bbbbbb;
-    font-size: 0.7em;
 }
 
-@media screen and (max-width:980px) {
-    #header {
-        height: 2.75em;
-        line-height: 2.75em;
+@media screen and (max-width:980px) {   
+    #header h1 {
+    	font-size: 0.7em;
+    }
+}
+
+@media screen and (max-width:320px) {   
+    #header h1 {
+    	font-size: 0.5em;
     }
 }
 
@@ -825,8 +818,7 @@ body {
 }
 
 #sidebar > * {
-    border-top: solid 1px rgba(160, 160, 160, 0.3);
-    margin: 3em 0 0 0;
+
     padding: 3em 0 0 0;
 }
 
@@ -901,7 +893,7 @@ body {
 
     #intro header p {
     	color: #bbbbbb;
-        font-size: 0.7em;
+        font-size: 1em;
     }
 
     #intro > :last-child {
@@ -925,12 +917,29 @@ body {
     text-transform: uppercase;
 }
 
+#links {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+
 .link {
-	display: inline-block;
+	flex: none;
+	margin: 0;
+	width: 122px;
+	margin-bottom: 2em;
+}
+
+.link-left {
+	margin-left: 0px;
+	margin-bottom: 0px;
+}
+
+.link img {
 	border: 1px solid rgba(160, 160, 160, 0.3);
 	width: 122px;
-	height: 92px;
-	margin-right: 10px;
+	height: 92px;	
 }
 
 .link a {
@@ -939,12 +948,69 @@ body {
 
 .link p {
 	font-size: 0.825em;
+	margin-bottom: 0px;
 }
 
 .text-small {
 	font-size: 0.825em;
 }
 
+.hide-sm {
+	display: none;	
+}
 
+.hide-lg {
+	display: none;
+}
 
+@media screen and (min-width:981px) {
+	.hide-lg {
+		display: block;
+	}
+}
 
+@media screen and (max-width:980px) {
+	.hide-sm {
+		display: block;
+	}
+
+}
+
+@media (prefers-color-scheme: dark) {
+    /* Overrides for Dark Mode. */
+    body {
+        color: #ddd;
+        background: #222;
+    }
+	
+	#header {
+		background: #222;
+	}
+
+	.post {
+		background: #222;
+	}
+	
+	h1, h2, h3, h4 {
+	    color: #bbb;
+	}
+	
+	strong, b {
+	    color: #ddd;
+	    font-weight: 700;
+	}
+	
+	button,
+	.button {
+		color: #bbb !important;
+		box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+	}
+	
+	button.disabled,
+	button:disabled,
+	.button.disabled,
+	.button:disabled {
+		box-shadow: inset 0 0 0 1px rgba(150, 150, 150, 0.5);
+	}
+	
+}

@@ -7,7 +7,9 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>fr</language>
     <lastBuildDate>Mon, 08 Jan 2018 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/categories/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://www.pierremorsa.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Art Oratoire</title>
@@ -30,7 +32,7 @@
     <item>
       <title>GTD Getting Things Done</title>
       <link>https://www.pierremorsa.com/categories/gtd-getting-things-done/</link>
-      <pubDate>Mon, 02 Oct 2017 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 24 Sep 2018 00:00:00 +0000</pubDate>
       
       <guid>https://www.pierremorsa.com/categories/gtd-getting-things-done/</guid>
       <description></description>
@@ -39,9 +41,18 @@
     <item>
       <title>Lifehacks</title>
       <link>https://www.pierremorsa.com/categories/lifehacks/</link>
-      <pubDate>Mon, 18 Sep 2017 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 25 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>https://www.pierremorsa.com/categories/lifehacks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mac</title>
+      <link>https://www.pierremorsa.com/categories/mac/</link>
+      <pubDate>Mon, 21 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pierremorsa.com/categories/mac/</guid>
       <description></description>
     </item>
     
@@ -57,16 +68,25 @@
     <item>
       <title>Nouvelles</title>
       <link>https://www.pierremorsa.com/categories/nouvelles/</link>
-      <pubDate>Mon, 15 Jan 2018 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 28 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>https://www.pierremorsa.com/categories/nouvelles/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>Opinions</title>
+      <link>https://www.pierremorsa.com/categories/opinions/</link>
+      <pubDate>Mon, 21 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pierremorsa.com/categories/opinions/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Présenter en public</title>
       <link>https://www.pierremorsa.com/categories/pr%C3%A9senter-en-public/</link>
-      <pubDate>Mon, 08 Jan 2018 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 14 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>https://www.pierremorsa.com/categories/pr%C3%A9senter-en-public/</guid>
       <description></description>
@@ -75,7 +95,7 @@
     <item>
       <title>Startup</title>
       <link>https://www.pierremorsa.com/categories/startup/</link>
-      <pubDate>Mon, 04 Dec 2017 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 11 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>https://www.pierremorsa.com/categories/startup/</guid>
       <description></description>
@@ -84,7 +104,7 @@
     <item>
       <title>Storytelling</title>
       <link>https://www.pierremorsa.com/categories/storytelling/</link>
-      <pubDate>Mon, 11 Dec 2017 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 14 May 2018 00:00:00 +0000</pubDate>
       
       <guid>https://www.pierremorsa.com/categories/storytelling/</guid>
       <description></description>
@@ -93,7 +113,7 @@
     <item>
       <title>TEDx</title>
       <link>https://www.pierremorsa.com/categories/tedx/</link>
-      <pubDate>Mon, 20 Feb 2017 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 10 Sep 2018 00:00:00 +0000</pubDate>
       
       <guid>https://www.pierremorsa.com/categories/tedx/</guid>
       <description></description>
@@ -102,7 +122,7 @@
     <item>
       <title>Technomagie</title>
       <link>https://www.pierremorsa.com/categories/technomagie/</link>
-      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 04 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>https://www.pierremorsa.com/categories/technomagie/</guid>
       <description></description>
