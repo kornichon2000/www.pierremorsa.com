@@ -6,8 +6,188 @@
     <description>Recent content in Technomagie on Pierre Morsa | Présenter en public et GTD</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr</language>
-    <lastBuildDate>Mon, 01 Jan 2018 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/categories/technomagie/" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 04 Mar 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.pierremorsa.com/categories/technomagie/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mac Mini 2018 et macOS Mojave</title>
+      <link>https://www.pierremorsa.com/post/2019-03-04-mac-mini-2018-macos-mojave/</link>
+      <pubDate>Mon, 04 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pierremorsa.com/post/2019-03-04-mac-mini-2018-macos-mojave/</guid>
+      <description>Début de cette année j’ai fait l’acquisition d’un Mac Mini qui fonctionne sous Mojave. C’était donc le moment de passer à la dernière version du système d’exploitation d’Apple. Voici quelques observations en vrac. Ce n’est pas vraiment un test, plutôt le retour d’expérience d’un vieux Mac User.
+Pourquoi un Mac Mini ? Cela faisait maintenant pratiquement quinze ans que je n’utilisais plus que des portables. Mon dernier Mac fixe était un G4 Cube, c’est vous dire.</description>
+    </item>
+    
+    <item>
+      <title>Quelques extensions en complément de uBlock Origin</title>
+      <link>https://www.pierremorsa.com/post/2019-02-25-extensions-pour-combattre-le-tracking-sur-internet/</link>
+      <pubDate>Mon, 25 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pierremorsa.com/post/2019-02-25-extensions-pour-combattre-le-tracking-sur-internet/</guid>
+      <description>La semaine dernière j’expliquais pourquoi j’étais repassé sur Firefox : pour pouvoir bénéficier de uBlock Origin, la meilleure extension pour bloquer la publicité. Mais c’est loin d’être suffisant pour éviter d’être suivi. En faisant quelques recherches, j’ai choisi les extensions suivantes pour compléter mon arsenal :
+ Decentraleyes : crée une copie locale de certaines ressources pour éviter de (trop) se connecter aux CDN gratuits, qui monétisent leur service en aidant à vous suivre sur Internet.</description>
+    </item>
+    
+    <item>
+      <title>Le meilleur bloqueur de pub sur Mac : uBlock Origin</title>
+      <link>https://www.pierremorsa.com/post/2019-02-18-le-meilleur-bloqueur-de-publicite-mac/</link>
+      <pubDate>Mon, 18 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pierremorsa.com/post/2019-02-18-le-meilleur-bloqueur-de-publicite-mac/</guid>
+      <description>Je n’ai bien sûr pas testé tous les bloqueurs de publicité existants. Cependant, parmi les solutions existantes, il n’y en a qu’une qui revienne systématiquement : uBlock Origin. Attention, pas uBlock tout court, mais uBlock Origin. C’est la seule extension qui soit à la fois répandue et qui ne se fasse pas payer pour laisser passer les pubs « acceptables ».
+Plein d’autres solutions, comme AdBlock, AdBlock Plus ou uBlock (tout court) se font payer par les publicitaires comme Google pour laisser passer leurs publicités, et ne sont donc pas réellement efficaces.</description>
+    </item>
+    
+    <item>
+      <title>Pourquoi Marzipan porte les apps iOS sur Mac, mais pas les apps Mac sur iOS ?</title>
+      <link>https://www.pierremorsa.com/post/2019-01-07-pourquoi-marzipan-apporte-les-apps-ios-sur-mac-mais-pas-l-inverse/</link>
+      <pubDate>Mon, 07 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pierremorsa.com/post/2019-01-07-pourquoi-marzipan-apporte-les-apps-ios-sur-mac-mais-pas-l-inverse/</guid>
+      <description>Fin 2018, Apple a présenté Marzipan, un système pour créer des apps iOS compatibles avec macOS. Certains y ont vu une excellente solution pour enrichir le catalogue d’applications Mac, qui est peut-être de qualité, mais loin d’avoir le dynamisme de l’écosystème d’iOS. Cela s’explique très simplement. Il y a en circulation autour d’un milliard de terminaux iOS, alors qu’on estime qu’il y a « seulement » cent millions de Mac en activité.</description>
+    </item>
+    
+    <item>
+      <title>Préserver un web ouvert</title>
+      <link>https://www.pierremorsa.com/post/2018-12-24-preserver-un-web-ouvert/</link>
+      <pubDate>Mon, 24 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pierremorsa.com/post/2018-12-24-preserver-un-web-ouvert/</guid>
+      <description>Le marché des navigateurs internet est dominé par un seul acteur. Microsoft. Nous sommes au milieu des années 2000 et Internet Explorer 6 a une part de marché de 95 %. Heureusement, à ce moment la Commission européenne intervient, et force Microsoft à séparer système d’exploitation et navigateur web. Quinze ans plus tard, le paysage a bien changé. Google Chrome est en position de force, Google ayant utilisé sa position dominante en tant que porte d’entrée du web pour « fortement inciter » les utilisateurs à passer à Chrome.</description>
+    </item>
+    
+    <item>
+      <title>Des macros Keyboard Maestro pour Hugo</title>
+      <link>https://www.pierremorsa.com/post/2018-12-17-des-macros-keyboard-maestro-pour-hugo/</link>
+      <pubDate>Mon, 17 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pierremorsa.com/post/2018-12-17-des-macros-keyboard-maestro-pour-hugo/</guid>
+      <description>Je l&amp;rsquo;ai déjà avoué, je ne suis pas un &amp;ldquo;vrai&amp;rdquo; ; taper tout à la ligne de commande, ça me casse les pieds. C&amp;rsquo;est pourquoi j&amp;rsquo;ai créé une palette de Macros avec Keyboard Maestro pour exécuter les commandes Hugo les plus fréquentes. Ces commandes sont :
+ Choisir le site sur lequel on veut travailler. Créer un nouvel article Démarrer le serveur local Hugo Arrêter le serveur local Hugo Générer ou non les articles futurs Générer ou non les brouillons (drafts) Nettoyer le répertoire cible  Vous pouvez télécharger les macros ici.</description>
+    </item>
+    
+    <item>
+      <title>Éviter les fichiers impossibles à supprimer de la corbeille de macOS</title>
+      <link>https://www.pierremorsa.com/post/2018-12-10-eviter-fichiers-impossibles-a-supprimer-corbeille-macos/</link>
+      <pubDate>Mon, 10 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pierremorsa.com/post/2018-12-10-eviter-fichiers-impossibles-a-supprimer-corbeille-macos/</guid>
+      <description>De temps en temps, lorsque vous essayez de vider la corbeille de votre Mac, vous pouvez avoir un message d’erreur vous disant que vous n’avez pas les droits de supprimer les fichiers. C’est gênant, d’autant plus que l’erreur ne va pas se résoudre toute seule. Pour moi, c’est d’autant plus gênant que cela cause une erreur lorsque Hazel essaie de faire le ménage de la corbeille. C’est pourquoi j’utilise un script qui se déclenche chaque jour pour rendre tous les fichiers de la corbeille effaçables.</description>
+    </item>
+    
+    <item>
+      <title>Ajouter automatiquement la date aux noms de fichiers avec Hazel</title>
+      <link>https://www.pierremorsa.com/post/2018-12-03-utiliser-hazel-pour-ajouter-automatiquement-la-date-aux-noms-de-fichiers/</link>
+      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pierremorsa.com/post/2018-12-03-utiliser-hazel-pour-ajouter-automatiquement-la-date-aux-noms-de-fichiers/</guid>
+      <description>Hazel fait partie de mes outils d’automatisation indispensables avec Keyboard Maestro, Quicksilver et AppleScript. Je vais montrer ici comment ajouter automatiquement à un nom de fichier la date à laquelle celui-ci a été ajouté. Cela peut être très utile, par exemple, pour classer facilement les documents scannés par date de réception.
+Pour cela, commencez par ajouter à Hazel le dossier contenant les documents à renommer.
+Ensuite, créez la règle suivante :</description>
+    </item>
+    
+    <item>
+      <title>Supprimer des fichiers en masse dans Slack</title>
+      <link>https://www.pierremorsa.com/post/2018-11-26-supprimer-des-fichiers-en-masse-dans-slack/</link>
+      <pubDate>Mon, 26 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pierremorsa.com/post/2018-11-26-supprimer-des-fichiers-en-masse-dans-slack/</guid>
+      <description>Supprimer des fichiers en masse dans Slack J&amp;rsquo;ai un ami qui utilise la version gratuite de Slack pour sa startup. En discutant, il m&amp;rsquo;a évoqué un problème auquel il faisait face. Il était obligé de supprimer les fichiers un à un lorsqu&amp;rsquo;il atteignait la limite de place.
+Heureusement, comme toujours quelqu&amp;rsquo;un a inventé une solution. Elle est disponible à l&amp;rsquo;adresse ci-dessous :
+https://bulk-delete-slack-files.herokuapp.com
+Mise à jour du 2018-12-07 : le lien vers la page pour générer le « token » (jeton) Slack n&amp;rsquo;est plus bon.</description>
+    </item>
+    
+    <item>
+      <title>Comment lancer une macro Visual Basic depuis AppleScript</title>
+      <link>https://www.pierremorsa.com/post/2018-11-19-lancer-macro-visual-basic-depuis-applescript/</link>
+      <pubDate>Mon, 19 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pierremorsa.com/post/2018-11-19-lancer-macro-visual-basic-depuis-applescript/</guid>
+      <description>Il est possible de lancer une macro Visual Basic depuis un script AppleScript. Comme souvent, il n’y a pas vraiment d’exemple, il faut donc tâtonner pour trouver comment cela marche. Aussi pour vous éviter la galère je vous donne la méthode.
+Dans l’exemple ci-dessous, j’utilise AppleScript pour lancer une macro Visual Basic qui prend deux nombres comme paramètres.
+	tell application &amp;quot;Microsoft PowerPoint&amp;quot; run VB macro macro name &amp;quot;SetShapePosition&amp;quot; list of parameters {200, 100} end tell  Un exemple concret : lancer une macro Visual Basic depuis Keyboard Maestro Visual Basic est beaucoup, beaucoup, beaucoup plus performant qu’AppleScript pour exécuter des actions dans PowerPoint, comme par exemple ajouter une forme sur chaque slide.</description>
+    </item>
+    
+    <item>
+      <title>Désactiver un trackpad en panne sur un MacBook Pro</title>
+      <link>https://www.pierremorsa.com/post/2018-04-30-desactiver-trackpad-en-panne-mackbook-pro/</link>
+      <pubDate>Mon, 30 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pierremorsa.com/post/2018-04-30-desactiver-trackpad-en-panne-mackbook-pro/</guid>
+      <description>Mise à jour du 2018-05-02 : le chevalier d’or du Taureau @DandumontP m’a fait remarquer que ce problème peut arriver parce que la batterie interne, située sous le trackpad, commence à gonfler. Dans ce cas il vaut mieux faire remplacer la batterie du Mac.
+J’ai un MacBook Pro 15 pouces dont le trackpad est bloqué. Du coup impossible de l’utiliser correctement, l’ordinateur pensant que le bouton de la souris est enfoncé en permanence.</description>
+    </item>
+    
+    <item>
+      <title>Copier-coller une illustration au format vectoriel de Affinity Designer vers PowerPoint</title>
+      <link>https://www.pierremorsa.com/post/2018-04-23-importer-graphique-vectoriel-affinity-designer-powerpoint/</link>
+      <pubDate>Mon, 23 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pierremorsa.com/post/2018-04-23-importer-graphique-vectoriel-affinity-designer-powerpoint/</guid>
+      <description>Grande nouvelle : depuis la toute dernière version, PowerPoint 2016 supporte nativement le copier-coller et l’import des images au format SVG. Ça tombe bien, Affinity Designer permet de copier les éléments sélectionnés au format SVG (allez faire un tour dans les préférences d’Affinity Designer, il y a une option à cocher pour cela). Ça, c’est pour la bonne nouvelle. La mauvaise nouvelle, c’est que le résultat de l’import ne peut pas être modifié librement dans PowerPoint.</description>
+    </item>
+    
+    <item>
+      <title>Utilisez Firefox au lieu de Safari pour tester votre connexion internet sur Mac</title>
+      <link>https://www.pierremorsa.com/post/2018-04-09-utilisez-firefox-pas-safari-test-vitesse-connexion-internet-mac/</link>
+      <pubDate>Mon, 09 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pierremorsa.com/post/2018-04-09-utilisez-firefox-pas-safari-test-vitesse-connexion-internet-mac/</guid>
+      <description>Depuis le mois de janvier j’ai la chance d’avoir une connexion internet rapide pour mon home office. Il y avait cependant quelque chose qui me chiffonnait : en dépit d’une connexion Gigabit sur chaque maillon (Ethernet et fibre), lorsque j’exécutais un test de performance avec nperf.com ou speedtest.net les débits descendants (téléchargement) restaient bloqués autour de 250 à 300Mbits.
+J’ai d’abord suspecté Orange d’avoir oublié d’activer l’option 1 Gbit. Mais j’ai commencé à me dire qu’il y avait quelque chose de pourri dans mes tests lorsque j’ai essayé de télécharger macOS El Capitan depuis les serveurs d’Apple.</description>
+    </item>
+    
+    <item>
+      <title>Mini test de la dernière version de PowerPoint Mac</title>
+      <link>https://www.pierremorsa.com/post/2018-03-26-mini-test-powerpoint-mac-office-365-fevrier-2018/</link>
+      <pubDate>Mon, 26 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pierremorsa.com/post/2018-03-26-mini-test-powerpoint-mac-office-365-fevrier-2018/</guid>
+      <description>Il y a quelques semaines, Microsoft a publié une nouvelle version de PowerPoint qui cache plus de changements qu’il n’y paraît au premier abord. Outre les nouvelles fonctionnalités visibles comme la collaboration en temps réel, PowerPoint partage désormais une bonne partie de son code avec celui de PowerPoint Windows. Quel impact dans l’utilisation quotidienne de PowerPoint ? C’est ce que je vous propose de découvrir ici non pas à travers un test complet (pour cela il faudrait déjà que tous les changements soient documentés clairement par Microsoft), mais à travers un retour d’expérience basé sur quelques semaines d’utilisation.</description>
+    </item>
+    
+    <item>
+      <title>Résoudre le problème « Failed to Render » dans Apple Motion et Final Cut Pro X</title>
+      <link>https://www.pierremorsa.com/post/2018-03-19-resoudre-probleme-plugin-apple-motion/</link>
+      <pubDate>Mon, 19 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pierremorsa.com/post/2018-03-19-resoudre-probleme-plugin-apple-motion/</guid>
+      <description>Mise à jour du 2018-03-31 : à priori macOS High Sierra 10.13.4 (c&amp;rsquo;est le .4 qui est important) règle le problème. Pour vérifier quelle est votre version de macOS, il faut aller dans le menu Pomme → À propos de ce Mac&amp;hellip;
+J’utilise de temps en temps Apple Motion, lorsque je dois réaliser des animations qui dépassent les capacités de PowerPoint. Un de mes plug-ins préférés est Yanobox Nodes 2. Mais la semaine dernière j’ai été confronté à un message d’erreur que je n’avais jamais eu lorsque j’ai essayé d’insérer le plug-in dans Motion : « Plugin: Failed To Render ».</description>
+    </item>
+    
+    <item>
+      <title>Un script pour extraire les images, photos et vidéos d&#39;un fichier PowerPoint</title>
+      <link>https://www.pierremorsa.com/post/2018-03-05-script-extraire-images-photos-videos-fichire-powerpoint-pptx/</link>
+      <pubDate>Mon, 05 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pierremorsa.com/post/2018-03-05-script-extraire-images-photos-videos-fichire-powerpoint-pptx/</guid>
+      <description>Vous vous souvenez peut-être du truc que je donnais dans un ancien billet pour extraire les images, les photos et les vidéos d’un fichier PowerPoint ? Et bien si vous possédez un Mac vous avez de la chance : j’ai écrit un script AppleScript pour automatiser la tâche. Si vous êtes sur Windows, vous pouvez toujours utiliser la technique manuelle.
+Si vous vous intéressez à AppleScript, j’ai beaucoup commenté le code pour vous aider à comprendre comment le script fonctionne.</description>
+    </item>
+    
+    <item>
+      <title>Mais qui voudrait utiliser la touche « Esc » pour sortir du mode présentateur de PowerPoint ?</title>
+      <link>https://www.pierremorsa.com/post/2018-02-19-quitter-mode-presentateur-powerpoint-esc-moins/</link>
+      <pubDate>Mon, 19 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pierremorsa.com/post/2018-02-19-quitter-mode-presentateur-powerpoint-esc-moins/</guid>
+      <description>Depuis toujours pour sortir du mode présentateur de PowerPoint, aussi bien sur Mac que sur PC, on utilisait la touche « Esc ». À priori Microsoft a dû penser que c’était trop simple, et en tout cas chez moi ça ne fonctionne plus dans toutes les présentations ! Incrédule j’ai d’abord cru que la touche esc de mon clavier avait un problème, mais non. Après quelques recherches il s’avère que pour quitter le mode présentateur il me faut désormais appuyer sur la touche « - » (signe moins).</description>
+    </item>
+    
+    <item>
+      <title>YouCanBookMe pour simplifier la prise de rendez-vous</title>
+      <link>https://www.pierremorsa.com/post/2018-02-12-youcanbookme-pour-simplifier-la-prise-de-rendez-vous/</link>
+      <pubDate>Mon, 12 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pierremorsa.com/post/2018-02-12-youcanbookme-pour-simplifier-la-prise-de-rendez-vous/</guid>
+      <description>J’expliquais dans ce billet de blog pourquoi il faut toujours proposer trois créneaux lorsqu’on demande un rendez-vous. Cela évite de nombreux allers-retours d’email inutiles. Cependant depuis j’ai trouvé un système encore meilleur : youcanbook.me
+YouCanBookMe est une solution de réservation de rendez-vous en ligne. Plutôt que de donner trois dates, j’ai prédéfini les créneaux disponibles. Mon correspondant ayant plus de choix, il peut choisir le créneau qui lui convient le mieux.</description>
+    </item>
     
     <item>
       <title>Le top 20 de mes Apps Mac en 2017</title>
@@ -15,64 +195,7 @@
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>https://www.pierremorsa.com/post/2018-01-01-top-20-apps-mac-2017/</guid>
-      <description>&lt;p&gt;C&amp;rsquo;est parfois difficile de savoir exactement quelles sont les applications que l&amp;rsquo;on utilise le plus souvent. Cependant depuis le milieu de l&amp;rsquo;année dernière j&amp;rsquo;utilise Timing (voir en position 9) pour suivre exactement le nombre d&amp;rsquo;heures à facturer à mes clients. Je peux donc vous donner avec assez de précision le top 20 des applications Mac que j&amp;rsquo;ai le plus utilisé entre juillet et décembre 2017, la numéro 1 étant la plus utilisée.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;20. Skype&lt;/strong&gt;. La statistique est un peu faussée car Skype fonctionne souvent en arrière-plan et j&amp;rsquo;ai un document ou une page web ouverte au premier plan. Le temps est donc compté pour la page web ou le document. Cependant Skype reste effectivement l&amp;rsquo;application de vidéoconférence que j&amp;rsquo;utilise le plus, car pratiquement tout le monde sait s&amp;rsquo;en servir.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;19. S-Gear&lt;/strong&gt;. C&amp;rsquo;est l&amp;rsquo;ampli virtuel que j&amp;rsquo;utilise lorsque je joue de la guitare électrique. Jouant assez peu, je suis étonné qu&amp;rsquo;elle apparaisse dans le top 20.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;18. Espresso&lt;/strong&gt;. L&amp;rsquo;éditeur de sites que j&amp;rsquo;utilise pour éditer le code des sites web, principalement pierremorsa.com et ideasonstage.com.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;17. iTunes&lt;/strong&gt;. Comme Skype, iTunes fonctionne en tâche de fond et son utilisation est forcément sous-estimée. Sinon je pense que ce serait l&amp;rsquo;application numéro 1 de la liste.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;16. Microsoft Word&lt;/strong&gt;. Word reste le traitement de texte de référence pour échanger des documents avec mes clients. Mais je préfère nettement utiliser une application légère comme IA Writer pour écrire (voir position 3).&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;15. FileMaker Pro&lt;/strong&gt;. Principalement pour gérer la base de données de mon entreprise. Cependant FileMaker Pro commence à montrer son âge, et c&amp;rsquo;est vrai que depuis le début de la société des solutions de CRM Web abordables sont apparues. De plus la nouvelle politique de licences de Filemaker ne me plaît pas du tout.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;14. Calendar&lt;/strong&gt;. Pour gérer mes rendez-vous. J&amp;rsquo;ai utilisé Fantastical un moment, mais j&amp;rsquo;ai été découragé par le prix de la mise à jour vers la version 2.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;13. Affinity Designer&lt;/strong&gt;. Ce programme me sert à créer des documents à imprimer ou des infographies lorsque je ne peux pas les créer directement dans PowerPoint. La seule fonctionnalité qui me manque par rapport à Illustrator est la possibilité de définir un calque pour imprimer du « blanc de soutien ».&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;12. Affinity Photo&lt;/strong&gt;. Complément parfait d&amp;rsquo;Affinity Designer, je m&amp;rsquo;en sers pour détourer les photos et effectuer des retouches ou des montages.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;11. Keynote&lt;/strong&gt;. Si PowerPoint est l&amp;rsquo;application que j&amp;rsquo;utilise pour créer des présentations pour mes clients, mes propres présentations sont encore sous Keynote pour des raisons historiques. Cependant vu la direction prise par Apple j&amp;rsquo;utilise de moins en moins Keynote.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;10. Slack&lt;/strong&gt;. Pour communiquer avec le reste de mon équipe. (J&amp;rsquo;ai compté le temps total passé sur Slack, App + Safari).&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;9. Timing&lt;/strong&gt;. C&amp;rsquo;est l&amp;rsquo;application de suivi du temps passé qui me permet de connaître exactement le temps passé sur une tâche à facturer à un client. Et accessoirement celle qui me permet de vous donner ces statistiques.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;8. Script Debugger&lt;/strong&gt;. Le meilleur éditeur AppleScript de la planète !&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;7. Mail&lt;/strong&gt;. Au fil des années j&amp;rsquo;ai essayé des tas de clients email différents, mais je reviens toujours à Apple Mail. J&amp;rsquo;y ai cependant ajouté le plugin « Mail Act-On » qui me permet de créer des modèles d&amp;rsquo;email, des raccourcis et de fixer une heure d&amp;rsquo;envoi pour les emails.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;6. OmniFocus&lt;/strong&gt;. Le gestionnaire de tâches à la sauce GTD que j&amp;rsquo;utilise depuis plusieurs années.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;5. Keyboard Maestro&lt;/strong&gt;. Le programme qui me sert à automatiser les tâches répétitives.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;4. Finder&lt;/strong&gt;. Pour gérer les fichiers. Probablement l&amp;rsquo;application la plus emblématique du manque de véritable intérêt d&amp;rsquo;Apple pour le Mac. Si vous regardez le Finder de Mac OS X 1.0 et le Finder de macOS High Sierra, vous verrez à quel point il y a eu peu de progrès de l&amp;rsquo;interface. Fixer la taille des colonnes est toujours aussi bordélique. Les utilisateurs lambda sont toujours aussi perdus dans la hiérarchie des éléments.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;3. IA Writer&lt;/strong&gt;. C&amp;rsquo;est le programme que j&amp;rsquo;utilise pour écrire, en particulier les articles de ce blog. Il est simple et sans fioritures, et c&amp;rsquo;est exactement ce que j&amp;rsquo;apprécie.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;2. Microsoft PowerPoint&lt;/strong&gt;. Par la force de mon métier, c&amp;rsquo;est le programme que j&amp;rsquo;utilise tout le temps.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;1. Safari&lt;/strong&gt;. De nos jours, qu&amp;rsquo;est-ce qu&amp;rsquo;on ne fait pas dans un browser ?&lt;/p&gt;
-
-&lt;p&gt;Je n&amp;rsquo;ai volontairement pas donné de liens directs vers les sites des éditeurs car je ne voulais pas que cela ressemble à une incitation à l&amp;rsquo;achat, ce n&amp;rsquo;est pas l&amp;rsquo;objectif. Je veux également donner une mention honorable à certains programmes qui n&amp;rsquo;apparaissent pas dans cette liste car ils sont soit automatisés, soit en tâche de fond, mais je les utilise tous les jours :&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Amphetamine&lt;/strong&gt;. Un petit programme qui empêche le Mac de passer en veille ou d&amp;rsquo;éteindre l&amp;rsquo;écran. Très pratique lorsqu&amp;rsquo;on présente.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Fake&lt;/strong&gt;. C&amp;rsquo;est un browser web basé sur Webkit comme Safari, mais qui permet d&amp;rsquo;automatiser certaines actions.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Chronosync&lt;/strong&gt;. Le programme qui me sert à sauvegarder mes données en plus de Time Machine. Fiable, puissant mais parfois un peu compliqué à configurer.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Little Snitch&lt;/strong&gt;. Le meilleur firewall pour Mac.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Cryptomator&lt;/strong&gt;. Pour ajouter une couche de sécurité aux documents sauvegardés dans le Cloud.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Viscosity&lt;/strong&gt;. Un programme qui gère OpenVPN.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Quicksilver&lt;/strong&gt;. Le lanceur d&amp;rsquo;applications que j&amp;rsquo;utilise depuis très, très longtemps. Je me suis habitué à son fonctionnement particulier depuis sa toute première version. J&amp;rsquo;ai essayé Launchbar et Alfred, mais je suis toujours revenu à Quicksilver.&lt;/p&gt;
-</description>
+      <description>C&amp;rsquo;est parfois difficile de savoir exactement quelles sont les applications que l&amp;rsquo;on utilise le plus souvent. Cependant depuis le milieu de l&amp;rsquo;année dernière j&amp;rsquo;utilise Timing (voir en position 9) pour suivre exactement le nombre d&amp;rsquo;heures à facturer à mes clients. Je peux donc vous donner avec assez de précision le top 20 des applications Mac que j&amp;rsquo;ai le plus utilisé entre juillet et décembre 2017, la numéro 1 étant la plus utilisée.</description>
     </item>
     
     <item>
@@ -81,113 +204,9 @@
       <pubDate>Mon, 25 Dec 2017 00:00:00 +0000</pubDate>
       
       <guid>https://www.pierremorsa.com/post/2017-12-25-site-hugo-github-netlify-2/</guid>
-      <description>
-
-&lt;p&gt;Dans cette deuxième partie nous allons voir comment configurer Netlify pour servir les pages du site. Si vous ne l&amp;rsquo;avez pas lue je vous conseille de démarrer par la &lt;a href=&#34;https://www.pierremorsa.com/post/2017-12-18-site-hugo-github-netlify-1&#34;&gt;partie 1 de l&amp;rsquo;article qui explique comment déplacer le code du site dans Github&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Le truc génial avec Netlify, c&amp;rsquo;est qu&amp;rsquo;il s&amp;rsquo;occupe de faire tout ce qui est généralement bien pénible à configurer :&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Il va être le serveur web des pages&lt;/li&gt;
-&lt;li&gt;Il est CDN (Content Distributed Network) pour accélérer la performance du site, et prend entièrement à sa charge la gestion du rafraîchissement du cache. Fini les arrachages de cheveux parce que le cache ne s&amp;rsquo;est pas mis à jour correctement.&lt;/li&gt;
-&lt;li&gt;Il offre un DNS très rapide pour réduire la latence de connexion.&lt;/li&gt;
-&lt;li&gt;Il gère le https pour vous (si vous le souhaitez), et force la redirection de http vers https.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Pour pas un roro, c&amp;rsquo;est déjà super. Mais si en plus je vous dis que Netlify :&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Compile automatiquement le site hugo pour vous à partir du repository Github&lt;/li&gt;
-&lt;li&gt;Déploie automatiquement la branche compilée&lt;/li&gt;
-&lt;li&gt;Permet de tester autant de branches alternatives (versions de test ou versions futures par exemple) que souhaité&lt;/li&gt;
-&lt;li&gt;Permet de faire du A/B testing automatiquement&lt;/li&gt;
-&lt;li&gt;Permet de faire un rollback (retour en arrière) simplement en cas de catastrophe.&lt;/li&gt;
-&lt;li&gt;Offre un système de gestion de contenu hyper rapide (CMS).&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Et tout ça toujours pour zéro roros ? Elle est pas belle la vie ?&lt;/p&gt;
-
-&lt;h2 id=&#34;configurer-netlify&#34;&gt;Configurer Netlify&lt;/h2&gt;
-
-&lt;p&gt;C&amp;rsquo;est bien beau tout ça, mais du coup ça doit sûrement être compliqué de tout paramétrer. Ben non. La magie de Netlify c&amp;rsquo;est que tout reste super simple.&lt;/p&gt;
-
-&lt;h3 id=&#34;créer-un-compte-netlify&#34;&gt;Créer un compte Netlify&lt;/h3&gt;
-
-&lt;p&gt;Pour créer un compte Netlify, identifiez-vous avec votre compte Github.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/12/netlify-signin-github.jpg&#34; alt=&#34;Netlify Signin Github&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Pourquoi avec votre compte Github ? Parce que&amp;hellip; Netlify va automatiquement vous proposer les différents projets que vous avez stockés sur Github. Donnez l&amp;rsquo;autorisation à Netlify d&amp;rsquo;accéder à votre compte Github. Voilà, vous venez de configurer votre compte Netlify.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/12/netlify-authorize-github.jpg&#34; alt=&#34;Netlify Authorize Github&#34; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;ajouter-son-site-hugo-sur-netlify&#34;&gt;Ajouter son site Hugo sur Netlify&lt;/h3&gt;
-
-&lt;p&gt;Pour ajouter un site commençons par cliquer sur le bouton « New site from Git ».&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/12/netlify-new-site-from-git.jpg&#34; alt=&#34;Netlify New Site From Git&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Ensuite, il faut choisir « Github » (ou une des autres options  si votre code est hébergé chez GitLab ou un autre).&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/12/netlify-create-a-new-site-from-github.jpg&#34; alt=&#34;Netlify Create A New Site From Github&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Il faut de nouveau autoriser Netlify à accéder aux repositories GitHub.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/12/netlify-github-additional-permissions.jpg&#34; alt=&#34;Netlify Github Additional Permissions&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Sélectionnez alors le repository qui contient le code de votre site, dans mon cas « www.testtoto.com ».&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/12/netlify-new-site-choose.jpg&#34; alt=&#34;Netlify New Site Choose&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Il ne reste désormais plus que quelques informations à fournir :&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Vous pouvez normalement laisser le nom de la branche à déployer à « master » (comme expliqué dans l&amp;rsquo;article précédent, c&amp;rsquo;est le nom par défaut de la version « validée »).&lt;/li&gt;
-&lt;li&gt;La « Build command » est simplement&amp;hellip; &lt;code&gt;hugo&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Le nom du répertoire de publication est &lt;code&gt;public&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Une fois ces informations renseignées, vous pouvez cliquer sur « Deploy Site ». En général la compilation et publication d&amp;rsquo;un site prend entre quelques secondes et quelques minutes maximum.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/12/netlify-new-site-added.jpg&#34; alt=&#34;Netlify New Site Added&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Netlify attribue automatiquement un URL au nouveau site qu&amp;rsquo;il gère. Dans mon exemple cet URL est &lt;a href=&#34;http://eager-hugle-1657a8.netlify.com -&#34;&gt;http://eager-hugle-1657a8.netlify.com -&lt;/a&gt; Le site est désormais accessible directement à cet URL, mais il ne vous convient certainement pas. Nous allons donc maintenant passer aux étapes 2 et 3 : la configuration d&amp;rsquo;un nom de domaine personnalisé et du https.&lt;/p&gt;
-
-&lt;h3 id=&#34;configurer-le-nom-de-domaine&#34;&gt;Configurer le nom de domaine&lt;/h3&gt;
-
-&lt;p&gt;Mon nom de domaine est pierremorsa.com, et je l&amp;rsquo;ai acheté il y a un bout de temps&amp;hellip; Pour le configurer, il y a deux solutions :&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Modifier les informations du DNS existant pour pointer vers les serveurs de Netlify.&lt;/li&gt;
-&lt;li&gt;Ou utiliser les serveurs DNS de Netlify.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Je ne vais décrire ici que la deuxième option, utiliser les serveurs DNS de Netlify. Ils se vantent d&amp;rsquo;avoir les serveurs DNS les plus rapides du monde. J&amp;rsquo;ignore si c&amp;rsquo;est vrai.&lt;/p&gt;
-
-&lt;p&gt;Cette opération est rendue la plus simple possible par Netlify, mais elle reste malgré tout assez délicate, et parfois un peu déroutante, car il y a un temps de latence entre le moment où l&amp;rsquo;on demande la modification des paramètres d&amp;rsquo;un DNS et le moment où ces changements deviennent effectifs partout dans le monde. C&amp;rsquo;est une opération à faire le moins souvent possible.&lt;/p&gt;
-
-&lt;p&gt;Cliquez sur « Set up a custom domain ». Si vous avez loupé cet écran, cliquez simplement sur « Domain settings » → Domain management → Domains et cela reviendra au même.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/12/netlify-add-custom-domain.jpg&#34; alt=&#34;Netlify Add Custom Domain&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Cliquez ensuite sur « Add custom domain », entrez le nom de votre domaine, puis sur Save.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/12/netlify-add-custom-domain-2.jpg&#34; alt=&#34;Netlify Add Custom Domain 2&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;À ce niveau, vous allez probablement avoir une erreur. Cliquez sur le message « Check DNS configuration ». Cliquez alors sur « Set up Netlify DNS for votredomaine.com ».&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/12/netlify-setup-dns.jpg&#34; alt=&#34;Netlify Setup Dns&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Dans l&amp;rsquo;écran qui apparaît, cliquez sur Create DNS zone.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/12/netlify-create-dns-zone.jpg&#34; alt=&#34;Netlify Create Dns Zone&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Netlify crée alors les données de base pour le DNS, mais vous pouvez allez avoir besoin d&amp;rsquo;ajouter des infos manuellement. Encore une fois, c&amp;rsquo;est la partie la plus « compliquée » du processus car chaque cas est différent. Par exemple si vous avez un service d&amp;rsquo;email lié à votre nom de domaine (dans mon exemple email@testtoto.com) vous devrez configurer correctement les données DNS de votre service d&amp;rsquo;email sinon vos emails vont se perdre dans la nature.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Une fois cette étape effectuée, allez sur le service chez qui vous avez enregistré votre nom de domaine, et modifiez les serveurs DNS actuels par ceux de Netlify.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Une fois cette étape terminée, et une fois que les serveurs DNS dans le monde se seront mis à jour, votre site Hugo www.votresite.com sera servi par Netlify hyper rapidement ! Il ne vous restera plus qu&amp;rsquo;à activer le https pour que tout soit parfait ; l&amp;rsquo;opération étant très simple, je ne la détaillerai pas ici.&lt;/p&gt;
-</description>
+      <description>Dans cette deuxième partie nous allons voir comment configurer Netlify pour servir les pages du site. Si vous ne l&amp;rsquo;avez pas lue je vous conseille de démarrer par la partie 1 de l&amp;rsquo;article qui explique comment déplacer le code du site dans Github.
+Le truc génial avec Netlify, c&amp;rsquo;est qu&amp;rsquo;il s&amp;rsquo;occupe de faire tout ce qui est généralement bien pénible à configurer :
+ Il va être le serveur web des pages Il est CDN (Content Distributed Network) pour accélérer la performance du site, et prend entièrement à sa charge la gestion du rafraîchissement du cache.</description>
     </item>
     
     <item>
@@ -196,114 +215,8 @@
       <pubDate>Mon, 18 Dec 2017 00:00:00 +0000</pubDate>
       
       <guid>https://www.pierremorsa.com/post/2017-12-18-site-hugo-github-netlify-1/</guid>
-      <description>
-
-&lt;p&gt;Dans cette première partie je vous propose un tutoriel pas à pas pour créer le fichier netlify.toml, et héberger le code du site sur Github.&lt;/p&gt;
-
-&lt;p&gt;Ce blog est une sorte de cobaye. Je lui fais subir des tas d&amp;rsquo;expériences lorsque je veux tester ce que cela donne. À l&amp;rsquo;origine c&amp;rsquo;était une simple page web, puis il a migré sur Joomla un des premiers « CMS » 100% Web, puis sur Wordpress qui était et est encore la solution préférée de beaucoup de sites. Fatigué des problèmes à répétition de WordPress (sécurité, mise à jour des plugins, etc.) j&amp;rsquo;ai fini par migrer en 2016 vers un site statique généré par le génial &lt;a href=&#34;http://gohugo.io&#34;&gt;Hugo&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Jusqu&amp;rsquo;il y a peu ce blog était encore chez un hébergeur classique, mais depuis la semaine dernière il tourne avec le couple &lt;a href=&#34;https://github.com&#34;&gt;Github&lt;/a&gt; + &lt;a href=&#34;https://www.netlify.com&#34;&gt;Netlify&lt;/a&gt;. Github stocke tout le contenu et tout le « code » du site (à mon sens ce n&amp;rsquo;est pas vraiment du code car ça n&amp;rsquo;exécute rien, mais plutôt des données structurées), et Netlify sert les pages depuis son CDN. À en croire ce test, le résultat en termes de performances me semble plutôt probant :&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/12/testmysite-pierremorsa-com.jpg&#34; alt=&#34;Testmysite Pierremorsa Com&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Évidemment ce test risque de ne pas être 100% impartial vu qu&amp;rsquo;il est proposé depuis le site de Netlify. Cependant mon autre site &lt;a href=&#34;htts://www.ideasonstage.com&#34;&gt;Ideas on Stage&lt;/a&gt; a un score presque parfait alors qu&amp;rsquo;il n&amp;rsquo;est pas hébergé par Netlify mais par le tandem Dreamhost + Cloudflare, donc je crois à une certaine objectivité.&lt;/p&gt;
-
-&lt;p&gt;Je dois dire que je suis très impressionné par Netlify. Son avantage ce n&amp;rsquo;est pas que la rapidité. C&amp;rsquo;est aussi tous les outils qui vont autour. En tandem avec Github, il est possible de tester autant de branches différentes que l&amp;rsquo;on veut (une branche, c&amp;rsquo;est un peu comme une « version alternative d&amp;rsquo;un site»). Il est également possible de faire un « rollback », autrement dit de revenir simplement à la version précédente du site en cas de problème. En utilisant un webhook déclenché depuis Zapier j&amp;rsquo;ai même pu automatiser la publication des nouveaux articles à intervalles réguliers, ce qui était plus difficile à faire avec mon système précédent.&lt;/p&gt;
-
-&lt;p&gt;Le seul désavantage c&amp;rsquo;est que je n&amp;rsquo;ai plus du tout de statistiques, car je n&amp;rsquo;avais que les chiffres collectés par défaut par mon hébergeur. C&amp;rsquo;est facile à résoudre en intégrant Google Analytics, mais ce blog étant garanti 100% sans JavaScript je ne l&amp;rsquo;utiliserai pas, et pour moi ce n&amp;rsquo;est pas gênant.&lt;/p&gt;
-
-&lt;p&gt;Coût total de l&amp;rsquo;hébergement avec cette solution : 0€. Oui c&amp;rsquo;est assez dingue, ça ne coûte rien pour les versions de base. la seule partie qui reste payante est le nom de domaine.&lt;/p&gt;
-
-&lt;p&gt;Ci-dessous vous trouverez la procédure que j&amp;rsquo;ai suivie pour migrer ce blog vers Github + Netlify. Je l&amp;rsquo;ai réalisé depuis un Mac, mais c&amp;rsquo;est très similaire depuis n&amp;rsquo;importe quel autre système. Pour suivre ce tutoriel il vaut mieux :&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Savoir vous servir un peu du terminal&lt;/li&gt;
-&lt;li&gt;Comprendre les notions Github de « commit », « branch », « pull » et « push »&lt;/li&gt;
-&lt;li&gt;Comprendre comment un DNS fonctionne&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;créez-un-fichier-netlify-toml&#34;&gt;Créez un fichier netlify.toml&lt;/h2&gt;
-
-&lt;p&gt;À la racine du site, dans le même répertoire que celui qui contient déjà &lt;code&gt;config.toml&lt;/code&gt; il faut ajouter un fichier nommé &lt;code&gt;netlify.toml&lt;/code&gt;, qui contiendra les versions de Hugo à utiliser par Netlify pour compiler le site. Voici le contenu de mon fichier netlify.toml :&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;[context.production.environment]
-  HUGO_VERSION = &amp;quot;0.31&amp;quot;
-  
-[context.deploy-preview.environment]
-  HUGO_VERSION = &amp;quot;0.31&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.pierremorsa.com/files/netlify.toml&#34;&gt;Pour les total flemmards vous pouvez télécharger directement le fichier ici&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;mettez-le-code-du-blog-sur-github&#34;&gt;Mettez le code du blog sur Github&lt;/h2&gt;
-
-&lt;p&gt;Si vous ne connaissez pas du tout Github, à la base c&amp;rsquo;est une solution pour gérer différentes versions d&amp;rsquo;un « répertoire ». C&amp;rsquo;est très utile pour les développeurs, qui peuvent ainsi garder une version stable de leur code et en parallèle travailler sur des nouvelles versions sans devoir tout dupliquer. Qui peut le plus peut le moins. Github peut servir à « versionner » des répertoires de documents, et dans notre cas le code source d&amp;rsquo;un site.&lt;/p&gt;
-
-&lt;h3 id=&#34;créez-un-compte-github&#34;&gt;Créez un compte Github&lt;/h3&gt;
-
-&lt;p&gt;Je ne vais pas expliquer cette partie, il suffit d&amp;rsquo;aller sur &lt;a href=&#34;https://github.com&#34;&gt;github.com&lt;/a&gt; et de se créer un compte, c&amp;rsquo;est à la portée du premier utilisateur de Facebook venu. Si comme pour moi laisser le code source de votre site accessible à tous n&amp;rsquo;est pas un souci, vous pouvez créer un compte gratuit, sinon il faudra payer 7$ par mois pour avoir un repository privé. Gardez bien le nom d&amp;rsquo;utilisateur et le mot de passe car nous allons en avoir besoin.&lt;/p&gt;
-
-&lt;p&gt;Si vous ne connaissez pas le fonctionnement de Github je vous conseille de lire le guide de démarrage car ce n&amp;rsquo;est pas forcément intuitif, surtout si vous n&amp;rsquo;avez jamais fait de développement.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Par contre pas besoin de démarrer un nouveau projet, car nous allons utiliser le répertoire existant sur votre ordi.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;initialisez-le-repository-github&#34;&gt;Initialisez le « repository » Github&lt;/h3&gt;
-
-&lt;p&gt;À partir du terminal, allez dans le répertoire qui contient le code du site. Par exemple &lt;code&gt;~/Sites/Hugo/www.testtoto.com/&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Une fois dans le bon répertoire tapez la commande suivante pour initialiser le répertoire Github :&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;git init&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Vous devriez avoir un message du genre&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;Initialized empty Git repository in ~/Sites/Hugo/www.testtoto.com/.git/&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Voilà, c&amp;rsquo;est tout, on pourrait tout faire depuis la ligne de commande en tapant des tas de trucs qui font intelligent mais ça me casse les pieds. Je vais donc utiliser le client Github Desktop pour la suite.&lt;/p&gt;
-
-&lt;h3 id=&#34;téléchargez-et-installez-github-desktop&#34;&gt;Téléchargez et installez Github Desktop.&lt;/h3&gt;
-
-&lt;p&gt;Pour ce faire cliquez sur le lien ci-dessous :&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://desktop.github.com&#34;&gt;Github Desktop&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Une fois installé, lancez Github Desktop, et utilisez votre nom d&amp;rsquo;utilisateur et mot de passe pour vous connecter à votre compte Github.&lt;/p&gt;
-
-&lt;h3 id=&#34;ajoutez-votre-répertoire-git-local-à-github-desktop&#34;&gt;Ajoutez votre répertoire git local à Github Desktop&lt;/h3&gt;
-
-&lt;p&gt;Si l&amp;rsquo;application ne vous le propose pas par défaut commencez par ajouter votre repository :&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;File → Add Local Repository...&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/12/github-add-local-repository.jpg&#34; alt=&#34;Github Add Local Repository&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Attention : avant de lancer la copie de vos fichiers vers Github, vérifiez qu&amp;rsquo;il n&amp;rsquo;y a pas d&amp;rsquo;autres répertoires .git cachés dans les sous-répertoires, en particulier dans les répertoires des thèmes, sinon vous risquez d&amp;rsquo;avoir des erreurs.&lt;/p&gt;
-
-&lt;p&gt;Voilà, normalement la barre du haut doit ressembler à ça :
-&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/12/github-desktop-top-bar.jpg&#34; alt=&#34;Github Desktop Top Bar&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Si nécessaire faites un commit de tous les changements sur la branche master (par défaut master est la branche principale de votre projet, celle qui fait office de référence pour la version « stable » de votre code). L&amp;rsquo;opération de commit « officialise » les changements, cela signifie, « c&amp;rsquo;est bon ces changements sont validés et peuvent être publiés ».&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/12/github-commit-hugo-repository.jpg&#34; alt=&#34;Github Commit Hugo Repository&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Il suffit maintenant de cliquer sur le bouton &lt;strong&gt;Publish repository&lt;/strong&gt; et tous les fichiers locaux vont être copiés vers Github.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/12/github-publish-hugo-repository.jpg&#34; alt=&#34;Github Publish Hugo Repository&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;L&amp;rsquo;avantage est que vous pouvez désormais synchroniser vos modifications locales et en ligne (dans le clllowwd comme on dit). Cependant pour se faire il faut bien comprendre les notions de « branch » et « commit » sinon vous risquez de galérer. J&amp;rsquo;essaierai de prendre le temps de les expliquer plus en détail dans un autre billet. Pour la suite du tutoriel je vais prendre l&amp;rsquo;hypothèse que vous modifiez les fichiers uniquement depuis le répertoire local.&lt;/p&gt;
-
-&lt;p&gt;Votre site est désormais sur GitHub. Si vous rafraîchissez la page vous devriez le voir apparaître dans la liste des repositories.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/12/github-your-hugo-repository.jpg&#34; alt=&#34;Github Your Hugo Repository&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Vous bénéficiez désormais de la gestion des versions, qui est la raison d&amp;rsquo;être de git. &lt;a href=&#34;https://www.pierremorsa.com/post/2017-12-25-site-hugo-github-netlify-2&#34;&gt;Dans la partie 2 nous allons voir comment configurer Netlify pour automatiser le déploiement du site et servir les pages aux visiteurs.&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Révisions :&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;2017-12-21 : amélioration de l&amp;rsquo;explication de certaines étapes en particulier pour Github.&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description>Dans cette première partie je vous propose un tutoriel pas à pas pour créer le fichier netlify.toml, et héberger le code du site sur Github.
+Ce blog est une sorte de cobaye. Je lui fais subir des tas d&amp;rsquo;expériences lorsque je veux tester ce que cela donne. À l&amp;rsquo;origine c&amp;rsquo;était une simple page web, puis il a migré sur Joomla un des premiers « CMS » 100% Web, puis sur Wordpress qui était et est encore la solution préférée de beaucoup de sites.</description>
     </item>
     
     <item>
@@ -312,179 +225,8 @@
       <pubDate>Mon, 13 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>https://www.pierremorsa.com/post/2017-11-13-ajouter-formulaire-hugo/</guid>
-      <description>
-
-&lt;p&gt;Vous trouverez dans cet article une procédure pas à pas pour ajouter un formulaire de contact dans un site statique Hugo, sans avoir besoin de back-end car nous allons déléguer le traitement des données à Zapier.&lt;/p&gt;
-
-&lt;p&gt;J&amp;rsquo;ai déjà parlé de &lt;a href=&#34;http://gohugo.io&#34;&gt;Hugo&lt;/a&gt;, le générateur de sites statiques que j&amp;rsquo;utilise pour mon blog et le site de ma société. Les sites générés étant statiques, il n&amp;rsquo;y a pas de base de données ou de scripts serveurs pour gérer un formulaire de contact. Il faut donc trouver une solution alternative. En voici une possible, mais ce n&amp;rsquo;est pas la seule.&lt;/p&gt;
-
-&lt;h2 id=&#34;ce-dont-vous-allez-avoir-besoin&#34;&gt;Ce dont vous allez avoir besoin&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Bootstrap, ou au minimum la librairie de validation de formulaire ; le thème utilisé était basé sur &lt;a href=&#34;http://getbootstrap.com&#34;&gt;Bootstrap&lt;/a&gt;, une librairie qui permet de créer des sites web plus facilement. Si votre thème n&amp;rsquo;utilise pas Bootstrap, il faudra peut-être bidouiller un peu plus.&lt;/li&gt;
-&lt;li&gt;Un compte &lt;a href=&#34;https://zapier.com&#34;&gt;Zapier&lt;/a&gt; pour créer le Web Hook auquel sera envoyé les données du formulaire&lt;/li&gt;
-&lt;li&gt;Un compte &lt;a href=&#34;https://slack.com/&#34;&gt;Slack&lt;/a&gt; pour pouvoir poster les données du formulaire ; à noter que le gros avantage d&amp;rsquo;utiliser Zapier est de pouvoir rediriger le contenu du formulaire vers pratiquement n&amp;rsquo;importe quel support : email, Slack, Google Sheets, Office 365, etc.&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;Un peu de JavaScript (eh oui on ne peut pas toujours s&amp;rsquo;en passer malheureusement)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;étape-1-créez-un-webhook-sur-zapier&#34;&gt;Étape 1 : créez un WebHook sur Zapier&lt;/h2&gt;
-
-&lt;p&gt;Commencez par créer un compte &lt;a href=&#34;https://www.zapier.com/&#34;&gt;Zapier&lt;/a&gt; si vous n&amp;rsquo;en avez pas encore ; la bonne nouvelle, c&amp;rsquo;est que c&amp;rsquo;est gratuit tant que vous n&amp;rsquo;utilisez pas trop le service.&lt;/p&gt;
-
-&lt;p&gt;Cliquez sur le bouton Make a Zap!&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/11/makeazap.jpg&#34; alt=&#34;Make a Zap!&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Dans « Built-in Apps » choisissez « Webhooks ».&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/11/zapier-webhook.jpg&#34; alt=&#34;Zapier Webhook&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Choisissez le type « Catch Hook ».&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/11/zapier-catch-hook.jpg&#34; alt=&#34;Zapier catch hook&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Passez l&amp;rsquo;étape optionnelle « Pick off a child key ».&lt;/p&gt;
-
-&lt;p&gt;L&amp;rsquo;étape suivante, « Test Webhooks by Zapier » est importante car elle vous donne l&amp;rsquo;URL de votre Webhook.  &lt;strong&gt;Copiez l&amp;rsquo;adresse du webhook quelque part&lt;/strong&gt; car nous allons en avoir besoin lorsque nous créerons le formulaire.&lt;/p&gt;
-
-&lt;p&gt;Notez que pour l&amp;rsquo;instant vous n&amp;rsquo;avez encore jamais envoyé de données au Webhook, par conséquent le test ne marchera pas. Gardez la page web de Zapier ouverte, nous y reviendrons plus tard.&lt;/p&gt;
-
-&lt;h2 id=&#34;étape-2-créez-un-fichier-contact-html-dans-le-répertoire-hugo-partials-de-votre-site&#34;&gt;Étape 2 : créez un fichier contact.html dans le répertoire Hugo /partials de votre site&lt;/h2&gt;
-
-&lt;p&gt;Ce fichier contiendra le code html du formulaire de contact. Ci-dessous vous trouverez l&amp;rsquo;exemple du formulaire de contact que j&amp;rsquo;ai créé.&lt;/p&gt;
-
-&lt;p&gt;Quel que soit le thème que vous utilisiez, le truc est d&amp;rsquo;utiliser l&amp;rsquo;URL du Webhook créé à l&amp;rsquo;étape précédente comme destination pour les données du formulaire. Pour cela, il faut adapter la ligne &lt;code&gt;&amp;lt;form action = ...&amp;gt;&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Dans le code ci-dessous, remplacez &lt;a href=&#34;https://hooks.zapier.com..&#34;&gt;https://hooks.zapier.com..&lt;/a&gt;. par l&amp;rsquo;URL de &lt;em&gt;votre&lt;/em&gt; hook Zapier créé dans l&amp;rsquo;étape précédente.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Vérifiez également que vous avez &lt;code&gt;method=&amp;quot;POST&amp;quot;&lt;/code&gt; comme méthode pour le form.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;{{ &amp;quot;&amp;lt;!-- Contact Section --&amp;gt;&amp;quot; | safeHTML }}
-&amp;lt;section id=&amp;quot;contact&amp;quot;&amp;gt;
-    &amp;lt;div class=&amp;quot;container&amp;quot;&amp;gt;
-        &amp;lt;div class=&amp;quot;row&amp;quot;&amp;gt;
-            &amp;lt;div class=&amp;quot;col-lg-12 text-center&amp;quot;&amp;gt;
-           			&amp;lt;h3 class=&amp;quot;section-subheading&amp;quot;&amp;gt;{{ with .Site.Params.contact.subtitle }}{{ . | markdownify }}{{ end }}&amp;lt;/h3&amp;gt;
-           			&amp;lt;br&amp;gt;
-            &amp;lt;/div&amp;gt;
-		    &amp;lt;/div&amp;gt;
-		        &amp;lt;div class=&amp;quot;col-md-6 col-md-offset-3 text-left&amp;quot;&amp;gt;
-		            &amp;lt;form  action=&amp;quot;https://hooks.zapier.com/hooks/...&amp;quot; method=&amp;quot;POST&amp;quot; name=&amp;quot;sentMessage&amp;quot; id=&amp;quot;contactForm&amp;quot;&amp;gt;
-				            &amp;lt;div class=&amp;quot;form-group&amp;quot;&amp;gt;
-				              		&amp;lt;input type=&amp;quot;hidden&amp;quot; name=&amp;quot;_subject&amp;quot; value=&amp;quot;Form sent from page: {{ .RelPermalink }}&amp;quot;&amp;gt;
-				            	&amp;lt;/div&amp;gt;
-		                &amp;lt;div class=&amp;quot;form-group&amp;quot;&amp;gt;
-		                    &amp;lt;input type=&amp;quot;text&amp;quot; class=&amp;quot;form-control&amp;quot; placeholder=&amp;quot;{{ with .Site.Params.contact.form.name.text }}{{ .  | markdownify }}{{ end }}&amp;quot; name=&amp;quot;name&amp;quot; required data-validation-required-message=&amp;quot;{{ with .Site.Params.contact.form.name.warning }}{{ . | markdownify}}{{ end }}&amp;quot;&amp;gt;
-		                    &amp;lt;p class=&amp;quot;help-block text-danger&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;
-		                &amp;lt;/div&amp;gt;
-		                &amp;lt;div class=&amp;quot;form-group&amp;quot;&amp;gt;
-		                    &amp;lt;input type=&amp;quot;email&amp;quot; class=&amp;quot;form-control&amp;quot; placeholder=&amp;quot;{{ with .Site.Params.contact.form.email.text }}{{ . | markdownify }}{{ end }}&amp;quot; name=&amp;quot;email&amp;quot; required data-validation-required-message=&amp;quot;{{ with .Site.Params.contact.form.email.warning }}{{ . | markdownify }}{{ end }}&amp;quot;&amp;gt;
-		                    &amp;lt;p class=&amp;quot;help-block text-danger&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;
-		                &amp;lt;/div&amp;gt;
-		                &amp;lt;div class=&amp;quot;form-group&amp;quot;&amp;gt;
-		                    &amp;lt;input type=&amp;quot;tel&amp;quot; class=&amp;quot;form-control&amp;quot; placeholder=&amp;quot;{{ with .Site.Params.contact.form.phone.text }}{{ . | markdownify }}{{ end }}&amp;quot; name=&amp;quot;phone&amp;quot;&amp;gt;
-		                    &amp;lt;p class=&amp;quot;help-block text-danger&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;
-		                &amp;lt;/div&amp;gt;
-		                &amp;lt;div class=&amp;quot;form-group&amp;quot;&amp;gt;
-		                    &amp;lt;textarea class=&amp;quot;form-control&amp;quot; placeholder=&amp;quot;{{ with .Site.Params.contact.form.message.text }}{{ . | markdownify }}{{ end }}&amp;quot; name=&amp;quot;message&amp;quot; required data-validation-required-message=&amp;quot;{{ with .Site.Params.contact.form.message.warning }}{{ . | markdownify }}{{ end }}&amp;quot;&amp;gt;&amp;lt;/textarea&amp;gt;
-		                    &amp;lt;p class=&amp;quot;help-block text-danger&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;
-		                &amp;lt;/div&amp;gt;
-		                &amp;lt;div class=&amp;quot;clearfix&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
-		                &amp;lt;div class=&amp;quot;col-lg-12 text-center&amp;quot;&amp;gt;
-		                    &amp;lt;div id=&amp;quot;success&amp;quot;&amp;gt;{{ with .Site.Params.contact.success }}{{ . | markdownify }}{{ end }}&amp;lt;/div&amp;gt;
-		                    &amp;lt;input type=&amp;quot;submit&amp;quot; value=&amp;quot;{{ with .Site.Params.contact.buttonText }}{{ . | markdownify }}{{ end }}&amp;quot; class=&amp;quot;btn btn-primary btn-xl&amp;quot;&amp;gt;
-		                &amp;lt;/div&amp;gt;
-                &amp;lt;/form&amp;gt;
-            &amp;lt;/div&amp;gt;
-        &amp;lt;/div&amp;gt;
-    &amp;lt;/div&amp;gt;
-&amp;lt;/section&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Après cette étape, vous devrez bien sûr modifier le code de vos pages pour qu&amp;rsquo;elles intègrent le formulaire là où vous le souhaitez ; je ne détaille pas cette étape, si vous lisez cet article c&amp;rsquo;est que vous savez déjà comment faire.&lt;/p&gt;
-
-&lt;h2 id=&#34;étape-3-ajoutez-le-code-javascript-nécessaire-à-la-validation-interactive-du-formulaire&#34;&gt;Étape 3 : ajoutez le code JavaScript nécessaire à la validation interactive du formulaire&lt;/h2&gt;
-
-&lt;p&gt;Vous connaissez déjà mon peu d&amp;rsquo;amour pour JavaScript, mais dans ce cas-ci c&amp;rsquo;est la seule solution que j&amp;rsquo;ai trouvé qui fonctionne. Le code est inséré directement dans la page, mais vous pouvez très bien le mettre dans un fichier sous /static/js/&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
-$(function() {
-
-    $(&amp;quot;input,textarea&amp;quot;).not(&amp;quot;[type=search]&amp;quot;).jqBootstrapValidation({
-        preventSubmit: true,
-        submitError: function($form, event, errors) {
-            
-        },
-        submitSuccess: function($form, e) {
-    	    e.preventDefault();
-    	
-    	    var submitButton = $(&#39;input[type=submit]&#39;, $form);
-    	    $.ajax({
-    	      type: &#39;POST&#39;,
-    	      url: $form.prop(&#39;action&#39;),
-    	      accept: {
-    	        javascript: &#39;application/javascript&#39;
-    	      },
-    	      data: $form.serialize(),
-    	      beforeSend: function() {
-				submitButton.prop(&#39;value&#39;, &#39;Please Wait...&#39;);
-				submitButton.prop(&#39;disabled&#39;, &#39;disabled&#39;);
-    	      }
-    	    }).done(function(data) {
-				submitButton.prop(&#39;value&#39;, &#39;Thank you, we\x27ll get back to you shortly.&#39;);
-    			submitButton.prop(&#39;disabled&#39;, false);
-    			hj(&#39;formSubmitSuccessful&#39;);
-    	    });
-        },
-
-        filter: function() {
-            return $(this).is(&amp;quot;:visible&amp;quot;);
-        },
-    });
-
-});
-
- 
-$(&#39;#name&#39;).focus(function() {
-    $(&#39;#success&#39;).html(&#39;&#39;);
-});
-&amp;lt;/script&amp;gt; 
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;À noter que même sans ce bout de code JavaScript, la soumission du formulaire au Webhook fonctionnera. Par contre c&amp;rsquo;est moche ; le visiteur sera redirigé vers une page affichant le résultat technique du Webhook, ce qui n&amp;rsquo;est vraiment pas idéal.&lt;/p&gt;
-
-&lt;h2 id=&#34;étape-4-installez-le-module-javascript-jqbootstrapvalidation&#34;&gt;Étape 4 : installez le module JavaScript jqBootstrapValidation&lt;/h2&gt;
-
-&lt;p&gt;Ce module est nécessaire pour faire fonctionner le code précédent. Vous le trouverez à l&amp;rsquo;URL suivant :&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://ReactiveRaven.github.com/jqBootstrapValidation/&#34;&gt;http://ReactiveRaven.github.com/jqBootstrapValidation/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Copiez le fichier jqBootstrapValidation.js dans le répertoire /static/js/&lt;/p&gt;
-
-&lt;h2 id=&#34;étape-5-finissez-de-configurer-les-pages-de-votre-site&#34;&gt;Étape 5 : finissez de configurer les pages de votre site&lt;/h2&gt;
-
-&lt;p&gt;N&amp;rsquo;oubliez pas d&amp;rsquo;intégrer le code du formulaire et le code JavaScript à vos pages. Sinon évidemment ça ne marchera pas. Selon votre formulaire de contact, il est très probable que vous deviez adapter certains détails du code. &lt;strong&gt;Je &lt;em&gt;ne pense pas&lt;/em&gt; avoir modifié le code de jqBootstrapValidation&lt;/strong&gt; mais avec le temps on oublie parfois&amp;hellip;&lt;/p&gt;
-
-&lt;h2 id=&#34;étape-6-finissez-de-configurer-zapier&#34;&gt;Étape 6 : finissez de configurer Zapier&lt;/h2&gt;
-
-&lt;p&gt;Je ne vais pas expliquer ce qu&amp;rsquo;il faut faire ici en détail car il y a des dizaines de solutions possibles, mais vous devrez configurer Zapier pour qu&amp;rsquo;il envoie les donnée du formulaire vers le canal de votre choix : Papier, email etc. Sans cela les données seront bloquées chez Zapier et pas très utiles.&lt;/p&gt;
-
-&lt;p&gt;Au final, l&amp;rsquo;action Zapier pour Slack ressemble à ceci :&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/11/zapier-slack-action.jpg&#34; alt=&#34;Zapier Slack Action&#34; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;pour-résumer&#34;&gt;Pour résumer&amp;hellip;&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;J&amp;rsquo;ai créé un Webhook sur Zapier pour récupérer les données du formulaire.&lt;/li&gt;
-&lt;li&gt;J&amp;rsquo;ai ajouté le fichier contact.html dans le répertoire /layouts/partials du thème, avec le code du formulaire.&lt;/li&gt;
-&lt;li&gt;J&amp;rsquo;ai ajouté le code JavaScript nécessaire lors de la soumission du formulaire.&lt;/li&gt;
-&lt;li&gt;J&amp;rsquo;ai ajouté le fichier jqBootstrapValidation.js dans le répertoire /static/js/&lt;/li&gt;
-&lt;li&gt;J&amp;rsquo;ai fini de configurer l&amp;rsquo;action Zapier pour poster les données du Webhook sur Slack.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Voilà, j&amp;rsquo;espère que cela vous aura été utile. Comme dans tout développement de ce type, difficile de garantir que cela fonctionnera tel quel sur votre site, mais cela devrait déjà être un bon point de départ.&lt;/p&gt;
-</description>
+      <description>Vous trouverez dans cet article une procédure pas à pas pour ajouter un formulaire de contact dans un site statique Hugo, sans avoir besoin de back-end car nous allons déléguer le traitement des données à Zapier.
+J&amp;rsquo;ai déjà parlé de Hugo, le générateur de sites statiques que j&amp;rsquo;utilise pour mon blog et le site de ma société. Les sites générés étant statiques, il n&amp;rsquo;y a pas de base de données ou de scripts serveurs pour gérer un formulaire de contact.</description>
     </item>
     
     <item>
@@ -493,18 +235,8 @@ $(&#39;#name&#39;).focus(function() {
       <pubDate>Mon, 02 Oct 2017 00:00:00 +0000</pubDate>
       
       <guid>https://www.pierremorsa.com/post/2017-10-02-controler-powerpoint-avec-controleur-midi/</guid>
-      <description>&lt;p&gt;Keyboard Maestro fait partie du top 5 des programmes que j&amp;rsquo;utilise tout le temps pour simplifier ou automatiser mon travail sur Mac. J&amp;rsquo;ai déjà donné quelques exemples d&amp;rsquo;actions possibles dans cet article. Depuis la semaine dernière Keyboard Maestro 8 est disponible. Je ne vais pas lister toutes les nouveautés ici, elles sont trop nombreuses, pour cela &lt;a href=&#34;https://wiki.keyboardmaestro.com/manual/Whats_New&#34;&gt;rendez vous directement sur la page officielle&lt;/a&gt; (en anglais).&lt;/p&gt;
-
-&lt;p&gt;Je vais juste évoquer l&amp;rsquo;amélioration de la partie MIDI ; il est désormais possible de déclencher des actions à partir d&amp;rsquo;un contrôleur MIDI.&lt;/p&gt;
-
-&lt;p&gt;J&amp;rsquo;ai un vieux contrôleur MIDI indestructible qui ressemble à un truc sorti d&amp;rsquo;un film de SF des années 60. Normalement je m&amp;rsquo;en sers pour contrôler les amplis virtuels de guitare, mais pour la démo je l&amp;rsquo;ai utilisé pour contrôler&amp;hellip; PowerPoint ! Et pourquoi pas après tout ? Lorsqu&amp;rsquo;on tourne le bouton 1 la transparence de l&amp;rsquo;objet change. Le bouton 2 change l&amp;rsquo;épaisseur du trait. Le bouton 3 change la taille de la police de caractères, etc. Lorsqu&amp;rsquo;on appuie sur le bouton au dessus cela applique le réglage à l&amp;rsquo;objet sélectionné (par exemple si le bouton est réglé sur une taille de police 24, appuyer sur le bouton va mettre le texte sélectionné en taille 24).&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/10/ibk10control.jpg&#34; alt=&#34;Controleur MIDI&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;L&amp;rsquo;avantage de ce contrôleur MIDI est d&amp;rsquo;utiliser des boutons à rotation « infinie », par opposition aux boutons qui se bloquent sur la butée lorsqu&amp;rsquo;ils ont atteint leur valeur minimum ou maximum. Cela permet de définir la valeur de départ du bouton de manière logicielle. La petite barre sur l&amp;rsquo;écran LCD représente la valeur courante du bouton.&lt;/p&gt;
-
-&lt;p&gt;Ça demande un peu de bricolage pour tout faire fonctionner, mais une fois au point c&amp;rsquo;est très rigolo de pouvoir régler les paramètres de PowerPoint avec des molettes. Le gain de productivité est (très) discutable, mais je l&amp;rsquo;ai fait pour montrer les possibilités du contrôle MIDI de Keyboard Maestro 8.&lt;/p&gt;
-</description>
+      <description>Keyboard Maestro fait partie du top 5 des programmes que j&amp;rsquo;utilise tout le temps pour simplifier ou automatiser mon travail sur Mac. J&amp;rsquo;ai déjà donné quelques exemples d&amp;rsquo;actions possibles dans cet article. Depuis la semaine dernière Keyboard Maestro 8 est disponible. Je ne vais pas lister toutes les nouveautés ici, elles sont trop nombreuses, pour cela rendez vous directement sur la page officielle (en anglais).
+Je vais juste évoquer l&amp;rsquo;amélioration de la partie MIDI ; il est désormais possible de déclencher des actions à partir d&amp;rsquo;un contrôleur MIDI.</description>
     </item>
     
     <item>
@@ -513,528 +245,8 @@ $(&#39;#name&#39;).focus(function() {
       <pubDate>Mon, 25 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>https://www.pierremorsa.com/post/2017-09-25-comment-je-trie-projets-omnifocus/</guid>
-      <description>&lt;p&gt;Comment trier ses projets dans OmniFocus ? Professionnel vs. personnel ? Par priorité ? Par date d&amp;rsquo;échéance ? Personnellement je les trie par statut. Si vous regardez l&amp;rsquo;image ci-dessous vous verrez que j&amp;rsquo;ai des dossiers nommés « active » (actifs), « stalled » (bloqué), « waiting for » (en attente), etc.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/09/projets-omnifocus.jpg&#34; alt=&#34;Projets OmniFocus&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Pourquoi ai-je choisi de trier mes projets de cette manière ? Parce que cela me permet d&amp;rsquo;identifier en un coup d&amp;rsquo;œil les projets sur lesquels je dois travailler, ceux que je dois débloquer, ceux qui sont en attente de quelque chose, etc.&lt;/p&gt;
-
-&lt;p&gt;Évidemment cette organisation est un peu pénible s&amp;rsquo;il faut trier manuellement les projets dans les dossiers en fonction de l&amp;rsquo;évolution de leur statut. C&amp;rsquo;est pourquoi j&amp;rsquo;ai écrit un script AppleScript appelé « housekeeping » qui va classer chaque projet automatiquement dans le bon dossier selon son statut. Vous trouverez le code du script ci-dessous. Je l&amp;rsquo;ai fait un peu à l&amp;rsquo;arrache, c&amp;rsquo;est loin d&amp;rsquo;être un exemple de code propre, et il faudra sûrement l&amp;rsquo;adapter un peu pour qu&amp;rsquo;il fonctionne chez vous, néanmoins j&amp;rsquo;espère qu&amp;rsquo;il peut vous aider si vous voulez faire quelque chose de similaire.&lt;/p&gt;
-
-&lt;p&gt;Ce script fait également d&amp;rsquo;autres choses : il définit la prochaine date de revue de manière plus « intelligente » : par exemple si la prochaine date de revue tombe un week-end il va déplacer la date de revue au lundi suivant, il va définir la fréquence de revue selon que le projet soit actif ou en attente, etc.&lt;/p&gt;
-
-&lt;p&gt;J&amp;rsquo;ai codé « en dur » certaines chaînes de caractères comme un gros goret, donc pour que le script fonctionne vous devez absolument avoir des dossiers nommés &amp;ldquo;active&amp;rdquo;, &amp;ldquo;stalled&amp;rdquo;, &amp;ldquo;waiting for&amp;rdquo;, &amp;ldquo;deferred&amp;rdquo;, &amp;ldquo;on hold&amp;rdquo;, &amp;ldquo;completed&amp;rdquo;, &amp;ldquo;dropped&amp;rdquo;, &amp;ldquo;templates&amp;rdquo; et un contexte nommé &amp;ldquo;Waiting for&amp;rdquo;. L&amp;rsquo;alternative étant d&amp;rsquo;éditer les chaînes de caractères dans le script utiliser d&amp;rsquo;autres noms. Il y a peut-être d&amp;rsquo;autres chose qu&amp;rsquo;il faudra vérifier pour qu&amp;rsquo;il fonctionne correctement. Pour rappel, ce genre de script est quasi impossible à débugger dans l&amp;rsquo;éditeur de scripts fourni en standard par Apple, à la place j&amp;rsquo;utilise Script Debugger de Late Night Software, un outil indispensable pour tout AppleScripter qui se respecte.&lt;/p&gt;
-
-&lt;p&gt;Et concernant le débat tabulations contre espaces, l&amp;rsquo;exemple ici utilise des espaces parce que les tabulations prenaient trop de place, mais mon script original utilise bien des tabulations !&lt;/p&gt;
-
-&lt;p&gt;Enfin il y a quelques bouts de code que j&amp;rsquo;ai piqué à gauche et à droite sur internet, mais je n&amp;rsquo;arrive plus à retrouver où, donc je tiens à m&amp;rsquo;en excuser auprès de leurs auteurs originaux. Les développeurs un peu expérimentés les reconnaîtront sûrement, parce que le style du code est clairement différent.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Attention : je ne suis pas responsable des problèmes que peut occasionner ce script, utilisez-le à vos risques et périls !!!&lt;/strong&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;(*
-  This script does the following:
-  1. Sort projects in folders based on status
-    - flagged
-    - active
-    - stalled
-    - waiting for
-    - defered
-    - completed
-    - dropped
-  2. Set review date to now for:
-    - Projects modified since last run
-    - Projects moved
-
-  3. Set review interval to weekly for:
-    - Projects that are active, stalled or waiting for
-
-  4. A few other things
-*)
-
-property fiveMinutes : 300
-property oneDay : 86400
-property sevenDays : 604800
-property fourteenDays : 1209600
-property twentyoneDays : 1814400
-property sixtyDays : 51840000
-property twelveWeeks : 7257600
-property changeGracePeriod : 0 -- 240
-property contextWaitingFor : {&amp;quot;waiting for&amp;quot;}
-property contextStalled : {&amp;quot;object&amp;quot;, &amp;quot;reference&amp;quot;}
--- if script was never run set last run to 5 minutes ago by default
-property lastRun : (current date) - fiveMinutes
-property putOnHoldIfWaitingForTooLong : sixtyDays
-
-global theFlaggedFolder
-global theActiveFolder
-global theStalledFolder
-global theWaitingForFolder
-global theDeferredFolder
-global theOnHoldFolder
-global theCompletedFolder
-global theDroppedFolder
-global theTemplateFolder
-
-global theWaitingForContext
-
-property scriptSuiteName : &amp;quot;Projects Housekeeping&amp;quot;
-
-tell application &amp;quot;OmniFocus&amp;quot;
-  tell front document
-    
-    compact
-    try
-      -- set theFlaggedFolder to (first folder whose name is &amp;quot;flagged&amp;quot;)
-      set theActiveFolder to (first folder whose name is &amp;quot;active&amp;quot;)
-      set theStalledFolder to (first folder whose name is &amp;quot;stalled&amp;quot;)
-      set theWaitingForFolder to (first folder whose name is &amp;quot;waiting for&amp;quot;)
-      set theDeferredFolder to (first folder whose name is &amp;quot;deferred&amp;quot;)
-      set theOnHoldFolder to (first folder whose name is &amp;quot;on hold&amp;quot;)
-      set theCompletedFolder to (first folder whose name is &amp;quot;completed&amp;quot;)
-      set theDroppedFolder to (first folder whose name is &amp;quot;dropped&amp;quot;)
-      set theTemplateFolder to (first folder whose name is &amp;quot;templates&amp;quot;)
-      
-      set theWaitingForContext to (first flattened context whose name is &amp;quot;Waiting For&amp;quot;)
-      
-      set will autosave to false
-      -- set selected sidebar tab to
-      set projectsMoved to my moveActiveProjects(it, {})
-      set projectsMoved to projectsMoved or my moveNonActiveProjects(it)
-      set will autosave to true
-    on error errText number errNum
-      set will autosave to true
-      display dialog &amp;quot;Error: &amp;quot; &amp;amp; errNum &amp;amp; return &amp;amp; errText
-      return
-    end try
-    if projectsMoved is true then
-      set msg to &amp;quot;Please review projects.&amp;quot;
-      my notify(&amp;quot;Did some housekeeping!&amp;quot;, msg)
-    else
-      set msg to &amp;quot;I had nothing to do.&amp;quot;
-    end if
-  end tell
-end tell
-set lastRun to (current date)
-
-
-
-on moveNonActiveProjects(theContainer)
-  set projectsMoved to false
-  using terms from application &amp;quot;OmniFocus&amp;quot;
-    set theProjects to every flattened project of theContainer whose status is on hold ¬
-      and singleton action holder is false
-    repeat with aProject in theProjects
-      if completed by children of aProject is true then
-        -- do not complete projects when all tasks are done to avoid accidental completion
-        set completed by children of aProject to false
-      end if
-      set theResult to my reviewIfTaskModified(aProject)
-      if theResult is equal to 0 then
-        my reviewMonthly(aProject)
-      end if
-      set isProjectMoved to my moveProject(aProject, theOnHoldFolder)
-      set projectsMoved to projectsMoved or isProjectMoved
-    end repeat
-    
-    set theProjects to every flattened project of theContainer whose status is done ¬
-      and singleton action holder is false
-    repeat with aProject in theProjects
-      if completed by children of aProject is true then
-        -- do not complete projects whene all tasks are done to avoid accidental completion
-        set completed by children of aProject to false
-      end if
-      -- No need to change review interval
-      set isProjectMoved to my moveProject(aProject, theCompletedFolder)
-      set projectsMoved to projectsMoved or isProjectMoved
-    end repeat
-    
-    set theProjects to every flattened project of theContainer whose status is dropped ¬
-      and singleton action holder is false
-    repeat with aProject in theProjects
-      if completed by children of aProject is true then
-        -- do not complete projects when all tasks are done to avoid accidental completion
-        set completed by children of aProject to false
-      end if
-      -- No need to change review interval
-      set isProjectMoved to my moveProject(aProject, theDroppedFolder)
-      set projectsMoved to projectsMoved or isProjectMoved
-    end repeat
-  end using terms from
-  return projectsMoved
-end moveNonActiveProjects
-
-
-
-on moveActiveProjects(theContainer)
-  set projectsMoved to false
-  --  log &amp;quot;Executing Housekeeping Script&amp;quot;
-  using terms from application &amp;quot;OmniFocus&amp;quot;
-    set theProjects to every flattened project of theContainer whose status is active ¬
-      and singleton action holder is false
-    set projectsMoved to my moveActiveProjectsProjects(theProjects)
-  end using terms from
-  return projectsMoved
-end moveActiveProjects
-
-
-
-on moveActiveProjectsProjects(theProjects)
-  
-  using terms from application &amp;quot;OmniFocus&amp;quot;
-    set projectsMoved to false
-    repeat with aProject in theProjects
-      set projectContainer to container of aProject
-      if (class of projectContainer is not folder or (class of projectContainer is folder ¬
-        and projectContainer is not hidden)) then
-        
-        if folder of aProject is not theTemplateFolder then
-          
-          if completed by children of aProject is true then
-            set completed by children of aProject to false
-          end if
-          
-          my reviewIfTaskModified(aProject)
-          
-          -- Checks if there is a next task
-          -- If yes, then get context of next task
-          set theNextTask to next task of aProject
-          set isNoNextTask to false
-          set theNextTaskContextName to &amp;quot;****&amp;quot;
-          set isAlreadyProcessed to false
-          set isDeferredNextTask to false
-          
-          if theNextTask is missing value then
-            set theActiveTasks to ¬
-              (every flattened task of aProject whose completed is false ¬
-                and number of tasks is equal to 0)
-            if (count of theActiveTasks) is greater than or equal to 1 then
-              set theActiveTask to item 1 of theActiveTasks
-              if theActiveTask is not missing value then
-                if defer date of theActiveTask is not missing value then
-                  if defer date of theActiveTask is greater than (current date) then
-                    set isDeferredNextTask to true
-                  else
-                    set theNextTask to theActiveTask
-                    set theNextTaskContextName to name of context of theNextTask
-                  end if
-                else
-                  set theNextTask to theActiveTask
-                  set theNextTaskContextName to name of context of theNextTask
-                end if
-              else
-                set isNoNextTask to true
-              end if
-            else -- project has no next tasks
-              set isNoNextTask to true
-              set theWaitingForTasks to (every flattened task of aProject whose completed is false)
-              set isNoNextTask to true
-              repeat with theWaitingForTask in theWaitingForTasks
-                if context of theWaitingForTask is equal to theWaitingForContext then
-                  set theNextTask to theWaitingForTask
-                  set isNoNextTask to false
-                  if context of theNextTask is not missing value then
-                    set theNextTaskContextName to name of context of theNextTask
-                  end if
-                  exit repeat
-                end if
-              end repeat
-              
-            end if
-          else
-            -- If the next task is the project itself, consider there is no task left.
-            if id of theNextTask is equal to id of root task of aProject then
-              set isNoNextTask to true
-            else
-              set isNoNextTask to false
-              if context of theNextTask is not missing value then
-                set theNextTaskContextName to name of context of theNextTask
-              end if
-            end if
-          end if
-          
-          -- 
-          -- Process DEFERRED projects
-          -- 
-          if isAlreadyProcessed is false then
-            if defer date of aProject is not missing value then
-              set theCurrentDate to current date
-              set theCurrentDate to theCurrentDate - (theCurrentDate&#39;s time)
-              -- Second condition is to avoid the project being marked for review again and again 
-              -- if review date is today
-              if defer date of aProject is greater than or equal to my tomorrow() then
-                my setNextReviewDate(aProject, defer date of aProject)
-                set isProjectMoved to my moveProject(aProject, theDeferredFolder)
-                set projectsMoved to projectsMoved or isProjectMoved
-                set isAlreadyProcessed to true
-              end if
-            end if
-          end if
-          if isAlreadyProcessed is false then
-            if isDeferredNextTask then
-              if defer date of theActiveTask is greater than or equal to my tomorrow() then
-                my setNextReviewDate(aProject, defer date of theActiveTask)
-                set isProjectMoved to my moveProject(aProject, theDeferredFolder)
-                set projectsMoved to projectsMoved or isProjectMoved
-                set isAlreadyProcessed to true
-              end if
-            end if
-          end if
-          
-          --
-          -- Process WAITING FOR projects
-          --
-          if isAlreadyProcessed is false then
-            if theNextTaskContextName is in contextWaitingFor then
-              --
-              -- ...then it is waiting for but if waiting for more than twenty one days...
-              --
-              set theTimeDifference to (current date) - (modification date of theNextTask)
-              if theTimeDifference is greater than putOnHoldIfWaitingForTooLong ¬
-                and putOnHoldIfWaitingForTooLong is not equal to 0 then
-                --
-                -- ...then we were patient enough, change status and move it to on hold
-                --
-                my reviewDaily(aProject)
-                my setStatus(aProject, on hold)
-                set isProjectMoved to my moveProject(aProject, theOnHoldFolder)
-                set projectsMoved to projectsMoved or isProjectMoved
-                set isAlreadyProcessed to true
-              else
-                --
-                -- ...else it&#39;s really waiting for
-                --
-                if theTimeDifference is greater than sevenDays then
-                  -- waiting for more than seven days? Review weekly
-                  my reviewWeekly(aProject)
-                else
-                  -- waiting for less than one week? Review daily
-                  my reviewDaily(aProject)
-                end if
-                set isProjectMoved to my moveProject(aProject, theWaitingForFolder)
-                set projectsMoved to projectsMoved or isProjectMoved
-                set isAlreadyProcessed to true
-              end if
-            end if
-          end if
-          
-          --
-          -- Process STALLED projects
-          -- 
-          if isAlreadyProcessed is false then
-            if isNoNextTask is true or theNextTaskContextName is in contextStalled then
-              my reviewDaily(aProject)
-              set isProjectMoved to my moveProject(aProject, theStalledFolder)
-              set projectsMoved to projectsMoved or isProjectMoved
-              set isAlreadyProcessed to true
-            end if
-          end if
-          
-          --
-          -- Process ACTIVE projects
-          --
-          if isAlreadyProcessed is false then
-            my reviewDaily(aProject)
-            if folder of aProject is not theActiveFolder then
-              set isProjectMoved to my moveProject(aProject, theActiveFolder)
-              set projectsMoved to projectsMoved or isProjectMoved
-              set isAlreadyProcessed to true
-            end if
-          end if
-          
-        end if
-      end if
-      
-    end repeat
-  end using terms from
-  return projectsMoved
-end moveActiveProjectsProjects
-
-(*
-Changes the status of a project and logs it.
-*)
-on setStatus(aProject, aStatus)
-  tell application &amp;quot;OmniFocus&amp;quot;
-    tell front document
-      if status of aProject is not aStatus then
-        set status of aProject to aStatus
-        log &amp;quot;Changed status of project: &amp;quot; &amp;amp; (name of aProject)
-      end if
-    end tell
-  end tell
-end setStatus
-
-(*
-  Moves a Project to a new folder
-*)
-on moveProject(aProject, aFolder)
-  set projectMoved to false
-  tell application &amp;quot;OmniFocus&amp;quot;
-    tell front document
-      if folder of aProject is not aFolder then
-        my reviewNow(aProject)
-        move aProject to (beginning of sections of aFolder)
-        set projectMoved to true
-        log &amp;quot;Moved project: &amp;quot; &amp;amp; (name of aProject)
-      end if
-    end tell
-  end tell
-  return projectMoved
-end moveProject
-
-(*
-  Mark a project for review if a task has been modified
-*)
-on reviewIfTaskModified(aProject)
-  tell application &amp;quot;OmniFocus&amp;quot;
-    tell front document
-      set theTasks to (every flattened task of aProject ¬
-        whose modification date is greater than lastRun and completed is false)
-      if (count of theTasks) is greater than 0 then
-        my reviewNow(aProject)
-        return 1
-      else
-        return 0
-      end if
-    end tell
-  end tell
-end reviewIfTaskModified
-
-(*
-  Gets tomorrow, midnight.
-*)
-on tomorrow()
-  copy (current date) to theDate
-  return (theDate + oneDay - (theDate&#39;s time))
-end tomorrow
-
-on reviewNow(aProject)
-  set theNextReview to current date
-  -- note: do not change review interval in this case
-  my setNextReviewDate(aProject, theNextReview)
-end reviewNow
-
-on reviewDaily(aProject)
-  set theNextReview to my tomorrow()
-  tell application &amp;quot;OmniFocus&amp;quot;
-    tell front document
-      set _ri to {unit:(day), steps:(1), fixed:(false)}
-      my setReviewInterval(aProject, _ri)
-      my setNextReviewDate(aProject, theNextReview)
-    end tell
-  end tell
-end reviewDaily
-
-on reviewWeekly(aProject)
-  -- Set the next weekly review to next Monday
-set theNextReview to ¬
-	DateOfThisInstanceOfThisWeekdayBeforeOrAfterThisDate(current date, Monday, 1)
-	  
-  using terms from application &amp;quot;OmniFocus&amp;quot;
-    set _ri to {unit:(week), steps:(1), fixed:(false)}
-  end using terms from
-  tell application &amp;quot;OmniFocus&amp;quot;
-    tell front document
-      my setReviewInterval(aProject, _ri)
-      my setNextReviewDate(aProject, theNextReview)
-    end tell
-  end tell
-end reviewWeekly
-
-(*
-  Sets the next review date to the next first Monday of a Month
-  (this month if first Monday not already passed)
-  (next month if first Monday already passed)
-*)
-on reviewMonthly(aProject)
-  copy (current date) to theNextReview
-	if (weekday of theNextReview is Monday) ¬
-	and (day of theNextReview ≤ 7) and (theNextReview &amp;gt; (current date)) then
-    -- do nothing because next review is already first Monday and in the future
-  else
-    set theNextReview&#39;s day to 32
-    set theNextReview&#39;s day to 1
-    -- That stuff below is to always set the monthly review on the first Monday of the Month
-    set dateOffset to {1, 0, 6, 5, 4, 3, 2}
-    set theOffset to item ((weekday of theNextReview) as integer) of dateOffset
-    set theNextReview&#39;s day to 1 + theOffset
-    set theNextReview to theNextReview - (theNextReview&#39;s time)
-    tell application &amp;quot;OmniFocus&amp;quot;
-      tell front document
-        set _ri to {unit:(month), steps:(1), fixed:(false)}
-        my setReviewInterval(aProject, _ri)
-        my setNextReviewDate(aProject, theNextReview)
-      end tell
-    end tell
-  end if
-end reviewMonthly
-
-on setReviewInterval(aProject, _ri)
-  tell application &amp;quot;OmniFocus&amp;quot;
-    tell front document
-      if review interval of aProject is not equal to _ri then
-        set review interval of aProject to _ri
-        log &amp;quot;Changed review interval: &amp;quot; &amp;amp; (name of aProject)
-      end if
-    end tell
-  end tell
-end setReviewInterval
-
-(*
-  Sets the review date for the project to the date specified, but only if:
-  - the project&#39;s review date is greater than today (is in the future)
-  - the project&#39;s review date is not already equal to the new review date
-  If the review date is a Saturday or Sunday, sets it to the next Monday
-*)
-on setNextReviewDate(aProject, aDate)
-  tell application &amp;quot;OmniFocus&amp;quot;
-    tell front document
-      -- Skip Saturdays and Sundays, use Monday instead, and remove Date&#39;s time.
-      set aDate to (my skipWeekends(aDate)) - (aDate&#39;s time)
-      -- Only change review date if it is greater than now and is different from the new date
-      if next review date of aProject is greater than (current date) ¬
-        and next review date of aProject is not equal to aDate then
-        set next review date of aProject to aDate
-        log &amp;quot;Changed review date: &amp;quot; &amp;amp; (name of aProject)
-      end if
-    end tell
-  end tell
-end setNextReviewDate
-
-on skipWeekends(aDate)
-  if weekday of aDate is Saturday then
-    set aDate to aDate + 2 * oneDay
-  else if weekday of aDate is Sunday then
-    set aDate to aDate + oneDay
-  end if
-  return aDate
-end skipWeekends
-
-on DateOfThisInstanceOfThisWeekdayBeforeOrAfterThisDate(d, w, i) -- returns a date
-  -- Keep an note of whether the instance value *starts* as zero
-  set instanceIsZero to (i is 0)
-  -- Increment negative instances to compensate for the following subtraction loop
-  if i &amp;lt; 0 and d&#39;s weekday is not w then set i to i + 1
-  -- Subtract a day at a time until the required weekday is reached
-  repeat until d&#39;s weekday is w
-    set d to d - days
-    -- Increment an original zero instance to 1 if subtracting from Sunday into Saturday 
-    if instanceIsZero and d&#39;s weekday is Saturday then set i to 1
-  end repeat
-  -- Add (adjusted instance) * weeks to the date just obtained and zero the time
-  d + i * weeks - (d&#39;s time)
-end DateOfThisInstanceOfThisWeekdayBeforeOrAfterThisDate
-
-(*
-  Uses Notification Center to display a notification message.
-  theTitle – a string giving the notification title
-  theDescription – a string describing the notification event
-*)
-on notify(theTitle, theDescription)
-  display notification theDescription with title scriptSuiteName subtitle theTitle
-end notify
-
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+      <description>Comment trier ses projets dans OmniFocus ? Professionnel vs. personnel ? Par priorité ? Par date d&amp;rsquo;échéance ? Personnellement je les trie par statut. Si vous regardez l&amp;rsquo;image ci-dessous vous verrez que j&amp;rsquo;ai des dossiers nommés « active » (actifs), « stalled » (bloqué), « waiting for » (en attente), etc.
+Pourquoi ai-je choisi de trier mes projets de cette manière ? Parce que cela me permet d&amp;rsquo;identifier en un coup d&amp;rsquo;œil les projets sur lesquels je dois travailler, ceux que je dois débloquer, ceux qui sont en attente de quelque chose, etc.</description>
     </item>
     
     <item>
@@ -1043,87 +255,8 @@ end notify
       <pubDate>Mon, 04 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>https://www.pierremorsa.com/post/2017-09-04-nomade-digital-etape-4-sauvegarder-pour-eviter-perte-donn%C3%A9es/</guid>
-      <description>
-
-&lt;p&gt;J&amp;rsquo;emporte mon ordinateur ou mon iPad un peu partout. Le risque de le perdre ou de le casser  est donc bien réel ; par exemple en 2015 je me suis fait voler mon MacBook Pro dans le TGV.&lt;/p&gt;
-
-&lt;p&gt;En fait, la vraie question n&amp;rsquo;est pas de savoir si vous risquez de perdre des données, mais quand cela va arriver. Car cela fini toujours par arriver. Et lorsque cela se produit, pleurer ne sert à rien. Il faut avoir une sauvegarde de ses données. Ce message a beau être rappelé fréquemment, le nombre d&amp;rsquo;utilisateurs qui ne font aucune sauvegarde est hallucinant.&lt;/p&gt;
-
-&lt;p&gt;Aussi voici un petit guide expliquant les risques et les solutions pour s&amp;rsquo;en prémunir. Je n&amp;rsquo;ai pas expliqué en détail le fonctionnement de chaque solution, sinon cet article aurait fait 100 pages.&lt;/p&gt;
-
-&lt;h2 id=&#34;comprendre-les-différents-risques-de-perte-de-données&#34;&gt;Comprendre les différents risques de perte de données&lt;/h2&gt;
-
-&lt;p&gt;Différents types d&amp;rsquo;incidents peuvent entraîner une perte de données ; une bonne stratégie de sauvegarde va vous protéger contre tous les risques.&lt;/p&gt;
-
-&lt;p&gt;En voici une liste non exhaustive, plus ou moins classé du plus probable au moins probable :&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Vous modifiez un document et vous rendez compte plus tard que vous voulez revenir en arrière pour une raison ou une autre.&lt;/li&gt;
-&lt;li&gt;Vous effacez un ou plusieurs documents par erreur.&lt;/li&gt;
-&lt;li&gt;Votre ordinateur ou un disque tombe en panne.&lt;/li&gt;
-&lt;li&gt;Votre ordinateur et &lt;em&gt;toutes&lt;/em&gt; vos sauvegardes locales sont volés.&lt;/li&gt;
-&lt;li&gt;Votre ordinateur est hacké (par exemple ransomware).&lt;/li&gt;
-&lt;li&gt;Votre compte Cloud est hacké et détruit.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Une stratégie de sauvegarde idéale va donc vous prémunir contre tous les cas cités. Pour se faire elle doit :&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Garder un historique des versions récentes de vos documents pendant un certain temps, par exemple les 4 dernières semaines.&lt;/li&gt;
-&lt;li&gt;Garder une copie à jour de tous vos documents importants ailleurs que chez vous, par exemple dans le Cloud.&lt;/li&gt;
-&lt;li&gt;Avoir une copie de sauvegarde déconnectée pour qu&amp;rsquo;elle ne soit pas endommagée par un éventuel ransomware (par exemple sur un disque dur stocké séparément). Ce cas est celui qui est le moins souvent pris en compte.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;raid-sauvegarde&#34;&gt;RAID ≠ sauvegarde&lt;/h2&gt;
-
-&lt;p&gt;Une précision importante avant d&amp;rsquo;aborder les différentes stratégies de sauvegarde : les systèmes RAID ont pour objectif d&amp;rsquo;améliorer le taux de disponibilité et la vitesse, ils ne sont pas une protection contre la perte de données. De fait, un système RAID 1 ou plus ne couvre que le cas 3, un disque tombe en panne. Le RAID 0 &lt;em&gt;augmente&lt;/em&gt; même le risque de perdre des données au lieu de le diminuer.&lt;/p&gt;
-
-&lt;p&gt;Un système RAID ne vous protégera pas contre les cas 1, 2, 4, 5 et 6 !&lt;/p&gt;
-
-&lt;h2 id=&#34;sauvegarde-locale-avec-time-machine&#34;&gt;Sauvegarde locale avec Time Machine&lt;/h2&gt;
-
-&lt;p&gt;Time Machine va vous couvrir contre les cas 1, 2 et 3, ce qui est déjà pas mal du tout.&lt;/p&gt;
-
-&lt;p&gt;Le matériel nécessaire se limite à un disque externe d&amp;rsquo;une taille au moins équivalente à la somme des disques que vous voulez sauvegarder.&lt;/p&gt;
-
-&lt;p&gt;Time Machine est fourni en standard sur tous les Mac depuis plusieurs années. Pour l&amp;rsquo;activer connectez votre disque externe qui servira aux sauvegardes, ouvrez les Préférences Système et sélectionnez d&amp;rsquo;icône de Time Machine.&lt;/p&gt;
-
-&lt;p&gt;Inconvénients : Time Machine n&amp;rsquo;est pas à 100% infaillible, il peut lui arriver dans de très rares cas de perdre les pédales sans vous en informer. La restauration des données avec Time Machine est également assez lente.&lt;/p&gt;
-
-&lt;h2 id=&#34;sauvegarde-locale-avec-ccc-superduper-ou-chronosync&#34;&gt;Sauvegarde locale avec CCC, SuperDuper ou ChronoSync&lt;/h2&gt;
-
-&lt;p&gt;Ces trois outils ont bonne réputation. Ils sont particulièrement efficaces pour se prémunir contre le cas 3. Bien configurés ils peuvent vous protéger contre les cas 1 et 2, même si Time Machine est plus simple pour ces deux cas.&lt;/p&gt;
-
-&lt;p&gt;Ils permettent de créer un « clone » de vos disques, autrement dit une copie identique. Dans le cas 3, si votre ordinateur tombe en panne il suffit de connecter le disque clone à un autre Mac et de démarrer sur celui-ci. Si pour vous la disponibilité de votre environnement de production est importante c&amp;rsquo;est une excellent solution pour ne pas perdre de temps, et elle m&amp;rsquo;a déjà sorti de situations bien difficiles suite à un gros crash système. L&amp;rsquo;idéal est d&amp;rsquo;utiliser un SSD en USB 3 ; cette solution est à la fois rapide &lt;strong&gt;et&lt;/strong&gt; compatible avec tous les ordinateurs récents, contrairement à une connexion Thunderbolt.&lt;/p&gt;
-
-&lt;h2 id=&#34;sauvegarde-déportée-dans-le-cloud&#34;&gt;Sauvegarde déportée dans le Cloud&lt;/h2&gt;
-
-&lt;p&gt;Les solutions précédentes vous protègent contre la perte locale de données, mais que faire si vous perdez tous vos disques locaux, suite à un vol ou un incendie ? La bonne stratégie pour se protéger contre ce risque est de faire une copie de ses documents dans le Cloud. Attention cependant à conserver le nom d&amp;rsquo;utilisateur et le mot de passe quelque part et pas seulement sur votre disque dur local !!!&lt;/p&gt;
-
-&lt;p&gt;À noter que Dropbox conserve également une copie des versions récentes. C&amp;rsquo;est une double sécurité avec Time Machine.&lt;/p&gt;
-
-&lt;h2 id=&#34;sauvegarde-déconnectée-et-idéalement-déportée&#34;&gt;Sauvegarde déconnectée (et idéalement déportée)&lt;/h2&gt;
-
-&lt;p&gt;Il reste le cas des ransomware. Le ransomware va rendre inaccessibles tous les disques connectés à votre machine, c&amp;rsquo;est à dire les disques principaux mais aussi toutes les sauvegardes locales connectées à l&amp;rsquo;ordinateur ! Avec l&amp;rsquo;évolution actuelle, il est également possible que les ransomware futurs bloquent l&amp;rsquo;accès à vos sauvegardes dans le Cloud (scénario vraiment très pessimiste je l&amp;rsquo;avoue, qui à ma connaissance ne s&amp;rsquo;est pas encore produit).&lt;/p&gt;
-
-&lt;p&gt;La stratégie pour se prémunir contre ce cas est de garder une copie de sauvegarde &lt;em&gt;déconnectée&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;L&amp;rsquo;idéal est de faire ce qu&amp;rsquo;on appelle une rotation des disques de sauvegarde, par exemple avec deux disques différents. Les semaines impaires vous sauvegardez sur le disque 1 et le disque 2 reste déconnecté, les semaines paires vous faites l&amp;rsquo;inverse. Bonne nouvelle, Time Machine offre justement la possibilité d&amp;rsquo;alterner entre différents disques de sauvegarde.&lt;/p&gt;
-
-&lt;h2 id=&#34;ne-pas-compter-que-sur-le-cloud&#34;&gt;Ne pas compter que sur le Cloud&lt;/h2&gt;
-
-&lt;p&gt;Reste le cas numéro 6, votre compte Cloud est hacké. Pour vous protéger contre ce cas, ne stockez pas vos documents uniquement dans le Cloud.&lt;/p&gt;
-
-&lt;p&gt;Également, ne gardez pas que la copie locale synchronisée directement par Dropbox. Si les hackers détruisent les données dans le Cloud, l&amp;rsquo;application de Dropbox va automatiquement supprimer votre copie locale !&lt;/p&gt;
-
-&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
-
-&lt;p&gt;La sauvegarde de base avec Time Machine, CCC, SuperDuper, ChronoSync ou tout autre outil similaire est indispensable. Ne pas la faire est tout simplement inconscient.&lt;/p&gt;
-
-&lt;p&gt;Pour les niveaux de sauvegarde supplémentaires, c&amp;rsquo;est à vous de juger quel est le risque acceptable. Dans mon cas c&amp;rsquo;est clair, quel que soit le scénario je ne peux pas me permettre de perdre les données de mon entreprise.&lt;/p&gt;
-
-&lt;p&gt;La sauvegarde des documents a un coût qui est souvent non pris en compte lors de l&amp;rsquo;acquisition d&amp;rsquo;un ordinateur et qui n&amp;rsquo;est pas très motivant, pourtant il vaut mieux prendre une machine un peu moins chère avec en plus une solution de sauvegarde et être certain de ne pas perdre ses documents.&lt;/p&gt;
-</description>
+      <description>J&amp;rsquo;emporte mon ordinateur ou mon iPad un peu partout. Le risque de le perdre ou de le casser est donc bien réel ; par exemple en 2015 je me suis fait voler mon MacBook Pro dans le TGV.
+En fait, la vraie question n&amp;rsquo;est pas de savoir si vous risquez de perdre des données, mais quand cela va arriver. Car cela fini toujours par arriver. Et lorsque cela se produit, pleurer ne sert à rien.</description>
     </item>
     
     <item>
@@ -1132,53 +265,8 @@ end notify
       <pubDate>Mon, 24 Jul 2017 00:00:00 +0000</pubDate>
       
       <guid>https://www.pierremorsa.com/post/2017-07-24-test-solutions-connecter-directement-dropbox-onedrive/</guid>
-      <description>
-
-&lt;p&gt;Pour faire court, je ne recommande aucune des solutions testées. En effet, aucune de ces Apps n&amp;rsquo;est assez fiable &lt;strong&gt;et&lt;/strong&gt; performante pour offrir un niveau de productivité satisfaisant.&lt;/p&gt;
-
-&lt;h2 id=&#34;pourquoi-utiliser-une-solution-pour-se-connecter-directement-à-dropbox-et-onedrive&#34;&gt;Pourquoi utiliser une solution pour se connecter directement à Dropbox et OneDrive ?&lt;/h2&gt;
-
-&lt;p&gt;Les Apps Dropbox et OneDrive officielles fonctionnent bien (l&amp;rsquo;App de Dropbox restant la plus fiable et la plus performante). Alors pourquoi diable vouloir utiliser une solution tierce ? Pour deux raisons :&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Tout d&amp;rsquo;abord cela évite d&amp;rsquo;être tributaire de certains aspects peu plaisants des clients officiels. Par exemple Dropbox simule une fausse boîte de dialogue pour vous faire saisir votre mot de passe administrateur, un comportement totalement inacceptable.&lt;/li&gt;
-&lt;li&gt;Ensuite, les clients officiels vous obligent d&amp;rsquo;avoir une copie en local pour pouvoir travailler dessus. Résultat, vous avez beau disposer de 1 To dans le Cloud, vous êtes limité par votre maigre disque SSD de quelques centaines de Go.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Il est bien sûr possible de ne synchroniser que certains dossiers, et de laisser une copie des autres uniquement dans le Cloud. Mais que faire lorsque vous voulez accéder à ces documents fréquemment ? Passer par le client web est une solution, mais il serait bien plus agréable de pouvoir accéder à ces documents directement depuis le Finder, comme si on accédait à un serveur distant classique. Et c&amp;rsquo;est justement cette fonctionnalité qu&amp;rsquo;offrent les clients tiers.&lt;/p&gt;
-
-&lt;h2 id=&#34;les-candidats&#34;&gt;Les candidats&lt;/h2&gt;
-
-&lt;p&gt;Après avoir pas mal écumé différents sites, il s&amp;rsquo;avère qu&amp;rsquo;il y a trois candidats plus sérieux que les autres :&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;CloudMounter&lt;/li&gt;
-&lt;li&gt;ExpanDrive&lt;/li&gt;
-&lt;li&gt;Mountain Duck (basé sur Cyberduck).&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Ces trois candidats font tous les trois la même chose : ils vous  permettent de vous connecter à Dropbox, OneDrive et d&amp;rsquo;autres services Cloud directement depuis le Finder comme s&amp;rsquo;il s&amp;rsquo;agissait simplement d&amp;rsquo;un serveur de fichiers distant.&lt;/p&gt;
-
-&lt;h2 id=&#34;les-sous-doués-se-connectent-au-cloud&#34;&gt;Les sous-doués se connectent au Cloud&lt;/h2&gt;
-
-&lt;p&gt;Mais&amp;hellip; Mais aucune de ces trois solutions ne fonctionne de manière satisfaisante.&lt;/p&gt;
-
-&lt;p&gt;CloudMounter se connecte, certes. Je n&amp;rsquo;ai pas relevé de dysfonctionnement majeur, certes. Mais&amp;hellip; la vitesse de connexion est beaucoup trop lente pour être réellement exploitable. Il faut souvent attendre plusieurs dizaines de secondes, voire plus d&amp;rsquo;une minute pour simplement lister le contenu d&amp;rsquo;un répertoire. J&amp;rsquo;ai assez rapidement craqué et abandonné cette option.&lt;/p&gt;
-
-&lt;p&gt;ExpanDrive est de loin le plus rapide des trois candidats. Il utilise un mécanisme de cache local qui rend tout très rapide et agréable. Mais&amp;hellip; il est rempli de bugs qui ne semblent jamais être corrigés malgré les mises à jour régulières. Par exemple, les caractères accentués vont poser problème sur les fichiers stockés dans Dropbox. Les opérations de copie et de suppression échouent régulièrement pour différentes raisons et lorsque cela arrive la seule solution consiste à aller effacer le cache manuellement. Malgré de nombreux essais je ne suis jamais parvenu à rendre cette solution fiable.&lt;/p&gt;
-
-&lt;p&gt;Enfin Mountain Duck s&amp;rsquo;appuie sur le moteur de Cyberduck, ce qui devrait être un gage de qualité. Malheureusement Mountain Duck souffre également de problèmes de lenteur rédhibitoires. En l&amp;rsquo;utilisant j&amp;rsquo;ai parfois eu l&amp;rsquo;impression d&amp;rsquo;être revenu dans les années 2000, où certaines opérations de copie déclenchaient systématiquement un gel complet du Finder et l&amp;rsquo;apparition de la roue colorée de la mort.&lt;/p&gt;
-
-&lt;p&gt;En l&amp;rsquo;état aucune de ces trois solutions n&amp;rsquo;est réellement exploitable efficacement au quotidien, je ne peux donc pas vous en recommander une. Cependant je garde espoir, et j&amp;rsquo;essaie régulièrement les nouvelles versions en espérant enfin trouver le Graal du Cloud.&lt;/p&gt;
-
-&lt;h2 id=&#34;quelques-notes-supplémentaires&#34;&gt;Quelques notes supplémentaires&lt;/h2&gt;
-
-&lt;p&gt;Cyberduck, déjà mentionné plus haut, offre une alternative viable mais finalement pas plus pratique que le client Web pour accéder directement aux fichiers stockés sur Dropbox. De plus Cyberduck (comme la prochaine version de Mountain Duck) intègre directement Cryptomator, la solution de chiffrage des documents dans le Cloud dont je parlais la semaine dernière.&lt;/p&gt;
-
-&lt;p&gt;Eltima, l&amp;rsquo;éditeur de CloudMounter, a un moment donné fait une promo sur son site pour MacKeeper, un pourriciel de la pire espèce. Cela ne me donne vraiment pas confiance dans cet éditeur, à tort ou à raison.&lt;/p&gt;
-
-&lt;p&gt;Enfin je garde un œil ouvert sur Transmit 5, la mythique nouvelle version du client FTP de Panic, qui &lt;em&gt;pourrait&lt;/em&gt; intégrer ce genre de fonctionnalité.&lt;/p&gt;
-</description>
+      <description>Pour faire court, je ne recommande aucune des solutions testées. En effet, aucune de ces Apps n&amp;rsquo;est assez fiable et performante pour offrir un niveau de productivité satisfaisant.
+Pourquoi utiliser une solution pour se connecter directement à Dropbox et OneDrive ? Les Apps Dropbox et OneDrive officielles fonctionnent bien (l&amp;rsquo;App de Dropbox restant la plus fiable et la plus performante). Alors pourquoi diable vouloir utiliser une solution tierce ? Pour deux raisons :</description>
     </item>
     
     <item>
@@ -1187,48 +275,7 @@ end notify
       <pubDate>Mon, 17 Jul 2017 00:00:00 +0000</pubDate>
       
       <guid>https://www.pierremorsa.com/post/2017-07-17-meilleure-solution-de-chiffrage-cloud-cryptomator/</guid>
-      <description>
-
-&lt;p&gt;Après avoir testé plusieurs solutions de chiffrage des documents dans le Cloud mon choix s&amp;rsquo;est porté sur Cryptomator. C&amp;rsquo;est une solution gratuite, rapide, fiable et offrant un bon niveau de sécurité tout en restant simple à utiliser. Cryptomator est également intégré à d&amp;rsquo;autres solutions comme Cyberduck et Mountain Duck. Elle est également open source, ce qui signifie qu&amp;rsquo;aucun éditeur ne pourra prendre vos données en « otage » d&amp;rsquo;un abonnement obligatoire.&lt;/p&gt;
-
-&lt;h2 id=&#34;pourquoi-chiffrer-ses-documents-dans-le-cloud&#34;&gt;Pourquoi chiffrer ses documents dans le Cloud ?&lt;/h2&gt;
-
-&lt;p&gt;Stocker ses documents dans le Cloud, c&amp;rsquo;est potentiellement les mettre à la merci des hackers, qu&amp;rsquo;ils soient criminels ou supportés par un gouvernement. Ne croyez pas sur parole les communiqués des services comme Dropbox ou OneDrive qui vous disent que vos documents sont protégés ; pratiquement tous ont été victimes d&amp;rsquo;intrusions plus ou moins graves sur leurs serveurs. De plus leurs employés ainsi que certaines agences gouvernementales ont accès à vos documents.&lt;/p&gt;
-
-&lt;p&gt;Si les documents que vous stockez dans le Cloud ne contiennent pas de données sensibles, pas besoin de se prendre la tête, une solution de chiffrage supplémentaire n&amp;rsquo;est pas nécessaire. Mais si vous y stockez des documents contenant par exemple des coordonnées bancaires, des mots de passe ou des données de vos clients, il vaut mieux les chiffrer.&lt;/p&gt;
-
-&lt;p&gt;Le chiffrage est un sujet complexe, aussi je tiens à préciser que vos documents ne sont pas protégés dans le Cloud si vous avez chiffré vos documents localement avec une solution comme FileVault ou Bitlocker. Les documents envoyés dans le Cloud ne bénéficient pas de ce chiffrage.&lt;/p&gt;
-
-&lt;h2 id=&#34;mon-choix-cryptomator&#34;&gt;Mon choix : Cryptomator&lt;/h2&gt;
-
-&lt;p&gt;Après avoir testé différentes solutions, Cryptomator est actuellement la seule solution à satisfaire tous ces critères :&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Être open source : s&amp;rsquo;il y a bien un domaine dans lequel l&amp;rsquo;open source a tout son sens, c&amp;rsquo;est dans celui du chiffrage ; en effet seules les solutions open source peuvent être garanties sans porte dérobée (et encore, normalement il faut dans ce cas aussi compiler le code source soi-même après avoir vérifié la signature des fichiers).&lt;/li&gt;
-&lt;li&gt;Multi plateforme : Cryptomator est disponible sur macOS, Windows, Linux, iOS et Android. Seules les versions iOS et Android sont payantes.&lt;/li&gt;
-&lt;li&gt;Offrir un mécanisme de chiffrage suffisamment solide.&lt;/li&gt;
-&lt;li&gt;Autoriser la synchronisation fichier par fichier, voire par bloc modifié. Une solution comme VeraCrypt qui impose de tout resynchroniser pour le changement d&amp;rsquo;un octet n&amp;rsquo;est pas utilisable.&lt;/li&gt;
-&lt;li&gt;Autoriser la gestion des conflits dans le cas où plusieurs utilisateurs modifient le même fichier en même temps.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;faiblesses-de-cryptomator&#34;&gt;Faiblesses de Cryptomator&lt;/h3&gt;
-
-&lt;p&gt;La faiblesse principale de Cryptomator est que les fichiers chiffrés font la même taille que les fichiers non chiffrés. Sans être expert, cela doit fortement faciliter le cassage de la clé de chiffrage si un hacker possède une copie de fichier chiffrée et une copie non chiffrée. Normalement c&amp;rsquo;est un scénario qui ne doit pas se produire, mais si vous copiez des fichiers déjà présents dans Dropbox vers Cryptomator, alors Dropbox possédera une copie chiffrée et une copie non chiffrée du même document.&lt;/p&gt;
-
-&lt;h2 id=&#34;les-autres-solutions&#34;&gt;Les autres solutions&lt;/h2&gt;
-
-&lt;p&gt;VeraCrypt est le successeur spirituel du célèbre TrueCrypt. Cependant la philosophie de conception de VeraCrypt en fait un outil destiné au chiffrage de disques locaux plutôt que de documents stockés dans le Cloud.&lt;/p&gt;
-
-&lt;p&gt;BoxCryptor existe depuis plusieurs années, et a un fonctionnement similaire à Cryptomator. Mais le code source est fermé et BoxCryptor nécessite un abonnement payant sans pour autant offrir de bénéfices par rapport à Cryptomator. De plus si la maison mère de BoxCryptor met la clé sous la porte vous n&amp;rsquo;aurez plus aucun moyen de récupérer vos données.&lt;/p&gt;
-
-&lt;p&gt;CloudMounter offre un mécanisme de chiffrage intégré, mais le code source est fermé et impossible d&amp;rsquo;avoir des informations sur l&amp;rsquo;algorithme de chiffrage utilisé. De plus l&amp;rsquo;accès à Dropbox depuis CloudMounter est insupportablement lent.&lt;/p&gt;
-
-&lt;p&gt;Cyberduck et Mountain Duck intègrent Cryptomator. Si pendant mes tests Cyberduck a bien fonctionné je ne suis pas parvenu à faire fonctionner Mountain Duck de manière satisfaisante, la connexion s&amp;rsquo;interrompant constamment lors des transfers.&lt;/p&gt;
-
-&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
-
-&lt;p&gt;Le niveau de sécurité par défaut de Dropbox ou OneDrive est suffisant pour des documents ne nécessitant pas de précautions particulières, mais insuffisant pour les documents sensibles : je ne recommande pas de stocker des coordonnées bancaires, mots de passe ou des données client sensibles dans le Cloud sans chiffrage complémentaire. De toutes les solutions que j&amp;rsquo;ai pu essayer, Cryptomator est celle qui offre le meilleur compromis facilité d&amp;rsquo;utilisation - sécurité.&lt;/p&gt;
-</description>
+      <description>Après avoir testé plusieurs solutions de chiffrage des documents dans le Cloud mon choix s&amp;rsquo;est porté sur Cryptomator. C&amp;rsquo;est une solution gratuite, rapide, fiable et offrant un bon niveau de sécurité tout en restant simple à utiliser. Cryptomator est également intégré à d&amp;rsquo;autres solutions comme Cyberduck et Mountain Duck. Elle est également open source, ce qui signifie qu&amp;rsquo;aucun éditeur ne pourra prendre vos données en « otage » d&amp;rsquo;un abonnement obligatoire.</description>
     </item>
     
     <item>
@@ -1237,149 +284,8 @@ end notify
       <pubDate>Mon, 10 Jul 2017 00:00:00 +0000</pubDate>
       
       <guid>https://www.pierremorsa.com/post/2017-07-10-script-applescript-fusion-boite-de-reception-mail-omnifocus/</guid>
-      <description>
-
-&lt;p&gt;Suite à &lt;a href=&#34;https://www.pierremorsa.com/post/2017-06-12-test-omnifocus-2&#34;&gt;mon article sur OmniFocus 2&lt;/a&gt;, un lecteur m&amp;rsquo;a demandé si je pouvais partager le script qui me sert à fusionner les boîtes de réceptions de Apple Mail et OmniFocus 2. Le voilà.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Attention 1 : à la première exécution le script va créer une tâche OmniFocus pour tous les emails dans la boîte de réception, si vous en avez beaucoup vous risquez de vous retrouver avec des milliers de tâches OmniFocus en plus !&lt;/strong&gt; Pour éviter ce problème, ne laissez pas vos vieux emails traîner dans la boîte de réception, déplacez-les vers un dossier Archive.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Attention 2 : n&amp;rsquo;exécutez jamais du code AppleScript sans en vérifier le contenu et la provenance, il peut être dangereux.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Attention 3 : vérifiez que vous comprenez ce que fait le script et que cela correspond à votre besoin. AppleScript requiert un certain niveau de connaissance technique. Je ne suis pas responsable de ce que le script peut faire sur votre machine.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;use AppleScript version &amp;quot;2.4&amp;quot; -- Yosemite (10.10) or later
-use scripting additions
-
-property pLastID : 0
-property pInboxName : &amp;quot;INBOX&amp;quot;
-property pArchiveBoxName : &amp;quot;Archive&amp;quot;
-
-on run
-	
-	set cbs to ASCII character 92
-	set crt to ASCII character 13
-	
-	tell application &amp;quot;Mail&amp;quot;
-		set theMessage to &amp;quot;&amp;quot;
-		set theFlaggedMessages to ¬
-			(messages of mailbox pInboxName of first account) ¬
-				whose flag index is equal to 5
-		if (count of theFlaggedMessages) is greater than 0 then
-			repeat with theMessage in theFlaggedMessages
-				set theTask to my findOmnifocusTask(theMessage)
-				if theTask is missing value then
-					set flag index of theMessage to -1
-					my archiveMessage(theMessage)
-				end if
-			end repeat
-		end if
-		set theInbox to mailbox pInboxName of first account
-		set theInboxMessages to ¬
-			(messages of mailbox pInboxName of first account) ¬
-				whose id is greater than pLastID
-		
-		if (count of theInboxMessages) is greater than 0 then
-			delay 10
-			repeat with theMessage in theInboxMessages
-				set theSender to sender of theMessage as string
-				set theSubject to subject of theMessage as string
-				set theID to id of theMessage
-				set theTitle to theSender &amp;amp; &amp;quot; — &amp;quot; &amp;amp; theSubject
-				set theNote to (&amp;quot;message://%3c&amp;quot; &amp;amp; message id of ¬
-					theMessage &amp;amp; &amp;quot;%3e&amp;quot; &amp;amp; crt &amp;amp; crt) as rich text
-				set theNote to (theNote &amp;amp; content of theMessage)
-				set theAttachments to &amp;quot;&amp;quot;
-				set theAttachmentsCount to count of ¬
-					mail attachment of theMessage
-				if theAttachmentsCount is greater than 0 then
-					set theMailAttachments to ¬
-						mail attachments of theMessage
-					repeat with theMailAttachment in theMailAttachments
-						set theAttachments to theAttachments &amp;amp; ¬
-							name of theMailAttachment &amp;amp; crt
-					end repeat
-					set theNote to ¬
-						theNote &amp;amp; crt &amp;amp; crt &amp;amp; &amp;quot;Attachments:&amp;quot; &amp;amp; ¬
-						crt &amp;amp; theAttachments
-				end if
-				set theTaskID to my makeOmniFocusTask(theTitle, theNote)
-				-- set background color of theMessage to none
-				set flag index of theMessage to 5
-				set read status of theMessage to true
-				-- my archiveMessage(theMessage) -- disabled, too buggy.
-				set theID to id of theMessage
-				if theID is greater than pLastID then
-					set pLastID to theID
-				end if
-			end repeat
-		end if
-	end tell
-	
-end run
-
-on findOmnifocusTask(theMessage)
-	using terms from application &amp;quot;Mail&amp;quot;
-		set theMessageID to (message id of theMessage) as string
-	end using terms from
-	tell application &amp;quot;OmniFocus&amp;quot;
-		tell default document
-			try
-				set theTask to first flattened task whose completed is false ¬
-					and note contains theMessageID
-			on error
-				set theTask to missing value
-			end try
-		end tell
-	end tell
-	return theTask
-end findOmnifocusTask
-
-on makeOmniFocusTask(theTitle, theNote)
-	tell application &amp;quot;OmniFocus&amp;quot;
-		tell default document
-			set theTask to make new inbox task with properties ¬
-				{name:theTitle, note:theNote}
-		end tell
-	end tell
-	set theTaskID to &amp;quot;omnifocus://%3c&amp;quot; &amp;amp; id of theTask &amp;amp; &amp;quot;%3e&amp;quot;
-	return theTaskID
-end makeOmniFocusTask
-
-on archiveMessage(theMessage)
-	tell application &amp;quot;Mail&amp;quot;
-		set theAccount to account of mailbox of theMessage
-		set theMailboxArchive to item 1 of ((mailboxes of theAccount) ¬
-			whose name is pArchiveBoxName)
-		-- The following code did work too to move the message: 
-		-- set mailbox of theMessage to theMailboxArchive
-		move theMessage to theMailboxArchive
-	end tell
-end archiveMessage
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;comment-s-en-servir&#34;&gt;Comment s&amp;rsquo;en servir ?&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Lancer l&amp;rsquo;éditeur de Scripts (Script Editor en anglais, AppleScript Editor dans les anciennes versions de macOS)&lt;/li&gt;
-&lt;li&gt;Créer un nouveau script, copier-coller le contenu du script ci-dessus, et sauvegarder le script à l&amp;rsquo;endroit suivant dans votre répertoire utilisateur : &lt;code&gt;/Bibliothèque/Application Scripts/com.apple.mail&amp;quot;&lt;/code&gt; (attention, je ne suis pas certain du nom du répertoire Application Scripts en français, si quelqu&amp;rsquo;un le connaît vous pouvez me l&amp;rsquo;indiquer sur Twitter ou par email). J&amp;rsquo;ai appelé le fichier de script &lt;code&gt;rule → omnifocus-sendto&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Créer une règle dans Apple Mail qui va lancer le script automatiquement.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/07/rule-mail-omnifocus.jpg&#34; alt=&#34;Règle Apple Mail vers OmniFocus&#34; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;que-va-faire-le-script&#34;&gt;Que va faire le script ?&lt;/h2&gt;
-
-&lt;p&gt;Le script va créer une tâche dans OmniFocus pour &lt;strong&gt;tous&lt;/strong&gt; les emails qui sont dans votre boîte de réception, et va leur ajouter un drapeau de couleur violette (la couleur d&amp;rsquo;OmniFocus) pour indiquer qu&amp;rsquo;une tâche correspondante a été créée.&lt;/p&gt;
-
-&lt;p&gt;À chaque fois que le script est exécuté (donc à chaque fois que vous recevez au moins un nouvel email), le script vérifie si la tâche correspondante dans OmniFocus existe encore ET n&amp;rsquo;est pas complétée. Si ce n&amp;rsquo;est pas le cas (la tâche a été complétée ou supprimée) alors le script enlève le drapeau violet de l&amp;rsquo;email et le déplace vers le dossier Archive.&lt;/p&gt;
-
-&lt;h2 id=&#34;notes-techniques&#34;&gt;Notes techniques&lt;/h2&gt;
-
-&lt;p&gt;Les connaisseurs verront que je n&amp;rsquo;utilise pas la formulation recommandée    &lt;code&gt;on perform mail action with messages...&lt;/code&gt; pour déclencher le traitement. C&amp;rsquo;est simplement parce que elle est trop buggée, et ce depuis des années. Au lieu de cela j&amp;rsquo;utilise une technique pour identifier les nouveaux emails qui est de garder en mémoire l&amp;rsquo;ID du dernier email qui a été traité (&lt;code&gt;pLastID&lt;/code&gt;).&lt;/p&gt;
-
-&lt;p&gt;Il y a une procédure nommée archiveMessage. Ne changez pas le script pour archiver le message dès sa réception ; il y a un bug dans Mail qui fait que certains messages risquent d&amp;rsquo;être perdus si vous le faites (je crois que c&amp;rsquo;est lié au fait que Mail archive le message alors qu&amp;rsquo;il n&amp;rsquo;a pas fini d&amp;rsquo;être chargé depuis le serveur, mais je ne suis pas certain).&lt;/p&gt;
-</description>
+      <description>Suite à mon article sur OmniFocus 2, un lecteur m&amp;rsquo;a demandé si je pouvais partager le script qui me sert à fusionner les boîtes de réceptions de Apple Mail et OmniFocus 2. Le voilà.
+Attention 1 : à la première exécution le script va créer une tâche OmniFocus pour tous les emails dans la boîte de réception, si vous en avez beaucoup vous risquez de vous retrouver avec des milliers de tâches OmniFocus en plus !</description>
     </item>
     
     <item>
@@ -1388,14 +294,8 @@ end archiveMessage
       <pubDate>Mon, 26 Jun 2017 00:00:00 +0000</pubDate>
       
       <guid>https://www.pierremorsa.com/post/2017-06-26-omnifocus-affiche-boite-de-reception-dans-projets/</guid>
-      <description>&lt;p&gt;il y a quelques semaines j&amp;rsquo;ai publié un test d&amp;rsquo;OmniFocus 2. Un des griefs principaux que je faisais était l&amp;rsquo;impossibilité d&amp;rsquo;afficher la boîte de réception en même temps que les projets. Et bien magie, OmniFocus 2.10 vient d&amp;rsquo;ajouter cette fonctionnalité !&lt;/p&gt;
-
-&lt;p&gt;C&amp;rsquo;est beaucoup plus logique et plus rapide de traiter sa boîte de réception de cette manière : on traite les différentes actions, et celles qui doivent aller dans un projet peuvent être directement glissées-déposées dans le bon projet, au bon endroit.&lt;/p&gt;
-
-&lt;p&gt;Pour l&amp;rsquo;activer, allez dans les préférences d&amp;rsquo;OmniFocus, onglet organisation, et cochez la case pour afficher la boîte de réception dans les projets.&lt;/p&gt;
-
-&lt;p&gt;J&amp;rsquo;espère que Omni Group continuera de faire ces améliorations au fil du temps.&lt;/p&gt;
-</description>
+      <description>il y a quelques semaines j&amp;rsquo;ai publié un test d&amp;rsquo;OmniFocus 2. Un des griefs principaux que je faisais était l&amp;rsquo;impossibilité d&amp;rsquo;afficher la boîte de réception en même temps que les projets. Et bien magie, OmniFocus 2.10 vient d&amp;rsquo;ajouter cette fonctionnalité !
+C&amp;rsquo;est beaucoup plus logique et plus rapide de traiter sa boîte de réception de cette manière : on traite les différentes actions, et celles qui doivent aller dans un projet peuvent être directement glissées-déposées dans le bon projet, au bon endroit.</description>
     </item>
     
     <item>
@@ -1404,137 +304,8 @@ end archiveMessage
       <pubDate>Mon, 12 Jun 2017 00:00:00 +0000</pubDate>
       
       <guid>https://www.pierremorsa.com/post/2017-06-12-test-omnifocus-2/</guid>
-      <description>
-
-&lt;p&gt;OmniFocus 2 est un outil de gestion des tâches basé sur la méthode GTD, disponible pour Mac, iPad et iPhone. Après avoir essayé différentes solutions, c&amp;rsquo;est celle-ci qui a retenu mon choix, car c&amp;rsquo;est la solution la plus complète et la plus puissante, et surtout elle peut être personnalisée avec AppleScript, le langage d&amp;rsquo;automatisation d&amp;rsquo;Apple.&lt;/p&gt;
-
-&lt;p&gt;Plutôt qu&amp;rsquo;un test classique, j&amp;rsquo;ai voulu décrire comment OmniFocus s&amp;rsquo;en sort dans une utilisation quotidienne pour quelqu&amp;rsquo;un qui utilise la méthodologie GTD.&lt;/p&gt;
-
-&lt;h2 id=&#34;quelques-points-importants-sur-omnifocus-2&#34;&gt;Quelques points importants sur OmniFocus 2&lt;/h2&gt;
-
-&lt;p&gt;Premier point qui peut surprendre, le prix. Aujourd&amp;rsquo;hui nous sommes habitués à avoir une pléthore d&amp;rsquo;applications gratuites. Ce n&amp;rsquo;est pas le cas d&amp;rsquo;OmniFocus, qui coûte environ 80€ dans sa version Pro. Si vous n&amp;rsquo;avez pas envie de payer pour une application, celle-ci n&amp;rsquo;est pas faite pour vous.&lt;/p&gt;
-
-&lt;p&gt;Le deuxième point à mentionner d&amp;rsquo;entrée de jeu, c&amp;rsquo;est la relative complexité d&amp;rsquo;OmniFocus 2. Si vous n&amp;rsquo;êtes pas familier avec la méthode GTD alors les nombreuses fonctionnalités d&amp;rsquo;OmniFocus 2 ne vous seront probablement pas beaucoup plus utiles qu&amp;rsquo;une simple liste de tâches classique.&lt;/p&gt;
-
-&lt;p&gt;Ces deux points ne sont pas faits pour vous rebuter ? Parfait, alors partons à la découverte de cet outil formidable !&lt;/p&gt;
-
-&lt;h2 id=&#34;interface&#34;&gt;Interface&lt;/h2&gt;
-
-&lt;p&gt;L&amp;rsquo;interface d&amp;rsquo;OmniFocus est similaire sur Mac, iPad et iPhone, même si elle tient compte des particularités de chaque appareil.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/06/omnifocus.jpg&#34; alt=&#34;OmniFocus Mac iPhone et iPad&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Les interfaces, c&amp;rsquo;est vraiment une question de goût. Des trois c&amp;rsquo;est la version Mac que je préfère. Je trouve qu&amp;rsquo;il est plus simple d&amp;rsquo;accéder aux détails des tâches, et surtout on peut utiliser AppleScript pour l&amp;rsquo;automatiser. De plus, elle offre plus d&amp;rsquo;options de personnalisation, par exemple le choix entre un mode compact et fluide.&lt;/p&gt;
-
-&lt;p&gt;Depuis la version 2.5 il est de nouveau possible de personnaliser les polices et les couleurs d&amp;rsquo;OmniFocus Mac avec des thèmes mais il faut avoir le cœur bien accroché ! Cette opération sera cependant simplifiée par l&amp;rsquo;utilisation du petit outil dédié OmniFocusColors.&lt;/p&gt;
-
-&lt;p&gt;Au final les différentes interfaces font le boulot efficacement, et c&amp;rsquo;est ce qu&amp;rsquo;on leur demande. Pour le reste de l&amp;rsquo;article, je vais me focaliser sur la version Mac qui est celle que j&amp;rsquo;utilise 90% du temps.&lt;/p&gt;
-
-&lt;h2 id=&#34;un-système-pensé-pour-gtd&#34;&gt;Un système pensé pour GTD&lt;/h2&gt;
-
-&lt;p&gt;Comme déjà mentionné, cela n&amp;rsquo;a pas beaucoup de sens d&amp;rsquo;utiliser OmniFocus si vous ne connaissez pas la méthodologie GTD. On y retrouve toutes les étapes du processus GTD classique :&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Collecter les tâches dans la boîte de réception (Inbox)&lt;/li&gt;
-&lt;li&gt;Organiser par projet&lt;/li&gt;
-&lt;li&gt;Exécuter des tâches par contexte&lt;/li&gt;
-&lt;li&gt;Revoir les projets&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Le diable est dans les détails. Même si je trouve qu&amp;rsquo;OmniFocus est l&amp;rsquo;application la plus adaptée à la méthodologie GTD, je regrette que le processus ne soit pas plus fluide. Ce que je veux dire par là, c&amp;rsquo;est que les onglets &amp;ldquo;Inbox&amp;rdquo;, &amp;ldquo;Project&amp;rdquo;, &amp;ldquo;Review&amp;rdquo; sont visibles en permanence ; l&amp;rsquo;utilisateur a alors tendance à y passer plus de temps que nécessaire,
-alors qu&amp;rsquo;ils devraient être utilisés le moins possible. De plus, j&amp;rsquo;aimerais que l&amp;rsquo;interface s&amp;rsquo;adapte plus intelligemment : voir les projets lorsqu&amp;rsquo;on trie sa boîte de réception, faire disparaître certains éléments lorsqu&amp;rsquo;ils sont inutiles, etc.&lt;/p&gt;
-
-&lt;p&gt;Mais attaquons-nous au principal. Comment est-ce que OmniFocus s&amp;rsquo;en sort en tant qu&amp;rsquo;outil GTD ? Revoyons chaque étape du processus.&lt;/p&gt;
-
-&lt;h2 id=&#34;1-collecter-les-tâches-dans-la-boîte-de-réception&#34;&gt;1. Collecter les tâches dans la boîte de réception&lt;/h2&gt;
-
-&lt;p&gt;La boîte de réception sert de fourre-tout dans lequel on stocke tous les éléments susceptibles de devenir une tâche. Vous vous rappelez tout d&amp;rsquo;un coup que vous devez acheter des fleurs pour la fête des mères ? Vous ajoutez une tâche dans la boîte de réception.&lt;/p&gt;
-
-&lt;p&gt;OmniFocus offre un raccourci clavier qui permet d&amp;rsquo;afficher une fenêtre pour saisir une tâche rapidement, sans devoir quitter l&amp;rsquo;application en cours d&amp;rsquo;utilisation. Si une tâche vous vient à l&amp;rsquo;esprit, vous tapez le raccourci, entrez la tâche et fermez la fenêtre. Vous pouvez l&amp;rsquo;oublier en sachant qu&amp;rsquo;elle est bien au chaud dans votre boîte de réception et qu&amp;rsquo;elle sera traitée en temps voulu.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/06/omnifocus-quick-entry.jpg&#34; alt=&#34;OmniFocus Mac iPhone et iPad&#34; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;2-traiter-sa-boîte-de-réception&#34;&gt;2. Traiter sa boîte de réception&lt;/h2&gt;
-
-&lt;p&gt;Environ trois fois par jour, je traite toutes les tâches en attente dans ma boîte de réception (le matin en me levant, vers la fin de la matinée et fin d&amp;rsquo;après midi).&lt;/p&gt;
-
-&lt;p&gt;La façon de procéder d&amp;rsquo;OmniFocus est simple. On clique sur l&amp;rsquo;onglet &amp;ldquo;Inbox&amp;rdquo;, on regarde chaque tâche en suivant le processus de décision GTD : est-ce qu&amp;rsquo;on peut la faire en moins de deux minutes ? Oui, alors on la fait tout de suite puis on la marque comme complétée. Sinon on lui attribue un projet et un contexte. La tâche va alors automatiquement disparaître de la boîte de réception et aller s&amp;rsquo;ajouter &lt;em&gt;à la fin de la liste de tâches du projet&lt;/em&gt; qui lui a été assigné.&lt;/p&gt;
-
-&lt;p&gt;À cet étape du processus, il y a quelque chose qui me chagrine : j&amp;rsquo;aimerais vraiment n&amp;rsquo;avoir qu&amp;rsquo;une seule boîte de réception à traiter, mais j&amp;rsquo;en ai deux. Celle d&amp;rsquo;OmniFocus et celle d&amp;rsquo;Apple Mail. OmniFocus pourrait fusionner sa boîte de réception avec Apple Mail, pour n&amp;rsquo;avoir à traiter qu&amp;rsquo;une seule boîte de réception. Heureusement, j&amp;rsquo;ai mis au point une solution : un AppleScript qui prend les emails reçus dans Apple Mail et les ajoute directement dans la boîte de réception d&amp;rsquo;OmniFocus, avec un lien vers le mail d&amp;rsquo;origine. Ces emails ont également un petit drapeau violet dans Mail tant qu&amp;rsquo;ils restent en tâche ouverte dans OmniFocus.&lt;/p&gt;
-
-&lt;p&gt;De manière générale, c&amp;rsquo;est un des plus gros reproches que je fais à OmniFocus : il est pensé par « fonctionnalités » plus que par « déroulement du processus ». C&amp;rsquo;est flagrant dans ce cas, car l&amp;rsquo;idéal serait de voir les tâches dans la boîte de réception, et en dessous la liste des projets, pour pouvoir simplement glisser-déposer les tâches dans le bon projet et au bon endroit. Omni Group, l&amp;rsquo;éditeur, a promis de remédier à ce problème. En attendant la solution de contournement recommandée est simplement d&amp;rsquo;ouvrir deux fenêtres, une qui affiche le contenu de la boîte de réception et une qui affiche la liste des projets, et de glisser-déposer les tâches entre les deux.&lt;/p&gt;
-
-&lt;h2 id=&#34;3-organiser-les-projets&#34;&gt;3. Organiser les projets&lt;/h2&gt;
-
-&lt;p&gt;L&amp;rsquo;étape suivante logique, c&amp;rsquo;est d&amp;rsquo;organiser les projets. Autrement dit, de prendre les tâches affectées au projet et les organiser dans un ordre d&amp;rsquo;exécution logique. Dans OmniFocus, les projets et groupes de tâches peuvent être « séquentiels » ou « parallèles ». Dans un projet séquentiel, une tâche doit être complétée avant que la suivante ne soit réalisable. Dans un projet parallèle, toutes les tâches non complétées et affectées à un contexte actif peuvent être exécutées. Si on prend comme exemple la liste de tâches suivantes :&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Rédiger le document&lt;/li&gt;
-&lt;li&gt;Insérer les images&lt;/li&gt;
-&lt;li&gt;Demander le droit d&amp;rsquo;utiliser les images&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Dans un projet séquentiel, « rédiger le document » devra être complété avant que la tâche « insérer les images » ne devienne disponible. Dans un projet parallèle, on pourra indifféremment commencer par rédiger le document, insérer les images ou demander le droit de les utiliser. Personnellement, partant du principe qu&amp;rsquo;on ne peut faire qu&amp;rsquo;une chose à la fois, pratiquement tous mes projets sont séquentiels, et je réserve le mode parallèle à des cas bien précis. Utiliser le mode séquentiel me force aussi à organiser les choses de manière logique avant de commencer à travailler, ce qui plus tard évite de perdre du temps à me demander par quoi commencer puis quoi faire ensuite.&lt;/p&gt;
-
-&lt;h2 id=&#34;4-revoir-les-projets&#34;&gt;4. Revoir les projets&lt;/h2&gt;
-
-&lt;p&gt;Régulièrement, il faut revoir ses projets. Même après l&amp;rsquo;étape d&amp;rsquo;organisation, il peut être utile de faire une mini-revue, pour être sûr de n&amp;rsquo;avoir rien oublié. Pour moi, avoir cette certitude d&amp;rsquo;avoir tout traité est important, car lors de l&amp;rsquo;étape suivante, l&amp;rsquo;exécution des tâches, je passe en mode « autopilote » ; je concentre toute mon attention sur l&amp;rsquo;exécution des tâches sans perdre d&amp;rsquo;énergie à me demander que faire maintenant ou si ce que je fais est la bonne tâche, car tout cela je m&amp;rsquo;en suis assuré lors des étapes 1 à 4.&lt;/p&gt;
-
-&lt;p&gt;Dans Omnifocus, il est possible de définir une fréquence de revue des projets, de journalière à annuelle. Dans la pratique, mes projets actifs ont une fréquence de revue journalière, mes projets « waiting for » (en attente de) une fréquence de revue hebdomadaire, les projets repoussés à une date ultérieure ont une date de revue à la date à laquelle le projet redevient actif. Omnifocus étant assez « bête » a ce sujet, il est incapable de définir une fréquence de revue lui-même en fonction du statut du projet. De la même manière, il n&amp;rsquo;est pas assez intelligent pour éviter de définir la prochaine date de revue un week-end. Heureusement, AppleScript à la rescousse, j&amp;rsquo;ai un script qui modifie la fréquence et la prochaine date de revue des projets en fonction de leur statut ; c&amp;rsquo;es là la vraie force d&amp;rsquo;OmniFocus par rapport à tous les concurrents : si une fonctionnalité ne nous convient pas ou n&amp;rsquo;existe pas, on peut la créer soi-même !&lt;/p&gt;
-
-&lt;h2 id=&#34;5-exécuter-les-tâches-par-contexte&#34;&gt;5. Exécuter les tâches « par contexte »&lt;/h2&gt;
-
-&lt;p&gt;Évidemment, c&amp;rsquo;est un des piliers de GTD : les tâches se font en fonction du contexte dans lequel on se trouve ; autrement dit, lorsque je suis devant mon Mac seules les tâches que je peux exécuter devant mon Mac vont s&amp;rsquo;afficher dans le contexte @mac. Si je fais les courses, seules les tâches que je peux exécuter en faisant les courses vont s&amp;rsquo;afficher. C&amp;rsquo;est un des principes clés de GTD, qui poursuit toujours le même but : pouvoir exécuter les tâches en mode « autopilote », sans interrompre l&amp;rsquo;exécution par des prises de décisions inutiles qui font perdre de l&amp;rsquo;énergie et entraînent un risque de procrastination, style la prochaine tâche est de poster la lettre, ah mais je peux pas, je suis pas au bon endroit, bon, qu&amp;rsquo;est-ce que je fais après ?&lt;/p&gt;
-
-&lt;p&gt;Le système de contexte de GTD a été créé à une époque où cela se faisait plutôt sur papier ou sans outils adaptés. OmniFocus ne permet d&amp;rsquo;attribuer qu&amp;rsquo;un seul contexte à une tâche. Un système d&amp;rsquo;étiquettes serait aujourd&amp;rsquo;hui probablement plus souple et plus efficace (pouvoir par exemple attribuer les contextes @voyage et @gare à une même tâche).&lt;/p&gt;
-
-&lt;p&gt;Peu de choses à dire sur les contextes, c&amp;rsquo;est simple et ça marche bien. Un des avantages d&amp;rsquo;OmniFocus est de permettre de personnaliser l&amp;rsquo;affichage des tâches dans un contexte en fonction de ses préférences. Si je reprends mon exemple précédent de trois tâches :&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Rédiger le document (fait)&lt;/li&gt;
-&lt;li&gt;Insérer les images (à faire)&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Demander le droit d&amp;rsquo;utiliser les images (à faire)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Si je demande d&amp;rsquo;afficher les tâches disponibles, OmniFocus va afficher la tâche Insérer pour un projet séquentiel, et les tâches Insérer et Demander pour un projet parallèle.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Si je demande d&amp;rsquo;afficher seulement la première tâche disponible, OmniFocus va afficher la tâche Insérer uniquement, que le projet soit séquentiel pour parallèle.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Maintenant que nous avons couvert toutes les étapes du processus GTD, attardons-nous sur quelques fonctionnalités qui font d&amp;rsquo;OmniFocus un outil bien plus puissant que tous les concurrents. Et commençons par les perspectives.&lt;/p&gt;
-
-&lt;h2 id=&#34;définir-des-perspectives-personnalisées&#34;&gt;Définir des perspectives personnalisées&lt;/h2&gt;
-
-&lt;p&gt;Les options d&amp;rsquo;affichage et de filtrage d&amp;rsquo;OmniFocus sont très nombreuses, et permettent de couvrir presque tous les cas de figure. Mais vous n&amp;rsquo;avez probablement pas envie de redéfinir l&amp;rsquo;ensemble des filtres et critères à chaque fois. Heureusement, OmniFocus vous permet de sauvegarder une vue et ses options d&amp;rsquo;affichage dans des « perspectives ». Pour revenir à votre vue préférée, il suffit alors de cliquer sur son icône dans la barre latérale.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/06/omnifocus-perspectives.jpg&#34; alt=&#34;OmniFocus Mac iPhone et iPad&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Voici quelques exemples de ce qu&amp;rsquo;il est possible de faire avec les perspectives :&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Créer une perspective pour n&amp;rsquo;afficher que les tâches disponibles dans un ensemble de contextes précis.&lt;/li&gt;
-&lt;li&gt;N&amp;rsquo;afficher que les projets en cours d&amp;rsquo;exécution, pour lesquels aucune tâche n&amp;rsquo;est active.&lt;/li&gt;
-&lt;li&gt;Afficher toutes les tâches dont la date d&amp;rsquo;échéance est aujourd&amp;rsquo;hui.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;synchronisation-push&#34;&gt;Synchronisation &amp;ldquo;push&amp;rdquo;&lt;/h2&gt;
-
-&lt;p&gt;Omni Group propose plusieurs méthodes pour synchroniser vos données entre vos différents appareils : via leur serveurs (plus simple) ou via votre propre serveur (plus sécurisé). Personnellement j&amp;rsquo;utilise la synchronisation via leurs serveurs. La configuration est assez simple et la synchronisation rapide.&lt;/p&gt;
-
-&lt;p&gt;OmniFocus peut utiliser la synchronisation &amp;ldquo;push&amp;rdquo;, autrement dit lorsqu&amp;rsquo;un élément est modifié sur un appareil, les modifications sont envoyées presque instantanément sur les autres appareils. Celle-ci peut être désactivée si vous le souhaitez.&lt;/p&gt;
-
-&lt;p&gt;À noter que ce service est &lt;strong&gt;totalement gratuit&lt;/strong&gt;, ce qui aide à faire passer le coût initial de la licence.&lt;/p&gt;
-
-&lt;h2 id=&#34;intégration-mail&#34;&gt;Intégration mail&lt;/h2&gt;
-
-&lt;p&gt;Une fonctionnalité très utile est la possibilité de définir une adresse mail spéciale. Tous les emails que vous envoyez à cette adresse vont être automatiquement convertis en tâche. Ça marche très bien !&lt;/p&gt;
-
-&lt;h2 id=&#34;en-conclusion&#34;&gt;En conclusion&lt;/h2&gt;
-
-&lt;p&gt;OmniFocus 2 reste la solution GTD la plus puissante, toutes plateformes confondues, et nous utilisateurs de Mac sommes bien chanceux de l&amp;rsquo;avoir. La possibilité d&amp;rsquo;utiliser AppleScript avec la version Mac permet de créer virtuellement n&amp;rsquo;importe quelle fonctionnalité supplémentaire ou d&amp;rsquo;adapter les fonctionnalités existantes. Mon seul regret concernant OmniFocus est un « workflow » (processus de travail) parfois perfectible dans les détails, qui pourrait rendre l&amp;rsquo;utilisation de l&amp;rsquo;outil plus simple et plus rapide.&lt;/p&gt;
-
-&lt;p&gt;Le prix peut certes paraître élevé, mais au final Omni offre gratuitement l&amp;rsquo;utilisation d&amp;rsquo;une solution de synchronisation puissante et efficace là où tous les concurrents font payer un abonnement qui revient au final bien plus cher.&lt;/p&gt;
-</description>
+      <description>OmniFocus 2 est un outil de gestion des tâches basé sur la méthode GTD, disponible pour Mac, iPad et iPhone. Après avoir essayé différentes solutions, c&amp;rsquo;est celle-ci qui a retenu mon choix, car c&amp;rsquo;est la solution la plus complète et la plus puissante, et surtout elle peut être personnalisée avec AppleScript, le langage d&amp;rsquo;automatisation d&amp;rsquo;Apple.
+Plutôt qu&amp;rsquo;un test classique, j&amp;rsquo;ai voulu décrire comment OmniFocus s&amp;rsquo;en sort dans une utilisation quotidienne pour quelqu&amp;rsquo;un qui utilise la méthodologie GTD.</description>
     </item>
     
     <item>
@@ -1543,71 +314,8 @@ alors qu&amp;rsquo;ils devraient être utilisés le moins possible. De plus, j&a
       <pubDate>Mon, 15 May 2017 00:00:00 +0000</pubDate>
       
       <guid>https://www.pierremorsa.com/post/2017-05-15-test-de-microsoft-onedrive-mac/</guid>
-      <description>
-
-&lt;p&gt;En résumé : si vous avez déjà Dropbox et que vous n&amp;rsquo;avez pas besoin des fonctions de collaboration de Office Online, restez sur Dropbox. OneDrive fonctionne correctement, mais est plus lent que Dropbox et offre moins de fonctionnalités. Son seul avantage est l&amp;rsquo;intégration plus poussée, mais très perfectible, avec Office Online.&lt;/p&gt;
-
-&lt;p&gt;Si vous vous demandez pourquoi lire mon test plutôt que celui d&amp;rsquo;un site spécialisé, c&amp;rsquo;est parce que j&amp;rsquo;utilise Office 365, Dropbox et OneDrive tous les jours. De plus, je suis totalement indépendant de Microsoft, je n&amp;rsquo;ai pas à être gentil avec eux pour préserver mon droit d&amp;rsquo;accès à quoi que ce soit.&lt;/p&gt;
-
-&lt;h2 id=&#34;onedrive-les-bases&#34;&gt;OneDrive : les bases&lt;/h2&gt;
-
-&lt;p&gt;OneDrive est un des services de stockage dans le Cloud de Microsoft. Parce que rien n&amp;rsquo;est jamais assez compliqué chez Microsoft, OneDrive est un service différent de OneDrive for Business, il ne faut donc pas confondre les deux. Un peu comme Skype et Skype for Business, qui sont deux trucs différents aussi. Et Office et Office for Business sont différents mais très similaires et compatibles. J&amp;rsquo;espère que vous suivez toujours.&lt;/p&gt;
-
-&lt;p&gt;Il y a trois manières d&amp;rsquo;accéder à OneDrive depuis son Mac :&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Via l&amp;rsquo;interface web en utilisant un navigateur comme Safari ou Firefox.&lt;/li&gt;
-&lt;li&gt;Via l&amp;rsquo;app OneDrive téléchargeable gratuitement depuis l&amp;rsquo;App Store.&lt;/li&gt;
-&lt;li&gt;Via une des applications Office 365 : Word, Excel ou PowerPoint. Les autres, comme Microsoft Publisher, ne sont pas disponibles sur Mac, mais franchement vous ne ratez rien.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;L&amp;rsquo;app OneDrive va créer une copie locale des fichiers OneDrive stockés dans le Cloud, et il est possible de limiter la copie locale à une liste de dossiers sélectionnés. L&amp;rsquo;avantage, c&amp;rsquo;est que l&amp;rsquo;ouverture et la sauvegarde de fichiers en local est beaucoup plus rapide que sur un serveur distant.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/04/onedrive-cloud-local.jpg&#34; alt=&#34;OneDrive Local et Cloud&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Notez bien la différence entre &lt;strong&gt;OneDrive Local&lt;/strong&gt; et &lt;strong&gt;OneDrive Cloud&lt;/strong&gt;, car c&amp;rsquo;est déterminant pour la suite de l&amp;rsquo;article.&lt;/p&gt;
-
-&lt;p&gt;En théorie avec l&amp;rsquo;app OneDrive on a le meilleur des deux mondes : le stockage dans le cloud avec les fonctions de collaboration et de partage d&amp;rsquo;Office 365, et la vitesse d&amp;rsquo;accès aux fichiers du OneDrive local. Mais malheureusement ce n&amp;rsquo;est pas le cas, la faute à des petits défauts d&amp;rsquo;intégration qui viennent tout gâcher.&lt;/p&gt;
-
-&lt;h2 id=&#34;premier-point-qui-fâche-c-est-lent&#34;&gt;Premier point qui fâche : c&amp;rsquo;est lent&lt;/h2&gt;
-
-&lt;p&gt;Le service de Microsoft est trop lent. Par exemple j&amp;rsquo;ai essayé d&amp;rsquo;ouvrir une présentation de 30 Mo dans le Cloud OneDrive depuis PowerPoint, et il a fallu plus d&amp;rsquo;une dizaine de minutes pour la télécharger et l&amp;rsquo;ouvrir (débit misérable de quelques centaines de ko sur une connexion câble de 100 Mbps). Peut-être serez-vous plus chanceux que moi sur ce point.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/04/onedrive-cestlent.jpg&#34; alt=&#34;OneDrive C&#39;est lent&#34; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;une-intégration-cloud-local-à-revoir&#34;&gt;Une intégration cloud - local à revoir&lt;/h2&gt;
-
-&lt;p&gt;Le truc le plus frustrant avec OneDrive Mac, c&amp;rsquo;est que lorsque vous ouvrez un document Office dans votre dossier OneDrive &lt;strong&gt;local&lt;/strong&gt;, Office est trop bête pour comprendre qu&amp;rsquo;il s&amp;rsquo;agit d&amp;rsquo;un document déjà stocké dans le cloud. Si vous essayez d&amp;rsquo;obtenir un lien pour partager le document avec d&amp;rsquo;autres personnes, il va vous dire qu&amp;rsquo;il faut d&amp;rsquo;abord sauver le document sur&amp;hellip; OneDrive (sous-entendu OneDrive &lt;strong&gt;Cloud&lt;/strong&gt;), &lt;em&gt;alors que c&amp;rsquo;est déjà le cas&lt;/em&gt;. Pour obtenir le lien, il faut donc fermer la copie locale, et ouvrir la copie Cloud&amp;hellip;&lt;/p&gt;
-
-&lt;p&gt;&amp;hellip; Et lorsque vous essayez d&amp;rsquo;ouvrir la copie OneDrive &lt;strong&gt;Cloud&lt;/strong&gt;, Office n&amp;rsquo;est pas bien malin non plus. Il se rend pas compte qu&amp;rsquo;une copie locale complète existe déjà et il télécharge à nouveau 100% du document à une allure d&amp;rsquo;escargot (franchement, c&amp;rsquo;est vraiment lent comparé à Dropbox). Mais au moins vous pouvez obtenir le fameux lien de partage du document.&lt;/p&gt;
-
-&lt;p&gt;Vous êtes donc obligé de choisir entre éditer la copie locale d&amp;rsquo;un document en bénéficiant de la vitesse ou éditer la copie cloud en bénéficiant des options de collaboration et de partage. OneDrive ne devrait pas nous forcer à choisir et devrait nous permettre de bénéficier du meilleur des deux mondes sans que l&amp;rsquo;utilisateur n&amp;rsquo;aie à se poser de question.&lt;/p&gt;
-
-&lt;h2 id=&#34;la-raison-d-utiliser-onedrive-l-édition-collaborative-de-documents&#34;&gt;LA raison d&amp;rsquo;utiliser OneDrive : l&amp;rsquo;édition collaborative de documents&lt;/h2&gt;
-
-&lt;p&gt;Il y a une raison bien précise pour laquelle j&amp;rsquo;ai voulu utiliser OneDrive. C&amp;rsquo;est que mon métier m&amp;rsquo;amène très souvent à partager et à collaborer sur des documents Office avec des collègues ou des clients.&lt;/p&gt;
-
-&lt;p&gt;Malheureusement là encore, il reste trop de bugs pour que cela soit réellement efficace au-delà d&amp;rsquo;une collaboration très simple. Par exemple il m&amp;rsquo;est arrivé plusieurs fois qu&amp;rsquo;un document se retrouve verrouillé en accès pour une raison inconnue, ou que PowerPoint multiplie de manière anarchique les « Masters » de slides comme d&amp;rsquo;autres les petits pains lors d&amp;rsquo;une édition collaborative à plusieurs. De plus comme mentionné plus haut si vous ouvrez la copie OneDrive Locale, Office n&amp;rsquo;est pas assez intelligent et ne comprend pas qu&amp;rsquo;il s&amp;rsquo;agit d&amp;rsquo;un document disponible dans OneDrive Cloud, et ne vous fait pas bénéficier des fonctions d&amp;rsquo;édition collaborative.&lt;/p&gt;
-
-&lt;p&gt;Au final c&amp;rsquo;est bien mieux qu&amp;rsquo;Office pré-365, mais insuffisant face à des outils comme Google Docs où l&amp;rsquo;édition collaborative fonctionne sans efforts.&lt;/p&gt;
-
-&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
-
-&lt;p&gt;Je tire une dernière fois sur l&amp;rsquo;ambulance. OneDrive est incapable de gérer tous les caractères dans les noms de fichiers, alors que Dropbox le fait sans aucun problème depuis des années. Enfin la fonction de sauvegarde des différentes versions de documents de Dropbox est bien plus sécurisante et aboutie que celle de OneDrive.&lt;/p&gt;
-
-&lt;p&gt;En l&amp;rsquo;état il est donc impossible de recommander OneDrive face à Dropbox. Pourtant Microsoft n&amp;rsquo;est pas loin, en réalité il n&amp;rsquo;y a que deux choses à améliorer pour faire de OneDrive un bon service :&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Améliorer la vitesse&lt;/li&gt;
-&lt;li&gt;Corriger l&amp;rsquo;intégration fichiers locaux - cloud pour la rendre totalement transparente lorsqu&amp;rsquo;on utilise Office 365.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Allez Microsoft, un effort et OneDrive peut devenir une bonne solution de stockage Cloud.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/04/onedrive-crottemoji.jpg&#34; alt=&#34;OneDrive Local et Cloud&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Oui, cette dernière image est totalement inutile.&lt;/p&gt;
-</description>
+      <description>En résumé : si vous avez déjà Dropbox et que vous n&amp;rsquo;avez pas besoin des fonctions de collaboration de Office Online, restez sur Dropbox. OneDrive fonctionne correctement, mais est plus lent que Dropbox et offre moins de fonctionnalités. Son seul avantage est l&amp;rsquo;intégration plus poussée, mais très perfectible, avec Office Online.
+Si vous vous demandez pourquoi lire mon test plutôt que celui d&amp;rsquo;un site spécialisé, c&amp;rsquo;est parce que j&amp;rsquo;utilise Office 365, Dropbox et OneDrive tous les jours.</description>
     </item>
     
     <item>
@@ -1616,16 +324,8 @@ alors qu&amp;rsquo;ils devraient être utilisés le moins possible. De plus, j&a
       <pubDate>Mon, 24 Apr 2017 00:00:00 +0000</pubDate>
       
       <guid>https://www.pierremorsa.com/post/2017-04-24-utiliser-souris-et-tablette-graphique/</guid>
-      <description>&lt;p&gt;Si vous utilisez un ordinateur régulièrement depuis plusieurs années, il y a de fortes chances pour que vous ayez développé des douleurs dans les mains. Celles-ci n&amp;rsquo;ont en effet pas été conçues pour taper sur un clavier et manipuler une souris ou un trackpad plusieurs heures par jour.&lt;/p&gt;
-
-&lt;p&gt;J&amp;rsquo;ai déjà expliqué être passé à un &lt;a href=&#34;https://www.pierremorsa.com/blog/bureau-debout-pour-20-euros/&#34;&gt;bureau debout&lt;/a&gt; et &lt;a href=&#34;https://www.pierremorsa.com/post/2017-02-13-7-ans-clavier-bepo&#34;&gt; à la disposition clavier BÉPO&lt;/a&gt; pour réduire les douleurs articulaires, et ce sont des solutions efficaces quoique assez extrême. Mais ce n&amp;rsquo;était pas suffisant pour résoudre tous mes problèmes de douleur dans les articulations ; il fallait encore trouver une solution pour la souris. Ne faisant pas les choses à moitié, car une demi-souris c&amp;rsquo;est pas très pratique, j&amp;rsquo;ai donc opté pour une solution originale. J&amp;rsquo;utilise encore une souris, mais de la main gauche au lieu de la main droite. Au début c&amp;rsquo;est très compliqué, on rate les éléments d&amp;rsquo;interface, on clique sur le mauvais bouton, mais petit à petit on s&amp;rsquo;y fait. Mais surtout, en combinaison avec la souris, j&amp;rsquo;utilise une tablette graphique Wacom de taille moyenne (surface utile d&amp;rsquo;environ une feuille A5) de la main droite (je précise Wacom, parce que d&amp;rsquo;une part c&amp;rsquo;est pratiquement la seule marque qui fabrique ce genre de périphérique).&lt;/p&gt;
-
-&lt;p&gt;Combiner souris + tablette graphique présente le gros avantage de bénéficier des qualités uniques de chacun de ces appareils. La tablette Wacom est sans égale pour dessiner, pour retoucher une image ou pour réaliser de grands mouvements précis d&amp;rsquo;un bout à l&amp;rsquo;autre de l&amp;rsquo;écran. La souris, elle, présente l&amp;rsquo;avantage de pouvoir faire des ajustements pixel par pixel plus facilement que la tablette. En effet, avec la tablette graphique, lorsqu&amp;rsquo;on relève la pointe du stylet de la tablette il arrive que le curseur « dérape » d&amp;rsquo;un ou deux pixels, réduisant à néant les efforts d&amp;rsquo;alignement. De par sa conception la souris n&amp;rsquo;a pas ce problème. Aussi bizarre que cela puisse paraître, il m&amp;rsquo;arrive souvent d&amp;rsquo;utiliser les deux en même temps. La tablette Wacom pour faire des déplacements rapides à un autre point de l&amp;rsquo;écran et les retouches, et la souris pour réaliser des alignements précis. C&amp;rsquo;est devenu complètement naturel. D&amp;rsquo;autres personnes utilisent tablette et souris, mais l&amp;rsquo;originalité de mon système vient de l&amp;rsquo;utilisation simultanée d&amp;rsquo;un périphérique main gauche et main droite.&lt;/p&gt;
-
-&lt;p&gt;Au niveau purement articulaire, mes doigts me disent merci. D&amp;rsquo;une part la position du stylet de la tablette graphique est bien plus ergonomique que la souris. Et d&amp;rsquo;autre part, comme je répartis les efforts mécaniques entre deux périphériques, chaque main est moins sollicitée.&lt;/p&gt;
-
-&lt;p&gt;Cette solution me convient, mais est liée à mon utilisation très particulière de l&amp;rsquo;ordinateur, principalement PowerPoint et un peu d&amp;rsquo;illustration. En matière d&amp;rsquo;ergonomie, s&amp;rsquo;il y a une chose dont je suis convaincu, c&amp;rsquo;est que pour faire disparaître les douleurs, chaque petit détail compte : la posture du corps, les périphériques employés, leur disposition, la hauteur du bureau, etc. Chaque personne est différente, et une solution unique ne peut convenir à tous.&lt;/p&gt;
-</description>
+      <description>Si vous utilisez un ordinateur régulièrement depuis plusieurs années, il y a de fortes chances pour que vous ayez développé des douleurs dans les mains. Celles-ci n&amp;rsquo;ont en effet pas été conçues pour taper sur un clavier et manipuler une souris ou un trackpad plusieurs heures par jour.
+J&amp;rsquo;ai déjà expliqué être passé à un bureau debout et à la disposition clavier BÉPO pour réduire les douleurs articulaires, et ce sont des solutions efficaces quoique assez extrême.</description>
     </item>
     
     <item>
@@ -1634,70 +334,61 @@ alors qu&amp;rsquo;ils devraient être utilisés le moins possible. De plus, j&a
       <pubDate>Mon, 06 Mar 2017 00:00:00 +0000</pubDate>
       
       <guid>https://www.pierremorsa.com/post/2017-03-06-automatiser-taches-mac/</guid>
-      <description>
-
-&lt;p&gt;Je l&amp;rsquo;avoue. Je suis un fanboy de l&amp;rsquo;automatisation des tâches sur Mac. Pour moi :&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;Automatisation &amp;gt; Délégation &amp;gt; Répétition manuelle&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Autrement dit, par ordre d&amp;rsquo;efficacité l&amp;rsquo;idéal est d&amp;rsquo;abord d&amp;rsquo;automatiser une tâche. Si ce n&amp;rsquo;est pas possible, essayer de la déléguer, mais ce n&amp;rsquo;est pas très sympa pour la personne qui hérite de cette tâche répétitive. En dernier recours on peut faire la tâche répétitive soi-même, encore et encore et encore et encore, comme un Shadok condamné à pomper pour l&amp;rsquo;éternité.&lt;/p&gt;
-
-&lt;p&gt;Les avantages de l&amp;rsquo;automatisation vont bien plus loin que simplement un gain de temps :&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Automatiser une tâche me force à définir un processus « standard » le plus simple, le plus structuré et surtout &lt;strong&gt;le plus fiable possible&lt;/strong&gt;.&lt;/li&gt;
-&lt;li&gt;Cela me force à mieux comprendre chaque étape de mon travail quotidien. Je peux mieux identifier les étapes qui créent réellement de la valeur et les étapes qui doivent être supprimées ou simplifiées.&lt;/li&gt;
-&lt;li&gt;Au lieu de répéter bêtement la même chose tous les jours, l&amp;rsquo;automatisation me permet de développer de nouvelles compétences très utiles.&lt;/li&gt;
-&lt;li&gt;Je réduis fortement le risque d&amp;rsquo;erreur humaine, ce qui est particulièrement important avec quelqu&amp;rsquo;un comme moi !&lt;/li&gt;
-&lt;li&gt;L&amp;rsquo;automatisation augmente le savoir-faire interne de l&amp;rsquo;entreprise au lieu l&amp;rsquo;externaliser bêtement.&lt;/li&gt;
-&lt;li&gt;Passé le petit investissement en temps initial, cela coûte beaucoup, beaucoup moins cher que la délégation.&lt;/li&gt;
-&lt;li&gt;Les tâches automatisées n&amp;rsquo;ont pas besoin d&amp;rsquo;être dans « l&amp;rsquo;inbox », ou y restent beaucoup moins de temps, ce qui libère l&amp;rsquo;esprit et permet de se concentrer sur les tâches réellement importantes.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Évidemment seules les tâches répondant à certains critères valent la peine d&amp;rsquo;être automatisées : ce sont celles qui sont répétitives, fréquentes, suivent un processus identique à chaque fois et sont « numérisables », autrement dit réalisables sur ordinateur. Il faut aussi bien soupeser le gain de temps potentiel face au temps de développement et surtout &lt;strong&gt;le temps de maintenance au fil du temps&lt;/strong&gt;, certains mécanismes d&amp;rsquo;automatisation ayant tendance à se « casser » au bout d&amp;rsquo;un temps, surtout ceux devant simuler des clics sur des éléments d&amp;rsquo;interface comme des boutons ou des images.&lt;/p&gt;
-
-&lt;h2 id=&#34;ma-boîte-à-outils-pour-automatiser-les-tâches-sur-mac&#34;&gt;Ma boîte à outils pour automatiser les tâches sur Mac&lt;/h2&gt;
-
-&lt;p&gt;La simplicité et la fiabilité de l&amp;rsquo;automatisation sont des critères essentiels. C&amp;rsquo;est pourquoi je n&amp;rsquo;utilise que des outils dont j&amp;rsquo;ai pu éprouver la fiabilité. Le cœur de mon système repose sur quatre applications et un service Web :&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.keyboardmaestro.com/main/&#34;&gt;&lt;strong&gt;Keyboard Maestro&lt;/strong&gt;&lt;/a&gt; : crée des Macros très évoluées sur Mac. Une Macro est une séquence d&amp;rsquo;actions automatisées. Par exemple, Keyboard Maestro peut redimensionner une image, la convertir et la sauvegarder dans un format précis. C&amp;rsquo;est aussi le programme que j&amp;rsquo;utilise pour tous les raccourcis texte (par exemple si je tape l&amp;rsquo;abréviation « eml », mon adresse email s&amp;rsquo;insère automatiquement)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.noodlesoft.com&#34;&gt;&lt;strong&gt;Hazel&lt;/strong&gt;&lt;/a&gt; : automatise une série d&amp;rsquo;actions sur les fichiers d&amp;rsquo;un répertoire de votre ordinateur. Vous pouvez trier automatiquement des fichiers par type dans des sous-répertoires, les renommer, etc.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://latenightsw.com&#34;&gt;&lt;strong&gt;Script Debugger pour AppleScript&lt;/strong&gt;&lt;/a&gt; : le langage de Script d&amp;rsquo;Apple permet de piloter certaines applications. Ironiquement la suite Office de Microsoft jouit d&amp;rsquo;un meilleur support d&amp;rsquo;Applescript que les applications d&amp;rsquo;Apple ! Vous pouvez utiliser l&amp;rsquo;application Script Editor fournie avec chaque Mac pour développer en AppleScript, mais Script Debugger offre un bien meilleur confort de développement pour les scripts complexes.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://fakeapp.com&#34;&gt;&lt;strong&gt;Fake&lt;/strong&gt;&lt;/a&gt; : un navigateur web qui dispose également de commandes pour automatiser certaines actions, comme remplir un formulaire ou cliquer sur des boutons html. C&amp;rsquo;est une perle que pratiquement personne ne connaît.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://zapier.com&#34;&gt;&lt;strong&gt;Zapier&lt;/strong&gt;&lt;/a&gt; : un service web qui connecte des services Web entre eux et exécute des actions automatiquement. Zapier permet par exemple de poster automatiquement un message sur Slack lorsque vous recevez un email sur gmail, ou de stocker toutes les pièces jointes reçues dans son email dans un répertoire sur Dropbox.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Dans la capture d&amp;rsquo;écran ci-dessous je montre par exemple la palette Keyboard Maestro qui reprend les commandes les plus fréquentes pour Hugo, l&amp;rsquo;outil que j&amp;rsquo;utilise pour générer mon blog.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://www.pierremorsa.com/pictures/2017/03/keyboard-maestro-palette.jpg&#34; alt=&#34;Une palette Keyboard Maestro&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Ces applications (à l&amp;rsquo;exception de Zapier) ne sont disponibles que sur Mac, mais il existe probablement l&amp;rsquo;équivalent sur Windows. J&amp;rsquo;utilise Keyboard Maestro en priorité, car c&amp;rsquo;est la solution la plus simple et la plus rapide, et AppleScript en dernier recours, car son utilisation requiert souvent plus de temps de débogage.&lt;/p&gt;
-
-&lt;p&gt;En termes de difficulté je dirais que Zapier et Keyboard Maestro peuvent être utilisés par des utilisateurs normaux, Fake et Hazel par des utilisateurs avertis (Hazel étant potentiellement dangereux en cas de mauvaise manipulation) et AppleScript par les personnes connaissant au minimum les bases de la programmation et prêtes à supporter la syntaxe bizarre de ce langage.&lt;/p&gt;
-
-&lt;h2 id=&#34;exemples-de-tâches-automatisées&#34;&gt;Exemples de tâches automatisées&lt;/h2&gt;
-
-&lt;p&gt;Automatiser, c&amp;rsquo;est bien, mais concrètement, que peut-on faire ? Un premier exemple est la revue des factures impayées. Chaque semaine j&amp;rsquo;ai un système automatique qui passe en revue les factures en retard de paiement dans Filemaker Pro, et en poste la liste sur Slack pour avertir les responsables. Dans une petite structure telle que la nôtre le fait de revoir les factures manuellement ferait perdre du temps précieux à quelqu&amp;rsquo;un. De plus il y a peu de chances que cette revue se fasse à intervalle aussi réguliers, et à chaque fois cela implique un risque d&amp;rsquo;erreurs. L&amp;rsquo;automatisation résoud tous ces problèmes.&lt;/p&gt;
-
-&lt;p&gt;En termes d&amp;rsquo;automatisation, la seule limite est l&amp;rsquo;imagination (et le choix des bons outils) ! Voici d&amp;rsquo;autres exemples de ce que j&amp;rsquo;ai automatisé :&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Hazel + scanner ScanSnap S1300i : Classer automatiquement le courrier reçu et lui affecter une catégorie pour le retrouver plus facilement plus tard.&lt;/li&gt;
-&lt;li&gt;Keyboard Maestro + AppleScript + PowerPoint : Un système élaboré pour simplifier et accélérer la création des présentations (si vous regardez quelqu&amp;rsquo;un créer une présentation PowerPoint, vous vous rendrez compte à quel point on passe finalement peu de temps à saisir le contenu et énormément de temps à le mettre en forme).&lt;/li&gt;
-&lt;li&gt;Keyboard Maestro + Mail : gestion de modèles types d&amp;rsquo;emails.&lt;/li&gt;
-&lt;li&gt;Keyboard Maestro : raccourcis pour insérer les mots ou les phrases les plus souvent utilisées (par exemple taper eml insère mon adresse email, iossrt insère le numéro de SIRET de mon entreprise). À noter que j&amp;rsquo;aurais pu utiliser un outil dédié, comme TextExpander out TypeIt4Me, mais je reste fidèle à ma philosophie d&amp;rsquo;utiliser le moins d&amp;rsquo;outils possibles.&lt;/li&gt;
-&lt;li&gt;Zapier + Site Web + Slack : publication d&amp;rsquo;un nouveau message sur Slack lorsqu&amp;rsquo;une nouvelle demande d&amp;rsquo;information est envoyée via le site web.&lt;/li&gt;
-&lt;li&gt;AppleScript + Omnifocus : organisation automatique des projets en fonction de leur statut, signalisation des projets bloqués (qui n&amp;rsquo;ont plus aucune tâche active), calcul intelligent des dates de revue des projets, etc.&lt;/li&gt;
-&lt;li&gt;Organisation automatique de mes fenêtres en fonction de l&amp;rsquo;application utilisée pour optimiser l&amp;rsquo;espace de travail à l&amp;rsquo;écran.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Ce n&amp;rsquo;est qu&amp;rsquo;un aperçu, très loin d&amp;rsquo;être exhaustif, des tâches que j&amp;rsquo;ai automatisées au fil des années. J&amp;rsquo;estime que le cumul du temps gagné par chaque automatisation représente &lt;strong&gt;1 à 2 heures par jour&lt;/strong&gt;. Soit l&amp;rsquo;équivalent d&amp;rsquo;une journée de travail par semaine ! Et c&amp;rsquo;est sans compter le gain de fiabilité dans l&amp;rsquo;exécution.&lt;/p&gt;
-
-&lt;p&gt;Si vous avez des exemples d&amp;rsquo;automatisation que vous voulez partager n&amp;rsquo;hésitez pas à me les envoyer !&lt;/p&gt;
-
-&lt;p&gt;Note : je rappelle que je ne suis pas sponsorisé, et que tous les outils cités ici ont été achetés avec mes propres Deniers, parce que je pense que ce sont les meilleurs.&lt;/p&gt;
-</description>
+      <description>Je l&amp;rsquo;avoue. Je suis un fanboy de l&amp;rsquo;automatisation des tâches sur Mac. Pour moi :
+Automatisation &amp;gt; Délégation &amp;gt; Répétition manuelle
+Autrement dit, par ordre d&amp;rsquo;efficacité l&amp;rsquo;idéal est d&amp;rsquo;abord d&amp;rsquo;automatiser une tâche. Si ce n&amp;rsquo;est pas possible, essayer de la déléguer, mais ce n&amp;rsquo;est pas très sympa pour la personne qui hérite de cette tâche répétitive. En dernier recours on peut faire la tâche répétitive soi-même, encore et encore et encore et encore, comme un Shadok condamné à pomper pour l&amp;rsquo;éternité.</description>
+    </item>
+    
+    <item>
+      <title>Pourquoi le chiffrage de bout en bout est indispensable</title>
+      <link>https://www.pierremorsa.com/post/2016-12-12-chiffrage-de-bout-en-bout-indispensable/</link>
+      <pubDate>Mon, 12 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pierremorsa.com/post/2016-12-12-chiffrage-de-bout-en-bout-indispensable/</guid>
+      <description>Avertissement : la sécurité informatique est un sujet très complexe et difficile à mettre en œuvre. Je ne suis moi-même pas un expert en sécurité, mais je base cet article sur ce que j&amp;rsquo;ai pu lire sur différents sites. Mais à vous de vous documenter plus si vous souhaitez vérifier la sécurité des applications listées ci-dessous.
+Saviez-vous que chaque email que vous envoyez peut être très facilement lu par des personnes mal intentionnées ?</description>
+    </item>
+    
+    <item>
+      <title>Quelques trucs en plus pour votre site Hugo</title>
+      <link>https://www.pierremorsa.com/post/2016-08-16-quelques-trucs-en-plus-pour-votre-site-hugo/</link>
+      <pubDate>Tue, 16 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pierremorsa.com/post/2016-08-16-quelques-trucs-en-plus-pour-votre-site-hugo/</guid>
+      <description>Si vous avez suivi mon guide pour migrer un blog Wordpress ou un site Wordpress vers Hugo, cet article vous donne quelques trucs utiles en plus.
+Faciliter l&amp;rsquo;indexation du site avec sitemap.xml Hugo génère automatiquement une &amp;ldquo;sitemap&amp;rdquo; de votre site appelée sitemap.xml. Renseignez celle-ci dans les Google Webmaster tools pour garantir la bonne indexation de votre site par le moteur de recherche.
+Intégrer Google Analytics Mon blog n&amp;rsquo;utilise aucun &amp;ldquo;tracker&amp;rdquo;, mais Hugo fournit l&amp;rsquo;intégration avec Google Analytics en standard.</description>
+    </item>
+    
+    <item>
+      <title>Comment migrer un blog Wordpress vers Hugo</title>
+      <link>https://www.pierremorsa.com/post/2016-08-08-comment-migrer-un-blog-wordpress-sous-hugo/</link>
+      <pubDate>Mon, 08 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pierremorsa.com/post/2016-08-08-comment-migrer-un-blog-wordpress-sous-hugo/</guid>
+      <description>Courant du mois de juin 2016 j&amp;rsquo;ai migré mon blog de Wordpress vers Hugo. Je détaille ici la méthode que j&amp;rsquo;ai suivi pour les personnes qui souhaitent faire la même chose. Ce guide est loin d&amp;rsquo;être complet ; si vous vous retrouvez bloqué à une étape, consultez la documentation officielle. Si vous voulez suggérer des améliorations ou des corrections pour le guide contactez-moi directement à monprénom.monnom@pierremorsa.com
+Avant de commencer, Sachez que si gérer un blog sur Hugo a des avantages et est à mon goût bien plus agréable que Wordpress, cela demande plus de connaissances techniques.</description>
+    </item>
+    
+    <item>
+      <title>Cookie Cloudflare éliminé !</title>
+      <link>https://www.pierremorsa.com/post/2016-07-12-cookie-cloudflare-elimine/</link>
+      <pubDate>Tue, 12 Jul 2016 17:56:58 +0200</pubDate>
+      
+      <guid>https://www.pierremorsa.com/post/2016-07-12-cookie-cloudflare-elimine/</guid>
+      <description>J&amp;rsquo;avais expliqué il y a quelques semaines qu&amp;rsquo;un des objectifs secondaires de la migration de Wordpress vers Hugo était de respecter la vie privée des visiteurs de mon site. Il restait un cookie &amp;ldquo;pisteur&amp;rdquo; à éliminer : celui de Cloudflare. C&amp;rsquo;est désormais chose faite !
+Il m&amp;rsquo;a fallu un bout de temps avant de comprendre le coût caché du service gratuit de Cloudflare, mais il est finalement évident. Comme le trafic des sites utilisant leur service passe par leurs serveurs, ils sont capables de suivre les internautes à la trace dans leurs visites.</description>
+    </item>
+    
+    <item>
+      <title>Blog migré sur Hugo !</title>
+      <link>https://www.pierremorsa.com/blog/blog-migre-sur-hugo/</link>
+      <pubDate>Sun, 12 Jun 2016 20:17:31 +0200</pubDate>
+      
+      <guid>https://www.pierremorsa.com/blog/blog-migre-sur-hugo/</guid>
+      <description>Mise à jour du 9 août 2016 : j&amp;rsquo;ai écrit un tutoriel pour expliquer comment migrer de Wordpress vers Hugo.
+Et voilà ! Il m’aura fallu un peu plus de deux heures pour abandonner Wordpress pour mon blog personnel et tout migrer vers Hugo. L&amp;rsquo;objectif principal est simple : m’affranchir des problèmes et de la lourdeur de Wordpress.
+Wordpress a la philosophie “cacher la complexité pour rendre le blogging facile pour tous”.</description>
     </item>
     
   </channel>
