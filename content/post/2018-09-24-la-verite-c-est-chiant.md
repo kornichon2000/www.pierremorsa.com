@@ -3,7 +3,7 @@ title      = "La réalité, c'est chiant."
 author     = "Pierre Morsa"
 date        = "2018-09-24"
 publishdate = "2018-09-24T05:00:00+01:00" 
-categories = [ "GTD Getting Things Done" ]
+categories = [ "Opinions", "GTD Getting Things Done" ]
 draft      = false
 +++
 Il ne se passe pas une semaine sans que l’on ne découvre[^1] dans la presse un nouveau régime qui nous promet longue vie et prospérité. Ces régimes ont toujours les mêmes caractéristiques. Ils font des promesses incroyables. Ils se basent sur des explications scientifiques assez ténues et souvent contradictoires ou prises hors contexte. Ils excluent certains groupes d’aliments qui sont vus comme les philistins de la bouffe. Et ils sont défendus par une communauté à la ferveur quasi religieuse.

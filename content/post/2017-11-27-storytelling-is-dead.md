@@ -2,7 +2,7 @@
 title      = "Le storytelling est... mort ?"
 author     = "Pierre Morsa"
 date       = "2017-11-27"
-categories = [ "Présenter en public", "Storytelling" ]
+categories = [ "Présenter en public", "Storytelling", "Opinions" ]
 draft      = false
 +++
 

@@ -2,7 +2,7 @@
 title      = "Quelques trucs en plus pour votre site Hugo"
 author     = "Pierre Morsa"
 date       = "2016-08-16"
-categories = [ "Technomagie" ]
+categories = [ "Technomagie", "Hugo" ]
 draft      = false
 +++
 

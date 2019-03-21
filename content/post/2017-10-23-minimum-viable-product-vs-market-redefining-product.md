@@ -2,7 +2,7 @@
 title      = "Minimum Viable Product vs. Market Redefining Product"
 author     = "Pierre Morsa"
 date       = "2017-10-23"
-categories = [ "Startup"]
+categories = [ "Startup", "Opinions" ]
 draft      = false
 +++
 

@@ -2,7 +2,7 @@
 title      = "Comment j'ai vaincu mon blocage du blogging"
 author     = "Pierre Morsa"
 date       = "2017-01-09"
-categories = [ "GTD Getting Things Done" ]
+categories = [ "GTD Getting Things Done", "Hugo" ]
 draft      = false
 +++
 

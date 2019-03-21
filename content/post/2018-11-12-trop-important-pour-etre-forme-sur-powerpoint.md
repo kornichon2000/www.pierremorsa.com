@@ -2,7 +2,7 @@
 date        = "2018-11-12"
 title       = "Trop important pour être formé sur PowerPoint"
 author      = "Pierre Morsa"
-categories  = [ "Lifehacks" ]
+categories  = [ "Lifehacks", "Présenter en public" ]
 draft       = false
 +++
 Combien de consultants et de cadres passent littéralement des années de leur vie professionnelle sur PowerPoint ? Pourtant, combien d’entre eux ont suivi une formation pour utiliser PowerPoint efficacement ? Pratiquement aucun. Un consultant a besoin de formation en stratégie, en management, en communication. Mais PowerPoint ? Vous voulez rire ? Pourquoi pas des cours d’informatique ou de dactylo tant qu’on y est ?

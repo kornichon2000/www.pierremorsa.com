@@ -2,7 +2,7 @@
 title      = "Startups : le super pouvoir que vous ne voulez pas avoir"
 author     = "Pierre Morsa"
 date       = "2017-11-20"
-categories = [ "Startup" ]
+categories = [ "Startup", "Opinions" ]
 draft      = false
 +++
 

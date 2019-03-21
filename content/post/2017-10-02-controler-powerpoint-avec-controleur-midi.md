@@ -2,7 +2,7 @@
 title      = "Contrôler PowerPoint avec un contrôleur MIDI"
 author     = "Pierre Morsa"
 date       = "2017-10-02"
-categories = [ "GTD Getting Things Done", "Technomagie" ]
+categories = [ "GTD Getting Things Done", "Technomagie", "Mac" ]
 draft      = false
 +++
 

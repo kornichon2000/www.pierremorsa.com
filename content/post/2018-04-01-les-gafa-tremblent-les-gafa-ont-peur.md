@@ -3,7 +3,7 @@ title      = "Les GAFA tremblent, les GAFA ont peur"
 author     = "Pierre Morsa"
 date       = "2018-04-01"
 publishdate = "2018-04-01T05:00:00+01:00" 
-categories = [ "Nouvelles" ]
+categories = [ "Internet", "Opinions" ]
 draft      = false
 +++
 Les GAFA, un moment tout puissants, tremblent sur leurs bases. Eux qui rêvaient de faire la loi sur terre se sont cassé les dents contre des alliances et des stratégies imparables.

@@ -3,7 +3,7 @@ title      = "Ma première journée de travail en France"
 author     = "Pierre Morsa"
 date        = "2018-07-09"
 publishdate = "2018-07-09T05:00:00+01:00" 
-categories = [ "Présenter en public", "TEDx" ]
+categories = [ "Nouvelles" ]
 draft      = false
 +++
 Tiens, la France et la Belgique vont taper dans un ballon ensemble mardi. Alors pour épicer le tout, je vais raconter ma première journée de travail en France en tant que Belge.

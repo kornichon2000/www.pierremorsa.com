@@ -2,7 +2,10 @@
 			<section id="sidebar">
 				<section class="blurb">
 				    <p>{{ with .Site.Params.intro.about }}{{ . | markdownify }}{{ end }}</p>
-				        <a href="/about/" class="button">{{ with .Site.Params.localized.button.about }}{{ . | markdownify }}{{ end }}</a>				        
+				        <a href="/about/" class="button">{{ with .Site.Params.localized.button.about }}{{ . | markdownify }}{{ end }}</a>
+						<br /><br />
+				    <p>{{ with .Site.Params.intro.contact }}{{ . | markdownify }}{{ end }}</p>
+				        <a href="{{ .Site.Params.contactlink }}" class="button">{{ with .Site.Params.localized.button.contact }}{{ . | markdownify }}{{ end }}</a>				        
 				</section>{{ "<!-- blurb -->" | safeHTML }}
 				<div class="hide-lg">
 					<section id="links" class="justify-left">

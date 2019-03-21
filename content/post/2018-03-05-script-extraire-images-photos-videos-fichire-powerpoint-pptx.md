@@ -3,7 +3,7 @@ title       = "Un script pour extraire les images, photos et vidéos d'un fichie
 author      = "Pierre Morsa"
 date        = "2018-03-05"
 publishdate = "2018-03-05T05:00:00+01:00" 
-categories  = [ "Lifehacks", "Technomagie" ]
+categories  = [ "Lifehacks", "Technomagie", "Mac" ]
 draft       = false
 +++
 

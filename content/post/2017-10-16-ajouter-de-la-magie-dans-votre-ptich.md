@@ -2,7 +2,7 @@
 title      = "Comment ajouter de la magie dans votre pitch"
 author     = "Pierre Morsa"
 date       = "2017-10-16"
-categories = [ "Présenter en public", "Startup"]
+categories = [ "Présenter en public", "Storytelling", "Startup" ]
 draft      = false
 +++
 

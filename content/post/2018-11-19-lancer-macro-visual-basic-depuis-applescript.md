@@ -2,7 +2,7 @@
 date        = "2018-11-19"
 title       = "Comment lancer une macro Visual Basic depuis AppleScript"
 author      = "Pierre Morsa"
-categories  = [ "Technomagie" ]
+categories  = [ "Technomagie", "Mac" ]
 draft       = false
 +++
 

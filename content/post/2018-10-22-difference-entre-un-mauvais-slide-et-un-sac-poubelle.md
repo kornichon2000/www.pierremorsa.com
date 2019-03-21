@@ -3,7 +3,7 @@ title      = "Quelle est la différence entre un mauvais slide et un sac poubell
 author     = "Pierre Morsa"
 date        = "2018-10-22"
 publishdate = "2018-10-22T05:00:00+01:00" 
-categories = [ "Présenter en public" ]
+categories = [ "Présenter en public", "Opinions" ]
 draft      = false
 +++
 Quelle est la différence entre un mauvais slide et un sac poubelle ? Réponse : y en a pas. On les remplit au maximum, et quand ils sont pleins on écrase tout pour les remplir encore plus.

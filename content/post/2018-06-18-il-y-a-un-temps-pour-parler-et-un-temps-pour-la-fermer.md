@@ -3,7 +3,7 @@ title      = "Il y a un temps pour parler et un temps pour la fermer."
 author     = "Pierre Morsa"
 date       = "2018-06-18"
 publishdate = "2018-06-18T05:00:00+01:00" 
-categories = [ "GTD Getting Things Done" ]
+categories = [ "GTD Getting Things Done", "Opinions" ]
 draft      = false
 +++
 Une étude intéressante a été réalisée par l'armée américaine. Et sans LSD ni ouverture de portail dimensionnel ni aliens cachés dans la zone 51. [Cette étude porte sur des créatures encore plus étranges : les cyber teams](https://arstechnica.com/information-technology/2018/04/army-researchers-find-the-best-cyber-teams-are-antisocial-cyber-teams/), ces équipes spécialisées dans l'attaque et la défense des réseaux numériques. Et leur conclusion est sans appel : les équipes les plus performantes sont celles qui la ferment.

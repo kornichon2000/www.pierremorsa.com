@@ -2,7 +2,7 @@
 title      = "Trier automatiquement ses projets par statut"
 author     = "Pierre Morsa"
 date       = "2017-09-25"
-categories = [ "GTD Getting Things Done", "Technomagie" ]
+categories = [ "GTD Getting Things Done", "Technomagie", "Mac" ]
 draft      = false
 +++
 

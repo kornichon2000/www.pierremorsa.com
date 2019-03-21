@@ -2,7 +2,7 @@
 title      = "Comment migrer un blog Wordpress vers Hugo"
 author     = "Pierre Morsa"
 date       = "2016-08-08"
-categories = [ "Technomagie" ]
+categories = [ "Technomagie", "Hugo" ]
 draft      = false
 +++
 

@@ -3,7 +3,7 @@ title       = "Plancher bas, plafond haut"
 author      = "Pierre Morsa"
 date        = "2018-01-22"
 publishdate = "2018-01-22T05:00:00+01:00" 
-categories  = [ "Présenter en public" ]
+categories  = [ "Présenter en public", "Opinions" ]
 draft       = false
 +++
 Un concept que j'ai découvert lors de mes pérégrinations est la notion de « plancher bas, plafond haut ». C'est une façon de concevoir les activités pour qu'elles s'adressent à un maximum de personnes.
