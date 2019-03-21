@@ -2,7 +2,7 @@
 date        = "2018-12-17"
 title       = "Des macros Keyboard Maestro pour Hugo"
 author      = "Pierre Morsa"
-categories  = [ "Technomagie" ]
+categories  = [ "Technomagie", "Hugo", "Mac" ]
 draft       = false
 +++
 

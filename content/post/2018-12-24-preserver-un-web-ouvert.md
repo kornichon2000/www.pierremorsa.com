@@ -2,7 +2,7 @@
 date        = "2018-12-24"
 title       = "Préserver un web ouvert"
 author      = "Pierre Morsa"
-categories  = [ "Nouvelles", "Technomagie" ]
+categories  = [ "Nouvelles", "Technomagie", "Internet" ]
 draft       = false
 +++
 

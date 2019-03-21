@@ -1,6 +1,6 @@
 +++
 author = "Pierre Morsa"
-categories = [ "Technomagie" ]
+categories = [ "Technomagie", "Hugo" ]
 date = "2016-07-12T17:56:58+02:00"
 description = ""
 featured = ""

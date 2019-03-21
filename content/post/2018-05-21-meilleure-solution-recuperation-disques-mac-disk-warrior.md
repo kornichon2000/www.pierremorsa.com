@@ -3,7 +3,7 @@ title      = "La meilleure solution de récupération de disques sur Mac : Disk
 author     = "Pierre Morsa"
 date       = "2018-05-21"
 publishdate = "2018-05-21T05:00:00+01:00" 
-categories = [ "Mac" ]
+categories = [ "Technomagie", "Mac" ]
 draft      = false
 +++
 Lorsque le gouvernement intersidéral ne sait plus faire face à ses problèmes de crash de disque dur ou de SSD, il ne fait pas appel au Capitaine Flam qui est un peu naze en informatique. Il fait appel à Disk Warrior. Ce super héros, méconnu du grand public, qui œuvre sur Mac depuis la nuit des temps.

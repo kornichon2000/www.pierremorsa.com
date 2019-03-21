@@ -2,7 +2,7 @@
 date        = "2019-03-11"
 title       = "Adapter le CSS d'un site web pour le mode sombre de macOS Mojave"
 author      = "Pierre Morsa"
-categories  = [ "Technomagie" ]
+categories  = [ "Technomagie", "Mac" ]
 draft       = false
 +++
 Mojave a introduit la fonctionnalité la plus utile de tous les temps : le mode sombre, qui utilise une magnifique couleur gris sombre pour les éléments de l’interface plutôt qu’une couleur claire. Mojave 10.14.4 — toujours en Beta et donc pas encore sorti à l’heure où j’écris ces lignes — supportera automatiquement le mode sombre pour l’affichage des sites web qui ont été adaptés. Mojave 10.14.3 et les versions antérieures ne le supportent pas encore, mais vous pouvez tester le passage automatique au mode sombre en téléchargeant la [Safari Technology Preview](https://developer.apple.com/safari/download/).
@@ -12,7 +12,7 @@ Mojave a introduit la fonctionnalité la plus utile de tous les temps : le mode
 ```
 @media (prefers-color-scheme: dark) {
   /* Overrides for Dark Mode. */
-  body {
+  body, input, select, textarea {
     color: white;
     background: #222;
   }

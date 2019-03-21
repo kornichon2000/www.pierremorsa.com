@@ -3,7 +3,7 @@ title       = "Obsolescence programmée ou naturelle ?"
 author      = "Pierre Morsa"
 date        = "2018-01-15"
 publishdate = "2018-01-15T05:00:00+01:00" 
-categories  = [ "Nouvelles" ]
+categories  = [ "Opinions" ]
 draft       = false
 +++
 Si vous avez un appareil qui résiste au temps et qui conserve son utilité au fil des années, c'est génial. C'est qu'il a été bien conçu... ou qu'il n'y a aucune innovation dans son domaine. Exemple : mes parents ont un aspirateur Nilfisk qui a plus de 40 ans. Je crois qu'il a été fabriqué alors que je n'étais pas encore né. Il fonctionne encore, et il fonctionnera encore après moi. Il est construit comme un tank, en acier inoxydable, et le tuyau est fabriqué dans une sorte de tissu hyper résistant. Mais sa puissance est anémique par rapport aux aspirateurs récents.

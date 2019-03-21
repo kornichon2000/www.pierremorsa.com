@@ -4,7 +4,7 @@ title      = "Blog migré sur Hugo !"
 author     = "Pierre Morsa"
 layout     = "post"
 url        = "/blog/blog-migre-sur-hugo/"
-categories = [ "Technomagie" ]
+categories = [ "Technomagie", "Hugo" ]
 draft      = false
 +++
 

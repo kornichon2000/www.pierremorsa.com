@@ -2,7 +2,7 @@
 date        = "2019-01-07"
 title       = "Pourquoi Marzipan porte les apps iOS sur Mac, mais pas les apps Mac sur iOS ?"
 author      = "Pierre Morsa"
-categories  = [ "Technomagie" ]
+categories  = [ "Technomagie", "Mac" ]
 draft       = false
 +++
 

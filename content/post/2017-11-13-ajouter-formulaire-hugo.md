@@ -2,7 +2,7 @@
 title      = "Ajouter un formulaire de contact dans Hugo"
 author     = "Pierre Morsa"
 date       = "2017-11-13"
-categories = [ "Technomagie" ]
+categories = [ "Technomagie", "Hugo" ]
 draft      = false
 +++
 

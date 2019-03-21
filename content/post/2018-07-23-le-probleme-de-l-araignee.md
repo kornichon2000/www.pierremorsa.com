@@ -3,7 +3,7 @@ title      = "Le problème de l'araignée"
 author     = "Pierre Morsa"
 date        = "2018-07-23"
 publishdate = "2018-07-23T05:00:00+01:00" 
-categories = [ "Nouvelles" ]
+categories = [ "Nouvelles", "Opinions" ]
 draft      = false
 +++
 Certaines personnes ont une peur bleue des araignées. Dès qu’elles voient une araignée, il faut immédiatement la tuer d’une manière ou d’une autre. Plus rien d’autre n’existe. L’araignée est *le* problème qu’il faut éradiquer.

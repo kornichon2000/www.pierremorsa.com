@@ -3,7 +3,7 @@ title      = "Les sept lois de Murphy des événements TEDx"
 author     = "Pierre Morsa"
 date        = "2018-11-05"
 publishdate = "2018-11-05T05:00:00+01:00" 
-categories = [ "Présenter en public" ]
+categories = [ "Présenter en public", "TEDx" ]
 draft      = false
 +++
 Vous avez déjà peut-être assisté à un événement TEDx. Vous pouvez avoir l’impression que tout se passe toujours comme prévu. Mais ce n’est pas vraiment le cas. Ce n’est même jamais le cas. Voici les sept lois de Murphy d’une soirée TEDx, liste forcément incomplète et biaisée par mon point de vue de coach.

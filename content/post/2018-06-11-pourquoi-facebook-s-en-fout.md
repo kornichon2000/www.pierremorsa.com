@@ -3,7 +3,7 @@ title      = "Pourquoi Facebook s'en fout"
 author     = "Pierre Morsa"
 date       = "2018-06-11"
 publishdate = "2018-06-11T05:00:00+01:00" 
-categories = [ "Nouvelles" ]
+categories = [ "Internet", "Opinions" ]
 draft      = false
 +++
 Je n’ai pas de compte Facebook. Moins parce que je me soucie de la confidentialité de ce que je pourrais y publier — il suffit de voir les inepties que je poste sur Twitter — que parce que je ne veux pas perdre de temps dessus.

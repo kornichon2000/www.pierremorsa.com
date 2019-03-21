@@ -20,28 +20,6 @@ menu, nav, section {
 
 body {
     line-height: 1;
-    -webkit-text-size-adjust: none;
-    -ms-overflow-style: scrollbar;
-    background: #f4f4f4;
-}
-
-body.is-loading * , body.is-loading * :before, body.is-loading * :after {
-    -moz-animation: none !important;
-    -webkit-animation: none !important;
-    -ms-animation: none !important;
-    animation: none !important;
-    -moz-transition: none !important;
-    -webkit-transition: none !important;
-    -ms-transition: none !important;
-    transition: none !important;
-}
-
-body, input, select, textarea {
-    color: #444;
-    font-family: Helvetica, sans-serif;
-    font-size: 12pt;
-    font-weight: 400;
-    line-height: 1.75;
 }
 
 ol, ul {
@@ -66,6 +44,10 @@ table {
     border-spacing: 0;
 }
 
+body {
+    -webkit-text-size-adjust: none;
+}
+
 * , * :before, * :after {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -76,10 +58,37 @@ table {
     width: device-width;
 }
 
+body {
+    -ms-overflow-style: scrollbar;
+}
+
 @media screen and (max-width:980px) {
     html, body {
         min-width: 320px;
     }
+}
+
+body {
+    background: #f4f4f4;
+}
+
+body.is-loading * , body.is-loading * :before, body.is-loading * :after {
+    -moz-animation: none !important;
+    -webkit-animation: none !important;
+    -ms-animation: none !important;
+    animation: none !important;
+    -moz-transition: none !important;
+    -webkit-transition: none !important;
+    -ms-transition: none !important;
+    transition: none !important;
+}
+
+body, input, select, textarea {
+    color: #444;
+    font-family: Helvetica, sans-serif;
+    font-size: 12pt;
+    font-weight: 400;
+    line-height: 1.75;
 }
 
 a {
@@ -969,7 +978,7 @@ body {
 
 @media (prefers-color-scheme: dark) {
     /* Overrides for Dark Mode. */
-    body, input, select, textarea {
+    body {
         color: #ddd;
         background: #222;
     }

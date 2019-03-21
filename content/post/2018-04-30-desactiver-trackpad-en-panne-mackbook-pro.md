@@ -3,7 +3,7 @@ title      = "Désactiver un trackpad en panne sur un MacBook Pro"
 author     = "Pierre Morsa"
 date       = "2018-04-30"
 publishdate = "2018-04-30T05:00:00+01:00" 
-categories = [ "Technomagie" ]
+categories = [ "Technomagie", "Mac" ]
 draft      = false
 +++
 

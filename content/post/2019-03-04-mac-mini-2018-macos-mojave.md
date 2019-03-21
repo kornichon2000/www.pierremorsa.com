@@ -2,7 +2,7 @@
 date        = "2019-03-04"
 title       = "Mac Mini 2018 et macOS Mojave"
 author      = "Pierre Morsa"
-categories  = [ "Technomagie" ]
+categories  = [ "Technomagie", "Mac" ]
 draft       = false
 +++
 

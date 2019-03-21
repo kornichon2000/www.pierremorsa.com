@@ -3,7 +3,7 @@ title       = "Résoudre le problème « Failed to Render » dans Apple Moti
 author      = "Pierre Morsa"
 date        = "2018-03-19"
 publishdate = "2018-03-19T05:00:00+01:00" 
-categories  = [ "Technomagie" ]
+categories  = [ "Technomagie", "Mac" ]
 draft       = false
 +++
 Mise à jour du 2018-03-31 : à priori macOS High Sierra 10.13.4 (c'est le .4 qui est important) règle le problème. Pour vérifier quelle est votre version de macOS, il faut aller dans le menu Pomme → À propos de ce Mac...

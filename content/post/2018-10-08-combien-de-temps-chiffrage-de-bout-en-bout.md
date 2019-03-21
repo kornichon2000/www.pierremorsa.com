@@ -3,7 +3,7 @@ title      = "Combien de temps reste-t-il à vivre au chiffrage de bout en bout�
 author     = "Pierre Morsa"
 date       = "2018-10-08"
 publishdate = "2018-10-08T05:00:00+01:00" 
-categories = [ "Nouvelles" ]
+categories = [ "Technomagie", "Internet" ]
 draft      = false
 +++
 Le chiffrage de bout en bout est la seule forme de chiffrage qui soit réellement sécurisée. C’est pour cela que le chiffrage de bout en bout est interdit dans la plupart des dictatures, par exemple la Chine ou la Corée du Nord.

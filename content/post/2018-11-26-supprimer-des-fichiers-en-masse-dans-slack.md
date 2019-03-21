@@ -2,7 +2,7 @@
 date        = "2018-11-26"
 title       = "Supprimer des fichiers en masse dans Slack"
 author      = "Pierre Morsa"
-categories  = [ "Technomagie" ]
+categories  = [ "Technomagie", "Internet" ]
 draft       = false
 +++
 # Supprimer des fichiers en masse dans Slack

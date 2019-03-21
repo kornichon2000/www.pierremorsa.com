@@ -3,7 +3,7 @@ title      = "Comment j'ai réussi à publier régulièrement sur mon blog."
 author     = "Pierre Morsa"
 date        = "2018-09-03"
 publishdate = "2018-09-03T05:00:00+01:00" 
-categories = [ "Présenter en public", "TEDx" ]
+categories = [ "Nouvelles" ]
 draft      = false
 +++
 

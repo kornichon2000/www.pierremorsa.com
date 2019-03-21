@@ -2,7 +2,7 @@
 title      = "Êtes-vous certain d'avoir le bon logo ?"
 author     = "Pierre Morsa"
 date       = "2017-12-04"
-categories = [ "Startup" ]
+categories = [ "Startup", "Opinions" ]
 draft      = false
 +++
 

@@ -3,7 +3,7 @@ title       = "Héberger gratuitement un site Hugo avec Github et Netlify (2/2)"
 author      = "Pierre Morsa"
 date        = "2017-12-25"
 publishdate = "2017-12-25T05:00:00+01:00" 
-categories  = [ "Technomagie" ]
+categories  = [ "Technomagie", "Hugo" ]
 draft       = false
 +++
 
