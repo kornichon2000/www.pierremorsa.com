@@ -5,7 +5,7 @@ author      = "Pierre Morsa"
 categories  = [ "Nouvelles", "Technomagie" ]
 draft       = false
 +++
-Dans cet article, je voudrais passer un peu de temps pour expliquer pourquoi il est important que les navigateurs web fournissent une empreinte identique à tous les sites, pour tous les visiteurs, pour éviter un suivi non voulu.
+Dans cet article, je voudrais passer un peu de temps pour expliquer pourquoi il est important que les navigateurs web fournissent une « empreinte numérique » identique à tous les sites, pour tous les visiteurs, pour éviter un suivi permanent de vos habitudes sur le web.
 
 ## Do Not Track et RGPD ne fonctionnent pas
 Safari vient d’abandonner Do Not Track. Le truc qui indiquait aux sites de ne pas vous pister sur le web, mais qu’aucun publicitaire n’a jamais respecté. Demander à un publicitaire de respecter Do Not Track, c’était comme demander à un vendeur de drogue de respecter la loi. Ça n’avait aucune chance de réussir. Do Not Track est non seulement inutile, il est même néfaste, car il ajoute des « bits » d’information permettant de tracer votre empreinte numérique (fingerprinting).
