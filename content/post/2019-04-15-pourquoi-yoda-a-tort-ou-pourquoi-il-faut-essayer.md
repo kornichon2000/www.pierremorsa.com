@@ -3,7 +3,7 @@ date        = "2019-04-15"
 title       = "Pourquoi Yoda a tort (ou pourquoi il faut essayer)"
 author      = "Pierre Morsa"
 categories  = [ "Lifehacks" ]
-draft       = true
+draft       = false
 +++
 > « Fais-le ou ne le fais pas, il n’y a pas d’essai ».
 > <citation>— Yoda</citation>
