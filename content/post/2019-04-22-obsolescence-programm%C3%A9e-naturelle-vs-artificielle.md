@@ -3,7 +3,7 @@ date        = "2019-04-22"
 title       = "Obsolescence programmée naturelle vs artificielle"
 author      = "Pierre Morsa"
 categories  = [ "Lifehacks", "Nouvelles" ]
-draft       = true
+draft       = false
 +++
 
 Nous sommes le meilleur exemple de l’obsolescence programmée. La vie l’a inscrite dans nos gènes. Sans elle, nous en serions restés à l’état d’êtres unicellulaires. La nature a eu la sagesse de nous doter d’une espérance de vie limitée. Il y a cependant au moins deux différences entre l’obsolescence programmée naturelle, et l’obsolescence programmée artificielle :
