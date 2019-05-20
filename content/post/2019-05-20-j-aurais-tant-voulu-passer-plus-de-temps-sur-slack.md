@@ -5,7 +5,6 @@ author      = "Pierre Morsa"
 categories  = [ "Lifehacks" ]
 draft       = false
 +++
-
 Je ne sais ce que je me dirai à la fin de ma vie. Mais ce que je sais, c’est que je ne me dirai pas :
 
 * J’aurais dû passer plus de temps sur Slack.
