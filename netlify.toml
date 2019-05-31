@@ -3,13 +3,8 @@
   command = "hugo"
     
 [context.deploy-preview.environment]
-<<<<<<< HEAD
-  HUGO_VERSION = "0.53"
-  command = "hugo"
-=======
   HUGO_VERSION = "0.53.0"
   command = "hugo --buildFuture"
->>>>>>> 166777688c12a2a546524450913aaadaae7bfa5d
 
 # Used to test future versions of the blog    
 [context.future]
