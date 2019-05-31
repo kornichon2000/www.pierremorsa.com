@@ -1,5 +1,5 @@
 [build]
-  HUGO_VERSION = "0.55.0"
+  HUGO_VERSION = "0.53.0"
   command = "hugo"
 
 # Used to test future versions of the blog    
