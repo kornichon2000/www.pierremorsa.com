@@ -3,7 +3,7 @@ date        = "2019-06-03"
 title       = "Mac ARM, Marzipan et Tim le marteau"
 author      = "Pierre Morsa"
 categories  = [ "Mac", "Technomagie" ]
-draft       = false
+draft       = true
 +++
 Bon, c’est quasi certain maintenant que Apple prépare la transition du Mac des processeurs Intel vers ses puces ARM. Personnellement, ça ne m’enthousiasme pas trop.
 
