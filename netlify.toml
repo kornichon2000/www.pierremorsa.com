@@ -1,3 +1,6 @@
+[context.master]
+  command = "hugo"
+  
 [context.production]
   command = "hugo"
     
