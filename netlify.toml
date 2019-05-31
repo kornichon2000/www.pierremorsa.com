@@ -1,12 +1,6 @@
-[context.master]
-  command = "hugo"
-  
-[context.production]
-  command = "hugo"
-    
-[context.deploy-preview]
+[build]
   command = "hugo"
 
 # Used to test future versions of the blog    
 [context.future]
-  command = "hugo --buildFuture"
+  command = "hugo"
