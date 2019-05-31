@@ -1,9 +1,5 @@
-[context.production.environment]
-  HUGO_VERSION = "0.55.6"
-  command = "hugo"
-    
-[context.deploy-preview.environment]
-  HUGO_VERSION = "0.55.6"
+[build]
+  HUGO_VERSION = "0.55.0"
   command = "hugo"
 
 # Used to test future versions of the blog    
