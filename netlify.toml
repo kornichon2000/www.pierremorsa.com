@@ -1,7 +1,7 @@
-[context.production.environment]
+[context.production]
   command = "hugo"
     
-[context.deploy-preview.environment]
+[context.deploy-preview]
   command = "hugo"
 
 # Used to test future versions of the blog    
