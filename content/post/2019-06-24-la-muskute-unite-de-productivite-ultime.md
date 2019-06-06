@@ -1,6 +1,6 @@
 +++
-date        = "2019-06-10"
-title       = "À propos de la méthode de productivité d'Elon Musk"
+date        = "2019-06-24"
+title       = "La Muskute, unité de productivité ultime ?"
 author      = "Pierre Morsa"
 categories  = [ "Lifehacks", "Nouvelles", "Présenter en public", "Technomagie", "TEDx" ]
 draft       = true
