@@ -3,7 +3,7 @@ date        = "2019-06-17"
 title       = "Utilisez une carte de visite pour allumer le courant dans votre chambre d'hôtel !"
 author      = "Pierre Morsa"
 categories  = [ "Lifehacks" ]
-draft       = true
+draft       = false
 +++
 ![Carte de visite pour allumer lumière dans un hôtel](/pictures/2019/06/business-card-in-hotel.JPG)
 
