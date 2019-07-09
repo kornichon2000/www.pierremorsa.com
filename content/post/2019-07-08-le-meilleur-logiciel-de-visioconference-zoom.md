@@ -3,9 +3,9 @@ date        = "2019-07-08"
 title       = "Le meilleur logiciel de visioconférence : Zoom"
 author      = "Pierre Morsa"
 categories  = [ "Lifehacks", "Technomagie" ]
-draft       = true
+draft       = false
 +++
-Nous travaillons à distance, mais il est important de pouvoir se parler régulièrement. C’est pourquoi, chaque vendredi, nous faisons une conférence d’équipe à distance, un utilisant la vidéo. Au début, nous utilisions Skype, mais il y avait toujours un bug pour au moins l’un d’entre nous. Et puis un jour je suis tombé sur Zoom.
+Nous travaillons à distance, mais il est important de pouvoir se parler régulièrement. C’est pourquoi, chaque vendredi, nous faisons une conférence d’équipe à distance, un utilisant la vidéo. Au début, nous utilisions Skype, mais il y avait toujours un bug pour au moins l’un d’entre nous. Et puis un jour je suis tombé sur [Zoom.](https://www.zoom.us)
 
 Zoom est tout ce que Skype aurait dû être : simple et fiable. Nous faisons des conférences jusqu’à plus de dix personnes, et cela fonctionne nickel. Et contrairement à FaceTime, c’est une solution multiplateforme, ce qui fait que je peux l’utiliser avec un plus grand nombre de personnes.
 
