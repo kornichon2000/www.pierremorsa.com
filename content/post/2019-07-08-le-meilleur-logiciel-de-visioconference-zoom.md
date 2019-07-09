@@ -5,7 +5,7 @@ author      = "Pierre Morsa"
 categories  = [ "Lifehacks", "Technomagie" ]
 draft       = false
 +++
-Mise à jour importante du 2019-07-09 15h02 : un problème de sécurité a été trouvé dans le client Mac de Zoom. Zoom refuse pour l’instant de corriger le problème. Je ne peux donc plus recommander cette solution pour l’instant. En attendant, voici un moyen de supprimer le composant problématique et d’empêcher sa réinstallation. Il se trouve dans le répertoire ~/.zoomus
+Mise à jour importante du 2019-07-09 15h02 : un problème de sécurité a été trouvé dans le client Mac de Zoom. Zoom refuse de corriger le problème. Je ne peux donc plus recommander cette solution pour l’instant. En attendant, voici un moyen de supprimer le composant problématique et d’empêcher sa réinstallation. Il se trouve dans le répertoire ~/.zoomus
 
 À partir du terminal, allez dans le répertoire .zoomus — Vous pouvez aussi y accéder via le Finder en affichant les répertoires invisibles.
 
