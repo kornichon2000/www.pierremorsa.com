@@ -1,6 +1,8 @@
 +++
+draft = true
 title = "A few AppleScript libraries | Pierre Morsa"
 date = "2019-07-18"
+
 +++
 Here are a few AppleScript libraries that I developed for my own use, but that some of you may find useful. These libraries are used by my Keyboard Maestro Actions, and should be installed first.
 
