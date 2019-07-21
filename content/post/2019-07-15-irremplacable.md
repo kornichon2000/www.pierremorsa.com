@@ -8,7 +8,7 @@ draft       = false
 
 « Personne n’est irremplaçable »
 
-Cette phrase est complètement fausse. Steve Jobs était la seule personne au monde qui a pu sauver Apple comme il l’a fait. 
+Cette phrase est complètement fausse. Steve Jobs était la seule personne au monde à avoir pu sauver Apple comme il l’a fait. 
 
 Mais il n’y a pas que Steve Jobs. Nous avons tous quelqu’un ou quelque chose pour qui nous sommes irremplaçables. Et lorsque nous accordons notre attention à ce qui en vaut la peine plutôt qu’à ceux qui nous considèrent comme des ressources, nous devenons tous irremplaçables.
 
