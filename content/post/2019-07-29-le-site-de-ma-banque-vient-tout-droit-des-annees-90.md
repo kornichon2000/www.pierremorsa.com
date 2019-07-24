@@ -2,7 +2,7 @@
 date        = "2019-07-29"
 title       = "Le site de ma banque vient tout droit des années 90"
 author      = "Pierre Morsa"
-categories  = [ "Nouvelles" "Technomagie" ]
+categories  = [ "Nouvelles", "Technomagie" ]
 draft       = false
 +++
 Il y a peu, nous avons mis en place un plan d'épargne entreprise pour nos employés. Ce fut pour moi l'occasion de redécouvrir le web d'il y a vingt ans. Laissez-moi vous montrer. En cliquant sur le lien pour aller vers la page de connexion, j'arrive sur... ça.
