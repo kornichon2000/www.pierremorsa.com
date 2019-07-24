@@ -25,6 +25,6 @@ Je retourne l'écran pour regarder au dos s'il n'y a pas un poisson d'avril. Non
 
 Mon verdict sur la qualité de ce site :
 
-![Optimisé pour Internet Explorer 6](/static/pictures/2019/07/optimise-internet-explorer-6.jpg)
+![Optimisé pour Internet Explorer 6](/pictures/2019/07/optimise-internet-explorer-6.jpg)
 
 Note : je vous conseille de faire une recherche sur "Optimisé pour Internet Explorer 6", les sites trouvés en valent la peine.
