@@ -3,10 +3,10 @@ date        = "2019-09-02"
 title       = "Les robots asimoviens sont parmi nous"
 author      = "Pierre Morsa"
 categories  = [ "Technomagie" ]
-draft       = true
+draft       = false
 +++
 
-Vous connaissez les trois lois de la robotique ? Celles-ci ont été énoncées par le célèbre écrivain Isaac Asimov dans son livre « Cercle vicieux ». Telles que décrites sur Wikipedia :
+Vous connaissez les trois lois de la robotique ? Celles-ci ont été énoncées par le célèbre écrivain Isaac Asimov dans son livre « Cercle vicieux ». Les voici telles que décrites sur Wikipedia :
 
 1. un robot ne peut porter atteinte à un être humain, ni, en restant passif, permettre qu’un être humain soit exposé au danger ;
 2. un robot doit obéir aux ordres qui lui sont donnés par un être humain, sauf si de tels ordres entrent en conflit avec la première loi ;
@@ -23,4 +23,4 @@ Ce sont ces questions qu’une personne comme Elon Musk oublie complètement lor
 * Accepter la faillibilité des voitures autonomes dans certains cas, et que le zéro accident ne peut être atteint dans l’environnement actuel, bien trop complexe et imprévisible. Une voiture autonome ne pourra pas toujours s’arrêter à temps pour éviter un enfant courant sur la rue pour rattraper son ballon, simple question de physique,
 * ou limiter les voitures autonomes aux voies sécurisées pour atteindre un niveau quasi zéro accident.
 
-Quoi qu’il en soit, oubliez le million de taxis robots sur les routes en 2020. Je serais même très étonné si les Tesla étaient réellement prêtes pour venir jusqu’à vous de manière autonome comme l’a promis Elon Musk avec la fonction Advanced Summon.
+Ce choix est beaucoup plus difficile qu’il n’y parait. Quoi qu’il en soit, oubliez le million de taxis robots sur les routes en 2020. Je serais même très étonné si les Tesla étaient réellement prêtes pour venir jusqu’à vous de manière autonome comme l’a promis Elon Musk avec la fonction Advanced Summon.
