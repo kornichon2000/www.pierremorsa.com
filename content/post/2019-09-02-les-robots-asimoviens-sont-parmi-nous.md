@@ -2,7 +2,7 @@
 date        = "2019-09-02"
 title       = "Les robots asimoviens sont parmi nous"
 author      = "Pierre Morsa"
-categories  = [ "Technomagie" ]
+categories  = [ "Philosophie de blog" ]
 draft       = false
 +++
 
