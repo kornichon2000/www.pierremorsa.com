@@ -3,7 +3,7 @@ date        = "2019-09-16"
 title       = "La menuiserie d’entreprise"
 author      = "Pierre Morsa"
 categories  = [ "Philosophie de blog" ]
-draft       = true
+draft       = false
 +++
 Lorsqu’on fait de la menuiserie, on s’aperçoit très rapidement de sa capacité ou non à réaliser un projet avec la qualité voulue. Suis-je capable de faire un assemblage tenon - mortaise propre ? Est-ce que mes pièces s’emboîtent parfaitement ? Y a-t-il du désaffleur ? Très vite, n’importe qui peut voir notre vrai niveau de compétence, même si un spécialiste verra bien plus de choses qu’un néophyte. Bien sûr, en menuiserie comme ailleurs, il est possible de « tricher » un peu ; utiliser des lamellos ou des dominos demande un apprentissage spécifique, mais au final cela requiert moins de savoir-faire et est plus rapide que de faire un assemblage classique.
 
