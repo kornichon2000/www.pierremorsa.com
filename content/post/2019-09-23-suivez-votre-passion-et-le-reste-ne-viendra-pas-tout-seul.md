@@ -1,6 +1,6 @@
 +++
 date        = "2019-09-23"
-title       = "Suivez votre passion et le reste (ne) viendra (pas) tout seul"
+title       = "Suivez votre passion et le reste viendra tout seul (ou pas)"
 author      = "Pierre Morsa"
 categories  = [ "Philosophie de blog" ]
 draft       = false
@@ -13,6 +13,6 @@ La vérité, c’est que pour réussir dans ces disciplines, il faut beaucoup de
 
 Pour vivre de sa passion, il faut penser différemment. Il faut que celle-ci s’insère dans un système réaliste en termes de capacités, de temps, d’énergie et d’argent. Et pour que ce système soit réaliste, il ne faut pas qu’il dépende d’être numéro 1. Car statistiquement, être numéro 1 comme Roger Federer, c’est aussi probable que de gagner au Loto. Même si vous pouvez influencer les probabilités par vos actions, ne pas en tenir compte est aussi irresponsable que de compter sur le billet du tirage de la semaine pour avoir de quoi manger. Et puis, ce système réaliste, même les numéros 1 doivent en avoir un. À quoi bon gagner des millions si vous êtes incapable de les gérer ? Personne n’en parle, mais le nombre de stars, d’anciens sportifs qui se retrouvent sans rien une fois leur carrière terminée est assez impressionnant.
 
-Il ne faut pas se laisser berner par les apparences : les personnes qui vivent de leur passion y parviennent parce qu’elles ont travaillé plus que les autres. Parce qu’elles ont les qualités génétiques nécessaires. Parce qu’elles ont accepté les nombreuses contraintes qui en découlent : assister à des galas, représenter les sponsors, s’habiller d’une façon précise en public, etc.
+Il ne faut pas se laisser berner par les apparences : les personnes qui vivent de leur passion y parviennent parce qu’elles ont travaillé plus que les autres. Parce qu’elles ont les qualités génétiques nécessaires. Parce qu’elles ont fait de nombreux sacrifices et accepté les lourdes contraintes qui en découlent : assister à des galas, représenter les sponsors, s’habiller d’une façon précise en public, ne dire que des phrases prémâchées aux médias, etc.
 
 Alors, suivre sa passion ? Oui, si celle-ci peut s’inscrire dans un système réaliste. Sinon, c’est aller au-devant de grosses difficultés.
