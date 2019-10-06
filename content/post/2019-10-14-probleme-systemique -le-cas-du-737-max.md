@@ -5,7 +5,7 @@ author      = "Pierre Morsa"
 categories  = [ "Philosophie de blog" ]
 draft       = false
 +++
-Suite à mon billet de la semaine dernière sur le problème systémique de l’écosystème numérique français, [je suis tombé sur cet article, en anglais,](https://mattstoller.substack.com/p/the-coming-boeing-bailout) qui donne sont point de vue sur comment Boeing en est arrivé au fiasco du 737 Max. Je dis point de vue, car je pense que l’article n’est pas complètement objectif — mon article de la semaine dernière ne l’était pas non plus, c’est vrai que j’ai chargé la barque des grandes écoles et qu’elles ne peuvent pas être toutes mises dans le même panier — il reste cependant très intéressant.
+Suite à mon billet sur le problème systémique de l’écosystème numérique français, [je suis tombé sur cet article, en anglais,](https://mattstoller.substack.com/p/the-coming-boeing-bailout) qui donne sont point de vue sur comment Boeing en est arrivé au fiasco du 737 Max. Je dis point de vue, car je pense que l’article n’est pas complètement objectif — mon article de la semaine dernière ne l’était pas non plus, c’est vrai que j’ai chargé la barque des grandes écoles et qu’elles ne peuvent pas être toutes mises dans le même panier — il reste cependant très intéressant.
 
 L’article cite la fusion entre McDonnell Douglas et Boeing dans les années 90 comme une des raisons majeures du problème. Pourquoi ? Parce que suite à cette fusion :
 
