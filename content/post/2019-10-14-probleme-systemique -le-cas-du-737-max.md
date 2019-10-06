@@ -1,5 +1,5 @@
 +++
-date        = "2019-10-07"
+date        = "2019-10-14"
 title       = "Problème systémique : le cas du 737 Max"
 author      = "Pierre Morsa"
 categories  = [ "Philosophie de blog" ]
