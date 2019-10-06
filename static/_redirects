@@ -5,4 +5,6 @@
 /blog/gtd-getting-things-done/page/3 /categories/gtd-getting-things-done/page/3/ 301
 /blog/gtd-getting-things-done/page/4 /categories/gtd-getting-things-done/page/4/ 301
 /blog/presenter-public/art-oratoire/7-5-secrets-art-oratoire-barack-obama /blog/7-5-secrets-art-oratoire-barack-obama/ 301
+/feed /index.xml 301
 /feed/ /index.xml 301
+/feed/atom/ /index.xml 301
