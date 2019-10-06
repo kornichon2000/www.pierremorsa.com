@@ -1,5 +1,5 @@
 +++
-date       = "2019-10-14"
+date       = "2019-10-21"
 title      = "La liberté c'est la faculté de choisir ses contraintes"
 author     = "Pierre Morsa"
 layout     = "post"
