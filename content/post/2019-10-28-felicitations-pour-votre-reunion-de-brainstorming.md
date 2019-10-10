@@ -1,5 +1,5 @@
 +++
-date        = "2019-10-21"
+date        = "2019-10-28"
 title       = "Félicitations pour votre réunion de brainstorming !"
 author      = "Pierre Morsa"
 categories  = [ "Lifehacks", "Philosophie de blog" ]
