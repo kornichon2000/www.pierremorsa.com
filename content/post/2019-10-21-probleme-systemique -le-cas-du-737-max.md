@@ -3,7 +3,7 @@ date        = "2019-10-21"
 title       = "Problème systémique : le cas du 737 Max"
 author      = "Pierre Morsa"
 categories  = [ "Philosophie de blog" ]
-draft       = true
+draft       = false
 +++
 Suite à mon billet sur le problème systémique de l’écosystème numérique français, [je suis tombé sur cet article, en anglais,](https://mattstoller.substack.com/p/the-coming-boeing-bailout) qui donne sont point de vue sur comment Boeing en est arrivé au fiasco du 737 Max. Je dis point de vue, car je pense que l’article n’est pas complètement objectif — mon article ne l’était pas non plus, c’est vrai que j’ai chargé la barque des grandes écoles et qu’elles ne peuvent pas être toutes mises dans le même panier — il reste cependant très intéressant.
 
