@@ -2,8 +2,8 @@
 date        = "2019-10-28"
 title       = "Félicitations pour votre réunion de brainstorming !"
 author      = "Pierre Morsa"
-categories  = [ "Lifehacks", "Philosophie de blog" ]
-draft       = true
+categories  = [ "Philosophie de blog" ]
+draft       = false
 +++
 Vous venez de faire une excellente réunion de brainstorming. Félicitations. Vous venez de réaliser le 1 % facile. Il ne vous reste plus qu’à réaliser les 99 % difficiles.
 
