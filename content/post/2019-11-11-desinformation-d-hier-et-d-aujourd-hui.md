@@ -3,7 +3,7 @@ date        = "2019-11-11"
 title       = "Désinformation d'hier et d'aujourd'hui"
 author      = "Pierre Morsa"
 categories  = [ "Philosophie de blog" ]
-draft       = true
+draft       = false
 +++
 « Ne croyez pas tout ce que l’on raconte dans les journaux, réfléchissez et vous verrez les énormités que les journalistes racontent ». Cette phrase, on ne l’entendait pas avant. Mais Internet a tout cassé et a fait chuter la qualité moyenne du journalisme de manière dramatique. Avant, les journalistes étaient des personnes qui vérifiaient leurs sources et avaient les moyens d’écrire des articles de qualité. 
 
