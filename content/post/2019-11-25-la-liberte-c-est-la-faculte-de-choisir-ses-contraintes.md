@@ -4,7 +4,7 @@ title      = "La liberté c'est la faculté de choisir ses contraintes"
 author     = "Pierre Morsa"
 layout     = "post"
 categories = [ "Philosophie de blog" ]
-draft      = false
+draft      = true
 +++
 « La liberté, c’est la faculté de choisir ses contraintes. »
 
