@@ -1,5 +1,5 @@
 +++
-date        = "2019-12-07"
+date        = "2019-12-09"
 title       = "Mensonge Nation"
 author      = "Pierre Morsa"
 categories  = [ "Philosophie de blog" ]
