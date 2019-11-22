@@ -3,7 +3,7 @@ date        = "2019-11-25"
 title       = "Problème systémique : le cas des mondiaux d'athlétisme au Qatar."
 author      = "Pierre Morsa"
 categories  = [ "Philosophie de blog" ]
-draft       = true
+draft       = false
 +++
 Cet article continue la série d’exemples concrets sur les effets des problèmes systémiques. J’ai déjà parlé de [l’écosystème numérique français](/post/2019-09-30-le-probleme-systemique-de-l-ecosysteme-high-tech-francais/) et du [Boeing 737 Max](/post/2019-10-21-probleme-systemique-le-cas-du-737-max). Aujourd’hui : les mondiaux d’athlétisme au Qatar.
 
