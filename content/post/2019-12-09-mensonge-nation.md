@@ -3,7 +3,7 @@ date        = "2019-12-09"
 title       = "Mensonge Nation"
 author      = "Pierre Morsa"
 categories  = [ "Philosophie de blog" ]
-draft       = true
+draft       = false
 +++
 Licorne : animal très rare aux pouvoirs surnaturels, qui en réalité n’existe que dans l’esprit des personnes assez stupides pour y croire.
 
