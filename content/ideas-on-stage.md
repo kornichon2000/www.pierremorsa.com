@@ -11,3 +11,9 @@ En 2010 je suis rejoint dans l'aventure par Phil Waknell, qui vient de terminer 
 Et nous avons raison. Le succès vient rapidement, car nous sommes au bon endroit au bon moment. le début des années 2010 voit en effet le décollage de l'écosystème web français qui cherche désespérément à relever le niveau de ses *pitchs*. C'est aussi l'essor des événements TEDx à travers le monde. De nouvelles conférences qui se veulent différentes voient le jour partout. Les entreprises, si frileuses au départ, embrassent avec enthousiasme le nouvel art de présenter en public.
 
 Aujourd'hui nous sommes une équipe extrêmement soudée aux compétences reconnues dans le monde entier. Nos clients sont principalement en France, États-Unis, Espagne et Italie. Nous ne comptons pas nous arrêter en si bon chemin, et nous voulons continuer à nous développer dans tous les pays européens.
+
+Vous pouvez consulter le site d'Ideas on Stage pour y lire les guides et articles que j'ai écrits :
+
+* [Guide ultime du TEDx Speaker](https://www.ideasonstage.fr/guide-tedx-speaker/)
+* [Guide ultime de la prise de parole en public](https://www.ideasonstage.fr/guide-ultime-prise-de-parole-en-public/)
+* [Colonne (presque) hebdomadaire](https://www.ideasonstage.fr/news/)

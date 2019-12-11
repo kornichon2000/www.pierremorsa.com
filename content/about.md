@@ -3,12 +3,15 @@ title = "À propos de Pierre Morsa"
 date = "2014-04-09"
 +++
 
-Ce blog existe pour partager mes découvertes et mes humeurs. J'y parle des sujets qui m'intéressent, en particulier présenter en public, GTD, et le Life Hacking. Je ne gagne rien avec ce blog et aucun article n'est sponsorisé. Il y a juste deux liens, un vers Coding & Bricks, l'entreprise de mon épouse, et un vers Ideas on Stage, mon entreprise. Vous pouvez librement copier et réutiliser tout son contenu, aussi inintéressant soit-il. Ce site est garanti 0 cookies, 0 JavaScript.
+Je ne fais pas qu'écrire ce blog. Sur cette page vous pourrez en apprendre un peu plus sur moi.
+
+## Réseaux sociaux
+Si vous voulez me suivre et lire des choses pas sérieuses, je suis sur [Twitter](https://twitter.com/pierremorsa/). Si vous voulez lire des choses sérieuses, je suis sur [LinkedIn](https://be.linkedin.com/in/pierremorsa), le réseau où tout le monde est super profechonal.
 
 ## Ideas on Stage
 [Vous pouvez en savoir plus sur l'histoire d'Ideas on Stage sur cette page.](/ideas-on-stage/)
 
-Dans la vie je suis co-fondateur et Creative Cat d'[Ideas on Stage][1], une société spécialisée dans les présentations en public. Je m'occupe plus particulièrement de la création des présentations pour nos clients (storytelling, visuels). Mes clients principaux sont des grands comptes (Chanel, EDF, Google, Kering, Safran, Société Générale, TV5MONDE...) J'ai également coaché les intervenants de nombreux événements TEDx, le Positive Economy Forum et d'autres grandes conférences. Enfin j'organise des ateliers sur l'art du pitch dans l'univers des Startups (50Partners, Euratechnologies, Le Comptoir, Le Camping, Start'inPost, Microsoft Ventures...)
+Dans la vie je suis Co-fondateur et Creative Cat d'[Ideas on Stage][1], une société spécialisée dans les présentations en public. Je m'occupe plus particulièrement de la création des présentations pour nos clients (storytelling, visuels). Mes clients principaux sont des grands comptes (Chanel, EDF, Google, Kering, Safran, Société Générale, TV5MONDE...) J'ai également coaché les intervenants de nombreux événements TEDx, le Positive Economy Forum et d'autres grandes conférences. Enfin j'organise des ateliers sur l'art du pitch dans l'univers des Startups (50Partners, Euratechnologies, Le Comptoir, Le Camping, Start'inPost, Microsoft Ventures...)
 
 ## Autres activités professionnelles
 Outre ce blog sur lequel je publie un billet toutes les semaines, j'écris une [colonne hebdomadaire sur le site d'Ideas on Stage sur l'art de présenter en public, en anglais et en français.](https://www.ideasonstage.fr/news/)
@@ -35,11 +38,13 @@ Si vous souhaitez m'interviewer le plus simple est de directement [prendre un re
 
 <a href='/bookme/' class='button'>Prendre un rendez-vous dans mon agenda en ligne​</a>​
 
-## Formation et parcours professionnel
-Auparavant j'ai travaillé pendant 13 ans dans le conseil, chez Accenture, anciennement Andersen Consulting, puis chez Ineum, anciennement Deloitte Conseil, puis Kurt Salmon, aujourd'hui Wavestone. J'ai un Master of Science in Business Engineering de HEC Liège, Belgique. J'ai également suivi une formation chez LEGO® Education au Danemark.
+## À propos de ce blog
+Ce blog existe pour partager mes découvertes et mes humeurs. J'y parle des sujets qui m'intéressent, en particulier présenter en public, GTD, et le Life Hacking. Je ne gagne rien avec ce blog et aucun article n'est sponsorisé. Il y a juste deux liens, un vers Coding & Bricks, l'entreprise de mon épouse, et un vers Ideas on Stage, mon entreprise. Vous pouvez librement copier et réutiliser tout son contenu, aussi inintéressant soit-il. Ce site est garanti 0 cookies, 0 JavaScript.
 
-## Ce blog est construit avec Hugo
-Ce blog est construit avec [Hugo](http://gohugo.io), un générateur de sites statiques, et est « hébergé » chez Github et Netlify. Je crois fermement que la plupart des sites web actuels sont devenus des usines à gaz et qu'un retour à des pages statiques, sans JavaScript est la meilleure solution pour de nombreux sites. En plus de mon blog, le [site d'Ideas on Stage](https://www.ideasonstage.com/) est également hébergé avec le tandem Github + Netlify.
+Le blog est construit avec [Hugo](http://gohugo.io), un générateur de sites statiques, et est « hébergé » chez Github et Netlify. Je crois fermement que la plupart des sites web actuels sont devenus des usines à gaz et qu'un retour à des pages statiques, sans JavaScript est la meilleure solution pour de nombreux sites. En plus de mon blog, le [site d'Ideas on Stage](https://www.ideasonstage.com/) est également hébergé avec le tandem Github + Netlify.
+
+## Formation et parcours professionnel
+Avant de fonder Ideas on Stage, j'ai travaillé pendant 13 ans dans le conseil, chez Accenture, anciennement Andersen Consulting, puis chez Ineum, anciennement Deloitte Conseil. J'ai un Master of Science in Business Engineering de HEC Liège, Belgique. J'ai également suivi une formation chez LEGO® Education au Danemark.
 
 [1]: https://www.ideasonstage.com
 [2]: http://philpresents.com
