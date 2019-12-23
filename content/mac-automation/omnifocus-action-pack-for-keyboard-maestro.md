@@ -8,6 +8,19 @@ The OmniFocus Action Pack for Keyboard Maestro is a set of plugin actions that g
 
 I originally created these actions for my own use, but I decided to make them available for free here as they might be of interest to others.
 
+## Installation
+You need to install two components:
+
+* The OmniFocusLibrary AppleScript library
+* The additional Keyboard Maestro Actions 
+
+### Install OmniFocusLibrary
+Download and uncompress the OmniFocusLibrary.scpt file. Copy it to ~/Library/Script Libraries/
+
+### Install Keyboard Maestro Actions
+Download and uncompress the Keyboard Maestro Actions. Copy them to ~/Library/Application Support/Keyboard Maestro/Keyboard Maestro Actions/ — alternatively, drag and drop the .zip archive on the Keyboard Maestro Icon in the Dock.
+Quit and relaunch Keyboard Maestro.
+
 ## Available actions
 Here is the list of actions, with minimal documentation.
 
