@@ -4,25 +4,40 @@ title = "OmniFocus Action Pack for Keyboard Maestro"
 date = "2019-12-23"
 +++
 
-The OmniFocus Action Pack for Keyboard Maestro is a set of plugin actions that gives an easy way to control OmniFocus from Keyboard Maestro. OmniFocus is a top-class task management App from Omni Group. Keyboard Maestro is a wonderful automation app from Peter Lewis. Together, they are a fantastic productivity combo.
+The OmniFocus Action Pack for Keyboard Maestro is a set of plugin actions to control OmniFocus from Keyboard Maestro. OmniFocus is a top-class task management App from Omni Group. Keyboard Maestro is a wonderful automation app from Peter Lewis. Together, they are a fantastic productivity combo.
 
 I originally created these actions for my own use, but I decided to make them available for free here as they might be of interest to others.
 
 ## Installation
 You need to install two components:
 
-* The OmniFocusLibrary AppleScript library
-* The additional Keyboard Maestro Actions 
+* [The OmniFocusLibrary AppleScript library. Click here to download it.](/files/OmniFocusLibrary.zip)
+* [The OmniFocus Action Pack for Keyboard Maestro. Click here to download it.](/files/OmniFocusActionPackForKeyboardMaestro.zip)
+
+You will get two .zip archives. Uncompress them and move them in the locations as instructed below.
 
 ### Install OmniFocusLibrary
 Download and uncompress the OmniFocusLibrary.scpt file. Copy it to ~/Library/Script Libraries/
 
-### Install Keyboard Maestro Actions
+### Install Omnifocus Action Pack for Keyboard Maestro
 Download and uncompress the Keyboard Maestro Actions. Copy them to ~/Library/Application Support/Keyboard Maestro/Keyboard Maestro Actions/ — alternatively, drag and drop the .zip archive on the Keyboard Maestro Icon in the Dock.
 Quit and relaunch Keyboard Maestro.
 
 ## Available actions
-Here is the list of actions, with minimal documentation.
+The pack includes more than 20 actions to automate OmniFocus. Most actions manipulate tasks, but it also offers a templating system. Here is the list of actions, with minimal documentation. They are grouped in several categories:
+
+* Get list of selected tasks
+* Create a new task
+* Basic task properties
+* Tags
+* Projects
+* Dates
+* Links
+* Sidebar
+* Perspective
+* Templates
+* Open a linked project folder
+
 
 ### Get list of selected tasks
 
@@ -49,6 +64,8 @@ For some strange reason (laziness, really) I didn't create an OmniFocus Set Task
 * OmniFocus Get Task Tags: get the list of tags names or tag IDs of the specified task.
 * OmniFocus Set Task Tags: set the list of tags of the specified task, by tag names or tag IDs. You can add, remove, replace or toggle the tags of the task.
 
+Because of an AppleScript limitation, tags with non ascii characters, for example Chinese characters or emojis, cannot be passed by name in Set Task Primary Tag and Set Task Tags. In that case, the best solution is to use the tag ID instead of the tag name to manipulate the tags.
+
 ### Projects
 
 * OmniFocus Get Task Project Code: returns the first word of the project name, assuming it is the project code. Using a unique identifier (a project code) as the first word of a project name allows to use it in other places, such as a folder name in the Finder. For example, for a project called "P00001 Project 1", P00001 will be returned as the project code. You can then use that code in conjunction with the "OmniFocus Open Project Folder" action to open a folder named "P00001" in the Finder.
@@ -60,6 +77,8 @@ For some strange reason (laziness, really) I didn't create an OmniFocus Set Task
 * OmniFocus Defer to Hour: sets the selected task's Defer Hour. If there is no defer date, sets it to the next future occurence of the specified hour. If the defer date was in the past, sets it to the next future occurence of the specified hour. If the defer date is in the future, only change the hour.
 * OmniFocus Due on Hour: same behaviour as Defer to Hour, but for the due hour.
 
+The dates functions are fairly limited and could be completed with more generic ones. They exist because I often defer a task to the afternoon or morning, and this action provides a quick way to do so.
+
 ### Links
 
 * OmniFocus Get Task File Path: if a file:// url exists in the note field of the first selected task, returns its POSIX path (may fail if special characters other than space %20 are present in the file path).
@@ -70,7 +89,7 @@ For some strange reason (laziness, really) I didn't create an OmniFocus Set Task
 * OmniFocus Deselect All Sidebar Elements: deselect all sidebar tree elements, either for the tags or projects tree, as long as the tree is visible.
 * OmniFocus Select Sidebar Element: select the sidebar element passed as argument. It can be a context or project, but it has to be valid for the current sidebar view.
 
-### Perspective
+### Perspectives
 
 * OmniFocus Set Perspective: sets the perspective of the front window.
 
