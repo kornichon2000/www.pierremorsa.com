@@ -3,7 +3,7 @@ date        = "2019-12-29"
 title       = "Se déplacer en vélo à Paris"
 author      = "Pierre Morsa"
 categories  = [ "Lifehacks" ]
-draft       = true
+draft       = false
 +++
 
 Cela fait maintenant presque un an que je vais en vélo à Paris chaque fois que je peux. Je pars de chez moi en vélo, je monte dans le TGV, puis je roule de la Gare du Nord jusqu’aux Champs Élysées. Les seules fois où je ne prends pas le vélo, c’est lorsqu’il pleut trop ou lorsque mon agenda pour la journée rend le vélo compliqué à utiliser. 
