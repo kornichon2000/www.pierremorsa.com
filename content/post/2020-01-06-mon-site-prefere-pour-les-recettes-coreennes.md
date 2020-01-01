@@ -5,7 +5,7 @@ author      = "Pierre Morsa"
 categories  = [ "Lifehacks" ]
 draft       = false
 +++
-Je ne sais pas si c’est parce que je suis né là-bas, mais j’adore la cuisine coréenne. Malheureusement, c’est très difficile de trouver un bon restaurant coréen en dehors de Paris. J’ai donc décidé de tester des recettes moi-même. En cherchant un peu, j’ai fini par trouver ce site de recettes, qui semble être célèbre : [Maangchi](https://www.maangchi.com).
+Je ne sais pas si c’est parce que je suis né là-bas, mais j’adore la cuisine coréenne. Malheureusement, c’est très difficile de trouver un bon restaurant coréen en dehors de Paris. J’ai donc décidé d’essayer de cuisiner mes plats favoris moi-même. En cherchant un peu, j’ai fini par trouver ce site de recettes, qui semble être célèbre : [Maangchi](https://www.maangchi.com).
 
 J’ai essayé quelques recettes et elles sont vraiment excellentes. Je retrouve vraiment le goût des plats coréens, en tout cas par rapport aux restaurants que j’ai pu essayer. Je dirais même que c’est meilleur que certains restaurants. Je ne peux pas dire si le goût est authentique, car je n’ai jamais été en Corée. Enfin, si, mais pas depuis que j’ai eu 2 ans.
 
