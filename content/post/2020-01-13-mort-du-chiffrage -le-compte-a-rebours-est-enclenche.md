@@ -1,5 +1,5 @@
 +++
-date        = "2019-01-13"
+date        = "2020-01-13"
 title       = "Mort du chiffrage : le compte à rebours est enclenché"
 author      = "Pierre Morsa"
 categories  = [ "Philosophie de blog", "Technomagie" ]
