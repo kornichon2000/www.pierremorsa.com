@@ -2,7 +2,7 @@
 date        = "2019-01-13"
 title       = "Mort du chiffrage : le compte à rebours est enclenché"
 author      = "Pierre Morsa"
-categories  = [ "Lifehacks", "Philosophie de blog", "Technomagie" ]
+categories  = [ "Philosophie de blog", "Technomagie" ]
 draft       = false
 +++
 
