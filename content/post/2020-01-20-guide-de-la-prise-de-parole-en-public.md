@@ -1,7 +1,7 @@
 +++
-date        = “2020-01-20”
-title       = “Guide de la prise de parole en public”
-author      = “Pierre Morsa”
+date        = "2020-01-20"
+title       = "Guide de la prise de parole en public"
+author      = "Pierre Morsa"
 categories = [ "Présenter en public" ]
 draft       = false
 +++
