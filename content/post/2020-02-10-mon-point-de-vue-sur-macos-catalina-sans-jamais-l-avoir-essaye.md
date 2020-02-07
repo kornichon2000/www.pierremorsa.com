@@ -1,0 +1,28 @@
++++
+date        = "2020-02-10"
+title       = "Mon point de vue sur macOS Catalina sans jamais l’avoir essayé"
+author      = "Pierre Morsa"
+categories  = [ "Technomagie" ]
+draft       = false
++++
+Ah, macOS, à chaque version, c’est la même chose : une litanie de critiques comme quoi la version précédente était mieux. Alors, c’est vrai, de version en version, il peut y avoir des régressions. Et oui, c’est vrai, je n’ai pas encore essayé macOS Catalina. Et oui, déjà sur Mojave, les dialogues de sécurité supplémentaires me cassent les pieds. Mais en tant que vieux ~~con~~ Mac User, je me suis demandé comment tout avait évolué depuis le début de macOS et son ancêtre Mac OS.
+
+Les années 80 et les systèmes 6 et 7 : aucune comparaison possible. Ces systèmes étaient de véritables antiquités par rapport au macOS d’aujourd’hui. Il était fréquent de devoir redémarrer le Mac plusieurs fois par jour, voire plusieurs fois par heure ! Le multitâche était coopératif, autrement dit il fallait compter sur le bon vouloir de chaque application pour qu’elles partagent harmonieusement la puissance bien limitée des processeurs de l’époque. Autant dire que comme dans la vraie vie il suffisait d’une seule application non coopérative et c’était fichu. Rien n’était protégé, n’importe quel processus pouvait écrire ce qu’il voulait n’importe où en mémoire. C’était rigolo pour faire des trucs un peu idiots, mais vraiment pas robuste. On l’oublie peut-être, mais ce qui a vraiment mis le Mac en difficulté à l’époque de Windows 95 et Windows XP, c’est que ces deux systèmes étaient bien **meilleurs** que Mac OS.
+
+La fin des années 90 et les systèmes 8 et 9 : le Mac est resté bloqué pendant une éternité sur l’infâme système 7 et ses pénibles bugs. À son retour, une des priorités de Steve Jobs a été d’au moins stabiliser les choses. Mac OS 8 était une vraie amélioration par rapport au système 7, du point de vue de la robustesse, et un peu du point de vue de l’ergonomie. Le système 9 était plus là pour justifier l’utilisation du 10 pour la nouvelle génération…
+
+Vient ensuite Mac OS X. Changement radical puisque la base technologique est radicalement différente et héritée de NextStep, le système d’exploitation de NeXT basé sur Unix. La première version 10.0 est à peine utilisable, et avec zéro application utile. Suivent alors quelques versions avec de vraies améliorations et un joli melting pot d’Applications Carbon, Cocoa et vieilles applications tournant dans une machine virtuelle. Bonjour la performance, surtout qu’on est encore sur les processeurs PowerPC deux fois plus rapides qu’Intel dans les pubs, mais complètement dépassés dans la réalité. Ce n’est que plusieurs versions plus tard, vers Tiger, alias Mac OS 10.4, que le système 10 devient réellement utilisable et que les applications natives Mac OS X commencent à en rendre l’utilisation vraiment intéressante.
+
+Arrivent ensuite Mac OS X Leopard, puis la version de Mac OS X qui va devenir un peu mythique : Mac OS X Snow Leopard. Aujourd’hui encore vous entendez des personnes dire que Snow Leopard était la version la plus robuste. Bien sûr ce n’est pas tout à fait vrai. Snow Leopard avait des problèmes, mais il avait une différence de taille par rapport à aujourd’hui : it fucking worked. Ce que je veux dire par là, c’est que pratiquement toutes les fonctionnalités du système fonctionnaient correctement, sans bug bloquant, ce qui donnait une impression de fini et de fiabilité indéniables.
+
+Comparez cela par rapport à l’ère Lion — Catalina. Dans l’ensemble, les dernières versions fonctionnent correctement. Le système est fiable. Mais il y a des tas de fonctionnalités qui ne fonctionnent pas aussi bien qu’elles le devraient. Quelques exemples :
+
+* Lorsque je fais un glisser-déposer d’un fichier dans le fucking Finder, il arrive qu’il reste une image gelée à l’écran du fichier en train d’être déplacé.
+* Il arrive que certains processus se multiplient comme des petits pains sans raison apparente, en particulier ceux liés à Spotlight.
+* De nombreuses fonctionnalités avancées, comme l’implémentation d’AppleScript dans des applications comme Calendar ou Mail, ne fonctionnent que partiellement.
+
+À ce manque de finition vient s’ajouter un autre fait : les fonctionnalités de certaines parties du système et de certaines applications ont non seulement cessé d’évolué, elles ont carrément régressé. Il suffit de prendre Keynote et Pages. Lors du projet d’uniformisation de ces applications avec les versions iOS, ce ne sont pas les versions iOS qui se sont améliorées pour se mettre à niveau avec les applications Mac. C’est l’inverse. Ce sont les versions Mac qui ont été « dégradées » pour se mettre à niveau avec les versions iOS. De plus l’interface des nouvelles versions sur macOS ne respecte même pas les principes d’interface utilisateur d’Apple.
+
+C’est le paradoxe : bien que macOS soit très stable et que les améliorations sous le capot soient réelles (modernisation du système de fichiers, meilleure sécurité, etc.), le niveau de qualité perçu est quant à lui moins bon. Quant à l’interface, elle continue d’évoluer, mais à une lenteur désespérante ; en dehors de quelques retouches, elle n’a subi pratiquement aucune amélioration notable d’ergonomie depuis plusieurs années.
+
+Mon rêve, ce serait qu’Apple reprenne enfin les choses en main et se dote d’une vraie vision pour le futur de macOS. Par exemple je ne suis pas désespérément attaché à AppleScript, c’est un langage assez pourri, mais pour le supprimer, il faut d’abord offrir une meilleure alternative. Swift, Python, ~~JavaScript~~ non pas JavaScript, je m’en fiche, tant que l’alternative est au moins aussi puissante que ce qui existe aujourd’hui. Allez, on y croit.
