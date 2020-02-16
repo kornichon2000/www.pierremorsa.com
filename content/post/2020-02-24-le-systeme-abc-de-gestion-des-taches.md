@@ -1,5 +1,5 @@
 +++
-date        = "2020-02-17"
+date        = "2020-02-24"
 title       = "Le système ABC de gestion des tâches"
 author      = "Pierre Morsa"
 categories  = [ "Lifehacks" ]
