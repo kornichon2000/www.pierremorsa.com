@@ -7,7 +7,7 @@ draft       = false
 +++
 On me demande souvent à quoi sert Keyboard Maestro, ce programme qui permet de créer des macros, des séries d’actions automatisées sur Mac. Ma réponse est toujours la même : à plein de choses. Des choses utiles, et des choses **indispensablement utiles**. Aujourd’hui, je vous présente ma macro la plus importante, mon chef d’œuvre : Macry McMacroface.
 
-Que fait-elle ? Vous tapez un mot dans TextEdit ou dans Mail. Ensuite vous déclenchez la macro en appuyant sur ctrl-espace. Et là, le mot va automatiquement être remplacé par son équivalent « mot mcmotface ». Par exemple, vous tapez toto dans TextEdit, vous appuyez sur ctrl-espace, et « toto » devient « toty mctotoface ». Magie de l’informatique. Puissance du Cloud. Intelligence de l’intelligence artificielle. Blockchain.
+Que fait-elle ? Vous tapez un mot dans TextEdit ou dans Mail. Ensuite vous déclenchez la macro en appuyant sur ctrl-espace. Et là, le mot va automatiquement être remplacé par son équivalent « mot mcmotface ». Par exemple, vous tapez toto dans TextEdit, vous appuyez sur ctrl-espace, et « toto » devient « toty mctotoface ». Magie de l’informatique. Puissance du Cloud. Intelligence de l’intelligence artificielle. Blockchain (et là j’ai dit Blockchain donc tout le monde a compris que c'était innovant).
 
 [Vous pouvez télécharger la macro en cliquant sur ce lien.](https://www.pierremorsa.com/files/macrymcmacroface.kmmacros.zip)
 
