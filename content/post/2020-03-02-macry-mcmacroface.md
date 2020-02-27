@@ -9,7 +9,7 @@ On me demande souvent à quoi sert Keyboard Maestro, ce programme qui permet de 
 
 Que fait-elle ? Vous tapez un mot dans TextEdit ou dans Mail. Ensuite vous déclenchez la macro en appuyant sur ctrl-espace. Et là, le mot va automatiquement être remplacé par son équivalent « moty mcmotface ». Par exemple, vous tapez toto dans TextEdit, vous appuyez sur ctrl-espace, et « toto » devient « toty mctotoface ». Magie de l’informatique. Puissance du Cloud. Intelligence de l’intelligence artificielle. Blockchain (et là j’ai dit Blockchain, pas besoin d’en rajouter, tout le monde a compris que c'était innovant).
 
-[Vous pouvez télécharger la macro en cliquant sur ce lien.](https://www.pierremorsa.com/files/macrymcmacroface.kmmacros.zip)
+[Vous pouvez télécharger la macro en cliquant sur ce lien.](https://www.pierremorsa.com/files/macrymcmacroface.kmmacros.zip) Pour l’utiliser il faut avoir l'application [Keyboard Maestro.](https://www.keyboardmaestro.com/main/)
 
 Je crois n’avoir jamais créé une macro plus utile que celle-ci. Par exemple, je m’en sers tout le temps lorsque je nomme mes calques dans Affinity Designer. Plutôt que d’avoir un calque nommé bêtement « logo », par l’appui sur ctrl-espace, celui-ci devient le merveilleux calque « logy mclogoface ». 
 
