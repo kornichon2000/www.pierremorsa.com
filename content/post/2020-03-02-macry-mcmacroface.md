@@ -3,7 +3,7 @@ date        = "2020-03-02"
 title       = "Macry McMacroface"
 author      = "Pierre Morsa"
 categories  = [ "Lifehacks", "Technomagie" ]
-draft       = true
+draft       = false
 +++
 On me demande souvent à quoi sert Keyboard Maestro, ce programme qui permet de créer des macros, des séries d’actions automatisées sur Mac. Ma réponse est toujours la même : à plein de choses. Des choses utiles, et des choses **indispensablement utiles**. Aujourd’hui, je vous présente ma macro la plus importante, mon chef d’œuvre : Macry McMacroface.
 
