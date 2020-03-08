@@ -1,5 +1,5 @@
 +++
-date        = "2020-03-09"
+date        = "2020-03-08"
 title       = "Women : une série de kakemonos célébrant les les femmes qui changent le monde"
 author      = "Pierre Morsa"
 categories  = [ "Nouvelles" ]
