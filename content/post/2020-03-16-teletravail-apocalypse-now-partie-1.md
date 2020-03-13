@@ -1,6 +1,6 @@
 +++
 date        = "2020-03-16"
-title       = "Apocalypse Télétravail Now (partie I)"
+title       = "Télétravail Apocalypse Now (partie I)"
 author      = "Pierre Morsa"
 categories  = [ "Lifehacks" ]
 draft       = false
