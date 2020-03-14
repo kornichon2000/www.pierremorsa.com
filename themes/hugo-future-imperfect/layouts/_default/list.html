@@ -5,9 +5,9 @@
 	{{ $.Scratch.Set "count" 0 }}
 	{{ range $paginator.Pages }}
 		{{ $.Scratch.Add "count" 1 }}
-		{{ .Render "content" }}
+		{{ .Render "article" }}
 		{{ if eq ($.Scratch.Get "count") 1 }}
-			<!-- Insert links after first article -->		
+			<!-- If it's the first article then insert links before second article -->		
 			{{ partial "links" . }}
 		{{ end }}
 	{{ end }}

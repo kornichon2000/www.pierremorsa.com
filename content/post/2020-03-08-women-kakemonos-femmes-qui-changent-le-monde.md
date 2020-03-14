@@ -1,6 +1,6 @@
 +++
 date        = "2020-03-08"
-title       = "Women : une série de kakemonos célébrant les les femmes qui changent le monde"
+title       = "Women : une série de kakemonos célébrant les femmes qui changent le monde"
 author      = "Pierre Morsa"
 categories  = [ "Nouvelles" ]
 draft       = false
