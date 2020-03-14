@@ -3,7 +3,7 @@
 {{ partial "navbar" . }}
 		    <div id="main">
 		        {{- $.Scratch.Set "h1" true }}
-{{ .Render "content-single" }}
+{{ .Render "content" }}
 		    </div>{{ "<!-- main -->" | safeHTML }}
 {{ partial "sidebar" . }}
 {{ partial "footer" . }}
