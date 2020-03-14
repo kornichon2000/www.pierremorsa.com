@@ -2,7 +2,7 @@
 date        = "2019-03-18"
 title       = "Comment je lutte contre ma manie d’oublier des trucs"
 author      = "Pierre Morsa"
-categories  = [ "Lifehacks", "Getting Things Done" ]
+categories  = [ "Lifehacks", "GTD Getting Things Done" ]
 draft       = false
 +++
 Comme tout le monde, il m’arrive de ne pas réussir à me concentrer. Mais j’ai également le problème inverse. Je suis parfois tellement concentré sur une pensée que j’en oublie tout le reste, et cela peut se révéler gênant. En 2017, j’ai oublié mon iPhone 4 fois. J’ai eu une sacrée chance. À chaque fois, je l’ai récupéré. Comme quoi, il n’y a pas qu’au Japon qu’il y a des gens honnêtes ; en France aussi, on peut tomber sur de nombreuses personnes qui n’hésitent pas à faire le bon geste. Mon iPhone n’est pas la seule victime. Il m’est déjà arrivé (souvent) de partir d’un endroit sans mon sac à dos, mon chargeur de MacBook Pro ou un pull.
