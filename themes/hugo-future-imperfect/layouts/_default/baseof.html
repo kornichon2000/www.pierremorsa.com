@@ -1,0 +1,8 @@
+{{ "<!-- _default:baseof.html -->" | safeHTML }}
+{{ partial "header" . }}
+{{ partial "navbar" . }}
+    <!-- Main -->
+	{{ block "main" . }}
+	{{ end }}
+    {{ partial "sidebar" . }}
+{{ partial "footer" . }}

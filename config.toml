@@ -1,6 +1,8 @@
 baseurl					= "https://www.pierremorsa.com/"
+defaultContentLanguage	= "fr"
 language					= "fr"
 languageCode				= "fr"
+languageName				= "Français"
 title					= "Pierre Morsa | Présenter en public et GTD"
 theme					= "hugo-future-imperfect"
 preserveTaxonomyNames	= true
