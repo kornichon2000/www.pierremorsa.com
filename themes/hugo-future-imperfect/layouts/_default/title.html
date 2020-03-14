@@ -3,13 +3,13 @@
 {{ "<!-- _default:header -->" | safeHTML }}
 <header>
     <div class="title">
-        <h2><a href="{{ .Permalink }}">{{ .Title  | markdownify  }}</a></h2>
-        {{- with .Description }}
+        <h2><a href="{{ .RelPermalink }}">{{ .Title  | markdownify  }}</a></h2>
+        {{ with .Description }}
         <p>{{ . }}</p>
-        {{- end }}
+        {{ end }}
     </div>{{ "<!-- title -->" | safeHTML }}
     <div class="meta">
-        {{- $.Scratch.Set "dateType" .Date }}
+        {{ $.Scratch.Set "dateType" .Date }}
         <time class="published" datetime='{{ ($.Scratch.Get "dateType").Format "2006-01-02" }}'>{{ ($.Scratch.Get "dateType").Format "2006-01-02" }}</time>
     </div>{{ "<!-- meta -->" | safeHTML }}
 </header>
