@@ -1,0 +1,19 @@
+{{/* Buttons for navigation at bottom of list pages */}}
+
+{{ "<!-- partials:pagination -->" | safeHTML }}
+<nav>
+	<div id="navigation">
+		<ul class="actions pagination">
+		    {{ if .Paginator.HasPrev }}
+		    	<li><a href="{{ .Paginator.Prev.URL }}" class="button">{{ .Site.Params.nav.previous }}</a></li>
+		    {{ else }}
+		    	<li><a href="#" class="disabled button">{{ .Site.Params.nav.previous }}</a></li>
+		    {{ end }}
+		    {{ if .Paginator.HasNext }}
+		    	<li><a href="{{ .Paginator.Next.URL }}" class="button">{{ .Site.Params.nav.next }}</a></li>
+		    {{ else }}
+		    	<li><a href="#" class="disabled button">{{ .Site.Params.nav.next }}</a></li>
+		    {{ end }}
+		</ul>
+	</div>
+</nav>

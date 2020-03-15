@@ -1,40 +1,67 @@
 baseurl					= "https://www.pierremorsa.com/"
+
+title					= "Pierre Morsa | Présenter en public et GTD"
+
 defaultContentLanguage	= "fr"
 language					= "fr"
 languageCode				= "fr"
 languageName				= "Français"
-title					= "Pierre Morsa | Présenter en public et GTD"
-theme					= "hugo-future-imperfect"
-preserveTaxonomyNames	= false
+
 paginate				= 5
+
+
 
 [params]
 
-    # Sets the meta tag description, usually reserved for the main page
+    # Meta tag description
     description			= "Le blog de Pierre Morsa, co-fondateur et Creative Cat d'Ideas on Stage, agence spécialisée dans les présentations en public."
-    viewMorePostLink	= "/blog/"
-    aboutlink			= "/about/"
-    contactlink			= "/bookme/"
 
-	# Aside elements
+	# Avatar picture on top of site
+	[params.avatar]
+	    src       		= "/pictures/main/pierre-morsa-avatar.png"
+	    alt				= "Pierre Morsa"
+
+	# Pagination buttons
+	[params.nav]
+		previous		= "Plus récents" 
+		next 			= "Plus anciens"
+
+	# Aside infos, with section id (mandatory), text and button (optional)
+	# Order elements as you want them to see in the sidebar
+	# Special sections:
+	# - links
+	#	- id, text, no button
+	# - rss
+	#	- id, no text, button
+	# - categories
+	#	- id only
+	# - copyright
+	#	- id, text, no button
 	[params.aside]
-		[params.aside.about]
-	    	text  		= "Pierre Morsa est co-fondateur et Creative Cat chez <a href='https://www.pierremorsa.com/ideas-on-stage/'>Ideas on Stage</a>, une agence de création de présentations, formation et coaching à la prise de parole et événements d'entreprise."
-	    	button		= "En savoir plus"
-		[params.aside.contact]	    	
+
+		[params.aside.001]
+			id 			= "about"
+		    text  		= "Pierre Morsa est co-fondateur et Creative Cat chez <a href='https://www.pierremorsa.com/ideas-on-stage/'>Ideas on Stage</a>, une agence de création de présentations, formation et coaching à la prise de parole et événements d'entreprise."
+		    button		= "En savoir plus"
+	
+		[params.aside.002]
+			id 			= "contact"
 			text		= "Pour me contacter écrivez-moi à <br><a href='m&#97;ilt&#111;&#58;&#112;i&#101;r%&#55;&#50;e&#46;%6D&#111;&#114;&#115;%61&#64;p&#109;&#46;m&#101;'>pierre&#46;morsa&#64;&#112;m&#46;m&#101;</a>."
-		[params.aside.copyright]
+
+		[params.aside.003]
+			id			= "links"
+			text		= "Les sites que je soutiens"
+			# No button, use /data/links files for links
+			
+		[params.aside.004]
+			id			= "rss"
+			# No text for RSS
+			button		= "S'abonner au fil RSS"
+		
+		[params.aside.005]
+			id			= "categories"
+			
+		[params.aside.006]
+			id			= "copyright"
 			text		= "Site garanti sans cookies et sans JavaScript. Le contenu est en copie libre : vous pouvez tout copier et réutiliser librement. "
 
-	# Parameters for little round pic on top of site
-	[params.avatar]
-	    src       			= "/pictures/main/pierre-morsa-avatar.png"
-	    alt					= "Pierre Morsa"
-	
-		
-	# Localization of text strings
-	[params.localized.button]
-		previous			= "Page précédente" 
-		next 				= "Page suivante"
-		rss					= "S'abonner au fil RSS"
-	

@@ -1,7 +1,7 @@
 {{ "<!-- partials:links:start -->" | safeHTML }}
 <div class="hide-sm">
 	<section id="links">       
-		{{- range .Site.Data.links }}		
+		{{- range $.Site.Data.links }}		
 		<div class="link">
 			<a href="{{ .link }}">
 	    		<img src="/pictures/links/{{ .picture }}">
