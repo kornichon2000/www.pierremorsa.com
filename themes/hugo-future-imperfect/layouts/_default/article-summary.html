@@ -1,12 +1,11 @@
-{{ "<!-- categories:article-summary -->" | safeHTML }}
+{{ "<!-- _default:article-summary:start -->" | safeHTML }}
 <article class="post">
-	{{ .Render "title" }}
+	{{ .Render "article-header" }}
 	<div id="summary">
 		<p>{{ printf "%s" .Summary | markdownify }}</p>
+	    <ul class="actions">
+	        <li><a href="{{ .RelPermalink }}" class="button big">Lire la suite</a></li>
+	    </ul>
     </div>
-	<footer>
-        <ul class="actions">
-            <li><a href="{{ .RelPermalink }}" class="button big">Lire la suite</a></li>
-        </ul>
-    </footer>
 </article>
+{{ "<!-- _default:article-summary:end -->" | safeHTML }}

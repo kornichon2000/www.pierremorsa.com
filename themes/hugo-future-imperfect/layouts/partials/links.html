@@ -1,4 +1,4 @@
-{{ "<!-- partials:links -->" | safeHTML }}
+{{ "<!-- partials:links:start -->" | safeHTML }}
 <div class="hide-sm">
 	<section id="links">       
 		{{- range .Site.Data.links }}		
@@ -11,3 +11,4 @@
 		{{- end }}				
 	</section>{{ "<!-- links -->" | safeHTML }}
 </div>
+{{ "<!-- partials:links:end -->" | safeHTML }}

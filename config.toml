@@ -9,46 +9,31 @@ preserveTaxonomyNames	= false
 paginate				= 5
 
 [params]
+
     # Sets the meta tag description, usually reserved for the main page
     description			= "Le blog de Pierre Morsa, co-fondateur et Creative Cat d'Ideas on Stage, agence spécialisée dans les présentations en public."
     viewMorePostLink	= "/blog/"
     aboutlink			= "/about/"
     contactlink			= "/bookme/"
 
-	# Optional Params
-    categoriesByCount   = true
-    includeReadingTime  = false
-    # The set of favicons used are based on the write-up from this link:
-    # https://github.com/audreyr/favicon-cheat-sheet
-    # Please see the favicon partial template for more information
-    loadFavicon         = true
-    faviconVersion      = ""
+	# Aside elements
+	[params.aside]
+		[params.aside.about]
+	    	text  		= "Pierre Morsa est co-fondateur et Creative Cat chez <a href='https://www.pierremorsa.com/ideas-on-stage/'>Ideas on Stage</a>, une agence de création de présentations, formation et coaching à la prise de parole et événements d'entreprise."
+	    	button		= "En savoir plus"
+		[params.aside.contact]	    	
+			text		= "Pour me contacter écrivez-moi à <br><a href='m&#97;ilt&#111;&#58;&#112;i&#101;r%&#55;&#50;e&#46;%6D&#111;&#114;&#115;%61&#64;p&#109;&#46;m&#101;'>pierre&#46;morsa&#64;&#112;m&#46;m&#101;</a>."
+		[params.aside.copyright]
+			text		= "Site garanti sans cookies et sans JavaScript. Le contenu est en copie libre : vous pouvez tout copier et réutiliser librement. "
 
-	# parms.intro will appear on the sidebar
-	# This is optional, but it's suggested to use
-	[params.intro]
-	    header    			= "Pierre Morsa"
-	    paragraph 			= "Présenter en public, Getting Things Done, Lifehacks, Technomagie etc."
-	    about     			= "Pierre Morsa est co-fondateur et Creative Cat chez <a href='https://www.pierremorsa.com/ideas-on-stage/'>Ideas on Stage</a>, une agence de création de présentations, formation et coaching à la prise de parole et événements d'entreprise."
-		contact				= "Pour me contacter écrivez-moi à <br><a href='m&#97;ilt&#111;&#58;&#112;i&#101;r%&#55;&#50;e&#46;%6D&#111;&#114;&#115;%61&#64;p&#109;&#46;m&#101;'>pierre&#46;morsa&#64;&#112;m&#46;m&#101;</a>."
-
-	[params.intro.pic]
+	# Parameters for little round pic on top of site
+	[params.avatar]
 	    src       			= "/pictures/main/pierre-morsa-avatar.png"
-	    width				= ""
 	    alt					= "Pierre Morsa"
 	
-	[params.footer]
-		copyright			= "Site garanti sans cookies et sans JavaScript. Le contenu est en copie libre : vous pouvez tout copier et réutiliser librement. "
-	
-	# Adjust the amount of recent posts on the sidebar.
-	# This is optional. The default value 5 will be used
-	[params.postAmount]
-	    sidebar 			= 5
-	
+		
 	# Localization of text strings
 	[params.localized.button]
-		about				= "En savoir plus"
-		contact				= "M'interviewer"
 		previous			= "Page précédente" 
 		next 				= "Page suivante"
 		rss					= "S'abonner au fil RSS"
