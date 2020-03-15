@@ -1,14 +1,19 @@
 {{ "<!-- partials:links:start -->" | safeHTML }}
 <div class="hide-sm">
-	<section id="links">       
-		{{- range $.Site.Data.links }}		
-		<div class="link">
-			<a href="{{ .link }}">
-	    		<img src="/pictures/links/{{ .picture }}">
-	    		<p>{{ .description }}</p>
-	    	</a>
+	<section id="links">
+		<header>
+		    <p class="justify-center">Les sites que je soutiens</p>
+		</header>
+		<div class="links">
+			{{- range $.Site.Data.links }}
+			<div class="link">
+				<a href="{{ .link }}">
+		    		<img src="/pictures/links/{{ .picture }}">
+		    		<p>{{ .description }}</p>
+		    	</a>
+			</div>
+			{{- end }}				
 		</div>
-		{{- end }}				
 	</section>{{ "<!-- links -->" | safeHTML }}
 </div>
 {{ "<!-- partials:links:end -->" | safeHTML }}

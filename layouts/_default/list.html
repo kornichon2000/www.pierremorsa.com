@@ -1,8 +1,7 @@
 {{ define "main" }}
 	{{ "<!-- _default:list.html:start -->" | safeHTML }}
-	{{ $paginator := .Paginate (where .Site.RegularPages "Type" "post") }}
 	{{ $.Scratch.Set "count" 0 }}
-	{{ range $paginator.Pages }}
+	{{ range .Paginator.Pages }}
 		{{ $.Scratch.Add "count" 1 }}
 		{{ .Render "article" }}
 		{{ if eq ($.Scratch.Get "count") 1 }}

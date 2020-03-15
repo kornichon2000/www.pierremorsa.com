@@ -4,13 +4,11 @@
 	{{ partial "head" . }}
     <body>
 		{{ partial "topbar" . }}
-        <div id="wrapper">			
-			<div id="main">
+        <div class="wrapper">			
 				<main>
 					{{ block "main" . }}
 					{{ end }}
 				</main>
-			</div>{{ "<!-- main -->" | safeHTML }}
 			{{ partial "aside" . }}
         </div>{{ "<!-- wrapper -->" | safeHTML }}
     </body>        

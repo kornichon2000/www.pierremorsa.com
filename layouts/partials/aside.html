@@ -1,79 +1,79 @@
 {{/* The bar on the left on large view, or at the bottom of the site on narrow view */}}
 
 {{ "<!-- partials:aside:start -->" | safeHTML }}
-<div id="aside">
-	<aside>
-		{{ range .Site.Params.aside }}
-		
-			{{ if eq .id "rss" }}
-				
-				{{/* RSS link */}}
-				{{ "<!-- rss -->" | safeHTML }}
-				<section id="rss">
-					<a rel="alternate" type="application/rss+xml" href="{{ with $.Page.OutputFormats.Get "RSS" }}{{ .Permalink }}{{ end }}" title="RSS" class="button">{{ .button | markdownify }}</a>
-				</section>
-				
-			{{ else if eq .id "links" }}
+<aside>
+	{{ range .Site.Params.aside }}
+	
+		{{ if eq .id "rss" }}
 			
-				{{/* Generates the links to other sites, enclosed in hide-lg so that it is hidden on narrow screens */}}
-				{{ "<!-- links -->" | safeHTML }}
-				<div class="hide-lg">
-					<section id="links" class="justify-left">
-						<header>
-						    <p>Les sites que je soutiens</p>
-						</header>
+			{{/* RSS link */}}
+			{{ "<!-- rss -->" | safeHTML }}
+			<section id="rss">
+				<a rel="alternate" type="application/rss+xml" href="{{ with $.Page.OutputFormats.Get "RSS" }}{{ .Permalink }}{{ end }}" title="RSS" class="button">{{ .button | markdownify }}</a>
+			</section>
+			
+		{{ else if eq .id "links" }}
+		
+			{{/* Generates the links to other sites, enclosed in hide-lg so that it is hidden on narrow screens */}}
+			{{ "<!-- links -->" | safeHTML }}
+			<div class="hide-lg">
+				<section id="links">
+					<header>
+					    <p>Les sites que je soutiens</p>
+					</header>
+					<div class="links space-between">
 						{{ range $.Site.Data.links }}
-						<div class="link">
-							<a href="{{ .link }}">
-					    		<img src="/pictures/links/{{ .picture }}">
-					    		<p>{{ .description }}</p>
-					    	</a>
-						</div>
+							<div class="link">
+								<a href="{{ .link }}">
+						    		<img src="/pictures/links/{{ .picture }}">
+						    		<p>{{ .description }}</p>
+						    	</a>
+							</div>
 						{{ end }}
-					</section>
-				</div>
-				
-			{{ else if eq .id "categories" }}
-			
-				{{/* List of categories */}}
-				{{ "<!-- categories -->" | safeHTML }}
-				<section id="categories">
-				    <ul class="posts text-small">
-						{{ range $.Site.Taxonomies.categories.ByCount }}
-					        <li>
-								<a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a>
-								<span style="float:right;">{{ .Count }}</span>
-							</li>
-					   {{ end }}
-				    </ul>
+					</div>
 				</section>
-				
-			{{ else if eq .id "copyright" }}
+			</div>
 			
-				{{/* Copyright notice */}}
-				{{ "<!-- copyright -->" | safeHTML }}
-				<section id="copyright">
-					{{ with .text }}
-						<p class="copyright">{{ . | markdownify }}</p>
-					{{ end }}
-				</section>
-				
-			{{ else }}
-			
-				{{/* Default rendering is blurb, with optional text and button */}}
-				{{ "<!-- blurb -->" | safeHTML }}
-				<section id="{{ .id }}" class="blurb">
-					{{ with .text }}
-				    	<p>{{ . | markdownify }}</p>
-					{{ end }}
-					{{ with .button }}
-				        <a href="/about/" class="button">{{ . | markdownify }}</a>
-					{{ end }}
-				</section>
+		{{ else if eq .id "categories" }}
 		
-			{{ end }}
+			{{/* List of categories */}}
+			{{ "<!-- categories -->" | safeHTML }}
+			<section id="categories">
+			    <ul class="posts text-small">
+					{{ range $.Site.Taxonomies.categories.ByCount }}
+				        <li>
+							<a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a>
+							<span style="float:right;">{{ .Count }}</span>
+						</li>
+				   {{ end }}
+			    </ul>
+			</section>
+			
+		{{ else if eq .id "copyright" }}
+		
+			{{/* Copyright notice */}}
+			{{ "<!-- copyright -->" | safeHTML }}
+			<section id="copyright">
+				{{ with .text }}
+					<p class="copyright">{{ . | markdownify }}</p>
+				{{ end }}
+			</section>
+			
+		{{ else }}
+		
+			{{/* Default rendering is blurb, with optional text and button */}}
+			{{ "<!-- blurb -->" | safeHTML }}
+			<section id="{{ .id }}" class="blurb">
+				{{ with .text }}
+			    	<p>{{ . | markdownify }}</p>
+				{{ end }}
+				{{ with .button }}
+			        <a href="/about/" class="button">{{ . | markdownify }}</a>
+				{{ end }}
+			</section>
 	
 		{{ end }}
-	</aside>
-</div>
+
+	{{ end }}
+</aside>
 {{ "<!-- partials:aside:end -->" | safeHTML }}
