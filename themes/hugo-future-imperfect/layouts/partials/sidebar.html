@@ -1,53 +1,53 @@
-<!-- The bar on the left on large view, or at the bottom of the site on narrow view -->
+{{/* The bar on the left on large view, or at the bottom of the site on narrow view */}}
 
-{{ "<!-- layouts:partials:sidebar -->" | safeHTML }}
+{{ "<!-- partials:sidebar -->" | safeHTML }}
 <section id="sidebar">
+
+	{{/* Intro text in sidebar */}}
 	<section class="blurb">
 	    <p>{{ with .Site.Params.intro.about }}{{ . | markdownify }}{{ end }}</p>
 	        <a href="/about/" class="button">{{ with .Site.Params.localized.button.about }}{{ . | markdownify }}{{ end }}</a>
 			<br /><br />
 	    <p>{{ with .Site.Params.intro.contact }}{{ . | markdownify }}{{ end }}</p>  
 	</section>{{ "<!-- blurb -->" | safeHTML }}
+
+	{{/* Generates the links to other sites */}}
 	<div class="hide-lg">
 		<section id="links" class="justify-left">
 			<header>
 			    <p>Les sites que je soutiens</p>
 			</header>
-			{{- range .Site.Data.links }}		
+			{{ range .Site.Data.links }}		
 			<div class="link">
 				<a href="{{ .link }}">
 		    		<img src="/pictures/links/{{ .picture }}">
 		    		<p>{{ .description }}</p>
 		    	</a>
 			</div>
-			{{- end }}
+			{{ end }}
 		</section>{{ "<!-- links -->" | safeHTML }}
 	</div>
-	    <section id="rss">
+	
+	{{/* RSS link */}}
+    <section id="rss">
 		<a rel="alternate" type="application/rss+xml" href=" {{ with .OutputFormats.Get "RSS" }}{{ .RelPermalink }}{{ end }}" title="RSS" class="button">{{ with .Site.Params.localized.button.rss }}{{ . | markdownify }}{{ end }}</a>					        
-	    </section>{{ "<!-- intro -->" | safeHTML }}
-    {{- if ne ($.Scratch.Get "showCategories") false }}
+    </section>{{ "<!-- rss -->" | safeHTML }}
+	
+	{{/* List of categories */}}
     <section id="categories">
         <ul class="posts">
-            {{- if .Site.Params.categoriesByCount }}
-                {{- $.Scratch.Set "categories" .Site.Taxonomies.categories.ByCount }}
-            {{- else }}
-                {{- $.Scratch.Set "categories" .Site.Taxonomies.categories.Alphabetical }}
-            {{- end }}
-            {{- range $key, $value := $.Scratch.Get "categories" }}
-            <li>
-                <article>
-                    <header>
-                        <a href="/categories/{{ $value.Name | urlize }}/" class="text-small">{{ $value.Name }}</a>
-                        <span style="float:right;" class="text-small">{{ $value.Count }}</span>
-                    </header>
-                </article>
-            </li>
-            {{- end }}
+		    {{ range .Site.Taxonomies.categories.ByCount }}
+		        <li class="text-small">
+					<a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a>
+					<span style="float:right;">{{ .Count }}
+				</li>
+		   {{ end }}
         </ul>
     </section>{{ "<!-- categories -->" | safeHTML }}
-    {{- end }}
+	
+	{{/* And final copyright footer */}}
     <section id="footer">
         <p class="copyright">{{ with .Site.Params.footer.copyright }}{{ . | markdownify }}{{ end }}</p>
     </section>{{ "<!-- footer -->" | safeHTML }}
+	
 </section>{{ "<!-- sidebar -->" | safeHTML }}
