@@ -36,7 +36,7 @@
 	{{/* List of categories */}}
     <section id="categories">
         <ul class="posts">
-		    {{ range .Site.Taxonomies.categories.ByCount }}
+		    {{ range $.Site.Taxonomies.categories.ByCount }}
 		        <li class="text-small">
 					<a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a>
 					<span style="float:right;">{{ .Count }}
