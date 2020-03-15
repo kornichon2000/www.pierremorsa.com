@@ -1,7 +1,17 @@
 {{ "<!-- _default:baseof.html -->" | safeHTML }}
-{{ partial "header" . }}
-{{ partial "navbar" . }}
-	{{ block "main" . }}
-	{{ end }}
-    {{ partial "sidebar" . }}
-{{ partial "footer" . }}
+<!DOCTYPE HTML>
+<html lang="fr">
+	{{ partial "head" . }}
+    <body>
+        <div id="wrapper">			
+			{{ partial "topbar" . }}
+			<div id="main">
+				<main>
+					{{ block "main" . }}
+					{{ end }}
+				</main>
+			</div>{{ "<!-- main -->" | safeHTML }}
+			{{ partial "aside" . }}
+        </div>{{ "<!-- wrapper -->" | safeHTML }}
+    </body>        
+</html>

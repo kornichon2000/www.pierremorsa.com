@@ -1,7 +1,8 @@
-{{ "<!-- _default:article -->" | safeHTML }}
+{{ "<!-- _default:article:start -->" | safeHTML }}
 <article class="post">
-	{{ .Render "title" }}
+	{{ .Render "article-header" }}
 	<div id="content">
 		{{ .Content }}
     </div>
 </article>
+{{ "<!-- _default:article:end -->" | safeHTML }}

@@ -1,6 +1,5 @@
 {{ define "main" }}
-	{{ "<!-- _default:list.html -->" | safeHTML }}
-	<div id="main">
+	{{ "<!-- _default:list.html:start -->" | safeHTML }}
 	{{ $paginator := .Paginate (where .Site.RegularPages "Type" "post") }}
 	{{ $.Scratch.Set "count" 0 }}
 	{{ range $paginator.Pages }}
@@ -12,5 +11,5 @@
 		{{ end }}
 	{{ end }}
 	{{ partial "pagination" . }}
-	</div>{{ "<!-- main -->" | safeHTML }}
+	{{ "<!-- _default:list.html:end -->" | safeHTML }}
 {{ end }}

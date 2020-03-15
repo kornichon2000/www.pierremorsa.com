@@ -1,17 +1,27 @@
 {{/* The bar on the left on large view, or at the bottom of the site on narrow view */}}
 
-{{ "<!-- partials:sidebar -->" | safeHTML }}
-<section id="sidebar">
+{{ "<!-- partials:aside:start -->" | safeHTML }}
+<aside>
 
-	{{/* Intro text in sidebar */}}
-	<section class="blurb">
-	    <p>{{ with .Site.Params.intro.about }}{{ . | markdownify }}{{ end }}</p>
-	        <a href="/about/" class="button">{{ with .Site.Params.localized.button.about }}{{ . | markdownify }}{{ end }}</a>
-			<br /><br />
-	    <p>{{ with .Site.Params.intro.contact }}{{ . | markdownify }}{{ end }}</p>  
-	</section>{{ "<!-- blurb -->" | safeHTML }}
+	<section id="about" class="blurb">
+		{{ with .Site.Params.aside.about.text }}
+	    	<p>{{ . | markdownify }}</p>
+		{{ end }}
+		{{ with .Site.Params.aside.about.button }}
+	        <a href="/about/" class="button">{{ . | markdownify }}</a>
+		{{ end }}
+	</section>{{ "<!-- about -->" | safeHTML }}
+	
+	<section id="contact" class="blurb">
+		{{ with .Site.Params.aside.contact.text }}
+	    	<p>{{ . | markdownify }}</p>
+		{{ end }}
+		{{ with .Site.Params.aside.contact.button }}
+	        <a href="/about/" class="button">{{ . | markdownify }}</a>
+		{{ end }}	
+	</section>{{ "<!-- contact -->" | safeHTML }}
 
-	{{/* Generates the links to other sites */}}
+	{{/* Generates the links to other sites, enclosed in hide-lg so that it is hidden on narrow screens */}}
 	<div class="hide-lg">
 		<section id="links" class="justify-left">
 			<header>
@@ -35,9 +45,9 @@
 	
 	{{/* List of categories */}}
     <section id="categories">
-        <ul class="posts">
+        <ul class="posts text-small">
 		    {{ range $.Site.Taxonomies.categories.ByCount }}
-		        <li class="text-small">
+		        <li>
 					<a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a>
 					<span style="float:right;">{{ .Count }}
 				</li>
@@ -47,7 +57,10 @@
 	
 	{{/* And final copyright footer */}}
     <section id="footer">
-        <p class="copyright">{{ with .Site.Params.footer.copyright }}{{ . | markdownify }}{{ end }}</p>
+		{{ with .Site.Params.aside.copyright.text }}
+			<p class="copyright">{{ . | markdownify }}</p>
+		{{ end }}
     </section>{{ "<!-- footer -->" | safeHTML }}
 	
-</section>{{ "<!-- sidebar -->" | safeHTML }}
+</aside>
+{{ "<!-- partials:aside:end -->" | safeHTML }}

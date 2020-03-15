@@ -1,12 +1,9 @@
 {{ define "main" }}
 	{{ "<!-- taxonomy:category:start -->" | safeHTML }}
-	<div id="main">
-		{{/* Page title (category name) */}}
-	    <h1>{{ .Title }}</h1>
-		{{ range .Paginator.Pages }}
-			{{ .Render "article-summary" }}
-		{{ end }}
-		{{ partial "pagination" . }}
-	</div>{{ "<!-- main -->" | safeHTML }}
+    <h1>{{ .Title }}</h1> {{/* Page title (category name) */}}
+	{{ range .Paginator.Pages }}
+		{{ .Render "article-summary" }}
+	{{ end }}
+	{{ partial "pagination" . }}
 	{{ "<!-- taxonomy:category:end -->" | safeHTML }}
 {{ end }}

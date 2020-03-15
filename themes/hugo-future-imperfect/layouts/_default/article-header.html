@@ -1,6 +1,4 @@
-{{/* Title */}}
-
-{{ "<!-- _default:header -->" | safeHTML }}
+{{ "<!-- _default:article-header:start -->" | safeHTML }}
 <header>
     <div class="title">
         <h2><a href="{{ .RelPermalink }}">{{ .Title  | markdownify  }}</a></h2>
@@ -13,3 +11,4 @@
         <time class="published" datetime='{{ ($.Scratch.Get "dateType").Format "2006-01-02" }}'>{{ ($.Scratch.Get "dateType").Format "2006-01-02" }}</time>
     </div>{{ "<!-- meta -->" | safeHTML }}
 </header>
+{{ "<!-- _default:article-header:end -->" | safeHTML }}

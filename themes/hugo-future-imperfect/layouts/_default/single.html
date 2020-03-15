@@ -1,6 +1,5 @@
 {{ define "main" }}
-	{{ "<!-- layouts:_default:single -->" | safeHTML }}
-    <div id="main">
-		{{ .Render "article" }}
-	</div>
+	{{ "<!-- _default:single:start -->" | safeHTML }}
+    {{ .Render "article" }}
+	{{ "<!-- _default:single:end -->" | safeHTML }}
 {{ end }}
