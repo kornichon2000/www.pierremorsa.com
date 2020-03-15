@@ -1,4 +1,4 @@
-<!-- This partial is used by the img shortcodes and the template,
+{{/* This partial is used by the img shortcodes and the template,
      featured in the post type
 
      Set the path depending on the value passed through
@@ -7,8 +7,8 @@
      if path is date then it will format the directory to year/date i.e. 2006/01
      Note: path will be concatenated to the root directory, img
 
-     otherwise use the explicit path provided by the user
--->
+     otherwise use the explicit path provided by the user */}} 
+
 {{ $path := $.Scratch.Get "path" }}
 {{ $structType := $.Scratch.Get "structType" }}
 

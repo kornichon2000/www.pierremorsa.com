@@ -1,7 +1,5 @@
-{{ "<!-- layouts:tayonomy:category.terms -->" | safeHTML }}
-{{ partial "header" . }}
-{{ partial "navbar" . }}
-    <!-- Main -->
+{{ define "main" }}
+	{{ "<!-- categories:category.terms -->" | safeHTML }}
     <div id="main">
         {{ if .Site.Params.categoriesByCount }}
             {{ $.Scratch.Set "categories" .Data.Terms.ByCount }}
@@ -28,5 +26,4 @@
     </div>
 
     {{ $.Scratch.Set "showCategories" false }}
-    {{ partial "sidebar" . }}
-{{ partial "footer" . }}
+{{ end }}
