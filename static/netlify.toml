@@ -1,0 +1,13 @@
+# Build should be the global context
+[build]
+  HUGO_VERSION = "0.67.0"
+
+[context.production.environment]
+  command = "hugo"
+    
+[context.deploy-preview.environment]
+  command = "hugo --buildFuture"
+
+# Used to test future versions of the blog    
+[context.future]
+  command = "hugo --buildFuture"

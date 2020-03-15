@@ -17,4 +17,4 @@ Réunissant toutes vos forces, vous vous remémorez les conseils de votre sensei
 
 Si vous manquez vraiment de place, le mieux est de vous fabriquer un mini-bureau dans une boîte (car vous aimez votre boîte, ha ha) que vous dépliez pour travailler puis que vous rangez lorsque vous avez fini votre journée de travail. Si vous êtes dans un environnement bruyant, utilisez un casque, même sans musique, le mieux étant dans ce cas d’utiliser un de ces casques à réduction de bruit active. L’objectif est de pouvoir créer un lieu où l’on se met automatiquement en état d'esprit « travail » et de pouvoir faire disparaître ce lieu lorsqu’on ne travaille pas pour éviter qu’il ne pollue votre vie privée. À vous de trouver la solution qui vous convient.
 
-Suite au prochain épisode.
+Suite au prochain épisode : t’es un killer Berthier.
