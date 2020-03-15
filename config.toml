@@ -65,3 +65,10 @@ paginate				= 5
 			id			= "copyright"
 			text		= "Site garanti sans cookies et sans JavaScript. Le contenu est en copie libre : vous pouvez tout copier et réutiliser librement. "
 
+[related]
+	threshold = 100
+	includeNewer = true
+	toLower = true
+	[related.indices]
+		name = "categories"
+	    weight = 100

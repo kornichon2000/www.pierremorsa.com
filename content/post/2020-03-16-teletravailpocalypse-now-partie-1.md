@@ -2,7 +2,7 @@
 date        = "2020-03-16"
 title       = "Télétravailpocalypse Now (partie I)"
 author      = "Pierre Morsa"
-categories  = [ "Lifehacks" ]
+categories  = [ "Lifehacks", "GTD Getting Things Done" ]
 draft       = false
 +++
 2020, jungle de Créteil, quelque part entre un Starbucks et le kebab du coin. On vient de vous parachuter du jour au lendemain en plein télétravail. Loin du bruit rassurant de la machine à café et des cris du patron, vous vous retrouvez livré à vous-même, face à l’inconnu, aux cannibales affamés et à ce putain de fil Facebook où les gens n’arrêtent pas de poster des trucs. Vous vous rappelez votre entraînement en école de ~~survie~~ commerce. Vous croyiez que boire des mètres de bière en soirée étudiante vous avait préparé à tout affronter. Mais là, c’est la réalité du terrain : rien, rien, rien ne vous avait préparé à affronter le télétravail. C’est la merde.
