@@ -30,10 +30,13 @@ paginate				= 5
 	# Order elements as you want them to see in the sidebar
 	# Special sections:
 	# - links
+	#	- id, text, no button
 	# - rss
+	#	- id, no text, button
 	# - categories
+	#	- id only
 	# - copyright
-	
+	#	- id, text, no button
 	[params.aside]
 
 		[params.aside.001]
