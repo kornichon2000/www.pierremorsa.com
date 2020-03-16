@@ -25,7 +25,7 @@ body {
     -webkit-text-size-adjust: none;
     -ms-overflow-style: scrollbar;
     background: #f4f4f4;
-    padding-top: 6em;
+    padding-top: 128px; /* necessary so body starts below topbar */
 }
 
 body.is-loading * , body.is-loading * :before, body.is-loading * :after {
@@ -325,7 +325,7 @@ dl dd {
     align-items: center;
     background-color: #ffffff;
     border-bottom: solid 1px rgba(160, 160, 160, 0.3);
-    height: 6em;
+    height: 128px;
     position: fixed;
     left: 0;
     top: 0;
@@ -367,10 +367,14 @@ dl dd {
 
 /* @group flexbox wrapper and children main and aside */
 
-.wrapper, .post, .blurb, ul.actions li {
-	margin: 1.5em; /* adapt margins here */
+.wrapper {
+	margin: 3em 0 0 3em; /* trbl set top and left margins on flexbox wrapper */
 	padding: 0;
 }
+
+.post, .blurb, ul.actions li {
+ 	margin: 0 3em 3em 0; /* trbl set right and bottom margins children */
+ }
 
 .wrapper {
     display: flex;
@@ -384,26 +388,11 @@ dl dd {
 main {
 	flex: 1;
     flex-grow: 1; /* main, the part containing the articles, can grow */
-	margin-top: 1.5em;
 	max-width: 960px;
 }
 
 aside {
-	flex: 0 0 320px;
-	flex-grow: 0; /* the side column cannot grow */
-	margin-top: 1.5em;
-}
-
-aside > * {
-	/* How all items inside aside behave */
-    padding: 2em 0 0 0;
-}
-
-aside > :first-child {
-	/* how the first child inside aside behaves */
-    border-top: 0;
-    margin-top: 0;
-    padding-top: 0;
+	flex: 0 0 320px; /* grow shrink basis */
 }
 
 .blurb {
@@ -462,12 +451,9 @@ aside > :first-child {
 
 .post > header .meta .published {
     color: #bbbbbb;
-    display: block;
-    font-family: Helvetica, sans-serif;
-    font-size: 0.7em;
+    font-size: 0.75em;
     font-weight: 800;
     letter-spacing: 0.25em;
-    margin-top: 0.5em;
     text-transform: uppercase;
     white-space: nowrap;
 }
@@ -493,8 +479,12 @@ ul.posts {
 
 @media screen and (max-width:980px) {
 
-	.wrapper, .post, .blurb, ul.actions li {
-		margin: 0.75em;
+	.wrapper {
+		margin: 1.5em 0 0 1.5em;
+	}
+
+	.post, .blurb, ul.actions li {
+		margin: 0 1.5em 1.5em 0;
 	}
 	
 	.wrapper {
@@ -503,7 +493,6 @@ ul.posts {
 	}
 
 	aside {
-		border-top: 1px solid #3b3b3b;
 		padding-top: 2em;
 		flex-grow: 1;
 	}
