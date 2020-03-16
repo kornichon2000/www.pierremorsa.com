@@ -1,5 +1,7 @@
 {{ define "main" }}
 	{{ "<!-- _default:single:start -->" | safeHTML }}
-    {{ .Render "article" }}
+	<main>
+		{{ .Render "article" }}
+	</main>
 {{ "<!-- _default:single:end -->" | safeHTML }}
 {{ end }}

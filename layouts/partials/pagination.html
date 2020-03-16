@@ -3,7 +3,7 @@
 {{ "<!-- partials:pagination -->" | safeHTML }}
 <nav>
 	<div id="navigation">
-		<ul class="actions pagination">
+		<ul class="actions">
 		    {{ if .Paginator.HasPrev }}
 		    	<li><a href="{{ .Paginator.Prev.URL }}" class="button">{{ .Site.Params.nav.previous }}</a></li>
 		    {{ else }}
