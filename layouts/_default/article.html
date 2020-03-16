@@ -1,10 +1,10 @@
 {{ "<!-- _default:article:start -->" | safeHTML }}
 <article class="post">
 	{{ .Render "article-header" }}
-	<div id="content">
+	<div class="content">
 		{{ .Content }}
     </div>
- 	<div id="related">
+ 	<div class="related">
 	{{ $related := $.Site.RegularPages.Related . | first 5 }}
 	{{ with $related }}
 		<h3>Articles liés</h3>
