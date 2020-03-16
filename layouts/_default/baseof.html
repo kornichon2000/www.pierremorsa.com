@@ -5,10 +5,8 @@
     <body>
 		{{ partial "topbar" . }}
         <div class="wrapper">			
-				<main>
-					{{ block "main" . }}
-					{{ end }}
-				</main>
+			{{ block "main" . }}
+			{{ end }}
 			{{ partial "aside" . }}
         </div>{{ "<!-- wrapper -->" | safeHTML }}
     </body>        
