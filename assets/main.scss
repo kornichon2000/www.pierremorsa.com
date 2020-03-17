@@ -323,8 +323,6 @@ dl dd {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #ffffff;
-    border-bottom: solid 1px rgba(160, 160, 160, 0.3);
     height: 128px;
     position: fixed;
     left: 0;
@@ -333,32 +331,31 @@ dl dd {
     z-index: 10000;
 }
 
-#topbar a {
+.topbar-style {
+	background-color: #ffffff;
+    border-bottom: solid 1px rgba(160, 160, 160, 0.3);
+}
+
+.topbar-style a {
     color: inherit;
     text-decoration: none;
     border: none;
-    padding: 0;
-    margin: 0;
 }
 
-#topbar h1 {
+.topbar-style h1 {
     padding: 0;
     margin: 0;
     white-space: nowrap;
 }
 
-#topbar h1 a {
-	color: #bbbbbb;
-}
-
 @media screen and (max-width:980px) {   
-    #topbar h1 {
+    .topbar-style h1 {
     	font-size: 0.7em;
     }
 }
 
 @media screen and (max-width:320px) {   
-    #topbar h1 {
+    .topbar-style h1 {
     	font-size: 0.5em;
     }
 }
@@ -367,37 +364,33 @@ dl dd {
 
 /* @group flexbox wrapper and children main and aside */
 
-.wrapper {
-	margin: 3em 0 0 3em; /* trbl set top and left margins on flexbox wrapper */
-	padding: 0;
-}
-
-.post, .blurb, ul.actions li {
- 	margin: 0 3em 3em 0; /* trbl set right and bottom margins children */
- }
-
-.wrapper {
+.flex-grandparent {
+	/* main flex around main and aside */
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
     align-items: flex-start;
-    transition: opacity 0.5s ease;
-    opacity: 1;
+	margin: 3em 0 0 3em; /* trbl set top and left margins on flexbox wrapper */
+	padding: 0;
 }
 
-main {
+.flex-parent-main {
+	/* secondary flex for main */
 	flex: 1;
-    flex-grow: 1; /* main, the part containing the articles, can grow */
+    flex-grow: 1; /* main, the part containing the articles can grow horizontally */
 	max-width: 960px;
 }
 
-aside {
-	flex: 0 0 320px; /* grow shrink basis */
+.flex-parent-aside {
+	/* secondary flex for aside */
+	flex: 0 0 320px; /* no grow, no shrink, fixed basis */
 }
 
-.blurb {
-	padding: 0;
-}
+.layout-module {
+	/* layout block inside flex-(grand)parent */
+	/* not called flex- because it's not a flexbox */
+	margin: 0 3em 3em 0; /* trbl set right and bottom margins on children */
+ }
 
 .blurb h2 {
     font-size: 0.8em;
@@ -415,19 +408,16 @@ aside {
 .post {
 	display: flex;
 	flex-direction: column;
+}
+
+.post-style {	
     background: #ffffff;
     border: solid 1px rgba(160, 160, 160, 0.3);
 }
 
-.post:first-child {
-	/* remove top margin for first post */
-    margin-top: 0;
-}
-
-.post > header {
+.post header {
     display: flex;
 	flex-direction: column;
-    border-bottom: solid 1px rgba(160, 160, 160, 0.3);
     position: relative;
 	padding-top: 3em;
 	padding-left: 3em;
@@ -435,21 +425,25 @@ aside {
 	padding-bottom: 2em;
 }
 
-.post > header .title {
+.post header .title {
     flex-grow: 1;
 }
 
-.post > header .title h2 {
+.post-header-style {
+    border-bottom: solid 1px rgba(160, 160, 160, 0.3);	
+}
+
+.post-header-title-style {
     font-weight: 900;
     font-size: 1.5em;
 	margin-bottom: 0;
 }
 
-.post > header .meta {
+.post header .meta {
     text-align: left;
 }
 
-.post > header .meta .published {
+.post header .meta .published {
     color: #bbbbbb;
     font-size: 0.75em;
     font-weight: 800;
@@ -458,14 +452,14 @@ aside {
     white-space: nowrap;
 }
 
-.post > .content {
+.post-content {
 	padding-top: 3em;
 	padding-left: 3em;
 	padding-right: 3em;
 	padding-bottom: 3em;
 }
 
-.post > .related {
+.post-related {
 	padding-top: 0em;
 	padding-left: 3em;
 	padding-right: 3em;
@@ -479,59 +473,56 @@ ul.posts {
 
 @media screen and (max-width:980px) {
 
-	.wrapper {
-		margin: 1.5em 0 0 1.5em;
-	}
-
-	.post, .blurb, ul.actions li {
-		margin: 0 1.5em 1.5em 0;
-	}
-	
-	.wrapper {
+	.flex-grandparent {
 		flex-direction: column;
 		align-items: stretch;
+		margin: 1.5em 0 0 1.5em;
 	}
-
-	aside {
+	
+	.flex-parent-aside {
 		padding-top: 2em;
 		flex-grow: 1;
 	}
-		
+	
+	.layout-module {
+		margin: 0 1.5em 1.5em 0;
+	}
+	
 	.post {
         border-left: 0;
         border-right: 0;
     }
 
-    .post > header {
+    .post header {
 		padding-top: 2em;
 		padding-left: 0em;
 		padding-right: 0em;
 		padding-bottom: 1em;
 	}
 
-    .post > header .title {
+    .post header .title {
         text-align: center;
     }
 
-    .post > header .title h2 {
+    .post header .title h2 {
 		font-size: 1em;
     }
 
-    .post > header .meta {
+    .post header .meta {
         align-items: center;
 		flex-direction: column;
         display: flex;
         justify-content: center;
     }
 
-	.post > .content {
+	.post-content {
 		padding-top: 2em;
 		padding-left: 0em;
 		padding-right: 0em;
 		padding-bottom: 1em;
 	}
 
-	.post > .related {
+	.post-related {
 		padding-top: 0em;
 		padding-left: 0em;
 		padding-right: 0em;
@@ -653,14 +644,18 @@ ul.actions li {
 /* @group dark theme */
 
 @media (prefers-color-scheme: dark) {
-    /* Overrides for Dark Mode. */
+
     body, input, select, textarea {
         color: #ddd;
         background: #222;
     }
 	
-	#topbar {
+	.topbar-style {
 		background: #222;
+	}
+	
+	.topbar-style h1 a {
+		color: #bbbbbb;
 	}
 
 	.post {

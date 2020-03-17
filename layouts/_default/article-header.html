@@ -1,7 +1,7 @@
 {{ "<!-- _default:article-header:start -->" | safeHTML }}
-<header>
+<header class="post-header-style">
     <div class="title">
-        <h2><a href="{{ .RelPermalink }}">{{ .Title  | markdownify  }}</a></h2>
+        <h2 class="post-header-title-style"><a href="{{ .RelPermalink }}">{{ .Title  | markdownify  }}</a></h2>
         {{ with .Description }}
         <p>{{ . }}</p>
         {{ end }}

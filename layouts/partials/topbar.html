@@ -1,7 +1,7 @@
 {{/* Navigation bar on top, actually just the blog title with the circle pic */}}
 
 {{ "<!-- partials:topbar:start -->" | safeHTML }}
-<section id="topbar">
+<section id="topbar" class="topbar-style">
     {{ with .Site.Params.avatar }}
 		<a href="/"><img src="{{ .src }}" class="intro-circle" width="48" alt="{{ .alt }}" /></a>
     {{ end }}
