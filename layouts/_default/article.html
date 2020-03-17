@@ -1,10 +1,10 @@
 {{ "<!-- _default:article:start -->" | safeHTML }}
-<article class="post">
+<article class="layou-module post post-style">
 	{{ .Render "article-header" }}
-	<div class="content">
+	<div class="post-content">
 		{{ .Content }}
     </div>
- 	<div class="related">
+ 	<div class="post-related">
 	{{ $related := $.Site.RegularPages.Related . | first 5 }}
 	{{ with $related }}
 		<h3>Articles liés</h3>

@@ -4,10 +4,14 @@
 	{{ partial "head" . }}
     <body>
 		{{ partial "topbar" . }}
-        <div class="wrapper">			
-			{{ block "main" . }}
-			{{ end }}
-			{{ partial "aside" . }}
+        <div class="flex-grandparent">
+			<div class="flex-parent-main">
+				{{ block "main" . }}
+				{{ end }}
+			</div>
+			<div class="flex-parent-aside">
+				{{ partial "aside" . }}
+			</div>
         </div>{{ "<!-- wrapper -->" | safeHTML }}
     </body>        
 </html>

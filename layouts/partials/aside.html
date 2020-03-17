@@ -3,7 +3,7 @@
 {{ "<!-- partials:aside:start -->" | safeHTML }}
 <aside>
 	{{ range .Site.Params.aside }}
-		<div class="blurb">	
+		<div class="layout-module blurb">	
 			{{ if eq .id "rss" }}
 				
 				{{/* RSS link */}}
