@@ -23,39 +23,234 @@ Download and uncompress the OmniFocusLibrary.scpt file. Copy it to ~/Library/Scr
 Download and uncompress the Keyboard Maestro Actions. Copy them to ~/Library/Application Support/Keyboard Maestro/Keyboard Maestro Actions/ — alternatively, drag and drop the .zip archive on the Keyboard Maestro Icon in the Dock.
 Quit and relaunch Keyboard Maestro.
 
-## Available actions
-The pack includes more than 20 actions to automate OmniFocus. Most actions manipulate tasks, but it also offers a templating system. Here is the list of actions, with minimal documentation. They are grouped in several categories:
+## List of available actions
+The pack includes more than 20 actions to automate OmniFocus. Most actions manipulate tasks, but it also offers a templating system. Here is the list of actions, with a basic description of what they do:
 
-* Get list of selected tasks
-* Create a new task
-* Basic task properties
-* Tags
-* Projects
-* Dates
-* Links
-* Sidebar
-* Perspective
-* Templates
-* Open a linked project folder
+* OmniFocus Convert Task To Project: turns a task into a project.
+* OmniFocus Defer To Hour: sets the defer hour of the task. Useful to quickly defer a task to the next morning or afternoon.
+* OmniFocus Do Actions: executes a list of actions configured in the note of the task. You can, for example, open an application or document, start an iTunes playlist, execute a shell script or an applescript. 
+* OmniFocus Due On Hour: sets the due hour of the task. Useful to quickly set the due hour to next morning or afternoon.
+* OmniFocus Get IDs of Selected Tasks: get the list of IDs of currently selected tasks.
+* OmniFocus Get Task Estimated Duration: get the estimated duration of the task.
+* OmniFocus Get Task File Path: get a file path from the note of the task, if it exists.
+* OmniFocus Get Task Mail MessageID: get a Mail Message ID from the note of the task, if it exists.
+* OmniFocus Get Task Name: get the name of the task.
+* OmniFocus Get Task Note: get the note of the task.
+* OmniFocus Get Task Note Field: get a field from the note of the task.
+* OmniFocus Get Task Primary Tag: get the primary tag (main tag) of the task.
+* OmniFocus Get Task Project: get the project of the task.
+* OmniFocus Get Task Project Code: get the project code of the task.
+* OmniFocus Get Task Tag List: get all tags from the task.
+* OmniFocus Insert Template: insert a list of template actions in a project.
+* OmniFocus Make Task: make a new task.
+* OmniFocus Open Project Folder: open the project folder of the task.
+* OmniFocus Set Perspective: set the current perspective in OmniFocus.
+* OmniFocus Set Sidebar Selection: (de)selects the items, tags or projects, in the sidebar tree.
+* OmniFocus Set Task Name: set the name of the task.
+* OmniFocus Set Task Primary Tag: set the primary tag of the task.
+* OmniFocus Set Task Project: set the project of the task.
+* OmniFocus Set Task Status: set the status of the task.
+* OmniFocus Set Task Tag List: set the list of tags of the task.
+
+## How to use the Action Pack? Real life examples
+
+### Create a palette to set the primary tag
+
+### Change the perspective based on time of day
+
+### Set up your work environment when starting a task
+
+### Use a template for the creation of a document 
+
+### Get a list of links to currently selected task in MarkDown format
 
 
-### Get list of selected tasks
+## Actions Reference
 
-* OmniFocus Get IDs of Selected Tasks: get the list of IDs of currently selected tasks, as a text list. Each ID can then be individually processed with a "For Each" loop in Keyboard Maestro.
+### OmniFocus Defer to Hour
+OmniFocus Defer to Hour sets the selected task's Defer Hour. Useful to quickly defer a task to the next morning or afternoon. 
 
-For most actions, you don't need to first get the list of selected tasks. Get actions, such as get task name, will act on the first selected task if no ID is specified. Set actions, such as set task name, will act on the specified task: first selected, last selected, all selected tasks, task with ID specified.
+* If there is no defer date, sets it to the next future occurence of the specified hour. 
+* If the defer date was in the past, sets it to the next future occurence of the specified hour. 
+* If the defer date is already in the future, only change the hour.
 
-### Create a new task
+### OmniFocus Do Actions
+Note: this is not very well documented yet. I plan to complete the documentation when I have the time.
 
-* OmniFocus Make Task: make a new OmniFocus task. You can specify its name, note, context name and project name.
+OmniFocus Do Actions executes the list of actions in the note of the task. Possible actions are:
 
-### Basic task properties
+* shellscript: executes a shell script command.
+* applescript: executes an AppleScript file.
+* kmmacro: executes a Keyboard Maestro macro.
+* open: opens a file.
+* activate: activates an application.
+* run: runs an application (without bringing it to the front).
+* quit: quits an application.
+* pause: pauses the execution of actions for x seconds.
+* playlist: plays a playlist in iTunes.
 
-* OmniFocus Get Task Name: get the name of the specified task.
-* OmniFocus Get Task Note: get the note of the specified task.
-* OmniFocus Set Task Name: set the name of the specified tasks.
+There are two possible action groups:
 
-For some strange reason (laziness, really) I didn't create an OmniFocus Set Task Note action. If you need it, ping me.
+* "on start:" (written exactly on start: including the space after on and the : after start): a list of actions to execute when you start the action.
+* "on complete:": a list of actions to execute when you complete the action.
+
+Actions listed outside of these groups will not be executed.
+
+Example 1
+
+```
+This is some text in the notes. It's not in an action group and will not execute anything.
+
+on start:
+"IA Writer" activate
+"Tweetbot" quit
+
+on complete:
+"IA Writer" quit
+```
+
+The text above on start: and on complete: will not do anything. The actions after on start: will activate the application IA Writer and quit Tweetbot. The actions after on complete: will quit IA Writer.
+
+Tip: setting up on start: and on complete: actions for one time tasks is tedious and probably not worth it. It's really useful for repeating actions or template actions. See OmniFocus Insert Template to learn more about the templating system that comes with the Action Pack.
+
+### OmniFocus Due on Hour
+OmniFocus Defer to Hour sets the selected task's due Hour. 
+
+* If there is no due date, sets it to the next future occurence of the specified hour.
+* If the due date was in the past, sets it to the next future occurence of the specified hour. 
+* If the due date is already in the future, only change the hour.
+
+### OmniFocus Get IDs of selected tasks
+OmniFocus Get IDs of Selected Tasks gets the list of IDs of currently selected tasks, as a text list. Each ID can then be individually processed with a "For Each" loop in Keyboard Maestro.
+
+Tip 1 : for most actions, you don't need to first get the list of selected tasks. OmniFocus Get... actions, such as OmniFocus Get Task Name, automatically get the first selected task if no ID is specified. OmniFocus Set actions, such as OmniFocus Set Task Name, will act on the specified task: first selected, last selected, all selected tasks, task with ID specified.
+
+Tip 2 : you can use the list of IDs to build links to the task, with the format omnifocus:///task/ID. Here is an example to create a full set of links in MarkDown format.
+
+
+### OmniFocus Get Task...
+OmniFocus Get Task... actions get the properties of a task, either the first selected task or the task with a specific ID.
+
+These actions are very simple and should not require a lot of explanations:
+
+* OmniFocus Get Task Estimated Duration: get the estimated duration of the task.
+* OmniFocus Get Task Name: get the name of the task.
+* OmniFocus Get Task Note: get the note of the task.
+* OmniFocus Get Task Primary Tag: get the primary tag (main tag) of the task.
+* OmniFocus Get Task Project: get the project of the task.
+* OmniFocus Get Task Tag List: get all tags from the task, each tag separated by a new line.
+
+The following Get actions are not standard.
+
+* OmniFocus Get Task File Path: get a file path from the note of the task, if it exists.
+
+* OmniFocus Get Task Mail MessageID: get a Mail Message ID from the note of the task, if it exists.
+* OmniFocus Get Task Note Field: get a field from the note of the task.
+* OmniFocus Get Task Project Code: get the project code of the task.
+
+### OmniFocus Insert Template
+Templates should really be a standard functionality of OmniFocus. Because there is no such functionality, I created my own version: OmniFocus Insert Template.
+
+#### Setup
+The OmniFocus Insert Template action requires a bit of setup:
+
+1. In the projects tree, create a folder named "templates" (all lowercase). This folder will contain your templates. It can have the Active or Dropped status, it doesn't matter.
+2. In that folder, create projects that will be used as task templates.
+
+For example, you create the folder template, then inside you create projects that are the actual templates.
+
+```
+templates (folder)
+	Document (project)
+		Subtask 1
+		Subtask 2
+	Invoice (project)
+		Subtask A
+		Subtask B
+		Subtask C
+```
+
+#### Use
+To insert a template, select the parent task or project, then use the Insert Template action. A list of available templates (which is the list of projects in the templates folder) will be displayed in a dialog. If we take the example we used in the setup, you will have the choice between two templates: Document and Invoice. Select the template you want to insert. If for example you select your project "My Project" with two existing tasks and add the template "Invoice" to it, the result will be:
+
+```
+My Project (project)
+	Existing task 1
+	Existing task 2
+	Invoice
+		Subtask A
+		Subtask B
+		Subtask C
+```
+
+If instead of selecting "My Project" you select "Existing task 1", the template will be inserted as a subtask of Existing task 1.
+
+```
+My Project (project)
+	Existing task 1
+		Invoice
+			Subtask A
+			Subtask B
+			Subtask C
+	Existing task 2
+```
+
+#### Tokens
+You can use special tokens in the name of the template tasks: 
+
+* %project% will be replaced by the name of the project the template is inserted in.
+* %parent% will be replaced by the name of the parent task the template is inserted in.
+* %lower% will force the name of the task to be all lowercase.
+* %upper% will force the name of the task to be all uppercase.
+* %version% automatically inserts an incremental version number.
+* %prompt:Prompt text% will display a dialog with "Prompt text" and replace the %prompt:xxx% token with the entered value.  
+* >> everything before the >> sign will not be inserted.
+* << everything after the << sign will not be inserted.
+
+Let's modify our templates as an example.
+
+```
+templates (folder)
+	Document %parent% version %version% %upper%
+		Subtask 1>>Create new document
+		Subtask 2>>Email new document
+	Invoice for %project%
+		Subtask A
+		Subtask B
+		Subtask C
+```
+
+First we insert the "Document" template to the "Event Brochure" subtask of the project "My Project". When This happens, we are prompted to "Enter document name". We enter "Event Brochure". The result is:
+
+```
+My Project
+	Marketing brochure
+		DOCUMENT MARKETING BROCHURE VERSION 1
+			Create new document
+			Email new document
+```
+
+* The name of the parent task was inserted because we used %parent%.
+* A version number was added automatically.
+* The whole task name was turned into uppercase because we used %upper%.
+* The text parts "Subtask 1" and "Subtask 2" were ignored because they were located before the >> sign.
+
+If we add the task template a second time, we will get:
+
+```
+My Project
+	Marketing brochure
+		DOCUMENT MARKETING BROCHURE VERSION 1
+			Create new document
+			Email new document
+		DOCUMENT MARKETING BROCHURE VERSION 2
+			Create new document
+			Email new document
+```
+
+
+### OmniFocus Make Task
+OmniFocus Make Task creates a new OmniFocus task. You can specify its name, note, primary tag and project.
 
 ### Tags (formerly known as contexts):
 
@@ -72,12 +267,6 @@ Because of an AppleScript limitation, tags with non ascii characters, for exampl
 * OmniFocus Get Task Project Name: returns the name of the project of the specified task.
 * OmniFocus Set Task Project: sets the project of the selected task.
 
-### Dates
-
-* OmniFocus Defer to Hour: sets the selected task's Defer Hour. If there is no defer date, sets it to the next future occurence of the specified hour. If the defer date was in the past, sets it to the next future occurence of the specified hour. If the defer date is in the future, only change the hour.
-* OmniFocus Due on Hour: same behaviour as Defer to Hour, but for the due hour.
-
-The dates functions are fairly limited and could be completed with more generic ones. They exist because I often defer a task to the afternoon or morning, and this action provides a quick way to do so.
 
 ### Links
 
@@ -93,23 +282,6 @@ The dates functions are fairly limited and could be completed with more generic 
 
 * OmniFocus Set Perspective: sets the perspective of the front window.
 
-### Templates
-
-* OmniFocus Insert Template: a powerful task template system. See documentation to set it up and use it.
-
-The action pack offers the powerful "OmniFocus Insert Template" action, but it requires a bit of setup.
-
-1. In the projects tree, create a folder named "templates" (all lowercase). This folder will contain all templates. It can have the Active or Dropped status, it doesn't matter.
-2. In that folder, create projects that will be used as task templates.
-
-You can use special tokens in the name of the template tasks: 
-
-* %project% will be replaced by the name of the project the template is inserted in.
-* %parent% will be replaced by the name of the parent task the template is inserted in.
-* %lower% will force the name of the task to be all lowercase.
-* %upper% will force the name of the task to be all uppercase.
-
-To insert a template, select the parent task or project, then use the Insert Template action. A list of available templates (which is the list of projects in the templates folder) will be displayed in a dialog. Select the template you want to insert. It will be added as a child task to the currently selected task or project.
 
 ### Open a linked project folder
 
