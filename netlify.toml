@@ -1,14 +1,14 @@
 # Use standard hugo command for production
 [context.production.environment]
-  HUGO_VERSION = "0.67.0"
+  HUGO_VERSION = "0.69.0"
   command = "hugo"
     
 # Include future articles for preview environment
 [context.deploy-preview.environment]
-  HUGO_VERSION = "0.67.0"
+  HUGO_VERSION = "0.69.0"
   command = "hugo --buildFuture"
 
 # Used to test future versions of the blog    
 [context.future]
-  HUGO_VERSION = "0.67.0"
+  HUGO_VERSION = "0.69.0"
   command = "hugo --buildFuture"
