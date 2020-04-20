@@ -1,9 +1,11 @@
 {{ "<!-- _default:baseof.html -->" | safeHTML }}
 <!DOCTYPE HTML>
 <html lang="fr">
-	{{ partial "head" . }}
+	<head>
+		{{- partial "head" . }}
+	</head>
     <body>
-		{{ partial "topbar" . }}
+		{{- partial "topbar" . }}
         <div class="flex-grandparent">
 			<div class="flex-parent-main">
 				{{ block "main" . }}
