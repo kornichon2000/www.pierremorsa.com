@@ -2,15 +2,13 @@
 	{{ "<!-- _default:list.html:start -->" | safeHTML }}
 	<main>
 		{{- $.Scratch.Set "count" 0 }}
-		{{- $paginator := .Paginator.Pages }}
-		{{- range $paginator }}
-			{{- if eq "post" .Section }}
-				{{- $.Scratch.Add "count" 1 }}
-				{{- .Render "article" }}
-				{{- if eq ($.Scratch.Get "count") 1 }}
-					{{/* <!-- If it's the first article then insert links before second article --> */}}
-					{{- partial "links" . }}
-				{{- end }}
+		{{- $paginator := .Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) }}
+		{{- range $paginator.Pages }}
+			{{- $.Scratch.Add "count" 1 }}
+			{{- .Render "article" }}
+			{{- if eq ($.Scratch.Get "count") 1 }}
+				{{/* <!-- If it's the first article then insert links before second article --> */}}
+				{{- partial "links" . }}
 			{{- end }}
 		{{- end }}
 		{{- partial "pagination" . }}
