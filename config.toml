@@ -9,6 +9,8 @@ languageName				= "Français"
 
 paginate				= 5
 
+
+
 [params]
 
     # Meta tag description
@@ -19,6 +21,9 @@ paginate				= 5
 	    src       		= "/pictures/main/pierre-morsa-avatar.png"
 	    alt				= "Pierre Morsa"
 
+	# Sections whose pages are listed
+	mainSections 		= ["post"]
+	
 	# Pagination buttons
 	[params.nav]
 		previous		= "Plus récents" 
@@ -27,42 +32,33 @@ paginate				= 5
 	# Aside infos, with section id (mandatory), text and button (optional)
 	# Order elements as you want them to see in the sidebar
 	# Special sections:
-	# - links
-	#	- id, text, no button
-	# - rss
-	#	- id, no text, button
-	# - categories
-	#	- id only
-	# - copyright
-	#	- id, text, no button
+	# - links: id, text, no button
+	# - rss: id, no text, button
+	# - categories: id only
+	# - copyright: id, text, no button
 	[params.aside]
-
 		[params.aside.001]
 			id 			= "about"
 		    text  		= "Pierre Morsa est co-fondateur et Creative Cat chez <a href='https://www.pierremorsa.com/ideas-on-stage/'>Ideas on Stage</a>, une agence de création de présentations, formation et coaching à la prise de parole et événements d'entreprise."
-		    button		= "En savoir plus"
-	
+		    button		= "En savoir plus"	
 		[params.aside.002]
 			id 			= "contact"
 			text		= "Pour me contacter écrivez-moi à <br><a href='m&#97;ilt&#111;&#58;&#112;i&#101;r%&#55;&#50;e&#46;%6D&#111;&#114;&#115;%61&#64;p&#109;&#46;m&#101;'>pierre&#46;morsa&#64;&#112;m&#46;m&#101;</a>."
-
 		[params.aside.003]
 			id			= "links"
 			text		= "Les sites que je soutiens"
 			# No button, use /data/links files for links
-			
 		[params.aside.004]
 			id			= "rss"
 			# No text for RSS
 			button		= "S'abonner au fil RSS"
-		
 		[params.aside.005]
 			id			= "categories"
-			
 		[params.aside.006]
 			id			= "copyright"
 			text		= "Site garanti sans cookies et sans JavaScript. Le contenu est en copie libre : vous pouvez tout copier et réutiliser librement. "
 
+# Related content links at bottom of articles
 [related]
 	threshold = 100
 	includeNewer = true
