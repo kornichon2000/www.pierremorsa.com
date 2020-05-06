@@ -2,6 +2,7 @@
 draft = false
 title = "OmniFocus Action Pack for Keyboard Maestro"
 date = "2020-04-20"
+categories = [ "GTD Getting Things Done", "Technomagie", "Mac" ]
 +++
 The OmniFocus Action Pack for Keyboard Maestro is a set of plugin actions to control OmniFocus from Keyboard Maestro. OmniFocus is a top-class task management App from Omni Group. Keyboard Maestro is a wonderful automation app from Peter Lewis. Together, they are a fantastic productivity combo.
 
@@ -23,11 +24,11 @@ If you want to Get/Set projects or tags with special characters in their names, 
 ## Installation
 You need to install three components:
 
-* [The "AppleScriptLibrary" AppleScript library. Click here to download it.](AppleSriptLibrary.zip)
+* [The "AppleScriptLibrary" AppleScript library. Click here to download it.](AppleScriptLibrary.zip)
 * [The "OmniFocusLibrary" AppleScript library. Click here to download it.](OmniFocusLibrary.zip)
 * [The OmniFocus Action Pack for Keyboard Maestro. Click here to download it.](OmniFocusActionPackForKeyboardMaestro.zip)
 
-You will get two .zip archives. Uncompress them and move them to the locations as instructed below.
+You will get three ".zip" archives. Uncompress them and move them to the locations as instructed below.
 
 ### Install AppleScriptLibrary and OmniFocusLibrary
 Download and decompress the AppleScriptLibrary.scpt and OmniFocusLibrary.scpt files. Copy them to ~/Library/Script Libraries/

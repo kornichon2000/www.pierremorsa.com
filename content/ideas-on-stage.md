@@ -1,6 +1,7 @@
 +++
 title = "L'histoire d'Ideas on Stage | Pierre Morsa"
 date = "2018-01-15"
+categories = [ "Ideas on Stage" ]
 +++
 Ideas on Stage est né de mon envie de révolutionner le monde des présentations en entreprise. En 2006, après avoir assisté pendant des années à des présentations ennuyeuses, je décide de rechercher une autre façon de présenter en public. C'est comme cela que je découvre Présentation Zen, le blog de Garr Reynolds. Je suis tout de suite convaincu de l'intérêt de changer radicalement la façon de communiquer sur scène.
 
