@@ -55,6 +55,7 @@ img {
     max-width: 100%;
 }
 
+
 blockquote, q {
     quotes: none;
 }
@@ -450,6 +451,19 @@ dl dd {
     letter-spacing: 0.25em;
     text-transform: uppercase;
     white-space: nowrap;
+}
+
+.img-50p {
+	width: 50%;
+	height: auto;
+}
+
+@media screen and (max-width: 480px) {
+	.img-50p {
+		width: 100%;
+		height: auto;
+}
+
 }
 
 .post-content {
