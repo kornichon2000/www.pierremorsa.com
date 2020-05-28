@@ -2,7 +2,7 @@
 date        = "2020-04-20"
 title       = "OmniFocus Action Pack : une liste d’actions pour automatiser OmniFocus avec Keyboard Maestro"
 author      = "Pierre Morsa"
-categories  = [ "Lifehacks", "Technomagie" ]
+categories  = [ "Lifehacks", "Technomagie", "GTD Getting Things Done", "Mac" ]
 draft       = false
 +++
 Au fil du temps, j’ai créé de nombreuses actions pour améliorer l’intégration entre Keyboard Maestro et OmniFocus. Aujourd’hui, ces actions sont regroupées au sein du « OmniFocus Action Pack ».

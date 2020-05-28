@@ -2,7 +2,7 @@
 date        = "2020-05-18"
 title       = "La façon la plus simple d’imprimer un paquet de documents sur macOS"
 author      = "Pierre Morsa"
-categories  = [ "Lifehacks", "Technomagie" ]
+categories  = [ "Lifehacks", "Technomagie", "GTD Getting Things Done", "Mac" ]
 draft       = false
 +++
 
