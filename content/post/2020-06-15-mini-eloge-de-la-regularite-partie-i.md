@@ -5,7 +5,7 @@ date       = "2020-06-15"
 categories = [ "Philosophie de blog" ]
 draft      = false
 +++
-De tout temps, nous avons toujours voulu des remèdes rapides et surtout ne demandant aucun effort. Perdre du poids en buvant du coca. Devenir immortel avec une lampe au sel. Devenir super musclé en regardant la télé. Être attaché parlementaire sans rien faire. Si on exclut le dernier exemple rendu possible par la corruption de l’espace-temps politique, dans la réalité aucune de ces solutions ne fonctionne. **Au fond de nous-mêmes, nous le savons, mais nous avons envie de croire que c’est possible.**
+De tout temps, nous avons toujours voulu des remèdes rapides et surtout ne demandant aucun effort. Perdre du poids en buvant du coca. Devenir immortel avec une lampe au sel. Devenir super musclé en regardant la télé. Être attaché parlementaire sans rien faire. Si on exclut le dernier exemple rendu possible par la singularité de l’espace-temps politique, dans la réalité aucune de ces solutions ne fonctionne. **Au fond de nous-mêmes, nous le savons, mais nous avons envie de croire que c’est possible.**
 
 Si vous regardez les pubs poubelles du web, vous verrez qu’un grand nombre concernent ces « solutions miracles ». Elles vous attirent avec un joli titre accrocheur et vous endorment avec des promesses irréalistes. Le seul bon réflexe à avoir face aux solutions miracles, c'est de s’enfuir en courant.
 
