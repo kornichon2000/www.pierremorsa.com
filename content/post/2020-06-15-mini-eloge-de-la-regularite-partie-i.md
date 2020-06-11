@@ -1,5 +1,5 @@
 +++
-title      = "Mini éloge de la régularité (partie I)"
+title      = "Mini éloge de la régularité partie I"
 author     = "Pierre Morsa"
 date       = "2020-06-15"
 categories = [ "Philosophie de blog" ]
