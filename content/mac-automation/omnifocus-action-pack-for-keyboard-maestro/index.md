@@ -60,10 +60,17 @@ The pack includes more than 20 actions to automate OmniFocus. Most actions manip
 * OmniFocus Set Perspective: set the current perspective in OmniFocus.
 * OmniFocus Set Sidebar Selection: (de)selects the items, tags or projects, in the sidebar tree.
 * OmniFocus Set Task Name: set the name of the task.
+* OmniFocus Set Task Parent Task: set the parent task of the task. Effectively moves the task inside the specified parent task.
 * OmniFocus Set Task Primary Tag: set the primary tag of the task.
-* OmniFocus Set Task Project: set the project of the task.
+* OmniFocus Set Task Project: set the project of the task. Effectively moves the task at the end of the project tasks.
 * OmniFocus Set Task Status: set the status of the task.
 * OmniFocus Set Task Tag List: set the list of tags of the task.
+
+## History
+2020-06-24
+
+* Added the OmniFocus Set Task Parent Task action
+* Added workaround for OmniFocus Set Task Project so that it doesn't fail if the project is empty (I create a temporary task then delete it).
 
 ## How to use the Action Pack? Real-life examples
 The possibilities of the Action Pack are enormous, but to help you start, here are some of my favorite uses.
