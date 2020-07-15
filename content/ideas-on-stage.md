@@ -17,4 +17,4 @@ Vous pouvez consulter le site d'Ideas on Stage pour y lire les guides et article
 
 * [Guide ultime du TEDx Speaker](https://www.ideasonstage.fr/guide-tedx-speaker/)
 * [Guide ultime de la prise de parole en public](https://www.ideasonstage.fr/guide-ultime-prise-de-parole-en-public/)
-* [Colonne (presque) hebdomadaire](https://www.ideasonstage.fr/news/)
+* [Mes articles sur l'art de présenter](https://www.ideasonstage.fr/news/)

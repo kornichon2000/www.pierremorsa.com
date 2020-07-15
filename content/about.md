@@ -26,13 +26,14 @@ Coding & Bricks anime également régulièrement des ateliers pour les enfants e
 ## Interviews
 Au fil des ans j'ai été interviewé pour plusieurs magazines et même pour la télévision. Voici quelques unes de ces interviews disponibles sur le web :
 
-* [Management : réussissez vos présentations comme Steve Jobs - Date : janvier 2011 - Format : Print](https://www.headlink-partners.com/Portals/0/Documents/Revue%20de%20presse/201101-Management.pdf)
-* [Capital.fr : réussissez vos présentations comme Steve Jobs - Date : ? - Format : Web](http://www.capital.fr/votre-carriere/reussissez-vos-presentations-comme-steve-jobs-604012)
-* [TV5 : Le pouvoir des mots - Date : 2011 - Format : Television](https://www.youtube.com/watch?v=30QY5kA1pKw)
-* [L’express L’entreprise : comment pitcher son projet de startup à des investisseurs - Date : avril 2014 - Format : Web](http://lentreprise.lexpress.fr/gestion-fiscalite/budget-financement/comment-pitcher-son-projet-de-start-up-a-des-investisseurs_1513003.html)
-* [Le journal des entreprises : comment maîtriser l’art du pitch - Date : septembre 2017 - Format : Web](http://www.lejournaldesentreprises.com/editions/44/dossiers/communiquer/dossier-pratique-communication-comment-maitriser-l-art-du-pitch-11-09-2017-331758.php)
-* [My business plan.fr : elevator pitch : les astuces pour performer](http://www.my-business-plan.fr/elevator-pitch)
+* [Capital : Au travail, l'enjeu d'une prise de parole n'est pas d'informer, mais d'inciter à l'action - Date : mai 2020 - Format : papier et web](https://www.capital.fr/votre-carriere/au-travail-lenjeu-dune-prise-de-parole-nest-pas-dinformer-mais-dinciter-a-laction-1373080)
 * [Olivier Ezratty : guide des startups 2018](https://www.oezratty.net/wordpress/2018/guide-des-startups-2018/)
+* [Le journal des entreprises : comment maîtriser l’art du pitch - Date : septembre 2017 - Format : Web](http://www.lejournaldesentreprises.com/editions/44/dossiers/communiquer/dossier-pratique-communication-comment-maitriser-l-art-du-pitch-11-09-2017-331758.php)
+* [L’express L’entreprise : comment pitcher son projet de startup à des investisseurs - Date : avril 2014 - Format : Web](http://lentreprise.lexpress.fr/gestion-fiscalite/budget-financement/comment-pitcher-son-projet-de-start-up-a-des-investisseurs_1513003.html)
+* [TV5 : Le pouvoir des mots - Date : 2011 - Format : Television](https://www.youtube.com/watch?v=30QY5kA1pKw)
+* [Management : réussissez vos présentations comme Steve Jobs - Date : janvier 2011 - Format : papier](https://www.headlink-partners.com/Portals/0/Documents/Revue%20de%20presse/201101-Management.pdf)
+* [Capital.fr : réussissez vos présentations comme Steve Jobs - Format : Web](http://www.capital.fr/votre-carriere/reussissez-vos-presentations-comme-steve-jobs-604012)
+* [My business plan.fr : elevator pitch : les astuces pour performer](http://www.my-business-plan.fr/elevator-pitch)
 
 Si vous souhaitez m'interviewer le plus simple est de directement [prendre un rendez-vous dans mon agenda en ligne.](/bookme/)
 

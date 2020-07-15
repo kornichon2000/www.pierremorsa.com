@@ -10,6 +10,10 @@ languageName				= "Français"
 paginate				= 5
 
 
+[markup]
+	[markup.goldmark]
+		[markup.goldmark.renderer]
+      		unsafe		= true	# added to allow raw HTML in page .Content
 
 [params]
 
