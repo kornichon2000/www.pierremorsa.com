@@ -116,20 +116,6 @@
     },
     {
       "action" : "deny",
-      "creationDate" : 1542531481.862133,
-      "modificationDate" : 1548688148.927511,
-      "notes" : "#pmo",
-      "owner" : "any",
-      "process" : "any",
-      "remote-domains" : [
-        "ioccasion.fr",
-        "igen.fr",
-        "mgig.fr",
-        "macg.co"
-      ]
-    },
-    {
-      "action" : "deny",
       "creationDate" : 1518019156.105711,
       "modificationDate" : 1557836775.053848,
       "owner" : "any",
@@ -190,6 +176,14 @@
         "office.com",
         "msedge.net",
         "microsoft.com"
+      ]
+    },
+    {
+      "action" : "deny",
+      "owner" : "any",
+      "process" : "any",
+      "remote-domains" : [
+        "ultimate-guitar.com"
       ]
     }
   ]
