@@ -3,7 +3,7 @@ date        = "2020-12-14"
 title       = "10 produits Apple aux prix délirants"
 author      = "Pierre Morsa"
 categories  = [ "Philosophie de blog", "Technomagie" ]
-draft       = true
+draft       = false
 +++
 
 J’adore Apple. Je trouve que leurs gammes de produits fondamentaux, comme le Mac ou l’iPad, sont proposées à des tarifs certes plus chers que la concurrence, mais justifiées. Cependant, il y a aussi des produits pour lesquels je pousse un soupir de dépit face aux tarifs pratiqués. Des produits pour lesquels Apple se voit comme une société de luxe et non plus comme une société innovante. Voici ma petite liste, totalement non scientifique, des produits Apple dont je trouve le prix vraiment trop élevé.
