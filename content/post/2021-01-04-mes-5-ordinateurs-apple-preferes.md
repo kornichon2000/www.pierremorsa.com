@@ -8,7 +8,7 @@ draft       = false
 
 J’ai découvert l’informatique par une belle matinée de 1984. Je n’avais d’yeux que pour cette merveilleuse machine toute de blanc vêtue achetée par mes parents : un Apple //c. À l’époque, le Macintosh venait juste de naître, mais il coûtait encore beaucoup, beaucoup trop cher, et surtout l’Apple II était encore une machine très très populaire. Pourtant, d’une certaine manière il était déjà dépassé ; par exemple les machines comme le Commodore 64 faisaient tourner des jeux avec de meilleures couleurs. En comparaison, les graphismes de l’Apple II étaient encore handicapés par un système de représentation des couleurs un peu bizarre hérité de l’époque où le coût de la mémoire était prohibitif.
 
-Pourtant je ne regrette nullement d’avoir démarré sur cette machine qui, comparée au Mac, était une sorte d’antiquité, pour deux raisons simples :
+Je ne regrette nullement d’avoir démarré sur cette machine qui, comparée au Mac, était une sorte d’antiquité, pour deux raisons simples :
 
 1. Il y avait des jeux. Beaucoup, beaucoup de jeux.
 2. Contrairement au Macintosh, programmer un Apple II était accessible à tous.
