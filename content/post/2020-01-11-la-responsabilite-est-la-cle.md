@@ -6,7 +6,7 @@ categories  = [ "Philosophie de blog" ]
 draft       = false
 +++
 
-Depuis les événements du Capitole du mercredi 6 janvier 2021, Donald Trump ne raconte plus trop de mensonges sur Twitter. En tout cas, il ne raconte plus de mensonges avec des conséquences dont il risque de devoir assumer la responsabilité.
+Depuis les événements du Capitole du mercredi 6 janvier 2021, avant que son compte ne soit suspendu, Donald Trump n’a plus trop raconté de mensonges sur Twitter. En tout cas, il n’a plus raconté de mensonges avec des conséquences dont il risquait de devoir assumer la responsabilité.
 
 > C’est la clé : la responsabilité et ses conséquences.
 
