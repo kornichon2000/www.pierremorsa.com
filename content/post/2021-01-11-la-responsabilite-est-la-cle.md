@@ -1,5 +1,5 @@
 +++
-date        = "2020-01-11"
+date        = "2021-01-11"
 title       = "La responsabilité est la clé"
 author      = "Pierre Morsa"
 categories  = [ "Philosophie de blog" ]
