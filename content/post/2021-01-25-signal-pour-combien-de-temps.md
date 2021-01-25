@@ -1,5 +1,5 @@
 +++
-draft       = true
+draft       = false
 date        = "2021-01-25"
 title       = "Signal, pour combien de temps ?"
 author      = "Pierre Morsa"
