@@ -22,11 +22,11 @@ Action parameters with special characters (accented characters, emojis, etc.) do
 If you want to Get/Set projects or tags with special characters in their names, the safe way is to do it using the project ID or tag ID, not the name.
 
 ## Installation
-You need to install three components:
+You need to install three components. It is strongly advised to reinstall all three components each time a new version is released:
 
-* [The "AppleScriptLibrary" AppleScript library. Click here to download it.](AppleScriptLibrary.zip)
-* [The "OmniFocusLibrary" AppleScript library. Click here to download it.](OmniFocusLibrary.zip)
-* [The OmniFocus Action Pack for Keyboard Maestro. Click here to download it.](OmniFocusActionPackForKeyboardMaestro.zip)
+* [The "AppleScriptLibrary" AppleScript library. Click here to download it.](AppleScriptLibrary-2021-03-02.zip)
+* [The "OmniFocusLibrary" AppleScript library. Click here to download it.](OmniFocusLibrary-2021-03-02.zip)
+* [The OmniFocus Action Pack for Keyboard Maestro. Click here to download it.](OmniFocusActionPackForKeyboardMaestro-2021-03-02.zip)
 
 You will get three ".zip" archives. Uncompress them and move them to the locations as instructed below.
 
@@ -47,6 +47,7 @@ The pack includes more than 20 actions to automate OmniFocus. Most actions manip
 * OmniFocus Get IDs of Selected Tasks: get the list of IDs of currently selected tasks.
 * OmniFocus Get Task Estimated Duration: get the estimated duration of the task.
 * OmniFocus Get Task File Path: get a file path from the note of the task, if it exists.
+* OmniFocus Get Task Flag: get the flag status of the task.
 * OmniFocus Get Task Mail MessageID: get a Mail Message ID from the note of the task, if it exists.
 * OmniFocus Get Task Name: get the name of the task.
 * OmniFocus Get Task Note: get the note of the task.
@@ -57,8 +58,10 @@ The pack includes more than 20 actions to automate OmniFocus. Most actions manip
 * OmniFocus Get Task Tag List: get all tags from the task.
 * OmniFocus Insert Template: insert a list of template actions in a project.
 * OmniFocus Make Task: make a new task.
+* OmniFocus Plus x Days: add a given number of days to the **existing** defer and due dates. Use a negative number to deduct a given number of days.
 * OmniFocus Set Perspective: set the current perspective in OmniFocus.
 * OmniFocus Set Sidebar Selection: (de)selects the items, tags or projects, in the sidebar tree.
+* OmniFocus Set Task Flag: set the flag of the task.
 * OmniFocus Set Task Name: set the name of the task.
 * OmniFocus Set Task Parent Task: set the parent task of the task. Effectively moves the task inside the specified parent task.
 * OmniFocus Set Task Primary Tag: set the primary tag of the task.
@@ -67,7 +70,27 @@ The pack includes more than 20 actions to automate OmniFocus. Most actions manip
 * OmniFocus Set Task Tag List: set the list of tags of the task.
 
 ## History
-2020-06-24
+
+**2021-03-02**
+
+To use this version download from these links:
+
+* [The "AppleScriptLibrary" AppleScript library. Click here to download it.](AppleScriptLibrary-2021-03-02.zip)
+* [The "OmniFocusLibrary" AppleScript library. Click here to download it.](OmniFocusLibrary-2021-03-02.zip)
+* [The OmniFocus Action Pack for Keyboard Maestro. Click here to download it.](OmniFocusActionPackForKeyboardMaestro-2021-03-02.zip)
+
+* Added possibility to set flag status when creating a new task.
+* Added matching OmniFocus Set Task Flag and OmniFocus Get Task Flag actions.
+* Added OmniFocus Plus x Days action to quickly move existing defer and due dates by a given number of days. 
+* Probably some stuff I don't remember :D
+
+**2020-06-24**
+
+To use this version download from these links:
+
+* [The "OmniFocusLibrary" AppleScript library. Click here to download it.](OmniFocusLibrary.zip)
+* [The "AppleScriptLibrary" AppleScript library. Click here to download it.](AppleScriptLibrary.zip)
+* [The OmniFocus Action Pack for Keyboard Maestro. Click here to download it.](OmniFocusActionPackForKeyboardMaestro.zip)
 
 * Added the OmniFocus Set Task Parent Task action
 * Added workaround for OmniFocus Set Task Project so that it doesn't fail if the project is empty (I create a temporary task then delete it).
@@ -114,7 +137,7 @@ OmniFocus Do Actions executes the list of actions in the note of the task. Possi
 * run: runs an application (without bringing it to the front).
 * quit: quits an application.
 * pause: pauses the execution of actions for x seconds.
-* playlist: plays a playlist in iTunes.
+* playlist: plays a playlist in Music.
 
 There are two possible action groups:
 
