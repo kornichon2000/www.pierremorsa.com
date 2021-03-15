@@ -1,5 +1,5 @@
 +++
-date        = "2020-03-15"
+date        = "2021-03-15"
 title       = "Master of Dunning-Krueger Effect"
 author      = "Pierre Morsa"
 categories  = [ "Philosophie de blog" ]
