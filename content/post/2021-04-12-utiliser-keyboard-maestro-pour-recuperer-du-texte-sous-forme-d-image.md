@@ -1,6 +1,6 @@
 +++
 draft       = false
-date        = "2021-04-05"
+date        = "2021-04-12"
 title       = "Utiliser Keyboard Maestro pour récupérer du texte sous forme d'image"
 author      = "Pierre Morsa"
 categories  = [ "Lifehacks", "Technomagie" ]
