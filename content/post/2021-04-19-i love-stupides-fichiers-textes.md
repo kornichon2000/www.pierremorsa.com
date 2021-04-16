@@ -6,7 +6,7 @@ author      = "Pierre Morsa"
 categories  = [ "Lifehacks", "Technomagie" ]
 +++
 
-Après avoir utilisé des dizaines, voire des centaines d’applications sauvegardant mon précieux contenu dans différents formats plus ou moins exotiques, j’ai fini par me rendre compte à l’évidence : si vous voulez être certains de pouvoir encore consulter le contenu du fichier dans 10 ou 20 ans, sauvegardez-le dans un stupide fichier texte.
+Après avoir utilisé des dizaines, voire des centaines d’applications sauvegardant mon précieux contenu dans différents formats plus ou moins exotiques, j’ai fini par me rendre compte à l’évidence : si vous voulez être certains de pouvoir encore consulter le contenu du fichier dans 10 ou 20 ans, sauvegardez-le dans un stupide fichier texte. Pas les faux fichiers texte .rtf, les seuls, les vrais, les purs fichiers .txt. Malgré les problèmes liés aux différentes méthodes d’encodage, ces fichiers sont les garants de nos données les plus précieuses.
 
 Les fichiers AppleWorks, le contenu stocké dans des bases de données, les fichiers WordPerfect ou Aldus PageMaker, aujourd’hui je ne peux plus les ouvrir ; ce n’est pas très grave, leur contenu, est en très grande majorité, complètement périmé et inintéressant. Mais les fichiers texte, eux, ont survécu. Il n’y a rien de mieux qu’un stupide fichier texte.
 
