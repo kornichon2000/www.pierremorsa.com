@@ -1,6 +1,6 @@
 +++
 draft       = false
-date        = "2021-05-03"
+date        = "2021-05-10"
 title       = "La première révolte des humains contre les robots approche"
 author      = "Pierre Morsa"
 categories  = [ "Philosophie de blog" ]

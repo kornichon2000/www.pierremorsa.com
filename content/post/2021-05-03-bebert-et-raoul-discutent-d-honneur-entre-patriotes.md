@@ -1,6 +1,6 @@
 +++
 draft       = false
-date        = "2021-05-10"
+date        = "2021-05-03"
 title       = "Bébert et Raoul discutent d'honneur entre patriotes"
 author      = "Pierre Morsa"
 categories  = [ "Philosophie de blog" ]
