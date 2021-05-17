@@ -1,7 +1,7 @@
 +++
 draft       = false
 date        = "2021-05-17"
-title       = "Reprendre les idées d’extrême droite, c’est renforcer l’extrême droite."
+title       = "Reprendre les idées d’extrême droite, c’est renforcer l’extrême droite"
 author      = "Pierre Morsa"
 categories  = [ "Philosophie de blog" ]
 +++
