@@ -8,7 +8,7 @@ categories  = [ "Philosophie de blog" ]
 
 Pourquoi travailler quand on peut racketter ? Non, mieux : pourquoi se fatiguer à racketter alors que les esclaves de l’État peuvent le faire pour nous ? Cette devise, c’est celle de Copie France, organisme qui rackette joyeusement les français pour le compte des boîtes privées.
 
-À la base, « copie privée » est un concept qui au autant de sens que « eau sèche ». :
+À la base, « copie privée » est un concept qui au autant de sens que « eau sèche » :
 
 *  Soit on a le droit de faire une copie privée, et dans ce cas il n’y a pas à payer pour cela (pour rappel, vous avez *déjà* payé le droit d’écouter la musique). De plus, avec le développement du streaming légal (et ce *malgré* l’autosabotage des ayants droit pendant de nombreuses années), le stockage local de musique est de plus en plus rare.
 *  Soit on n’en a pas le droit, et dans ce cas vous vous faites ponctionner une redevance sur une activité illégale.
