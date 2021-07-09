@@ -40,4 +40,9 @@ Pour l’anecdote, la série Albator 78 n’a pas de fin en France, le dernier 
 {{% youtube zL3sw8EH0-0 %}}
 <br />
 
-Voilà, c’était juste un moment de partage musical juste pour le plaisir.
+Enfin la musique de bataille vaut la peine pour le petit passage qui ressemble à « v’la le bon vent, v’la le joli vent » - une fois qu’on le sait, on ne peut pas s’empêcher de faire le rapprochement.
+
+{{% youtube s11QkHwGZU4 %}}
+<br />
+
+Voilà, rien d'autre. C’était juste un moment de partage musical juste pour le plaisir.
