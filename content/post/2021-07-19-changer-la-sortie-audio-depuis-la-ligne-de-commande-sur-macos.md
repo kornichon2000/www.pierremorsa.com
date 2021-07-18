@@ -28,6 +28,18 @@ Voici l’équivalent dans Keyboard Maestro :
 
 À noter que j’ai ajouté le chemin d’accès /usr/local/bin/ devant la commande dans Keyboard Maestro, sinon cela ne fonctionne pas.
 
+Il est également possible de définir l’entrée son utilisée. Par exemple la commande suivante va sélectionner l’entrée "Pass-Thru".
+
+```
+switchaudiosource -t input -s "Pass-Thru"
+```
+
+Pour voir toutes les options possibles de switchaudiosource, il suffit d’entrer la commande sans aucun arguments.
+
+```
+switchaudiosource
+```
+
 ## Pour installer switchaudio-osx
 
 Je l’ai installé via [Homebrew](https://brew.sh) (je sais, je sais, ce n’est pas la solution la mieux sécurisée du monde, mais c’est trop pratique).
