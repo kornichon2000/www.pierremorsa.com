@@ -42,3 +42,4 @@ Et bien voilà Djingo, finalement on se comprend. Tu vois, avec un peu de bonne 
 * (1) Le service est gratuit et l’appel est au prix d’une communication normale selon l’offre détenue, ou décompté du forfait. Le temps d’attente avant la mise en relation avec votre conseiller est gratuit depuis les réseaux Orange.
 * (2) Numéro Cristal non surtaxé. Consultez les tarifs de l’opérateur du pays d’appel. 
 
+Je terminerai par un point positif : la personne que j’ai eu en ligne s’est bien occupée de mon dossier. Au final, parler à un humain, c’est quand même une bonne solution.
