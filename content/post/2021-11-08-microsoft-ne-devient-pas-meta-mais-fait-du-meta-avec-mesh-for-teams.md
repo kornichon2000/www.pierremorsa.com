@@ -1,5 +1,5 @@
 +++
-draft       = true
+draft       = false
 date        = "2021-11-08"
 title       = "Microsoft ne devient pas Meta, mais fait du Meta avec Mesh for Teams"
 author      = "Pierre Morsa"
