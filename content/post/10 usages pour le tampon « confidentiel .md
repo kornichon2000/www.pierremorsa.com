@@ -16,6 +16,6 @@ Mais pourquoi s’arrêter en si bon chemin ? Avec un peu d’imagination, on p
 * Voler le papier de votre entreprise : mettez 500 pages blanches A4 sous une couverture « confidentiel » pour ne pas les montrer au vigile (qui en réalité n’en a rien à cirer de vos conneries). Répétez l’opération chaque jour. À raison de 218 jours de travail par an, vous aurez pu voler 109 000 pages vierges.
 * Vous moquer ouvertement des gens qui utilisent les techniques précédentes : mettez « confidentiel » sur absolument tous les documents. La demande de dosettes de café. Votre diplôme de MBA. Le rouleau de PQ. La photo de votre chien. Alternativement, mettez la photo de votre chien sur la couverture du PowerPoint pour votre prochain ComEx stratégique.
 
-Voilà, j’espère que cet article vous aura donné envie d’aller plus loin dans l’utilisation du tampon confidentiel. Et si vous paniquez à l’idée de ne pas avoir d’image de tampon confidentiel, en voici une, au format svg. Je ne garantis pas le résultat.
+Voilà, j’espère que cet article vous aura donné envie d’aller plus loin dans l’utilisation du tampon confidentiel. Et si vous paniquez à l’idée de ne pas avoir d’image de tampon confidentiel, en voici une, au format svg. Je ne garantis pas le résultat, et je tiens à m’excuser de ne pas avoir réussi à faire rentrer les mots IA et Blockchain dedans.
 
 ![Tampon Confidentiel](/pictures/2021/11/confidentiel.svg)
