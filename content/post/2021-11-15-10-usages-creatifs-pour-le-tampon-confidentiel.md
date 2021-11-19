@@ -1,7 +1,7 @@
 +++
 draft       = false
 date        = "2021-11-15"
-title       = "10 usages créatifs pour le tampon « confidentiel »"
+title       = "5 usages créatifs pour le tampon « confidentiel »"
 author      = "Pierre Morsa"
 categories  = [ "Philosophie de blog" ]
 +++
