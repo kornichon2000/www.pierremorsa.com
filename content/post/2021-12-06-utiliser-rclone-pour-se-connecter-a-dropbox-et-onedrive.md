@@ -3,7 +3,7 @@ draft       = false
 date        = "2021-12-06"
 title       = "Utiliser rclone pour se connecter à Dropbox et OneDrive"
 author      = "Pierre Morsa"
-categories  = [ ""Technomagie" ]
+categories  = [ "Technomagie" ]
 +++
 
 > Note : cet article fait appel à certaines notions avancées de gestion des fichiers, que je n’explique pas dans cet article. Si vous ne maîtrisez pas les concepts de serveur distant, synchronisation, copie, réplication, je vous déconseille fortement d’utiliser rclone. Je vous conseille aussi de **toujours** tester votre configuration en utilisant l’option --dry-run (test) pour vérifier que le résultat correspond bien à ce que vous attendez.
