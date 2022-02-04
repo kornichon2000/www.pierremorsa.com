@@ -3,7 +3,7 @@ draft       = false
 date        = "2022-02-07"
 title       = "Gordon a un M1 coincé dans le cul"
 author      = "Pierre Morsa"
-categories  = [ "Philosophie de blog" "Technomagie" ]
+categories  = [ "Philosophie de blog", "Technomagie" ]
 +++
 
 Il y a quelques semaines [je suis tombé sur cet article de PC World](https://www.pcworld.com/article/563017/even-apple-said-this-msi-laptop-smokes-the-m1-macbook-pro-and-it-just-got-faster.html), qui explique haut et fort que, ben le microprocesseur M1 Max se fait écraser par le dernier processeur d’Intel qui répond au doux nom de Core i9-11980HK.
