@@ -33,7 +33,7 @@ Avant d’aller plus loin, je préfère vous prévenir de la limitation principa
 
 Avant d’expliquer le fonctionnement de rsync, un petit rappel sur le fonctionnement de Dropbox et OneDrive. Ils utilisent ce qu’on appelle une synchronisation bidirectionnelle ; autrement dit, elle se fait dans les deux sens. Si vous ajoutez un fichier sur votre disque local, il est copié dans le cloud. Si vous ajoutez un fichier dans le cloud, il est copié sur votre disque local. Pareil pour les modifications et suppressions.
 
-```rclone sync``` ne fonctionne pas de cette manière : la synchronisation et la copie sont **unidirectionnels**.
+rclone sync ne fonctionne pas de cette manière : la synchronisation et la copie sont **unidirectionnels**.
 
 Si vous lancez une synchronisation du répertoire A local vers le répertoire A cloud, rclone va faire en sorte que le répertoire A cloud soit parfaitement identique au répertoire A local. **Tous les fichiers que vous auriez pu ajouter au répertoire A cloud entre deux synchronisations seront perdus, détruits, effacés**. En réalité, ce n’est pas une synchronisation, c’est une copie miroir.
 
@@ -41,9 +41,9 @@ Je ne vais pas rentrer dans plus de détails, mais si vous voulez faire beaucoup
 
 Pour cette raison, je n’utilise pas rclone sync. Je préfère utiliser rclone copy.
 
-```rclone copy``` est beaucoup plus simple à comprendre. Le fonctionnement est similaire à une copie de fichier du répertoire source vers le répertoire destination : soit du local vers le cloud ou du cloud vers le local.
+rclone copy est beaucoup plus simple à comprendre. Le fonctionnement est similaire à une copie de fichier du répertoire source vers le répertoire destination : soit du local vers le cloud ou du cloud vers le local.
 
-Dans la suite de ce guide, je n’expliquerai que l’utilisation de ```rclone copy``` avec Dropbox, parce que c’est la seule pour laquelle je dispose d’une expérience significative et aussi parce que j’ai la flemme de tout écrire.
+Dans la suite de ce guide, je n’expliquerai que l’utilisation de rclone copy avec Dropbox, parce que c’est la seule pour laquelle je dispose d’une expérience significative et aussi parce que j’ai la flemme de tout écrire.
 
 ## Configurer rclone pour utiliser Dropbox
 
@@ -145,7 +145,7 @@ Got code
 --------------------
 [toto]
 type = dropbox
-token = {"access_token":"sl.A9UQv2wien8nCvqUoXlb4tMSQBz-w0wXJ1lkxQnmjC-PQUtJirhJOAcJm2mhPvzjygjmCn22WQiEH5j-BCkYatfweTn_6j5S8XX_o8nX4CPNoFVkfqTrhUsQpKt9uhL0Vtq1IOW3","token_type":"bearer","refresh_token":"gt4p7RhZDsUAAAAAAAAAARvzuKzwfDtOwQBdOdqB_eU7CDEBJ7m0VHm-b2KV1Qck","expiry":"2021-12-01T14:20:32.178051+01:00"}
+token = {"access_token"}
 --------------------
 y) Yes this is OK (default)
 e) Edit this remote
