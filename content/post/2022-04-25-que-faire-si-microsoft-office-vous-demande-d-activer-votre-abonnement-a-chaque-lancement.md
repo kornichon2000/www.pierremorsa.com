@@ -1,6 +1,6 @@
 +++
 draft       = false
-date        = "2022-04-18"
+date        = "2022-04-25"
 title       = "Que faire si Microsoft Office vous demande d’activer votre abonnement à chaque lancement ?"
 author      = "Pierre Morsa"
 categories  = [ "Technomagie" ]
