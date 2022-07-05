@@ -10,4 +10,4 @@ Quelque part en France, il existe une région où les familles sont éleveurs de
 
 Ce temple, c’est l’aéroport de Beauvais. Le bétail, c’est vous. Votre bourreau, c’est Ryanair.
 
-Si vous voulez prendre l’avion de Beauvais avec Ryanair, je vous conseille plutôt de vous casser une jambe ou d’aller vous faire enculer par un mouton. Ce sera moins cher et moins douloureux.
+Si vous voulez prendre l’avion depuis l'aéroport de Beauvais avec Ryanair, je vous conseille plutôt d’aller vous faire enculer par un bouc. Vous ferez plaisir au bouc et au final ce sera moins cher et moins douloureux.
