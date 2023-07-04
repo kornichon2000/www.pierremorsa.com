@@ -1,6 +1,6 @@
 baseurl					= "https://www.pierremorsa.com/"
 
-title					= "Pierre Morsa | Présenter en public et GTD"
+title					= "Pierre Morsa | Philosophie de blog"
 
 defaultContentLanguage	= "fr"
 language					= "fr"
@@ -18,7 +18,7 @@ paginate				= 5
 [params]
 
     # Meta tag description
-    description			= "Le blog de Pierre Morsa, co-fondateur et Creative Cat d'Ideas on Stage, agence spécialisée dans les présentations en public."
+    description			= "Le blog de Pierre Morsa, où il partage ses réflexions de comptoir. Co-fondateur et Creative Cat d'Ideas on Stage, agence spécialisée dans les présentations en public."
 
 	# Avatar picture on top of site
 	[params.avatar]
