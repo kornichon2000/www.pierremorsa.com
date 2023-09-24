@@ -15,6 +15,5 @@ Aujourd'hui nous sommes une équipe extrêmement soudée aux compétences reconn
 
 Vous pouvez consulter le site d'Ideas on Stage pour y lire les guides et articles que j'ai écrits :
 
-* [Guide ultime du TEDx Speaker](https://www.ideasonstage.fr/guide-tedx-speaker/)
-* [Guide ultime de la prise de parole en public](https://www.ideasonstage.fr/guide-ultime-prise-de-parole-en-public/)
-* [Mes articles sur l'art de présenter](https://www.ideasonstage.fr/news/)
+* [Guide ultime du TEDx Speaker](https://www.ideasonstage.com/fr/guide-tedx-speaker/)
+* [Guide ultime de la prise de parole en public](https://www.ideasonstage.com/fr/guide-ultime-prise-de-parole-en-public/), le guide le plus complet sur les techniques d'art oratoire.

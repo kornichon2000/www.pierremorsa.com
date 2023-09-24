@@ -1,29 +1,34 @@
 +++
-title = "À propos de Pierre Morsa"
-date = "2014-04-09"
+title			= "À propos de Pierre Morsa"
+date 			= "2014-04-09"
 +++
 
 Je ne fais pas qu'écrire ce blog. Sur cette page vous pourrez en apprendre un peu plus sur moi.
 
+
 ## Réseaux sociaux
-Si vous voulez me suivre et lire des choses pas sérieuses, je suis sur [Twitter](https://twitter.com/pierremorsa/). Si vous voulez lire des choses sérieuses, je suis sur [LinkedIn](https://be.linkedin.com/in/pierremorsa), le réseau où tout le monde est super profechonal.
+
+Si vous voulez lire des choses bien corporate (autrement dit chiantes), je suis sur [LinkedIn](https://be.linkedin.com/in/pierremorsa), le réseau où tout le monde est super génial.
+
+Je suis sur [Mastodon](https://mastodon.social/@pmorsa). C'est un compte privé, mais vous pouvez m'envoyer une demande de connexion.
 
 ## Ideas on Stage
 [Vous pouvez en savoir plus sur l'histoire d'Ideas on Stage sur cette page.](/ideas-on-stage/)
 
-Dans la vie je suis Co-fondateur et Creative Cat d'[Ideas on Stage][1], une société spécialisée dans les présentations en public. Je m'occupe plus particulièrement de la création des présentations pour nos clients (storytelling, visuels). Mes clients principaux sont des grands comptes (Chanel, EDF, Google, Kering, Safran, Société Générale, TV5MONDE...) J'ai également coaché les intervenants de nombreux événements TEDx, le Positive Economy Forum et d'autres grandes conférences. Enfin j'organise des ateliers sur l'art du pitch dans l'univers des Startups (50Partners, Euratechnologies, Le Comptoir, Le Camping, Start'inPost, Microsoft Ventures...)
+Dans la vie je suis Co-fondateur et Creative Cat d'[Ideas on Stage](https://www.ideasonstage.com/, une société spécialisée dans les présentations en public. Je m'occupe plus particulièrement de la création des présentations pour nos clients (storytelling, visuels) ainsi que du coaching en prise de parole en public.
+
+Mes clients principaux sont des grands comptes (Chanel, EDF, Google, Kering, Safran, Société Générale, TV5MONDE...) J'ai également coaché les intervenants de nombreux événements TEDx, le Positive Economy Forum et d'autres grandes conférences. Enfin j'organise des ateliers sur l'art du pitch dans l'univers des Startups (50Partners, Euratechnologies, Le Comptoir, Le Camping, Start'inPost, Microsoft Ventures...)
+
 
 ## Autres activités professionnelles
-Outre ce blog sur lequel je publie un billet toutes les semaines, j'écris régulièrement [pour le site de ma société, Ideas on Stage, sur l'art de présenter en public, en anglais et en français.](https://www.ideasonstage.fr/news/)
+
+Outre ce blog sur lequel je publie un billet toutes les semaines, j'écris régulièrement [pour le site de ma société, Ideas on Stage, sur l'art de présenter en public, en anglais et en français.](https://www.ideasonstage.com/fr/news/)
 
 Je donne cours de « Hard Storytelling », autrement dit de storytelling basé sur les faits, pour le MBA spécialisé « communication publique et influence » de l'EFAP de Lille.
 
-## Coding & Bricks
-[Coding & Bricks](https://www.codingandbricks.com) est l'entreprise de mon épouse. Elle propose d'excellents ateliers avec la méthode LEGO Serious Play® pour les entreprises. Si vous ne connaissez pas LEGO Serious Play®, essayez, il n'y a pas mieux pour dynamiser une réunion et libérer la créativité et le potentiel de vos collaborateurs. 
-
-Coding & Bricks anime également régulièrement des ateliers pour les enfants et l'éducation.
 
 ## Interviews
+
 Au fil des ans j'ai été interviewé pour plusieurs magazines et même pour la télévision. Voici quelques unes de ces interviews disponibles sur le web :
 
 * [Capital : Au travail, l'enjeu d'une prise de parole n'est pas d'informer, mais d'inciter à l'action - Date : mai 2020 - Format : papier et web](https://www.capital.fr/votre-carriere/au-travail-lenjeu-dune-prise-de-parole-nest-pas-dinformer-mais-dinciter-a-laction-1373080)
@@ -35,18 +40,14 @@ Au fil des ans j'ai été interviewé pour plusieurs magazines et même pour la 
 * [Capital.fr : réussissez vos présentations comme Steve Jobs - Format : Web](http://www.capital.fr/votre-carriere/reussissez-vos-presentations-comme-steve-jobs-604012)
 * [My business plan.fr : elevator pitch : les astuces pour performer](http://www.my-business-plan.fr/elevator-pitch)
 
-Si vous souhaitez m'interviewer le plus simple est de directement [prendre un rendez-vous dans mon agenda en ligne.](/bookme/)
-
-<a href='/bookme/' class='button'>Prendre un rendez-vous dans mon agenda en ligne​</a>​
 
 ## À propos de ce blog
+
 Ce blog existe pour partager mes découvertes et mes humeurs. J'y parle des sujets qui m'intéressent, en particulier présenter en public, GTD, et le Life Hacking. Je ne gagne rien avec ce blog et aucun article n'est sponsorisé. Il y a juste deux liens, un vers Coding & Bricks, l'entreprise de mon épouse, et un vers Ideas on Stage, mon entreprise. Vous pouvez librement copier et réutiliser tout son contenu, aussi inintéressant soit-il. Ce site est garanti 0 cookies, 0 JavaScript.
 
 Le blog est construit avec [Hugo](http://gohugo.io), un générateur de sites statiques, et est « hébergé » chez Github et Netlify. Je crois fermement que la plupart des sites web actuels sont devenus des usines à gaz et qu'un retour à des pages statiques, sans JavaScript est la meilleure solution pour de nombreux sites. En plus de mon blog, le [site d'Ideas on Stage](https://www.ideasonstage.com/) est également hébergé avec le tandem Github + Netlify.
 
-## Formation et parcours professionnel
-Avant de fonder Ideas on Stage, j'ai travaillé pendant 13 ans dans le conseil, chez Accenture, anciennement Andersen Consulting, puis chez Ineum, anciennement Deloitte Conseil. J'ai un Master of Science in Business Engineering de HEC Liège, Belgique. J'ai également suivi une formation chez LEGO® Education au Danemark.
 
-[1]: https://www.ideasonstage.com
-[2]: http://philpresents.com
-[3]: http://www.codingandbricks.com
+## Formation et parcours professionnel
+
+Avant de fonder Ideas on Stage, j'ai travaillé pendant 13 ans dans le conseil, chez Accenture, anciennement Andersen Consulting, puis chez Ineum, anciennement Deloitte Conseil. J'ai un Master of Science in Business Engineering de HEC Liège, Belgique. J'ai également suivi une formation chez LEGO® Education au Danemark.
