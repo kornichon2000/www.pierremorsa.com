@@ -1,7 +1,9 @@
 {{ define "main" }}
 	{{ "<!-- taxonomy:list:start -->" | safeHTML }}
 	<main>
-	  <h1>{{ .Params.Term }}{{ .Title }}</h1> {{/* Page title (category name) */}}
+		<h1>
+			{{ .Parent.Title }} - {{ .Title }}
+		</h1>
 		{{ range .Paginator.Pages }}
 			{{ .Render "article-summary" }}
 		{{ end }}

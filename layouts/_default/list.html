@@ -2,7 +2,13 @@
 	{{ "<!-- _default:list.html:start -->" | safeHTML }}
 	<main>
 		{{- $.Scratch.Set "count" 0 }}
-		{{ range .Paginator.Pages }}
+		{{ $paginator := "" }}
+		{{ if .IsHome }}
+			{{ $paginator = .Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) }}
+		{{ else }}
+			{{ $paginator = .Paginator }}
+		{{ end }}
+		{{ range $paginator.Pages }}
 			{{- $.Scratch.Add "count" 1 }}
 			{{- .Render "article" }}
 			{{- if eq ($.Scratch.Get "count") 1 }}
@@ -10,7 +16,6 @@
 				{{- partial "links" . }}
 			{{- end }}
 		{{- end }}
-		{{- partial "pagination" . }}
 	</main>
 	{{ "<!-- _default:list.html:end -->" | safeHTML }}
 {{- end }}
