@@ -61,6 +61,12 @@ paginate								= 5
 	[[params.aside]]
 		id									= "categories"
 	[[params.aside]]
+		id									= "companies"
+	[[params.aside]]
+		id									= "promised"
+	[[params.aside]]
+		id									= "deadline"
+	[[params.aside]]
 		id									= "copyright"
 		text								= "Site garanti sans cookies et sans JavaScript. Le contenu est en copie libre : vous pouvez tout copier et réutiliser librement."
 

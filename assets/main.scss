@@ -469,6 +469,7 @@ dl dd {
 
 .post header .meta {
     text-align: left;
+		margin-bottom: 1em;
 }
 
 .post header .meta .published {
@@ -572,6 +573,11 @@ ul.posts {
 }
 
 /* @end */
+
+.aside-li {
+	margin-top: 0.5em;
+	margin-bottem: 0.5em;
+}
 
 /* @group navigation */
 

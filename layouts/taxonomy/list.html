@@ -1,11 +1,11 @@
 {{ define "main" }}
-	{{ "<!-- taxonomy:category:start -->" | safeHTML }}
+	{{ "<!-- taxonomy:list:start -->" | safeHTML }}
 	<main>
-	    <h1>{{ .Params.Term }}{{ .Title }}</h1> {{/* Page title (category name) */}}
+	  <h1>{{ .Params.Term }}{{ .Title }}</h1> {{/* Page title (category name) */}}
 		{{ range .Paginator.Pages }}
 			{{ .Render "article-summary" }}
 		{{ end }}
 		{{ partial "pagination" . }}
 	</main>
-	{{ "<!-- taxonomy:category:end -->" | safeHTML }}
+	{{ "<!-- taxonomy:list:end -->" | safeHTML }}
 {{ end }}

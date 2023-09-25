@@ -3,6 +3,7 @@
 {{ "<!-- partials:aside:start -->" | safeHTML }}
 <aside>
 	{{ range .Site.Params.aside }}
+
 		<div class="layout-module blurb">	
 			{{ if eq .id "rss" }}
 				
@@ -25,9 +26,9 @@
 							{{ range $.Site.Data.links }}
 								<div class="link">
 									<a href="{{ .link }}">
-							    		<img src="/pictures/links/{{ .picture }}">
-							    		<p>{{ .description }}</p>
-							    	</a>
+						    		<img src="/pictures/links/{{ .picture }}">
+						    		<p>{{ .description }}</p>
+						    	</a>
 								</div>
 							{{ end }}
 						</div>
@@ -39,16 +40,81 @@
 				{{/* List of categories */}}
 				{{ "<!-- categories -->" | safeHTML }}
 				<section id="categories">
-				    <ul class="posts text-small">
+					<h2>CATEGORIES</h2>
+				  <ul class="posts text-small">
 						{{ range $.Site.Taxonomies.categories.ByCount }}
-					        <li>
-								<a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a>
+					    <li class="aside-li">
+								<span class="pill pill-category">
+									<a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a>
+								</span>
 								<span style="float:right;">{{ .Count }}</span>
 							</li>
 					   {{ end }}
-				    </ul>
+			    </ul>
 				</section>
-				
+
+			{{ else if eq .id "companies" }}
+			
+				{{/* List of companies */}}
+				{{ "<!-- companies -->" | safeHTML }}
+				<section id="companies">
+					<h2>COMPANIES</h2>
+				  <ul class="posts text-small">
+						{{ range $.Site.Taxonomies.companies.ByCount }}
+					    <li class="aside-li">
+								<span class="pill pill-company">
+									<a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a>
+								</span>
+								<span style="float:right;">{{ .Count }}</span>
+							</li>
+					   {{ end }}
+			    </ul>
+				</section>
+
+			{{ else if eq .id "promised" }}
+			
+				{{/* List of promised dates */}}
+				{{ "<!-- promised -->" | safeHTML }}
+				<section id="categories">
+					<h2>YEAR OF INITIAL PROMISE</h2>
+				  <ul class="posts text-small">
+						{{ range $.Site.Taxonomies.promised.ByCount }}
+					    <li class="aside-li">
+								<span class="pill pill-promised">
+									<a href="{{ .Page.RelPermalink }}">
+										{{ .Page.Title }}
+									</a>
+								</span>
+								<span style="float:right;">
+									{{ .Count }}
+								</span>
+							</li>
+					   {{ end }}
+			    </ul>
+				</section>
+
+			{{ else if eq .id "deadline" }}
+			
+				{{/* List of deadline dates */}}
+				{{ "<!-- categories -->" | safeHTML }}
+				<section id="categories">
+					<h2>YEAR OF DEADLINE</h2>
+				  <ul class="posts text-small">
+						{{ range $.Site.Taxonomies.deadline.ByCount }}
+					    <li class="aside-li">
+								<span class="pill pill-deadline">
+									<a href="{{ .Page.RelPermalink }}">
+										{{ .Page.Title }}
+									</a>
+								</span>
+								<span style="float:right;">
+									{{ .Count }}
+								</span>
+							</li>
+					   {{ end }}
+			    </ul>
+				</section>
+
 			{{ else if eq .id "copyright" }}
 			
 				{{/* Copyright notice */}}
@@ -65,10 +131,10 @@
 				{{ "<!-- blurb -->" | safeHTML }}
 				<section id="{{ .id }}">
 					{{ with .text }}
-				    	<p>{{ . | markdownify }}</p>
+			    	<p>{{ . | markdownify }}</p>
 					{{ end }}
 					{{ with .button }}
-				        <a href="/about/" class="button">{{ . | markdownify }}</a>
+		        <a href="/about/" class="button">{{ . | markdownify }}</a>
 					{{ end }}
 				</section>
 		
