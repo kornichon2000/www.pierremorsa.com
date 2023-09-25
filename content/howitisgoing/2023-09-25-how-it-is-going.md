@@ -2,7 +2,6 @@
 title      = "Introducing How It Is Going"
 author     = "Pierre Morsa"
 date       = "2023-09-25"
-categories = [ "" ]
 draft      = false
 +++
 

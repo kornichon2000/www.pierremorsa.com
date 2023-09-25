@@ -1,14 +1,53 @@
 {{ "<!-- _default:article-header:start -->" | safeHTML }}
 <header class="post-header-style">
-    <div class="title">
-        <h2 class="post-header-title-style"><a href="{{ .RelPermalink }}">{{ .Title  | markdownify  }}</a></h2>
-        {{ with .Description }}
-        <p>{{ . }}</p>
-        {{ end }}
-    </div>{{ "<!-- title -->" | safeHTML }}
-    <div class="meta">
-        {{ $.Scratch.Set "dateType" .Date }}
-        <time class="published" datetime='{{ ($.Scratch.Get "dateType").Format "2006-01-02" }}'>{{ ($.Scratch.Get "dateType").Format "2006-01-02" }}</time>
-    </div>{{ "<!-- meta -->" | safeHTML }}
+  <div class="title">
+    <h2 class="post-header-title-style">
+			<a href="{{ .RelPermalink }}">
+				{{ .Title  | markdownify  }}
+			</a>
+		</h2>
+    {{ with .Description }}
+	    <p>
+				{{ . }}
+			</p>
+    {{ end }}
+  </div>{{ "<!-- title -->" | safeHTML }}
+  <div class="meta">
+    {{ $.Scratch.Set "dateType" .Date }}
+    <time class="published" datetime='{{ ($.Scratch.Get "dateType").Format "2006-01-02" }}'>
+			{{ ($.Scratch.Get "dateType").Format "2006-01-02" }}
+		</time>
+  </div>{{ "<!-- meta -->" | safeHTML }}
+	<div>
+		{{ range .Params.companies }}
+			<span class="pill pill-company">
+				<a href="/companies/{{ . | lower }}/">
+					{{ . }}
+				</a>
+			</span>
+		{{ end }}
+		{{ range .Params.categories }}
+			<span class="pill pill-category">
+				<a href="/categories/{{ . | lower }}/">
+					{{ . }}
+				</a>
+			</span>
+		{{ end }}
+		{{ range .Params.promised }}
+		<span class="pill pill-promised">
+			<a href="/promised/{{ . | lower }}/">
+				Promised {{ . }}
+			</a>
+		</span>
+		{{ end }}
+		{{ range .Params.deadline }}
+			<span class="pill pill-deadline">
+				<a href="/deadline/{{ . | lower }}/">
+					Deadline {{ . }}
+				</a>
+			</span>
+		{{ end }}
+	</div>
+
 </header>
 {{ "<!-- _default:article-header:end -->" | safeHTML }}

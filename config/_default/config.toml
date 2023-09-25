@@ -12,6 +12,13 @@ paginate								= 5
 		[markup.goldmark.renderer]
    		unsafe						= true	# added to allow raw HTML in page .Content
 
+
+[taxonomies]
+	category	= "categories"
+	company		= "companies"
+	promised	= "promised"
+	deadline		= "deadline"
+
 [params]
   # Meta tag description
   description						= "Le blog de Pierre Morsa, où il partage ses réflexions de comptoir. Co-fondateur et Creative Cat d'Ideas on Stage, agence spécialisée dans les présentations en public."
@@ -36,27 +43,26 @@ paginate								= 5
 	# - rss: id, no text, button
 	# - categories: id only
 	# - copyright: id, text, no button
-	[params.aside]
-		[params.aside.001]
-			id 								= "about"
-		    text  					= "Pierre Morsa est co-fondateur et Creative Cat chez <a href='https://www.pierremorsa.com/ideas-on-stage/'>Ideas on Stage</a>, une agence de création de présentations, formation et coaching à la prise de parole et événements d'entreprise."
-		    button					= "En savoir plus"	
-		[params.aside.002]
-			id 								= "contact"
-			text							= "Pour me contacter écrivez-moi à <br><a href='m&#97;ilt&#111;&#58;&#112;i&#101;r%&#55;&#50;e&#46;%6D&#111;&#114;&#115;%61&#64;p&#109;&#46;m&#101;'>pierre&#46;morsa&#64;&#112;m&#46;m&#101;</a>."
-		[params.aside.003]
-			id								= "links"
-			text							= "Les sites que je soutiens"
-			# No button, use /data/links files for links
-		[params.aside.004]
-			id								= "rss"
-			# No text for RSS
-			button						= "S'abonner au fil RSS"
-		[params.aside.005]
-			id								= "categories"
-		[params.aside.006]
-			id								= "copyright"
-			text							= "Site garanti sans cookies et sans JavaScript. Le contenu est en copie libre : vous pouvez tout copier et réutiliser librement."
+	[[params.aside]]
+		id 									= "about"
+	  text	  						= "Pierre Morsa est co-fondateur et Creative Cat chez <a href='https://www.pierremorsa.com/ideas-on-stage/'>Ideas on Stage</a>, une agence de création de présentations, formation et coaching à la prise de parole et événements d'entreprise."
+	  button							= "En savoir plus"	
+	[[params.aside]]
+		id 									= "contact"
+		text								= "Pour me contacter écrivez-moi à <br><a href='m&#97;ilt&#111;&#58;&#112;i&#101;r%&#55;&#50;e&#46;%6D&#111;&#114;&#115;%61&#64;p&#109;&#46;m&#101;'>pierre&#46;morsa&#64;&#112;m&#46;m&#101;</a>."
+	[[params.aside]]
+		id									= "links"
+		text								= "Les sites que je soutiens"
+		# No button, use /data/links files for links
+	[[params.aside]]
+		id									= "rss"
+		# No text for RSS
+		button							= "S'abonner au fil RSS"
+	[[params.aside]]
+		id									= "categories"
+	[[params.aside]]
+		id									= "copyright"
+		text								= "Site garanti sans cookies et sans JavaScript. Le contenu est en copie libre : vous pouvez tout copier et réutiliser librement."
 
 # Related content links at bottom of articles
 [related]
