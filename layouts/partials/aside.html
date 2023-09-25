@@ -10,7 +10,9 @@
 				{{/* RSS link */}}
 				{{ "<!-- rss -->" | safeHTML }}
 				<section id="rss">
-					<a rel="alternate" type="application/rss+xml" href="{{ with $.Page.OutputFormats.Get "RSS" }}{{ .Permalink }}{{ end }}" title="RSS" class="button">{{ .button | markdownify }}</a>
+					{{ with .button }}
+					<a rel="alternate" type="application/rss+xml" href="{{ with $.Page.OutputFormats.Get "RSS" }}{{ .Permalink }}{{ end }}" title="RSS" class="button">{{ .text | markdownify }}</a>
+					{{ end }}
 				</section>
 	
 			{{ else if eq .id "links" }}
@@ -134,7 +136,7 @@
 			    	<p>{{ . | markdownify }}</p>
 					{{ end }}
 					{{ with .button }}
-		        <a href="/about/" class="button">{{ . | markdownify }}</a>
+		        <a href="{{ .link }}" class="button">{{ .text | markdownify }}</a>
 					{{ end }}
 				</section>
 		

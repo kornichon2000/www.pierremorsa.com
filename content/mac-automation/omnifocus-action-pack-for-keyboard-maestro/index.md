@@ -24,9 +24,9 @@ If you want to Get/Set projects or tags with special characters in their names, 
 ## Installation
 You need to install three components. It is strongly advised to reinstall all three components each time a new version is released:
 
-* [The "AppleScriptLibrary" AppleScript library. Click here to download it.](AppleScriptLibrary-2021-03-02.zip)
-* [The "OmniFocusLibrary" AppleScript library. Click here to download it.](OmniFocusLibrary-2021-03-02.zip)
-* [The OmniFocus Action Pack for Keyboard Maestro. Click here to download it.](OmniFocusActionPackForKeyboardMaestro-2021-03-02.zip)
+* [The "AppleScriptLibrary" AppleScript library. Click here to download it.](/mac-automation/omnifocus-action-pack-for-keyboard-maestro/AppleScriptLibrary-2021-03-02.zip)
+* [The "OmniFocusLibrary" AppleScript library. Click here to download it.](/mac-automation/omnifocus-action-pack-for-keyboard-maestro/OmniFocusLibrary-2021-03-02.zip)
+* [The OmniFocus Action Pack for Keyboard Maestro. Click here to download it.](/mac-automation/omnifocus-action-pack-for-keyboard-maestro/OmniFocusActionPackForKeyboardMaestro-2021-03-02.zip)
 
 You will get three ".zip" archives. Uncompress them and move them to the locations as instructed below.
 
@@ -75,9 +75,9 @@ The pack includes more than 20 actions to automate OmniFocus. Most actions manip
 
 To use this version download from these links:
 
-* [The "AppleScriptLibrary" AppleScript library. Click here to download it.](AppleScriptLibrary-2021-03-02.zip)
-* [The "OmniFocusLibrary" AppleScript library. Click here to download it.](OmniFocusLibrary-2021-03-02.zip)
-* [The OmniFocus Action Pack for Keyboard Maestro. Click here to download it.](OmniFocusActionPackForKeyboardMaestro-2021-03-02.zip)
+* [The "AppleScriptLibrary" AppleScript library. Click here to download it.](/mac-automation/omnifocus-action-pack-for-keyboard-maestro/AppleScriptLibrary-2021-03-02.zip)
+* [The "OmniFocusLibrary" AppleScript library. Click here to download it.](/mac-automation/omnifocus-action-pack-for-keyboard-maestro/OmniFocusLibrary-2021-03-02.zip)
+* [The OmniFocus Action Pack for Keyboard Maestro. Click here to download it.](/mac-automation/omnifocus-action-pack-for-keyboard-maestro/OmniFocusActionPackForKeyboardMaestro-2021-03-02.zip)
 
 * Added possibility to set flag status when creating a new task.
 * Added matching OmniFocus Set Task Flag and OmniFocus Get Task Flag actions.
@@ -88,9 +88,9 @@ To use this version download from these links:
 
 To use this version download from these links:
 
-* [The "OmniFocusLibrary" AppleScript library. Click here to download it.](OmniFocusLibrary.zip)
-* [The "AppleScriptLibrary" AppleScript library. Click here to download it.](AppleScriptLibrary.zip)
-* [The OmniFocus Action Pack for Keyboard Maestro. Click here to download it.](OmniFocusActionPackForKeyboardMaestro.zip)
+* [The "OmniFocusLibrary" AppleScript library. Click here to download it.](/mac-automation/omnifocus-action-pack-for-keyboard-maestro/OmniFocusLibrary.zip)
+* [The "AppleScriptLibrary" AppleScript library. Click here to download it.](/mac-automation/omnifocus-action-pack-for-keyboard-maestro/AppleScriptLibrary.zip)
+* [The OmniFocus Action Pack for Keyboard Maestro. Click here to download it.](/mac-automation/omnifocus-action-pack-for-keyboard-maestro/OmniFocusActionPackForKeyboardMaestro.zip)
 
 * Added the OmniFocus Set Task Parent Task action
 * Added workaround for OmniFocus Set Task Project so that it doesn't fail if the project is empty (I create a temporary task then delete it).
@@ -101,19 +101,19 @@ The possibilities of the Action Pack are enormous, but to help you start, here a
 ### Create a palette to set the primary tag
 Keyboard Maestro allows you to create palettes with macros. Each application can have its own palette of actions. Here is, for example, the palette of actions I have for OmniFocus:
 
-![OmniFocus Action Palette](omnifocus-keyboard-maestro-palette.png)
+![OmniFocus Action Palette](/mac-automation/omnifocus-action-pack-for-keyboard-maestro/omnifocus-keyboard-maestro-palette.png)
 
 You can check the [Keyboard Maestro wiki](https://wiki.keyboardmaestro.com/manual/Palettes?s[]=palette) to learn how to create a palette of macros for a specific application.
 
 ### Change the perspective based on time of day
 Something else you can do is to decide to switch automatically from one perspective to another based on the current time. The example below shows how to switch to the Review perspective every day at 8:00 a.m.
 
-![OmniFocus Switch To Review Perspective Every Day at 9 a.m.](omnifocus-switch-to-review-perspective-every-day.png)
+![OmniFocus Switch To Review Perspective Every Day at 9 a.m.](/mac-automation/omnifocus-action-pack-for-keyboard-maestro/omnifocus-switch-to-review-perspective-every-day.png)
 
 ### Get a list of links to currently selected tasks in MarkDown format
 This example, inspired by a question on the Keyboard Maestro Forum, creates a list of clickable links to the selected OmniFocus tasks, in MarkDown format.
 
-![Markdown Links To Omnifocus Tasks](markdown-links-to-omnifocus-tasks.jpg)
+![Markdown Links To Omnifocus Tasks](/mac-automation/omnifocus-action-pack-for-keyboard-maestro/markdown-links-to-omnifocus-tasks.jpg)
 
 ## Actions Reference
 

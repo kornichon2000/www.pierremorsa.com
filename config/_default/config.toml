@@ -44,20 +44,40 @@ paginate								= 5
 	# - categories: id only
 	# - copyright: id, text, no button
 	[[params.aside]]
-		id 									= "about"
-	  text	  						= "Pierre Morsa est co-fondateur et Creative Cat chez <a href='https://www.pierremorsa.com/ideas-on-stage/'>Ideas on Stage</a>, une agence de création de présentations, formation et coaching à la prise de parole et événements d'entreprise."
-	  button							= "En savoir plus"	
+		id									= "blog"
+		[params.aside.button]
+			text							= "BLOG"
+			link								= "/"
 	[[params.aside]]
-		id 									= "contact"
-		text								= "Pour me contacter écrivez-moi à <br><a href='m&#97;ilt&#111;&#58;&#112;i&#101;r%&#55;&#50;e&#46;%6D&#111;&#114;&#115;%61&#64;p&#109;&#46;m&#101;'>pierre&#46;morsa&#64;&#112;m&#46;m&#101;</a>."
+		id									= "howitisgoing"
+		[params.aside.button]
+			text							= "HOW IT IS GOING"
+			link								= "/howitisgoing/"
+	[[params.aside]]
+		id									= "mac-automation"
+		[params.aside.button]
+			text							= "MAC AUTOMATION"
+			link								= "/mac-automation/"
+	[[params.aside]]
+		id 									= "about"
+		[params.aside.button]
+			text							= "À PROPOS"
+			link								= "/about/"
 	[[params.aside]]
 		id									= "links"
 		text								= "Les sites que je soutiens"
 		# No button, use /data/links files for links
 	[[params.aside]]
 		id									= "rss"
-		# No text for RSS
-		button							= "S'abonner au fil RSS"
+		[params.aside.button]
+			text							= "S'abonner au fil RSS"
+			link								= ""
+	[[params.aside]]
+		id 									= "contact"
+		[params.aside.button]
+			text							= "CONTACT"
+			link								= "mailto:pier%72e.%6Dors%61@pm.me"
+		
 	[[params.aside]]
 		id									= "categories"
 	[[params.aside]]

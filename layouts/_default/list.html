@@ -2,8 +2,7 @@
 	{{ "<!-- _default:list.html:start -->" | safeHTML }}
 	<main>
 		{{- $.Scratch.Set "count" 0 }}
-		{{- $paginator := .Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) }}
-		{{- range $paginator.Pages }}
+		{{ range .Paginator.Pages }}
 			{{- $.Scratch.Add "count" 1 }}
 			{{- .Render "article" }}
 			{{- if eq ($.Scratch.Get "count") 1 }}

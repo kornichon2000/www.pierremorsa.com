@@ -1,3 +1,2 @@
 User-agent: *
-Disallow: /bookme/
-Disallow: /callme/
+Allow: /*

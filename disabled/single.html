@@ -1,9 +1,0 @@
-{{ "<!-- layouts:post:single -->" | safeHTML }}
-{{ partial "header" . }}
-{{ partial "navbar" . }}
-		    <div id="main">
-		        {{- $.Scratch.Set "h1" true }}
-{{ .Render "content" }}
-		    </div>{{ "<!-- main -->" | safeHTML }}
-{{ partial "sidebar" . }}
-{{ partial "footer" . }}
