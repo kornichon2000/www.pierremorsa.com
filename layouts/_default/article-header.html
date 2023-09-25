@@ -21,28 +21,28 @@
 	<div>
 		{{ range .Params.companies }}
 			<span class="pill pill-company">
-				<a href="/companies/{{ . | lower }}/">
+				<a href="/companies/{{ . | urlize }}/">
 					{{ . }}
 				</a>
 			</span>
 		{{ end }}
 		{{ range .Params.categories }}
 			<span class="pill pill-category">
-				<a href="/categories/{{ . | lower }}/">
+				<a href="/categories/{{ . | urlize }}/">
 					{{ . }}
 				</a>
 			</span>
 		{{ end }}
 		{{ range .Params.promised }}
 		<span class="pill pill-promised">
-			<a href="/promised/{{ . | lower }}/">
+			<a href="/promised/{{ . | urlize }}/">
 				Promised {{ . }}
 			</a>
 		</span>
 		{{ end }}
 		{{ range .Params.deadline }}
 			<span class="pill pill-deadline">
-				<a href="/deadline/{{ . | lower }}/">
+				<a href="/deadline/{{ . | urlize }}/">
 					Deadline {{ . }}
 				</a>
 			</span>
