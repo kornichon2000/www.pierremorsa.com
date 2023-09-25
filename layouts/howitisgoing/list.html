@@ -2,7 +2,6 @@
 	{{ "<!-- _default:list.html:start -->" | safeHTML }}
 	<main>
 		{{- $.Scratch.Set "count" 0 }}
-
 		{{ range .Paginator.Pages }}
 			{{- $.Scratch.Add "count" 1 }}
 			{{- .Render "article" }}
