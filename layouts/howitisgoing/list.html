@@ -1,0 +1,17 @@
+{{- define "main" }}
+	{{ "<!-- _default:list.html:start -->" | safeHTML }}
+	<main>
+		{{- $.Scratch.Set "count" 0 }}
+
+		{{ range .Paginator.Pages }}
+			{{- $.Scratch.Add "count" 1 }}
+			{{- .Render "article" }}
+			{{- if eq ($.Scratch.Get "count") 1 }}
+				{{/* <!-- If it's the first article then insert links before second article --> */}}
+				{{- partial "links" . }}
+			{{- end }}
+		{{- end }}
+		{{- partial "pagination" . }}
+	</main>
+	{{ "<!-- _default:list.html:end -->" | safeHTML }}
+{{- end }}

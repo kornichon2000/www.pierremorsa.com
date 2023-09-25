@@ -4,9 +4,9 @@
 	<head>
 		{{- partial "head" . }}
 	</head>
-    <body>
+   <body>
 		{{- partial "topbar" . }}
-        <div class="flex-grandparent">
+    <div class="flex-grandparent">
 			<div class="flex-parent-main">
 				{{ block "main" . }}
 				{{ end }}
@@ -14,6 +14,6 @@
 			<div class="flex-parent-aside">
 				{{ partial "aside" . }}
 			</div>
-        </div>{{ "<!-- wrapper -->" | safeHTML }}
-    </body>        
+    </div>{{ "<!-- wrapper -->" | safeHTML }}
+  </body>        
 </html>
