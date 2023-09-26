@@ -629,7 +629,13 @@ dl dd {
 
 /* @end */
 
-.aside-li {
+.taxonomy-ul {
+	padding: 0;
+	list-style: none;
+	font-size: 0.825em;
+}
+
+.taxonomy-li {
 	margin-top: 0.5em;
 	margin-bottem: 0.5em;
 }

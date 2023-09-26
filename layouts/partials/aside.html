@@ -41,9 +41,9 @@
 			{{ "<!-- categories -->" | safeHTML }}
 			<section id="categories" class="layout-module blurb">
 				<h2>CATEGORIES</h2>
-			  <ul class="posts text-small">
+			  <ul class="taxonomy-ul">
 					{{ range $.Site.Taxonomies.categories.ByCount }}
-				    <li class="aside-li">
+				    <li class="taxonomy-li">
 							<span class="pill pill-category">
 								<a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a>
 							</span>
@@ -59,9 +59,9 @@
 			{{ "<!-- companies -->" | safeHTML }}
 			<section id="companies" class="layout-module blurb">
 				<h2>COMPANIES</h2>
-			  <ul class="posts text-small">
+			  <ul class="taxonomy-ul">
 					{{ range $.Site.Taxonomies.companies.ByCount }}
-				    <li class="aside-li">
+				    <li class="taxonomy-li">
 							<span class="pill pill-company">
 								<a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a>
 							</span>
@@ -77,9 +77,9 @@
 			{{ "<!-- promised -->" | safeHTML }}
 			<section id="categories" class="layout-module blurb">
 				<h2>YEAR OF INITIAL PROMISE</h2>
-			  <ul class="posts text-small">
+			  <ul class="taxonomy-ul">
 					{{ range $.Site.Taxonomies.promised.ByCount }}
-				    <li class="aside-li">
+				    <li class="taxonomy-li">
 							<span class="pill pill-promised">
 								<a href="{{ .Page.RelPermalink }}">
 									{{ .Page.Title }}
@@ -99,9 +99,9 @@
 			{{ "<!-- categories -->" | safeHTML }}
 			<section id="categories" class="layout-module blurb">
 				<h2>YEAR OF DEADLINE</h2>
-			  <ul class="posts text-small">
+			  <ul class="taxonomy-ul">
 					{{ range $.Site.Taxonomies.deadline.ByCount }}
-				    <li class="aside-li">
+				    <li class="taxonomy-li">
 							<span class="pill pill-deadline">
 								<a href="{{ .Page.RelPermalink }}">
 									{{ .Page.Title }}
