@@ -1,7 +1,7 @@
 {{ "<!-- partials:links:start -->" | safeHTML }}
 <section id="links" class="layout-module blurb hide-sm">
 	<header>
-	  <p class="justify-center">Les sites que je soutiens</p>
+	  <p class="align-center">Les sites que je soutiens</p>
 	</header>
 	<div class="flex-links">
 		{{- range $.Site.Data.links }}
@@ -11,7 +11,7 @@
 	    		<p>{{ .description }}</p>
 	    	</a>
 		</div>
-		{{- end }}				
+		{{- end }}
 	</div>
 </section>{{ "<!-- links -->" | safeHTML }}
 {{ "<!-- partials:links:end -->" | safeHTML }}

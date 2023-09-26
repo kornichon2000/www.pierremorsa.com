@@ -1,18 +1,20 @@
 {{/* HTML <head></head> section for all pages */}}
-		{{ "<!-- partials:head:start -->" | safeHTML }}
-		<title>{{ .Site.Title }}</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta name="author" content="{{ with .Params.author }}{{ . }}{{ end }}" />
-		<meta name="description" content="{{ with .Site.Params.description }}{{ . }}{{ end }}" />
-		<meta http-equiv="Content-Language" content="fr" />
-		{{ hugo.Generator }}
-		<link rel="me" href="https://mastodon.social/@pmorsa">
-		<link rel="apple-touch-icon-precomposed" href="/favicon/apple-touch-icon-precomposed.png">
-		<link rel="icon" href="/favicon/favicon.png">
-		{{- $style := resources.Get "main.scss" | resources.ToCSS | resources.Minify }}
-		<link rel="stylesheet" href="{{ $style.RelPermalink }}">
-		{{- with .OutputFormats.Get "rss" -}}
-		  {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
-		{{- end }}
-		{{ "<!-- partials:head:end -->" | safeHTML }}
+{{ "<!-- partials:head:start -->" | safeHTML }}
+<head>
+	<title>{{ .Site.Title }}</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="author" content="{{ with .Params.author }}{{ . }}{{ end }}" />
+	<meta name="description" content="{{ with .Site.Params.description }}{{ . }}{{ end }}" />
+	<meta http-equiv="Content-Language" content="fr" />
+	{{ hugo.Generator }}
+	<link rel="me" href="https://mastodon.social/@pmorsa">
+	<link rel="apple-touch-icon-precomposed" href="/favicon/apple-touch-icon-precomposed.png">
+	<link rel="icon" href="/favicon/favicon.png">
+	{{- $style := resources.Get "main.scss" | resources.ToCSS | resources.Minify }}
+	<link rel="stylesheet" href="{{ $style.RelPermalink }}">
+	{{- with .OutputFormats.Get "rss" -}}
+	  {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+	{{- end }}
+</head>	
+{{ "<!-- partials:head:end -->" | safeHTML }}

@@ -1,20 +1,13 @@
-{{- define "main" }}
+{{- define "body" }}
 	{{ "<!-- _default:list.html:start -->" | safeHTML }}
-	{{- $.Scratch.Set "count" 0 }}
-	{{ $paginator := "" }}
-	{{ if .IsHome }}
-		{{ $paginator = .Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) }}
-	{{ else }}
-		{{ $paginator = .Paginator }}
-	{{ end }}
-	{{ range $paginator.Pages }}
-		{{- $.Scratch.Add "count" 1 }}
-		{{- .Render "article" }}
-		{{- if eq ($.Scratch.Get "count") 1 }}
-			{{/* <!-- If it's the first article then insert links before second article --> */}}
-			{{- partial "links" . }}
-		{{- end }}
-	{{- end }}
-	{{- partial "pagination" . }}
+  <body>
+		{{ partial "topbar" . }}
+    <div class="flex-grandparent">
+			<main class="flex-main">
+				{{ partial "article-list" . }}
+			</main>
+			{{ partial "aside" . }}
+		</div>
+	</body>
 	{{ "<!-- _default:list.html:end -->" | safeHTML }}
 {{- end }}

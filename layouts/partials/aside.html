@@ -1,140 +1,146 @@
 {{/* The bar on the left on large view, or at the bottom of the site on narrow view */}}
 
 {{ "<!-- partials:aside:start -->" | safeHTML }}
-{{ range .Site.Params.aside }}
 
-	{{ if eq .id "rss" }}
-		{{/* RSS link */}}
-		{{ "<!-- rss -->" | safeHTML }}
-		<section id="rss" class="layout-module blurb">
-			{{ with .button }}
-			<a rel="alternate" type="application/rss+xml" href="{{ with $.Page.OutputFormats.Get "RSS" }}{{ .Permalink }}{{ end }}" title="RSS" class="button width-full">{{ .text | markdownify }}</a>
-			{{ end }}
-		</section>
+<aside class="flex-aside">
 
-	{{ else if eq .id "links" }}
+	{{ range .Site.Params.aside }}
 	
-		{{/* Generates the links to other sites, enclosed in hide-lg so that it is hidden on narrow screens */}}
-		{{ "<!-- links -->" | safeHTML }}
-		<section id="links" class="layout-module blurb hide-lg">
-			<header>
-			    <p>Les sites que je soutiens</p>
-			</header>
-			<div class="flex-links">
-				{{ range $.Site.Data.links }}
-					<div class="link">
-						<a href="{{ .link }}">
-			    		<img src="/pictures/links/{{ .picture }}">
-			    		<p>{{ .description }}</p>
-			    	</a>
-					</div>
+		{{ if eq .id "rss" }}
+			{{/* RSS link */}}
+			{{ "<!-- rss -->" | safeHTML }}
+			<section id="rss" class="layout-module blurb">
+				{{ with .button }}
+				<a rel="alternate" type="application/rss+xml" href="{{ with $.Page.OutputFormats.Get "RSS" }}{{ .Permalink }}{{ end }}" title="RSS" class="button width-full">{{ .text | markdownify }}</a>
 				{{ end }}
-			</div>
-		</section>
+			</section>
+	
+		{{ else if eq .id "links" }}
 		
-	{{ else if eq .id "categories" }}
-	
-		{{/* List of categories */}}
-		{{ "<!-- categories -->" | safeHTML }}
-		<section id="categories" class="layout-module blurb">
-			<h2>CATEGORIES</h2>
-		  <ul class="posts text-small">
-				{{ range $.Site.Taxonomies.categories.ByCount }}
-			    <li class="aside-li">
-						<span class="pill pill-category">
-							<a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a>
-						</span>
-						<span style="float:right;">{{ .Count }}</span>
-					</li>
-			   {{ end }}
-	    </ul>
-		</section>
-
-	{{ else if eq .id "companies" }}
-	
-		{{/* List of companies */}}
-		{{ "<!-- companies -->" | safeHTML }}
-		<section id="companies" class="layout-module blurb">
-			<h2>COMPANIES</h2>
-		  <ul class="posts text-small">
-				{{ range $.Site.Taxonomies.companies.ByCount }}
-			    <li class="aside-li">
-						<span class="pill pill-company">
-							<a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a>
-						</span>
-						<span style="float:right;">{{ .Count }}</span>
-					</li>
-			   {{ end }}
-	    </ul>
-		</section>
-
-	{{ else if eq .id "promised" }}
-	
-		{{/* List of promised dates */}}
-		{{ "<!-- promised -->" | safeHTML }}
-		<section id="categories" class="layout-module blurb">
-			<h2>YEAR OF INITIAL PROMISE</h2>
-		  <ul class="posts text-small">
-				{{ range $.Site.Taxonomies.promised.ByCount }}
-			    <li class="aside-li">
-						<span class="pill pill-promised">
-							<a href="{{ .Page.RelPermalink }}">
-								{{ .Page.Title }}
-							</a>
-						</span>
-						<span style="float:right;">
-							{{ .Count }}
-						</span>
-					</li>
-			   {{ end }}
-	    </ul>
-		</section>
-
-	{{ else if eq .id "deadline" }}
-	
-		{{/* List of deadline dates */}}
-		{{ "<!-- categories -->" | safeHTML }}
-		<section id="categories" class="layout-module blurb">
-			<h2>YEAR OF DEADLINE</h2>
-		  <ul class="posts text-small">
-				{{ range $.Site.Taxonomies.deadline.ByCount }}
-			    <li class="aside-li">
-						<span class="pill pill-deadline">
-							<a href="{{ .Page.RelPermalink }}">
-								{{ .Page.Title }}
-							</a>
-						</span>
-						<span style="float:right;">
-							{{ .Count }}
-						</span>
-					</li>
-			   {{ end }}
-	    </ul>
-		</section>
-
-	{{ else if eq .id "copyright" }}
-	
-		{{/* Copyright notice */}}
-		{{ "<!-- copyright -->" | safeHTML }}
-		<section id="copyright" class="layout-module blurb">
-			{{ with .text }}
-				<p class="copyright">{{ . | markdownify }}</p>
-			{{ end }}
-		</section>
+			{{/* Generates the links to other sites, enclosed in hide-lg so that it is hidden on narrow screens */}}
+			{{ "<!-- links -->" | safeHTML }}
+			<section id="links" class="layout-module blurb hide-lg">
+				<header>
+				    <p class="align-center">Les sites que je soutiens</p>
+				</header>
+				<div class="flex-links">
+					{{ range $.Site.Data.links }}
+						<div class="link">
+							<a href="{{ .link }}">
+				    		<img src="/pictures/links/{{ .picture }}">
+				    		<p>{{ .description }}</p>
+				    	</a>
+						</div>
+					{{ end }}
+				</div>
+			</section>
+			
+		{{ else if eq .id "categories" }}
 		
-	{{ else }}
+			{{/* List of categories */}}
+			{{ "<!-- categories -->" | safeHTML }}
+			<section id="categories" class="layout-module blurb">
+				<h2>CATEGORIES</h2>
+			  <ul class="posts text-small">
+					{{ range $.Site.Taxonomies.categories.ByCount }}
+				    <li class="aside-li">
+							<span class="pill pill-category">
+								<a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a>
+							</span>
+							<span style="float:right;">{{ .Count }}</span>
+						</li>
+				   {{ end }}
+		    </ul>
+			</section>
 	
-		{{/* Default rendering is blurb, with optional text and button */}}
-		{{ "<!-- blurb -->" | safeHTML }}
-		<section id="{{ .id }}" class="layout-module blurb">
-			{{ with .text }}
-	    	<p>{{ . | markdownify }}</p>
-			{{ end }}
-			{{ with .button }}
-        <a href="{{ .link }}" class="button width-full">{{ .text | markdownify }}</a>
-			{{ end }}
-		</section>
+		{{ else if eq .id "companies" }}
+		
+			{{/* List of companies */}}
+			{{ "<!-- companies -->" | safeHTML }}
+			<section id="companies" class="layout-module blurb">
+				<h2>COMPANIES</h2>
+			  <ul class="posts text-small">
+					{{ range $.Site.Taxonomies.companies.ByCount }}
+				    <li class="aside-li">
+							<span class="pill pill-company">
+								<a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a>
+							</span>
+							<span style="float:right;">{{ .Count }}</span>
+						</li>
+				   {{ end }}
+		    </ul>
+			</section>
+	
+		{{ else if eq .id "promised" }}
+		
+			{{/* List of promised dates */}}
+			{{ "<!-- promised -->" | safeHTML }}
+			<section id="categories" class="layout-module blurb">
+				<h2>YEAR OF INITIAL PROMISE</h2>
+			  <ul class="posts text-small">
+					{{ range $.Site.Taxonomies.promised.ByCount }}
+				    <li class="aside-li">
+							<span class="pill pill-promised">
+								<a href="{{ .Page.RelPermalink }}">
+									{{ .Page.Title }}
+								</a>
+							</span>
+							<span style="float:right;">
+								{{ .Count }}
+							</span>
+						</li>
+				   {{ end }}
+		    </ul>
+			</section>
+	
+		{{ else if eq .id "deadline" }}
+		
+			{{/* List of deadline dates */}}
+			{{ "<!-- categories -->" | safeHTML }}
+			<section id="categories" class="layout-module blurb">
+				<h2>YEAR OF DEADLINE</h2>
+			  <ul class="posts text-small">
+					{{ range $.Site.Taxonomies.deadline.ByCount }}
+				    <li class="aside-li">
+							<span class="pill pill-deadline">
+								<a href="{{ .Page.RelPermalink }}">
+									{{ .Page.Title }}
+								</a>
+							</span>
+							<span style="float:right;">
+								{{ .Count }}
+							</span>
+						</li>
+				   {{ end }}
+		    </ul>
+			</section>
+	
+		{{ else if eq .id "copyright" }}
+		
+			{{/* Copyright notice */}}
+			{{ "<!-- copyright -->" | safeHTML }}
+			<section id="copyright" class="layout-module blurb">
+				{{ with .text }}
+					<p class="copyright">{{ . | markdownify }}</p>
+				{{ end }}
+			</section>
+			
+		{{ else }}
+		
+			{{/* Default rendering is blurb, with optional text and button */}}
+			{{ "<!-- blurb -->" | safeHTML }}
+			<section id="{{ .id }}" class="layout-module blurb">
+				{{ with .text }}
+		    	<p>{{ . | markdownify }}</p>
+				{{ end }}
+				{{ with .button }}
+	        <a href="{{ .link }}" class="button width-full">{{ .text | markdownify }}</a>
+				{{ end }}
+			</section>
+		{{ end }}
+	
 	{{ end }}
+	
+</aside>
 
-{{ end }}
 {{ "<!-- partials:aside:end -->" | safeHTML }}

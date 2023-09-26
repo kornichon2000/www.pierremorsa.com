@@ -656,7 +656,7 @@ dl dd {
 
 .flex-links {
 	display: flex;
-	justify-content: space-between; /* use helper class space-between to change */
+	justify-content: space-evenly; /* use helper class space-between to change */
 	flex-direction: row;
 	flex-wrap: wrap;
 }
@@ -698,11 +698,6 @@ dl dd {
 	}
 
 @media (max-aspect-ratio:1/1) and (max-width:480px) {
-	
-	.flex-links {
-		justify-content: space-evenly;
-		gap: 0.5em
-	}
 	
 	.hide-sm {
 		margin-top: 2em;

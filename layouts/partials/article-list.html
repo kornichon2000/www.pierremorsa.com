@@ -1,0 +1,18 @@
+{{ "<!-- partials:article-list.html:start -->" | safeHTML }}
+{{- $.Scratch.Set "count" 0 }}
+{{ $paginator := "" }}
+{{ if .IsHome }}
+	{{ $paginator = .Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) }}
+{{ else }}
+	{{ $paginator = .Paginator }}
+{{ end }}
+{{ range $paginator.Pages }}
+	{{- $.Scratch.Add "count" 1 }}
+	{{- partial "article" . }}
+	{{- if eq ($.Scratch.Get "count") 1 }}
+		{{/* <!-- If it's the first article then insert links before second article --> */}}
+		{{- partial "links" . }}
+	{{- end }}
+{{- end }}
+{{- partial "pagination" . }}
+{{ "<!-- partials:article-list.html:end -->" | safeHTML }}

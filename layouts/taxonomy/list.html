@@ -1,13 +1,16 @@
-{{ define "main" }}
+{{ define "body" }}
 	{{ "<!-- taxonomy:list:start -->" | safeHTML }}
-	<main>
-		<h1>
-			{{ .Parent.Title }} - {{ .Title }}
-		</h1>
-		{{ range .Paginator.Pages }}
-			{{ .Render "article-summary" }}
-		{{ end }}
-		{{ partial "pagination" . }}
-	</main>
+  <body>
+		{{ partial "topbar" . }}
+    <div class="flex-grandparent">
+			<main class="flex-main">
+				<h1>
+					{{ .Parent.Title }} - {{ .Title }}
+				</h1>
+				{{ partial "article-summary-list" . }}
+			</main>
+			{{ partial "aside" . }}
+		</div>
+	</body>			
 	{{ "<!-- taxonomy:list:end -->" | safeHTML }}
 {{ end }}

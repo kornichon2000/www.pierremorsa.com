@@ -1,7 +1,14 @@
-{{ define "main" }}
+{{ define "body" }}
 	{{ "<!-- _default:single:start -->" | safeHTML }}
-	<main>
-		{{ .Render "article" }}
-	</main>
-{{ "<!-- _default:single:end -->" | safeHTML }}
+  <body>
+		{{ partial "topbar" . }}
+    <div class="flex-grandparent">
+			<main class="flex-main">
+				{{ partial "article" . }}
+			</main>
+			{{ partial "aside" . }}
+    </div>
+  </body>
+ 	{{ "<!-- _default:single:end -->" | safeHTML }}
 {{ end }}
+

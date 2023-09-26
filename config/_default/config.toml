@@ -76,7 +76,7 @@ paginate								= 5
 		id 									= "contact"
 		[params.aside.button]
 			text							= "CONTACT"
-			link								= "mailto:pier%72e.%6Dors%61@pm.me"
+			link								= "mailto:pier%72e.%6Dors%61@pierremorsa.com"
 		
 	[[params.aside]]
 		id									= "categories"

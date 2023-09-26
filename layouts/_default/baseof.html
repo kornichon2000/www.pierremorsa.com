@@ -1,19 +1,9 @@
 {{ "<!-- _default:baseof.html -->" | safeHTML }}
 <!DOCTYPE HTML>
 <html lang="fr">
-	<head>
-		{{- partial "head" . }}
-	</head>
-   <body>
-		{{- partial "topbar" . }}
-    <div class="flex-grandparent">
-			<main class="flex-main">
-				{{ block "main" . }}
-				{{ end }}
-			</main>
-			<aside class="flex-aside">
-				{{ partial "aside" . }}
-			</aside>
-    </div>{{ "<!-- wrapper -->" | safeHTML }}
-  </body>        
+	{{ block "head" . }}
+		{{ partial "head" . }}
+	{{ end }}
+	{{ block "body" . }}
+	{{ end }}
 </html>

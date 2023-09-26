@@ -1,6 +1,6 @@
 {{ "<!-- _default:article:start -->" | safeHTML }}
 <article class="layout-module post">
-	{{ .Render "article-header" }}
+	{{ partial "article-header" . }}
 	<div class="post-content">
 		{{ .Content }}
     </div>
@@ -14,5 +14,6 @@
 			{{ end }}
 		</ul>
 	{{ end }}
-	</div></article>
+	</div>
+</article>
 {{ "<!-- _default:article:end -->" | safeHTML }}

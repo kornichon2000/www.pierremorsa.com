@@ -1,0 +1,6 @@
+{{ "<!-- partials:article-list.html:start -->" | safeHTML }}
+{{ range .Paginator.Pages }}
+	{{ partial "article-summary" . }}
+{{ end }}
+{{ partial "pagination" . }}
+{{ "<!-- partials:article-list.html:end -->" | safeHTML }}

@@ -1,6 +1,6 @@
 {{ "<!-- _default:article-summary:start -->" | safeHTML }}
 <article class="layout-module post post-style">
-	{{ .Render "article-header" }}
+	{{ partial "article-header" . }}
 	<div class="post-content">
 		<p>{{ .Summary }}</p>
 	    <a href="{{ .RelPermalink }}" class="text-bold text-upper">Lire la suite</a>
