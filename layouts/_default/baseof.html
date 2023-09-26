@@ -7,13 +7,13 @@
    <body>
 		{{- partial "topbar" . }}
     <div class="flex-grandparent">
-			<div class="flex-parent-main">
+			<main class="flex-main">
 				{{ block "main" . }}
 				{{ end }}
-			</div>
-			<div class="flex-parent-aside">
+			</main>
+			<aside class="flex-aside">
 				{{ partial "aside" . }}
-			</div>
+			</aside>
     </div>{{ "<!-- wrapper -->" | safeHTML }}
   </body>        
 </html>

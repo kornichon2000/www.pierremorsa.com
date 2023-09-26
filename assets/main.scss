@@ -194,7 +194,7 @@ h4 {
     font-size: 0.7em;
 }
 
-@media screen and (max-width:980px) {
+@media (max-aspect-ratio:1/1) and (max-width:480px) {
 	h1 {
 		text-align: center;
 	}
@@ -207,25 +207,24 @@ h4 {
 
 button,
 .button {
-    appearance: none;
-    transition: background-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
-    background-color: transparent;
-    border: 0;
-    box-shadow: inset 0 0 0 1px rgba(128, 128, 128, 0.3);
-    color: #3c3b3b !important;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 0.7em;
-    font-weight: 800;
-    height: 4.8125em;
-    letter-spacing: 0.25em;
-    line-height: 4.8125em;
-    padding: 0 1.5em;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    white-space: nowrap;
-	width: 100%;
+  appearance: none;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
+  background-color: transparent;
+  border: 0;
+  box-shadow: inset 0 0 0 1px rgba(128, 128, 128, 0.3);
+  color: #3c3b3b !important;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.7em;
+  font-weight: 800;
+  height: 4.8125em;
+  letter-spacing: 0.25em;
+  line-height: 4.8125em;
+  padding: 0 1.5em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
 }
 
 button:hover,
@@ -258,6 +257,12 @@ button:disabled:before,
     color: rgba(160, 160, 160, 0.3) !important;
 }
 
+/* @end */
+
+
+
+/* @group pills */
+
 .pills {
 	display: flex;	
 	flex-direction: row;
@@ -268,7 +273,7 @@ button:disabled:before,
 
 .pill {
 	border-radius: 5px;
-	padding: 5px;
+	padding: 2px 8px 2px 8px;
 }
 
 .pill a, .pill a:hover {
@@ -293,6 +298,8 @@ button:disabled:before,
 }
 
 /* @end */
+
+
 
 label {
     color: #3c3b3b;
@@ -383,49 +390,119 @@ dl dd {
     white-space: nowrap;
 }
 
-@media screen and (max-width:980px) {   
+@media (max-aspect-ratio:1/1) and (max-width:480px) {   
     .topbar-style h1 {
     	font-size: 0.7em;
     }
 }
 
-@media screen and (max-width:320px) {   
-    .topbar-style h1 {
-    	font-size: 0.5em;
-    }
+/* @end */
+
+
+
+/* @group flexbox grandparent */
+
+.flex-grandparent {
+	/* main flex around main and aside */
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: flex-start;
+	margin: 3em 3em 3em 3em; /* trbl set top and left margins on flexbox wrapper */
+	padding: 0;
+	gap: 3em; /* gap between left aside and main content */
+}
+
+@media (max-aspect-ratio:1/1) and (max-width:480px) {
+
+	.flex-grandparent {
+		flex-direction: column;
+		align-items: stretch;
+		margin: 1.5em;
+	}
+	
 }
 
 /* @end */
 
-/* @group flexbox wrapper and children main and aside */
 
-.flex-grandparent {
-	/* main flex around main and aside */
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    align-items: flex-start;
-	margin: 3em 0 0 3em; /* trbl set top and left margins on flexbox wrapper */
-	padding: 0;
+
+/* @group flexbox main */
+
+.flex-main {
+	/* flex for main, inside flex-grandparent */
+	display: flex;
+	flex-direction: column; /* display top to bottom */
+  flex-grow: 1; /* the part containing the articles can grow horizontally */
+	max-width: 960px; /* max width of main is 960px */
+	gap: 3em; /* gap between articles */
 }
 
-.flex-parent-main {
-	/* secondary flex for main */
-	flex: 1;
-    flex-grow: 1; /* main, the part containing the articles can grow horizontally */
-	max-width: 960px;
-}
+/* @end */
 
-.flex-parent-aside {
+
+
+/* @group flexbox aside */
+
+.flex-aside {
 	/* secondary flex for aside */
-	flex: 0 0 320px; /* no grow, no shrink, fixed basis */
+	display: flex;
+	flex-direction: column;
+	flex-grow: 0;
+	min-width: 256px;
+	max-width: 480px;
+	gap: 3em;
 }
+
+@media (max-aspect-ratio:1/1) and (max-width:480px) {	
+
+	.flex-aside {
+		padding-top: 2em;
+		flex-grow: 1;
+		gap: 1.5em;
+	}
+
+}	
+
+/* @end */
+
+
+
+/* @group flexbox navigation */
+
+.flex-navigation {
+	display: flex;
+	flex-direction: row;
+	flex-grow: 1;
+	flex-wrap: wrap;
+	max-width: 960px;
+	gap: 3em;
+	align-content: stretch;
+	justify-content: center;
+}
+
+.flex-navigation .button {
+	flex-grow: 1;
+}
+
+@media (max-aspect-ratio:1/1) and (max-width:480px) {
+	
+	.flex-navigation {
+		gap: 1.5em;
+	}
+	
+}
+
+/* @end */
+
+
+/* @group layout-module */
 
 .layout-module {
-	/* layout block inside flex-(grand)parent */
+	/* layout block inside flex-main and flex-aside */
 	/* not called flex- because it's not a flexbox */
-	margin: 0 3em 3em 0; /* trbl set right and bottom margins on children */
- }
+	margin: 0;
+}
 
 .blurb h2 {
     font-size: 0.8em;
@@ -440,65 +517,43 @@ dl dd {
     font-size: 0.8em;
 }
 
+/* @end */
+
+
+
+/* @group post */
+
 .post {
-	display: flex;
-	flex-direction: column;
+  background: #ffffff;
+  border: solid 1px rgba(160, 160, 160, 0.3);
 }
 
-.post-style {	
-    background: #ffffff;
-    border: solid 1px rgba(160, 160, 160, 0.3);
-}
-
-.post header {
-    display: flex;
-	flex-direction: column;
-    position: relative;
+.post-header {
 	padding-top: 3em;
 	padding-left: 3em;
 	padding-right: 3em;
 	padding-bottom: 2em;
+  border-bottom: solid 1px rgba(160, 160, 160, 0.3);	
 }
 
-.post header .title {
-    flex-grow: 1;
-}
-
-.post-header-style {
-    border-bottom: solid 1px rgba(160, 160, 160, 0.3);	
-}
-
-.post-header-title-style {
-    font-weight: 900;
-    font-size: 1.5em;
+.post-header-title {
+  font-weight: 900;
+  font-size: 1.5em;
 	margin-bottom: 0;
 }
 
-.post header .meta {
+.post-header-meta {
     text-align: left;
 		margin-bottom: 1em;
 }
 
-.post header .meta .published {
+.post-header-meta-published {
     color: #bbbbbb;
     font-size: 0.75em;
     font-weight: 800;
     letter-spacing: 0.25em;
     text-transform: uppercase;
     white-space: nowrap;
-}
-
-.img-50p {
-	width: 50%;
-	height: auto;
-}
-
-@media screen and (max-width: 480px) {
-	.img-50p {
-		width: 100%;
-		height: auto;
-}
-
 }
 
 .post-content {
@@ -515,57 +570,49 @@ dl dd {
 	padding-bottom: 3em;
 }
 
-ul.posts {
-    list-style: none;
-    padding: 0;
+.img-50p {
+	width: 50%;
+	height: auto;
 }
 
-@media screen and (max-width:980px) {
+@media (max-aspect-ratio:1/1) and (max-width:480px) {
 
-	.flex-grandparent {
-		flex-direction: column;
-		align-items: stretch;
-		margin: 1.5em 0 0 1.5em;
+	.img-50p {
+		width: 100%;
+		height: auto;
 	}
 	
-	.flex-parent-aside {
-		padding-top: 2em;
-		flex-grow: 1;
+	ul.posts {
+	  list-style: none;
+	  padding: 0;
 	}
-	
-	.layout-module {
-		margin: 0 1.5em 1.5em 0;
-	}
-	
+		
 	.post {
-        border-left: 0;
-        border-right: 0;
-    }
+    border-left: 0;
+    border-right: 0;
+  }
 
-    .post header {
+  .post-header {
 		padding-top: 2em;
 		padding-left: 0em;
 		padding-right: 0em;
 		padding-bottom: 1em;
 	}
 
-    .post header .title {
-        text-align: center;
-    }
-
-    .post header .title h2 {
+  .post-header-title {
+    text-align: center;
 		font-size: 1em;
-    }
+  }
 
-    .post header .meta {
-        align-items: center;
+  .post-header-meta {
+    align-items: center;
 		flex-direction: column;
-        display: flex;
-        justify-content: center;
-    }
+    display: flex;
+    justify-content: center;
+  }
 
 	.post-content {
-		padding-top: 2em;
+		padding-top: 0em;
 		padding-left: 0em;
 		padding-right: 0em;
 		padding-bottom: 1em;
@@ -577,6 +624,7 @@ ul.posts {
 		padding-right: 0em;
 		padding-bottom: 1em;
 	}
+
 }
 
 /* @end */
@@ -586,41 +634,7 @@ ul.posts {
 	margin-bottem: 0.5em;
 }
 
-/* @group navigation */
 
-#navigation {
-	
-}
-
-/* buttons navigation */
-
-ul.actions {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	margin: 0;
-    padding-left: 0; /* necessary to avoid shift right */
-    cursor: default;
-    list-style: none;
-}
-
-ul.actions li {
-	flex: 1;
-	padding: 0;
-}
-
-@media screen and (max-width:980px) {
-    ul.actions {
-		flex-direction: column;
-    }
-
-	ul.actions li {
-		flex: 1;
-		padding: 0;
-	}
-}
-
-/* @end */
 
 /* section copyright */
 
@@ -636,21 +650,19 @@ ul.actions li {
 
 /* @group flexbox links and children link */
 
-#links {
-}
-
 #links header p {
 	text-transform: uppercase;
 }
 
-.links {
+.flex-links {
 	display: flex;
-	justify-content: space-around; /* use helper class space-between to change */
+	justify-content: space-between; /* use helper class space-between to change */
+	flex-direction: row;
 	flex-wrap: wrap;
 }
 
 .link {
-	flex: 0;
+	flex-grow: 0;
 	margin: 0;
 	flex-basis: 122px;
 	margin-bottom: 2em;
@@ -668,32 +680,42 @@ ul.actions li {
 
 .link p {
 	font-size: 0.825em;
+	margin-top: 0em;
 	margin-bottom: 0px;
 }
 
-.hide-sm {
-	margin-top: 2em;
-	display: none;	
-}
+/* @end */
 
-.hide-lg {
-	display: none;
-}
 
-@media screen and (min-width:981px) {
+
+/* @group hide small or large screens */
+
+	.hide-sm {
+		display: none;
+	}
 	.hide-lg {
 		display: block;
 	}
-}
 
-@media screen and (max-width:980px) {
+@media (max-aspect-ratio:1/1) and (max-width:480px) {
+	
+	.flex-links {
+		justify-content: space-evenly;
+		gap: 0.5em
+	}
+	
 	.hide-sm {
+		margin-top: 2em;
 		display: block;
 	}
-
+	.hide-lg {
+		display: none;
+	}
 }
 
 /* @end */
+
+
 
 /* @group dark theme */
 
@@ -741,6 +763,8 @@ ul.actions li {
 
 /* @end */
 
+
+
 /* @group helper classes */
 
 .align-left {
@@ -777,6 +801,10 @@ ul.actions li {
 
 .text-upper {
 	text-transform: uppercase;
+}
+
+.width-full {
+	width: 100%;
 }
 
 /* @end */

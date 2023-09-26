@@ -1,19 +1,17 @@
 {{ "<!-- partials:links:start -->" | safeHTML }}
-<div class="hide-sm blurb">
-	<section id="links">
-		<header>
-		    <p class="justify-center">Les sites que je soutiens</p>
-		</header>
-		<div class="links">
-			{{- range $.Site.Data.links }}
-			<div class="link">
-				<a href="{{ .link }}">
-		    		<img src="/pictures/links/{{ .picture }}">
-		    		<p>{{ .description }}</p>
-		    	</a>
-			</div>
-			{{- end }}				
+<section id="links" class="layout-module blurb hide-sm">
+	<header>
+	  <p class="justify-center">Les sites que je soutiens</p>
+	</header>
+	<div class="flex-links">
+		{{- range $.Site.Data.links }}
+		<div class="link">
+			<a href="{{ .link }}">
+	    		<img src="/pictures/links/{{ .picture }}">
+	    		<p>{{ .description }}</p>
+	    	</a>
 		</div>
-	</section>{{ "<!-- links -->" | safeHTML }}
-</div>
+		{{- end }}				
+	</div>
+</section>{{ "<!-- links -->" | safeHTML }}
 {{ "<!-- partials:links:end -->" | safeHTML }}

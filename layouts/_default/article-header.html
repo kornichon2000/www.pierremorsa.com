@@ -1,7 +1,7 @@
 {{ "<!-- _default:article-header:start -->" | safeHTML }}
-<header class="post-header-style">
+<header class="post-header">
   <div class="title">
-    <h2 class="post-header-title-style">
+    <h2 class="post-header-title">
 			<a href="{{ .RelPermalink }}">
 				{{ .Title  | markdownify  }}
 			</a>
@@ -12,16 +12,16 @@
 			</p>
     {{ end }}
   </div>{{ "<!-- title -->" | safeHTML }}
-  <div class="meta">
+  <div class="post-header-meta">
     {{ $.Scratch.Set "dateType" .Date }}
-    <time class="published" datetime='{{ ($.Scratch.Get "dateType").Format "2006-01-02" }}'>
+    <time class="post-header-meta-published" datetime='{{ ($.Scratch.Get "dateType").Format "2006-01-02" }}'>
 			{{ if .Params.initialdate }}
 				Updated
 			{{ end }}
 			{{ ($.Scratch.Get "dateType").Format "2006-01-02" }}
 		</time>
 		{{ with .Params.initialdate }}
-	    <time class="published" datetime='{{ . }}'>
+	    <time class="post-header-meta-published" datetime='{{ . }}'>
 				(Initial date {{ . }})
 			</time>
 		{{ end }}

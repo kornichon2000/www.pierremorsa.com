@@ -1,23 +1,15 @@
 {{/* Buttons for navigation at bottom of list pages */}}
 
 {{ "<!-- partials:pagination -->" | safeHTML }}
-<nav>
-	<div id="navigation">
-		<ul class="actions">
-			<li class="layout-module">
-				{{ if .Paginator.HasPrev }}
-		    		<a href="{{ .Paginator.Prev.URL }}" class="button">{{ .Site.Params.nav.previous }}</a>
-				{{ else }}
-					<a href="#" class="disabled button">{{ .Site.Params.nav.previous }}</a>
-				{{ end }}
-			</li>
-			<li class="layout-module">
-			    {{ if .Paginator.HasNext }}
-			    	<a href="{{ .Paginator.Next.URL }}" class="button">{{ .Site.Params.nav.next }}</a>
-			    {{ else }}
-			    	<a href="#" class="disabled button">{{ .Site.Params.nav.next }}</a>
-			    {{ end }}
-			</li>
-		</ul>
-	</div>
+<nav id="navigation" class="flex-navigation">
+	{{ if .Paginator.HasPrev }}
+  	<a href="{{ .Paginator.Prev.URL }}" class="button">{{ .Site.Params.nav.previous }}</a>
+	{{ else }}
+		<a href="#" class="disabled button">{{ .Site.Params.nav.previous }}</a>
+	{{ end }}
+  {{ if .Paginator.HasNext }}
+  	<a href="{{ .Paginator.Next.URL }}" class="button">{{ .Site.Params.nav.next }}</a>
+  {{ else }}
+  	<a href="#" class="disabled button">{{ .Site.Params.nav.next }}</a>
+  {{ end }}
 </nav>
