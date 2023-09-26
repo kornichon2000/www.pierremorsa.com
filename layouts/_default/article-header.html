@@ -15,10 +15,18 @@
   <div class="meta">
     {{ $.Scratch.Set "dateType" .Date }}
     <time class="published" datetime='{{ ($.Scratch.Get "dateType").Format "2006-01-02" }}'>
+			{{ if .Params.initialdate }}
+				Updated
+			{{ end }}
 			{{ ($.Scratch.Get "dateType").Format "2006-01-02" }}
 		</time>
-  </div>{{ "<!-- meta -->" | safeHTML }}
-	<div>
+		{{ with .Params.initialdate }}
+	    <time class="published" datetime='{{ . }}'>
+				(Initial date {{ . }})
+			</time>
+		{{ end }}
+	</div>{{ "<!-- meta -->" | safeHTML }}
+	<div class="pills">
 		{{ range .Params.companies }}
 			<span class="pill pill-company">
 				<a href="/companies/{{ . | urlize }}/">

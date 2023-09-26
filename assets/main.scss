@@ -258,10 +258,17 @@ button:disabled:before,
     color: rgba(160, 160, 160, 0.3) !important;
 }
 
+.pills {
+	display: flex;	
+	flex-direction: row;
+	flex-grow: 0;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
 .pill {
 	border-radius: 5px;
 	padding: 5px;
-	margin-right: 8px;
 }
 
 .pill a, .pill a:hover {
