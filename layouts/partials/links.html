@@ -3,12 +3,12 @@
 	<header>
 	  <p class="align-center">Les sites que je soutiens</p>
 	</header>
-	<div class="flex-links">
+	<div class="links-flex">
 		{{- range $.Site.Data.links }}
 		<div class="link">
-			<a href="{{ .link }}">
-	    		<img src="/pictures/links/{{ .picture }}">
-	    		<p>{{ .description }}</p>
+			<a href="{{ .link }}" class="link-a">
+	    		<img src="/pictures/links/{{ .picture }}" class="link-img">
+	    		<p class="link-p">{{ .description }}</p>
 	    	</a>
 		</div>
 		{{- end }}

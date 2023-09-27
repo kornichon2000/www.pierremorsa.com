@@ -2,14 +2,14 @@
 
 {{ "<!-- partials:aside:start -->" | safeHTML }}
 
-<aside class="flex-aside">
+<aside class="aside-flex">
 
 	{{ range .Site.Params.aside }}
 	
 		{{ if eq .id "rss" }}
 			{{/* RSS link */}}
 			{{ "<!-- rss -->" | safeHTML }}
-			<section id="rss" class="layout-module blurb">
+			<section id="rss" class="aside-module blurb">
 				{{ if .button }}
 				<a rel="alternate" type="application/rss+xml" href="{{ with $.Page.OutputFormats.Get "RSS" }}{{ .Permalink }}{{ end }}" title="RSS" class="button width-full">{{ .button | markdownify }}</a>
 				{{ end }}
@@ -19,16 +19,16 @@
 		
 			{{/* Generates the links to other sites, enclosed in hide-lg so that it is hidden on narrow screens */}}
 			{{ "<!-- links -->" | safeHTML }}
-			<section id="links" class="layout-module blurb hide-lg">
+			<section id="links" class="aside-module hide-lg">
 				<header>
-				    <p class="align-center">Les sites que je soutiens</p>
+				  <h2 class="aside-module-h2 align-center">Les sites que je soutiens</p>
 				</header>
-				<div class="flex-links">
+				<div class="links-flex">
 					{{ range $.Site.Data.links }}
 						<div class="link">
-							<a href="{{ .link }}">
-				    		<img src="/pictures/links/{{ .picture }}">
-				    		<p>{{ .description }}</p>
+							<a href="{{ .link }}" class="link-a">
+				    		<img src="/pictures/links/{{ .picture }}" class="link-img">
+				    		<p class="link-p">{{ .description }}</p>
 				    	</a>
 						</div>
 					{{ end }}
@@ -39,11 +39,11 @@
 		
 			{{/* List of categories */}}
 			{{ "<!-- categories -->" | safeHTML }}
-			<section id="categories" class="layout-module blurb">
-				<h2>CATEGORIES</h2>
-			  <ul class="taxonomy-ul">
+			<section id="categories" class="aside-module">
+				<h2 class="aside-module-h2">CATEGORIES</h2>
+			  <ul class="aside-taxonomy-ul">
 					{{ range $.Site.Taxonomies.categories.ByCount }}
-				    <li class="taxonomy-li">
+				    <li class="aside-taxonomy-li">
 							<span class="pill pill-category">
 								<a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a>
 							</span>
@@ -57,11 +57,11 @@
 		
 			{{/* List of companies */}}
 			{{ "<!-- companies -->" | safeHTML }}
-			<section id="companies" class="layout-module blurb">
-				<h2>COMPANIES</h2>
-			  <ul class="taxonomy-ul">
+			<section id="companies" class="aside-module">
+				<h2 class="aside-module-h2">COMPANIES</h2>
+			  <ul class="aside-taxonomy-ul">
 					{{ range $.Site.Taxonomies.companies.ByCount }}
-				    <li class="taxonomy-li">
+				    <li class="aside-taxonomy-li">
 							<span class="pill pill-company">
 								<a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a>
 							</span>
@@ -75,11 +75,11 @@
 		
 			{{/* List of promised dates */}}
 			{{ "<!-- promised -->" | safeHTML }}
-			<section id="categories" class="layout-module blurb">
-				<h2>YEAR OF INITIAL PROMISE</h2>
-			  <ul class="taxonomy-ul">
+			<section id="categories" class="aside-module">
+				<h2 class="aside-module-h2">YEAR OF INITIAL PROMISE</h2>
+			  <ul class="aside-taxonomy-ul">
 					{{ range $.Site.Taxonomies.promised.ByCount }}
-				    <li class="taxonomy-li">
+				    <li class="aside-taxonomy-li">
 							<span class="pill pill-promised">
 								<a href="{{ .Page.RelPermalink }}">
 									{{ .Page.Title }}
@@ -97,11 +97,11 @@
 		
 			{{/* List of deadline dates */}}
 			{{ "<!-- categories -->" | safeHTML }}
-			<section id="categories" class="layout-module blurb">
-				<h2>YEAR OF DEADLINE</h2>
-			  <ul class="taxonomy-ul">
+			<section id="categories" class="aside-module">
+				<h2 class="aside-module-h2">YEAR OF DEADLINE</h2>
+			  <ul class="aside-taxonomy-ul">
 					{{ range $.Site.Taxonomies.deadline.ByCount }}
-				    <li class="taxonomy-li">
+				    <li class="aside-taxonomy-li">
 							<span class="pill pill-deadline">
 								<a href="{{ .Page.RelPermalink }}">
 									{{ .Page.Title }}
@@ -114,24 +114,17 @@
 				   {{ end }}
 		    </ul>
 			</section>
-	
-		{{ else if eq .id "copyright" }}
-		
-			{{/* Copyright notice */}}
-			{{ "<!-- copyright -->" | safeHTML }}
-			<section id="copyright" class="layout-module blurb">
-				{{ with .text }}
-					<p class="copyright">{{ . | markdownify }}</p>
-				{{ end }}
-			</section>
 			
 		{{ else }}
 		
 			{{/* Default rendering is blurb, with optional text and button */}}
 			{{ "<!-- blurb -->" | safeHTML }}
-			<section id="{{ .id }}" class="layout-module blurb">
+			<section id="{{ .id }}" class="aside-module">
+				{{ with .title }}
+		    	<h2 class="aside-module-h2">{{ . }}</h2>
+				{{ end }}
 				{{ with .text }}
-		    	<p>{{ . | markdownify }}</p>
+		    	<p class="aside-module-p">{{ . | markdownify }}</p>
 				{{ end }}
 				{{ if .button }}
 					<a href="{{ .link }}" class="button width-full">
@@ -149,6 +142,11 @@
 		{{ end }}
 	
 	{{ end }}
+	
+	<section id="last-updated" class="aside-module">
+		<h2 class="aside-module-h2">Dernière mise à jour</h2>
+		<p class="aside-module-p">{{ time.Now |time.Format ":date_long" }}
+	</section>
 	
 </aside>
 

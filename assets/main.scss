@@ -55,7 +55,6 @@ img {
     max-width: 100%;
 }
 
-
 blockquote, q {
     quotes: none;
 }
@@ -78,28 +77,24 @@ table {
     width: device-width;
 }
 
-
-
-/* a tag */
-
 a {
-    transition: color 0.2s ease, border-bottom-color 0.2s ease;
-    border-bottom: solid 2px #2ebaae;
-    color: inherit;
-    text-decoration: none;
+  transition: color 0.2s ease, border-bottom-color 0.2s ease;
+  border-bottom: solid 2px #2ebaae;
+  color: inherit;
+  text-decoration: none;
 }
 
 a:before {
-    transition: color 0.2s ease;
+  transition: color 0.2s ease;
 }
 
 a:hover {
-    border-bottom-color: transparent;
-    color: #2ebaae !important;
+  border-bottom-color: transparent;
+  color: #2ebaae !important;
 }
 
 a:hover:before {
-    color: #2ebaae !important;
+  color: #2ebaae !important;
 }
 
 strong, b {
@@ -166,7 +161,9 @@ hr.major {
 
 /* @end */
 
-/* @group h titles */
+
+
+/* @group standard h tags */
 
 h1, h2, h3, h4 {
   color: #3c3b3b;
@@ -201,6 +198,58 @@ h4 {
 }
 
 /* @end */
+
+
+
+/* @group standard ol ul lists */
+
+ol {
+    list-style: decimal;
+    margin: 1em 0 1em 0;
+    padding-left: 1.25em;
+}
+
+ol li {
+    padding-left: 0.25em;
+}
+
+ul {
+    list-style: disc;
+    margin: 1em 0 1em 0;
+    padding-left: 1em;
+}
+
+ul.alt {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul.alt li {
+    border-top: solid 1px rgba(160, 160, 160, 0.3);
+    padding: 0.5em 0;
+}
+
+ul.alt li:first-child {
+    border-top: 0;
+    padding-top: 0;
+}
+
+dl {
+    margin: 0 0 2em 0;
+}
+
+dl dt {
+    display: block;
+    font-weight: 700;
+    margin: 0 0 1em 0;
+}
+
+dl dd {
+    margin-left: 2em;
+}
+
+/* @end */
+
 
 
 /* @group buttons */
@@ -322,62 +371,6 @@ button:disabled:before,
 
 
 
-label {
-    color: #3c3b3b;
-    display: block;
-    font-size: 0.9em;
-    font-weight: 700;
-    margin: 0 0 1em 0;
-}
-
-/* @group lists */
-
-ol {
-    list-style: decimal;
-    margin: 1em 0 1em 0;
-    padding-left: 1.25em;
-}
-
-ol li {
-    padding-left: 0.25em;
-}
-
-ul {
-    list-style: disc;
-    margin: 1em 0 1em 0;
-    padding-left: 1em;
-}
-
-ul.alt {
-    list-style: none;
-    padding-left: 0;
-}
-
-ul.alt li {
-    border-top: solid 1px rgba(160, 160, 160, 0.3);
-    padding: 0.5em 0;
-}
-
-ul.alt li:first-child {
-    border-top: 0;
-    padding-top: 0;
-}
-
-dl {
-    margin: 0 0 2em 0;
-}
-
-dl dt {
-    display: block;
-    font-weight: 700;
-    margin: 0 0 1em 0;
-}
-
-dl dd {
-    margin-left: 2em;
-}
-
-/* @end */
 
 /* @group topbar (top of site) */
 
@@ -437,7 +430,7 @@ dl dd {
 
 /* @group flexbox grandparent */
 
-.flex-grandparent {
+.grandparent-flex {
 	/* main flex around main and aside */
   display: flex;
   flex-direction: row-reverse;
@@ -450,7 +443,7 @@ dl dd {
 
 @media (max-aspect-ratio:1/1) and (max-width:480px) {
 
-	.flex-grandparent {
+	.grandparent-flex {
 		flex-direction: column;
 		align-items: stretch;
 		margin: 1.5em;
@@ -462,14 +455,15 @@ dl dd {
 
 
 
-/* @group flexbox main */
+/* @group main */
 
-.flex-main {
+.main-flex {
 	/* flex for main, inside flex-grandparent */
 	display: flex;
 	flex-direction: column; /* display top to bottom */
-  flex-grow: 1; /* the part containing the articles can grow horizontally */
-	flex-basis: fit-content;
+	flex-basis: 0;
+  flex-grow: 2; /* the part containing the articles can grow horizontally */
+	flex-shrink: 1;
 	max-width: 960px; /* max width of main is 960px */
 	gap: 3em; /* gap between articles */
 }
@@ -478,22 +472,52 @@ dl dd {
 
 
 
-/* @group flexbox aside */
+/* @group aside */
 
-.flex-aside {
+.aside-flex {
 	/* secondary flex for aside */
 	display: flex;
 	flex-direction: column;
+	flex-basis: 0;
 	flex-grow: 1;
-	flex-basis: 320px;
-	max-width: 500px;
-	gap: 3em;
+	flex-shrink: 2;
+	max-width: 320px;
+	gap: 2em;
+}
+
+.aside-module-h2 {
+  font-size: 0.8em;
+  margin-bottom: 0.5em;
+}
+
+.aside-module-h3 {
+  font-size: 0.7em;
+  margin-bottom: 0.5em;
+}
+
+.aside-module-p {
+  color: #bbbbbb;
+  font-size: 0.6em;
+  font-weight: 400;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+	margin-top: 0.5em;
+}
+
+.aside-taxonomy-ul {
+	padding: 0;
+	list-style: none;
+	font-size: 0.825em;
+}
+
+.aside-taxonomy-li {
+	margin-top: 0.5em;
+	margin-bottem: 0.5em;
 }
 
 @media (max-aspect-ratio:1/1) and (max-width:480px) {	
 
-	.flex-aside {
-		padding-top: 2em;
+	.aside-flex {
 		gap: 1.5em;
 	}
 
@@ -503,7 +527,7 @@ dl dd {
 
 
 
-/* @group flexbox navigation */
+/* @group navigation (list pagination) */
 
 .flex-navigation {
 	display: flex;
@@ -537,19 +561,6 @@ dl dd {
 	/* layout block inside flex-main and flex-aside */
 	/* not called flex- because it's not a flexbox */
 	margin: 0;
-}
-
-.blurb h2 {
-    font-size: 0.8em;
-    margin: 0 0 1.5em 0;
-}
-
-.blurb h3 {
-    font-size: 0.7em;
-}
-
-.blurb p {
-    font-size: 0.8em;
 }
 
 /* @end */
@@ -669,38 +680,11 @@ dl dd {
 
 /* @end */
 
-.taxonomy-ul {
-	padding: 0;
-	list-style: none;
-	font-size: 0.825em;
-}
-
-.taxonomy-li {
-	margin-top: 0.5em;
-	margin-bottem: 0.5em;
-}
 
 
+/* @group links */
 
-/* section copyright */
-
-#copyright {
-    color: #bbbbbb;
-    font-size: 0.75em;
-    font-weight: 400;
-    letter-spacing: 0.25em;
-    text-transform: uppercase;
-}
-
-
-
-/* @group flexbox links and children link */
-
-#links header p {
-	text-transform: uppercase;
-}
-
-.flex-links {
+.links-flex {
 	display: flex;
 	justify-content: space-evenly; /* use helper class space-between to change */
 	flex-direction: row;
@@ -714,17 +698,18 @@ dl dd {
 	margin-bottom: 2em;
 }
 
-.link img {
+.link-img {
 	border: 1px solid rgba(160, 160, 160, 0.3);
 	width: 122px;
 	height: 92px;	
 }
 
-.link a {
+.link-a {
 	border: 0;
 }
 
-.link p {
+.link-p {
+	text-transform: none;
 	font-size: 0.825em;
 	margin-top: 0em;
 	margin-bottom: 0px;

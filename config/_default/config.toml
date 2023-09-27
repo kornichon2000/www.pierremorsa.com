@@ -133,6 +133,7 @@ paginate								= 5
 		id									= "deadline"
 	[[params.aside]]
 		id									= "copyright"
+		title								= "COPYLEFT ET ZÉRO COOKIES"
 		text								= "Site garanti sans cookies et sans JavaScript. Le contenu est en copie libre : vous pouvez tout copier et réutiliser librement."
 
 # Related content links at bottom of articles
