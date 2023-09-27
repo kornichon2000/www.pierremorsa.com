@@ -170,28 +170,28 @@ hr.major {
 
 h1, h2, h3, h4 {
   color: #3c3b3b;
-    font-weight: 800;
-    letter-spacing: 0.1em;
-    line-height: 1.65;
-    margin: 0 0 1em 0;
-    text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  line-height: 1.65;
+  margin: 0 0 1em 0;
+  text-transform: uppercase;
 }
 
 h1 a, h2 a, h3 a, h4 a {
-    color: inherit;
-    border-bottom: 0;
+  color: inherit;
+  border-bottom: 0;
 }
 
 h2 {
-    font-size: 1.1em;
+  font-size: 1.1em;
 }
 
 h3 {
-    font-size: 0.9em;
+  font-size: 0.9em;
 }
 
 h4 {
-    font-size: 0.7em;
+  font-size: 0.7em;
 }
 
 @media (max-aspect-ratio:1/1) and (max-width:480px) {
@@ -385,9 +385,20 @@ dl dd {
 }
 
 .topbar-style h1 {
-    padding: 0;
-    margin: 0;
-    white-space: nowrap;
+  padding: 0;
+  margin: 0;
+	text-align: center;
+}
+
+.topbar-style p {
+	color: #3c3b3b;
+	font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+	font-size: 0.825em;
+	margin: 0;
+	border: none;
+	text-transform: uppercase;
 }
 
 @media (max-aspect-ratio:1/1) and (max-width:480px) {   
@@ -731,7 +742,7 @@ dl dd {
 		background: #222;
 	}
 	
-	.topbar-style h1 a {
+	.topbar-style h1 a, .topbar-style p {
 		color: #bbbbbb;
 	}
 

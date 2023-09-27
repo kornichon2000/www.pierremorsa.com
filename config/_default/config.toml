@@ -21,10 +21,27 @@ paginate								= 5
 
 [params]
   # Meta tag description
-  description						= "Le blog de Pierre Morsa, où il partage ses réflexions de comptoir. Co-fondateur et Creative Cat d'Ideas on Stage, agence spécialisée dans les présentations en public."
+  description						= "Le blog de Pierre Morsa, Blogueur, Co-Founder Ideas on Stage, projet How It Is Going"
 
 	# Sections whose pages are listed
 	mainSections 					= ["post"]
+
+	# Sections
+	[[params.sections]]
+		section								= "blog"
+		title									= "Blog"
+		description						= "Réflexions de comptoir"
+		path									= "/"	
+	[[params.sections]]
+		section								= "howitisgoing"
+		title									= "How It Is Going"
+		description						= "Holding big companies accountable"
+		path									= "/howitisgoing/"
+	[[params.sections]]
+		section								= "mac-automation"
+		title									= "Mac Automation"
+		description						= "Automation tools for macOS"
+		path									= "/mac-automation/"
 
 	# Avatar picture on top of site
 	[params.avatar]

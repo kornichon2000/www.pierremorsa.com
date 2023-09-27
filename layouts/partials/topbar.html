@@ -1,11 +1,59 @@
+{{/* Navigation bar on top, actually just the blog title with the circle pic */}}
+{{ "<!-- partials:topbar:start -->" | safeHTML }}
+<section id="topbar" class="topbar-style">
 
-		{{/* Navigation bar on top, actually just the blog title with the circle pic */}}
-		{{ "<!-- partials:topbar:start -->" | safeHTML }}
-		<section id="topbar" class="topbar-style">
-		    {{- with .Site.Params.avatar }}
-			<a href="/"><img src="{{ .src }}" class="intro-circle" width="48" alt="{{ .alt }}" /></a>
-		    {{- end }}
-			<h1><a href="/">{{ with .Site.Title }}{{ . }}{{ end }}</a></h1>
-		</section>
-		{{ "<!-- partials:topbar:end -->" | safeHTML }}
-		
+	{{- with .Site.Params.avatar }}
+		<a href="/">
+			<img src="{{ .src }}" class="intro-circle" width="48" alt="{{ .alt }}" />
+		</a>
+	{{- end }}
+
+	{{ if .IsHome }}
+		{{ $section := (where site.Params.sections "section" "blog" ) | first 1 }}
+		{{ range $section }}
+			{{ if .title }}
+				<h1>
+					<a href="{{ .path }}">
+						{{ .title }}
+					</a>
+				</h1>
+			{{ end }}
+			{{ if .description }}
+				<p class="topbar-style">
+					{{ .description }}
+				</p>
+				{{ end }}
+		{{ end }}
+	{{ else if .Section }}
+		{{ $section := (where site.Params.sections "section" (.Section | lower) ) | first 1 }}
+		{{ range $section }}
+			{{ if .title }}
+				<h1>
+					<a href="{{ .path }}">
+						{{ .title }}
+					</a>
+				</h1>
+			{{ end }}
+			{{ if .description }}
+				<p class="topbar-style">
+					{{ .description }}
+				</p>
+			{{ end }}
+		{{ end }}
+	{{ else }}
+		{{ with .Title }}
+			<h1>
+				<a href="/">
+					{{ . }}
+				</a>
+			</h1>
+		{{ end }}
+		{{ with .Description }}
+			<p class="topbar-style">
+				{{ . }}
+			</p>
+		{{ end }}
+	{{ end }}
+
+</section>
+{{ "<!-- partials:topbar:end -->" | safeHTML }}
