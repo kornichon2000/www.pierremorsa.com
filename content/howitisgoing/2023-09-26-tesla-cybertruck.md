@@ -7,6 +7,7 @@ companies			= [ "Tesla", "Elon Musk" ]
 promised			= [ "2023" ]
 deadline				= [ "2023" ]
 draft      		= false
+language				= "en"
 +++
 
 {{% howitstarted date="2023-04-19" %}}
