@@ -24,7 +24,7 @@ paginate								= 5
   description						= "Le blog de Pierre Morsa, Blogueur, Co-Founder Ideas on Stage, projet How It Is Going"
 
 	# Sections whose pages are listed
-	mainSections 					= ["post"]
+	mainSections 					= [ "post" ]
 
 	# Sections
 	[[params.sections]]

@@ -1,0 +1,5 @@
+<!--
+
+-->
+
+<h3 class="result">How It Actually Went {{ with .Get "date" }} on {{ . }}{{ end }}</h3> {{ .Inner | markdownify }}

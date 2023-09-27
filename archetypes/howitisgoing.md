@@ -9,16 +9,20 @@ deadline				= [ "" ]
 draft      		= false
 +++
 
-{{% howitstarted %}}
+{{% howitstarted date="" %}}
 
 {{% /howitstarted %}}
 
 <!--more-->
 
-{{% myprognosis %}}
+{{% howiseeitgoing %}}
 
-{{% /myprognosis %}}
+{{% /howiseeitgoing %}}
 
-{{% howitisgoing %}}
-
+{{% howitisgoing date="" %}}
+Not there yet.
 {{% /howitisgoing %}}
+
+{{% howitwent date="" %}}
+Not there yet.
+{{% /howitwent %}}

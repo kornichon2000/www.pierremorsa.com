@@ -2,4 +2,4 @@
 
 -->
 
-<h3 class="promised">How It Started</h3> {{ .Inner }}
+<h3 class="promised">How It Started{{ with .Get "date" }} on {{ . }}{{ end }}</h3> {{ .Inner | markdownify }}

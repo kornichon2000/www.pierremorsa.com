@@ -2,4 +2,4 @@
 
 -->
 
-<h3 class="deadline">How It Is Going</h3> {{ .Inner }}
+<h3 class="deadline">How It Is Going{{ with .Get "date" }} as of {{ . }}{{ end }}</h3> {{ .Inner | markdownify }}
