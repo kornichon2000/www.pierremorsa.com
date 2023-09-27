@@ -9,8 +9,16 @@ deadline				= [ "2023" ]
 draft      		= false
 +++
 
-**How it started**: during the Q1 2023 earnings call, Elon Musk announced that the first Cybertruck deliveries would take place in Q3 2023. Technically, that means September 30th latest.
+{{% howitstarted %}}
+During the Q1 2023 earnings call, Elon Musk announced that the first Cybertruck deliveries would take place in Q3 2023. Technically, that means September 30th latest.
+{{% /howitstarted %}}
 
-**My prognosis**: nope. Won’t happen.
+<!--more-->
 
-**How it is going**: not there yet, but it’s getting close, very close.
+{{% myprognosis %}}
+Nope. Won’t happen.
+{{% /myprognosis %}}
+
+{{% howitisgoing %}}
+Not there yet, but it’s getting close, very close.
+{{% /howitisgoing %}}

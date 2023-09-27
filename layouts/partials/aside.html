@@ -136,7 +136,10 @@
 				{{ if .button }}
 					<a href="{{ .link }}" class="button width-full">
 						{{ if .picture }}
-							<img src="{{ .picture }}" alt="{{ .button }}" />
+							<img src="{{ .picture }}" alt="{{ .button }}" class="piclight" />
+							{{ if .picturedark }}
+								<img src="{{ .picturedark }}" alt="{{ .button }}" class="picdark" />
+							{{ end }}
 						{{ else }}
 	        		{{ .button | markdownify }}
 						{{ end }}

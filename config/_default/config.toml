@@ -113,7 +113,8 @@ paginate								= 5
 		id									= "mastodon"
 		button							= "MASTODON"
 		link									= "https://mastodon.social/@pmorsa"
-		picture							= "/pictures/main/wordmark-white-text.svg"
+		picture							= "/pictures/main/wordmark-black-text.svg"
+		picturedark					= "/pictures/main/wordmark-white-text.svg"
 	[[params.aside]]
 		id									= "rss"
 		button							= "S'abonner au fil RSS"
