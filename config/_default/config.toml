@@ -29,43 +29,48 @@ paginate								= 5
 	# Sections
 	[[params.sections]]
 		section								= "post"
-		title									= "Blog"
+		title									= "ce bon vieux blog"
 		description						= "Réflexions de comptoir"
-		path									= "/"	
+		link										= "/"	
 	[[params.sections]]
 		section								= "howitisgoing"
 		title									= "How It Is Going"
 		description						= "Holding big companies accountable"
-		path									= "/howitisgoing/"
+		link										= "/howitisgoing/"
+		language								= "en"
 	[[params.sections]]
 		section								= "mac-automation"
 		title									= "Mac Automation"
 		description						= "Automation tools for macOS"
-		path									= "/mac-automation/"
+		link										= "/mac-automation/"
+		language								= "en"
 	[[params.sections]]
 		section								= "categories"
 		title									= "Categories"
 		description						= "Topics per category"
-		path									= "/"
+		link										= "/"
 		showsubcategory				= true
 	[[params.sections]]
 		section								= "companies"
 		title									= "Companies"
 		description						= "Companies listed on this site"
-		path									= "/"
+		link										= "/"
 		showsubcategory				= true
+		language								= "en"
 	[[params.sections]]
 		section								= "promised"
 		title									= "Promised"
 		description						= "When was the promise made?"
-		path									= "/"
+		link										= "/"
 		showsubcategory				= true
+		language								= "en"
 	[[params.sections]]
 		section								= "deadline"
 		title									= "Deadline"
 		description						= "When should the promise be delivered?"
-		path									= "/"
+		link										= "/"
 		showsubcategory				= true
+		language								= "en"
 
 	# Avatar picture on top of site
 	[params.avatar]
@@ -86,39 +91,37 @@ paginate								= 5
 	# - copyright: id, text, no button
 	[[params.aside]]
 		id									= "blog"
-		[params.aside.button]
-			text							= "BLOG"
-			link								= "/"
+		button							= "BLOG"
+		link									= "/"
 	[[params.aside]]
 		id									= "howitisgoing"
-		[params.aside.button]
-			text							= "HOW IT IS GOING"
-			link								= "/howitisgoing/"
+		button							= "HOW IT IS GOING PROJECT"
+		link									= "/howitisgoing/"
 	[[params.aside]]
 		id									= "mac-automation"
-		[params.aside.button]
-			text							= "MAC AUTOMATION"
-			link								= "/mac-automation/"
+		button							= "MAC AUTOMATION TOOLS"
+		link									= "/mac-automation/"
 	[[params.aside]]
 		id 									= "about"
-		[params.aside.button]
-			text							= "À PROPOS"
-			link								= "/about/"
+		button							= "À PROPOS"
+		link									= "/about/"
 	[[params.aside]]
 		id									= "links"
 		text								= "Les sites que je soutiens"
 		# No button, use /data/links files for links
 	[[params.aside]]
+		id									= "mastodon"
+		button							= "MASTODON"
+		link									= "https://mastodon.social/@pmorsa"
+		picture							= "/pictures/main/wordmark-white-text.svg"
+	[[params.aside]]
 		id									= "rss"
-		[params.aside.button]
-			text							= "S'abonner au fil RSS"
-			link								= ""
+		button							= "S'abonner au fil RSS"
+		link									= ""
 	[[params.aside]]
 		id 									= "contact"
-		[params.aside.button]
-			text							= "CONTACT"
-			link								= "mailto:pier%72e.%6Dors%61@pierremorsa.com"
-		
+		button							= "CONTACT"
+		link									= "mailto:pier%72e.%6Dors%61@pierremorsa.com"
 	[[params.aside]]
 		id									= "categories"
 	[[params.aside]]

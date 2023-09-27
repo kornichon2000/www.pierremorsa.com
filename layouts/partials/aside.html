@@ -10,8 +10,8 @@
 			{{/* RSS link */}}
 			{{ "<!-- rss -->" | safeHTML }}
 			<section id="rss" class="layout-module blurb">
-				{{ with .button }}
-				<a rel="alternate" type="application/rss+xml" href="{{ with $.Page.OutputFormats.Get "RSS" }}{{ .Permalink }}{{ end }}" title="RSS" class="button width-full">{{ .text | markdownify }}</a>
+				{{ if .button }}
+				<a rel="alternate" type="application/rss+xml" href="{{ with $.Page.OutputFormats.Get "RSS" }}{{ .Permalink }}{{ end }}" title="RSS" class="button width-full">{{ .button | markdownify }}</a>
 				{{ end }}
 			</section>
 	
@@ -133,8 +133,14 @@
 				{{ with .text }}
 		    	<p>{{ . | markdownify }}</p>
 				{{ end }}
-				{{ with .button }}
-	        <a href="{{ .link }}" class="button width-full">{{ .text | markdownify }}</a>
+				{{ if .button }}
+					<a href="{{ .link }}" class="button width-full">
+						{{ if .picture }}
+							<img src="{{ .picture }}" alt="{{ .button }}" />
+						{{ else }}
+	        		{{ .button | markdownify }}
+						{{ end }}
+					</a>
 				{{ end }}
 			</section>
 		{{ end }}

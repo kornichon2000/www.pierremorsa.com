@@ -4,10 +4,12 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="author" content="{{ with .Params.author }}{{ . }}{{ end }}" />
+	{{ hugo.Generator }}
 	
 	{{ if .IsHome }}
 		<title>{{ site.Title }}</title>
 		<meta name="description" content="{{ site.Params.description }}" />
+		<meta http-equiv="Content-Language" content="fr" />
 	{{ else if .IsSection }}
 		{{ $section := (where site.Params.sections "section" (.Section | lower) ) | first 1 }}
 		{{ range $section }}
@@ -17,6 +19,13 @@
 			{{ if .description }}
 				<meta name="description" content="{{ .description }}" />
 			{{ end }}
+			{{ if .language }}
+				{{ "<!-- language taken from CONFIG section language parameter  -->" | safeHTML }}
+				<meta http-equiv="Content-Language" content="{{ .language }}" />
+			{{ else }}
+				{{ "<!-- language taken from SITE default language parameter  -->" | safeHTML }}
+				<meta http-equiv="Content-Language" content="{{ site.Language.Lang }}" />
+			{{ end }}
 		{{ end }}
 	{{ else }}
 		{{ if .Title }}
@@ -25,15 +34,24 @@
 		{{ if .Description }}
 			<meta name="description" content="{{ .Description }}" />
 		{{ end }}
+		{{ if .Params.Language }}
+			{{ "<!-- language taken from PAGE language parameter  -->" | safeHTML }}
+			<meta http-equiv="Content-Language" content="{{ .Params.Language }}" />
+		{{ else }}
+			{{ "<!-- language taken from SITE default language parameter  -->" | safeHTML }}
+			<meta http-equiv="Content-Language" content="{{ site.Language.Lang }}" />
+		{{ end }}
+		
 	{{ end }}
 
-	<meta http-equiv="Content-Language" content="fr" />
-	{{ hugo.Generator }}
-	<link rel="me" href="https://mastodon.social/@pmorsa">
-	<link rel="apple-touch-icon-precomposed" href="/favicon/apple-touch-icon-precomposed.png">
-	<link rel="icon" href="/favicon/favicon.png">
+	<link rel="me" href="https://mastodon.social/@pmorsa" />
+	<link rel="me" href="https://www.ideasonstage.com/" />
+
+	<link rel="apple-touch-icon-precomposed" href="/favicon/apple-touch-icon-precomposed.png" />
+	<link rel="icon" href="/favicon/favicon.png" />
+	
 	{{- $style := resources.Get "main.scss" | resources.ToCSS | resources.Minify }}
-	<link rel="stylesheet" href="{{ $style.RelPermalink }}">
+	<link rel="stylesheet" href="{{ $style.RelPermalink }}" />
 	{{- with .OutputFormats.Get "rss" -}}
 	  {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
 	{{- end }}

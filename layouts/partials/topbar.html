@@ -13,7 +13,7 @@
 		{{ range $section }}
 			{{ if .title }}
 				<h1>
-					<a href="{{ .path }}">
+					<a href="{{ .link }}">
 						{{ .title }}
 					</a>
 				</h1>
@@ -29,7 +29,7 @@
 		{{ range $section }}
 			{{ if .title }}
 				<h1>
-					<a href="{{ .path }}">
+					<a href="{{ .link }}">
 						{{ .title }}
 					</a>
 				</h1>
@@ -46,7 +46,7 @@
 			{{ range $section }}
 				{{ if .title }}
 					<h1>
-						<a href="{{ .path }}">
+						<a href="{{ .link }}">
 							{{ .title }}
 						</a>
 					</h1>
