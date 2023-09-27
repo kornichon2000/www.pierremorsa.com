@@ -1,17 +1,15 @@
 {{ "<!-- _default:article-header:start -->" | safeHTML }}
 <header class="post-header">
-  <div class="title">
-    <h2 class="post-header-title">
-			<a href="{{ .RelPermalink }}">
-				{{ .Title  | markdownify  }}
-			</a>
-		</h2>
-    {{ with .Description }}
-	    <p>
-				{{ . }}
-			</p>
-    {{ end }}
-  </div>{{ "<!-- title -->" | safeHTML }}
+	<h2 class="post-header-h2">
+		<a href="{{ .RelPermalink }}">
+			{{ .Title  | markdownify  }}
+		</a>
+	</h2>
+  {{ with .Description }}
+    <p class="post-header-p">
+			{{ . }}
+		</p>
+  {{ end }}
   <div class="post-header-meta">
     {{ $.Scratch.Set "dateType" .Date }}
     <time class="post-header-meta-published" datetime='{{ ($.Scratch.Get "dateType").Format "2006-01-02" }}'>
