@@ -28,7 +28,7 @@ paginate								= 5
 
 	# Sections
 	[[params.sections]]
-		section								= "blog"
+		section								= "post"
 		title									= "Blog"
 		description						= "Réflexions de comptoir"
 		path									= "/"	
@@ -42,6 +42,30 @@ paginate								= 5
 		title									= "Mac Automation"
 		description						= "Automation tools for macOS"
 		path									= "/mac-automation/"
+	[[params.sections]]
+		section								= "categories"
+		title									= "Categories"
+		description						= "Topics per category"
+		path									= "/"
+		showsubcategory				= true
+	[[params.sections]]
+		section								= "companies"
+		title									= "Companies"
+		description						= "Companies listed on this site"
+		path									= "/"
+		showsubcategory				= true
+	[[params.sections]]
+		section								= "promised"
+		title									= "Promised"
+		description						= "When was the promise made?"
+		path									= "/"
+		showsubcategory				= true
+	[[params.sections]]
+		section								= "deadline"
+		title									= "Deadline"
+		description						= "When should the promise be delivered?"
+		path									= "/"
+		showsubcategory				= true
 
 	# Avatar picture on top of site
 	[params.avatar]

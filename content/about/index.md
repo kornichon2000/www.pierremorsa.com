@@ -1,6 +1,5 @@
 +++
 title			= "À propos de Pierre Morsa"
-description = "Pour en savoir plus…"
 date 			= "2014-04-09"
 +++
 

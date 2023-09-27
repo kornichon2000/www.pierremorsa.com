@@ -1,11 +1,32 @@
 {{/* HTML <head></head> section for all pages */}}
 {{ "<!-- partials:head:start -->" | safeHTML }}
 <head>
-	<title>{{ .Site.Title }}</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="author" content="{{ with .Params.author }}{{ . }}{{ end }}" />
-	<meta name="description" content="{{ with .Site.Params.description }}{{ . }}{{ end }}" />
+	
+	{{ if .IsHome }}
+		<title>{{ site.Title }}</title>
+		<meta name="description" content="{{ site.Params.description }}" />
+	{{ else if .IsSection }}
+		{{ $section := (where site.Params.sections "section" (.Section | lower) ) | first 1 }}
+		{{ range $section }}
+			{{ if .title }}
+				<title>{{ .title }}</title>
+			{{ end }}
+			{{ if .description }}
+				<meta name="description" content="{{ .description }}" />
+			{{ end }}
+		{{ end }}
+	{{ else }}
+		{{ if .Title }}
+			<title>{{ .Title }}</title>
+		{{ end }}
+		{{ if .Description }}
+			<meta name="description" content="{{ .Description }}" />
+		{{ end }}
+	{{ end }}
+
 	<meta http-equiv="Content-Language" content="fr" />
 	{{ hugo.Generator }}
 	<link rel="me" href="https://mastodon.social/@pmorsa">

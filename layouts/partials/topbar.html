@@ -9,7 +9,7 @@
 	{{- end }}
 
 	{{ if .IsHome }}
-		{{ $section := (where site.Params.sections "section" "blog" ) | first 1 }}
+		{{ $section := (where site.Params.sections "section" "post" ) | first 1 }}
 		{{ range $section }}
 			{{ if .title }}
 				<h1>
@@ -24,7 +24,7 @@
 				</p>
 				{{ end }}
 		{{ end }}
-	{{ else if .Section }}
+	{{ else if .IsSection }}
 		{{ $section := (where site.Params.sections "section" (.Section | lower) ) | first 1 }}
 		{{ range $section }}
 			{{ if .title }}
@@ -41,19 +41,48 @@
 			{{ end }}
 		{{ end }}
 	{{ else }}
-		{{ with .Title }}
-			<h1>
-				<a href="/">
-					{{ . }}
-				</a>
-			</h1>
-		{{ end }}
-		{{ with .Description }}
-			<p class="topbar-style">
-				{{ . }}
-			</p>
+		{{ if .Section }}
+			{{ $section := (where site.Params.sections "section" (.Section | lower) ) | first 1 }}
+			{{ range $section }}
+				{{ if .title }}
+					<h1>
+						<a href="{{ .path }}">
+							{{ .title }}
+						</a>
+					</h1>
+				{{ end }}
+				{{ if .showsubcategory }}
+					{{ if ne .title $.Page.Title }}
+						<p class="topbar-style">
+							{{ $.Page.Title }}
+						</p>
+					{{ else }}
+						<p class="topbar-style">
+							{{ .description }}
+						</p>
+					{{ end }}
+				{{ else if .description }}
+					<p class="topbar-style">
+						{{ .description }}
+					</p>
+				{{ end }}
+			{{ end }}
+		{{ else }}
+			{{ if .Title }}
+				<h1>
+					<a href="/">
+						{{ .Title }}
+					</a>
+				</h1>
+			{{ end }}
+			{{ if .Description }}
+				<p class="topbar-style">
+					{{ .Description }}
+				</p>
+			{{ end }}
 		{{ end }}
 	{{ end }}
 
 </section>
+
 {{ "<!-- partials:topbar:end -->" | safeHTML }}
