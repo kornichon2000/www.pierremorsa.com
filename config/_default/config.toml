@@ -5,7 +5,7 @@ language									= "fr"
 languageCode							= "fr"
 languageName							= "Français"
 paginate								= 5
-
+enableGitInfo						= true
 
 [markup]
 	[markup.goldmark]
