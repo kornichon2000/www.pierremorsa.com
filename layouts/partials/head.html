@@ -50,7 +50,7 @@
 	<link rel="apple-touch-icon-precomposed" href="/favicon/apple-touch-icon-precomposed.png" />
 	<link rel="icon" href="/favicon/favicon.png" />
 	
-	{{- $style := resources.Get "main.scss" | resources.ToCSS | resources.Minify }}
+	{{- $style := resources.Get "main.scss" | resources.ExecuteAsTemplate "main.css" . | resources.ToCSS | resources.Minify }}
 	<link rel="stylesheet" href="{{ $style.RelPermalink }}" />
 	{{- with .OutputFormats.Get "rss" -}}
 	  {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}

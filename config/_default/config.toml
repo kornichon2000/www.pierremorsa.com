@@ -136,6 +136,11 @@ enableGitInfo						= true
 		title								= "COPYLEFT ET ZÉRO COOKIES"
 		text								= "Site garanti sans cookies et sans JavaScript. Le contenu est en copie libre : vous pouvez tout copier et réutiliser librement."
 
+	[params.colors]
+		link									= "#2ebaae"
+		bglight							= "#f4f4f4"
+		bgdark							= "#222"
+	
 # Related content links at bottom of articles
 [related]
 	threshold 							= 100

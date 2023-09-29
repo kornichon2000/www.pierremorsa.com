@@ -2,4 +2,4 @@
 
 -->
 
-<h3 class="result">How It Actually Went {{ with .Get "date" }} on {{ . }}{{ end }}</h3> {{ .Inner | markdownify }}
+<h3 class="result">How It Actually Went {{ with .Get "date" }} on {{ . }}{{ end }}</h3> {{ if .Inner }}{{ .Inner | markdownify }}{{ else }}Not there yet.{{ end }}

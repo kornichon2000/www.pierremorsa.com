@@ -4,6 +4,11 @@
 		{{ partial "topbar" . }}
     <div class="grandparent-flex">
 			<main class="main-flex">
+				{{ $catdata := index .Site.Data (.Section | lower | urlize)  }}
+				{{ $data := index $catdata (.Title | lower | urlize) }}
+				{{ with $data.description }}
+				<p class="main-taxonomy-p">{{ . | markdownify }}</p>
+				{{ end }}
 				{{ partial "article-summary-list" . }}
 			</main>
 			{{ partial "aside" . }}
