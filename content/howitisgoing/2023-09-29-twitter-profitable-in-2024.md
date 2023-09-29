@@ -2,7 +2,7 @@
 title     			= "Linday Yaccarino says Twitter will be profitable early 2024"
 author  		  = "Pierre Morsa"
 date 		      = "2023-09-29"
-categories 		= [ "Profits" ]
+tags			 		= [ "Profits" ]
 companies			= [ "Twitter", "Elon Musk" ]
 promised			= [ "2023" ]
 deadline				= [ "2024" ]

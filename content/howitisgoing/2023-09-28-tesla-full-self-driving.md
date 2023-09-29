@@ -2,7 +2,7 @@
 title     			= "Elon Musk claims Tesla Full Self Driving will be available in 2023"
 author  		  = "Pierre Morsa"
 date 		      = "2023-09-28"
-categories 		= [ "Delivery", "Full Self Driving" ]
+tags			 		= [ "Delivery", "Full Self Driving" ]
 companies			= [ "Tesla", "Elon Musk" ]
 promised			= [ "2023" ]
 deadline				= [ "2023" ]

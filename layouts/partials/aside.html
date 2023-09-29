@@ -36,11 +36,10 @@
 			</section>
 			
 		{{ else if eq .id "categories" }}
-		
 			{{/* List of categories */}}
 			{{ "<!-- categories -->" | safeHTML }}
 			<section id="categories" class="aside-module">
-				<h2 class="aside-module-h2">CATEGORIES</h2>
+				<h2 class="aside-module-h2">BLOG CATEGORIES</h2>
 			  <ul class="aside-taxonomy-ul">
 					{{ range $.Site.Taxonomies.categories.ByCount }}
 				    <li class="aside-taxonomy-li">
@@ -52,7 +51,24 @@
 				   {{ end }}
 		    </ul>
 			</section>
-	
+				
+		{{ else if eq .id "tags" }}
+			{{/* List of tags */}}
+			{{ "<!-- categories -->" | safeHTML }}
+			<section id="tags" class="aside-module">
+				<h2 class="aside-module-h2">HOW IT IS GOING TAGS</h2>
+			  <ul class="aside-taxonomy-ul">
+					{{ range $.Site.Taxonomies.tags.ByCount }}
+				    <li class="aside-taxonomy-li">
+							<span class="pill pill-category">
+								<a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a>
+							</span>
+							<span style="float:right;">{{ .Count }}</span>
+						</li>
+				   {{ end }}
+		    </ul>
+			</section>
+
 		{{ else if eq .id "companies" }}
 		
 			{{/* List of companies */}}
@@ -70,7 +86,7 @@
 				   {{ end }}
 		    </ul>
 			</section>
-	
+
 		{{ else if eq .id "promised" }}
 		
 			{{/* List of promised dates */}}
@@ -92,7 +108,7 @@
 				   {{ end }}
 		    </ul>
 			</section>
-	
+
 		{{ else if eq .id "deadline" }}
 		
 			{{/* List of deadline dates */}}

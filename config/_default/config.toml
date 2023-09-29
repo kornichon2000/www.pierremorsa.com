@@ -7,18 +7,24 @@ languageName							= "Français"
 paginate								= 5
 enableGitInfo						= true
 
+
+
 [markup]
 	[markup.goldmark]
 		[markup.goldmark.renderer]
    		unsafe						= true	# added to allow raw HTML in page .Content
 
 
+
 [taxonomies]
 	category	= "categories"
+	tag				= "tags"
 	company		= "companies"
 	promised	= "promised"
 	deadline		= "deadline"
 
+
+	
 [params]
   # Meta tag description
   description						= "Le blog de Pierre Morsa, Blogueur, Co-Founder Ideas on Stage, projet How It Is Going"
@@ -125,6 +131,8 @@ enableGitInfo						= true
 		link									= "mailto:pier%72e.%6Dors%61@pierremorsa.com"
 	[[params.aside]]
 		id									= "categories"
+	[[params.aside]]
+		id									= "tags"
 	[[params.aside]]
 		id									= "companies"
 	[[params.aside]]

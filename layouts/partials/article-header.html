@@ -39,6 +39,13 @@
 				</a>
 			</span>
 		{{ end }}
+		{{ range .Params.tags }}
+			<span class="pill pill-category">
+				<a href="/tags/{{ . | urlize }}/">
+					{{ . }}
+				</a>
+			</span>
+		{{ end }}
 		{{ range .Params.promised }}
 		<span class="pill pill-promised">
 			<a href="/promised/{{ . | urlize }}/">
