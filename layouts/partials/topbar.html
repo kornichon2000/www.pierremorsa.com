@@ -1,14 +1,13 @@
 {{/* Navigation bar on top, actually just the blog title with the circle pic */}}
 {{ "<!-- partials:topbar:start -->" | safeHTML }}
 <section id="topbar" class="topbar-style">
-
 	{{- with .Site.Params.avatar }}
 		<a href="/">
 			<img src="{{ .src }}" class="intro-circle" width="48" alt="{{ .alt }}" />
 		</a>
 	{{- end }}
-
-	{{ if .IsHome }}
+	{{ if eq "home" .Kind }}
+		{{/* This is the home page */}}
 		{{ $section := (where site.Params.sections "section" "post" ) | first 1 }}
 		{{ range $section }}
 			{{ if .title }}
@@ -24,7 +23,8 @@
 				</p>
 				{{ end }}
 		{{ end }}
-	{{ else if .IsSection }}
+	{{ else if eq "section" .Kind }}
+		{{/* This is a section page */}}
 		{{ $section := (where site.Params.sections "section" (.Section | lower) ) | first 1 }}
 		{{ range $section }}
 			{{ if .title }}
@@ -40,34 +40,60 @@
 				</p>
 			{{ end }}
 		{{ end }}
-	{{ else }}
-		{{ if .Section }}
-			{{ $section := (where site.Params.sections "section" (.Section | lower) ) | first 1 }}
-			{{ range $section }}
-				{{ if .title }}
-					<h1>
-						<a href="{{ .link }}">
-							{{ .title }}
-						</a>
-					</h1>
-				{{ end }}
-				{{ if .showsubcategory }}
-					{{ if ne .title $.Page.Title }}
-						<p class="topbar-style">
-							{{ $.Page.Title }}
-						</p>
-					{{ else }}
-						<p class="topbar-style">
-							{{ .description }}
-						</p>
-					{{ end }}
-				{{ else if .description }}
+	{{ else if eq "term" .Kind }}
+		{{ $section := (where site.Params.sections "section" (.Section | lower) ) | first 1 }}
+		{{ range $section }}
+			{{ if .title }}
+				<h1>
+					<a href="{{ .link }}">
+						{{ .title }}
+					</a>
+				</h1>
+			{{ end }}
+			{{ if .showsubcategory }}
+				{{ if ne .title $.Page.Title }}
+					<p class="topbar-style">
+						{{ $.Page.Title }}
+					</p>
+				{{ else }}
 					<p class="topbar-style">
 						{{ .description }}
 					</p>
 				{{ end }}
+			{{ else if .description }}
+				<p class="topbar-style">
+					{{ .description }}
+				</p>
+			{{ end }}
+		{{ end }}
+	{{ else if eq "page" .Kind }}
+		{{ $section := (where site.Params.sections "section" (.Section | lower) ) | first 1 }}
+		{{ range $section }}
+			{{/* This is a normal page inside a section */}}
+			{{ if .title }}
+				<h1>
+					<a href="{{ .link }}">
+						{{ .title }}
+					</a>
+				</h1>
+			{{ end }}
+			{{ if .showsubcategory }}
+				{{ if ne .title $.Page.Title }}
+					<p class="topbar-style">
+						{{ $.Page.Title }}
+					</p>
+				{{ else }}
+					<p class="topbar-style">
+						{{ .description }}
+					</p>
+				{{ end }}
+			{{ else if .description }}
+				<p class="topbar-style">
+					{{ .description }}
+				</p>
 			{{ end }}
 		{{ else }}
+			{{/* This is a normal page outside a section */}}
 			{{ if .Title }}
 				<h1>
 					<a href="/">
