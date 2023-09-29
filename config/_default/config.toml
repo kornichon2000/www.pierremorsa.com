@@ -57,6 +57,12 @@ enableGitInfo						= true
 		link										= "/"
 		showsubcategory				= true
 	[[params.sections]]
+		section								= "tags"
+		title									= "Tags"
+		description						= "How It Is Going Tags"
+		link										= "/"
+		showsubcategory				= true
+	[[params.sections]]
 		section								= "companies"
 		title									= "Companies"
 		description						= "Companies listed on this site"
