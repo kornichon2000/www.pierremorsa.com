@@ -1,5 +1,5 @@
 +++
-title     			= "Linday Yaccarino says Twitter will be profitable early 2024"
+title     			= "Linda Yaccarino says Twitter will be profitable early '24"
 author  		  = "Pierre Morsa"
 date 		      = "2023-09-29"
 tags			 		= [ "Profits" ]

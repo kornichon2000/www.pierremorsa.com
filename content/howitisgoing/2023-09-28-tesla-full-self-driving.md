@@ -27,6 +27,4 @@ In October 2016, Tesla released a promotional video entitled "Full Self-Driving 
 
 {{% /howitisgoing %}}
 
-{{% howitwent date="" %}}
-We haven't reached the 2023 deadline yet.
-{{% /howitwent %}}
+{{% howitwent date="" %}}{{% /howitwent %}}
