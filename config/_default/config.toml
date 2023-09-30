@@ -154,6 +154,7 @@ enableGitInfo						= true
 		link									= "#2ebaae"
 		bglight							= "#f4f4f4"
 		bgdark							= "#222"
+		border							= "rgba(160, 160, 160, 0.3)"
 	
 # Related content links at bottom of articles
 [related]
