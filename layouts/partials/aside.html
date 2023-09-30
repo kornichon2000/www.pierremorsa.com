@@ -5,160 +5,82 @@
 <aside class="aside-flex">
 
 	{{ range .Site.Params.aside }}
-	
-		{{ if eq .id "rss" }}
-			{{/* RSS link */}}
-			{{ "<!-- rss -->" | safeHTML }}
-			<section id="rss" class="aside-module blurb">
-				{{ if .button }}
-				<a rel="alternate" type="application/rss+xml" href="{{ with $.Page.OutputFormats.Get "RSS" }}{{ .Permalink }}{{ end }}" title="RSS" class="button width-full">{{ .button | markdownify }}</a>
-				{{ end }}
-			</section>
-	
-		{{ else if eq .id "links" }}
-		
-			{{/* Generates the links to other sites, enclosed in hide-lg so that it is hidden on narrow screens */}}
-			{{ "<!-- links -->" | safeHTML }}
-			<section id="links" class="aside-module hide-lg">
-				<header>
-				  <h2 class="aside-module-h2 align-center">Les sites que je soutiens</p>
-				</header>
-				<div class="links-flex">
-					{{ range $.Site.Data.links }}
-						<div class="link">
-							<a href="{{ .link }}" class="link-a">
-				    		<img src="/pictures/links/{{ .picture }}" class="link-img">
-				    		<p class="link-p">{{ .description }}</p>
-				    	</a>
-						</div>
+		{{ if or (or (in .showon page.Section) (in .showon page.Kind)) (in .showon "all")  }}
+			{{ if eq .id "rss" }}
+				{{/* RSS link */}}
+				{{ "<!-- rss -->" | safeHTML }}
+				<section id="rss" class="aside-module blurb">
+					{{ if .button }}
+					<a rel="alternate" type="application/rss+xml" href="{{ with $.Page.OutputFormats.Get "RSS" }}{{ .Permalink }}{{ end }}" title="RSS" class="button width-full">{{ .button | markdownify }}</a>
 					{{ end }}
-				</div>
-			</section>
+				</section>
+		
+			{{ else if eq .type "links" }}
 			
-		{{ else if eq .id "categories" }}
-			{{/* List of categories */}}
-			{{ "<!-- categories -->" | safeHTML }}
-			<section id="categories" class="aside-module">
-				<h2 class="aside-module-h2">BLOG CATEGORIES</h2>
-			  <ul class="aside-taxonomy-ul">
-					{{ range $.Site.Taxonomies.categories.ByCount }}
-				    <li class="aside-taxonomy-li">
-							<span class="pill pill-category">
-								<a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a>
-							</span>
-							<span style="float:right;">{{ .Count }}</span>
-						</li>
-				   {{ end }}
-		    </ul>
-			</section>
-				
-		{{ else if eq .id "tags" }}
-			{{/* List of tags */}}
-			{{ "<!-- categories -->" | safeHTML }}
-			<section id="tags" class="aside-module">
-				<h2 class="aside-module-h2">HOW IT IS GOING TAGS</h2>
-			  <ul class="aside-taxonomy-ul">
-					{{ range $.Site.Taxonomies.tags.ByCount }}
-				    <li class="aside-taxonomy-li">
-							<span class="pill pill-category">
-								<a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a>
-							</span>
-							<span style="float:right;">{{ .Count }}</span>
-						</li>
-				   {{ end }}
-		    </ul>
-			</section>
-
-		{{ else if eq .id "companies" }}
-		
-			{{/* List of companies */}}
-			{{ "<!-- companies -->" | safeHTML }}
-			<section id="companies" class="aside-module">
-				<h2 class="aside-module-h2">COMPANIES</h2>
-			  <ul class="aside-taxonomy-ul">
-					{{ range $.Site.Taxonomies.companies.ByCount }}
-				    <li class="aside-taxonomy-li">
-							<span class="pill pill-company">
-								<a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a>
-							</span>
-							<span style="float:right;">{{ .Count }}</span>
-						</li>
-				   {{ end }}
-		    </ul>
-			</section>
-
-		{{ else if eq .id "promised" }}
-		
-			{{/* List of promised dates */}}
-			{{ "<!-- promised -->" | safeHTML }}
-			<section id="categories" class="aside-module">
-				<h2 class="aside-module-h2">YEAR OF INITIAL PROMISE</h2>
-			  <ul class="aside-taxonomy-ul">
-					{{ range $.Site.Taxonomies.promised.ByCount }}
-				    <li class="aside-taxonomy-li">
-							<span class="pill pill-promised">
-								<a href="{{ .Page.RelPermalink }}">
-									{{ .Page.Title }}
-								</a>
-							</span>
-							<span style="float:right;">
-								{{ .Count }}
-							</span>
-						</li>
-				   {{ end }}
-		    </ul>
-			</section>
-
-		{{ else if eq .id "deadline" }}
-		
-			{{/* List of deadline dates */}}
-			{{ "<!-- categories -->" | safeHTML }}
-			<section id="categories" class="aside-module">
-				<h2 class="aside-module-h2">YEAR OF DEADLINE</h2>
-			  <ul class="aside-taxonomy-ul">
-					{{ range $.Site.Taxonomies.deadline.ByCount }}
-				    <li class="aside-taxonomy-li">
-							<span class="pill pill-deadline">
-								<a href="{{ .Page.RelPermalink }}">
-									{{ .Page.Title }}
-								</a>
-							</span>
-							<span style="float:right;">
-								{{ .Count }}
-							</span>
-						</li>
-				   {{ end }}
-		    </ul>
-			</section>
-			
-		{{ else }}
-		
-			{{/* Default rendering is blurb, with optional text and button */}}
-			{{ "<!-- blurb -->" | safeHTML }}
-			<section id="{{ .id }}" class="aside-module">
-				{{ with .title }}
-		    	<h2 class="aside-module-h2">{{ . }}</h2>
-				{{ end }}
-				{{ with .text }}
-		    	<p class="aside-module-p">{{ . | markdownify }}</p>
-				{{ end }}
-				{{ if .button }}
-					<a href="{{ .link }}" class="button width-full">
-						{{ if .picture }}
-							<img src="{{ .picture }}" alt="{{ .button }}" class="piclight" />
-							{{ if .picturedark }}
-								<img src="{{ .picturedark }}" alt="{{ .button }}" class="picdark" />
-							{{ end }}
-						{{ else }}
-	        		{{ .button | markdownify }}
+				{{/* Generates the links to other sites, enclosed in hide-lg so that it is hidden on narrow screens */}}
+				{{ "<!-- links -->" | safeHTML }}
+				<section id="links" class="aside-module hide-lg">
+					<header>
+					  <h2 class="aside-module-h2 align-center">Les sites que je soutiens</p>
+					</header>
+					<div class="links-flex">
+						{{ range $.Site.Data.links }}
+							<div class="link">
+								<a href="{{ .link }}" class="link-a">
+					    		<img src="/pictures/links/{{ .picture }}" class="link-img">
+					    		<p class="link-p">{{ .description }}</p>
+					    	</a>
+							</div>
 						{{ end }}
-					</a>
-				{{ end }}
-			</section>
+					</div>
+				</section>
+
+			{{ else if eq .type "taxonomy" }}
+				{{/* List of taxonomy terms */}}
+				{{ "<!-- list of taxonomy terms -->" | safeHTML }}
+				{{ $class := .class }}
+				<section id="{{ .id }}" class="aside-module">
+					<h2 class="aside-module-h2">{{ .title }}</h2>
+				  <ul class="aside-taxonomy-ul">
+						{{ range (index $.Site.Taxonomies .id) }}
+					    <li class="aside-taxonomy-li">
+								<span class="pill {{ $class }}">
+									<a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a>
+								</span>
+								<span style="float:right;">{{ .Count }}</span>
+							</li>
+					   {{ end }}
+			    </ul>
+				</section>
+								
+			{{ else }}
+			
+				{{/* Default rendering is blurb, with optional text and button */}}
+				{{ "<!-- blurb -->" | safeHTML }}
+				<section id="{{ .id }}" class="aside-module">
+					{{ with .title }}
+			    	<h2 class="aside-module-h2">{{ . }}</h2>
+					{{ end }}
+					{{ with .text }}
+			    	<p class="aside-module-p">{{ . | markdownify }}</p>
+					{{ end }}
+					{{ if .button }}
+						<a href="{{ .link }}" class="button width-full">
+							{{ if .picture }}
+								<img src="{{ .picture }}" alt="{{ .button }}" class="piclight" />
+								{{ if .picturedark }}
+									<img src="{{ .picturedark }}" alt="{{ .button }}" class="picdark" />
+								{{ end }}
+							{{ else }}
+		        		{{ .button | markdownify }}
+							{{ end }}
+						</a>
+					{{ end }}
+				</section>
+			{{ end }}
+		
 		{{ end }}
-	
 	{{ end }}
-	
 	<section id="last-updated" class="aside-module">
 		<h2 class="aside-module-h2">Dernière mise à jour</h2>
 		<p class="aside-module-p">{{ time.Now |time.Format "2006-01-02 15:04 MST" }}

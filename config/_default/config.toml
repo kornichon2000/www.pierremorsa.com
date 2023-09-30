@@ -103,52 +103,89 @@ enableGitInfo						= true
 	# - copyright: id, text, no button
 	[[params.aside]]
 		id									= "blog"
+		type								= "blurb"
 		button							= "BLOG"
 		link									= "/"
+		showon							= [ "all" ]
 	[[params.aside]]
 		id									= "howitisgoing"
+		type								= "blurb"
 		button							= "HOW IT IS GOING PROJECT"
 		link									= "/howitisgoing/"
+		showon							= [ "all" ]
 	[[params.aside]]
 		id									= "mac-automation"
+		type								= "blurb"
 		button							= "MAC AUTOMATION TOOLS"
 		link									= "/mac-automation/"
+		showon							= [ "all" ]
 	[[params.aside]]
 		id 									= "about"
+		type								= "blurb"
 		button							= "À PROPOS"
 		link									= "/about/"
+		showon							= [ "all" ]
 	[[params.aside]]
 		id									= "links"
+		type								= "links"
 		text								= "Les sites que je soutiens"
-		# No button, use /data/links files for links
+		showon							= [ "all" ]
 	[[params.aside]]
 		id									= "mastodon"
+		type								= "blurb"
 		button							= "MASTODON"
 		link									= "https://mastodon.social/@pmorsa"
 		picture							= "/pictures/main/wordmark-black-text.svg"
 		picturedark					= "/pictures/main/wordmark-white-text.svg"
+		showon							= [ "all" ]
 	[[params.aside]]
 		id									= "rss"
+		type								= "blurb"
 		button							= "S'abonner au fil RSS"
 		link									= ""
+		showon							= [ "all" ]
 	[[params.aside]]
 		id 									= "contact"
+		type								= "blurb"
 		button							= "CONTACT"
 		link									= "mailto:pier%72e.%6Dors%61@pierremorsa.com"
+		showon							= [ "all" ]
 	[[params.aside]]
 		id									= "categories"
+		type								= "taxonomy"
+		class								= "pill-category"
+		title								= "BLOG CATEGORIES"
+		showon							= [ "home", "post", "term" ]
 	[[params.aside]]
 		id									= "tags"
+		type								= "taxonomy"
+		class								= "pill-category"
+		title								= "HOW IT IS GOING TAGS"
+		showon							= [ "howitisgoing", "term" ]
 	[[params.aside]]
 		id									= "companies"
+		type								= "taxonomy"
+		class								= "pill-company"
+		title								= "COMPANIES"
+		showon							= [ "howitisgoing", "term" ]
 	[[params.aside]]
 		id									= "promised"
+		type								= "taxonomy"
+		class								= "pill-promised"
+		title								= "PROMISED"
+		showon							= [ "howitisgoing", "term" ]
 	[[params.aside]]
 		id									= "deadline"
+		type								= "taxonomy"
+		class								= "pill-deadline"
+		title								= "DEADLINE"
+		showon							= [ "howitisgoing", "term" ]
 	[[params.aside]]
 		id									= "copyright"
+		type								= "blurb"
 		title								= "COPYLEFT ET ZÉRO COOKIES"
 		text								= "Site garanti sans cookies et sans JavaScript. Le contenu est en copie libre : vous pouvez tout copier et réutiliser librement."
+		showon							= [ "all" ]
 
 	[params.colors]
 		link									= "#2ebaae"
