@@ -37,7 +37,7 @@ enableGitInfo						= true
 		section								= "post"
 		title									= "ce bon vieux blog"
 		description						= "Réflexions de comptoir"
-		link										= "/"	
+		link										= "/"
 	[[params.sections]]
 		section								= "howitisgoing"
 		title									= "How It Is Going"
@@ -84,6 +84,38 @@ enableGitInfo						= true
 		showsubcategory				= true
 		language								= "en"
 
+	# Taxonomies
+		[[params.taxonomies]]
+		id										= "categories"
+		title									= "Categories"
+		description						= "Topics per category"
+		language								= "fr"
+		color									= "#00ABC2"
+	[[params.taxonomies]]
+		id										= "tags"
+		title									= "Tags"
+		description						= "How It Is Going Tags"
+		language								= "en"
+		color									= "#00ABC2"
+	[[params.taxonomies]]
+		id										= "companies"
+		title									= "Companies"
+		description						= "Companies listed on this site"
+		language								= "en"
+		color									= "#6364FF"
+	[[params.taxonomies]]
+		id										= "promised"
+		title									= "Promised"
+		description						= "When was the promise made?"
+		language								= "en"
+		color									= "#00B578"
+	[[params.taxonomies]]
+		id										= "deadline"
+		title									= "Deadline"
+		description						= "When should the promise be delivered?"
+		language								= "en"
+		color									= "#C69828"
+	
 	# Avatar picture on top of site
 	[params.avatar]
 	  src       					= "/pictures/main/pierre-morsa-avatar.png"
