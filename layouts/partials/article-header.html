@@ -11,16 +11,16 @@
 		</p>
   {{ end }}
   <div class="post-header-meta">
-    {{ $.Scratch.Set "dateType" .Date }}
-    <time class="post-header-meta-published" datetime='{{ ($.Scratch.Get "dateType").Format "2006-01-02" }}'>
-			{{ if .Params.initialdate }}
-				Updated
-			{{ end }}
-			{{ ($.Scratch.Get "dateType").Format "2006-01-02" }}
-		</time>
-		{{ with .Params.initialdate }}
-	    <time class="post-header-meta-published" datetime='{{ . }}'>
-				(Initial date {{ . }})
+		{{ with .Date }}
+	    <time class="post-header-meta-published" datetime='{{ . | time.Format "2006-01-02" }}'>
+				{{ . | time.Format "2006-01-02" }}
+			</time>
+		{{ end }}
+		{{ $date := (.Date | time.Format "2006-01-02") }}
+		{{ $dateupdate := (.Lastmod) | time.Format "2006-01-02" }}		
+		{{ if gt $dateupdate $date }}
+	    <time class="post-header-meta-published" datetime='{{ $dateupdate }}'>
+				(LAST UPDATE {{ $dateupdate }})
 			</time>
 		{{ end }}
 	</div>{{ "<!-- meta -->" | safeHTML }}
