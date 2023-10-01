@@ -4,11 +4,11 @@
 {{ if .IsHome }}
 	{{ $paginator = .Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) }}
 {{ else if eq "howitisgoing" .Section }}
-	{{ $paginator = .Paginate (where site.RegularPages "Section" "howitisgoing") }}
 	<p class="main-taxonomy-p text-muted">Sorted by Last Update. <a href="/howitisgoing-by-original-date/">View by Original Publish Date.</a></p>
+	{{ $paginator = .Paginate ((where site.RegularPages "Section" "howitisgoing").ByLastmod.Reverse) }}
 {{ else if eq "howitisgoing-by-original-date" .Section }}
 	<p class="main-taxonomy-p text-muted">Sorted by Original Publish Date. <a href="/howitisgoing/">View by Last Update.</a></p>
-	{{ $paginator = .Paginate ((where site.RegularPages "Section" "howitisgoing").ByLastmod.Reverse) }}
+	{{ $paginator = .Paginate (where site.RegularPages "Section" "howitisgoing") }}
 {{ else }}
 	{{ $paginator = .Paginate (.Pages.ByLastmod.Reverse) }}
 {{ end }}
