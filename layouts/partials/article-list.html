@@ -1,17 +1,23 @@
 {{ "<!-- partials:article-list.html:start -->" | safeHTML }}
+
 {{- $.Scratch.Set "count" 0 }}
 {{ $paginator := "" }}
+
 {{ if .IsHome }}
 	{{ $paginator = .Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) }}
+
 {{ else if eq "howitisgoing" .Section }}
 	<p class="main-taxonomy-p text-muted">Sorted by Last Update. <a href="/howitisgoing-by-original-date/">View by Original Publish Date.</a></p>
 	{{ $paginator = .Paginate ((where site.RegularPages "Section" "howitisgoing").ByLastmod.Reverse) }}
+
 {{ else if eq "howitisgoing-by-original-date" .Section }}
 	<p class="main-taxonomy-p text-muted">Sorted by Original Publish Date. <a href="/howitisgoing/">View by Last Update.</a></p>
 	{{ $paginator = .Paginate (where site.RegularPages "Section" "howitisgoing") }}
+
 {{ else }}
 	{{ $paginator = .Paginate (.Pages.ByLastmod.Reverse) }}
 {{ end }}
+
 {{ range $paginator.Pages }}
 	{{- $.Scratch.Add "count" 1 }}
 	{{- partial "article" . }}
@@ -20,5 +26,7 @@
 		{{- partial "links" . }}
 	{{- end }}
 {{- end }}
+
 {{- partial "pagination" . }}
+
 {{ "<!-- partials:article-list.html:end -->" | safeHTML }}

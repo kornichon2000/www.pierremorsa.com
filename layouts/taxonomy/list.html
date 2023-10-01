@@ -7,7 +7,7 @@
 				{{ $catdata := index .Site.Data (.Section | lower | urlize)  }}
 				{{ $data := index $catdata (.Title | lower | urlize) }}
 				{{ with $data.description }}
-				<p class="main-taxonomy-p">{{ . | markdownify }}</p>
+				<p class="main-taxonomy-p text-muted">{{ . | markdownify }}</p>
 				{{ end }}
 				{{ partial "article-summary-list" . }}
 			</main>
