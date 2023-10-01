@@ -17,7 +17,7 @@ End of September 2023, Linda Yaccarino, who is officially the CEO of Twitter, sa
 <!--more-->
 
 {{% howiseeitgoing %}}
-To her credit, she said "in early '24." She didn't specify if she meant 2024 or 3024. Profitability claims are a bit tricky. It is possible to use accounting methods to temporarily boost the profits of companies. So I think this claim is unlikely, but not 100% impossible. Long term profits? To my chagrin I must admit that Twitter still has a possibility of achieving that goal.
+To her credit, she said "in early '24." She didn't specify if she meant 2024 or 3024. Now profitability claims are a bit tricky. It is possible to use accounting methods and financial techniques to temporarily boost the profits of companies. So I think this claim is 99% unlikely, but not 100% impossible. Long term profits? To my chagrin I must admit that Twitter still has a possibility of achieving that goal.
 {{% /howiseeitgoing %}}
 
 {{% howitisgoing date="" %}}{{% /howitisgoing %}}

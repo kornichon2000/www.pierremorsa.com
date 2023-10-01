@@ -23,8 +23,7 @@ Full Self Driving will not be out of beta in 2023.
 {{% howitisgoing date="2023-09-28" %}}
 As of 2023-09-28, your Tesla still can't fetch your bread and newspaper for you.
 
-In October 2016, Tesla released a promotional video entitled "Full Self-Driving Hardware on All Teslas." It was later admitted by employees that the video had been very carefully prepared and edited.
-
+In October 2016, Tesla released a promotional video entitled "Full Self-Driving Hardware on All Teslas." It was later admitted by employees that the video had been very carefully prepared and edited. Source : [Tesla's Director of Autopilot software as reported by The Verge](https://www.theverge.com/2023/1/17/23559294/tesla-autopilot-2016-video-pre-mapped-traffic-lights)
 {{% /howitisgoing %}}
 
 {{% howitwent date="" %}}{{% /howitwent %}}
