@@ -4,7 +4,7 @@
 {{ if .IsHome }}
 	{{ $paginator = .Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) }}
 {{ else }}
-	{{ $paginator = .Paginator }}
+	{{ $paginator = .Paginate (.Pages.ByLastmod.Reverse) }}
 {{ end }}
 {{ range $paginator.Pages }}
 	{{- $.Scratch.Add "count" 1 }}

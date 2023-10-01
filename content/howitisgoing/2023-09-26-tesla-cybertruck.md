@@ -25,6 +25,6 @@ Nope. Won’t happen.
 Between Q1 and Q3 Elon complained that building Cybertrucks was hard. Source: [Ars Technica](https://arstechnica.com/cars/2023/08/tesla-cybertrucks-bad-build-quality-shows-up-like-a-sore-thumb-musk-says/)
 {{% /howitisgoing %}}
 
-{{% howitwent date="2023-10-01" %}}
+{{% howitwent date="2023-09-30" %}}
 Here we are. To nobody's surprise, Q3 went by and not a single Cybertruck was delivered to customers. My bet is that during the next earnings call, Elon will claim that the first Cybertrucks will be delivered sometime in 2024. At one point he will also complain again that making Cybertrucks is hard.
 {{% /howitwent %}}

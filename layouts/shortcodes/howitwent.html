@@ -1,8 +1,10 @@
 <!--
 
 -->
-{{ if ge (.Get "date") (now  | time.Format "2006-01-02") }}
-<h3 class="result">How It Actually Went {{ with .Get "date" }} on {{ . }}{{ end }}</h3>{{ .Inner | markdownify }}
+{{ if eq "" (.Get "date") }}
+<h3 class="deadline">How It Actually Went</h3>Not there yet.
+{{ else if ge (now  | time.Format "2006-01-02") (.Get "date") }}
+<h3 class="deadline">How It Actually Went {{ with .Get "date" }} on {{ . }}{{ end }}</h3>{{ .Inner | markdownify }}
 {{ else }}
-<h3 class="result">How It Actually Went</h3>Not there yet.
+<h3 class="deadline">How It Actually Went</h3>We're there, waiting for result update.
 {{ end }}

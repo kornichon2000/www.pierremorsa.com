@@ -20,7 +20,7 @@
 		{{ $dateupdate := (.Lastmod) | time.Format "2006-01-02" }}		
 		{{ if gt $dateupdate $date }}
 	    <time class="post-header-meta-published" datetime='{{ $dateupdate }}'>
-				(LAST UPDATE {{ $dateupdate }})
+				(UPDATED {{ $dateupdate }})
 			</time>
 		{{ end }}
 	</div>{{ "<!-- meta -->" | safeHTML }}

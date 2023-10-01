@@ -2,4 +2,4 @@
 
 -->
 
-<h3 class="deadline">How It Is Going{{ with .Get "date" }} as of {{ . }}{{ end }}</h3> {{ with .Inner }}{{ .| markdownify }}{{ else }}Not there yet.{{ end }}
+<h3 class="progress">How It Is Going{{ with .Get "date" }} as of {{ . }}{{ end }}</h3> {{ with .Inner }}{{ .| markdownify }}{{ else }}Not there yet.{{ end }}
