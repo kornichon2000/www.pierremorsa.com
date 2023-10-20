@@ -10,8 +10,7 @@ draft      		= false
 language				= "en"
 +++
 
-{{% howitstarted date="2022-06" %}}
-In June 2022, McKinsey claimed that the Metaverse had the potential to generate up to 5 trillion (US Dollars) in value by 2030. Source: [McKinsey's website and report](https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/value-creation-in-the-metaverse)
+{{% howitstarted date="2022-06" %}}In June 2022, McKinsey claimed that the Metaverse had the potential to generate up to 5 trillion (US Dollars) in value by 2030. Source: [McKinsey's website and report](https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/value-creation-in-the-metaverse)
 
 Note the typical use of words such as "potential" and "could", which means that the big number is just a wild guess pulled out of their collective asses to generate buzz. This type of unsubstantiated claim is exactly what leads to bubbles.
 {{% /howitstarted %}}
