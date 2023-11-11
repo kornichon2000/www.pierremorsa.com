@@ -2,6 +2,7 @@
 title     			= "McKinsey says the Metaverse could be worth 5 trillion in 2030"
 author  		  = "Pierre Morsa"
 date 		      = "2023-10-05"
+dateupdated		= "2023-10-05"
 tags			 		= [ "Metaverse", "Could" ]
 companies			= [ "McKinsey" ]
 promised			= [ "2022" ]

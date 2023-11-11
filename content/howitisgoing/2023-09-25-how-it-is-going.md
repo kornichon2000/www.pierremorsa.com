@@ -1,8 +1,9 @@
 +++
-title      = "Introducing How It Is Going"
-author     = "Pierre Morsa"
-date       = "2023-09-25"
-draft      = false
+title      		= "Introducing How It Is Going"
+author     		= "Pierre Morsa"
+date    		  = "2023-09-25"
+dateupdated		= "2023-09-25"
+draft		      = false
 +++
 
 How it is going is based on a simple idea: corporations make a lot of promises. Carbon neutrality. Inclusivity. Responsibility. They promise to revolutionize the world with millions of robotaxis and full self-driving. They say they’re going to make smartphones obsolete with a little something in your pocket. Having observed this game for several years, I can say this: the main goal of many (but not all) of these press releases is to (a) get free publicity and (b) reduce the psychological guilt of potential buyers.

@@ -1,4 +1,4 @@
-{{ "<!-- _default:baseof.html -->" | safeHTML }}
+{{ "<!-- _default:baseof.html:start -->" | safeHTML }}
 <!DOCTYPE HTML>
 <html>
 	{{ block "head" . }}
@@ -7,3 +7,4 @@
 	{{ block "body" . }}
 	{{ end }}
 </html>
+{{ "<!-- _default:baseof.html:end -->" | safeHTML }}

@@ -2,6 +2,7 @@
 title     			= "Elon Musk claims that the first Tesla Cybertrucks will be delivered on November 30, 2023"
 author  		  = "Pierre Morsa"
 date 		      = "2023-10-20"
+dateupdated   = "2023-10-20"
 tags			 		= [ "Delivery", "Cybertruck" ]
 companies			= [ "Tesla", "Elon Musk" ]
 promised			= [ "2023" ]

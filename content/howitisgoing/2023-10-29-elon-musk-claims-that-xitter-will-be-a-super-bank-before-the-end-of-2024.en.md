@@ -2,6 +2,7 @@
 title     			= "Elon Musk claims that Xitter will be a super bank before the end of 2024"
 author  		  = "Pierre Morsa"
 date 		      = "2023-10-29"
+dateupdated   = "2023-10-29"
 tags			 		= [ "Delivery", "Bank" ]
 companies			= [ "Twitter", "Elon Musk" ]
 promised			= [ "2023" ]

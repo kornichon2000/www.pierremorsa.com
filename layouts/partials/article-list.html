@@ -8,7 +8,7 @@
 
 {{ else if eq "howitisgoing" .Section }}
 	<p class="main-taxonomy-p text-muted">Sorted by Last Update. <a href="/howitisgoing-by-original-date/">View by Original Publish Date.</a></p>
-	{{ $paginator = .Paginate ((where site.RegularPages "Section" "howitisgoing").ByLastmod.Reverse) }}
+	{{ $paginator = .Paginate (((where site.RegularPages "Section" "howitisgoing").ByParam "dateupdated").Reverse ) }}
 
 {{ else if eq "howitisgoing-by-original-date" .Section }}
 	<p class="main-taxonomy-p text-muted">Sorted by Original Publish Date. <a href="/howitisgoing/">View by Last Update.</a></p>
