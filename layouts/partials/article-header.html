@@ -17,11 +17,13 @@
 			</time>
 		{{ end }}
 		{{ $date := (.Date | time.Format "2006-01-02") }}
-		{{ $dateupdate := .Params.dateupdated }}		
-		{{ if ne $dateupdate $date }}
-	    <time class="post-header-meta-published" datetime='{{ $dateupdate }}'>
-				(UPDATED {{ $dateupdate }})
-			</time>
+		{{ if .Params.dateupdated }}
+			{{ $dateupdate := .Params.dateupdated }}		
+			{{ if ne $dateupdate $date }}
+		    <time class="post-header-meta-published" datetime='{{ $dateupdate }}'>
+					(UPDATED {{ $dateupdate }})
+				</time>
+			{{ end }}
 		{{ end }}
 	</div>{{ "<!-- meta -->" | safeHTML }}
 	<div class="pills">
