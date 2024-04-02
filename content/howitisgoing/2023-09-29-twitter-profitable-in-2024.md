@@ -23,4 +23,6 @@ To her credit, she said "in early '24." She didn't specify if she meant 2024 or 
 
 {{% howitisgoing date="" %}}{{% /howitisgoing %}}
 
-{{% howitwent date="" %}}{{% /howitwent %}}
+{{% howitwent date="2024-04-02" %}}
+Unfortunately, I have no official news to share about Linda Yaccarino's promise that Twitter would be profitable by now. They say no news is good news. Or maybe no news is a sign that profitability was not achieved?
+{{% /howitwent %}}

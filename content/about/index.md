@@ -10,7 +10,8 @@ Je ne fais pas qu'écrire ce blog. Sur cette page vous pourrez en apprendre un p
 
 Si vous voulez lire des choses bien corporate (autrement dit chiantes), je suis sur [LinkedIn](https://be.linkedin.com/in/pierremorsa), le réseau où tout le monde est super génial.
 
-Je suis sur [Mastodon](https://mastodon.social/@pmorsa). C'est un compte privé, mais vous pouvez m'envoyer une demande de connexion.
+
+Je suis sur [Mastodon](https://mastodon.social/@pmorsa).
 
 ## Ideas on Stage
 [Vous pouvez en savoir plus sur l'histoire d'Ideas on Stage sur cette page.](/ideas-on-stage/)
