@@ -22,5 +22,5 @@ To her credit, she said "in early '24." She didn't specify if she meant 2024 or 
 {{% /howiseeitgoing %}}
 
 {{% howitwent date="2024-04-02" %}}
-Unfortunately, I have no official news to share about Linda Yaccarino's promise that Twitter would be profitable by now. They say no news is good news. Or maybe no news is a sign that profitability was not achieved?
+Unfortunately, I have no official news to share about Linda Yaccarino's promise that Twitter would be profitable by now. They say no news is good news. I say no news is a clue that profitability was not achieved.
 {{% /howitwent %}}
