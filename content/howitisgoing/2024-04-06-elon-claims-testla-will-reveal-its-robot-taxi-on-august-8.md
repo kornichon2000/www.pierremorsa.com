@@ -12,7 +12,7 @@ language				= "en"
 +++
 
 {{% howitstarted date="2024-04-05" %}}
-On April 5, 2024, Elon posted a Tweet on Xitter saying that Tesla will reveal its robotaxi on August 8th. He did not mention which year, but everyone makes the assumption it is 2024." Source: [The Verge](https://www.theverge.com/2024/4/5/24122384/tesla-robotaxi-reveal-date-elon-musk-august-8)
+On April 5, 2024, Elon posted a Tweet on Xitter saying that Tesla will reveal its robotaxi on August 8th. He did not mention which year, but everyone makes the assumption it is 2024. Source: [The Verge](https://www.theverge.com/2024/4/5/24122384/tesla-robotaxi-reveal-date-elon-musk-august-8)
 {{% /howitstarted %}}
 
 <!--more-->
