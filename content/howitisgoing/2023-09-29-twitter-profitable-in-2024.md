@@ -2,7 +2,7 @@
 title     			= "Linda Yaccarino says Twitter will be profitable early '24"
 author  		  = "Pierre Morsa"
 date 		      = "2023-09-29"
-dateupdated		= "2023-09-29"
+dateupdated		= "2024-04-02"
 tags			 		= [ "Profits" ]
 companies			= [ "Twitter", "Elon Musk" ]
 promised			= [ "2023" ]
