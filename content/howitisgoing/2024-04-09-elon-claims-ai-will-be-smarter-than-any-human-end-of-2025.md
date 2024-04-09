@@ -22,7 +22,7 @@ He is also one week too late for April fools.
 <!--more-->
 
 {{% howiseeitgoing %}}
-No.
+No. AI as it is today can be faster than humans. It can be more accurate than humans in specific use cases. It is not, however, smarter than humans.
 {{% /howiseeitgoing %}}
 
 {{% howitwent %}}
