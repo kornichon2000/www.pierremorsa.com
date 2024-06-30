@@ -1,14 +1,14 @@
 +++
-title     			= "Elon Musk claims that Xitter will be a super bank before the end of 2024"
-author  		  = "Pierre Morsa"
-date 		      = "2023-10-29"
-dateupdated   = "2023-10-29"
-tags			 		= [ "Delivery", "Bank" ]
-companies			= [ "Twitter", "Elon Musk" ]
-promised			= [ "2023" ]
-deadline				= [ "2024" ]
+title     		= "Elon Musk claims that Xitter will be a super bank before the end of 2024"
+author  		= "Pierre Morsa"
+date 		    = "2023-10-29"
+dateupdated		= "2023-10-29"
+tags			= [ "Delivery", "Bank" ]
+companies		= [ "Twitter", "Elon Musk" ]
+promised		= [ "2023" ]
+deadline		= [ "2024" ]
 draft      		= false
-language				= "en"
+language		= "en"
 +++
 
 {{% howitstarted date="2023-10-20" %}}

@@ -1,14 +1,14 @@
 +++
-title     			= "Elon Musk claims AI will be smarter than any human around the end of 2025."
-author  		  = "Pierre Morsa"
-date 		      = "2024-04-09"
+title     		= "Elon Musk claims AI will be smarter than any human around the end of 2025."
+author  		= "Pierre Morsa"
+date 		    = "2024-04-09"
 dateupdated		= "2024-04-09"
-tags			 		= [ "AI" ]
-companies			= [ "Elon Musk" ]
-promised			= [ "2024" ]
-deadline				= [ "2025" ]
+tags			= [ "AI" ]
+companies		= [ "Elon Musk" ]
+promised		= [ "2024" ]
+deadline		= [ "2025" ]
 draft      		= false
-language				= "en"
+language		= "en"
 +++
 
 {{% howitstarted date="2024-04-05" %}}

@@ -1,14 +1,14 @@
 +++
-title     			= "Elon Musk claims Tesla will reveal its robotaxi on August 8th (2024?)"
-author  		  = "Pierre Morsa"
-date 		      = "2024-04-06"
+title     		= "Elon Musk claims Tesla will reveal its robotaxi on August 8th (2024?)"
+author  		= "Pierre Morsa"
+date 		    = "2024-04-06"
 dateupdated		= "2024-04-06"
-tags			 		= [ "Delivery", "Robotaxi" ]
-companies			= [ "Tesla", "Elon Musk" ]
-promised			= [ "2024" ]
-deadline				= [ "2024" ]
+tags			= [ "Delivery", "Robotaxi" ]
+companies		= [ "Tesla", "Elon Musk" ]
+promised		= [ "2024" ]
+deadline		= [ "2024" ]
 draft      		= false
-language				= "en"
+language		= "en"
 +++
 
 {{% howitstarted date="2024-04-05" %}}

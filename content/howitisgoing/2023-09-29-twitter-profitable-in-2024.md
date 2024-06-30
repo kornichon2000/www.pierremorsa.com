@@ -1,14 +1,14 @@
 +++
-title     			= "Linda Yaccarino says Twitter will be profitable early '24"
-author  		  = "Pierre Morsa"
-date 		      = "2023-09-29"
+title     		= "Linda Yaccarino says Twitter will be profitable early '24"
+author  		= "Pierre Morsa"
+date 		    = "2023-09-29"
 dateupdated		= "2024-04-02"
-tags			 		= [ "Profits" ]
-companies			= [ "Twitter", "Elon Musk" ]
-promised			= [ "2023" ]
-deadline				= [ "2024" ]
+tags			= [ "Profits" ]
+companies		= [ "Twitter", "Elon Musk" ]
+promised		= [ "2023" ]
+deadline		= [ "2024" ]
 draft      		= false
-language				= "en"
+language		= "en"
 +++
 
 {{% howitstarted date="2023-09-28" %}}

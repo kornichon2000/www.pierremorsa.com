@@ -1,14 +1,14 @@
 +++
-title     			= "McKinsey says the Metaverse could be worth 5 trillion in 2030"
-author  		  = "Pierre Morsa"
-date 		      = "2023-10-05"
+title     		= "McKinsey says the Metaverse could be worth 5 trillion in 2030"
+author  		= "Pierre Morsa"
+date 		    = "2023-10-05"
 dateupdated		= "2023-10-05"
-tags			 		= [ "Metaverse", "Could" ]
-companies			= [ "McKinsey" ]
-promised			= [ "2022" ]
-deadline				= [ "2030" ]
+tags			= [ "Metaverse", "Could" ]
+companies		= [ "McKinsey" ]
+promised		= [ "2022" ]
+deadline		= [ "2030" ]
 draft      		= false
-language				= "en"
+language		= "en"
 +++
 
 {{% howitstarted date="2022-06" %}}In June 2022, McKinsey claimed that the Metaverse had the potential to generate up to 5 trillion (US Dollars) in value by 2030. Source: [McKinsey's website and report](https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/value-creation-in-the-metaverse)

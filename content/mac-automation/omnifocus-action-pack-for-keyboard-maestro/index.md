@@ -1,8 +1,8 @@
 +++
-draft = false
-title = "OmniFocus Action Pack for Keyboard Maestro"
-date = "2020-04-20"
-categories = [ "GTD Getting Things Done", "Technomagie", "Mac" ]
+draft			= false
+title			= "OmniFocus Action Pack for Keyboard Maestro"
+date			= "2020-04-20"
+categories		= [ "GTD Getting Things Done", "Technomagie", "Mac" ]
 +++
 
 The OmniFocus Action Pack for Keyboard Maestro is a set of plugin actions to control OmniFocus from Keyboard Maestro. OmniFocus is a top-class task management App from Omni Group. Keyboard Maestro is a wonderful automation app from Peter Lewis. Together, they are a fantastic productivity combo.

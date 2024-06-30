@@ -1,14 +1,14 @@
 +++
-title     			= "Elon Musk claims that the first Tesla Cybertrucks will be delivered on November 30, 2023"
-author  		  = "Pierre Morsa"
-date 		      = "2023-10-20"
-dateupdated   = "2023-12-01"
-tags			 		= [ "Delivery", "Cybertruck" ]
-companies			= [ "Tesla", "Elon Musk" ]
-promised			= [ "2023" ]
-deadline				= [ "2023" ]
+title     		= "Elon Musk claims that the first Tesla Cybertrucks will be delivered on November 30, 2023"
+author  		= "Pierre Morsa"
+date 		    = "2023-10-20"
+dateupdated		= "2023-12-01"
+tags			= [ "Delivery", "Cybertruck" ]
+companies		= [ "Tesla", "Elon Musk" ]
+promised		= [ "2023" ]
+deadline		= [ "2023" ]
 draft      		= false
-language				= "en"
+language		= "en"
 +++
 
 {{% howitstarted date="2023-10-20" %}}
