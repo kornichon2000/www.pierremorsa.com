@@ -21,6 +21,6 @@ On April 5, 2024, Elon posted a Tweet on Xitter saying that Tesla will reveal it
 Yes, Elon will present something on August 8th, 2024. Tesla has a recorded history of doctoring demo videos, so it is definitely possible to present a product on August 8th. Elon did not promise it would *actually work* on August 8th, 2024, so my first bet is that yes he will present some sort of robotaxi on said date. My second bet is that the product will be presented as being in beta. My third bet is that it will never get out of beta.
 {{% /howiseeitgoing %}}
 
-{{% howitwent %}}
+{{% howitwent  date="2024-07-28" %}}
 It’s not August yet, and Elon already pushed back the date of the announcement to October. Somehow, I’m sure people will say it’s good for Tesla. Source: [Fortune](https://fortune.com/2024/07/16/elon-musk-tesla-robotaxi-delay-august-reveal-design/)
 {{% /howitwent %}}
