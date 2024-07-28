@@ -2,7 +2,7 @@
 title     		= "Elon Musk claims Tesla will reveal its robotaxi on August 8th (2024?)"
 author  		= "Pierre Morsa"
 date 		    = "2024-04-06"
-dateupdated		= "2024-04-06"
+dateupdated		= "2024-07-28"
 tags			= [ "Delivery", "Robotaxi" ]
 companies		= [ "Tesla", "Elon Musk" ]
 promised		= [ "2024" ]
