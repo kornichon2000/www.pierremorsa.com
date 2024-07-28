@@ -20,9 +20,3 @@ At the end of October 2023, Elon Musk said that it would blow his mind if they d
 {{% howiseeitgoing %}}
 Why would a *smart* person give his money to a company that doesn't pay its bills? Because there are a lot of people who are *not* smart. And Musk wants it to be a high-yield account, which basically means that you will gamble on some shady market with all your money. Sure, go ahead, make my day. I think even if Musk manages to get something going, he will face hurdles from regulators, and I hope so before he loses all the money of a few not smart people. So my bet is he will fail to deliver and blame his failure on regulators, but in reality it will be because his system is a shoddy piece of shit.
 {{% /howiseeitgoing %}}
-
-{{% howitisgoing date="" %}}
-{{% /howitisgoing %}}
-
-{{% howitwent date="" %}}
-{{% /howitwent %}}

@@ -20,6 +20,3 @@ Elon previously claimed [he would reveal the robotaxi on August 8th, 2024, but b
 {{% howiseeitgoing %}}
 I was wrong the first time. I thought he would present something on August 8th, but it did not happen. I don't know what's going to happen in October, but don't expect a robotaxi that is actually ready for full-scale deployment beyond what Waymo is currently doing.
 {{% /howiseeitgoing %}}
-
-{{% howitwent %}}
-{{% /howitwent %}}

@@ -26,4 +26,3 @@ To the best of my knowledge, even Mark Zuckerberg, who renamed his Facebook empi
 You not spending much time in the Metaverse? Me neither.
 {{% /howitisgoing %}}
 
-{{% howitwent date="" %}}{{% /howitwent %}}
