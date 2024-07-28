@@ -22,4 +22,5 @@ Yes, Elon will present something on August 8th, 2024. Tesla has a recorded histo
 {{% /howiseeitgoing %}}
 
 {{% howitwent %}}
+It’s not August yet, and Elon already pushed back the date of the announcement to October. Somehow, I’m sure people will say it’s good for Tesla. Source: [Fortune](https://fortune.com/2024/07/16/elon-musk-tesla-robotaxi-delay-august-reveal-design/)
 {{% /howitwent %}}

@@ -1,0 +1,882 @@
+<!-- _default:baseof.html:start -->
+<!DOCTYPE HTML>
+<html>
+	
+		
+<!-- partials:head:start -->
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	
+	
+	
+	<meta name="generator" content="Hugo 0.128.0">
+	
+	
+		<title>Pierre Morsa</title>
+		<meta name="description" content="Le blog de Pierre Morsa, Blogueur, Co-Founder Ideas on Stage, projet How It Is Going" />
+		<meta http-equiv="Content-Language" content="fr" />
+	
+
+	<link rel="me" href="https://mastodon.social/@pmorsa" />
+	<link rel="me" href="https://www.ideasonstage.com/" />
+
+	<link rel="apple-touch-icon-precomposed" href="/favicon/apple-touch-icon-precomposed.png" />
+	<link rel="icon" href="/favicon/favicon.png" />
+	<link rel="stylesheet" href="/main.min.css" /><link rel="alternate" type="application/rss+xml" href="http://localhost:1313/index.xml" title="Pierre Morsa" />
+</head>	
+<!-- partials:head:end -->
+
+	
+	
+	<!-- _default:list.html:start -->
+  <body>
+		
+<!-- partials:topbar:start -->
+<section id="topbar" class="topbar-style">
+		<a href="/">
+			<img src="/pictures/main/pierre-morsa-avatar.png" class="intro-circle" width="48" alt="Pierre Morsa" />
+		</a>
+	
+		
+		
+		
+			
+				<h1>
+					<a href="/">
+						ce bon vieux blog
+					</a>
+				</h1>
+			
+			
+				<p class="topbar-style">
+					Réflexions de comptoir
+				</p>
+				
+		
+	
+
+</section>
+
+<!-- partials:topbar:end -->
+
+    <div class="grandparent-flex">
+			<main class="main-flex">
+				<!-- partials:article-list.html:start -->
+
+
+
+	
+
+
+
+<!-- _default:article:start -->
+<article class="layout-module post">
+	<!-- _default:article-header:start -->
+<header class="post-header">
+	<h2 class="post-header-h2">
+		<a href="/post/2018-11-19-lancer-macro-visual-basic-depuis-applescript/">
+			Comment lancer une macro Visual Basic depuis AppleScript
+		</a>
+	</h2>
+  
+  <div class="post-header-meta">
+		
+	    <time class="post-header-meta-published" datetime='2018-11-19'>
+				2018-11-19
+			</time>
+		
+		
+		
+	</div><!-- meta -->
+	<div class="pills">
+		
+		
+			<span class="pill pill-category">
+				<a href="/categories/technomagie/">
+					Technomagie
+				</a>
+			</span>
+		
+			<span class="pill pill-category">
+				<a href="/categories/mac/">
+					Mac
+				</a>
+			</span>
+		
+		
+		
+		
+	</div>
+
+</header>
+<!-- _default:article-header:end -->
+
+	<div class="post-content">
+		<p>Il est possible de lancer une macro Visual Basic depuis un script AppleScript. Comme souvent, il n’y a pas vraiment d’exemple, il faut donc tâtonner pour trouver comment cela marche. Aussi pour vous éviter la galère je vous donne la méthode.</p>
+<p>Dans l’exemple ci-dessous, j’utilise AppleScript pour lancer une macro Visual Basic qui prend deux nombres comme paramètres.</p>
+<pre tabindex="0"><code>	tell application &#34;Microsoft PowerPoint&#34;
+		run VB macro macro name &#34;SetShapePosition&#34; list of parameters {200, 100}
+	end tell
+</code></pre><h2 id="un-exemple-concret-lancer-une-macro-visual-basic-depuis-keyboard-maestro">Un exemple concret : lancer une macro Visual Basic depuis Keyboard Maestro</h2>
+<p>Visual Basic est beaucoup, beaucoup, beaucoup plus performant qu’AppleScript pour exécuter des actions dans PowerPoint, comme par exemple ajouter une forme sur chaque slide. C’est donc le langage que j’utilise en priorité pour créer des automatisations. De l’autre côté, Keyboard Maestro permet de créer des palettes de commandes parfaitement intégrées à l’interface du Mac. Grâce à la commande AppleScript « run VB macro » je peux faire communiquer les deux facilement.</p>
+<h3 id="1-créer-la-macro-à-déclencher-dans-powerpoint">1. Créer la macro à déclencher dans PowerPoint</h3>
+<p>Voici par exemple deux macros Visual Basic. La première, CopyShapePosSize, copie la position et la taille de l’objet sélectionné. La deuxième « colle » la position et la taille copiée à l’objet sélectionné. C’est génial si par exemple vous devez avoir plusieurs zones de texte avec exactement la même taille et position sur toute une série de slides.</p>
+<p>N’oubliez pas de déclarer les variables « Public » au début, car ce sont elles qui vont se « souvenir » de la taille et de la position des objets sélectionnés.</p>
+<p>En théorie, il est même possible de sélectionner plusieurs objets : on sélectionne A, B et C (dans cet ordre), on copie leurs positions et leurs tailles, puis ont sélectionne D, E et F et D hérite de la position et taille de A, E de B et F de C, mais je ne suis pas sûr que ça marche bien, car je ne l’utilise jamais et du coup je ne l’ai jamais vraiment testé à fond.</p>
+<pre tabindex="0"><code>Public pLeft() As Single
+Public pTop() As Single
+Public pWidth() As Single
+Public pHeight() As Single
+Public pCount As Integer
+
+&#39; CopyShapePosSize
+Sub CopyShapePosSize(theParam As String)
+    Dim theShape As Shape
+    
+    ReDim Preserve pPPSSTextAlignHorizontalYes(pPPSSStylesCount)
+    
+    theCount = ActiveWindow.Selection.ShapeRange.Count
+    ReDim pLeft(theCount)
+    ReDim pTop(theCount)
+    ReDim pWidth(theCount)
+    ReDim pHeight(theCount)
+    pCount = theCount
+    
+    For i = 1 To theCount
+        Set theShape = ActiveWindow.Selection.ShapeRange(i)
+        pLeft(i) = theShape.Left
+        pTop(i) = theShape.Top
+        pWidth(i) = theShape.width
+        pHeight(i) = theShape.height
+    Next
+    
+End Sub
+
+
+&#39; PasteShapePosSize
+Sub PasteShapePosSize(theParam As String)
+    Dim theShape As Shape
+    
+    theCount = ActiveWindow.Selection.ShapeRange.Count
+    If theCount &gt; pCount Then
+        theCount = pCount
+    End If
+    
+    If theCount &gt; 0 Then
+        For i = 1 To theCount
+            Set theShape = ActiveWindow.Selection.ShapeRange(i)
+            theShape.Top = pTop(i)
+            theShape.Left = pLeft(i)
+            theShape.width = pWidth(i)
+            theShape.height = pHeight(i)
+        Next
+    End If
+    
+End Sub
+</code></pre><h3 id="2-créer-la-macro-de-déclenchement-dans-keyboard-maestro">2. Créer la macro de déclenchement dans Keyboard Maestro</h3>
+<p>Voici un exemple de ce à quoi peut ressembler la palette dans Keyboard Maestro. On sélectionne un objet A dans PowerPoint, puis on clique sur Copy position and size. Puis on sélectionne un objet B et on clique sur paste position and size. Magie, la position et la taille de l’objet B sont exactement les mêmes que celles de l’objet A !</p>
+<p><img src="/pictures/2018/11/keyboard-maestro-powerpoint-palette.jpg" alt="Keyboard Maestro Powerpoint Palette"></p>
+<p>Pour arriver à ce résultat, commencez par créer une « palette » qui sera active uniquement dans PowerPoint.</p>
+<p><img src="/pictures/2018/11/keyboard-maestro-powerpoint-palette-step-1.jpg" alt="Keyboard Maestro Powerpoint Palette Step 1"></p>
+<p>Ensuite, créez les deux macros qui vont lancer CopyShapePosSize et PasteShapePosSize. Voici l’exemple pour la macro qui lance CopyShapePosSize, mais c’est exactement la même chose pour l’autre macro.</p>
+<p><img src="/pictures/2018/11/keyboard-maestro-powerpoint-palette-step-2.jpg" alt="Keyboard Maestro Powerpoint Palette Step 2"></p>
+<p>Et voilà, fini de galérer à essayer d’aligner chaque élément manuellement pour qu’ils soient identiques sur tous les slides. De toute façon, pour diverses raisons, avec PowerPoint c’est impossible de garantir que la position et la taille sont parfaitement identiques en essayant de le faire manuellement. Cette macro règle le problème.</p>
+<p>Le nombre de possibilités est pratiquement infini. J’ai des dizaines de macros similaires qui permettent de gagner un temps fou.</p>
+
+    </div>
+ 	<div class="post-related">
+	
+	
+		<h3>Articles liés</h3>
+		<ul>
+			
+			<li><a href="/post/2021-07-19-changer-la-sortie-audio-depuis-la-ligne-de-commande-sur-macos/">Changer la sortie audio depuis la ligne de commande sur macOS</a></li>
+			
+			<li><a href="/post/2020-06-01-creer-automatiquement-des-dossiers-par-jour/">Créer automatiquement des dossiers par jour</a></li>
+			
+			<li><a href="/post/2020-05-18-imprimer-un-paquet-de-documents-sur-macos/">La façon la plus simple d’imprimer un paquet de documents sur macOS</a></li>
+			
+			<li><a href="/mac-automation/omnifocus-action-pack-for-keyboard-maestro/">OmniFocus Action Pack for Keyboard Maestro</a></li>
+			
+			<li><a href="/post/2020-04-20-omnifocus-action-pack-une-liste-d-actions-pour-automatiser-omnifocus-avec-keyboard-maestro/">OmniFocus Action Pack : une liste d’actions pour automatiser OmniFocus avec Keyboard Maestro</a></li>
+			
+		</ul>
+	
+	</div>
+</article>
+<!-- _default:article:end -->
+
+		<!-- partials:links:start -->
+<section id="links" class="layout-module blurb hide-sm">
+	<header>
+	  <p class="align-center">Les sites que je soutiens</p>
+	</header>
+	<div class="links-flex">
+		<div class="link">
+			<a href="https://www.codingandbricks.com/" class="link-a">
+	    		<img src="/pictures/links/codingandbricks.jpg" class="link-img">
+	    		<p class="link-p">Ateliers LEGO Serious Play® pour les entreprises</p>
+	    	</a>
+		</div>
+		<div class="link">
+			<a href="https://www.ideasonstage.com/" class="link-a">
+	    		<img src="/pictures/links/ideasonstage.jpg" class="link-img">
+	    		<p class="link-p">Le spécialiste des présentations en public</p>
+	    	</a>
+		</div>
+	</div>
+</section><!-- links -->
+<!-- partials:links:end --><!-- _default:article:start -->
+<article class="layout-module post">
+	<!-- _default:article-header:start -->
+<header class="post-header">
+	<h2 class="post-header-h2">
+		<a href="/post/2018-11-12-trop-important-pour-etre-forme-sur-powerpoint/">
+			Trop important pour être formé sur PowerPoint
+		</a>
+	</h2>
+  
+  <div class="post-header-meta">
+		
+	    <time class="post-header-meta-published" datetime='2018-11-12'>
+				2018-11-12
+			</time>
+		
+		
+		
+	</div><!-- meta -->
+	<div class="pills">
+		
+		
+			<span class="pill pill-category">
+				<a href="/categories/lifehacks/">
+					Lifehacks
+				</a>
+			</span>
+		
+			<span class="pill pill-category">
+				<a href="/categories/pr%C3%A9senter-en-public/">
+					Présenter en public
+				</a>
+			</span>
+		
+		
+		
+		
+	</div>
+
+</header>
+<!-- _default:article-header:end -->
+
+	<div class="post-content">
+		<p>Combien de consultants et de cadres passent littéralement des années de leur vie professionnelle sur PowerPoint ? Pourtant, combien d’entre eux ont suivi une formation pour utiliser PowerPoint efficacement ? Pratiquement aucun. Un consultant a besoin de formation en stratégie, en management, en communication. Mais PowerPoint ? Vous voulez rire ? Pourquoi pas des cours d’informatique ou de dactylo tant qu’on y est ?</p>
+<p>Et pourtant&hellip; Lorsqu’on sait taper à dix doigts, que l’on n’est pas bloqué par les petits tracas informatiques, et que l’on sait correctement utiliser PowerPoint (utilisez les masques de diapositives au lieu d’aligner chaque élément à la main !!!), créer une présentation PowerPoint prend littéralement deux fois moins de temps.</p>
+<p>Laissez-moi le dire autrement. Au lieu de mettre 2 jours pour créer une présentation, le consultant mettrait 1 jour et gagnerait 1 jour de vacances gratuit. Pas mal non ?</p>
+
+    </div>
+ 	<div class="post-related">
+	
+	
+		<h3>Articles liés</h3>
+		<ul>
+			
+			<li><a href="/post/2021-11-01-facebook-devient-meta/">Facebook devient Meta</a></li>
+			
+			<li><a href="/post/2021-10-25-science-vs-methode-scientifique/">Science vs méthode scientifique</a></li>
+			
+			<li><a href="/post/2021-10-18-comment-trouver-le-numero-du-service-client-orange-pro/">Comment trouver le numéro du service client Orange Pro</a></li>
+			
+			<li><a href="/post/2020-07-20-definir-un-raccourci-clavier-pour-couper-le-micro-dans-zoom/">Définir un raccourci clavier pour couper le micro dans Zoom</a></li>
+			
+			<li><a href="/post/2019-04-01-personnalite-a-partir-noms-meubles-ikea/">Votre personnalité à partir des noms de vos meubles IKEA</a></li>
+			
+		</ul>
+	
+	</div>
+</article>
+<!-- _default:article:end -->
+<!-- _default:article:start -->
+<article class="layout-module post">
+	<!-- _default:article-header:start -->
+<header class="post-header">
+	<h2 class="post-header-h2">
+		<a href="/post/2018-11-05-sept-lois-de-murphy-evenement-tedx/">
+			Les sept lois de Murphy des événements TEDx
+		</a>
+	</h2>
+  
+  <div class="post-header-meta">
+		
+	    <time class="post-header-meta-published" datetime='2018-11-05'>
+				2018-11-05
+			</time>
+		
+		
+		
+	</div><!-- meta -->
+	<div class="pills">
+		
+		
+			<span class="pill pill-category">
+				<a href="/categories/pr%C3%A9senter-en-public/">
+					Présenter en public
+				</a>
+			</span>
+		
+			<span class="pill pill-category">
+				<a href="/categories/tedx/">
+					TEDx
+				</a>
+			</span>
+		
+		
+		
+		
+	</div>
+
+</header>
+<!-- _default:article-header:end -->
+
+	<div class="post-content">
+		<p>Vous avez déjà peut-être assisté à un événement TEDx. Vous pouvez avoir l’impression que tout se passe toujours comme prévu. Mais ce n’est pas vraiment le cas. Ce n’est même jamais le cas. Voici les sept lois de Murphy d’une soirée TEDx, liste forcément incomplète et biaisée par mon point de vue de coach.</p>
+<p><strong>Première loi : la scène ne sera pas prête avant le début des répétitions du jour J</strong>. Vous pouvez croire que la scène sera prête pour les répétitions. Tout le monde peut vous avoir garanti que la scène sera prête. Mais non, la scène ne sera pas prête avant de démarrer les répétitions. Entre les techniciens aux horaires très stricts, la mise en place du décor, les tests son et lumière et le reste, il reste toujours un truc à régler pendant les répétitions. Il vaut mieux en tenir compte le jour J.</p>
+<p><strong>Deuxième loi : vous aurez des slides au dernier moment</strong>. Les 10 emails de rappel, les consignes strictes, rien n’y fera. Certains intervenants vous donneront leurs slides définitifs au dernier moment. Prévoyez une personne 100 % dédiée aux slides le jour J.</p>
+<p><strong>Troisième loi : (au moins) un intervenant ne sera pas prêt.</strong> Par panique, par stress, parce qu’il n’aura pas <del>pu</del> voulu se préparer correctement. Pas de panique. Même si personne ne vous le dit, cela arrive dans tous les événements TEDx, <strong>et même à TED</strong>. Mettez-le en confiance, assurez-vous qu’il ne dépasse pas son temps, et faites en sorte qu’il assure au moins le service minimum.</p>
+<p><strong>Quatrième loi : la télécommande des slides marchera pendant les répétitions, pas pendant l’événement.</strong> Eh oui. J’ai vu cela se produire sur plusieurs événements. La raison ? La distance entre la régie et la scène est parfois de plusieurs dizaines de mètres, et la portée de la télécommande est à la limite. Cela fonctionne pendant les répétitions, car la salle est vide. Mais une fois remplie, avec toutes les personnes et leurs téléphones mobiles, les perturbations suffisent pour couper le signal de la télécommande entre la scène et la régie. La meilleure solution est de s’assurer que le récepteur du signal (le petit <em>dongle</em> que l’on branche sur l’ordinateur) est suffisamment proche de la scène. Personnellement, je suis un grand partisan des régies situées près de la scène plutôt qu’en fond de salle ou dans un local déporté.</p>
+<p><strong>Cinquième loi : le minuteur va perturber au moins un intervenant.</strong> On pense souvent bien faire en utilisant un minuteur. Mais en réalité si les intervenants se sont bien préparés il y a peu de risques de débordement. N’oubliez pas de bien briefer les intervenants pour leur expliquer que s’ils dépassent un petit peu, ce n’est pas grave. C’est en tout cas mieux que de commencer à stresser et à accélérer son débit pour terminer dans les temps.</p>
+<p><strong>Sixième loi : un micro va tomber en panne. Ne me demandez pas pourquoi.</strong> Même si tous les micros semblent tous pareils, même si vous avez mis des piles neuves dans tous les micros, même s’ils fonctionnaient tous <em>avant</em>, il y en a un qui va foirer. Il faut toujours prévoir au moins un micro de rechange.</p>
+<p><strong>Septième loi : shit happens.</strong> Un intervenant se casse la figure sur scène. Ou oublie totalement son texte. Ou se
+met à poil. Ou part dans un délire sur un complot mondial entre les extraterrestres et les chiens. Encore une fois, vous ne serez pas le seul événement où cela se sera produit. Une fois que vous avez pris la responsabilité de laisser la scène à un intervenant, il faut le laisser finir, sans le laisser dépasser le temps imparti. Si ses propos ou son contenu étaient inacceptables, le dire clairement après l’intervention. Utiliser son bon sens pour limiter les dommages. <a href="/post/2018-03-12-que-faire-si-intervenant-derape-sur-scene">Voir à ce sujet cet article</a>.</p>
+<p>Si vous avez des anecdotes amusantes en tant qu’organisateur d’événement TEDx, vous pouvez m’en faire part par email.</p>
+
+    </div>
+ 	<div class="post-related">
+	
+	
+		<h3>Articles liés</h3>
+		<ul>
+			
+			<li><a href="/post/2021-11-01-facebook-devient-meta/">Facebook devient Meta</a></li>
+			
+			<li><a href="/post/2021-10-25-science-vs-methode-scientifique/">Science vs méthode scientifique</a></li>
+			
+			<li><a href="/post/2021-10-18-comment-trouver-le-numero-du-service-client-orange-pro/">Comment trouver le numéro du service client Orange Pro</a></li>
+			
+			<li><a href="/post/2019-04-01-personnalite-a-partir-noms-meubles-ikea/">Votre personnalité à partir des noms de vos meubles IKEA</a></li>
+			
+			<li><a href="/post/2018-09-10-que-faire-si-un-intervenant-tedx-refuse-de-se-preparer/">Que faire si un de vos intervenants TEDx refuse de se préparer ?</a></li>
+			
+		</ul>
+	
+	</div>
+</article>
+<!-- _default:article:end -->
+<!-- _default:article:start -->
+<article class="layout-module post">
+	<!-- _default:article-header:start -->
+<header class="post-header">
+	<h2 class="post-header-h2">
+		<a href="/post/2018-10-29-le-client-est-roi/">
+			Le client est roi&hellip;
+		</a>
+	</h2>
+  
+  <div class="post-header-meta">
+		
+	    <time class="post-header-meta-published" datetime='2018-10-29'>
+				2018-10-29
+			</time>
+		
+		
+		
+	</div><!-- meta -->
+	<div class="pills">
+		
+		
+			<span class="pill pill-category">
+				<a href="/categories/nouvelles/">
+					Nouvelles
+				</a>
+			</span>
+		
+			<span class="pill pill-category">
+				<a href="/categories/opinions/">
+					Opinions
+				</a>
+			</span>
+		
+		
+		
+		
+	</div>
+
+</header>
+<!-- _default:article-header:end -->
+
+	<div class="post-content">
+		<p>Le problème, c&rsquo;est qu&rsquo;un client roi a le pouvoir. Il a le pouvoir de faire réussir&hellip; ou de détruire une entreprise.</p>
+<p>Prenons l&rsquo;exemple de l&rsquo;iPhone. Si Apple avait écouté le client, ils auraient laissé la prise casque. Ils auraient mis une batterie qui tient 1 mois. Ils auraient laissé les utilisateurs installer ce qu&rsquo;ils voulaient en dehors de l&rsquo;App Store. Ils auraient laissé de larges bordures autour de l&rsquo;écran. Ils auraient ajouté un lecteur de carte mémoire. Et ils auraient obtenu un produit invendable, trop lourd et trop peu sécurisé. Si Apple avait écouté ses clients, elle se serait suicidée en créant un produit invendable.</p>
+<p>De nombreux éditeurs de logiciel ont également pu en faire l&rsquo;expérience. « On s&rsquo;en fiche des nouvelles fonctionnalités, tout ce qu&rsquo;on veut, c&rsquo;est que le logiciel soit plus stable ! » Une fois la nouvelle version disponible, aucun utilisateur ne l&rsquo;achète car il n&rsquo;y a aucune nouvelle fonctionnalité. À l&rsquo;inverse, les développeurs qui se retrouvent à accepter toutes les demandes des clients se retrouvent rapidement avec une bouse impossible à maintenir.</p>
+<p>Le problème est le même pour les agences web, les designers, les architectes, etc. Dans tous les cas, le résultat obtenu sera meilleur si le pouvoir n&rsquo;est pas donné à un client roi, mais à la personne qui a la meilleure vision de l&rsquo;objectif à atteindre et les compétences pour l&rsquo;exécuter.</p>
+
+    </div>
+ 	<div class="post-related">
+	
+	
+		<h3>Articles liés</h3>
+		<ul>
+			
+			<li><a href="/post/2019-01-21-tf1-france-televisions-m6-s-associent-contre-netflix/">TF1, France Télévisions et M6 s’associent pour lutter contre Netflix...</a></li>
+			
+			<li><a href="/post/2018-07-23-le-probleme-de-l-araignee/">Le problème de l&#39;araignée</a></li>
+			
+			<li><a href="/post/2023-10-02-mon-nouveau-projet-how-it-is-going/">Mon nouveau projet : How It Is Going</a></li>
+			
+			<li><a href="/post/2022-09-19-un-article-par-semaine-c-est-fini/">Un article par semaine : c’est fini</a></li>
+			
+			<li><a href="/post/2022-07-18-j-ai-un-compte-facebook-bordel/">J&#39;ai un compte Facebook bordel !</a></li>
+			
+		</ul>
+	
+	</div>
+</article>
+<!-- _default:article:end -->
+<!-- _default:article:start -->
+<article class="layout-module post">
+	<!-- _default:article-header:start -->
+<header class="post-header">
+	<h2 class="post-header-h2">
+		<a href="/post/2018-10-22-difference-entre-un-mauvais-slide-et-un-sac-poubelle/">
+			Quelle est la différence entre un mauvais slide et un sac poubelle ?
+		</a>
+	</h2>
+  
+  <div class="post-header-meta">
+		
+	    <time class="post-header-meta-published" datetime='2018-10-22'>
+				2018-10-22
+			</time>
+		
+		
+		
+	</div><!-- meta -->
+	<div class="pills">
+		
+		
+			<span class="pill pill-category">
+				<a href="/categories/pr%C3%A9senter-en-public/">
+					Présenter en public
+				</a>
+			</span>
+		
+			<span class="pill pill-category">
+				<a href="/categories/opinions/">
+					Opinions
+				</a>
+			</span>
+		
+		
+		
+		
+	</div>
+
+</header>
+<!-- _default:article-header:end -->
+
+	<div class="post-content">
+		<p>Quelle est la différence entre un mauvais slide et un sac poubelle ? Réponse : y en a pas. On les remplit au maximum, et quand ils sont pleins on écrase tout pour les remplir encore plus.</p>
+<p>Bon, il n’y a pas que les consultants qui ont ce travers. J’ai mis ça juste pour avoir plus de clics. Ce qui est intéressant, c’est de se demander pourquoi. Quelle est l’origine de ce réflexe quasi reptilien qui nous pousse à remplir les slides au maximum ? Pourquoi cette peur du vide ?</p>
+<p>À mon avis (et c’est juste mon avis, je ne pense pas qu’il y ait eu d’études sur le sujet), nous ne faisons que reproduire ce que nous avons appris à faire à l’école. L’école nous a appris à avoir peur de la page blanche. L’école nous a appris à préférer la quantité sur la qualité. Personnellement, j’ai vite réalisé que les bons élèves, ceux qui avaient des meilleures notes que moi, rendaient des copies qui étaient systématiquement plus longues que les miennes.</p>
+<p>Faire long, dense et exhaustif est payant à l’école (et, m’a-t-on dit, en SEO). On démontre l’étendue son savoir, que l’on a bien appris la leçon. Et on sécurise sa note. Faire concis et aller à l’essentiel, c’est au contraire prendre un risque. En a-t-on mis assez ? Le professeur (qui n’a sûrement pas envie de se taper des copies qui n’en finissent pas) va-t-il trouver ma réponse suffisante ? Face à ce dilemme, le choix est vite fait : il faut écrire le plus possible.</p>
+<p>Et pourtant, être capable de donner une réponse complète et concise demande un vrai savoir-faire, mais qui n’est pratiquement jamais valorisé à l’école. Face au slide, nous ne faisons que reproduire ce comportement. Nous essayons de réduire le risque perçu, l’incertitude, notre peur de l’inconnu en remplissant le slide jusqu’à ce qu’il soit plein à craquer. En oubliant de nous demander ce qui est réellement utile et essentiel. Et ce faisant nous rendons notre présentation plus difficile à lire, plus confuse et nous en réduisons l’impact.</p>
+<p>Alors, arrêtons de remplir chaque millimètre carré de nos slides. Mettons le savoir-faire en lumière en ne mettant que l’essentiel. Supprimons les détails superflus et illisibles qui n’apportent rien. N’ajoutons pas d’images juste pour remplir l’espace vide. Ce sont les clients qui nous diront merci.</p>
+
+    </div>
+ 	<div class="post-related">
+	
+	
+		<h3>Articles liés</h3>
+		<ul>
+			
+			<li><a href="/post/2018-01-22-plancher-bas-plafond-haut/">Plancher bas, plafond haut</a></li>
+			
+			<li><a href="/post/2017-11-27-storytelling-is-dead/">Le storytelling est... mort ?</a></li>
+			
+			<li><a href="/post/2021-11-01-facebook-devient-meta/">Facebook devient Meta</a></li>
+			
+			<li><a href="/post/2021-10-25-science-vs-methode-scientifique/">Science vs méthode scientifique</a></li>
+			
+			<li><a href="/post/2021-10-18-comment-trouver-le-numero-du-service-client-orange-pro/">Comment trouver le numéro du service client Orange Pro</a></li>
+			
+		</ul>
+	
+	</div>
+</article>
+<!-- _default:article:end -->
+
+
+<!-- partials:pagination -->
+<nav id="navigation" class="flex-navigation">
+	
+  	<a href="/page/39/" class="button">Plus récents</a>
+	
+  
+  	<a href="/page/41/" class="button">Plus anciens</a>
+  
+</nav>
+
+
+<!-- partials:article-list.html:end -->
+
+			</main>
+			
+
+<!-- partials:aside:start -->
+
+<aside class="aside-flex">
+
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="blog" class="aside-module">
+					
+					
+					
+						<a href="/" class="button width-full">
+							
+		        		BLOG
+							
+						</a>
+					
+				</section>
+			
+		
+		
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="howitisgoing" class="aside-module">
+					
+					
+					
+						<a href="/howitisgoing/" class="button width-full">
+							
+		        		HOW IT IS GOING PROJECT
+							
+						</a>
+					
+				</section>
+			
+		
+		
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="mac-automation" class="aside-module">
+					
+					
+					
+						<a href="/mac-automation/" class="button width-full">
+							
+		        		MAC AUTOMATION TOOLS
+							
+						</a>
+					
+				</section>
+			
+		
+		
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="about" class="aside-module">
+					
+					
+					
+						<a href="/about/" class="button width-full">
+							
+		        		À PROPOS
+							
+						</a>
+					
+				</section>
+			
+		
+		
+	
+		
+			
+			
+				
+				<!-- links -->
+				<section id="links" class="aside-module hide-lg">
+					<header>
+					  <h2 class="aside-module-h2 align-center">Les sites que je soutiens</p>
+					</header>
+					<div class="links-flex">
+						
+							<div class="link">
+								<a href="https://www.codingandbricks.com/" class="link-a">
+					    		<img src="/pictures/links/codingandbricks.jpg" class="link-img">
+					    		<p class="link-p">Ateliers LEGO Serious Play® pour les entreprises</p>
+					    	</a>
+							</div>
+						
+							<div class="link">
+								<a href="https://www.ideasonstage.com/" class="link-a">
+					    		<img src="/pictures/links/ideasonstage.jpg" class="link-img">
+					    		<p class="link-p">Le spécialiste des présentations en public</p>
+					    	</a>
+							</div>
+						
+					</div>
+				</section>
+
+			
+		
+		
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="mastodon" class="aside-module">
+					
+					
+					
+						<a href="https://mastodon.social/@pmorsa" class="button width-full">
+							
+								<img src="/pictures/main/wordmark-black-text.svg" alt="MASTODON" class="piclight" />
+								
+									<img src="/pictures/main/wordmark-white-text.svg" alt="MASTODON" class="picdark" />
+								
+							
+						</a>
+					
+				</section>
+			
+		
+		
+	
+		
+			
+				
+				<!-- rss -->
+				<section id="rss" class="aside-module blurb">
+					
+					<a rel="alternate" type="application/rss+xml" href="http://localhost:1313/index.xml" title="RSS" class="button width-full">S&rsquo;abonner au fil RSS</a>
+					
+				</section>
+		
+			
+		
+		
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="contact" class="aside-module">
+					
+					
+					
+						<a href="mailto:pier%72e.%6Dors%61@pierremorsa.com" class="button width-full">
+							
+		        		CONTACT
+							
+						</a>
+					
+				</section>
+			
+		
+		
+	
+		
+			
+				
+				<!-- list of taxonomy terms -->
+				
+				<section id="categories" class="aside-module">
+					<h2 class="aside-module-h2">BLOG CATEGORIES</h2>
+				  <ul class="aside-taxonomy-ul">
+						
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/art-oratoire/">Art Oratoire</a>
+								</span>
+								<span style="float:right;">1</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/cr%C3%A9ativit%C3%A9/">Créativité</a>
+								</span>
+								<span style="float:right;">1</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/gtd-getting-things-done/">GTD Getting Things Done</a>
+								</span>
+								<span style="float:right;">44</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/hugo/">Hugo</a>
+								</span>
+								<span style="float:right;">9</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/ideas-on-stage/">Ideas on Stage</a>
+								</span>
+								<span style="float:right;">1</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/internet/">Internet</a>
+								</span>
+								<span style="float:right;">7</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/lifehacks/">Lifehacks</a>
+								</span>
+								<span style="float:right;">68</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/mac/">Mac</a>
+								</span>
+								<span style="float:right;">24</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/nomade-digital/">Nomade Digital</a>
+								</span>
+								<span style="float:right;">5</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/nouvelles/">Nouvelles</a>
+								</span>
+								<span style="float:right;">48</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/opinions/">Opinions</a>
+								</span>
+								<span style="float:right;">16</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/philosophie-de-blog/">Philosophie De Blog</a>
+								</span>
+								<span style="float:right;">121</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/pr%C3%A9senter-en-public/">Présenter en Public</a>
+								</span>
+								<span style="float:right;">68</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/startup/">Startup</a>
+								</span>
+								<span style="float:right;">15</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/storytelling/">Storytelling</a>
+								</span>
+								<span style="float:right;">8</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/technomagie/">Technomagie</a>
+								</span>
+								<span style="float:right;">87</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/tedx/">TEDx</a>
+								</span>
+								<span style="float:right;">12</span>
+							</li>
+					   
+			    </ul>
+				</section>
+								
+			
+		
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="copyright" class="aside-module">
+					
+			    	<h2 class="aside-module-h2">COPYLEFT ET ZÉRO COOKIES</h2>
+					
+					
+			    	<p class="aside-module-p">Site garanti sans cookies et sans JavaScript. Le contenu est en copie libre : vous pouvez tout copier et réutiliser librement.</p>
+					
+					
+				</section>
+			
+		
+		
+	
+	<section id="last-updated" class="aside-module">
+		<h2 class="aside-module-h2">Dernière mise à jour</h2>
+		<p class="aside-module-p">2024-07-03 10:10 CEST
+	</section>
+	
+</aside>
+
+<!-- partials:aside:end -->
+		</div>
+	</body>
+	<!-- _default:list.html:end -->
+</html>
+<!-- _default:baseof.html:end -->

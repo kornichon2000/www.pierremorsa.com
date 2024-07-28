@@ -1,0 +1,948 @@
+<!-- _default:baseof.html:start -->
+<!DOCTYPE HTML>
+<html>
+	
+		
+<!-- partials:head:start -->
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	
+	
+	
+	<meta name="generator" content="Hugo 0.128.0">
+	
+	
+		<title>Pierre Morsa</title>
+		<meta name="description" content="Le blog de Pierre Morsa, Blogueur, Co-Founder Ideas on Stage, projet How It Is Going" />
+		<meta http-equiv="Content-Language" content="fr" />
+	
+
+	<link rel="me" href="https://mastodon.social/@pmorsa" />
+	<link rel="me" href="https://www.ideasonstage.com/" />
+
+	<link rel="apple-touch-icon-precomposed" href="/favicon/apple-touch-icon-precomposed.png" />
+	<link rel="icon" href="/favicon/favicon.png" />
+	<link rel="stylesheet" href="/main.min.css" /><link rel="alternate" type="application/rss+xml" href="http://localhost:1313/index.xml" title="Pierre Morsa" />
+</head>	
+<!-- partials:head:end -->
+
+	
+	
+	<!-- _default:list.html:start -->
+  <body>
+		
+<!-- partials:topbar:start -->
+<section id="topbar" class="topbar-style">
+		<a href="/">
+			<img src="/pictures/main/pierre-morsa-avatar.png" class="intro-circle" width="48" alt="Pierre Morsa" />
+		</a>
+	
+		
+		
+		
+			
+				<h1>
+					<a href="/">
+						ce bon vieux blog
+					</a>
+				</h1>
+			
+			
+				<p class="topbar-style">
+					Réflexions de comptoir
+				</p>
+				
+		
+	
+
+</section>
+
+<!-- partials:topbar:end -->
+
+    <div class="grandparent-flex">
+			<main class="main-flex">
+				<!-- partials:article-list.html:start -->
+
+
+
+	
+
+
+
+<!-- _default:article:start -->
+<article class="layout-module post">
+	<!-- _default:article-header:start -->
+<header class="post-header">
+	<h2 class="post-header-h2">
+		<a href="/post/2017-12-25-site-hugo-github-netlify-2/">
+			Héberger gratuitement un site Hugo avec Github et Netlify (2/2)
+		</a>
+	</h2>
+  
+  <div class="post-header-meta">
+		
+	    <time class="post-header-meta-published" datetime='2017-12-25'>
+				2017-12-25
+			</time>
+		
+		
+		
+	</div><!-- meta -->
+	<div class="pills">
+		
+		
+			<span class="pill pill-category">
+				<a href="/categories/technomagie/">
+					Technomagie
+				</a>
+			</span>
+		
+			<span class="pill pill-category">
+				<a href="/categories/hugo/">
+					Hugo
+				</a>
+			</span>
+		
+		
+		
+		
+	</div>
+
+</header>
+<!-- _default:article-header:end -->
+
+	<div class="post-content">
+		<p>Dans cette deuxième partie nous allons voir comment configurer Netlify pour servir les pages du site. Si vous ne l&rsquo;avez pas lue je vous conseille de démarrer par la <a href="/post/2017-12-18-site-hugo-github-netlify-1">partie 1 de l&rsquo;article qui explique comment déplacer le code du site dans Github</a>.</p>
+<p>Le truc génial avec Netlify, c&rsquo;est qu&rsquo;il s&rsquo;occupe de faire tout ce qui est généralement bien pénible à configurer :</p>
+<ul>
+<li>Il va être le serveur web des pages</li>
+<li>Il est CDN (Content Distributed Network) pour accélérer la performance du site, et prend entièrement à sa charge la gestion du rafraîchissement du cache. Fini les arrachages de cheveux parce que le cache ne s&rsquo;est pas mis à jour correctement.</li>
+<li>Il offre un DNS très rapide pour réduire la latence de connexion.</li>
+<li>Il gère le https pour vous (si vous le souhaitez), et force la redirection de http vers https.</li>
+</ul>
+<p>Pour pas un roro, c&rsquo;est déjà super. Mais si en plus je vous dis que Netlify :</p>
+<ul>
+<li>Compile automatiquement le site hugo pour vous à partir du repository Github</li>
+<li>Déploie automatiquement la branche compilée</li>
+<li>Permet de tester autant de branches alternatives (versions de test ou versions futures par exemple) que souhaité</li>
+<li>Permet de faire du A/B testing automatiquement</li>
+<li>Permet de faire un rollback (retour en arrière) simplement en cas de catastrophe.</li>
+<li>Offre un système de gestion de contenu hyper rapide (CMS).</li>
+</ul>
+<p>Et tout ça toujours pour zéro roros ? Elle est pas belle la vie ?</p>
+<h2 id="configurer-netlify">Configurer Netlify</h2>
+<p>C&rsquo;est bien beau tout ça, mais du coup ça doit sûrement être compliqué de tout paramétrer. Ben non. La magie de Netlify c&rsquo;est que tout reste super simple.</p>
+<h3 id="créer-un-compte-netlify">Créer un compte Netlify</h3>
+<p>Pour créer un compte Netlify, identifiez-vous avec votre compte Github.</p>
+<p><img src="/pictures/2017/12/netlify-signin-github.jpg" alt="Netlify Signin Github"></p>
+<p>Pourquoi avec votre compte Github ? Parce que&hellip; Netlify va automatiquement vous proposer les différents projets que vous avez stockés sur Github. Donnez l&rsquo;autorisation à Netlify d&rsquo;accéder à votre compte Github. Voilà, vous venez de configurer votre compte Netlify.</p>
+<p><img src="/pictures/2017/12/netlify-authorize-github.jpg" alt="Netlify Authorize Github"></p>
+<h3 id="ajouter-son-site-hugo-sur-netlify">Ajouter son site Hugo sur Netlify</h3>
+<p>Pour ajouter un site commençons par cliquer sur le bouton « New site from Git ».</p>
+<p><img src="/pictures/2017/12/netlify-new-site-from-git.jpg" alt="Netlify New Site From Git"></p>
+<p>Ensuite, il faut choisir « Github » (ou une des autres options  si votre code est hébergé chez GitLab ou un autre).</p>
+<p><img src="/pictures/2017/12/netlify-create-a-new-site-from-github.jpg" alt="Netlify Create A New Site From Github"></p>
+<p>Il faut de nouveau autoriser Netlify à accéder aux repositories GitHub.</p>
+<p><img src="/pictures/2017/12/netlify-github-additional-permissions.jpg" alt="Netlify Github Additional Permissions"></p>
+<p>Sélectionnez alors le repository qui contient le code de votre site, dans mon cas « www.testtoto.com ».</p>
+<p><img src="/pictures/2017/12/netlify-new-site-choose.jpg" alt="Netlify New Site Choose"></p>
+<p>Il ne reste désormais plus que quelques informations à fournir :</p>
+<ul>
+<li>Vous pouvez normalement laisser le nom de la branche à déployer à « master » (comme expliqué dans l&rsquo;article précédent, c&rsquo;est le nom par défaut de la version « validée »).</li>
+<li>La « Build command » est simplement&hellip; <code>hugo</code></li>
+<li>Le nom du répertoire de publication est <code>public</code></li>
+</ul>
+<p>Une fois ces informations renseignées, vous pouvez cliquer sur « Deploy Site ». En général la compilation et publication d&rsquo;un site prend entre quelques secondes et quelques minutes maximum.</p>
+<p><img src="/pictures/2017/12/netlify-new-site-added.jpg" alt="Netlify New Site Added"></p>
+<p>Netlify attribue automatiquement un URL au nouveau site qu&rsquo;il gère. Dans mon exemple cet URL est <a href="http://eager-hugle-1657a8.netlify.com">http://eager-hugle-1657a8.netlify.com</a> - Le site est désormais accessible directement à cet URL, mais il ne vous convient certainement pas. Nous allons donc maintenant passer aux étapes 2 et 3 : la configuration d&rsquo;un nom de domaine personnalisé et du https.</p>
+<h3 id="configurer-le-nom-de-domaine">Configurer le nom de domaine</h3>
+<p>Mon nom de domaine est pierremorsa.com, et je l&rsquo;ai acheté il y a un bout de temps&hellip; Pour le configurer, il y a deux solutions :</p>
+<ul>
+<li>Modifier les informations du DNS existant pour pointer vers les serveurs de Netlify.</li>
+<li>Ou utiliser les serveurs DNS de Netlify.</li>
+</ul>
+<p>Je ne vais décrire ici que la deuxième option, utiliser les serveurs DNS de Netlify. Ils se vantent d&rsquo;avoir les serveurs DNS les plus rapides du monde. J&rsquo;ignore si c&rsquo;est vrai.</p>
+<p>Cette opération est rendue la plus simple possible par Netlify, mais elle reste malgré tout assez délicate, et parfois un peu déroutante, car il y a un temps de latence entre le moment où l&rsquo;on demande la modification des paramètres d&rsquo;un DNS et le moment où ces changements deviennent effectifs partout dans le monde. C&rsquo;est une opération à faire le moins souvent possible.</p>
+<p>Cliquez sur « Set up a custom domain ». Si vous avez loupé cet écran, cliquez simplement sur « Domain settings » → Domain management → Domains et cela reviendra au même.</p>
+<p><img src="/pictures/2017/12/netlify-add-custom-domain.jpg" alt="Netlify Add Custom Domain"></p>
+<p>Cliquez ensuite sur « Add custom domain », entrez le nom de votre domaine, puis sur Save.</p>
+<p><img src="/pictures/2017/12/netlify-add-custom-domain-2.jpg" alt="Netlify Add Custom Domain 2"></p>
+<p>À ce niveau, vous allez probablement avoir une erreur. Cliquez sur le message « Check DNS configuration ». Cliquez alors sur « Set up Netlify DNS for votredomaine.com ».</p>
+<p><img src="/pictures/2017/12/netlify-setup-dns.jpg" alt="Netlify Setup Dns"></p>
+<p>Dans l&rsquo;écran qui apparaît, cliquez sur Create DNS zone.</p>
+<p><img src="/pictures/2017/12/netlify-create-dns-zone.jpg" alt="Netlify Create Dns Zone"></p>
+<p>Netlify crée alors les données de base pour le DNS, mais vous pouvez allez avoir besoin d&rsquo;ajouter des infos manuellement. Encore une fois, c&rsquo;est la partie la plus « compliquée » du processus car chaque cas est différent. Par exemple si vous avez un service d&rsquo;email lié à votre nom de domaine (dans mon exemple <a href="mailto:email@testtoto.com">email@testtoto.com</a>) vous devrez configurer correctement les données DNS de votre service d&rsquo;email sinon vos emails vont se perdre dans la nature.</p>
+<p><strong>Une fois cette étape effectuée, allez sur le service chez qui vous avez enregistré votre nom de domaine, et modifiez les serveurs DNS actuels par ceux de Netlify.</strong></p>
+<p>Une fois cette étape terminée, et une fois que les serveurs DNS dans le monde se seront mis à jour, votre site Hugo <a href="https://www.votresite.com">www.votresite.com</a> sera servi par Netlify hyper rapidement ! Il ne vous restera plus qu&rsquo;à activer le https pour que tout soit parfait ; l&rsquo;opération étant très simple, je ne la détaillerai pas ici.</p>
+
+    </div>
+ 	<div class="post-related">
+	
+	
+		<h3>Articles liés</h3>
+		<ul>
+			
+			<li><a href="/post/2018-12-17-des-macros-keyboard-maestro-pour-hugo/">Des macros Keyboard Maestro pour Hugo</a></li>
+			
+			<li><a href="/post/2017-12-18-site-hugo-github-netlify-1/">Héberger gratuitement un site Hugo avec Github et Netlify (1/2)</a></li>
+			
+			<li><a href="/post/2017-11-13-ajouter-formulaire-hugo/">Ajouter un formulaire de contact dans Hugo</a></li>
+			
+			<li><a href="/post/2016-08-16-quelques-trucs-en-plus-pour-votre-site-hugo/">Quelques trucs en plus pour votre site Hugo</a></li>
+			
+			<li><a href="/post/2016-08-08-comment-migrer-un-blog-wordpress-sous-hugo/">Comment migrer un blog Wordpress vers Hugo</a></li>
+			
+		</ul>
+	
+	</div>
+</article>
+<!-- _default:article:end -->
+
+		<!-- partials:links:start -->
+<section id="links" class="layout-module blurb hide-sm">
+	<header>
+	  <p class="align-center">Les sites que je soutiens</p>
+	</header>
+	<div class="links-flex">
+		<div class="link">
+			<a href="https://www.codingandbricks.com/" class="link-a">
+	    		<img src="/pictures/links/codingandbricks.jpg" class="link-img">
+	    		<p class="link-p">Ateliers LEGO Serious Play® pour les entreprises</p>
+	    	</a>
+		</div>
+		<div class="link">
+			<a href="https://www.ideasonstage.com/" class="link-a">
+	    		<img src="/pictures/links/ideasonstage.jpg" class="link-img">
+	    		<p class="link-p">Le spécialiste des présentations en public</p>
+	    	</a>
+		</div>
+	</div>
+</section><!-- links -->
+<!-- partials:links:end --><!-- _default:article:start -->
+<article class="layout-module post">
+	<!-- _default:article-header:start -->
+<header class="post-header">
+	<h2 class="post-header-h2">
+		<a href="/post/2017-12-18-site-hugo-github-netlify-1/">
+			Héberger gratuitement un site Hugo avec Github et Netlify (1/2)
+		</a>
+	</h2>
+  
+  <div class="post-header-meta">
+		
+	    <time class="post-header-meta-published" datetime='2017-12-18'>
+				2017-12-18
+			</time>
+		
+		
+		
+	</div><!-- meta -->
+	<div class="pills">
+		
+		
+			<span class="pill pill-category">
+				<a href="/categories/technomagie/">
+					Technomagie
+				</a>
+			</span>
+		
+			<span class="pill pill-category">
+				<a href="/categories/hugo/">
+					Hugo
+				</a>
+			</span>
+		
+		
+		
+		
+	</div>
+
+</header>
+<!-- _default:article-header:end -->
+
+	<div class="post-content">
+		<p>Dans cette première partie je vous propose un tutoriel pas à pas pour créer le fichier netlify.toml, et héberger le code du site sur Github.</p>
+<p>Ce blog est une sorte de cobaye. Je lui fais subir des tas d&rsquo;expériences lorsque je veux tester ce que cela donne. À l&rsquo;origine c&rsquo;était une simple page web, puis il a migré sur Joomla un des premiers « CMS » 100% Web, puis sur Wordpress qui était et est encore la solution préférée de beaucoup de sites. Fatigué des problèmes à répétition de WordPress (sécurité, mise à jour des plugins, etc.) j&rsquo;ai fini par migrer en 2016 vers un site statique généré par le génial <a href="http://gohugo.io">Hugo</a>.</p>
+<p>Jusqu&rsquo;il y a peu ce blog était encore chez un hébergeur classique, mais depuis la semaine dernière il tourne avec le couple <a href="https://github.com">Github</a> + <a href="https://www.netlify.com">Netlify</a>. Github stocke tout le contenu et tout le « code » du site (à mon sens ce n&rsquo;est pas vraiment du code car ça n&rsquo;exécute rien, mais plutôt des données structurées), et Netlify sert les pages depuis son CDN. À en croire ce test, le résultat en termes de performances me semble plutôt probant :</p>
+<p><img src="/pictures/2017/12/testmysite-pierremorsa-com.jpg" alt="Testmysite Pierremorsa Com"></p>
+<p>Évidemment ce test risque de ne pas être 100% impartial vu qu&rsquo;il est proposé depuis le site de Netlify. Cependant mon autre site <a href="htts://www.ideasonstage.com">Ideas on Stage</a> a un score presque parfait alors qu&rsquo;il n&rsquo;est pas hébergé par Netlify mais par le tandem Dreamhost + Cloudflare, donc je crois à une certaine objectivité.</p>
+<p>Je dois dire que je suis très impressionné par Netlify. Son avantage ce n&rsquo;est pas que la rapidité. C&rsquo;est aussi tous les outils qui vont autour. En tandem avec Github, il est possible de tester autant de branches différentes que l&rsquo;on veut (une branche, c&rsquo;est un peu comme une « version alternative d&rsquo;un site»). Il est également possible de faire un « rollback », autrement dit de revenir simplement à la version précédente du site en cas de problème. En utilisant un webhook déclenché depuis Zapier j&rsquo;ai même pu automatiser la publication des nouveaux articles à intervalles réguliers, ce qui était plus difficile à faire avec mon système précédent.</p>
+<p>Le seul désavantage c&rsquo;est que je n&rsquo;ai plus du tout de statistiques, car je n&rsquo;avais que les chiffres collectés par défaut par mon hébergeur. C&rsquo;est facile à résoudre en intégrant Google Analytics, mais ce blog étant garanti 100% sans JavaScript je ne l&rsquo;utiliserai pas, et pour moi ce n&rsquo;est pas gênant.</p>
+<p>Coût total de l&rsquo;hébergement avec cette solution : 0€. Oui c&rsquo;est assez dingue, ça ne coûte rien pour les versions de base. la seule partie qui reste payante est le nom de domaine.</p>
+<p>Ci-dessous vous trouverez la procédure que j&rsquo;ai suivie pour migrer ce blog vers Github + Netlify. Je l&rsquo;ai réalisé depuis un Mac, mais c&rsquo;est très similaire depuis n&rsquo;importe quel autre système. Pour suivre ce tutoriel il vaut mieux :</p>
+<ul>
+<li>Savoir vous servir un peu du terminal</li>
+<li>Comprendre les notions Github de « commit », « branch », « pull » et « push »</li>
+<li>Comprendre comment un DNS fonctionne</li>
+</ul>
+<h2 id="créez-un-fichier-netlifytoml">Créez un fichier netlify.toml</h2>
+<p>À la racine du site, dans le même répertoire que celui qui contient déjà <code>config.toml</code> il faut ajouter un fichier nommé <code>netlify.toml</code>, qui contiendra les versions de Hugo à utiliser par Netlify pour compiler le site. Voici le contenu de mon fichier netlify.toml :</p>
+<pre tabindex="0"><code>[context.production.environment]
+  HUGO_VERSION = &#34;0.31&#34;
+  
+[context.deploy-preview.environment]
+  HUGO_VERSION = &#34;0.31&#34;
+</code></pre><p><a href="/files/netlify.toml">Pour les total flemmards vous pouvez télécharger directement le fichier ici</a></p>
+<h2 id="mettez-le-code-du-blog-sur-github">Mettez le code du blog sur Github</h2>
+<p>Si vous ne connaissez pas du tout Github, à la base c&rsquo;est une solution pour gérer différentes versions d&rsquo;un « répertoire ». C&rsquo;est très utile pour les développeurs, qui peuvent ainsi garder une version stable de leur code et en parallèle travailler sur des nouvelles versions sans devoir tout dupliquer. Qui peut le plus peut le moins. Github peut servir à « versionner » des répertoires de documents, et dans notre cas le code source d&rsquo;un site.</p>
+<h3 id="créez-un-compte-github">Créez un compte Github</h3>
+<p>Je ne vais pas expliquer cette partie, il suffit d&rsquo;aller sur <a href="https://github.com">github.com</a> et de se créer un compte, c&rsquo;est à la portée du premier utilisateur de Facebook venu. Si comme pour moi laisser le code source de votre site accessible à tous n&rsquo;est pas un souci, vous pouvez créer un compte gratuit, sinon il faudra payer 7$ par mois pour avoir un repository privé. Gardez bien le nom d&rsquo;utilisateur et le mot de passe car nous allons en avoir besoin.</p>
+<p>Si vous ne connaissez pas le fonctionnement de Github je vous conseille de lire le guide de démarrage car ce n&rsquo;est pas forcément intuitif, surtout si vous n&rsquo;avez jamais fait de développement.</p>
+<p><strong>Par contre pas besoin de démarrer un nouveau projet, car nous allons utiliser le répertoire existant sur votre ordi.</strong></p>
+<h3 id="initialisez-le-repository-github">Initialisez le « repository » Github</h3>
+<p>À partir du terminal, allez dans le répertoire qui contient le code du site. Par exemple <code>~/Sites/Hugo/www.testtoto.com/</code></p>
+<p>Une fois dans le bon répertoire tapez la commande suivante pour initialiser le répertoire Github :</p>
+<p><code>git init</code></p>
+<p>Vous devriez avoir un message du genre</p>
+<p><code>Initialized empty Git repository in ~/Sites/Hugo/www.testtoto.com/.git/</code></p>
+<p>Voilà, c&rsquo;est tout, on pourrait tout faire depuis la ligne de commande en tapant des tas de trucs qui font intelligent mais ça me casse les pieds. Je vais donc utiliser le client Github Desktop pour la suite.</p>
+<h3 id="téléchargez-et-installez-github-desktop">Téléchargez et installez Github Desktop.</h3>
+<p>Pour ce faire cliquez sur le lien ci-dessous :</p>
+<p><a href="https://desktop.github.com">Github Desktop</a></p>
+<p>Une fois installé, lancez Github Desktop, et utilisez votre nom d&rsquo;utilisateur et mot de passe pour vous connecter à votre compte Github.</p>
+<h3 id="ajoutez-votre-répertoire-git-local-à-github-desktop">Ajoutez votre répertoire git local à Github Desktop</h3>
+<p>Si l&rsquo;application ne vous le propose pas par défaut commencez par ajouter votre repository :</p>
+<p><code>File → Add Local Repository...</code></p>
+<p><img src="/pictures/2017/12/github-add-local-repository.jpg" alt="Github Add Local Repository"></p>
+<p>Attention : avant de lancer la copie de vos fichiers vers Github, vérifiez qu&rsquo;il n&rsquo;y a pas d&rsquo;autres répertoires .git cachés dans les sous-répertoires, en particulier dans les répertoires des thèmes, sinon vous risquez d&rsquo;avoir des erreurs.</p>
+<p>Voilà, normalement la barre du haut doit ressembler à ça :
+<img src="/pictures/2017/12/github-desktop-top-bar.jpg" alt="Github Desktop Top Bar"></p>
+<p>Si nécessaire faites un commit de tous les changements sur la branche master (par défaut master est la branche principale de votre projet, celle qui fait office de référence pour la version « stable » de votre code). L&rsquo;opération de commit « officialise » les changements, cela signifie, « c&rsquo;est bon ces changements sont validés et peuvent être publiés ».</p>
+<p><img src="/pictures/2017/12/github-commit-hugo-repository.jpg" alt="Github Commit Hugo Repository"></p>
+<p>Il suffit maintenant de cliquer sur le bouton <strong>Publish repository</strong> et tous les fichiers locaux vont être copiés vers Github.</p>
+<p><img src="/pictures/2017/12/github-publish-hugo-repository.jpg" alt="Github Publish Hugo Repository"></p>
+<p>L&rsquo;avantage est que vous pouvez désormais synchroniser vos modifications locales et en ligne (dans le clllowwd comme on dit). Cependant pour se faire il faut bien comprendre les notions de « branch » et « commit » sinon vous risquez de galérer. J&rsquo;essaierai de prendre le temps de les expliquer plus en détail dans un autre billet. Pour la suite du tutoriel je vais prendre l&rsquo;hypothèse que vous modifiez les fichiers uniquement depuis le répertoire local.</p>
+<p>Votre site est désormais sur GitHub. Si vous rafraîchissez la page vous devriez le voir apparaître dans la liste des repositories.</p>
+<p><img src="/pictures/2017/12/github-your-hugo-repository.jpg" alt="Github Your Hugo Repository"></p>
+<p>Vous bénéficiez désormais de la gestion des versions, qui est la raison d&rsquo;être de git. <a href="/post/2017-12-25-site-hugo-github-netlify-2">Dans la partie 2 nous allons voir comment configurer Netlify pour automatiser le déploiement du site et servir les pages aux visiteurs.</a></p>
+<p>Révisions :</p>
+<ul>
+<li>2017-12-21 : amélioration de l&rsquo;explication de certaines étapes en particulier pour Github.</li>
+</ul>
+
+    </div>
+ 	<div class="post-related">
+	
+	
+		<h3>Articles liés</h3>
+		<ul>
+			
+			<li><a href="/post/2018-12-17-des-macros-keyboard-maestro-pour-hugo/">Des macros Keyboard Maestro pour Hugo</a></li>
+			
+			<li><a href="/post/2017-12-25-site-hugo-github-netlify-2/">Héberger gratuitement un site Hugo avec Github et Netlify (2/2)</a></li>
+			
+			<li><a href="/post/2017-11-13-ajouter-formulaire-hugo/">Ajouter un formulaire de contact dans Hugo</a></li>
+			
+			<li><a href="/post/2016-08-16-quelques-trucs-en-plus-pour-votre-site-hugo/">Quelques trucs en plus pour votre site Hugo</a></li>
+			
+			<li><a href="/post/2016-08-08-comment-migrer-un-blog-wordpress-sous-hugo/">Comment migrer un blog Wordpress vers Hugo</a></li>
+			
+		</ul>
+	
+	</div>
+</article>
+<!-- _default:article:end -->
+<!-- _default:article:start -->
+<article class="layout-module post">
+	<!-- _default:article-header:start -->
+<header class="post-header">
+	<h2 class="post-header-h2">
+		<a href="/post/2017-12-11-pourquoi-le-discours-de-donald-trump-est-il-credible/">
+			Pourquoi le discours de Donald Trump est-il crédible ?
+		</a>
+	</h2>
+  
+  <div class="post-header-meta">
+		
+	    <time class="post-header-meta-published" datetime='2017-12-11'>
+				2017-12-11
+			</time>
+		
+		
+		
+	</div><!-- meta -->
+	<div class="pills">
+		
+		
+			<span class="pill pill-category">
+				<a href="/categories/pr%C3%A9senter-en-public/">
+					Présenter en public
+				</a>
+			</span>
+		
+			<span class="pill pill-category">
+				<a href="/categories/storytelling/">
+					Storytelling
+				</a>
+			</span>
+		
+		
+		
+		
+	</div>
+
+</header>
+<!-- _default:article-header:end -->
+
+	<div class="post-content">
+		<p>Pourquoi Donald Trump est-il crédible ? Je veux dire, pas crédible pour vous ou moi. Mais pourquoi est-il crédible pour pratiquement 50% des américains ? Après tout, n&rsquo;a-t-il pas échoué à tenir plusieurs de ses promesses, comme supprimer l&rsquo;Obamacare, fermer les frontières à toute immigration et construire un mur à la frontière mexicaine financé par le Mexique ? N&rsquo;a-t-il pas été pris plusieurs fois en flagrant délit de mensonge, ou tout du moins n&rsquo;a-t-il pas une vision très approximative de la réalité ? Alors, qu&rsquo;est-ce qui alimente la crédibilité de Trump ?</p>
+<p>C&rsquo;est son style de communication. Trump défend sans aucun complexe les <strong>valeurs identitaires</strong> de son électorat. L&rsquo;exactitude des faits n&rsquo;est que secondaire. Son audience accepte de « suspendre son esprit critique » car elle a envie de croire et d&rsquo;adhérer aux valeurs communiquées par Trump.</p>
+<p>Contrairement à ce qu&rsquo;on lit parfois <strong>ce n&rsquo;est pas une question de niveau d&rsquo;éducation</strong> ; une partie de l&rsquo;électorat de Trump est très intelligent et bien éduqué. Ce qui compte ici, ce n&rsquo;est pas le QI, c&rsquo;est l&rsquo;Ego. L&rsquo;Ego est l&rsquo;image d&rsquo;elle-même que chaque personne se construit ; et les valeurs identitaires sont une part très importante de cette image. Pour l&rsquo;électorat de Trump, c&rsquo;est l&rsquo;adéquation du discours à leurs valeurs qui prime sur l&rsquo;exactitude des faits et le côté rationnel. Vous pouvez penser qu&rsquo;il est impossible que près de 50% de la population américaine partage les valeurs de Trump. Et pourtant si vous regardez bien, c&rsquo;est le cas. Et si vous regardez bien les personnes qui en Europe soutiennent ou ont soutenu Donald Trump pendant un temps, ce sont des personnes qui se reconnaissent dans ses valeurs et s&rsquo;y identifient.</p>
+<p>Il serait facile de se moquer des électeurs de Trump et de leur « manque » de sens critique. Et je le ferais volontiers si les électeurs de l&rsquo;autre côté, moi y compris, ne fonctionnaient pas <em>exactement</em> de la même manière. Ainsi Hillary Clinton n&rsquo;a pas du tout perdu l&rsquo;élection à cause de ses problèmes d&rsquo;email, mais <strong>parce que elle n&rsquo;a pas su assez incarner les valeurs des électeurs démocrates</strong>. Ce qui lui a été fatal c&rsquo;est que pour toute une partie de son électorat Bernie Sanders a mieux incarné leurs valeurs qu&rsquo;elle. Et le jour J une partie de ces personnes ont préféré s&rsquo;abstenir plutôt que d&rsquo;aller voter. Pire, un nombre non négligeable ont voté pour Trump.</p>
+<p>Que l&rsquo;on soit de gauche ou de droite, démocrate ou républicain, vert ou rouge, nos valeurs occupent une part très importante dans notre processus de décision.</p>
+<p>C&rsquo;est pourquoi <strong>Trump reste crédible tant que son discours reste crédible vis-à-vis des valeurs de son électorat, et non vis-à-vis des faits.</strong> Ce qui peut tuer Trump, c&rsquo;est de déclarer du jour au lendemain que l&rsquo;Obamacare est finalement un plan génial et qu&rsquo;il faut le maintenir coûte que coûte. Ou de dire que le mur à la frontière du Mexique est une connerie. Ça, ça va le décrédibiliser, car ces déclarations seraient contraires aux valeurs identitaires de son électorat.</p>
+<p>Notre Ego s&rsquo;accorde assez bien du fait de s&rsquo;identifier à des valeurs que nous ne respectons absolument pas en pratique ; ou plus exactement il va réussir à tordre la réalité pour qu&rsquo;elle s&rsquo;accorde avec l&rsquo;image qu&rsquo;il s&rsquo;est construit de nous-mêmes. C&rsquo;est pourquoi certains Nazis étaient à la fois des pères exemplaires et des monstres de barbarie. Un des grands drames de l&rsquo;humanité est que notre Ego s&rsquo;accorde très bien de ses contradictions, aussi horribles soient elles, tant que l&rsquo;image qu&rsquo;il a construit de nous-mêmes reste conforme aux valeurs auxquelles il s&rsquo;identifie.</p>
+<p>Maintenant, peut-on changer cela ? Peut-on agir d&rsquo;une manière ou d&rsquo;une autre sur l&rsquo;électorat de Trump pour le faire changer de camp ? Oui et non.</p>
+<p>Non, car une partie de son électorat a des valeurs trop ancrées et trop éloignées des valeurs démocrates pour changer de camp. Même si le GOP se retrouve à l&rsquo;agonie, cet électorat votera toujours pour lui&hellip; ou pour un autre parti qui porte mieux les valeurs dans lesquelles cet électorat se reconnaît.</p>
+<p>Oui, car une autre partie de son électorat a des valeurs qui sont à cheval entre les valeurs défendues par Donald Trump et celles défendues par le camp démocrate. Si les démocrates parviennent a donner une incarnation plus forte de ces valeurs et à les rendre dominantes dans le fil narratif, ils peuvent s&rsquo;imposer.</p>
+<p>Serions-nous donc totalement conditionnés par notre Ego et ses valeurs ? Serions-nous incapables de raisonnement critique lorsque nous choisissons un candidat ? Et bien heureusement et malheureusement pas tout à fait. Une question en particulier va activer notre sens critique, ou plutôt une forme de sens critique. Mais j&rsquo;expliquerai cela une autre fois.</p>
+
+    </div>
+ 	<div class="post-related">
+	
+	
+		<h3>Articles liés</h3>
+		<ul>
+			
+			<li><a href="/post/2018-05-14-qu-ai-je-appris-a-tedx/">Qu&#39;ai-je appris (à TEDx) ?</a></li>
+			
+			<li><a href="/post/2018-04-16-ted-commandements/">Les TED commandements</a></li>
+			
+			<li><a href="/post/2017-11-27-storytelling-is-dead/">Le storytelling est... mort ?</a></li>
+			
+			<li><a href="/post/2017-10-30-bad-storytelling-visuel/">Bad storytelling visuel</a></li>
+			
+			<li><a href="/post/2017-10-16-ajouter-de-la-magie-dans-votre-ptich/">Comment ajouter de la magie dans votre pitch</a></li>
+			
+		</ul>
+	
+	</div>
+</article>
+<!-- _default:article:end -->
+<!-- _default:article:start -->
+<article class="layout-module post">
+	<!-- _default:article-header:start -->
+<header class="post-header">
+	<h2 class="post-header-h2">
+		<a href="/post/2017-12-04-etes-vous-certain-d-avoir-le-bon-logo/">
+			Êtes-vous certain d&rsquo;avoir le bon logo ?
+		</a>
+	</h2>
+  
+  <div class="post-header-meta">
+		
+	    <time class="post-header-meta-published" datetime='2017-12-04'>
+				2017-12-04
+			</time>
+		
+		
+		
+	</div><!-- meta -->
+	<div class="pills">
+		
+		
+			<span class="pill pill-category">
+				<a href="/categories/startup/">
+					Startup
+				</a>
+			</span>
+		
+			<span class="pill pill-category">
+				<a href="/categories/opinions/">
+					Opinions
+				</a>
+			</span>
+		
+		
+		
+		
+	</div>
+
+</header>
+<!-- _default:article-header:end -->
+
+	<div class="post-content">
+		<p>Le logo est l&rsquo;âme d&rsquo;une startup. Son image, le reflet de son âme et de ses valeurs. Aussi je vais poser une question importante, vitale, essentielle :</p>
+<p><strong>Êtes-vous sûr d&rsquo;avoir le bon logo ?</strong></p>
+<p>A-t-il la bonne forme ? A-t-elle l&rsquo;air moderne, dans l&rsquo;air du temps ? Faut-il choisir l&rsquo;harmonie du cercle ou la brutale efficacité du carré ? Lequel s&rsquo;affichera mieux sur l&rsquo;écran d&rsquo;accueil d&rsquo;un iPhone ? Et d&rsquo;un téléphone Android ?</p>
+<p>Et la couleur alors ? La nuance de bleu choisie est-elle la plus efficace ? Peut-être que l&rsquo;orange aurait plus d&rsquo;impact ? Le rouge va-t-il être perçu comme percutant ou trop agressif ? Les couleurs offrent-elles un contraste suffisant pour les mal voyants ? La mode est-elle aux dégradés ou aux aplats ?</p>
+<p>Plus important encore, la police de caractères. N&rsquo;avez-vous pas utilisé une police de caractères trop utilisée ? Connaissez-vous son histoire ? Peut-elle être lue à distance ? Peut-être qu&rsquo;une police personnalisée, construite sur mesure, serait plus adaptée ?</p>
+<p>Vous voulez connaître le vrai secret pour faire un bon logo ?</p>
+<p>Le secret du logo c&rsquo;est que les gens normaux n&rsquo;en ont rien à foutre.</p>
+<p>Ces histoires de forme, de couleur, d&rsquo;histoire de polices ? 99,99% des gens n&rsquo;y connaissent rien et s&rsquo;en contrefichent. Les Startups efficaces développent le meilleur produit possible, trouvent des clients, gèrent leur cash flow et ne perdent pas de temps sur cette connerie de logo.</p>
+
+    </div>
+ 	<div class="post-related">
+	
+	
+		<h3>Articles liés</h3>
+		<ul>
+			
+			<li><a href="/post/2017-11-20-startups-le-super-pouvoir-que-vous-ne-voulez-pas-avoir/">Startups : le super pouvoir que vous ne voulez pas avoir</a></li>
+			
+			<li><a href="/post/2017-10-23-minimum-viable-product-vs-market-redefining-product/">Minimum Viable Product vs. Market Redefining Product</a></li>
+			
+			<li><a href="/post/2019-02-11-le-vrai-avantage-competitif-d-uber/">Le vrai avantage compétitif d&#39;UBER</a></li>
+			
+			<li><a href="/post/2019-02-04-si-vous-avez-ce-defaut-ne-devenez-pas-entrepreneur/">Si vous avez ce défaut, ne devenez pas entrepreneur</a></li>
+			
+			<li><a href="/post/2019-01-21-tf1-france-televisions-m6-s-associent-contre-netflix/">TF1, France Télévisions et M6 s’associent pour lutter contre Netflix...</a></li>
+			
+		</ul>
+	
+	</div>
+</article>
+<!-- _default:article:end -->
+<!-- _default:article:start -->
+<article class="layout-module post">
+	<!-- _default:article-header:start -->
+<header class="post-header">
+	<h2 class="post-header-h2">
+		<a href="/post/2017-11-27-storytelling-is-dead/">
+			Le storytelling est&hellip; mort ?
+		</a>
+	</h2>
+  
+  <div class="post-header-meta">
+		
+	    <time class="post-header-meta-published" datetime='2017-11-27'>
+				2017-11-27
+			</time>
+		
+		
+		
+	</div><!-- meta -->
+	<div class="pills">
+		
+		
+			<span class="pill pill-category">
+				<a href="/categories/pr%C3%A9senter-en-public/">
+					Présenter en public
+				</a>
+			</span>
+		
+			<span class="pill pill-category">
+				<a href="/categories/storytelling/">
+					Storytelling
+				</a>
+			</span>
+		
+			<span class="pill pill-category">
+				<a href="/categories/opinions/">
+					Opinions
+				</a>
+			</span>
+		
+		
+		
+		
+	</div>
+
+</header>
+<!-- _default:article-header:end -->
+
+	<div class="post-content">
+		<p>La semaine dernière, quelqu&rsquo;un a tweeté cette image<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</p>
+<p><img src="/pictures/2017/11/storytelling-is-dead-my-ass.jpg" alt="Storytelling Is Dead My Ass"></p>
+<p>Sincères condoléances, sans autre forme de procès et sans aucune autopsie le storytelling est déclaré mort et enterré. Par contre, c&rsquo;est sûr, les affirmations gratuites sont bien vivantes, elles. Désolé pour ce monsieur, mais le storytelling est bien vivant, en pleine forme, et le sera tant qu&rsquo;il y a des humains sur terre.</p>
+<p>La preuve ? Chaque fois qu&rsquo;un nouveau film est réalisé, le storytelling est vivant. Chaque fois qu&rsquo;un livre est publié, le storytelling est vivant. Chaque fois qu&rsquo;une histoire est racontée, le storytelling est vivant. Chaque fois qu&rsquo;un <em>bon</em> orateur donne une présentation TED, le storytelling est vivant. Déclarer le storytelling mort pour créer un effet d&rsquo;annonce est sans aucun doute provocant et attire l&rsquo;attention —d&rsquo;ailleurs cela a attiré la mienne— mais c&rsquo;est tout simplement faux.</p>
+<p>Le storytelling ne va pas disparaître car il est une partie intégrante de ce qui fait de nous des êtres humains. Depuis l&rsquo;aube de l&rsquo;humanité, depuis que nous avons acquis la capacité de communiquer et d&rsquo;échanger par la parole, le storytelling a été présent. Pour simplement raconter des histoires, mais aussi pour transmettre notre savoir et nos valeurs morales. Même aux heures les plus sombres de l&rsquo;humanité il y aura toujours des personnes pour raconter des histoires extraordinaires.</p>
+<p>Le jour où le storytelling disparaîtra sera le jour où l&rsquo;humanité disparaîtra.</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>Le storytelling est mort, vive le storymaking&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+    </div>
+ 	<div class="post-related">
+	
+	
+		<h3>Articles liés</h3>
+		<ul>
+			
+			<li><a href="/post/2018-10-22-difference-entre-un-mauvais-slide-et-un-sac-poubelle/">Quelle est la différence entre un mauvais slide et un sac poubelle ?</a></li>
+			
+			<li><a href="/post/2018-05-14-qu-ai-je-appris-a-tedx/">Qu&#39;ai-je appris (à TEDx) ?</a></li>
+			
+			<li><a href="/post/2018-04-16-ted-commandements/">Les TED commandements</a></li>
+			
+			<li><a href="/post/2018-04-02-fascinante-histoire-arnaque-e-cat/">La fascinante histoire de l’arnaque e-cat</a></li>
+			
+			<li><a href="/post/2018-01-29-changer-le-fil-narratif-exemple-d-apple/">Changer le fil narratif : l&#39;exemple de l&#39;iPhone X</a></li>
+			
+		</ul>
+	
+	</div>
+</article>
+<!-- _default:article:end -->
+
+
+<!-- partials:pagination -->
+<nav id="navigation" class="flex-navigation">
+	
+  	<a href="/page/48/" class="button">Plus récents</a>
+	
+  
+  	<a href="/page/50/" class="button">Plus anciens</a>
+  
+</nav>
+
+
+<!-- partials:article-list.html:end -->
+
+			</main>
+			
+
+<!-- partials:aside:start -->
+
+<aside class="aside-flex">
+
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="blog" class="aside-module">
+					
+					
+					
+						<a href="/" class="button width-full">
+							
+		        		BLOG
+							
+						</a>
+					
+				</section>
+			
+		
+		
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="howitisgoing" class="aside-module">
+					
+					
+					
+						<a href="/howitisgoing/" class="button width-full">
+							
+		        		HOW IT IS GOING PROJECT
+							
+						</a>
+					
+				</section>
+			
+		
+		
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="mac-automation" class="aside-module">
+					
+					
+					
+						<a href="/mac-automation/" class="button width-full">
+							
+		        		MAC AUTOMATION TOOLS
+							
+						</a>
+					
+				</section>
+			
+		
+		
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="about" class="aside-module">
+					
+					
+					
+						<a href="/about/" class="button width-full">
+							
+		        		À PROPOS
+							
+						</a>
+					
+				</section>
+			
+		
+		
+	
+		
+			
+			
+				
+				<!-- links -->
+				<section id="links" class="aside-module hide-lg">
+					<header>
+					  <h2 class="aside-module-h2 align-center">Les sites que je soutiens</p>
+					</header>
+					<div class="links-flex">
+						
+							<div class="link">
+								<a href="https://www.codingandbricks.com/" class="link-a">
+					    		<img src="/pictures/links/codingandbricks.jpg" class="link-img">
+					    		<p class="link-p">Ateliers LEGO Serious Play® pour les entreprises</p>
+					    	</a>
+							</div>
+						
+							<div class="link">
+								<a href="https://www.ideasonstage.com/" class="link-a">
+					    		<img src="/pictures/links/ideasonstage.jpg" class="link-img">
+					    		<p class="link-p">Le spécialiste des présentations en public</p>
+					    	</a>
+							</div>
+						
+					</div>
+				</section>
+
+			
+		
+		
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="mastodon" class="aside-module">
+					
+					
+					
+						<a href="https://mastodon.social/@pmorsa" class="button width-full">
+							
+								<img src="/pictures/main/wordmark-black-text.svg" alt="MASTODON" class="piclight" />
+								
+									<img src="/pictures/main/wordmark-white-text.svg" alt="MASTODON" class="picdark" />
+								
+							
+						</a>
+					
+				</section>
+			
+		
+		
+	
+		
+			
+				
+				<!-- rss -->
+				<section id="rss" class="aside-module blurb">
+					
+					<a rel="alternate" type="application/rss+xml" href="http://localhost:1313/index.xml" title="RSS" class="button width-full">S&rsquo;abonner au fil RSS</a>
+					
+				</section>
+		
+			
+		
+		
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="contact" class="aside-module">
+					
+					
+					
+						<a href="mailto:pier%72e.%6Dors%61@pierremorsa.com" class="button width-full">
+							
+		        		CONTACT
+							
+						</a>
+					
+				</section>
+			
+		
+		
+	
+		
+			
+				
+				<!-- list of taxonomy terms -->
+				
+				<section id="categories" class="aside-module">
+					<h2 class="aside-module-h2">BLOG CATEGORIES</h2>
+				  <ul class="aside-taxonomy-ul">
+						
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/art-oratoire/">Art Oratoire</a>
+								</span>
+								<span style="float:right;">1</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/cr%C3%A9ativit%C3%A9/">Créativité</a>
+								</span>
+								<span style="float:right;">1</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/gtd-getting-things-done/">GTD Getting Things Done</a>
+								</span>
+								<span style="float:right;">44</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/hugo/">Hugo</a>
+								</span>
+								<span style="float:right;">9</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/ideas-on-stage/">Ideas on Stage</a>
+								</span>
+								<span style="float:right;">1</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/internet/">Internet</a>
+								</span>
+								<span style="float:right;">7</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/lifehacks/">Lifehacks</a>
+								</span>
+								<span style="float:right;">68</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/mac/">Mac</a>
+								</span>
+								<span style="float:right;">24</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/nomade-digital/">Nomade Digital</a>
+								</span>
+								<span style="float:right;">5</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/nouvelles/">Nouvelles</a>
+								</span>
+								<span style="float:right;">48</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/opinions/">Opinions</a>
+								</span>
+								<span style="float:right;">16</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/philosophie-de-blog/">Philosophie De Blog</a>
+								</span>
+								<span style="float:right;">121</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/pr%C3%A9senter-en-public/">Présenter en Public</a>
+								</span>
+								<span style="float:right;">68</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/startup/">Startup</a>
+								</span>
+								<span style="float:right;">15</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/storytelling/">Storytelling</a>
+								</span>
+								<span style="float:right;">8</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/technomagie/">Technomagie</a>
+								</span>
+								<span style="float:right;">87</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/tedx/">TEDx</a>
+								</span>
+								<span style="float:right;">12</span>
+							</li>
+					   
+			    </ul>
+				</section>
+								
+			
+		
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="copyright" class="aside-module">
+					
+			    	<h2 class="aside-module-h2">COPYLEFT ET ZÉRO COOKIES</h2>
+					
+					
+			    	<p class="aside-module-p">Site garanti sans cookies et sans JavaScript. Le contenu est en copie libre : vous pouvez tout copier et réutiliser librement.</p>
+					
+					
+				</section>
+			
+		
+		
+	
+	<section id="last-updated" class="aside-module">
+		<h2 class="aside-module-h2">Dernière mise à jour</h2>
+		<p class="aside-module-p">2024-07-03 10:10 CEST
+	</section>
+	
+</aside>
+
+<!-- partials:aside:end -->
+		</div>
+	</body>
+	<!-- _default:list.html:end -->
+</html>
+<!-- _default:baseof.html:end -->

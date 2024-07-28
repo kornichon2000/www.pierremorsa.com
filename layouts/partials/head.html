@@ -5,7 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	
 	{{ if .IsPage }}
-		<meta name="author" content="{{ with .Params.author }}{{ . }}{{ end }}" />
+		{{ with .Params.author }}
+			<meta name="author" content="{{ . }}" />
+		{{ end }}
 		<meta name="fediverse:creator" content="@pmorsa@mastodon.social" />
 	{{ end }}
 	
