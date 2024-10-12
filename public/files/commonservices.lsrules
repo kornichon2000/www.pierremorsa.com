@@ -1,0 +1,190 @@
+{
+  "description" : "Block common services as default",
+  "name" : "Common Services",
+  "rules" : [
+    {
+      "action" : "deny",
+      "creationDate" : 1573121655.363373,
+      "modificationDate" : 1585810378.337461,
+      "owner" : "any",
+      "process" : "any",
+      "remote-domains" : "comodoca4.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1573121647.1397948,
+      "modificationDate" : 1585810378.337652,
+      "owner" : "any",
+      "process" : "any",
+      "remote-domains" : "digicert.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1573121654.702157,
+      "modificationDate" : 1585810378.338011,
+      "owner" : "any",
+      "process" : "any",
+      "remote-domains" : "ipapi.co"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1548688009.05603,
+      "modificationDate" : 1548688009.05603,
+      "owner" : "any",
+      "process" : "any",
+      "remote-domains" : "linkedin.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1548688018.151403,
+      "modificationDate" : 1548688018.151403,
+      "owner" : "any",
+      "process" : "any",
+      "remote-domains" : "netlify.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1546846227.916635,
+      "modificationDate" : 1548688002.2651858,
+      "owner" : "any",
+      "process" : "any",
+      "remote-domains" : "pierremorsa.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1573121656.092519,
+      "modificationDate" : 1585810378.3387251,
+      "owner" : "any",
+      "process" : "any",
+      "remote-domains" : "pki.goog"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1548688038.0170531,
+      "modificationDate" : 1548688038.0170531,
+      "owner" : "any",
+      "process" : "any",
+      "remote-domains" : "zapier.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1542480610.8911309,
+      "modificationDate" : 1548657255.078975,
+      "owner" : "any",
+      "process" : "any",
+      "remote-domains" : [
+        "twimg.com",
+        "twitter.com"
+      ]
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1521807820.1953259,
+      "modificationDate" : 1548656970.5210519,
+      "owner" : "any",
+      "process" : "any",
+      "remote-domains" : [
+        "mzstatic.com",
+        "icloud.com",
+        "apple.com"
+      ]
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1542480743.9533072,
+      "modificationDate" : 1548657078.580116,
+      "owner" : "any",
+      "process" : "any",
+      "remote-domains" : [
+        "dropbox.com",
+        "dropboxstratic.com",
+        "dropboxapi.com"
+      ]
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1573121657.8834729,
+      "modificationDate" : 1601801421.9462349,
+      "owner" : "any",
+      "process" : "any",
+      "remote-domains" : [
+        "mozilla.net",
+        "firefox.com",
+        "mozilla.org",
+        "mozilla.com"
+      ]
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1518019156.105711,
+      "modificationDate" : 1557836775.053848,
+      "owner" : "any",
+      "process" : "any",
+      "remote-domains" : [
+        "gstatic.com",
+        "googleapis.com",
+        "googletagmanager.com",
+        "googletagservices.com",
+        "gmail.com"
+      ]
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1557836800.5415869,
+      "modificationDate" : 1557836800.5415869,
+      "owner" : "any",
+      "process" : "any",
+      "remote-domains" : [
+        "ideasonstage.com",
+        "ideasonstage.fr",
+        "ideasonstage.es",
+        "ideasonstage.be",
+        "ideasonstage.de",
+        "ideasonstage.it"
+      ]
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1557836726.952004,
+      "modificationDate" : 1557836726.952004,
+      "owner" : "any",
+      "process" : "any",
+      "remote-domains" : [
+        "google.co.uk",
+        "google.nl",
+        "google.be",
+        "google.com",
+        "google.se",
+        "google.fr",
+        "google.de",
+        "google.es"
+      ]
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1542531825.5961661,
+      "modificationDate" : 1548656997.4134421,
+      "owner" : "any",
+      "process" : "any",
+      "remote-domains" : [
+        "office.net",
+        "onedrive.com",
+        "live.com",
+        "live.net",
+        "gfx.ms",
+        "1drv.com",
+        "office.com",
+        "msedge.net",
+        "microsoft.com"
+      ]
+    },
+    {
+      "action" : "deny",
+      "owner" : "any",
+      "process" : "any",
+      "remote-domains" : [
+        "ultimate-guitar.com"
+      ]
+    }
+  ]
+}

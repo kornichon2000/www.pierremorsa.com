@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ideas on Stage on Pierre Morsa</title>
+    <link>http://localhost:1313/categories/ideas-on-stage/</link>
+    <description>Recent content in Ideas on Stage on Pierre Morsa</description>
+    <generator>Hugo</generator>
+    <language>fr</language>
+    <lastBuildDate>Sun, 30 Jun 2024 15:28:13 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/ideas-on-stage/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>L&#39;histoire d&#39;Ideas on Stage | Pierre Morsa</title>
+      <link>http://localhost:1313/ideas-on-stage/</link>
+      <pubDate>Mon, 15 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ideas-on-stage/</guid>
+      <description>Ideas on Stage est né de mon envie de révolutionner le monde des présentations en entreprise. En 2006, après avoir assisté pendant des années à des présentations ennuyeuses, je décide de rechercher une autre façon de présenter en public. C&amp;rsquo;est comme cela que je découvre Présentation Zen, le blog de Garr Reynolds. Je suis tout de suite convaincu de l&amp;rsquo;intérêt de changer radicalement la façon de communiquer sur scène.&#xA;Après plusieurs années de préparation, je démarre en tant qu&amp;rsquo;auto-entrepreneur en 2009.</description>
+    </item>
+  </channel>
+</rss>

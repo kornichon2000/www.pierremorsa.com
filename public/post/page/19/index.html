@@ -1,0 +1,842 @@
+<!-- _default:baseof.html:start -->
+<!DOCTYPE HTML>
+<html>
+	
+		
+<!-- partials:head:start -->
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	
+	
+	
+	<meta name="generator" content="Hugo 0.128.0">
+	
+	
+		
+		
+			
+				<title>ce bon vieux blog</title>
+			
+			
+				<meta name="description" content="Réflexions de comptoir" />
+			
+			
+				<!-- language taken from SITE default language parameter  -->
+				<meta http-equiv="Content-Language" content="fr" />
+			
+		
+	
+
+	<link rel="me" href="https://mastodon.social/@pmorsa" />
+	<link rel="me" href="https://www.ideasonstage.com/" />
+
+	<link rel="apple-touch-icon-precomposed" href="/favicon/apple-touch-icon-precomposed.png" />
+	<link rel="icon" href="/favicon/favicon.png" />
+	<link rel="stylesheet" href="/main.min.css" /><link rel="alternate" type="application/rss+xml" href="http://localhost:1313/post/index.xml" title="Pierre Morsa" />
+</head>	
+<!-- partials:head:end -->
+
+	
+	
+	<!-- _default:list.html:start -->
+  <body>
+		
+<!-- partials:topbar:start -->
+<section id="topbar" class="topbar-style">
+		<a href="/">
+			<img src="/pictures/main/pierre-morsa-avatar.png" class="intro-circle" width="48" alt="Pierre Morsa" />
+		</a>
+	
+		
+		
+		
+			
+				<h1>
+					<a href="/">
+						ce bon vieux blog
+					</a>
+				</h1>
+			
+			
+				<p class="topbar-style">
+					Réflexions de comptoir
+				</p>
+			
+		
+	
+
+</section>
+
+<!-- partials:topbar:end -->
+
+    <div class="grandparent-flex">
+			<main class="main-flex">
+				<!-- partials:article-list.html:start -->
+
+
+
+	
+
+
+<!-- _default:article:start -->
+<article class="layout-module post">
+	<!-- _default:article-header:start -->
+<header class="post-header">
+	<h2 class="post-header-h2">
+		<a href="/post/2021-01-18-utiliser-keyboard-maestro-pour-standardiser-les-raccourcis-clavier/">
+			Utiliser Keyboard Maestro pour standardiser les raccourcis clavier
+		</a>
+	</h2>
+  
+  <div class="post-header-meta">
+		
+	    <time class="post-header-meta-published" datetime='2021-01-18'>
+				2021-01-18
+			</time>
+		
+		
+		
+	</div><!-- meta -->
+	<div class="pills">
+		
+		
+			<span class="pill pill-category">
+				<a href="/categories/technomagie/">
+					Technomagie
+				</a>
+			</span>
+		
+		
+		
+		
+	</div>
+
+</header>
+<!-- _default:article-header:end -->
+
+	<div class="post-content">
+		<p>Ça serait pas cool si les menus et les raccourcis clavier étaient identiques dans toutes les applications ? Si c’est le cas pour quelques commandes, comme ⌘C pour copier et ⌘V pour coller, c’est rapidement le bazar pour d’autres. Ainsi, entre les différentes applications que j’utilise, j’ai pas moins de huit variations de menus et de raccourcis clavier pour la commande aligner à gauche : Arrange → Align Left, Arrange → Align → Left, Arrange → Align Objects → Left, Arrange → Align or Distribute → Align Left, Layer → Alignment → Align Left, Object → Alignment → Align Left Edges, etc.</p>
+<p>Il n’y a rien de plus frustrant que de devoir mémoriser un raccourci différent dans chaque application. C’est pourquoi j’utilise Keyboard Maestro pour standardiser les raccourcis clavier que j’utilise le plus fréquemment.</p>
+<p>Par exemple j’ai standardisé les commandes d’alignement des objets de la manière suivante :</p>
+<ul>
+<li>⌘F1 → aligner à gauche</li>
+<li>⌘F2 → aligner au centre</li>
+<li>⌘F3 → aligner à droite</li>
+<li>⌘F4 → aligner les sommets</li>
+<li>⌘F5 → aligner les milieux</li>
+<li>⌘F6 → aligner les bases</li>
+</ul>
+<p>Désormais, quelle que soit l’application que j’utilise, PowerPoint, Affinity Designer, Curio… je peux utiliser le même raccourci clavier.</p>
+<p>Il existe de nombreuses manières d’arriver à ce résultat, mais ci-dessous vous trouverez un exemple de comment je procède :</p>
+<ul>
+<li>Je déclenche la commande lorsque je presse ⌘F1.</li>
+<li>Je teste simplement les différents menus jusqu’à trouver le menu existant dans l’application, et j’exécute alors la bonne commande.</li>
+</ul>
+<p><img src="/pictures/2021/01/standard-keyboard-shortcut-keyboard-maestro-macos.jpg" alt="Raccourci clavier standard dans Keyboard Maestro"></p>
+
+    </div>
+ 	<div class="post-related">
+	
+	
+		<h3>Articles liés</h3>
+		<ul>
+			
+			<li><a href="/post/2022-12-19-poster-automatiquement-sur-mastodon/">Poster automatiquement sur Mastodon</a></li>
+			
+			<li><a href="/post/2022-04-25-que-faire-si-microsoft-office-vous-demande-d-activer-votre-abonnement-a-chaque-lancement/">Que faire si Microsoft Office vous demande d’activer votre abonnement à chaque lancement ?</a></li>
+			
+			<li><a href="/post/2022-03-21-creer-un-menu-pour-controler-music-avec-keyboard-maestro/">Créer un menu pour contrôler Music avec Keyboard Maestro</a></li>
+			
+			<li><a href="/post/2022-02-07-gordon-a-un-m1-coince-dans-le-cul/">Gordon a un M1 coincé dans le cul</a></li>
+			
+			<li><a href="/post/2022-01-24-comment-masquer-les-tendances-dans-twitter/">Comment masquer les tendances dans Twitter</a></li>
+			
+		</ul>
+	
+	</div>
+</article>
+<!-- _default:article:end -->
+
+		<!-- partials:links:start -->
+<section id="links" class="layout-module blurb hide-sm">
+	<header>
+	  <p class="align-center">Les sites que je soutiens</p>
+	</header>
+	<div class="links-flex">
+		<div class="link">
+			<a href="https://www.codingandbricks.com/" class="link-a">
+	    		<img src="/pictures/links/codingandbricks.jpg" class="link-img">
+	    		<p class="link-p">Ateliers LEGO Serious Play® pour les entreprises</p>
+	    	</a>
+		</div>
+		<div class="link">
+			<a href="https://www.ideasonstage.com/" class="link-a">
+	    		<img src="/pictures/links/ideasonstage.jpg" class="link-img">
+	    		<p class="link-p">Le spécialiste des présentations en public</p>
+	    	</a>
+		</div>
+	</div>
+</section><!-- links -->
+<!-- partials:links:end --><!-- _default:article:start -->
+<article class="layout-module post">
+	<!-- _default:article-header:start -->
+<header class="post-header">
+	<h2 class="post-header-h2">
+		<a href="/post/2021-01-11-la-responsabilite-est-la-cle/">
+			La responsabilité est la clé
+		</a>
+	</h2>
+  
+  <div class="post-header-meta">
+		
+	    <time class="post-header-meta-published" datetime='2021-01-11'>
+				2021-01-11
+			</time>
+		
+		
+		
+	</div><!-- meta -->
+	<div class="pills">
+		
+		
+			<span class="pill pill-category">
+				<a href="/categories/philosophie-de-blog/">
+					Philosophie de blog
+				</a>
+			</span>
+		
+		
+		
+		
+	</div>
+
+</header>
+<!-- _default:article-header:end -->
+
+	<div class="post-content">
+		<p>Depuis les événements du Capitole du mercredi 6 janvier 2021, avant que son compte ne soit suspendu, Donald Trump n’a plus trop raconté de mensonges sur Twitter. En tout cas, il n’a plus raconté de mensonges avec des conséquences dont il risquait de devoir assumer la responsabilité.</p>
+<blockquote>
+<p>C’est la clé : la responsabilité et ses conséquences.</p>
+</blockquote>
+<p>La raison pour laquelle une personne comme Donald Trump a pu prospérer est simple : il n’a jamais dû assumer la responsabilité de ses actes et ses conséquences. Pour lui, être président des États-Unis était le rôle en or, parce que c’était le rôle ultime pour flatter son Ego, mais surtout parce que, paradoxalement, le système le protégeait de la responsabilité et des conséquences de ses actes.</p>
+<p>Un système ne fonctionne correctement que lorsque liberté et responsabilité sont inséparables, y compris pour le président. L’anarchie, c’est la liberté sans responsabilité pour tous. La dictature, c’est la liberté sans responsabilité pour quelques-uns.</p>
+<p>Si nous voulons que notre propre système démocratique résiste, il faut que toutes les personnes qui attisent la haine ou qui diffusent des affirmations sans preuve, comme les complotistes, assument les responsabilités et les conséquences de leurs actes.</p>
+
+    </div>
+ 	<div class="post-related">
+	
+	
+		<h3>Articles liés</h3>
+		<ul>
+			
+			<li><a href="/post/2024-06-30-la-carte-de-la-haine/">Le triste destin d&#39;AppleScript</a></li>
+			
+			<li><a href="/post/2024-06-30-la-carte-de-la-haine-copy/">La carte de la haine</a></li>
+			
+			<li><a href="/post/2023-12-13-suivre-les-engagements-de-la-cop28-quels-engagements/">Suivre les engagements de la COP28 ? Quels engagements ?</a></li>
+			
+			<li><a href="/post/2023-10-09-on-ne-certifie-pas-le-faux-on-certifie-le-vrai/">On ne certifie pas le faux, on certifie le vrai</a></li>
+			
+			<li><a href="/post/2023-05-15-pourquoi-je-ne-crois-pas-en-humane/">Pourquoi je ne crois pas en Humane</a></li>
+			
+		</ul>
+	
+	</div>
+</article>
+<!-- _default:article:end -->
+<!-- _default:article:start -->
+<article class="layout-module post">
+	<!-- _default:article-header:start -->
+<header class="post-header">
+	<h2 class="post-header-h2">
+		<a href="/post/2021-01-04-mes-5-ordinateurs-apple-preferes/">
+			Mes 5 ordinateurs Apple préférés
+		</a>
+	</h2>
+  
+  <div class="post-header-meta">
+		
+	    <time class="post-header-meta-published" datetime='2021-01-04'>
+				2021-01-04
+			</time>
+		
+		
+		
+	</div><!-- meta -->
+	<div class="pills">
+		
+		
+			<span class="pill pill-category">
+				<a href="/categories/philosophie-de-blog/">
+					Philosophie de blog
+				</a>
+			</span>
+		
+			<span class="pill pill-category">
+				<a href="/categories/technomagie/">
+					Technomagie
+				</a>
+			</span>
+		
+		
+		
+		
+	</div>
+
+</header>
+<!-- _default:article-header:end -->
+
+	<div class="post-content">
+		<p>J’ai découvert l’informatique par une belle matinée de 1984. Je n’avais d’yeux que pour cette merveilleuse machine toute de blanc vêtue achetée par mes parents : un Apple //c. À l’époque, le Macintosh venait juste de naître, mais il coûtait encore beaucoup, beaucoup trop cher, et surtout l’Apple II était encore une machine très très populaire. Pourtant, d’une certaine manière il était déjà dépassé ; par exemple les machines comme le Commodore 64 faisaient tourner des jeux avec de meilleures couleurs. En comparaison, les graphismes de l’Apple II étaient encore handicapés par un système de représentation des couleurs un peu bizarre hérité de l’époque où le coût de la mémoire était prohibitif.</p>
+<p>Je ne regrette nullement d’avoir démarré sur cette machine qui, comparée au Mac, était une sorte d’antiquité, pour deux raisons simples :</p>
+<ol>
+<li>Il y avait des jeux. Beaucoup, beaucoup de jeux.</li>
+<li>Contrairement au Macintosh, programmer un Apple II était accessible à tous.</li>
+</ol>
+<p>Mon Apple //c n’était pas parfait. Le lecteur de disquettes c’était… très lent et très fragile. Mais c’était mille fois mieux que le lecteur de cassettes d’un Commodore 64 (oui, oui, les programmes étaient distribués sur des cassettes, les mêmes que les cassettes audio). Le truc le plus agaçant était que la prise casque sur le côté gauche avait une satanée habitude de se charger en électricité et de donner des petites décharges électriques de temps en temps lorsque je la touchais :D. J’imagine que c’était pour me garder éveiller lors des longues sessions de jeu.</p>
+<p>Depuis, j’ai pratiquement toujours utilisé des ordinateurs Apple, sauf pendant les années 90 où seuls les PC offraient les jeux à la mode (la période des Intel 286-486). Wing Commander, Monkey Island, Ultima Underworld, ces trésors n’étaient disponibles que sur PC. PC qui ne réussissait à initialiser la mémoire étendue au démarrage qu’une fois sur deux environ ; lorsque je n’avais pas de chances, il fallait que je redémarre la machine plusieurs fois jusqu’à ce que ça marche. Pourquoi ? Mystère, je n’en ai jamais trouvé la raison. Mon passage du côté obscur était aussi pour des raisons professionnelles : les PC régnaient en maître en entreprise. Mon métier de consultant développeur, à l’époque où le développement « custom » et le client-serveur régnaient en maîtres, m’obligeait à utiliser un PC. Chose impensable aujourd’hui, les ordinateurs étaient attribués au compte-goutte. Il m’avait fallu attendre 2 semaines sur mon premier projet pour avoir un ordinateur fourni par le client (mon développement était censé durer 2 semaines…) Lorsqu’il me fournit l’ordinateur, sa version de Windows NT était… en allemand. J’avais fini par m’y retrouver en connaissant quelques mots et par la position des commandes dans les menus. Heureusement, le compilateur C++ était, lui, en anglais.</p>
+<p>Si aucun PC ne m’a laissé de souvenir impérissable, certains des ordinateurs Apple que j’ai possédés m’ont plus marqué que d’autres. Voici lesquels.</p>
+<ol>
+<li>
+<p>Le Macintosh SE. Le premier Mac acheté par mes parents. Celui sur lequel j’ai appris à programmer en Think Pascal. Il m’a aussi servi à rédiger mon mémoire de fin d’études. Qu’est-ce que j’étais content d’avoir fini l’école ; rester assis à écouter quelqu’un parler, ça a toujours été une véritable torture pour moi. À la place s’ouvrait à moi le champ infini et excitant les cinq premières minutes des réunions de consultant en entreprise.</p>
+</li>
+<li>
+<p>Powerbook Duo 210. Mon tout premier ordi vraiment « à moi ». À vrai dire, c’était plutôt un PowerBook Mono, car je n’avais pas les moyens d’acheter la station d’accueil géniale, mais bien trop chère. J’avais juste l’adaptateur pour lecteur de disquettes. C’est aussi le premier ordinateur que j’ai connecté à internet. C’était la belle époque de la découverte d’internet, du web avec Yahoo et de l’email avec un client mail dont j’ai oublié le nom et Claris Mail. Armé d’un modem 28k, il fallait parfois 30 minutes pour charger une image. Il fallait aussi plusieurs minutes pour ouvrir un JPEG depuis le disque dur tellement cela demandait de puissance au processeur !!! C’est aussi la machine sur laquelle j’ai conçu mon premier site web, en 1996, à la grande époque des frames, pour un petit magazine local d’escalade. Comme mon écran était en noir et blanc, je ne voyais pas les couleurs. Je pensais avoir tout fait en niveaux de gris. Quelle ne fut pas ma surprise en regardant le site sur un écran en couleur d’un autre ordinateur de m’apercevoir qu’il y avait plein de couleurs que je n’avais pas voulu utiliser ! À l’époque, obtenir un rendu cohérent sur tous les navigateurs disponibles était déjà un casse-tête. Mais personne ne vous suivait à la trace, et la malédiction du JavaScript n’avait pas encore frappé.</p>
+</li>
+<li>
+<p>MacBook Pro 17&quot;. Parce qu’il avait un grand écran. Seuls les laptops 17&quot; sont des vrais ordinateurs, voilà. Parce qu’il a été le digne successeur d’un autre Mac Intel aux performances finalement assez moyennes. Parce qu’il a passé des heures et des heures à encoder de la vidéo. Et parce qu’il marche encore aujourd’hui.</p>
+</li>
+<li>
+<p>Apple //c. Comme déjà dit, heureusement que j’ai démarré avec cette machine, car elle était bien plus simple à programmer que le Mac, qui demandait bien plus de connaissances. C’est elle qui m’a permis de développer mes premières compétences de programmeur, en Basic, Logo puis Assembleur, le seul langage qui offrait des performances vraiment satisfaisantes. Et puis il y avait plein de jeux géniaux. Aztec. Flight Simulator (le paysage était constitué de quelques lignes !) Conan. Lode Runner. Les petits chocs électriques de la prise casque. Que de bons souvenirs.</p>
+</li>
+<li>
+<p>Le Cube. Enfin, un Mac avec un système d’exploitation moderne ! Achetée en solde, cette machine était loin d’être parfaite. Tout d’abord, le mécanisme d’ouverture était peut-être génial, mais sur le mien il était bloqué. Le disque dur d’origine faisait un boucan incroyable. Il se mettait en veille tout seul à cause de la chaleur. Enfin, avec peu de mémoire, un processeur sous-dimensionné et une carte graphique anémique, il n’était vraiment pas rapide. J’ai résolu chacun de ces problèmes un à un. Le boîtier a été débloqué par un service après-vente qui a complètement rayé l’arrière du Cube. J’ai remplacé le disque dur par un Seagate complètement silencieux. J’ai mis… deux bouts de papier sur l’interrupteur pour le protéger de la chaleur. J’ai remplacé la carte graphique par une Nvidia. J’ai remplacé le processeur d’origine par un accélérateur Sonnet. Enfin, j’ai ajouté de la mémoire vive et une carte AirPort (car à l’époque aucun ordi n’avait le WiFi !) Beaucoup de modifications plus tard, cet ordinateur a été ma machine principale pendant 7 ans et celle qui m’a redonné envie d’utiliser le Mac.</p>
+</li>
+</ol>
+<p>Et les ordinateurs d’Apple que j’ai possédés qui n’ont pas été inclus dans cette liste ? Un Mac Performa 6400. Il marchait bien, mais était moins inspirant qu’un yaourt de marque générique. J’ai aussi zappé la plupart des portables que j’ai possédés ces dernières années : un MacBook Pro 15&quot; Intel première génération qui était un radiateur ambulant, les MacBook Pro 15&quot; qui ont suivi ainsi que le Mac Mini. Des machines aux performances et au confort d’utilisation bien supérieurs aux machines de ma liste, mais qui n’ont pas eu la même importance dans ma vie. J’ai aussi récupéré des iMac et des MacBook Air, mais au final je ne les ai jamais utilisés, et aujourd’hui ils sont dépassés.</p>
+<p>Et mon prochain Mac ? Je ne sais pas encore, mais une chose est sûre : il aura un processeur Apple Silicon.</p>
+
+    </div>
+ 	<div class="post-related">
+	
+	
+		<h3>Articles liés</h3>
+		<ul>
+			
+			<li><a href="/post/2022-02-07-gordon-a-un-m1-coince-dans-le-cul/">Gordon a un M1 coincé dans le cul</a></li>
+			
+			<li><a href="/post/2021-11-29-le-paradoxe-dropbox/">Le paradoxe Dropbox</a></li>
+			
+			<li><a href="/post/2021-11-01-facebook-devient-meta/">Facebook devient Meta</a></li>
+			
+			<li><a href="/post/2021-10-25-science-vs-methode-scientifique/">Science vs méthode scientifique</a></li>
+			
+			<li><a href="/post/2021-10-18-comment-trouver-le-numero-du-service-client-orange-pro/">Comment trouver le numéro du service client Orange Pro</a></li>
+			
+		</ul>
+	
+	</div>
+</article>
+<!-- _default:article:end -->
+<!-- _default:article:start -->
+<article class="layout-module post">
+	<!-- _default:article-header:start -->
+<header class="post-header">
+	<h2 class="post-header-h2">
+		<a href="/post/2020-12-28-la-question-qui-definit-raison-d-etre-de-l-humanite/">
+			La question qui définit raison d’être de l’humanité
+		</a>
+	</h2>
+  
+  <div class="post-header-meta">
+		
+	    <time class="post-header-meta-published" datetime='2020-12-28'>
+				2020-12-28
+			</time>
+		
+		
+		
+	</div><!-- meta -->
+	<div class="pills">
+		
+		
+			<span class="pill pill-category">
+				<a href="/categories/philosophie-de-blog/">
+					Philosophie de blog
+				</a>
+			</span>
+		
+		
+		
+		
+	</div>
+
+</header>
+<!-- _default:article-header:end -->
+
+	<div class="post-content">
+		<p>Les lois de l’univers permettent-elles le voyage spatial vers d’autres planètes habitables ?</p>
+<p>Si oui, alors notre but est d’y parvenir et de survivre en colonisant d’autres mondes.</p>
+<p>Si non, alors notre raison d’être se limite à exister, à observer et à comprendre l’univers avant notre propre extinction.</p>
+<p>Reste alors la question de l’infinitude ou de la finitude de l’univers lui-même.</p>
+
+    </div>
+ 	<div class="post-related">
+	
+	
+		<h3>Articles liés</h3>
+		<ul>
+			
+			<li><a href="/post/2024-06-30-la-carte-de-la-haine/">Le triste destin d&#39;AppleScript</a></li>
+			
+			<li><a href="/post/2024-06-30-la-carte-de-la-haine-copy/">La carte de la haine</a></li>
+			
+			<li><a href="/post/2023-12-13-suivre-les-engagements-de-la-cop28-quels-engagements/">Suivre les engagements de la COP28 ? Quels engagements ?</a></li>
+			
+			<li><a href="/post/2023-10-09-on-ne-certifie-pas-le-faux-on-certifie-le-vrai/">On ne certifie pas le faux, on certifie le vrai</a></li>
+			
+			<li><a href="/post/2023-05-15-pourquoi-je-ne-crois-pas-en-humane/">Pourquoi je ne crois pas en Humane</a></li>
+			
+		</ul>
+	
+	</div>
+</article>
+<!-- _default:article:end -->
+<!-- _default:article:start -->
+<article class="layout-module post">
+	<!-- _default:article-header:start -->
+<header class="post-header">
+	<h2 class="post-header-h2">
+		<a href="/post/2020-12-21-le-truc-qui-a-reduit-le-temps-de-conception-de-mes-sites/">
+			Le truc qui a réduit le temps de conception de mes sites
+		</a>
+	</h2>
+  
+  <div class="post-header-meta">
+		
+	    <time class="post-header-meta-published" datetime='2020-12-21'>
+				2020-12-21
+			</time>
+		
+		
+		
+	</div><!-- meta -->
+	<div class="pills">
+		
+		
+			<span class="pill pill-category">
+				<a href="/categories/technomagie/">
+					Technomagie
+				</a>
+			</span>
+		
+		
+		
+		
+	</div>
+
+</header>
+<!-- _default:article-header:end -->
+
+	<div class="post-content">
+		<p>Note : je ne suis pas un spécialiste du web, je ne m’occupe que de ce blog et du site de ma société.</p>
+<p>Si vous avez déjà créé un site web, vous savez déjà qu’une des difficultés majeures est d’être capable d’afficher le site correctement sur tous les types d’appareils : il faut que tout soit lisible aussi bien sur les petits écrans verticaux des smartphones que sur les écrans géants horizontaux des ordinateurs, ceux-ci pouvant faire jusqu’à un mètre de diagonale.</p>
+<p>Pour résoudre ce problème, Twitter avait conçu Bootstrap, un système qui facilitait l’adaptation d’un site à différentes tailles d’écran prédéfinies. J’ai utilisé cette solution pendant un bout de temps, à force de classes css et de préfixes pour adapter les différents types de contenus à tous les cas de figure possibles.</p>
+<p>Mais avec la multiplication des tailles d’écran, cela s’est finalement avéré plus frustrant qu’autre chose : il y avait toujours un appareil sur lequel quelque chose ne s’affichait pas correctement. De plus, le nombre de tests à réaliser prenait bien trop de temps.</p>
+<p>Alors j’ai choisi une solution radicale. J’ai balancé Bootstrap à la poubelle et je ne vise plus que deux types d’appareils :</p>
+<ol>
+<li>Les smartphones en position verticale, la plus utilisée.</li>
+<li>Tous les autres appareils : smartphones à l’horizontale, tablettes, ordinateurs, etc.</li>
+</ol>
+<p>Autrement dit, lorsque l’utilisateur est sur un smartphone, on affiche la version mobile. Dans tous les autres cas, on affiche la même version « Desktop ». Dans cette version, nous mettons tout à l’échelle en fonction de la taille de l’écran, par conséquent, le rendu est toujours parfaitement identique d’un écran à un autre. C’est magique ! Tout d’un coup, 90 % des media queries css deviennent inutiles. Le code html5 et css deviennent dix fois plus faciles à maintenir. Et le temps de test du site est divisé par dix.</p>
+<p>Il reste bien sûr une ou deux exceptions à gérer. Par exemple, la taille du « hero », l’image qui s’affiche en haut de la page, continue d’être calculée en fonction de l’écran. Et une fois qu’on atteint une certaine taille d’écran, on arrête de mettre à l’échelle le site. Cependant, c’est probablement le choix qui m’a fait gagner le plus de temps dans la mise en œuvre de mes sites.</p>
+
+    </div>
+ 	<div class="post-related">
+	
+	
+		<h3>Articles liés</h3>
+		<ul>
+			
+			<li><a href="/post/2022-12-19-poster-automatiquement-sur-mastodon/">Poster automatiquement sur Mastodon</a></li>
+			
+			<li><a href="/post/2022-04-25-que-faire-si-microsoft-office-vous-demande-d-activer-votre-abonnement-a-chaque-lancement/">Que faire si Microsoft Office vous demande d’activer votre abonnement à chaque lancement ?</a></li>
+			
+			<li><a href="/post/2022-03-21-creer-un-menu-pour-controler-music-avec-keyboard-maestro/">Créer un menu pour contrôler Music avec Keyboard Maestro</a></li>
+			
+			<li><a href="/post/2022-02-07-gordon-a-un-m1-coince-dans-le-cul/">Gordon a un M1 coincé dans le cul</a></li>
+			
+			<li><a href="/post/2022-01-24-comment-masquer-les-tendances-dans-twitter/">Comment masquer les tendances dans Twitter</a></li>
+			
+		</ul>
+	
+	</div>
+</article>
+<!-- _default:article:end -->
+
+
+<!-- partials:pagination -->
+<nav id="navigation" class="flex-navigation">
+	
+  	<a href="/post/page/18/" class="button">Plus récents</a>
+	
+  
+  	<a href="/post/page/20/" class="button">Plus anciens</a>
+  
+</nav>
+
+
+<!-- partials:article-list.html:end -->
+
+			</main>
+			
+
+<!-- partials:aside:start -->
+
+<aside class="aside-flex">
+
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="blog" class="aside-module">
+					
+					
+					
+						<a href="/" class="button width-full">
+							
+		        		BLOG
+							
+						</a>
+					
+				</section>
+			
+		
+		
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="howitisgoing" class="aside-module">
+					
+					
+					
+						<a href="/howitisgoing/" class="button width-full">
+							
+		        		HOW IT IS GOING PROJECT
+							
+						</a>
+					
+				</section>
+			
+		
+		
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="mac-automation" class="aside-module">
+					
+					
+					
+						<a href="/mac-automation/" class="button width-full">
+							
+		        		MAC AUTOMATION TOOLS
+							
+						</a>
+					
+				</section>
+			
+		
+		
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="about" class="aside-module">
+					
+					
+					
+						<a href="/about/" class="button width-full">
+							
+		        		À PROPOS
+							
+						</a>
+					
+				</section>
+			
+		
+		
+	
+		
+			
+			
+				
+				<!-- links -->
+				<section id="links" class="aside-module hide-lg">
+					<header>
+					  <h2 class="aside-module-h2 align-center">Les sites que je soutiens</p>
+					</header>
+					<div class="links-flex">
+						
+							<div class="link">
+								<a href="https://www.codingandbricks.com/" class="link-a">
+					    		<img src="/pictures/links/codingandbricks.jpg" class="link-img">
+					    		<p class="link-p">Ateliers LEGO Serious Play® pour les entreprises</p>
+					    	</a>
+							</div>
+						
+							<div class="link">
+								<a href="https://www.ideasonstage.com/" class="link-a">
+					    		<img src="/pictures/links/ideasonstage.jpg" class="link-img">
+					    		<p class="link-p">Le spécialiste des présentations en public</p>
+					    	</a>
+							</div>
+						
+					</div>
+				</section>
+
+			
+		
+		
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="mastodon" class="aside-module">
+					
+					
+					
+						<a href="https://mastodon.social/@pmorsa" class="button width-full">
+							
+								<img src="/pictures/main/wordmark-black-text.svg" alt="MASTODON" class="piclight" />
+								
+									<img src="/pictures/main/wordmark-white-text.svg" alt="MASTODON" class="picdark" />
+								
+							
+						</a>
+					
+				</section>
+			
+		
+		
+	
+		
+			
+				
+				<!-- rss -->
+				<section id="rss" class="aside-module blurb">
+					
+					<a rel="alternate" type="application/rss+xml" href="http://localhost:1313/post/index.xml" title="RSS" class="button width-full">S&rsquo;abonner au fil RSS</a>
+					
+				</section>
+		
+			
+		
+		
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="contact" class="aside-module">
+					
+					
+					
+						<a href="mailto:pier%72e.%6Dors%61@pierremorsa.com" class="button width-full">
+							
+		        		CONTACT
+							
+						</a>
+					
+				</section>
+			
+		
+		
+	
+		
+			
+				
+				<!-- list of taxonomy terms -->
+				
+				<section id="categories" class="aside-module">
+					<h2 class="aside-module-h2">BLOG CATEGORIES</h2>
+				  <ul class="aside-taxonomy-ul">
+						
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/art-oratoire/">Art Oratoire</a>
+								</span>
+								<span style="float:right;">1</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/cr%C3%A9ativit%C3%A9/">Créativité</a>
+								</span>
+								<span style="float:right;">1</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/gtd-getting-things-done/">GTD Getting Things Done</a>
+								</span>
+								<span style="float:right;">44</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/hugo/">Hugo</a>
+								</span>
+								<span style="float:right;">9</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/ideas-on-stage/">Ideas on Stage</a>
+								</span>
+								<span style="float:right;">1</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/internet/">Internet</a>
+								</span>
+								<span style="float:right;">7</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/lifehacks/">Lifehacks</a>
+								</span>
+								<span style="float:right;">68</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/mac/">Mac</a>
+								</span>
+								<span style="float:right;">24</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/nomade-digital/">Nomade Digital</a>
+								</span>
+								<span style="float:right;">5</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/nouvelles/">Nouvelles</a>
+								</span>
+								<span style="float:right;">48</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/opinions/">Opinions</a>
+								</span>
+								<span style="float:right;">16</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/philosophie-de-blog/">Philosophie De Blog</a>
+								</span>
+								<span style="float:right;">122</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/pr%C3%A9senter-en-public/">Présenter en Public</a>
+								</span>
+								<span style="float:right;">68</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/startup/">Startup</a>
+								</span>
+								<span style="float:right;">15</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/storytelling/">Storytelling</a>
+								</span>
+								<span style="float:right;">8</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/technomagie/">Technomagie</a>
+								</span>
+								<span style="float:right;">87</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/tedx/">TEDx</a>
+								</span>
+								<span style="float:right;">12</span>
+							</li>
+					   
+			    </ul>
+				</section>
+								
+			
+		
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="copyright" class="aside-module">
+					
+			    	<h2 class="aside-module-h2">COPYLEFT ET ZÉRO COOKIES</h2>
+					
+					
+			    	<p class="aside-module-p">Site garanti sans cookies et sans JavaScript. Le contenu est en copie libre : vous pouvez tout copier et réutiliser librement.</p>
+					
+					
+				</section>
+			
+		
+		
+	
+	<section id="last-updated" class="aside-module">
+		<h2 class="aside-module-h2">Dernière mise à jour</h2>
+		<p class="aside-module-p">2024-10-12 20:39 CEST
+	</section>
+	
+</aside>
+
+<!-- partials:aside:end -->
+		</div>
+	</body>
+	<!-- _default:list.html:end -->
+</html>
+<!-- _default:baseof.html:end -->

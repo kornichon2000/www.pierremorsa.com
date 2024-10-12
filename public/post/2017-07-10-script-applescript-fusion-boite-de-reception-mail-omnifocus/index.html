@@ -1,0 +1,625 @@
+<!-- _default:baseof.html:start -->
+<!DOCTYPE HTML>
+<html>
+	
+		
+<!-- partials:head:start -->
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	
+	
+		
+			<meta name="author" content="Pierre Morsa" />
+		
+		<meta name="fediverse:creator" content="@pmorsa@mastodon.social" />
+	
+	
+	<meta name="generator" content="Hugo 0.128.0">
+	
+	
+		
+			<title>Un script AppleScript pour envoyer tous les emails vers OmniFocus</title>
+		
+		
+		
+			<!-- language taken from SITE default language parameter  -->
+			<meta http-equiv="Content-Language" content="fr" />
+		
+		
+	
+
+	<link rel="me" href="https://mastodon.social/@pmorsa" />
+	<link rel="me" href="https://www.ideasonstage.com/" />
+
+	<link rel="apple-touch-icon-precomposed" href="/favicon/apple-touch-icon-precomposed.png" />
+	<link rel="icon" href="/favicon/favicon.png" />
+	<link rel="stylesheet" href="/main.min.css" />
+</head>	
+<!-- partials:head:end -->
+
+	
+	
+	<!-- _default:single:start -->
+  <body>
+		
+<!-- partials:topbar:start -->
+<section id="topbar" class="topbar-style">
+		<a href="/">
+			<img src="/pictures/main/pierre-morsa-avatar.png" class="intro-circle" width="48" alt="Pierre Morsa" />
+		</a>
+	
+		
+		
+			
+			
+				<h1>
+					<a href="/">
+						ce bon vieux blog
+					</a>
+				</h1>
+			
+			
+				<p class="topbar-style">
+					Réflexions de comptoir
+				</p>
+			
+		
+	
+
+</section>
+
+<!-- partials:topbar:end -->
+
+    <div class="grandparent-flex">
+			<main class="main-flex">
+				<!-- _default:article:start -->
+<article class="layout-module post">
+	<!-- _default:article-header:start -->
+<header class="post-header">
+	<h2 class="post-header-h2">
+		<a href="/post/2017-07-10-script-applescript-fusion-boite-de-reception-mail-omnifocus/">
+			Un script AppleScript pour envoyer tous les emails vers OmniFocus
+		</a>
+	</h2>
+  
+  <div class="post-header-meta">
+		
+	    <time class="post-header-meta-published" datetime='2017-07-10'>
+				2017-07-10
+			</time>
+		
+		
+		
+	</div><!-- meta -->
+	<div class="pills">
+		
+		
+			<span class="pill pill-category">
+				<a href="/categories/gtd-getting-things-done/">
+					GTD Getting Things Done
+				</a>
+			</span>
+		
+			<span class="pill pill-category">
+				<a href="/categories/lifehacks/">
+					Lifehacks
+				</a>
+			</span>
+		
+			<span class="pill pill-category">
+				<a href="/categories/technomagie/">
+					Technomagie
+				</a>
+			</span>
+		
+		
+		
+		
+	</div>
+
+</header>
+<!-- _default:article-header:end -->
+
+	<div class="post-content">
+		<p>Suite à <a href="/post/2017-06-12-test-omnifocus-2">mon article sur OmniFocus 2</a>, un lecteur m&rsquo;a demandé si je pouvais partager le script qui me sert à fusionner les boîtes de réceptions de Apple Mail et OmniFocus 2. Le voilà.</p>
+<p><strong>Attention 1 : à la première exécution le script va créer une tâche OmniFocus pour tous les emails dans la boîte de réception, si vous en avez beaucoup vous risquez de vous retrouver avec des milliers de tâches OmniFocus en plus !</strong> Pour éviter ce problème, ne laissez pas vos vieux emails traîner dans la boîte de réception, déplacez-les vers un dossier Archive.</p>
+<p><strong>Attention 2 : n&rsquo;exécutez jamais du code AppleScript sans en vérifier le contenu et la provenance, il peut être dangereux.</strong></p>
+<p><strong>Attention 3 : vérifiez que vous comprenez ce que fait le script et que cela correspond à votre besoin. AppleScript requiert un certain niveau de connaissance technique. Je ne suis pas responsable de ce que le script peut faire sur votre machine.</strong></p>
+<pre tabindex="0"><code>use AppleScript version &#34;2.4&#34; -- Yosemite (10.10) or later
+use scripting additions
+
+property pLastID : 0
+property pInboxName : &#34;INBOX&#34;
+property pArchiveBoxName : &#34;Archive&#34;
+
+on run
+	
+	set cbs to ASCII character 92
+	set crt to ASCII character 13
+	
+	tell application &#34;Mail&#34;
+		set theMessage to &#34;&#34;
+		set theFlaggedMessages to ¬
+			(messages of mailbox pInboxName of first account) ¬
+				whose flag index is equal to 5
+		if (count of theFlaggedMessages) is greater than 0 then
+			repeat with theMessage in theFlaggedMessages
+				set theTask to my findOmnifocusTask(theMessage)
+				if theTask is missing value then
+					set flag index of theMessage to -1
+					my archiveMessage(theMessage)
+				end if
+			end repeat
+		end if
+		set theInbox to mailbox pInboxName of first account
+		set theInboxMessages to ¬
+			(messages of mailbox pInboxName of first account) ¬
+				whose id is greater than pLastID
+		
+		if (count of theInboxMessages) is greater than 0 then
+			delay 10
+			repeat with theMessage in theInboxMessages
+				set theSender to sender of theMessage as string
+				set theSubject to subject of theMessage as string
+				set theID to id of theMessage
+				set theTitle to theSender &amp; &#34; — &#34; &amp; theSubject
+				set theNote to (&#34;message://%3c&#34; &amp; message id of ¬
+					theMessage &amp; &#34;%3e&#34; &amp; crt &amp; crt) as rich text
+				set theNote to (theNote &amp; content of theMessage)
+				set theAttachments to &#34;&#34;
+				set theAttachmentsCount to count of ¬
+					mail attachment of theMessage
+				if theAttachmentsCount is greater than 0 then
+					set theMailAttachments to ¬
+						mail attachments of theMessage
+					repeat with theMailAttachment in theMailAttachments
+						set theAttachments to theAttachments &amp; ¬
+							name of theMailAttachment &amp; crt
+					end repeat
+					set theNote to ¬
+						theNote &amp; crt &amp; crt &amp; &#34;Attachments:&#34; &amp; ¬
+						crt &amp; theAttachments
+				end if
+				set theTaskID to my makeOmniFocusTask(theTitle, theNote)
+				-- set background color of theMessage to none
+				set flag index of theMessage to 5
+				set read status of theMessage to true
+				-- my archiveMessage(theMessage) -- disabled, too buggy.
+				set theID to id of theMessage
+				if theID is greater than pLastID then
+					set pLastID to theID
+				end if
+			end repeat
+		end if
+	end tell
+	
+end run
+
+on findOmnifocusTask(theMessage)
+	using terms from application &#34;Mail&#34;
+		set theMessageID to (message id of theMessage) as string
+	end using terms from
+	tell application &#34;OmniFocus&#34;
+		tell default document
+			try
+				set theTask to first flattened task whose completed is false ¬
+					and note contains theMessageID
+			on error
+				set theTask to missing value
+			end try
+		end tell
+	end tell
+	return theTask
+end findOmnifocusTask
+
+on makeOmniFocusTask(theTitle, theNote)
+	tell application &#34;OmniFocus&#34;
+		tell default document
+			set theTask to make new inbox task with properties ¬
+				{name:theTitle, note:theNote}
+		end tell
+	end tell
+	set theTaskID to &#34;omnifocus://%3c&#34; &amp; id of theTask &amp; &#34;%3e&#34;
+	return theTaskID
+end makeOmniFocusTask
+
+on archiveMessage(theMessage)
+	tell application &#34;Mail&#34;
+		set theAccount to account of mailbox of theMessage
+		set theMailboxArchive to item 1 of ((mailboxes of theAccount) ¬
+			whose name is pArchiveBoxName)
+		-- The following code did work too to move the message: 
+		-- set mailbox of theMessage to theMailboxArchive
+		move theMessage to theMailboxArchive
+	end tell
+end archiveMessage
+</code></pre><h2 id="comment-sen-servir-">Comment s&rsquo;en servir ?</h2>
+<ul>
+<li>Lancer l&rsquo;éditeur de Scripts (Script Editor en anglais, AppleScript Editor dans les anciennes versions de macOS)</li>
+<li>Créer un nouveau script, copier-coller le contenu du script ci-dessus, et sauvegarder le script à l&rsquo;endroit suivant dans votre répertoire utilisateur : <code>/Bibliothèque/Application Scripts/com.apple.mail&quot;</code> (attention, je ne suis pas certain du nom du répertoire Application Scripts en français, si quelqu&rsquo;un le connaît vous pouvez me l&rsquo;indiquer sur Twitter ou par email). J&rsquo;ai appelé le fichier de script <code>rule → omnifocus-sendto</code></li>
+<li>Créer une règle dans Apple Mail qui va lancer le script automatiquement.</li>
+</ul>
+<p><img src="/pictures/2017/07/rule-mail-omnifocus.jpg" alt="Règle Apple Mail vers OmniFocus"></p>
+<h2 id="que-va-faire-le-script-">Que va faire le script ?</h2>
+<p>Le script va créer une tâche dans OmniFocus pour <strong>tous</strong> les emails qui sont dans votre boîte de réception, et va leur ajouter un drapeau de couleur violette (la couleur d&rsquo;OmniFocus) pour indiquer qu&rsquo;une tâche correspondante a été créée.</p>
+<p>À chaque fois que le script est exécuté (donc à chaque fois que vous recevez au moins un nouvel email), le script vérifie si la tâche correspondante dans OmniFocus existe encore ET n&rsquo;est pas complétée. Si ce n&rsquo;est pas le cas (la tâche a été complétée ou supprimée) alors le script enlève le drapeau violet de l&rsquo;email et le déplace vers le dossier Archive.</p>
+<h2 id="notes-techniques">Notes techniques</h2>
+<p>Les connaisseurs verront que je n&rsquo;utilise pas la formulation recommandée 	<code>on perform mail action with messages...</code> pour déclencher le traitement. C&rsquo;est simplement parce que elle est trop buggée, et ce depuis des années. Au lieu de cela j&rsquo;utilise une technique pour identifier les nouveaux emails qui est de garder en mémoire l&rsquo;ID du dernier email qui a été traité (<code>pLastID</code>).</p>
+<p>Il y a une procédure nommée archiveMessage. Ne changez pas le script pour archiver le message dès sa réception ; il y a un bug dans Mail qui fait que certains messages risquent d&rsquo;être perdus si vous le faites (je crois que c&rsquo;est lié au fait que Mail archive le message alors qu&rsquo;il n&rsquo;a pas fini d&rsquo;être chargé depuis le serveur, mais je ne suis pas certain).</p>
+
+    </div>
+ 	<div class="post-related">
+	
+	
+		<h3>Articles liés</h3>
+		<ul>
+			
+			<li><a href="/post/2020-05-18-imprimer-un-paquet-de-documents-sur-macos/">La façon la plus simple d’imprimer un paquet de documents sur macOS</a></li>
+			
+			<li><a href="/post/2020-04-20-omnifocus-action-pack-une-liste-d-actions-pour-automatiser-omnifocus-avec-keyboard-maestro/">OmniFocus Action Pack : une liste d’actions pour automatiser OmniFocus avec Keyboard Maestro</a></li>
+			
+			<li><a href="/post/2017-06-26-omnifocus-affiche-boite-de-reception-dans-projets/">OmniFocus 2 affiche la boîte de réception dans les projets</a></li>
+			
+			<li><a href="/post/2017-06-12-test-omnifocus-2/">Bien s&#39;organiser avec OmniFocus 2</a></li>
+			
+			<li><a href="/post/2017-03-06-automatiser-taches-mac/">Automatiser ses tâches sur Mac</a></li>
+			
+		</ul>
+	
+	</div>
+</article>
+<!-- _default:article:end -->
+
+			</main>
+			
+
+<!-- partials:aside:start -->
+
+<aside class="aside-flex">
+
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="blog" class="aside-module">
+					
+					
+					
+						<a href="/" class="button width-full">
+							
+		        		BLOG
+							
+						</a>
+					
+				</section>
+			
+		
+		
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="howitisgoing" class="aside-module">
+					
+					
+					
+						<a href="/howitisgoing/" class="button width-full">
+							
+		        		HOW IT IS GOING PROJECT
+							
+						</a>
+					
+				</section>
+			
+		
+		
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="mac-automation" class="aside-module">
+					
+					
+					
+						<a href="/mac-automation/" class="button width-full">
+							
+		        		MAC AUTOMATION TOOLS
+							
+						</a>
+					
+				</section>
+			
+		
+		
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="about" class="aside-module">
+					
+					
+					
+						<a href="/about/" class="button width-full">
+							
+		        		À PROPOS
+							
+						</a>
+					
+				</section>
+			
+		
+		
+	
+		
+			
+			
+				
+				<!-- links -->
+				<section id="links" class="aside-module hide-lg">
+					<header>
+					  <h2 class="aside-module-h2 align-center">Les sites que je soutiens</p>
+					</header>
+					<div class="links-flex">
+						
+							<div class="link">
+								<a href="https://www.codingandbricks.com/" class="link-a">
+					    		<img src="/pictures/links/codingandbricks.jpg" class="link-img">
+					    		<p class="link-p">Ateliers LEGO Serious Play® pour les entreprises</p>
+					    	</a>
+							</div>
+						
+							<div class="link">
+								<a href="https://www.ideasonstage.com/" class="link-a">
+					    		<img src="/pictures/links/ideasonstage.jpg" class="link-img">
+					    		<p class="link-p">Le spécialiste des présentations en public</p>
+					    	</a>
+							</div>
+						
+					</div>
+				</section>
+
+			
+		
+		
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="mastodon" class="aside-module">
+					
+					
+					
+						<a href="https://mastodon.social/@pmorsa" class="button width-full">
+							
+								<img src="/pictures/main/wordmark-black-text.svg" alt="MASTODON" class="piclight" />
+								
+									<img src="/pictures/main/wordmark-white-text.svg" alt="MASTODON" class="picdark" />
+								
+							
+						</a>
+					
+				</section>
+			
+		
+		
+	
+		
+			
+				
+				<!-- rss -->
+				<section id="rss" class="aside-module blurb">
+					
+					<a rel="alternate" type="application/rss+xml" href="" title="RSS" class="button width-full">S&rsquo;abonner au fil RSS</a>
+					
+				</section>
+		
+			
+		
+		
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="contact" class="aside-module">
+					
+					
+					
+						<a href="mailto:pier%72e.%6Dors%61@pierremorsa.com" class="button width-full">
+							
+		        		CONTACT
+							
+						</a>
+					
+				</section>
+			
+		
+		
+	
+		
+			
+				
+				<!-- list of taxonomy terms -->
+				
+				<section id="categories" class="aside-module">
+					<h2 class="aside-module-h2">BLOG CATEGORIES</h2>
+				  <ul class="aside-taxonomy-ul">
+						
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/art-oratoire/">Art Oratoire</a>
+								</span>
+								<span style="float:right;">1</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/cr%C3%A9ativit%C3%A9/">Créativité</a>
+								</span>
+								<span style="float:right;">1</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/gtd-getting-things-done/">GTD Getting Things Done</a>
+								</span>
+								<span style="float:right;">44</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/hugo/">Hugo</a>
+								</span>
+								<span style="float:right;">9</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/ideas-on-stage/">Ideas on Stage</a>
+								</span>
+								<span style="float:right;">1</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/internet/">Internet</a>
+								</span>
+								<span style="float:right;">7</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/lifehacks/">Lifehacks</a>
+								</span>
+								<span style="float:right;">68</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/mac/">Mac</a>
+								</span>
+								<span style="float:right;">24</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/nomade-digital/">Nomade Digital</a>
+								</span>
+								<span style="float:right;">5</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/nouvelles/">Nouvelles</a>
+								</span>
+								<span style="float:right;">48</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/opinions/">Opinions</a>
+								</span>
+								<span style="float:right;">16</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/philosophie-de-blog/">Philosophie De Blog</a>
+								</span>
+								<span style="float:right;">121</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/pr%C3%A9senter-en-public/">Présenter en Public</a>
+								</span>
+								<span style="float:right;">68</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/startup/">Startup</a>
+								</span>
+								<span style="float:right;">15</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/storytelling/">Storytelling</a>
+								</span>
+								<span style="float:right;">8</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/technomagie/">Technomagie</a>
+								</span>
+								<span style="float:right;">87</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/tedx/">TEDx</a>
+								</span>
+								<span style="float:right;">12</span>
+							</li>
+					   
+			    </ul>
+				</section>
+								
+			
+		
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="copyright" class="aside-module">
+					
+			    	<h2 class="aside-module-h2">COPYLEFT ET ZÉRO COOKIES</h2>
+					
+					
+			    	<p class="aside-module-p">Site garanti sans cookies et sans JavaScript. Le contenu est en copie libre : vous pouvez tout copier et réutiliser librement.</p>
+					
+					
+				</section>
+			
+		
+		
+	
+	<section id="last-updated" class="aside-module">
+		<h2 class="aside-module-h2">Dernière mise à jour</h2>
+		<p class="aside-module-p">2024-10-12 20:40 CEST
+	</section>
+	
+</aside>
+
+<!-- partials:aside:end -->
+    </div>
+  </body>
+ 	<!-- _default:single:end -->
+
+</html>
+<!-- _default:baseof.html:end -->

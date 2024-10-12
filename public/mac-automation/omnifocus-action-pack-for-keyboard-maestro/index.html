@@ -1,0 +1,641 @@
+<!-- _default:baseof.html:start -->
+<!DOCTYPE HTML>
+<html>
+	
+		
+<!-- partials:head:start -->
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	
+	
+		
+		<meta name="fediverse:creator" content="@pmorsa@mastodon.social" />
+	
+	
+	<meta name="generator" content="Hugo 0.128.0">
+	
+	
+		
+			<title>OmniFocus Action Pack for Keyboard Maestro</title>
+		
+		
+		
+			<!-- language taken from SITE default language parameter  -->
+			<meta http-equiv="Content-Language" content="fr" />
+		
+		
+	
+
+	<link rel="me" href="https://mastodon.social/@pmorsa" />
+	<link rel="me" href="https://www.ideasonstage.com/" />
+
+	<link rel="apple-touch-icon-precomposed" href="/favicon/apple-touch-icon-precomposed.png" />
+	<link rel="icon" href="/favicon/favicon.png" />
+	<link rel="stylesheet" href="/main.min.css" />
+</head>	
+<!-- partials:head:end -->
+
+	
+	
+	<!-- _default:single:start -->
+  <body>
+		
+<!-- partials:topbar:start -->
+<section id="topbar" class="topbar-style">
+		<a href="/">
+			<img src="/pictures/main/pierre-morsa-avatar.png" class="intro-circle" width="48" alt="Pierre Morsa" />
+		</a>
+	
+		
+		
+			
+			
+				<h1>
+					<a href="/mac-automation/">
+						Mac Automation
+					</a>
+				</h1>
+			
+			
+				<p class="topbar-style">
+					Automation tools for macOS
+				</p>
+			
+		
+	
+
+</section>
+
+<!-- partials:topbar:end -->
+
+    <div class="grandparent-flex">
+			<main class="main-flex">
+				<!-- _default:article:start -->
+<article class="layout-module post">
+	<!-- _default:article-header:start -->
+<header class="post-header">
+	<h2 class="post-header-h2">
+		<a href="/mac-automation/omnifocus-action-pack-for-keyboard-maestro/">
+			OmniFocus Action Pack for Keyboard Maestro
+		</a>
+	</h2>
+  
+  <div class="post-header-meta">
+		
+	    <time class="post-header-meta-published" datetime='2020-04-20'>
+				2020-04-20
+			</time>
+		
+		
+		
+	</div><!-- meta -->
+	<div class="pills">
+		
+		
+			<span class="pill pill-category">
+				<a href="/categories/gtd-getting-things-done/">
+					GTD Getting Things Done
+				</a>
+			</span>
+		
+			<span class="pill pill-category">
+				<a href="/categories/technomagie/">
+					Technomagie
+				</a>
+			</span>
+		
+			<span class="pill pill-category">
+				<a href="/categories/mac/">
+					Mac
+				</a>
+			</span>
+		
+		
+		
+		
+	</div>
+
+</header>
+<!-- _default:article-header:end -->
+
+	<div class="post-content">
+		<p>The OmniFocus Action Pack for Keyboard Maestro is a set of plugin actions to control OmniFocus from Keyboard Maestro. OmniFocus is a top-class task management App from Omni Group. Keyboard Maestro is a wonderful automation app from Peter Lewis. Together, they are a fantastic productivity combo.</p>
+<p>I originally created these actions for my own use, but I decided to make them available for free here as they might be of interest to others.</p>
+<h2 id="disclaimer">Disclaimer</h2>
+<p>I have tested these actions for my own use, but I offer no guarantee that they work. Use of these macros is under your own responsibility.</p>
+<p>You are free to use or modify the libraries and actions without asking for permission. You can redistribute it for free, but please ask for my permission first.</p>
+<h2 id="if-you-need-help">If you need help</h2>
+<p>There is no discussion forum on my blog, but <a href="https://forum.keyboardmaestro.com/t/omnifocus-actions-pack-for-keyboard-maestro/14470">you can ask me questions on the dedicated thread on the Keyboard Maestro Forum.</a></p>
+<h2 id="known-limitations">Known limitations</h2>
+<p>Action parameters with special characters (accented characters, emojis, etc.) do not work very well. It’s a known AppleScript limitation and there is <del>nothing</del> little I can do about it. I implemented a quick and dirty workaround for the most common French accented characters, but doing so for every possible character is way too cumbersome.</p>
+<p>If you want to Get/Set projects or tags with special characters in their names, the safe way is to do it using the project ID or tag ID, not the name.</p>
+<h2 id="installation">Installation</h2>
+<p>You need to install three components. It is strongly advised to reinstall all three components each time a new version is released:</p>
+<ul>
+<li><a href="/mac-automation/omnifocus-action-pack-for-keyboard-maestro/AppleScriptLibrary-2021-03-02.zip">The &ldquo;AppleScriptLibrary&rdquo; AppleScript library. Click here to download it.</a></li>
+<li><a href="/mac-automation/omnifocus-action-pack-for-keyboard-maestro/OmniFocusLibrary-2021-03-02.zip">The &ldquo;OmniFocusLibrary&rdquo; AppleScript library. Click here to download it.</a></li>
+<li><a href="/mac-automation/omnifocus-action-pack-for-keyboard-maestro/OmniFocusActionPackForKeyboardMaestro-2021-03-02.zip">The OmniFocus Action Pack for Keyboard Maestro. Click here to download it.</a></li>
+</ul>
+<p>You will get three &ldquo;.zip&rdquo; archives. Uncompress them and move them to the locations as instructed below.</p>
+<h3 id="install-applescriptlibrary-and-omnifocuslibrary">Install AppleScriptLibrary and OmniFocusLibrary</h3>
+<p>Download and decompress the AppleScriptLibrary.scpt and OmniFocusLibrary.scpt files. Copy them to ~/Library/Script Libraries/</p>
+<h3 id="install-omnifocus-action-pack-for-keyboard-maestro">Install Omnifocus Action Pack for Keyboard Maestro</h3>
+<p>Download and decompress the Keyboard Maestro Actions. Copy them to ~/Library/Application Support/Keyboard Maestro/Keyboard Maestro Actions/ — alternatively, drag and drop the .zip archive on the Keyboard Maestro Icon in the Dock.
+Quit and relaunch Keyboard Maestro.</p>
+<h2 id="list-of-available-actions">List of available actions</h2>
+<p>The pack includes more than 20 actions to automate OmniFocus. Most actions manipulate tasks, but it also offers a templating system. Here is the list of actions, with a basic description of what they do:</p>
+<ul>
+<li>OmniFocus Convert Task To Project: turns a task into a project.</li>
+<li>OmniFocus Defer To Hour: sets the defer hour of the task. Useful to quickly defer a task to the next morning or afternoon.</li>
+<li>OmniFocus Do Actions: executes a list of actions configured in the note of the task. You can, for example, open an application or document, start an iTunes playlist, execute a shell script or an applescript.</li>
+<li>OmniFocus Due On Hour: sets the due hour of the task. Useful to quickly set the due hour to next morning or afternoon.</li>
+<li>OmniFocus Get IDs of Selected Tasks: get the list of IDs of currently selected tasks.</li>
+<li>OmniFocus Get Task Estimated Duration: get the estimated duration of the task.</li>
+<li>OmniFocus Get Task File Path: get a file path from the note of the task, if it exists.</li>
+<li>OmniFocus Get Task Flag: get the flag status of the task.</li>
+<li>OmniFocus Get Task Mail MessageID: get a Mail Message ID from the note of the task, if it exists.</li>
+<li>OmniFocus Get Task Name: get the name of the task.</li>
+<li>OmniFocus Get Task Note: get the note of the task.</li>
+<li>OmniFocus Get Task Note Field: get a field from the note of the task.</li>
+<li>OmniFocus Get Task Primary Tag: get the primary tag (main tag) of the task.</li>
+<li>OmniFocus Get Task Project: get the project of the task.</li>
+<li>OmniFocus Get Task Project Code: get the project code of the task.</li>
+<li>OmniFocus Get Task Tag List: get all tags from the task.</li>
+<li>OmniFocus Insert Template: insert a list of template actions in a project.</li>
+<li>OmniFocus Make Task: make a new task.</li>
+<li>OmniFocus Plus x Days: add a given number of days to the <strong>existing</strong> defer and due dates. Use a negative number to deduct a given number of days.</li>
+<li>OmniFocus Set Perspective: set the current perspective in OmniFocus.</li>
+<li>OmniFocus Set Sidebar Selection: (de)selects the items, tags or projects, in the sidebar tree.</li>
+<li>OmniFocus Set Task Flag: set the flag of the task.</li>
+<li>OmniFocus Set Task Name: set the name of the task.</li>
+<li>OmniFocus Set Task Parent Task: set the parent task of the task. Effectively moves the task inside the specified parent task.</li>
+<li>OmniFocus Set Task Primary Tag: set the primary tag of the task.</li>
+<li>OmniFocus Set Task Project: set the project of the task. Effectively moves the task at the end of the project tasks.</li>
+<li>OmniFocus Set Task Status: set the status of the task.</li>
+<li>OmniFocus Set Task Tag List: set the list of tags of the task.</li>
+</ul>
+<h2 id="history">History</h2>
+<p><strong>2021-03-02</strong></p>
+<p>To use this version download from these links:</p>
+<ul>
+<li>
+<p><a href="/mac-automation/omnifocus-action-pack-for-keyboard-maestro/AppleScriptLibrary-2021-03-02.zip">The &ldquo;AppleScriptLibrary&rdquo; AppleScript library. Click here to download it.</a></p>
+</li>
+<li>
+<p><a href="/mac-automation/omnifocus-action-pack-for-keyboard-maestro/OmniFocusLibrary-2021-03-02.zip">The &ldquo;OmniFocusLibrary&rdquo; AppleScript library. Click here to download it.</a></p>
+</li>
+<li>
+<p><a href="/mac-automation/omnifocus-action-pack-for-keyboard-maestro/OmniFocusActionPackForKeyboardMaestro-2021-03-02.zip">The OmniFocus Action Pack for Keyboard Maestro. Click here to download it.</a></p>
+</li>
+<li>
+<p>Added possibility to set flag status when creating a new task.</p>
+</li>
+<li>
+<p>Added matching OmniFocus Set Task Flag and OmniFocus Get Task Flag actions.</p>
+</li>
+<li>
+<p>Added OmniFocus Plus x Days action to quickly move existing defer and due dates by a given number of days.</p>
+</li>
+<li>
+<p>Probably some stuff I don&rsquo;t remember :D</p>
+</li>
+</ul>
+<p><strong>2020-06-24</strong></p>
+<p>To use this version download from these links:</p>
+<ul>
+<li>
+<p><a href="/mac-automation/omnifocus-action-pack-for-keyboard-maestro/OmniFocusLibrary.zip">The &ldquo;OmniFocusLibrary&rdquo; AppleScript library. Click here to download it.</a></p>
+</li>
+<li>
+<p><a href="/mac-automation/omnifocus-action-pack-for-keyboard-maestro/AppleScriptLibrary.zip">The &ldquo;AppleScriptLibrary&rdquo; AppleScript library. Click here to download it.</a></p>
+</li>
+<li>
+<p><a href="/mac-automation/omnifocus-action-pack-for-keyboard-maestro/OmniFocusActionPackForKeyboardMaestro.zip">The OmniFocus Action Pack for Keyboard Maestro. Click here to download it.</a></p>
+</li>
+<li>
+<p>Added the OmniFocus Set Task Parent Task action</p>
+</li>
+<li>
+<p>Added workaround for OmniFocus Set Task Project so that it doesn&rsquo;t fail if the project is empty (I create a temporary task then delete it).</p>
+</li>
+</ul>
+<h2 id="how-to-use-the-action-pack-real-life-examples">How to use the Action Pack? Real-life examples</h2>
+<p>The possibilities of the Action Pack are enormous, but to help you start, here are some of my favorite uses.</p>
+<h3 id="create-a-palette-to-set-the-primary-tag">Create a palette to set the primary tag</h3>
+<p>Keyboard Maestro allows you to create palettes with macros. Each application can have its own palette of actions. Here is, for example, the palette of actions I have for OmniFocus:</p>
+<p><img src="/mac-automation/omnifocus-action-pack-for-keyboard-maestro/omnifocus-keyboard-maestro-palette.png" alt="OmniFocus Action Palette"></p>
+<p>You can check the <a href="https://wiki.keyboardmaestro.com/manual/Palettes?s%5B%5D=palette">Keyboard Maestro wiki</a> to learn how to create a palette of macros for a specific application.</p>
+<h3 id="change-the-perspective-based-on-time-of-day">Change the perspective based on time of day</h3>
+<p>Something else you can do is to decide to switch automatically from one perspective to another based on the current time. The example below shows how to switch to the Review perspective every day at 8:00 a.m.</p>
+<p><img src="/mac-automation/omnifocus-action-pack-for-keyboard-maestro/omnifocus-switch-to-review-perspective-every-day.png" alt="OmniFocus Switch To Review Perspective Every Day at 9 a.m."></p>
+<h3 id="get-a-list-of-links-to-currently-selected-tasks-in-markdown-format">Get a list of links to currently selected tasks in MarkDown format</h3>
+<p>This example, inspired by a question on the Keyboard Maestro Forum, creates a list of clickable links to the selected OmniFocus tasks, in MarkDown format.</p>
+<p><img src="/mac-automation/omnifocus-action-pack-for-keyboard-maestro/markdown-links-to-omnifocus-tasks.jpg" alt="Markdown Links To Omnifocus Tasks"></p>
+<h2 id="actions-reference">Actions Reference</h2>
+<h3 id="omnifocus-defer-to-hour">OmniFocus Defer to Hour</h3>
+<p>OmniFocus Defer to Hour sets the selected task’s Defer Hour. Useful to quickly defer a task to the next morning or afternoon.</p>
+<ul>
+<li>If there is no defer date, sets it to the next future occurrence of the specified hour.</li>
+<li>If the defer date was in the past, sets it to the next future occurrence of the specified hour.</li>
+<li>If the defer date is already in the future, only change the hour.</li>
+</ul>
+<h3 id="omnifocus-do-actions">OmniFocus Do Actions</h3>
+<p>Note: this is not very well documented yet. I plan to complete the documentation when I have the time.</p>
+<p>OmniFocus Do Actions executes the list of actions in the note of the task. Possible actions are:</p>
+<ul>
+<li>shellscript: executes a shell script command.</li>
+<li>applescript: executes an AppleScript file.</li>
+<li>kmmacro: executes a Keyboard Maestro macro.</li>
+<li>open: opens a file.</li>
+<li>activate: activates an application.</li>
+<li>run: runs an application (without bringing it to the front).</li>
+<li>quit: quits an application.</li>
+<li>pause: pauses the execution of actions for x seconds.</li>
+<li>playlist: plays a playlist in Music.</li>
+</ul>
+<p>There are two possible action groups:</p>
+<ul>
+<li>&ldquo;on start:&rdquo; (written exactly on start: including the space after on and the : after start): a list of actions to execute when you start the action.</li>
+<li>&ldquo;on complete:&rdquo;: a list of actions to execute when you complete the action.</li>
+</ul>
+<p>Actions listed outside of these groups will not be executed.</p>
+<p>Example 1</p>
+<pre tabindex="0"><code>This is some text in the notes. It’s not in an action group and will not execute anything.
+
+on start:
+&#34;IA Writer&#34; activate
+&#34;Tweetbot&#34; quit
+
+on complete:
+&#34;IA Writer&#34; quit
+</code></pre><p>The text above on start: and on complete: will not do anything. The actions after on start: will activate the application IA Writer and quit Tweetbot. The actions after on complete: will quit IA Writer.</p>
+<p>Tip: setting up on start: and on complete: actions for one time tasks is tedious and probably not worth it. It’s really useful for repeating actions or template actions. See OmniFocus Insert Template to learn more about the templating system that comes with the Action Pack.</p>
+<h3 id="omnifocus-due-on-hour">OmniFocus Due on Hour</h3>
+<p>OmniFocus Defer to Hour sets the selected task’s due Hour.</p>
+<ul>
+<li>If there is no due date, sets it to the next future occurrence of the specified hour.</li>
+<li>If the due date was in the past, sets it to the next future occurrence of the specified hour.</li>
+<li>If the due date is already in the future, only change the hour.</li>
+</ul>
+<h3 id="omnifocus-get-ids-of-selected-tasks">OmniFocus Get IDs of selected tasks</h3>
+<p>OmniFocus Get IDs of Selected Tasks gets the list of IDs of currently selected tasks, as a text list. Each ID can then be individually processed with a &ldquo;For Each&rdquo; loop in Keyboard Maestro.</p>
+<p>Tip 1 : for most actions, you don’t need to first get the list of selected tasks. OmniFocus Get… actions, such as OmniFocus Get Task Name, automatically get the first selected task if no ID is specified. OmniFocus Set actions, such as OmniFocus Set Task Name, will act on the specified task: first selected, last selected, all selected tasks, task with ID specified.</p>
+<p>Tip 2 : you can use the list of IDs to build links to the task, with the format omnifocus:///task/ID. Here is an example to create a full set of links in MarkDown format.</p>
+<h3 id="omnifocus-get-task">OmniFocus Get Task…</h3>
+<p>OmniFocus Get Task… actions get the properties of a task, either the first selected task or the task with a specific ID.</p>
+<p>These actions are very simple and should not require a lot of explanations:</p>
+<ul>
+<li>OmniFocus Get Task Estimated Duration: get the estimated duration of the task.</li>
+<li>OmniFocus Get Task Name: get the name of the task.</li>
+<li>OmniFocus Get Task Note: get the note of the task.</li>
+<li>OmniFocus Get Task Primary Tag: get the primary tag (main tag) of the task.</li>
+<li>OmniFocus Get Task Project: get the project of the task.</li>
+<li>OmniFocus Get Task Tag List: get all tags from the task, each tag separated by a new line.</li>
+</ul>
+<p>The following Get actions are a bit more complex:</p>
+<ul>
+<li>OmniFocus Get Task Project Code: returns the first word of the project name, assuming it is the project code. Using a unique identifier (a project code) as the first word of a project name allows to use it in other places, such as a folder name in the Finder. For example, for a project called &ldquo;P00001 Project 1&rdquo;, P00001 will be returned as the project code. You can then use that code in conjunction with the &ldquo;OmniFocus Open Project Folder&rdquo; action to open a folder named &ldquo;P00001&rdquo; in the Finder.</li>
+<li>OmniFocus Get Task File Path: if a file:// url exists in the note field of the first selected task, returns its POSIX path (may fail if special characters other than space %20 are present in the file path).</li>
+<li>OmniFocus Get Task Mail Message ID: if a message:// url exists in the note field of the first selected task, returns its ID. Only works for links to Apple Mail messages.</li>
+<li>OmniFocus Get Task Note Field: get a field from the note of the task.</li>
+<li>OmniFocus Get Task Project Code: get the project code of the task.</li>
+</ul>
+<h3 id="omnifocus-insert-template">OmniFocus Insert Template</h3>
+<p>Templates should really be a standard functionality of OmniFocus. Because there is no such functionality, I created my own version: OmniFocus Insert Template.</p>
+<h4 id="setup">Setup</h4>
+<p>The OmniFocus Insert Template action requires a bit of setup:</p>
+<ol>
+<li>In the projects tree, create a folder named &ldquo;templates&rdquo; (all lowercase). This folder will contain your templates. It can have the Active or Dropped status, it doesn’t matter.</li>
+<li>In that folder, create projects that will be used as task templates.</li>
+</ol>
+<p>For example, you create the folder template, then inside you create projects that are the actual templates.</p>
+<pre tabindex="0"><code>templates (folder)
+	Document (project)
+		Subtask 1
+		Subtask 2
+	Invoice (project)
+		Subtask A
+		Subtask B
+		Subtask C
+</code></pre><h4 id="use">Use</h4>
+<p>To insert a template, select the parent task or project, then use the Insert Template action. A list of available templates (which is the list of projects in the templates folder) will be displayed in a dialog. If we take the example we used in the setup, you will have the choice between two templates: Document and Invoice. Select the template you want to insert. If for example you select your project &ldquo;My Project&rdquo; with two existing tasks and add the template &ldquo;Invoice&rdquo; to it, the result will be:</p>
+<pre tabindex="0"><code>My Project (project)
+	Existing task 1
+	Existing task 2
+	Invoice
+		Subtask A
+		Subtask B
+		Subtask C
+</code></pre><p>If instead of selecting &ldquo;My Project&rdquo; you select &ldquo;Existing task 1&rdquo;, the template will be inserted as a subtask of Existing task 1.</p>
+<pre tabindex="0"><code>My Project (project)
+	Existing task 1
+		Invoice
+			Subtask A
+			Subtask B
+			Subtask C
+	Existing task 2
+</code></pre><h4 id="tokens">Tokens</h4>
+<p>You can use special tokens in the name of the template tasks:</p>
+<ul>
+<li>%project% will be replaced by the name of the project the template is inserted in.</li>
+<li>%parent% will be replaced by the name of the parent task the template is inserted in.</li>
+<li>%lower% will force the name of the task to be all lowercase.</li>
+<li>%upper% will force the name of the task to be all uppercase.</li>
+<li>%version% automatically inserts an incremental version number.</li>
+<li>%prompt:Prompt text% will display a dialog with &ldquo;Prompt text&rdquo; and replace the %prompt:xxx% token with the entered value.</li>
+<li>&gt;&gt;: everything before the &gt;&gt; sign will not be inserted.</li>
+<li>&lt;&lt;: everything after the &lt;&lt; sign will not be inserted.</li>
+</ul>
+<p>Let&rsquo;s modify our templates as an example.</p>
+<pre tabindex="0"><code>templates (folder)
+	Document %parent% version %version% %upper%
+		Subtask 1&gt;&gt;Create new document
+		Subtask 2&gt;&gt;Email new document
+	Invoice for %project%
+		Subtask A
+		Subtask B
+		Subtask C
+</code></pre><p>First we insert the &ldquo;Document&rdquo; template to the &ldquo;Event Brochure&rdquo; subtask of the project &ldquo;My Project&rdquo;. When This happens, we are prompted to &ldquo;Enter document name&rdquo;. We enter &ldquo;Event Brochure&rdquo;. The result is:</p>
+<pre tabindex="0"><code>My Project
+	Marketing brochure
+		DOCUMENT MARKETING BROCHURE VERSION 1
+			Create new document
+			Email new document
+</code></pre><ul>
+<li>The name of the parent task was inserted because we used %parent%.</li>
+<li>A version number was added automatically.</li>
+<li>The whole task name was turned into uppercase because we used %upper%.</li>
+<li>The text parts &ldquo;Subtask 1&rdquo; and &ldquo;Subtask 2&rdquo; were ignored because they were located before the &gt;&gt; sign.</li>
+</ul>
+<p>If we add the task template a second time, we will get:</p>
+<pre tabindex="0"><code>My Project
+	Marketing brochure
+		DOCUMENT MARKETING BROCHURE VERSION 1
+			Create new document
+			Email new document
+		DOCUMENT MARKETING BROCHURE VERSION 2
+			Create new document
+			Email new document
+</code></pre><h3 id="omnifocus-make-task">OmniFocus Make Task</h3>
+<p>OmniFocus Make Task creates a new OmniFocus task. You can specify its name, note, primary tag and project.</p>
+<h3 id="omnifocus-set-task">OmniFocus Set Task…</h3>
+<ul>
+<li>OmniFocus Set Task Primary Tag: set the name of the primary tag of the specified task.</li>
+<li>OmniFocus Get Task Tags: get the list of tag names or tag IDs of the specified task.</li>
+<li>OmniFocus Set Task Tags: set the list of tags of the specified task, by tag names or tag IDs. You can add, remove, replace or toggle the tags of the task.</li>
+<li>OmniFocus Set Task Project: sets the project of the selected task.</li>
+</ul>
+<p>Because of an AppleScript limitation, tags with non-ASCII characters, for example Chinese characters or emojis, cannot be passed by name in Set Task Primary Tag and Set Task Tags. In that case, the best solution is to use the tag ID instead of the tag name to manipulate the tags.</p>
+<h3 id="omnifocus-set-sidebar-selection">OmniFocus Set Sidebar Selection</h3>
+<ul>
+<li>OmniFocus Deselect All Sidebar Elements: deselect all sidebar tree elements, either for the tags or project tree, as long as the tree is visible.</li>
+<li>OmniFocus Select Sidebar Element: select the sidebar element passed as argument. It can be a context or project, but it has to be valid for the current sidebar view.</li>
+</ul>
+<h3 id="omnifocus-set-perspective">OmniFocus Set Perspective</h3>
+<p>OmniFocus Set Perspective sets the perspective of the front window.</p>
+<h2 id="additional-technical-notes">Additional technical notes</h2>
+<p>Most actions rely heavily on the AppleScriptLibrary and OmniFocusLibrary AppleScript libraries. If you know a bit of AppleScript, you can create new actions that use these libraries, and you can call the library’s functions and procedures directly from Keyboard Maestro using the &ldquo;Execute AppleScript&rdquo; action.</p>
+
+    </div>
+ 	<div class="post-related">
+	
+	
+		<h3>Articles liés</h3>
+		<ul>
+			
+			<li><a href="/post/2020-05-18-imprimer-un-paquet-de-documents-sur-macos/">La façon la plus simple d’imprimer un paquet de documents sur macOS</a></li>
+			
+			<li><a href="/post/2020-04-20-omnifocus-action-pack-une-liste-d-actions-pour-automatiser-omnifocus-avec-keyboard-maestro/">OmniFocus Action Pack : une liste d’actions pour automatiser OmniFocus avec Keyboard Maestro</a></li>
+			
+			<li><a href="/post/2017-10-02-controler-powerpoint-avec-controleur-midi/">Contrôler PowerPoint avec un contrôleur MIDI</a></li>
+			
+			<li><a href="/post/2017-09-25-comment-je-trie-projets-omnifocus/">Trier automatiquement ses projets par statut</a></li>
+			
+			<li><a href="/post/2021-07-19-changer-la-sortie-audio-depuis-la-ligne-de-commande-sur-macos/">Changer la sortie audio depuis la ligne de commande sur macOS</a></li>
+			
+		</ul>
+	
+	</div>
+</article>
+<!-- _default:article:end -->
+
+			</main>
+			
+
+<!-- partials:aside:start -->
+
+<aside class="aside-flex">
+
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="blog" class="aside-module">
+					
+					
+					
+						<a href="/" class="button width-full">
+							
+		        		BLOG
+							
+						</a>
+					
+				</section>
+			
+		
+		
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="howitisgoing" class="aside-module">
+					
+					
+					
+						<a href="/howitisgoing/" class="button width-full">
+							
+		        		HOW IT IS GOING PROJECT
+							
+						</a>
+					
+				</section>
+			
+		
+		
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="mac-automation" class="aside-module">
+					
+					
+					
+						<a href="/mac-automation/" class="button width-full">
+							
+		        		MAC AUTOMATION TOOLS
+							
+						</a>
+					
+				</section>
+			
+		
+		
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="about" class="aside-module">
+					
+					
+					
+						<a href="/about/" class="button width-full">
+							
+		        		À PROPOS
+							
+						</a>
+					
+				</section>
+			
+		
+		
+	
+		
+			
+			
+				
+				<!-- links -->
+				<section id="links" class="aside-module hide-lg">
+					<header>
+					  <h2 class="aside-module-h2 align-center">Les sites que je soutiens</p>
+					</header>
+					<div class="links-flex">
+						
+							<div class="link">
+								<a href="https://www.codingandbricks.com/" class="link-a">
+					    		<img src="/pictures/links/codingandbricks.jpg" class="link-img">
+					    		<p class="link-p">Ateliers LEGO Serious Play® pour les entreprises</p>
+					    	</a>
+							</div>
+						
+							<div class="link">
+								<a href="https://www.ideasonstage.com/" class="link-a">
+					    		<img src="/pictures/links/ideasonstage.jpg" class="link-img">
+					    		<p class="link-p">Le spécialiste des présentations en public</p>
+					    	</a>
+							</div>
+						
+					</div>
+				</section>
+
+			
+		
+		
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="mastodon" class="aside-module">
+					
+					
+					
+						<a href="https://mastodon.social/@pmorsa" class="button width-full">
+							
+								<img src="/pictures/main/wordmark-black-text.svg" alt="MASTODON" class="piclight" />
+								
+									<img src="/pictures/main/wordmark-white-text.svg" alt="MASTODON" class="picdark" />
+								
+							
+						</a>
+					
+				</section>
+			
+		
+		
+	
+		
+			
+				
+				<!-- rss -->
+				<section id="rss" class="aside-module blurb">
+					
+					<a rel="alternate" type="application/rss+xml" href="" title="RSS" class="button width-full">S&rsquo;abonner au fil RSS</a>
+					
+				</section>
+		
+			
+		
+		
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="contact" class="aside-module">
+					
+					
+					
+						<a href="mailto:pier%72e.%6Dors%61@pierremorsa.com" class="button width-full">
+							
+		        		CONTACT
+							
+						</a>
+					
+				</section>
+			
+		
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="copyright" class="aside-module">
+					
+			    	<h2 class="aside-module-h2">COPYLEFT ET ZÉRO COOKIES</h2>
+					
+					
+			    	<p class="aside-module-p">Site garanti sans cookies et sans JavaScript. Le contenu est en copie libre : vous pouvez tout copier et réutiliser librement.</p>
+					
+					
+				</section>
+			
+		
+		
+	
+	<section id="last-updated" class="aside-module">
+		<h2 class="aside-module-h2">Dernière mise à jour</h2>
+		<p class="aside-module-p">2024-10-12 20:39 CEST
+	</section>
+	
+</aside>
+
+<!-- partials:aside:end -->
+    </div>
+  </body>
+ 	<!-- _default:single:end -->
+
+</html>
+<!-- _default:baseof.html:end -->

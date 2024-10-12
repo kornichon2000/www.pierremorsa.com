@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Apple on Pierre Morsa</title>
+    <link>http://localhost:1313/companies/apple/</link>
+    <description>Recent content in Apple on Pierre Morsa</description>
+    <generator>Hugo</generator>
+    <language>fr</language>
+    <lastBuildDate>Sun, 28 Jul 2024 09:19:01 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/companies/apple/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Apple claims it will be carbon neutral by 2030</title>
+      <link>http://localhost:1313/howitisgoing/2023-09-27-apple/</link>
+      <pubDate>Wed, 27 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/howitisgoing/2023-09-27-apple/</guid>
+      <description>&lt;h3 class=&#34;promised&#34;&gt;How It Started on 2023-09-12&lt;/h3&gt; During the iPhone event of September 2023, Apple made a movie claiming it plans to be carbon neutral by 2030. Source: as of September 2023, it’s right there on their &lt;a href=&#34;https://www.youtube.com/watch?v=66XwG1CLHuU&#34;&gt;YouTube channel&lt;/a&gt;.</description>
+    </item>
+  </channel>
+</rss>

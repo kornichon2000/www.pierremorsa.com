@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mac-Automations on Pierre Morsa</title>
+    <link>http://localhost:1313/mac-automation/</link>
+    <description>Recent content in Mac-Automations on Pierre Morsa</description>
+    <generator>Hugo</generator>
+    <language>fr</language>
+    <lastBuildDate>Sun, 30 Jun 2024 15:28:13 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/mac-automation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OmniFocus Action Pack for Keyboard Maestro</title>
+      <link>http://localhost:1313/mac-automation/omnifocus-action-pack-for-keyboard-maestro/</link>
+      <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/mac-automation/omnifocus-action-pack-for-keyboard-maestro/</guid>
+      <description>The OmniFocus Action Pack for Keyboard Maestro is a set of plugin actions to control OmniFocus from Keyboard Maestro. OmniFocus is a top-class task management App from Omni Group. Keyboard Maestro is a wonderful automation app from Peter Lewis. Together, they are a fantastic productivity combo.&#xA;I originally created these actions for my own use, but I decided to make them available for free here as they might be of interest to others.</description>
+    </item>
+  </channel>
+</rss>

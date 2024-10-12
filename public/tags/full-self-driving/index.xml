@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Full Self Driving on Pierre Morsa</title>
+    <link>http://localhost:1313/tags/full-self-driving/</link>
+    <description>Recent content in Full Self Driving on Pierre Morsa</description>
+    <generator>Hugo</generator>
+    <language>fr</language>
+    <lastBuildDate>Sun, 30 Jun 2024 15:28:13 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/full-self-driving/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Elon Musk claims Tesla Full Self Driving will be available in 2023</title>
+      <link>http://localhost:1313/howitisgoing/2023-09-28-tesla-full-self-driving/</link>
+      <pubDate>Thu, 28 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/howitisgoing/2023-09-28-tesla-full-self-driving/</guid>
+      <description>&lt;h3 class=&#34;promised&#34;&gt;How It Started on 2023-07-27&lt;/h3&gt; The Full Self Driving story started back in 2013, but I&amp;rsquo;m not going that far back in time, partly because my own recollection of events is fuzzy about what Elon claimed back then. I&amp;rsquo;m starting from this year, and Elon declared that with v12, Full Self Driving was going out of beta (therefore implying for the general public that it will indeed be true Full Self Driving). Source: &lt;a href=&#34;https://electrek.co/2023/07/27/elon-musk-tesla-full-self-driving-update-mind-blowing/&#34;&gt;Electrek&lt;/a&gt;</description>
+    </item>
+  </channel>
+</rss>

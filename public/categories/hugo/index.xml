@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on Pierre Morsa</title>
+    <link>http://localhost:1313/categories/hugo/</link>
+    <description>Recent content in Hugo on Pierre Morsa</description>
+    <generator>Hugo</generator>
+    <language>fr</language>
+    <lastBuildDate>Mon, 20 Apr 2020 07:19:12 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Des macros Keyboard Maestro pour Hugo</title>
+      <link>http://localhost:1313/post/2018-12-17-des-macros-keyboard-maestro-pour-hugo/</link>
+      <pubDate>Mon, 17 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2018-12-17-des-macros-keyboard-maestro-pour-hugo/</guid>
+      <description>Je l&amp;rsquo;ai déjà avoué, je ne suis pas un &amp;ldquo;vrai&amp;rdquo; ; taper tout à la ligne de commande, ça me casse les pieds. C&amp;rsquo;est pourquoi j&amp;rsquo;ai créé une palette de Macros avec Keyboard Maestro pour exécuter les commandes Hugo les plus fréquentes. Ces commandes sont :&#xA;Choisir le site sur lequel on veut travailler. Créer un nouvel article Démarrer le serveur local Hugo Arrêter le serveur local Hugo Générer ou non les articles futurs Générer ou non les brouillons (drafts) Nettoyer le répertoire cible Vous pouvez télécharger les macros ici.</description>
+    </item>
+    <item>
+      <title>Héberger gratuitement un site Hugo avec Github et Netlify (2/2)</title>
+      <link>http://localhost:1313/post/2017-12-25-site-hugo-github-netlify-2/</link>
+      <pubDate>Mon, 25 Dec 2017 05:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/post/2017-12-25-site-hugo-github-netlify-2/</guid>
+      <description>Dans cette deuxième partie nous allons voir comment configurer Netlify pour servir les pages du site. Si vous ne l&amp;rsquo;avez pas lue je vous conseille de démarrer par la partie 1 de l&amp;rsquo;article qui explique comment déplacer le code du site dans Github.&#xA;Le truc génial avec Netlify, c&amp;rsquo;est qu&amp;rsquo;il s&amp;rsquo;occupe de faire tout ce qui est généralement bien pénible à configurer :&#xA;Il va être le serveur web des pages Il est CDN (Content Distributed Network) pour accélérer la performance du site, et prend entièrement à sa charge la gestion du rafraîchissement du cache.</description>
+    </item>
+    <item>
+      <title>Héberger gratuitement un site Hugo avec Github et Netlify (1/2)</title>
+      <link>http://localhost:1313/post/2017-12-18-site-hugo-github-netlify-1/</link>
+      <pubDate>Mon, 18 Dec 2017 05:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/post/2017-12-18-site-hugo-github-netlify-1/</guid>
+      <description>Dans cette première partie je vous propose un tutoriel pas à pas pour créer le fichier netlify.toml, et héberger le code du site sur Github.&#xA;Ce blog est une sorte de cobaye. Je lui fais subir des tas d&amp;rsquo;expériences lorsque je veux tester ce que cela donne. À l&amp;rsquo;origine c&amp;rsquo;était une simple page web, puis il a migré sur Joomla un des premiers « CMS » 100% Web, puis sur Wordpress qui était et est encore la solution préférée de beaucoup de sites.</description>
+    </item>
+    <item>
+      <title>Ajouter un formulaire de contact dans Hugo</title>
+      <link>http://localhost:1313/post/2017-11-13-ajouter-formulaire-hugo/</link>
+      <pubDate>Mon, 13 Nov 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2017-11-13-ajouter-formulaire-hugo/</guid>
+      <description>Vous trouverez dans cet article une procédure pas à pas pour ajouter un formulaire de contact dans un site statique Hugo, sans avoir besoin de back-end car nous allons déléguer le traitement des données à Zapier.&#xA;J&amp;rsquo;ai déjà parlé de Hugo, le générateur de sites statiques que j&amp;rsquo;utilise pour mon blog et le site de ma société. Les sites générés étant statiques, il n&amp;rsquo;y a pas de base de données ou de scripts serveurs pour gérer un formulaire de contact.</description>
+    </item>
+    <item>
+      <title>Comment j&#39;ai vaincu mon blocage du blogging</title>
+      <link>http://localhost:1313/post/2017-01-09-comment-vaincu-blocage-blogging/</link>
+      <pubDate>Mon, 09 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2017-01-09-comment-vaincu-blocage-blogging/</guid>
+      <description>Ce blog existe depuis août 2008. Si vous êtes un ancien lecteur, vous avez dû remarquer qu&amp;rsquo;il est passé par différentes phases. En mode « Pierre découvre le blogging » au début avec plusieurs articles par semaine, puis look sapin de noël avec des tas de rubriques colorées, pour finir aujourd&amp;rsquo;hui sur un format qui me convient bien. Simple, avec une mise en valeur du texte et peu d&amp;rsquo;images. Mais surtout vous avez dû remarquer que depuis août 2016 je suis beaucoup plus assidu et régulier ; je poste exactement un article chaque lundi, alors que ces dernières années c&amp;rsquo;était plutôt un article tous les six mois.</description>
+    </item>
+    <item>
+      <title>Quelques trucs en plus pour votre site Hugo</title>
+      <link>http://localhost:1313/post/2016-08-16-quelques-trucs-en-plus-pour-votre-site-hugo/</link>
+      <pubDate>Tue, 16 Aug 2016 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2016-08-16-quelques-trucs-en-plus-pour-votre-site-hugo/</guid>
+      <description>Si vous avez suivi mon guide pour migrer un blog Wordpress ou un site Wordpress vers Hugo, cet article vous donne quelques trucs utiles en plus.&#xA;Faciliter l&amp;rsquo;indexation du site avec sitemap.xml Hugo génère automatiquement une &amp;ldquo;sitemap&amp;rdquo; de votre site appelée sitemap.xml. Renseignez celle-ci dans les Google Webmaster tools pour garantir la bonne indexation de votre site par le moteur de recherche.&#xA;Intégrer Google Analytics Mon blog n&amp;rsquo;utilise aucun &amp;ldquo;tracker&amp;rdquo;, mais Hugo fournit l&amp;rsquo;intégration avec Google Analytics en standard.</description>
+    </item>
+    <item>
+      <title>Comment migrer un blog Wordpress vers Hugo</title>
+      <link>http://localhost:1313/post/2016-08-08-comment-migrer-un-blog-wordpress-sous-hugo/</link>
+      <pubDate>Mon, 08 Aug 2016 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2016-08-08-comment-migrer-un-blog-wordpress-sous-hugo/</guid>
+      <description>Courant du mois de juin 2016 j&amp;rsquo;ai migré mon blog de Wordpress vers Hugo. Je détaille ici la méthode que j&amp;rsquo;ai suivi pour les personnes qui souhaitent faire la même chose. Ce guide est loin d&amp;rsquo;être complet ; si vous vous retrouvez bloqué à une étape, consultez la documentation officielle. Si vous voulez suggérer des améliorations ou des corrections pour le guide contactez-moi directement à monprénom.monnom@pierremorsa.com&#xA;Avant de commencer, Sachez que si gérer un blog sur Hugo a des avantages et est à mon goût bien plus agréable que Wordpress, cela demande plus de connaissances techniques.</description>
+    </item>
+    <item>
+      <title>Cookie Cloudflare éliminé !</title>
+      <link>http://localhost:1313/post/2016-07-12-cookie-cloudflare-elimine/</link>
+      <pubDate>Tue, 12 Jul 2016 17:56:58 +0200</pubDate>
+      <guid>http://localhost:1313/post/2016-07-12-cookie-cloudflare-elimine/</guid>
+      <description>J&amp;rsquo;avais expliqué il y a quelques semaines qu&amp;rsquo;un des objectifs secondaires de la migration de Wordpress vers Hugo était de respecter la vie privée des visiteurs de mon site. Il restait un cookie &amp;ldquo;pisteur&amp;rdquo; à éliminer : celui de Cloudflare. C&amp;rsquo;est désormais chose faite !&#xA;Il m&amp;rsquo;a fallu un bout de temps avant de comprendre le coût caché du service gratuit de Cloudflare, mais il est finalement évident. Comme le trafic des sites utilisant leur service passe par leurs serveurs, ils sont capables de suivre les internautes à la trace dans leurs visites.</description>
+    </item>
+    <item>
+      <title>Blog migré sur Hugo !</title>
+      <link>http://localhost:1313/blog/blog-migre-sur-hugo/</link>
+      <pubDate>Sun, 12 Jun 2016 20:17:31 +0200</pubDate>
+      <guid>http://localhost:1313/blog/blog-migre-sur-hugo/</guid>
+      <description>Mise à jour du 9 août 2016 : j&amp;rsquo;ai écrit un tutoriel pour expliquer comment migrer de Wordpress vers Hugo.&#xA;Et voilà ! Il m’aura fallu un peu plus de deux heures pour abandonner Wordpress pour mon blog personnel et tout migrer vers Hugo. L&amp;rsquo;objectif principal est simple : m’affranchir des problèmes et de la lourdeur de Wordpress.&#xA;Wordpress a la philosophie “cacher la complexité pour rendre le blogging facile pour tous”.</description>
+    </item>
+  </channel>
+</rss>

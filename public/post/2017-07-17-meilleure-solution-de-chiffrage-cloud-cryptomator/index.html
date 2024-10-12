@@ -1,0 +1,517 @@
+<!-- _default:baseof.html:start -->
+<!DOCTYPE HTML>
+<html>
+	
+		
+<!-- partials:head:start -->
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	
+	
+		
+			<meta name="author" content="Pierre Morsa" />
+		
+		<meta name="fediverse:creator" content="@pmorsa@mastodon.social" />
+	
+	
+	<meta name="generator" content="Hugo 0.128.0">
+	
+	
+		
+			<title>La meilleure solution de chiffrage des documents dans le Cloud</title>
+		
+		
+		
+			<!-- language taken from SITE default language parameter  -->
+			<meta http-equiv="Content-Language" content="fr" />
+		
+		
+	
+
+	<link rel="me" href="https://mastodon.social/@pmorsa" />
+	<link rel="me" href="https://www.ideasonstage.com/" />
+
+	<link rel="apple-touch-icon-precomposed" href="/favicon/apple-touch-icon-precomposed.png" />
+	<link rel="icon" href="/favicon/favicon.png" />
+	<link rel="stylesheet" href="/main.min.css" />
+</head>	
+<!-- partials:head:end -->
+
+	
+	
+	<!-- _default:single:start -->
+  <body>
+		
+<!-- partials:topbar:start -->
+<section id="topbar" class="topbar-style">
+		<a href="/">
+			<img src="/pictures/main/pierre-morsa-avatar.png" class="intro-circle" width="48" alt="Pierre Morsa" />
+		</a>
+	
+		
+		
+			
+			
+				<h1>
+					<a href="/">
+						ce bon vieux blog
+					</a>
+				</h1>
+			
+			
+				<p class="topbar-style">
+					Réflexions de comptoir
+				</p>
+			
+		
+	
+
+</section>
+
+<!-- partials:topbar:end -->
+
+    <div class="grandparent-flex">
+			<main class="main-flex">
+				<!-- _default:article:start -->
+<article class="layout-module post">
+	<!-- _default:article-header:start -->
+<header class="post-header">
+	<h2 class="post-header-h2">
+		<a href="/post/2017-07-17-meilleure-solution-de-chiffrage-cloud-cryptomator/">
+			La meilleure solution de chiffrage des documents dans le Cloud
+		</a>
+	</h2>
+  
+  <div class="post-header-meta">
+		
+	    <time class="post-header-meta-published" datetime='2017-07-17'>
+				2017-07-17
+			</time>
+		
+		
+		
+	</div><!-- meta -->
+	<div class="pills">
+		
+		
+			<span class="pill pill-category">
+				<a href="/categories/lifehacks/">
+					Lifehacks
+				</a>
+			</span>
+		
+			<span class="pill pill-category">
+				<a href="/categories/technomagie/">
+					Technomagie
+				</a>
+			</span>
+		
+		
+		
+		
+	</div>
+
+</header>
+<!-- _default:article-header:end -->
+
+	<div class="post-content">
+		<p>Après avoir testé plusieurs solutions de chiffrage des documents dans le Cloud mon choix s&rsquo;est porté sur Cryptomator. C&rsquo;est une solution gratuite, rapide, fiable et offrant un bon niveau de sécurité tout en restant simple à utiliser. Cryptomator est également intégré à d&rsquo;autres solutions comme Cyberduck et Mountain Duck. Elle est également open source, ce qui signifie qu&rsquo;aucun éditeur ne pourra prendre vos données en « otage » d&rsquo;un abonnement obligatoire.</p>
+<h2 id="pourquoi-chiffrer-ses-documents-dans-le-cloud-">Pourquoi chiffrer ses documents dans le Cloud ?</h2>
+<p>Stocker ses documents dans le Cloud, c&rsquo;est potentiellement les mettre à la merci des hackers, qu&rsquo;ils soient criminels ou supportés par un gouvernement. Ne croyez pas sur parole les communiqués des services comme Dropbox ou OneDrive qui vous disent que vos documents sont protégés ; pratiquement tous ont été victimes d&rsquo;intrusions plus ou moins graves sur leurs serveurs. De plus leurs employés ainsi que certaines agences gouvernementales ont accès à vos documents.</p>
+<p>Si les documents que vous stockez dans le Cloud ne contiennent pas de données sensibles, pas besoin de se prendre la tête, une solution de chiffrage supplémentaire n&rsquo;est pas nécessaire. Mais si vous y stockez des documents contenant par exemple des coordonnées bancaires, des mots de passe ou des données de vos clients, il vaut mieux les chiffrer.</p>
+<p>Le chiffrage est un sujet complexe, aussi je tiens à préciser que vos documents ne sont pas protégés dans le Cloud si vous avez chiffré vos documents localement avec une solution comme FileVault ou Bitlocker. Les documents envoyés dans le Cloud ne bénéficient pas de ce chiffrage.</p>
+<h2 id="mon-choix--cryptomator">Mon choix : Cryptomator</h2>
+<p>Après avoir testé différentes solutions, Cryptomator est actuellement la seule solution à satisfaire tous ces critères :</p>
+<ul>
+<li>Être open source : s&rsquo;il y a bien un domaine dans lequel l&rsquo;open source a tout son sens, c&rsquo;est dans celui du chiffrage ; en effet seules les solutions open source peuvent être garanties sans porte dérobée (et encore, normalement il faut dans ce cas aussi compiler le code source soi-même après avoir vérifié la signature des fichiers).</li>
+<li>Multi plateforme : Cryptomator est disponible sur macOS, Windows, Linux, iOS et Android. Seules les versions iOS et Android sont payantes.</li>
+<li>Offrir un mécanisme de chiffrage suffisamment solide.</li>
+<li>Autoriser la synchronisation fichier par fichier, voire par bloc modifié. Une solution comme VeraCrypt qui impose de tout resynchroniser pour le changement d&rsquo;un octet n&rsquo;est pas utilisable.</li>
+<li>Autoriser la gestion des conflits dans le cas où plusieurs utilisateurs modifient le même fichier en même temps.</li>
+</ul>
+<h3 id="faiblesses-de-cryptomator">Faiblesses de Cryptomator</h3>
+<p>La faiblesse principale de Cryptomator est que les fichiers chiffrés font la même taille que les fichiers non chiffrés. Sans être expert, cela doit fortement faciliter le cassage de la clé de chiffrage si un hacker possède une copie de fichier chiffrée et une copie non chiffrée. Normalement c&rsquo;est un scénario qui ne doit pas se produire, mais si vous copiez des fichiers déjà présents dans Dropbox vers Cryptomator, alors Dropbox possédera une copie chiffrée et une copie non chiffrée du même document.</p>
+<h2 id="les-autres-solutions">Les autres solutions</h2>
+<p>VeraCrypt est le successeur spirituel du célèbre TrueCrypt. Cependant la philosophie de conception de VeraCrypt en fait un outil destiné au chiffrage de disques locaux plutôt que de documents stockés dans le Cloud.</p>
+<p>BoxCryptor existe depuis plusieurs années, et a un fonctionnement similaire à Cryptomator. Mais le code source est fermé et BoxCryptor nécessite un abonnement payant sans pour autant offrir de bénéfices par rapport à Cryptomator. De plus si la maison mère de BoxCryptor met la clé sous la porte vous n&rsquo;aurez plus aucun moyen de récupérer vos données.</p>
+<p>CloudMounter offre un mécanisme de chiffrage intégré, mais le code source est fermé et impossible d&rsquo;avoir des informations sur l&rsquo;algorithme de chiffrage utilisé. De plus l&rsquo;accès à Dropbox depuis CloudMounter est insupportablement lent.</p>
+<p>Cyberduck et Mountain Duck intègrent Cryptomator. Si pendant mes tests Cyberduck a bien fonctionné je ne suis pas parvenu à faire fonctionner Mountain Duck de manière satisfaisante, la connexion s&rsquo;interrompant constamment lors des transfers.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Le niveau de sécurité par défaut de Dropbox ou OneDrive est suffisant pour des documents ne nécessitant pas de précautions particulières, mais insuffisant pour les documents sensibles : je ne recommande pas de stocker des coordonnées bancaires, mots de passe ou des données client sensibles dans le Cloud sans chiffrage complémentaire. De toutes les solutions que j&rsquo;ai pu essayer, Cryptomator est celle qui offre le meilleur compromis facilité d&rsquo;utilisation - sécurité.</p>
+
+    </div>
+ 	<div class="post-related">
+	
+	
+		<h3>Articles liés</h3>
+		<ul>
+			
+			<li><a href="/post/2022-12-19-poster-automatiquement-sur-mastodon/">Poster automatiquement sur Mastodon</a></li>
+			
+			<li><a href="/post/2021-11-01-facebook-devient-meta/">Facebook devient Meta</a></li>
+			
+			<li><a href="/post/2021-10-25-science-vs-methode-scientifique/">Science vs méthode scientifique</a></li>
+			
+			<li><a href="/post/2021-10-18-comment-trouver-le-numero-du-service-client-orange-pro/">Comment trouver le numéro du service client Orange Pro</a></li>
+			
+			<li><a href="/post/2021-04-19-i-love-stupides-fichiers-textes/">I love stupides fichiers textes</a></li>
+			
+		</ul>
+	
+	</div>
+</article>
+<!-- _default:article:end -->
+
+			</main>
+			
+
+<!-- partials:aside:start -->
+
+<aside class="aside-flex">
+
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="blog" class="aside-module">
+					
+					
+					
+						<a href="/" class="button width-full">
+							
+		        		BLOG
+							
+						</a>
+					
+				</section>
+			
+		
+		
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="howitisgoing" class="aside-module">
+					
+					
+					
+						<a href="/howitisgoing/" class="button width-full">
+							
+		        		HOW IT IS GOING PROJECT
+							
+						</a>
+					
+				</section>
+			
+		
+		
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="mac-automation" class="aside-module">
+					
+					
+					
+						<a href="/mac-automation/" class="button width-full">
+							
+		        		MAC AUTOMATION TOOLS
+							
+						</a>
+					
+				</section>
+			
+		
+		
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="about" class="aside-module">
+					
+					
+					
+						<a href="/about/" class="button width-full">
+							
+		        		À PROPOS
+							
+						</a>
+					
+				</section>
+			
+		
+		
+	
+		
+			
+			
+				
+				<!-- links -->
+				<section id="links" class="aside-module hide-lg">
+					<header>
+					  <h2 class="aside-module-h2 align-center">Les sites que je soutiens</p>
+					</header>
+					<div class="links-flex">
+						
+							<div class="link">
+								<a href="https://www.codingandbricks.com/" class="link-a">
+					    		<img src="/pictures/links/codingandbricks.jpg" class="link-img">
+					    		<p class="link-p">Ateliers LEGO Serious Play® pour les entreprises</p>
+					    	</a>
+							</div>
+						
+							<div class="link">
+								<a href="https://www.ideasonstage.com/" class="link-a">
+					    		<img src="/pictures/links/ideasonstage.jpg" class="link-img">
+					    		<p class="link-p">Le spécialiste des présentations en public</p>
+					    	</a>
+							</div>
+						
+					</div>
+				</section>
+
+			
+		
+		
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="mastodon" class="aside-module">
+					
+					
+					
+						<a href="https://mastodon.social/@pmorsa" class="button width-full">
+							
+								<img src="/pictures/main/wordmark-black-text.svg" alt="MASTODON" class="piclight" />
+								
+									<img src="/pictures/main/wordmark-white-text.svg" alt="MASTODON" class="picdark" />
+								
+							
+						</a>
+					
+				</section>
+			
+		
+		
+	
+		
+			
+				
+				<!-- rss -->
+				<section id="rss" class="aside-module blurb">
+					
+					<a rel="alternate" type="application/rss+xml" href="" title="RSS" class="button width-full">S&rsquo;abonner au fil RSS</a>
+					
+				</section>
+		
+			
+		
+		
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="contact" class="aside-module">
+					
+					
+					
+						<a href="mailto:pier%72e.%6Dors%61@pierremorsa.com" class="button width-full">
+							
+		        		CONTACT
+							
+						</a>
+					
+				</section>
+			
+		
+		
+	
+		
+			
+				
+				<!-- list of taxonomy terms -->
+				
+				<section id="categories" class="aside-module">
+					<h2 class="aside-module-h2">BLOG CATEGORIES</h2>
+				  <ul class="aside-taxonomy-ul">
+						
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/art-oratoire/">Art Oratoire</a>
+								</span>
+								<span style="float:right;">1</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/cr%C3%A9ativit%C3%A9/">Créativité</a>
+								</span>
+								<span style="float:right;">1</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/gtd-getting-things-done/">GTD Getting Things Done</a>
+								</span>
+								<span style="float:right;">44</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/hugo/">Hugo</a>
+								</span>
+								<span style="float:right;">9</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/ideas-on-stage/">Ideas on Stage</a>
+								</span>
+								<span style="float:right;">1</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/internet/">Internet</a>
+								</span>
+								<span style="float:right;">7</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/lifehacks/">Lifehacks</a>
+								</span>
+								<span style="float:right;">68</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/mac/">Mac</a>
+								</span>
+								<span style="float:right;">24</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/nomade-digital/">Nomade Digital</a>
+								</span>
+								<span style="float:right;">5</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/nouvelles/">Nouvelles</a>
+								</span>
+								<span style="float:right;">48</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/opinions/">Opinions</a>
+								</span>
+								<span style="float:right;">16</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/philosophie-de-blog/">Philosophie De Blog</a>
+								</span>
+								<span style="float:right;">121</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/pr%C3%A9senter-en-public/">Présenter en Public</a>
+								</span>
+								<span style="float:right;">68</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/startup/">Startup</a>
+								</span>
+								<span style="float:right;">15</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/storytelling/">Storytelling</a>
+								</span>
+								<span style="float:right;">8</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/technomagie/">Technomagie</a>
+								</span>
+								<span style="float:right;">87</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/tedx/">TEDx</a>
+								</span>
+								<span style="float:right;">12</span>
+							</li>
+					   
+			    </ul>
+				</section>
+								
+			
+		
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="copyright" class="aside-module">
+					
+			    	<h2 class="aside-module-h2">COPYLEFT ET ZÉRO COOKIES</h2>
+					
+					
+			    	<p class="aside-module-p">Site garanti sans cookies et sans JavaScript. Le contenu est en copie libre : vous pouvez tout copier et réutiliser librement.</p>
+					
+					
+				</section>
+			
+		
+		
+	
+	<section id="last-updated" class="aside-module">
+		<h2 class="aside-module-h2">Dernière mise à jour</h2>
+		<p class="aside-module-p">2024-10-12 20:40 CEST
+	</section>
+	
+</aside>
+
+<!-- partials:aside:end -->
+    </div>
+  </body>
+ 	<!-- _default:single:end -->
+
+</html>
+<!-- _default:baseof.html:end -->

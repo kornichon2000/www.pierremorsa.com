@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Deadline on Pierre Morsa</title>
+    <link>http://localhost:1313/deadline/</link>
+    <description>Recent content in Deadline on Pierre Morsa</description>
+    <generator>Hugo</generator>
+    <language>fr</language>
+    <lastBuildDate>Sat, 12 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/deadline/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2026</title>
+      <link>http://localhost:1313/deadline/2026/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/deadline/2026/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>2024</title>
+      <link>http://localhost:1313/deadline/2024/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/deadline/2024/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>2025</title>
+      <link>http://localhost:1313/deadline/2025/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/deadline/2025/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>2023</title>
+      <link>http://localhost:1313/deadline/2023/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/deadline/2023/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>2030</title>
+      <link>http://localhost:1313/deadline/2030/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/deadline/2030/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

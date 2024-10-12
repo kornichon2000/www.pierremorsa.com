@@ -1,0 +1,923 @@
+<!-- _default:baseof.html:start -->
+<!DOCTYPE HTML>
+<html>
+	
+		
+<!-- partials:head:start -->
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	
+	
+	
+	<meta name="generator" content="Hugo 0.128.0">
+	
+	
+		
+		
+			
+				<title>ce bon vieux blog</title>
+			
+			
+				<meta name="description" content="Réflexions de comptoir" />
+			
+			
+				<!-- language taken from SITE default language parameter  -->
+				<meta http-equiv="Content-Language" content="fr" />
+			
+		
+	
+
+	<link rel="me" href="https://mastodon.social/@pmorsa" />
+	<link rel="me" href="https://www.ideasonstage.com/" />
+
+	<link rel="apple-touch-icon-precomposed" href="/favicon/apple-touch-icon-precomposed.png" />
+	<link rel="icon" href="/favicon/favicon.png" />
+	<link rel="stylesheet" href="/main.min.css" /><link rel="alternate" type="application/rss+xml" href="http://localhost:1313/post/index.xml" title="Pierre Morsa" />
+</head>	
+<!-- partials:head:end -->
+
+	
+	
+	<!-- _default:list.html:start -->
+  <body>
+		
+<!-- partials:topbar:start -->
+<section id="topbar" class="topbar-style">
+		<a href="/">
+			<img src="/pictures/main/pierre-morsa-avatar.png" class="intro-circle" width="48" alt="Pierre Morsa" />
+		</a>
+	
+		
+		
+		
+			
+				<h1>
+					<a href="/">
+						ce bon vieux blog
+					</a>
+				</h1>
+			
+			
+				<p class="topbar-style">
+					Réflexions de comptoir
+				</p>
+			
+		
+	
+
+</section>
+
+<!-- partials:topbar:end -->
+
+    <div class="grandparent-flex">
+			<main class="main-flex">
+				<!-- partials:article-list.html:start -->
+
+
+
+	
+
+
+<!-- _default:article:start -->
+<article class="layout-module post">
+	<!-- _default:article-header:start -->
+<header class="post-header">
+	<h2 class="post-header-h2">
+		<a href="/post/2017-12-25-site-hugo-github-netlify-2/">
+			Héberger gratuitement un site Hugo avec Github et Netlify (2/2)
+		</a>
+	</h2>
+  
+  <div class="post-header-meta">
+		
+	    <time class="post-header-meta-published" datetime='2017-12-25'>
+				2017-12-25
+			</time>
+		
+		
+		
+	</div><!-- meta -->
+	<div class="pills">
+		
+		
+			<span class="pill pill-category">
+				<a href="/categories/technomagie/">
+					Technomagie
+				</a>
+			</span>
+		
+			<span class="pill pill-category">
+				<a href="/categories/hugo/">
+					Hugo
+				</a>
+			</span>
+		
+		
+		
+		
+	</div>
+
+</header>
+<!-- _default:article-header:end -->
+
+	<div class="post-content">
+		<p>Dans cette deuxième partie nous allons voir comment configurer Netlify pour servir les pages du site. Si vous ne l&rsquo;avez pas lue je vous conseille de démarrer par la <a href="/post/2017-12-18-site-hugo-github-netlify-1">partie 1 de l&rsquo;article qui explique comment déplacer le code du site dans Github</a>.</p>
+<p>Le truc génial avec Netlify, c&rsquo;est qu&rsquo;il s&rsquo;occupe de faire tout ce qui est généralement bien pénible à configurer :</p>
+<ul>
+<li>Il va être le serveur web des pages</li>
+<li>Il est CDN (Content Distributed Network) pour accélérer la performance du site, et prend entièrement à sa charge la gestion du rafraîchissement du cache. Fini les arrachages de cheveux parce que le cache ne s&rsquo;est pas mis à jour correctement.</li>
+<li>Il offre un DNS très rapide pour réduire la latence de connexion.</li>
+<li>Il gère le https pour vous (si vous le souhaitez), et force la redirection de http vers https.</li>
+</ul>
+<p>Pour pas un roro, c&rsquo;est déjà super. Mais si en plus je vous dis que Netlify :</p>
+<ul>
+<li>Compile automatiquement le site hugo pour vous à partir du repository Github</li>
+<li>Déploie automatiquement la branche compilée</li>
+<li>Permet de tester autant de branches alternatives (versions de test ou versions futures par exemple) que souhaité</li>
+<li>Permet de faire du A/B testing automatiquement</li>
+<li>Permet de faire un rollback (retour en arrière) simplement en cas de catastrophe.</li>
+<li>Offre un système de gestion de contenu hyper rapide (CMS).</li>
+</ul>
+<p>Et tout ça toujours pour zéro roros ? Elle est pas belle la vie ?</p>
+<h2 id="configurer-netlify">Configurer Netlify</h2>
+<p>C&rsquo;est bien beau tout ça, mais du coup ça doit sûrement être compliqué de tout paramétrer. Ben non. La magie de Netlify c&rsquo;est que tout reste super simple.</p>
+<h3 id="créer-un-compte-netlify">Créer un compte Netlify</h3>
+<p>Pour créer un compte Netlify, identifiez-vous avec votre compte Github.</p>
+<p><img src="/pictures/2017/12/netlify-signin-github.jpg" alt="Netlify Signin Github"></p>
+<p>Pourquoi avec votre compte Github ? Parce que&hellip; Netlify va automatiquement vous proposer les différents projets que vous avez stockés sur Github. Donnez l&rsquo;autorisation à Netlify d&rsquo;accéder à votre compte Github. Voilà, vous venez de configurer votre compte Netlify.</p>
+<p><img src="/pictures/2017/12/netlify-authorize-github.jpg" alt="Netlify Authorize Github"></p>
+<h3 id="ajouter-son-site-hugo-sur-netlify">Ajouter son site Hugo sur Netlify</h3>
+<p>Pour ajouter un site commençons par cliquer sur le bouton « New site from Git ».</p>
+<p><img src="/pictures/2017/12/netlify-new-site-from-git.jpg" alt="Netlify New Site From Git"></p>
+<p>Ensuite, il faut choisir « Github » (ou une des autres options  si votre code est hébergé chez GitLab ou un autre).</p>
+<p><img src="/pictures/2017/12/netlify-create-a-new-site-from-github.jpg" alt="Netlify Create A New Site From Github"></p>
+<p>Il faut de nouveau autoriser Netlify à accéder aux repositories GitHub.</p>
+<p><img src="/pictures/2017/12/netlify-github-additional-permissions.jpg" alt="Netlify Github Additional Permissions"></p>
+<p>Sélectionnez alors le repository qui contient le code de votre site, dans mon cas « www.testtoto.com ».</p>
+<p><img src="/pictures/2017/12/netlify-new-site-choose.jpg" alt="Netlify New Site Choose"></p>
+<p>Il ne reste désormais plus que quelques informations à fournir :</p>
+<ul>
+<li>Vous pouvez normalement laisser le nom de la branche à déployer à « master » (comme expliqué dans l&rsquo;article précédent, c&rsquo;est le nom par défaut de la version « validée »).</li>
+<li>La « Build command » est simplement&hellip; <code>hugo</code></li>
+<li>Le nom du répertoire de publication est <code>public</code></li>
+</ul>
+<p>Une fois ces informations renseignées, vous pouvez cliquer sur « Deploy Site ». En général la compilation et publication d&rsquo;un site prend entre quelques secondes et quelques minutes maximum.</p>
+<p><img src="/pictures/2017/12/netlify-new-site-added.jpg" alt="Netlify New Site Added"></p>
+<p>Netlify attribue automatiquement un URL au nouveau site qu&rsquo;il gère. Dans mon exemple cet URL est <a href="http://eager-hugle-1657a8.netlify.com">http://eager-hugle-1657a8.netlify.com</a> - Le site est désormais accessible directement à cet URL, mais il ne vous convient certainement pas. Nous allons donc maintenant passer aux étapes 2 et 3 : la configuration d&rsquo;un nom de domaine personnalisé et du https.</p>
+<h3 id="configurer-le-nom-de-domaine">Configurer le nom de domaine</h3>
+<p>Mon nom de domaine est pierremorsa.com, et je l&rsquo;ai acheté il y a un bout de temps&hellip; Pour le configurer, il y a deux solutions :</p>
+<ul>
+<li>Modifier les informations du DNS existant pour pointer vers les serveurs de Netlify.</li>
+<li>Ou utiliser les serveurs DNS de Netlify.</li>
+</ul>
+<p>Je ne vais décrire ici que la deuxième option, utiliser les serveurs DNS de Netlify. Ils se vantent d&rsquo;avoir les serveurs DNS les plus rapides du monde. J&rsquo;ignore si c&rsquo;est vrai.</p>
+<p>Cette opération est rendue la plus simple possible par Netlify, mais elle reste malgré tout assez délicate, et parfois un peu déroutante, car il y a un temps de latence entre le moment où l&rsquo;on demande la modification des paramètres d&rsquo;un DNS et le moment où ces changements deviennent effectifs partout dans le monde. C&rsquo;est une opération à faire le moins souvent possible.</p>
+<p>Cliquez sur « Set up a custom domain ». Si vous avez loupé cet écran, cliquez simplement sur « Domain settings » → Domain management → Domains et cela reviendra au même.</p>
+<p><img src="/pictures/2017/12/netlify-add-custom-domain.jpg" alt="Netlify Add Custom Domain"></p>
+<p>Cliquez ensuite sur « Add custom domain », entrez le nom de votre domaine, puis sur Save.</p>
+<p><img src="/pictures/2017/12/netlify-add-custom-domain-2.jpg" alt="Netlify Add Custom Domain 2"></p>
+<p>À ce niveau, vous allez probablement avoir une erreur. Cliquez sur le message « Check DNS configuration ». Cliquez alors sur « Set up Netlify DNS for votredomaine.com ».</p>
+<p><img src="/pictures/2017/12/netlify-setup-dns.jpg" alt="Netlify Setup Dns"></p>
+<p>Dans l&rsquo;écran qui apparaît, cliquez sur Create DNS zone.</p>
+<p><img src="/pictures/2017/12/netlify-create-dns-zone.jpg" alt="Netlify Create Dns Zone"></p>
+<p>Netlify crée alors les données de base pour le DNS, mais vous pouvez allez avoir besoin d&rsquo;ajouter des infos manuellement. Encore une fois, c&rsquo;est la partie la plus « compliquée » du processus car chaque cas est différent. Par exemple si vous avez un service d&rsquo;email lié à votre nom de domaine (dans mon exemple <a href="mailto:email@testtoto.com">email@testtoto.com</a>) vous devrez configurer correctement les données DNS de votre service d&rsquo;email sinon vos emails vont se perdre dans la nature.</p>
+<p><strong>Une fois cette étape effectuée, allez sur le service chez qui vous avez enregistré votre nom de domaine, et modifiez les serveurs DNS actuels par ceux de Netlify.</strong></p>
+<p>Une fois cette étape terminée, et une fois que les serveurs DNS dans le monde se seront mis à jour, votre site Hugo <a href="https://www.votresite.com">www.votresite.com</a> sera servi par Netlify hyper rapidement ! Il ne vous restera plus qu&rsquo;à activer le https pour que tout soit parfait ; l&rsquo;opération étant très simple, je ne la détaillerai pas ici.</p>
+
+    </div>
+ 	<div class="post-related">
+	
+	
+		<h3>Articles liés</h3>
+		<ul>
+			
+			<li><a href="/post/2018-12-17-des-macros-keyboard-maestro-pour-hugo/">Des macros Keyboard Maestro pour Hugo</a></li>
+			
+			<li><a href="/post/2017-12-18-site-hugo-github-netlify-1/">Héberger gratuitement un site Hugo avec Github et Netlify (1/2)</a></li>
+			
+			<li><a href="/post/2017-11-13-ajouter-formulaire-hugo/">Ajouter un formulaire de contact dans Hugo</a></li>
+			
+			<li><a href="/post/2016-08-16-quelques-trucs-en-plus-pour-votre-site-hugo/">Quelques trucs en plus pour votre site Hugo</a></li>
+			
+			<li><a href="/post/2016-08-08-comment-migrer-un-blog-wordpress-sous-hugo/">Comment migrer un blog Wordpress vers Hugo</a></li>
+			
+		</ul>
+	
+	</div>
+</article>
+<!-- _default:article:end -->
+
+		<!-- partials:links:start -->
+<section id="links" class="layout-module blurb hide-sm">
+	<header>
+	  <p class="align-center">Les sites que je soutiens</p>
+	</header>
+	<div class="links-flex">
+		<div class="link">
+			<a href="https://www.codingandbricks.com/" class="link-a">
+	    		<img src="/pictures/links/codingandbricks.jpg" class="link-img">
+	    		<p class="link-p">Ateliers LEGO Serious Play® pour les entreprises</p>
+	    	</a>
+		</div>
+		<div class="link">
+			<a href="https://www.ideasonstage.com/" class="link-a">
+	    		<img src="/pictures/links/ideasonstage.jpg" class="link-img">
+	    		<p class="link-p">Le spécialiste des présentations en public</p>
+	    	</a>
+		</div>
+	</div>
+</section><!-- links -->
+<!-- partials:links:end --><!-- _default:article:start -->
+<article class="layout-module post">
+	<!-- _default:article-header:start -->
+<header class="post-header">
+	<h2 class="post-header-h2">
+		<a href="/post/2018-01-01-top-20-apps-mac-2017/">
+			Le top 20 de mes Apps Mac en 2017
+		</a>
+	</h2>
+  
+  <div class="post-header-meta">
+		
+	    <time class="post-header-meta-published" datetime='2018-01-01'>
+				2018-01-01
+			</time>
+		
+		
+		
+	</div><!-- meta -->
+	<div class="pills">
+		
+		
+			<span class="pill pill-category">
+				<a href="/categories/technomagie/">
+					Technomagie
+				</a>
+			</span>
+		
+			<span class="pill pill-category">
+				<a href="/categories/mac/">
+					Mac
+				</a>
+			</span>
+		
+		
+		
+		
+	</div>
+
+</header>
+<!-- _default:article-header:end -->
+
+	<div class="post-content">
+		<p>C&rsquo;est parfois difficile de savoir exactement quelles sont les applications que l&rsquo;on utilise le plus souvent. Cependant depuis le milieu de l&rsquo;année dernière j&rsquo;utilise Timing (voir en position 9) pour suivre exactement le nombre d&rsquo;heures à facturer à mes clients. Je peux donc vous donner avec assez de précision le top 20 des applications Mac que j&rsquo;ai le plus utilisé entre juillet et décembre 2017, la numéro 1 étant la plus utilisée.</p>
+<p><strong>20. Skype</strong>. La statistique est un peu faussée car Skype fonctionne souvent en arrière-plan et j&rsquo;ai un document ou une page web ouverte au premier plan. Le temps est donc compté pour la page web ou le document. Cependant Skype reste effectivement l&rsquo;application de vidéoconférence que j&rsquo;utilise le plus, car pratiquement tout le monde sait s&rsquo;en servir.</p>
+<p><strong>19. S-Gear</strong>. C&rsquo;est l&rsquo;ampli virtuel que j&rsquo;utilise lorsque je joue de la guitare électrique. Jouant assez peu, je suis étonné qu&rsquo;elle apparaisse dans le top 20.</p>
+<p><strong>18. Espresso</strong>. L&rsquo;éditeur de sites que j&rsquo;utilise pour éditer le code des sites web, principalement pierremorsa.com et ideasonstage.com.</p>
+<p><strong>17. iTunes</strong>. Comme Skype, iTunes fonctionne en tâche de fond et son utilisation est forcément sous-estimée. Sinon je pense que ce serait l&rsquo;application numéro 1 de la liste.</p>
+<p><strong>16. Microsoft Word</strong>. Word reste le traitement de texte de référence pour échanger des documents avec mes clients. Mais je préfère nettement utiliser une application légère comme IA Writer pour écrire (voir position 3).</p>
+<p><strong>15. FileMaker Pro</strong>. Principalement pour gérer la base de données de mon entreprise. Cependant FileMaker Pro commence à montrer son âge, et c&rsquo;est vrai que depuis le début de la société des solutions de CRM Web abordables sont apparues. De plus la nouvelle politique de licences de Filemaker ne me plaît pas du tout.</p>
+<p><strong>14. Calendar</strong>. Pour gérer mes rendez-vous. J&rsquo;ai utilisé Fantastical un moment, mais j&rsquo;ai été découragé par le prix de la mise à jour vers la version 2.</p>
+<p><strong>13. Affinity Designer</strong>. Ce programme me sert à créer des documents à imprimer ou des infographies lorsque je ne peux pas les créer directement dans PowerPoint. La seule fonctionnalité qui me manque par rapport à Illustrator est la possibilité de définir un calque pour imprimer du « blanc de soutien ».</p>
+<p><strong>12. Affinity Photo</strong>. Complément parfait d&rsquo;Affinity Designer, je m&rsquo;en sers pour détourer les photos et effectuer des retouches ou des montages.</p>
+<p><strong>11. Keynote</strong>. Si PowerPoint est l&rsquo;application que j&rsquo;utilise pour créer des présentations pour mes clients, mes propres présentations sont encore sous Keynote pour des raisons historiques. Cependant vu la direction prise par Apple j&rsquo;utilise de moins en moins Keynote.</p>
+<p><strong>10. Slack</strong>. Pour communiquer avec le reste de mon équipe. (J&rsquo;ai compté le temps total passé sur Slack, App + Safari).</p>
+<p><strong>9. Timing</strong>. C&rsquo;est l&rsquo;application de suivi du temps passé qui me permet de connaître exactement le temps passé sur une tâche à facturer à un client. Et accessoirement celle qui me permet de vous donner ces statistiques.</p>
+<p><strong>8. Script Debugger</strong>. Le meilleur éditeur AppleScript de la planète !</p>
+<p><strong>7. Mail</strong>. Au fil des années j&rsquo;ai essayé des tas de clients email différents, mais je reviens toujours à Apple Mail. J&rsquo;y ai cependant ajouté le plugin « Mail Act-On » qui me permet de créer des modèles d&rsquo;email, des raccourcis et de fixer une heure d&rsquo;envoi pour les emails.</p>
+<p><strong>6. OmniFocus</strong>. Le gestionnaire de tâches à la sauce GTD que j&rsquo;utilise depuis plusieurs années.</p>
+<p><strong>5. Keyboard Maestro</strong>. Le programme qui me sert à automatiser les tâches répétitives.</p>
+<p><strong>4. Finder</strong>. Pour gérer les fichiers. Probablement l&rsquo;application la plus emblématique du manque de véritable intérêt d&rsquo;Apple pour le Mac. Si vous regardez le Finder de Mac OS X 1.0 et le Finder de macOS High Sierra, vous verrez à quel point il y a eu peu de progrès de l&rsquo;interface. Fixer la taille des colonnes est toujours aussi bordélique. Les utilisateurs lambda sont toujours aussi perdus dans la hiérarchie des éléments.</p>
+<p><strong>3. IA Writer</strong>. C&rsquo;est le programme que j&rsquo;utilise pour écrire, en particulier les articles de ce blog. Il est simple et sans fioritures, et c&rsquo;est exactement ce que j&rsquo;apprécie.</p>
+<p><strong>2. Microsoft PowerPoint</strong>. Par la force de mon métier, c&rsquo;est le programme que j&rsquo;utilise tout le temps.</p>
+<p><strong>1. Safari</strong>. De nos jours, qu&rsquo;est-ce qu&rsquo;on ne fait pas dans un browser ?</p>
+<p>Je n&rsquo;ai volontairement pas donné de liens directs vers les sites des éditeurs car je ne voulais pas que cela ressemble à une incitation à l&rsquo;achat, ce n&rsquo;est pas l&rsquo;objectif. Je veux également donner une mention honorable à certains programmes qui n&rsquo;apparaissent pas dans cette liste car ils sont soit automatisés, soit en tâche de fond, mais je les utilise tous les jours :</p>
+<p><strong>Amphetamine</strong>. Un petit programme qui empêche le Mac de passer en veille ou d&rsquo;éteindre l&rsquo;écran. Très pratique lorsqu&rsquo;on présente.</p>
+<p><strong>Fake</strong>. C&rsquo;est un browser web basé sur Webkit comme Safari, mais qui permet d&rsquo;automatiser certaines actions.</p>
+<p><strong>Chronosync</strong>. Le programme qui me sert à sauvegarder mes données en plus de Time Machine. Fiable, puissant mais parfois un peu compliqué à configurer.</p>
+<p><strong>Little Snitch</strong>. Le meilleur firewall pour Mac.</p>
+<p><strong>Cryptomator</strong>. Pour ajouter une couche de sécurité aux documents sauvegardés dans le Cloud.</p>
+<p><strong>Viscosity</strong>. Un programme qui gère OpenVPN.</p>
+<p><strong>Quicksilver</strong>. Le lanceur d&rsquo;applications que j&rsquo;utilise depuis très, très longtemps. Je me suis habitué à son fonctionnement particulier depuis sa toute première version. J&rsquo;ai essayé Launchbar et Alfred, mais je suis toujours revenu à Quicksilver.</p>
+
+    </div>
+ 	<div class="post-related">
+	
+	
+		<h3>Articles liés</h3>
+		<ul>
+			
+			<li><a href="/post/2021-07-19-changer-la-sortie-audio-depuis-la-ligne-de-commande-sur-macos/">Changer la sortie audio depuis la ligne de commande sur macOS</a></li>
+			
+			<li><a href="/post/2020-06-01-creer-automatiquement-des-dossiers-par-jour/">Créer automatiquement des dossiers par jour</a></li>
+			
+			<li><a href="/post/2020-05-18-imprimer-un-paquet-de-documents-sur-macos/">La façon la plus simple d’imprimer un paquet de documents sur macOS</a></li>
+			
+			<li><a href="/mac-automation/omnifocus-action-pack-for-keyboard-maestro/">OmniFocus Action Pack for Keyboard Maestro</a></li>
+			
+			<li><a href="/post/2020-04-20-omnifocus-action-pack-une-liste-d-actions-pour-automatiser-omnifocus-avec-keyboard-maestro/">OmniFocus Action Pack : une liste d’actions pour automatiser OmniFocus avec Keyboard Maestro</a></li>
+			
+		</ul>
+	
+	</div>
+</article>
+<!-- _default:article:end -->
+<!-- _default:article:start -->
+<article class="layout-module post">
+	<!-- _default:article-header:start -->
+<header class="post-header">
+	<h2 class="post-header-h2">
+		<a href="/post/2018-01-08-comment-eliminer-deplacements-involontaires-quand-on-p-parle-en-public/">
+			Comment arrêter de bouger sans arrêt lorsqu&rsquo;on parle en public
+		</a>
+	</h2>
+  
+  <div class="post-header-meta">
+		
+	    <time class="post-header-meta-published" datetime='2018-01-08'>
+				2018-01-08
+			</time>
+		
+		
+		
+	</div><!-- meta -->
+	<div class="pills">
+		
+		
+			<span class="pill pill-category">
+				<a href="/categories/pr%C3%A9senter-en-public/">
+					Présenter en public
+				</a>
+			</span>
+		
+			<span class="pill pill-category">
+				<a href="/categories/art-oratoire/">
+					Art Oratoire
+				</a>
+			</span>
+		
+		
+		
+		
+	</div>
+
+</header>
+<!-- _default:article-header:end -->
+
+	<div class="post-content">
+		<p>Lorsqu&rsquo;on présente, il y a deux types de mouvements. Il y a les mouvements que l&rsquo;on fait avec intention, qui sont cohérents avec notre posture et notre discours. Et il y a les mouvements involontaires, qui sont une action de dérivation pour gérer notre stress, et qui parasitent la communication. Un de ces mouvements parasites est le « piétinement ». Le présentateur bouge sur place, il se balance d&rsquo;un pied sur l&rsquo;autre, d&rsquo;avant en arrière. Il bouge sans arrêt, mais sans jamais aller nulle part. Je vais vous expliquer aujourd&rsquo;hui un exercice très simple pour résoudre ce problème.</p>
+<p>Avant tout, il faut se rendre compte que l&rsquo;on a ce problème. En effet de nombreux orateurs ne sont même pas conscients qu&rsquo;il bougent sans cesse sur place. La première action est donc de vous filmer pendant quelques minutes avec la caméra de votre smartphone ou autre, puis de vérifier comment vous vous déplacez. Si vous bougez sur place, je vous conseille de faire l&rsquo;exercice suivant, tout simple et ludique.</p>
+<p>Achetez un journal traditionnel, avec les grandes pages non attachées, style Le Monde. Non seulement vous allez soutenir la presse, mais en plus nous allons en avoir besoin pour l&rsquo;exercice. Prenez quelques pages et utilisez-les pour recouvrir le sol là où vous vous tenez pour présenter. Maintenant, placez-vous sur les feuilles de journal, et entraînez-vous à parler. Dès que vous allez bouger vous allez entendre le bruit du journal sous vos pieds, ce qui va vous forcer à vous stabiliser !</p>
+<p>Cet exercice ludique va vous aider à vous débarrasser des déplacements involontaires. N&rsquo;hésitez pas à continuer à pratiquer les déplacements volontaires, cohérents pour augmenter votre présence sur scène. N&rsquo;oubliez pas non plus de travailler le regard, qui est un point d&rsquo;ancrage très important.</p>
+
+    </div>
+ 	<div class="post-related">
+	
+	
+		<h3>Articles liés</h3>
+		<ul>
+			
+			<li><a href="/post/2021-11-01-facebook-devient-meta/">Facebook devient Meta</a></li>
+			
+			<li><a href="/post/2021-10-25-science-vs-methode-scientifique/">Science vs méthode scientifique</a></li>
+			
+			<li><a href="/post/2021-10-18-comment-trouver-le-numero-du-service-client-orange-pro/">Comment trouver le numéro du service client Orange Pro</a></li>
+			
+			<li><a href="/post/2020-07-20-definir-un-raccourci-clavier-pour-couper-le-micro-dans-zoom/">Définir un raccourci clavier pour couper le micro dans Zoom</a></li>
+			
+			<li><a href="/post/2020-01-20-guide-de-la-prise-de-parole-en-public/">Guide de la prise de parole en public</a></li>
+			
+		</ul>
+	
+	</div>
+</article>
+<!-- _default:article:end -->
+<!-- _default:article:start -->
+<article class="layout-module post">
+	<!-- _default:article-header:start -->
+<header class="post-header">
+	<h2 class="post-header-h2">
+		<a href="/post/2018-01-15-obsolescence-programmee-ou-naturelle/">
+			Obsolescence programmée ou naturelle ?
+		</a>
+	</h2>
+  
+  <div class="post-header-meta">
+		
+	    <time class="post-header-meta-published" datetime='2018-01-15'>
+				2018-01-15
+			</time>
+		
+		
+		
+	</div><!-- meta -->
+	<div class="pills">
+		
+		
+			<span class="pill pill-category">
+				<a href="/categories/opinions/">
+					Opinions
+				</a>
+			</span>
+		
+		
+		
+		
+	</div>
+
+</header>
+<!-- _default:article-header:end -->
+
+	<div class="post-content">
+		<p>Si vous avez un appareil qui résiste au temps et qui conserve son utilité au fil des années, c&rsquo;est génial. C&rsquo;est qu&rsquo;il a été bien conçu&hellip; ou qu&rsquo;il n&rsquo;y a aucune innovation dans son domaine. Exemple : mes parents ont un aspirateur Nilfisk qui a plus de 40 ans. Je crois qu&rsquo;il a été fabriqué alors que je n&rsquo;étais pas encore né. Il fonctionne encore, et il fonctionnera encore après moi. Il est construit comme un tank, en acier inoxydable, et le tuyau est fabriqué dans une sorte de tissu hyper résistant. Mais sa puissance est anémique par rapport aux aspirateurs récents.</p>
+<p>Si votre appareil tombe en panne ou casse après quelques utilisations, ce n&rsquo;est pas de l&rsquo;obsolescence programmée. C&rsquo;est juste une grosse merde. Qui ne vous donnera pas envie de racheter un appareil de la même marque. On fabriquait déjà plein de merdes il y a 100 ans. C&rsquo;est d&rsquo;ailleurs une des raisons pour lesquelles parmi les objets de votre quotidien si peu sont anciens. C&rsquo;est juste que ceux qui ont survécu étaient d&rsquo;une qualité exceptionnelle et on conservé leur utilité au fil du temps. Les autres ont fini à la poubelle. Exemple : l&rsquo;aspirateur que j&rsquo;ai acheté il y a quelque années. Il était léger, performant et sans sac. Mais après un an il tombait déjà en ruine. Les pièces en plastique étaient bien trop fragiles.</p>
+<p>Si vous abandonnez un appareil car vous ne l&rsquo;utilisez plus, c&rsquo;est de l&rsquo;obsolescence naturelle. Les objets deviennent obsolètes d&rsquo;eux-mêmes parce que le monde change. Exemple : le lecteur de DVD. Le pot de chambre. Ces objets deviennent des vieilleries. Libre à vous de continuer à utiliser un pot de chambre parce que vous pensez que les industriels des toilettes complotent contre vous.</p>
+<p>Si vous abandonnez un objet parce que vous ne l&rsquo;aimez plus, c&rsquo;est de l&rsquo;obsolescence naturelle. Je m&rsquo;explique. Lorsque vous jetez un pantalon en bon état parce que la mode a changé, le pantalon a perdu sa fonction de « marqueur social ». Vous changez de pantalon de peur de ne plus avoir la reconnaissance sociale qui y est associée. Oui je sais, c&rsquo;est con. Si vous utilisez un objet obsolète pour le plaisir c&rsquo;est de la nostalgie.</p>
+<p>Si vous abandonnez un objet parce que il y en a un nouveau mieux plus super qui est sorti, c&rsquo;est de l&rsquo;obsolescence naturelle. Exemple : l&rsquo;iPhone. Freiner ce genre d&rsquo;obsolescence, c&rsquo;est ralentir le progrès. Ça n&rsquo;a aucun sens. Tôt ou tard un concurrent innovera et passera devant. La nature a horreur du statu quo.</p>
+<p>Si vous jetez un objet parce qu&rsquo;il a perdu son utilité de lui-même au fil du temps, c&rsquo;est de l&rsquo;obsolescence naturelle. Exemple : les produits frais.</p>
+<p>Si vous abandonnez un objet parce qu&rsquo;il ne fonctionne plus à cause d&rsquo;une durée de vie volontairement limitée par le fabricant alors c&rsquo;est de l&rsquo;obsolescence programmée. Exemple : les cartouches d&rsquo;encre de certaines imprimantes, qui contiennent encore de l&rsquo;encre parfaitement fonctionnelle mais que l&rsquo;imprimante refuse d&rsquo;utiliser sous prétexte qu&rsquo;elle a dépassé une date limite.</p>
+<p>Ironie de l&rsquo;histoire, Nous sommes le meilleur exemple d&rsquo;obsolescence programmée. Sans notre espérance de vie limitée inséparable du processus d&rsquo;évolution des espèces nous serions toujours des trucs barbotants dans une grande mare. Et nous ne serions pas en train de nous demander si l&rsquo;iPhone machin est mieux que le Galaxy truc.</p>
+<p>La véritable obsolescence programmée est plus rare que ce que l&rsquo;on croit. En général ce qu&rsquo;on prend comme une volonté de « saboter » les objets tient plutôt d&rsquo;une volonté de réduire au maximum le coût de production et donc de faire les pièces qui coûtent le moins cher possible, quitte à les rendre plus fragiles. Cela vient aussi d&rsquo;erreurs des ingénieurs qui conçoivent des appareils avec des pièces trop faibles pour supporter l&rsquo;effort demandé. Concevoir un excellent appareil prend du temps et est très difficile. Par contre pas de pitié pour les industriels qui limitent artificiellement la durée de vie de leur produit.</p>
+<p>Si j&rsquo;ai écrit ce billet c&rsquo;est parce que on arrive aujourd&rsquo;hui à des situations paradoxales. Par exemple certains fabricants de smartphones (alias mobiles multifonctions si vous avez du temps à perdre) ne proposent aucune mise à jour de leurs appareils après leur fabrication. À l&rsquo;inverse Apple est le fabricant qui offre les mises à jour régulières les plus longues et les plus fiables de l&rsquo;industrie, y compris pour des modèles d&rsquo;iPhone datant d&rsquo;il y a plusieurs années. On a donc d&rsquo;un côté des fabricants qui n&rsquo;offrent aucune mise à jour pour garantir l&rsquo;avenir de leurs terminaux ; rapidement ces smartphones se retrouvent exposés aux dernières failles de sécurité et incapables de faire tourner les nouvelles versions des Apps. De l&rsquo;autre côté on a un fabricant qui assure les mises à jour régulières de ses appareils pendant des années, les protégeant contre les dernières failles de sécurité et offrant pratiquement toutes les dernières évolutions. Pourtant des associations et même de nombreux « journalistes » tapent sur Apple sans prendre le temps de réfléchir sur ce qui se passe chez les autres fabricants de smartphones.</p>
+<p>Je ne veux pas faire non plus l&rsquo;apologie d&rsquo;Apple, qui n&rsquo;est pas exempte de reproches. Il y a le problème du ralentissement des téléphones lié au vieillissement des batteries. La façon dont Apple a procédé, en douce, est impardonnable. Et il y a un autre point qui sème le doute : même avant l&rsquo;introduction du ralentissement pour préserver la batterie, les iPhones avaient tendance à ralentir au fil des nouvelles versions du système. Même si je crois qu&rsquo;il s&rsquo;agit plus d&rsquo;une conséquence inévitable liée à la complexification du système plus que d&rsquo;une volonté délibérée de ralentir les terminaux, maintenant que la controverse est lancée Apple doit faire un effort de ce côté et garantir une excellente expérience utilisateur sur les anciens modèles d&rsquo;iPhone. Et oui, je trouve que le prix des iPhones est trop élevé ; si je devais acheter un appareil aujourd&rsquo;hui je prendrais un iPhone SE (ou son remplaçant) plutôt qu&rsquo;un 6s 16GB, simplement parce que je trouve que mettre autant d&rsquo;argent dans un smartphone n&rsquo;est pas raisonnable.</p>
+<p>Mais sérieux, les journalistes, les associations, regardez du côté des produits des concurrents. Faites une étude comparative sérieuse. Allez, je vous donne quelques critères significatifs :</p>
+<ul>
+<li>Autonomie du téléphone après 1 an</li>
+<li>Niveau de « réparabilité » de l&rsquo;appareil, tel qu&rsquo;évalué par exemple par iFixIt</li>
+<li>Nombre de problèmes par téléphone</li>
+<li>Durée de vie totale (car beaucoup d&rsquo;iPhones ont une seconde vie après leur premier propriétaire !)</li>
+<li>Nombre de mises à jour reçues après la commercialisation</li>
+<li>Efforts de recyclage des produits</li>
+<li>Mesures pour vérifier les conditions des employés dans les usines</li>
+</ul>
+<p>Vous verrez qu&rsquo;Apple n&rsquo;est pas un bon élève partout. Mais vous verrez aussi que Apple n&rsquo;est probablement pas le plus mauvais des fabricants de smartphones.</p>
+
+    </div>
+ 	<div class="post-related">
+	
+	
+		<h3>Articles liés</h3>
+		<ul>
+			
+			<li><a href="/post/2019-01-21-tf1-france-televisions-m6-s-associent-contre-netflix/">TF1, France Télévisions et M6 s’associent pour lutter contre Netflix...</a></li>
+			
+			<li><a href="/post/2018-10-29-le-client-est-roi/">Le client est roi...</a></li>
+			
+			<li><a href="/post/2018-10-22-difference-entre-un-mauvais-slide-et-un-sac-poubelle/">Quelle est la différence entre un mauvais slide et un sac poubelle ?</a></li>
+			
+			<li><a href="/post/2018-09-24-la-verite-c-est-chiant/">La réalité, c&#39;est chiant.</a></li>
+			
+			<li><a href="/post/2018-07-23-le-probleme-de-l-araignee/">Le problème de l&#39;araignée</a></li>
+			
+		</ul>
+	
+	</div>
+</article>
+<!-- _default:article:end -->
+<!-- _default:article:start -->
+<article class="layout-module post">
+	<!-- _default:article-header:start -->
+<header class="post-header">
+	<h2 class="post-header-h2">
+		<a href="/post/2018-01-22-plancher-bas-plafond-haut/">
+			Plancher bas, plafond haut
+		</a>
+	</h2>
+  
+  <div class="post-header-meta">
+		
+	    <time class="post-header-meta-published" datetime='2018-01-22'>
+				2018-01-22
+			</time>
+		
+		
+		
+	</div><!-- meta -->
+	<div class="pills">
+		
+		
+			<span class="pill pill-category">
+				<a href="/categories/pr%C3%A9senter-en-public/">
+					Présenter en public
+				</a>
+			</span>
+		
+			<span class="pill pill-category">
+				<a href="/categories/opinions/">
+					Opinions
+				</a>
+			</span>
+		
+		
+		
+		
+	</div>
+
+</header>
+<!-- _default:article-header:end -->
+
+	<div class="post-content">
+		<p>Un concept que j&rsquo;ai découvert lors de mes pérégrinations est la notion de « plancher bas, plafond haut ». C&rsquo;est une façon de concevoir les activités pour qu&rsquo;elles s&rsquo;adressent à un maximum de personnes.</p>
+<p>Que ce soit une tâche sur un projet, un exercice lors d&rsquo;une formation, une activité lors d&rsquo;une présentation, il est important de faire en sorte qu&rsquo;une tâche ne soit ni trop facile ni trop difficile en fonction du niveau de compétence des participants. Facile à dire, mais que faire lorsqu&rsquo;on a un groupe de participants avec des niveaux de compétence très différents ? Est-il possible de proposer des activités qui soient dans la zone d&rsquo;engagement de tous ? Oui, à condition de respecter la règle « plancher bas, plafond haut ».</p>
+<p>Plancher bas signifie que l&rsquo;activité est accessible à tous car elle requiert un niveau de compétence minimum que tous les participants ont. Le défaut de ces activités, c&rsquo;est que les participants plus expérimentés risquent de s&rsquo;ennuyer. C&rsquo;est pourquoi l&rsquo;activité doit également être avec un plafond haut : l&rsquo;activité est conçue pour ne pas limiter l&rsquo;expression des capacités des personnes les plus compétentes.</p>
+<p>Par exemple <a href="https://www.codingandbricks.com">les ateliers pour adultes à base de LEGO proposés par Coding &amp; Bricks</a> respectent tous le principe de plancher bas, plafond haut :</p>
+<ul>
+<li>Plancher bas, car la simplicité d&rsquo;utilisation de la brique LEGO fait que tout le monde peut construire quelque chose de satisfaisant. Ce n&rsquo;est pas le cas avec d&rsquo;autres systèmes de construction qui demandent un niveau de compétence plus élevé et où toute une partie des participants deviennent démotivés avant même d&rsquo;avoir commencé.</li>
+<li>Plafond haut, car les personnes plus compétentes peuvent créer des constructions avec comme seule limite leur imagination. Ce n&rsquo;est pas pour rien que les LEGO sont autant aimés par les adultes ; pour eux ce n&rsquo;est pas un jouet, c&rsquo;est un outil d&rsquo;expression de leur créativité à part entière.</li>
+</ul>
+<p>À l&rsquo;inverse un QCM avec des questions de difficulté égale du début à la fin est une activité avec un écart entre le plancher et le plafond très faible. Peu de participants vont se sentir motivés par une telle activité. Les choses peuvent être améliorées en proposant un QCM de difficulté graduelle, mais ce genre d&rsquo;activité reste très contraignante et peu engageante.</p>
+<p>Dans un atelier de storytelling je vais proposer une activité où les participants vont devoir construire une histoire à partir d&rsquo;éléments prédéfinis (mes briques à moi). Les éléments prédéfinis aident les participants à se focaliser sur la tâche, et évitent l&rsquo;angoisse de la page blanche. C&rsquo;est une tâche accessible à tous, mais lors de laquelle tout le monde peut pleinement s&rsquo;exprimer, quel que soit son niveau de compétence. À l&rsquo;inverse un exercice lors duquel les participants doivent remettre les éléments d&rsquo;une histoire dans le bon ordre est un exercice avec une solution prédéterminée. Il y a peu d&rsquo;espace entre le plancher et le plafond.</p>
+<p>Il n&rsquo;est bien sûr pas toujours possible de proposer des activités plancher bas, plafond haut. Par exemple il est illusoire de croire que des experts en trajectoire orbitale vont pouvoir se satisfaire de calculs simples. L&rsquo;astuce est alors de découper l&rsquo;activité en plusieurs étapes : une première étape accessible à tous, puis d&rsquo;autres étapes dont la difficulté augmente graduellement. Ou mieux encore de segmenter les ateliers en fonction du niveau de base des participants.</p>
+<p>Il est recommandé de donner le même temps à tous pour compléter l&rsquo;activité, experts et non experts. Les non experts utiliseront le temps disponible pour résoudre la première étape, alors que les experts vont réaliser la première étape rapidement et passer aux étapes plus difficiles. De cette manière chacun pourra évoluer dans sa zone d&rsquo;engagement optimale.</p>
+<p>Si certaines personnes acceptent de se poser en « mentor » pour les autres participants, il peut être utile de les mélanger aux groupes. Sinon il vaut mieux faire des groupes homogènes, sous peine de voir certains participants être frustrés de ne pouvoir être dans leur zone d&rsquo;engagement. Vous pouvez penser que cela empêchera le partage de connaissance de l&rsquo;expert vers le débutant, mais la réalité est que l&rsquo;expert sera frustré et que le débutant sera démotivé.</p>
+<p>Enfin il est important de donner un feedback constant à tous les groupes. Autrement dit, il ne faut pas féliciter l&rsquo;expert et réprimander le débutant. Ce qui doit être reconnu c&rsquo;est l&rsquo;effort mis dans la progression.</p>
+
+    </div>
+ 	<div class="post-related">
+	
+	
+		<h3>Articles liés</h3>
+		<ul>
+			
+			<li><a href="/post/2018-10-22-difference-entre-un-mauvais-slide-et-un-sac-poubelle/">Quelle est la différence entre un mauvais slide et un sac poubelle ?</a></li>
+			
+			<li><a href="/post/2017-11-27-storytelling-is-dead/">Le storytelling est... mort ?</a></li>
+			
+			<li><a href="/post/2021-11-01-facebook-devient-meta/">Facebook devient Meta</a></li>
+			
+			<li><a href="/post/2021-10-25-science-vs-methode-scientifique/">Science vs méthode scientifique</a></li>
+			
+			<li><a href="/post/2021-10-18-comment-trouver-le-numero-du-service-client-orange-pro/">Comment trouver le numéro du service client Orange Pro</a></li>
+			
+		</ul>
+	
+	</div>
+</article>
+<!-- _default:article:end -->
+
+
+<!-- partials:pagination -->
+<nav id="navigation" class="flex-navigation">
+	
+  	<a href="/post/page/47/" class="button">Plus récents</a>
+	
+  
+  	<a href="/post/page/49/" class="button">Plus anciens</a>
+  
+</nav>
+
+
+<!-- partials:article-list.html:end -->
+
+			</main>
+			
+
+<!-- partials:aside:start -->
+
+<aside class="aside-flex">
+
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="blog" class="aside-module">
+					
+					
+					
+						<a href="/" class="button width-full">
+							
+		        		BLOG
+							
+						</a>
+					
+				</section>
+			
+		
+		
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="howitisgoing" class="aside-module">
+					
+					
+					
+						<a href="/howitisgoing/" class="button width-full">
+							
+		        		HOW IT IS GOING PROJECT
+							
+						</a>
+					
+				</section>
+			
+		
+		
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="mac-automation" class="aside-module">
+					
+					
+					
+						<a href="/mac-automation/" class="button width-full">
+							
+		        		MAC AUTOMATION TOOLS
+							
+						</a>
+					
+				</section>
+			
+		
+		
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="about" class="aside-module">
+					
+					
+					
+						<a href="/about/" class="button width-full">
+							
+		        		À PROPOS
+							
+						</a>
+					
+				</section>
+			
+		
+		
+	
+		
+			
+			
+				
+				<!-- links -->
+				<section id="links" class="aside-module hide-lg">
+					<header>
+					  <h2 class="aside-module-h2 align-center">Les sites que je soutiens</p>
+					</header>
+					<div class="links-flex">
+						
+							<div class="link">
+								<a href="https://www.codingandbricks.com/" class="link-a">
+					    		<img src="/pictures/links/codingandbricks.jpg" class="link-img">
+					    		<p class="link-p">Ateliers LEGO Serious Play® pour les entreprises</p>
+					    	</a>
+							</div>
+						
+							<div class="link">
+								<a href="https://www.ideasonstage.com/" class="link-a">
+					    		<img src="/pictures/links/ideasonstage.jpg" class="link-img">
+					    		<p class="link-p">Le spécialiste des présentations en public</p>
+					    	</a>
+							</div>
+						
+					</div>
+				</section>
+
+			
+		
+		
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="mastodon" class="aside-module">
+					
+					
+					
+						<a href="https://mastodon.social/@pmorsa" class="button width-full">
+							
+								<img src="/pictures/main/wordmark-black-text.svg" alt="MASTODON" class="piclight" />
+								
+									<img src="/pictures/main/wordmark-white-text.svg" alt="MASTODON" class="picdark" />
+								
+							
+						</a>
+					
+				</section>
+			
+		
+		
+	
+		
+			
+				
+				<!-- rss -->
+				<section id="rss" class="aside-module blurb">
+					
+					<a rel="alternate" type="application/rss+xml" href="http://localhost:1313/post/index.xml" title="RSS" class="button width-full">S&rsquo;abonner au fil RSS</a>
+					
+				</section>
+		
+			
+		
+		
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="contact" class="aside-module">
+					
+					
+					
+						<a href="mailto:pier%72e.%6Dors%61@pierremorsa.com" class="button width-full">
+							
+		        		CONTACT
+							
+						</a>
+					
+				</section>
+			
+		
+		
+	
+		
+			
+				
+				<!-- list of taxonomy terms -->
+				
+				<section id="categories" class="aside-module">
+					<h2 class="aside-module-h2">BLOG CATEGORIES</h2>
+				  <ul class="aside-taxonomy-ul">
+						
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/art-oratoire/">Art Oratoire</a>
+								</span>
+								<span style="float:right;">1</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/cr%C3%A9ativit%C3%A9/">Créativité</a>
+								</span>
+								<span style="float:right;">1</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/gtd-getting-things-done/">GTD Getting Things Done</a>
+								</span>
+								<span style="float:right;">44</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/hugo/">Hugo</a>
+								</span>
+								<span style="float:right;">9</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/ideas-on-stage/">Ideas on Stage</a>
+								</span>
+								<span style="float:right;">1</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/internet/">Internet</a>
+								</span>
+								<span style="float:right;">7</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/lifehacks/">Lifehacks</a>
+								</span>
+								<span style="float:right;">68</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/mac/">Mac</a>
+								</span>
+								<span style="float:right;">24</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/nomade-digital/">Nomade Digital</a>
+								</span>
+								<span style="float:right;">5</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/nouvelles/">Nouvelles</a>
+								</span>
+								<span style="float:right;">48</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/opinions/">Opinions</a>
+								</span>
+								<span style="float:right;">16</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/philosophie-de-blog/">Philosophie De Blog</a>
+								</span>
+								<span style="float:right;">122</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/pr%C3%A9senter-en-public/">Présenter en Public</a>
+								</span>
+								<span style="float:right;">68</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/startup/">Startup</a>
+								</span>
+								<span style="float:right;">15</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/storytelling/">Storytelling</a>
+								</span>
+								<span style="float:right;">8</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/technomagie/">Technomagie</a>
+								</span>
+								<span style="float:right;">87</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/tedx/">TEDx</a>
+								</span>
+								<span style="float:right;">12</span>
+							</li>
+					   
+			    </ul>
+				</section>
+								
+			
+		
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="copyright" class="aside-module">
+					
+			    	<h2 class="aside-module-h2">COPYLEFT ET ZÉRO COOKIES</h2>
+					
+					
+			    	<p class="aside-module-p">Site garanti sans cookies et sans JavaScript. Le contenu est en copie libre : vous pouvez tout copier et réutiliser librement.</p>
+					
+					
+				</section>
+			
+		
+		
+	
+	<section id="last-updated" class="aside-module">
+		<h2 class="aside-module-h2">Dernière mise à jour</h2>
+		<p class="aside-module-p">2024-10-12 20:39 CEST
+	</section>
+	
+</aside>
+
+<!-- partials:aside:end -->
+		</div>
+	</body>
+	<!-- _default:list.html:end -->
+</html>
+<!-- _default:baseof.html:end -->

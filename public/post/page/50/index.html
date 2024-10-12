@@ -1,0 +1,874 @@
+<!-- _default:baseof.html:start -->
+<!DOCTYPE HTML>
+<html>
+	
+		
+<!-- partials:head:start -->
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	
+	
+	
+	<meta name="generator" content="Hugo 0.128.0">
+	
+	
+		
+		
+			
+				<title>ce bon vieux blog</title>
+			
+			
+				<meta name="description" content="Réflexions de comptoir" />
+			
+			
+				<!-- language taken from SITE default language parameter  -->
+				<meta http-equiv="Content-Language" content="fr" />
+			
+		
+	
+
+	<link rel="me" href="https://mastodon.social/@pmorsa" />
+	<link rel="me" href="https://www.ideasonstage.com/" />
+
+	<link rel="apple-touch-icon-precomposed" href="/favicon/apple-touch-icon-precomposed.png" />
+	<link rel="icon" href="/favicon/favicon.png" />
+	<link rel="stylesheet" href="/main.min.css" /><link rel="alternate" type="application/rss+xml" href="http://localhost:1313/post/index.xml" title="Pierre Morsa" />
+</head>	
+<!-- partials:head:end -->
+
+	
+	
+	<!-- _default:list.html:start -->
+  <body>
+		
+<!-- partials:topbar:start -->
+<section id="topbar" class="topbar-style">
+		<a href="/">
+			<img src="/pictures/main/pierre-morsa-avatar.png" class="intro-circle" width="48" alt="Pierre Morsa" />
+		</a>
+	
+		
+		
+		
+			
+				<h1>
+					<a href="/">
+						ce bon vieux blog
+					</a>
+				</h1>
+			
+			
+				<p class="topbar-style">
+					Réflexions de comptoir
+				</p>
+			
+		
+	
+
+</section>
+
+<!-- partials:topbar:end -->
+
+    <div class="grandparent-flex">
+			<main class="main-flex">
+				<!-- partials:article-list.html:start -->
+
+
+
+	
+
+
+<!-- _default:article:start -->
+<article class="layout-module post">
+	<!-- _default:article-header:start -->
+<header class="post-header">
+	<h2 class="post-header-h2">
+		<a href="/post/2018-03-05-script-extraire-images-photos-videos-fichire-powerpoint-pptx/">
+			Un script pour extraire les images, photos et vidéos d&rsquo;un fichier PowerPoint
+		</a>
+	</h2>
+  
+  <div class="post-header-meta">
+		
+	    <time class="post-header-meta-published" datetime='2018-03-05'>
+				2018-03-05
+			</time>
+		
+		
+		
+	</div><!-- meta -->
+	<div class="pills">
+		
+		
+			<span class="pill pill-category">
+				<a href="/categories/lifehacks/">
+					Lifehacks
+				</a>
+			</span>
+		
+			<span class="pill pill-category">
+				<a href="/categories/technomagie/">
+					Technomagie
+				</a>
+			</span>
+		
+			<span class="pill pill-category">
+				<a href="/categories/mac/">
+					Mac
+				</a>
+			</span>
+		
+		
+		
+		
+	</div>
+
+</header>
+<!-- _default:article-header:end -->
+
+	<div class="post-content">
+		<p>Vous vous souvenez peut-être du truc que je donnais dans un ancien billet pour extraire les images, les photos et les vidéos d’un fichier PowerPoint ? Et bien si vous possédez un Mac vous avez de la chance : j’ai écrit un script AppleScript pour automatiser la tâche. Si vous êtes sur Windows, vous pouvez toujours utiliser la technique manuelle.</p>
+<p>Si vous vous intéressez à AppleScript, j’ai beaucoup commenté le code pour vous aider à comprendre comment le script fonctionne. J’aurais pu le fournir sous forme de miniapplication, mais comme je ne suis pas enregistré comme développeur chez Apple je pense que GeteKeeper va en bloquer l’exécution. Et puis je vous déconseille d’exécuter des applications trouvées sur n’importe quel blog, par exemple le mien.</p>
+<p>Même vous n’avez pas d’expérience avec AppleScript, ce n’est pas compliqué :</p>
+<ul>
+<li><a href="/files/extract-media-from-powerpoint.scpt">Téléchargez le script en cliquant ici.</a></li>
+<li>Ouvrez le script dans l’éditeur de script en double-cliquant dessus.</li>
+<li>Appuyez sur le bouton « Run » (désolé je ne connais pas son nom en français, mais c’est le gros bouton avec une flèche).</li>
+<li>Une boîte de dialogue apparaît et vous demande de sélectionner la présentation dont vous voulez extraire le contenu media.</li>
+<li>Une fois la présentation sélectionnée, les fichiers sont extraits et un dossier nommé « ppt » doit apparaître au même endroit que la présentation originale. À l’intérieur se trouve un dossier media qui contient toutes les images, photos et vidéos de la présentation PowerPoint. C’est magique !</li>
+</ul>
+<p>Vous pouvez très bien transformer le script en application vous-même. Pour cela, il suffit de le sauvegarder de la manière suivante :</p>
+<ul>
+<li>Sélectionnez le menu Fichier → Exporter&hellip;</li>
+<li>Dans le format de fichier, sélectionnez Application</li>
+<li>Cliquez sur « Sauvegarder ». Et voilà, le script est devenu une application à part entière !</li>
+</ul>
+<p><img src="/pictures/2018/02/extract-media-from-powerpoint-exportas.jpg" alt="Extract Media From PowerPoint Export"></p>
+<p>Désormais il suffit de glisser-déposer la présentation PowerPoint sur l’icône de l’application pour lancer l’extraction, ou de double-cliquer sur l’application pour la lancer comme pour n’importe quelle autre.</p>
+
+    </div>
+ 	<div class="post-related">
+	
+	
+		<h3>Articles liés</h3>
+		<ul>
+			
+			<li><a href="/post/2020-06-01-creer-automatiquement-des-dossiers-par-jour/">Créer automatiquement des dossiers par jour</a></li>
+			
+			<li><a href="/post/2020-05-18-imprimer-un-paquet-de-documents-sur-macos/">La façon la plus simple d’imprimer un paquet de documents sur macOS</a></li>
+			
+			<li><a href="/post/2020-04-20-omnifocus-action-pack-une-liste-d-actions-pour-automatiser-omnifocus-avec-keyboard-maestro/">OmniFocus Action Pack : une liste d’actions pour automatiser OmniFocus avec Keyboard Maestro</a></li>
+			
+			<li><a href="/post/2019-02-25-extensions-pour-combattre-le-tracking-sur-internet/">Quelques extensions en complément de uBlock Origin</a></li>
+			
+			<li><a href="/post/2019-02-18-le-meilleur-bloqueur-de-publicite-mac/">Le meilleur bloqueur de pub sur Mac : uBlock Origin</a></li>
+			
+		</ul>
+	
+	</div>
+</article>
+<!-- _default:article:end -->
+
+		<!-- partials:links:start -->
+<section id="links" class="layout-module blurb hide-sm">
+	<header>
+	  <p class="align-center">Les sites que je soutiens</p>
+	</header>
+	<div class="links-flex">
+		<div class="link">
+			<a href="https://www.codingandbricks.com/" class="link-a">
+	    		<img src="/pictures/links/codingandbricks.jpg" class="link-img">
+	    		<p class="link-p">Ateliers LEGO Serious Play® pour les entreprises</p>
+	    	</a>
+		</div>
+		<div class="link">
+			<a href="https://www.ideasonstage.com/" class="link-a">
+	    		<img src="/pictures/links/ideasonstage.jpg" class="link-img">
+	    		<p class="link-p">Le spécialiste des présentations en public</p>
+	    	</a>
+		</div>
+	</div>
+</section><!-- links -->
+<!-- partials:links:end --><!-- _default:article:start -->
+<article class="layout-module post">
+	<!-- _default:article-header:start -->
+<header class="post-header">
+	<h2 class="post-header-h2">
+		<a href="/post/2018-03-12-que-faire-si-intervenant-derape-sur-scene/">
+			Que faire lorsqu&rsquo;un de vos intervenants dérape sur scène ?
+		</a>
+	</h2>
+  
+  <div class="post-header-meta">
+		
+	    <time class="post-header-meta-published" datetime='2018-03-12'>
+				2018-03-12
+			</time>
+		
+		
+		
+	</div><!-- meta -->
+	<div class="pills">
+		
+		
+			<span class="pill pill-category">
+				<a href="/categories/pr%C3%A9senter-en-public/">
+					Présenter en public
+				</a>
+			</span>
+		
+			<span class="pill pill-category">
+				<a href="/categories/tedx/">
+					TEDx
+				</a>
+			</span>
+		
+		
+		
+		
+	</div>
+
+</header>
+<!-- _default:article-header:end -->
+
+	<div class="post-content">
+		<p>Vous avez peut-être entendu parler de l&rsquo;incident survenu à TEDxBrussels 2018. Un des organisateurs a expulsé une intervenante de la scène par la force parce que son contenu le dérangeait. TED a réagi en publiant un communiqué officiel sur son blog et en révoquant la licence TEDx de cet organisateur. Est-ce que cet intervenant aurait dû être invité par TEDxBrussels ? Probablement pas. Mais malgré le processus de sélection tous les organisateurs de conférence TEDx s&rsquo;exposent au risque qu&rsquo;un intervenant parte complètement en live. Pas la peine de se dire « oh non moi j&rsquo;ai pris mes précautions ça ne peut pas m&rsquo;arriver ». Ça peut arriver à n&rsquo;importe qui. D&rsquo;où ma question.</p>
+<p><strong>Que faire si un intervenant dérape complètement sur scène ?</strong></p>
+<p>Dans le feu de l&rsquo;action, comment réagir ? Prenons un cas plus compliqué que celui de TEDxBrussels. Imaginez que vous invitiez quelqu&rsquo;un connu pour créer la polémique et que tout d&rsquo;un coup, sans crier gare, il commence à faire l&rsquo;apologie du terrorisme sur scène. Vous le laissez parler, en vous exposant ainsi à des poursuites judiciaires ? Vous essayez de l&rsquo;interrompre poliment, en sachant qu&rsquo;il y a de fortes chances que vous passiez pour une mauviette incapable de contrôler son évènement ? Ou vous craquez et vous l&rsquo;expulsez de force de la scène, quitte à voir votre licence TEDx révoquée ? Eh oui, prendre la bonne décision est bien plus difficile qu&rsquo;il n&rsquo;y paraît.</p>
+<p>Il n&rsquo;y a pas <strong>UNE</strong> bonne décision. Ce serait bien trop facile. Une fois la catastrophe déclenchée, il faut entrer en mode gestion de crise. Si le contenu me paraît totalement inacceptable et est clairement à l&rsquo;opposé de ce qui a été convenu, je n&rsquo;hésiterais pas à faire couper le micro et à demander fermement à l&rsquo;intervenant de quitter la scène, mais sans violence physique. S&rsquo;il refuse alors cela devient le rôle du service de sécurité ou de la police. Dans les autres cas, si l&rsquo;intervenant défend un point de vue dérangeant mais compatible avec la liberté d&rsquo;expression, je le laisserais terminer, mais en expliquant après son intervention que les idées présentées représentent le point de vue de l&rsquo;intervenant, pas les miennes.</p>
+<p>Je finirai cette réflexion en rappelant que le but de TEDx n&rsquo;est pas de défendre la liberté d&rsquo;expression. C&rsquo;est impossible. En réalité aucun d&rsquo;entre nous n&rsquo;accepte la « vraie » liberté d&rsquo;expression, la liberté d&rsquo;expression totale. Nous défendons tous uniquement une forme de « liberté d&rsquo;expression censurée », celle qui est compatible notre vision du monde, nos valeurs, notre Ego. Le vrai but de TEDx est de donner la possibilité au public de découvrir des intervenants passionnants qui ont un impact positif sur le monde.</p>
+
+    </div>
+ 	<div class="post-related">
+	
+	
+		<h3>Articles liés</h3>
+		<ul>
+			
+			<li><a href="/post/2021-11-01-facebook-devient-meta/">Facebook devient Meta</a></li>
+			
+			<li><a href="/post/2021-10-25-science-vs-methode-scientifique/">Science vs méthode scientifique</a></li>
+			
+			<li><a href="/post/2021-10-18-comment-trouver-le-numero-du-service-client-orange-pro/">Comment trouver le numéro du service client Orange Pro</a></li>
+			
+			<li><a href="/post/2019-04-01-personnalite-a-partir-noms-meubles-ikea/">Votre personnalité à partir des noms de vos meubles IKEA</a></li>
+			
+			<li><a href="/post/2018-11-05-sept-lois-de-murphy-evenement-tedx/">Les sept lois de Murphy des événements TEDx</a></li>
+			
+		</ul>
+	
+	</div>
+</article>
+<!-- _default:article:end -->
+<!-- _default:article:start -->
+<article class="layout-module post">
+	<!-- _default:article-header:start -->
+<header class="post-header">
+	<h2 class="post-header-h2">
+		<a href="/post/2018-03-19-resoudre-probleme-plugin-apple-motion/">
+			Résoudre le problème « Failed to Render » dans Apple Motion et Final Cut Pro X
+		</a>
+	</h2>
+  
+  <div class="post-header-meta">
+		
+	    <time class="post-header-meta-published" datetime='2018-03-19'>
+				2018-03-19
+			</time>
+		
+		
+		
+	</div><!-- meta -->
+	<div class="pills">
+		
+		
+			<span class="pill pill-category">
+				<a href="/categories/technomagie/">
+					Technomagie
+				</a>
+			</span>
+		
+			<span class="pill pill-category">
+				<a href="/categories/mac/">
+					Mac
+				</a>
+			</span>
+		
+		
+		
+		
+	</div>
+
+</header>
+<!-- _default:article-header:end -->
+
+	<div class="post-content">
+		<p>Mise à jour du 2018-03-31 : à priori macOS High Sierra 10.13.4 (c&rsquo;est le .4 qui est important) règle le problème. Pour vérifier quelle est votre version de macOS, il faut aller dans le menu Pomme → À propos de ce Mac&hellip;</p>
+<p>J’utilise de temps en temps Apple Motion, lorsque je dois réaliser des animations qui dépassent les capacités de PowerPoint. Un de mes plug-ins préférés est Yanobox Nodes 2. Mais la semaine dernière j’ai été confronté à un message d’erreur que je n’avais jamais eu lorsque j’ai essayé d’insérer le plug-in dans Motion : « Plugin&lt;Nodes 2&gt;: Failed To Render ».</p>
+<p><img src="/pictures/2018/03/plugin-nodes-2-failed-to-render.jpg" alt="Plugin Nodes 2 Failed To Render"></p>
+<p>La couleur de l’écran d’erreur étant particulièrement moche, pire encore que le bleu Windows, il fallait que je trouve une solution.</p>
+<p>Après vérification tous mes plug-ins externes étaient affectés par ce problème, que ce soit dans Apple Motion ou Final Cut Pro X. J’ai contacté le support de Yanobox et FX Factory, et ceux-ci m’ont donné la solution : il s’agit d’un bug introduit par High Sierra sur certains MacBook Pro. Lorsqu’on utilise l’ordinateur avec un écran externe et que l’écran du MacBook Pro est fermé (le mode « palourde » lorsque l’ordi est fermé comme un coquillage), certaines ressources nécessaires ne sont pas mises à disposition par macOS.</p>
+<p>La solution en attendant qu’Apple corrige le problème ? Ne pas utiliser le MacBook Pro en mode « clamshell » : ouvrir l’écran du MacBook Pro, quitter et redémarrer Apple Motion ou Final Cut Pro X. Le problème devrait être résolu.</p>
+
+    </div>
+ 	<div class="post-related">
+	
+	
+		<h3>Articles liés</h3>
+		<ul>
+			
+			<li><a href="/post/2021-07-19-changer-la-sortie-audio-depuis-la-ligne-de-commande-sur-macos/">Changer la sortie audio depuis la ligne de commande sur macOS</a></li>
+			
+			<li><a href="/post/2020-06-01-creer-automatiquement-des-dossiers-par-jour/">Créer automatiquement des dossiers par jour</a></li>
+			
+			<li><a href="/post/2020-05-18-imprimer-un-paquet-de-documents-sur-macos/">La façon la plus simple d’imprimer un paquet de documents sur macOS</a></li>
+			
+			<li><a href="/mac-automation/omnifocus-action-pack-for-keyboard-maestro/">OmniFocus Action Pack for Keyboard Maestro</a></li>
+			
+			<li><a href="/post/2020-04-20-omnifocus-action-pack-une-liste-d-actions-pour-automatiser-omnifocus-avec-keyboard-maestro/">OmniFocus Action Pack : une liste d’actions pour automatiser OmniFocus avec Keyboard Maestro</a></li>
+			
+		</ul>
+	
+	</div>
+</article>
+<!-- _default:article:end -->
+<!-- _default:article:start -->
+<article class="layout-module post">
+	<!-- _default:article-header:start -->
+<header class="post-header">
+	<h2 class="post-header-h2">
+		<a href="/post/2018-03-26-mini-test-powerpoint-mac-office-365-fevrier-2018/">
+			Mini test de la dernière version de PowerPoint Mac
+		</a>
+	</h2>
+  
+  <div class="post-header-meta">
+		
+	    <time class="post-header-meta-published" datetime='2018-03-26'>
+				2018-03-26
+			</time>
+		
+		
+		
+	</div><!-- meta -->
+	<div class="pills">
+		
+		
+			<span class="pill pill-category">
+				<a href="/categories/pr%C3%A9senter-en-public/">
+					Présenter en public
+				</a>
+			</span>
+		
+			<span class="pill pill-category">
+				<a href="/categories/technomagie/">
+					Technomagie
+				</a>
+			</span>
+		
+			<span class="pill pill-category">
+				<a href="/categories/mac/">
+					Mac
+				</a>
+			</span>
+		
+		
+		
+		
+	</div>
+
+</header>
+<!-- _default:article-header:end -->
+
+	<div class="post-content">
+		<p>Il y a quelques semaines, Microsoft a publié une nouvelle version de PowerPoint qui cache plus de changements qu’il n’y paraît au premier abord. Outre les nouvelles fonctionnalités visibles comme la collaboration en temps réel, PowerPoint partage désormais une bonne partie de son code avec celui de PowerPoint Windows. Quel impact dans l’utilisation quotidienne de PowerPoint ? C’est ce que je vous propose de découvrir ici non pas à travers un test complet (pour cela il faudrait déjà que tous les changements soient documentés clairement par Microsoft), mais à travers un retour d’expérience basé sur quelques semaines d’utilisation.</p>
+<h2 id="interface-cest-pareil-mais-différent">Interface : c’est pareil, mais différent.</h2>
+<p>Si vous faites bien attention, vous allez tout de suite remarquer que de subtiles choses ont changé dans l’interface. Par exemple la bordure autour des « placeholders » a changé. Au lieu des bordures grisées de la version Mac, nous avons désormais les bordures pointillées de la version Windows. Et lorsque vous sélectionnez certains objets, ce ne sont plus les poignées de sélection traditionnelles des applications Mac qui s’affichent, mais une bordure et des poignées identiques à celles employées sur Windows.</p>
+<p>Je pense que Microsoft a jeté à la poubelle une bonne partie du moteur graphique Mac historique et l’a remplacé par celui de Windows. C’est à la fois bien (réduction des risques de différences d’affichage entre Mac et PC) et à la fois pas bien (l’affichage de certains éléments était meilleur sur Mac et a donc légèrement régressé).</p>
+<p>Côté édition des animations, la version Mac reste toujours en retrait par rapport à la version Windows.</p>
+<h2 id="collaboration-temps-réel-pour-les-bac500">Collaboration temps réel pour les BAC +500</h2>
+<p>Depuis cette version Microsoft met en avant la possibilité de collaborer en temps réel sur une présentation PowerPoint, un peu comme dans Google Docs. Effectivement, l’implémentation de l’édition collaborative a l’air de mieux fonctionner qu’auparavant, mais son utilisation est extrêmement confuse pour la plupart des utilisateurs. Je m’explique :</p>
+<ul>
+<li>Si vous ouvrez la copie locale OneDrive de votre présentation, l’édition collaborative en temps réel ne sera pas disponible. Pour qu’elle fonctionne, il faut ouvrir la copie qui est en ligne (dans le Cloud OneDrive). PowerPoint, et Microsoft Office en général, est toujours trop sot pour comprendre qu’il s’agit de la même présentation.</li>
+<li>Les personnes qui n’ont pas Office 365 ne peuvent qu’utiliser l’édition de présentation en ligne (dans leur navigateur Internet). Le problème, c’est que même sur une Microsoft Surface cela ne fonctionne pas de manière fiable dès que le document atteint une certaine taille.</li>
+<li>Les clients ne réalisent pas que de nombreuses fonctionnalités et animations ne sont pas disponibles dans la version en ligne, et se plaignent que certaines choses ne fonctionnent pas alors que le problème est lié à PowerPoint Online.</li>
+</ul>
+<p>Au final, lors de mes tests avec différentes personnes, il y a tellement de cas particuliers que c’est un véritable casse-tête de faire fonctionner le mode collaboratif de manière fiable. Seules les personnes qui comprennent toutes les subtilités des versions d’Office et du Cloud y parviennent sans difficulté. C’est ridicule. Dans pratiquement tous les cas, j’ai dû abandonner la collaboration en temps réel et revenir à l’échange de liens traditionnels.</p>
+<p>Il faut aussi remarquer que des trois systèmes d’échange de fichiers que j’utilise, Dropbox, OneDrive et WeTransfer, OneDrive est celui dont les clients se plaignent le plus.</p>
+<p>En conclusion la nouvelle version de PowerPoint Online a du potentiel, mais le manque flagrant d’attention aux détails en rend l’utilisation quotidienne assez frustrante. Tant que le mode collaboratif ne fonctionnera pas de manière plus transparente, difficile de le recommander.</p>
+<h2 id="polices-incorporées-complètement-bâclé">Polices incorporées : complètement bâclé</h2>
+<p>Désormais les polices incorporées sont supportées sur Mac <strong>si</strong> la police a été incorporée dans la version Windows de PowerPoint. Il est impossible de changer cette option sur la version Mac. Pour ajouter ou retirer la police incorporée, vous devrez le faire sur PowerPoint Windows. C’est problématique dans deux cas :</p>
+<ul>
+<li>Vous voulez réduire la taille de la présentation en retirant la police incorporée.</li>
+<li>Vous voulez utiliser le mode collaboratif temps réel sur Mac, et bizarrement cela ne fonctionnera pas tant que vous avez une police incorporée dans le fichier !</li>
+</ul>
+<p>Heureusement, cette situation n’est que transitoire, Microsoft a prévu d’implémenter la gestion complète des polices incorporées dans une future version.</p>
+<h2 id="applescript-ça-fonctionne-toujours">AppleScript, ça fonctionne toujours !</h2>
+<p>En fusionnant le code des versions Windows et Mac, on aurait pu craindre la perte du support d’AppleScript sur Mac. Mais il n’en est rien. Contrairement à un petit éditeur comme Apple disposant de moyens limités, Microsoft a les moyens de supporter AppleScript correctement dans Office 365 pour Mac. Pas de régression sur ce point donc.</p>
+<h2 id="visual-basic-du-mieux-beaucoup-et-du-moins-bien-un-peu">Visual Basic : du mieux (beaucoup) et du moins bien (un peu)</h2>
+<p>Si vous venez du monde Windows et que vous avez déjà essayé de développer en Visual Basic dans Office 365 Mac, vous avez dû rapidement déchanter. Microsoft s’était en effet fortement inspiré de la nullité de l’Éditeur de Script d’Apple : une bête fenêtre dans laquelle on pouvait taper du code, aucune aide, pas d’outils de débogage, pratiquement rien. La nouvelle version d’Office 365 Mac comble enfin à cette lacune et offre la plupart des outils de développement en Visual Basic disponibles sur Windows.</p>
+<p>Ce n’est cependant pas parfait : le portage de l’environnement de développement a visiblement été fait à la va-vite. C’est particulièrement visible au niveau graphique. Par exemple les boîtes de dialogue Visual Basic ont régressé : elles ont l’air tout droit sorties de Windows 95.</p>
+<p>Néanmoins je ne peux que saluer l’effort réalisé par Microsoft pour améliorer Visual Basic dans Office Mac.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Comme déjà mentionné au début de cet article, ce n’est pas une revue en profondeur de PowerPoint, mais plutôt mon ressenti en utilisation quotidienne avancée. Mon opinion est assez critique, pourtant PowerPoint Mac évolue <strong>enfin</strong> dans le bon sens, même si certains bugs gâchent un peu le plaisir. Allez Microsoft, il ne manque qu’un peu de polissage pour rendre le tout bien plus agréable et fonctionnel.</p>
+
+    </div>
+ 	<div class="post-related">
+	
+	
+		<h3>Articles liés</h3>
+		<ul>
+			
+			<li><a href="/post/2021-11-01-facebook-devient-meta/">Facebook devient Meta</a></li>
+			
+			<li><a href="/post/2021-10-25-science-vs-methode-scientifique/">Science vs méthode scientifique</a></li>
+			
+			<li><a href="/post/2021-10-18-comment-trouver-le-numero-du-service-client-orange-pro/">Comment trouver le numéro du service client Orange Pro</a></li>
+			
+			<li><a href="/post/2021-07-19-changer-la-sortie-audio-depuis-la-ligne-de-commande-sur-macos/">Changer la sortie audio depuis la ligne de commande sur macOS</a></li>
+			
+			<li><a href="/post/2020-07-20-definir-un-raccourci-clavier-pour-couper-le-micro-dans-zoom/">Définir un raccourci clavier pour couper le micro dans Zoom</a></li>
+			
+		</ul>
+	
+	</div>
+</article>
+<!-- _default:article:end -->
+<!-- _default:article:start -->
+<article class="layout-module post">
+	<!-- _default:article-header:start -->
+<header class="post-header">
+	<h2 class="post-header-h2">
+		<a href="/post/2018-04-01-les-gafa-tremblent-les-gafa-ont-peur/">
+			Les GAFA tremblent, les GAFA ont peur
+		</a>
+	</h2>
+  
+  <div class="post-header-meta">
+		
+	    <time class="post-header-meta-published" datetime='2018-04-01'>
+				2018-04-01
+			</time>
+		
+		
+		
+	</div><!-- meta -->
+	<div class="pills">
+		
+		
+			<span class="pill pill-category">
+				<a href="/categories/internet/">
+					Internet
+				</a>
+			</span>
+		
+			<span class="pill pill-category">
+				<a href="/categories/opinions/">
+					Opinions
+				</a>
+			</span>
+		
+		
+		
+		
+	</div>
+
+</header>
+<!-- _default:article-header:end -->
+
+	<div class="post-content">
+		<p>Les GAFA, un moment tout puissants, tremblent sur leurs bases. Eux qui rêvaient de faire la loi sur terre se sont cassé les dents contre des alliances et des stratégies imparables.</p>
+<p>Prenons l’exemple du marché du mobile. Aujourd’hui, plus de deux smartphones sur trois dans le monde tournent avec OrangeVodafoneTelefonicaDeutscheTelekomMobileOSMobile, le système d’exploitation co-développé par <a href="https://www.usine-digitale.fr/article/orange-envisage-de-creer-son-propre-systeme-d-exploitation-pour-mobiles.N138277">Orange, Vodafone, Telefonica et Deutsche Telekom</a>. Grâce à son design soigné et à son ergonomie sans faille, il a rapidement su s’imposer face à Android et iOS et surtout Windows Phone. En effet, <a href="https://venturebeat.com/2011/04/07/windows-phone-beat-iphon/">dès 2015 le système mobile de Redmond dépassait iOS.</a> Quelle folie que celle d’Apple d’imaginer qu’il allait pouvoir rivaliser contre une alliance Microsoft — Nokia ! Quelle démence.</p>
+<p>Et ce n’est pas tout. Désormais nos données nationales sont <del>espionnées par la DGSE en plus de la NSA</del> bien à l’abri dans <a href="https://www.youtube.com/watch?v=rhWfZfzQdh0">le Cloud Souverain</a>, qui subit une telle croissance depuis 2012 qu’EDF a du mal à fournir suffisamment d’électricité malgré la mise en production de nouveaux réacteurs nucléaires à Flamanville. Face à la volonté de l’État français, qu’auraient pu faire les GAFA ? Je vous demande.</p>
+<p>Nous saluerons enfin la fin de cette abomination qu’est l’email suite à <a href="https://thierry-breton.com/en/zero-email-can-imagine/">l&rsquo;initiative courageuse d&rsquo;ATOS</a>, qui dès 2013 a atteint son objectif « zéro email », une pratique qui a fait tache d’huile dans toute la France, mais s’est arrêtée à la frontière. Pourquoi ? Ça on sait pas. C’est comme ça. Mystère.</p>
+<p>La France entière attend désormais impatiemment le <a href="https://www.lesechos.fr/16/07/2015/lesechos.fr/021210371791_le-netflix-a-la-francaise-mort-ne.htm">Netflix à la française</a>, qui devrait ouvrir ses portes plus tard cette année pour enfin montrer aux Ricains comment on fait de la vraie transformation <del>digitale</del> <del>non on dit numérique</del> <del>non digital ça fait mieux</del> <del>non on est en France on dit numérique</del> <del>arrête c’est ringard on dit digital</del> <del>comme la boîte des années 50? On dit numérique</del> à Toto.</p>
+
+    </div>
+ 	<div class="post-related">
+	
+	
+		<h3>Articles liés</h3>
+		<ul>
+			
+			<li><a href="/post/2018-06-11-pourquoi-facebook-s-en-fout/">Pourquoi Facebook s&#39;en fout</a></li>
+			
+			<li><a href="/post/2019-02-25-extensions-pour-combattre-le-tracking-sur-internet/">Quelques extensions en complément de uBlock Origin</a></li>
+			
+			<li><a href="/post/2019-02-18-le-meilleur-bloqueur-de-publicite-mac/">Le meilleur bloqueur de pub sur Mac : uBlock Origin</a></li>
+			
+			<li><a href="/post/2019-01-21-tf1-france-televisions-m6-s-associent-contre-netflix/">TF1, France Télévisions et M6 s’associent pour lutter contre Netflix...</a></li>
+			
+			<li><a href="/post/2018-12-24-preserver-un-web-ouvert/">Préserver un web ouvert</a></li>
+			
+		</ul>
+	
+	</div>
+</article>
+<!-- _default:article:end -->
+
+
+<!-- partials:pagination -->
+<nav id="navigation" class="flex-navigation">
+	
+  	<a href="/post/page/49/" class="button">Plus récents</a>
+	
+  
+  	<a href="/post/page/51/" class="button">Plus anciens</a>
+  
+</nav>
+
+
+<!-- partials:article-list.html:end -->
+
+			</main>
+			
+
+<!-- partials:aside:start -->
+
+<aside class="aside-flex">
+
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="blog" class="aside-module">
+					
+					
+					
+						<a href="/" class="button width-full">
+							
+		        		BLOG
+							
+						</a>
+					
+				</section>
+			
+		
+		
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="howitisgoing" class="aside-module">
+					
+					
+					
+						<a href="/howitisgoing/" class="button width-full">
+							
+		        		HOW IT IS GOING PROJECT
+							
+						</a>
+					
+				</section>
+			
+		
+		
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="mac-automation" class="aside-module">
+					
+					
+					
+						<a href="/mac-automation/" class="button width-full">
+							
+		        		MAC AUTOMATION TOOLS
+							
+						</a>
+					
+				</section>
+			
+		
+		
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="about" class="aside-module">
+					
+					
+					
+						<a href="/about/" class="button width-full">
+							
+		        		À PROPOS
+							
+						</a>
+					
+				</section>
+			
+		
+		
+	
+		
+			
+			
+				
+				<!-- links -->
+				<section id="links" class="aside-module hide-lg">
+					<header>
+					  <h2 class="aside-module-h2 align-center">Les sites que je soutiens</p>
+					</header>
+					<div class="links-flex">
+						
+							<div class="link">
+								<a href="https://www.codingandbricks.com/" class="link-a">
+					    		<img src="/pictures/links/codingandbricks.jpg" class="link-img">
+					    		<p class="link-p">Ateliers LEGO Serious Play® pour les entreprises</p>
+					    	</a>
+							</div>
+						
+							<div class="link">
+								<a href="https://www.ideasonstage.com/" class="link-a">
+					    		<img src="/pictures/links/ideasonstage.jpg" class="link-img">
+					    		<p class="link-p">Le spécialiste des présentations en public</p>
+					    	</a>
+							</div>
+						
+					</div>
+				</section>
+
+			
+		
+		
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="mastodon" class="aside-module">
+					
+					
+					
+						<a href="https://mastodon.social/@pmorsa" class="button width-full">
+							
+								<img src="/pictures/main/wordmark-black-text.svg" alt="MASTODON" class="piclight" />
+								
+									<img src="/pictures/main/wordmark-white-text.svg" alt="MASTODON" class="picdark" />
+								
+							
+						</a>
+					
+				</section>
+			
+		
+		
+	
+		
+			
+				
+				<!-- rss -->
+				<section id="rss" class="aside-module blurb">
+					
+					<a rel="alternate" type="application/rss+xml" href="http://localhost:1313/post/index.xml" title="RSS" class="button width-full">S&rsquo;abonner au fil RSS</a>
+					
+				</section>
+		
+			
+		
+		
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="contact" class="aside-module">
+					
+					
+					
+						<a href="mailto:pier%72e.%6Dors%61@pierremorsa.com" class="button width-full">
+							
+		        		CONTACT
+							
+						</a>
+					
+				</section>
+			
+		
+		
+	
+		
+			
+				
+				<!-- list of taxonomy terms -->
+				
+				<section id="categories" class="aside-module">
+					<h2 class="aside-module-h2">BLOG CATEGORIES</h2>
+				  <ul class="aside-taxonomy-ul">
+						
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/art-oratoire/">Art Oratoire</a>
+								</span>
+								<span style="float:right;">1</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/cr%C3%A9ativit%C3%A9/">Créativité</a>
+								</span>
+								<span style="float:right;">1</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/gtd-getting-things-done/">GTD Getting Things Done</a>
+								</span>
+								<span style="float:right;">44</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/hugo/">Hugo</a>
+								</span>
+								<span style="float:right;">9</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/ideas-on-stage/">Ideas on Stage</a>
+								</span>
+								<span style="float:right;">1</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/internet/">Internet</a>
+								</span>
+								<span style="float:right;">7</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/lifehacks/">Lifehacks</a>
+								</span>
+								<span style="float:right;">68</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/mac/">Mac</a>
+								</span>
+								<span style="float:right;">24</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/nomade-digital/">Nomade Digital</a>
+								</span>
+								<span style="float:right;">5</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/nouvelles/">Nouvelles</a>
+								</span>
+								<span style="float:right;">48</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/opinions/">Opinions</a>
+								</span>
+								<span style="float:right;">16</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/philosophie-de-blog/">Philosophie De Blog</a>
+								</span>
+								<span style="float:right;">122</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/pr%C3%A9senter-en-public/">Présenter en Public</a>
+								</span>
+								<span style="float:right;">68</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/startup/">Startup</a>
+								</span>
+								<span style="float:right;">15</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/storytelling/">Storytelling</a>
+								</span>
+								<span style="float:right;">8</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/technomagie/">Technomagie</a>
+								</span>
+								<span style="float:right;">87</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/tedx/">TEDx</a>
+								</span>
+								<span style="float:right;">12</span>
+							</li>
+					   
+			    </ul>
+				</section>
+								
+			
+		
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="copyright" class="aside-module">
+					
+			    	<h2 class="aside-module-h2">COPYLEFT ET ZÉRO COOKIES</h2>
+					
+					
+			    	<p class="aside-module-p">Site garanti sans cookies et sans JavaScript. Le contenu est en copie libre : vous pouvez tout copier et réutiliser librement.</p>
+					
+					
+				</section>
+			
+		
+		
+	
+	<section id="last-updated" class="aside-module">
+		<h2 class="aside-module-h2">Dernière mise à jour</h2>
+		<p class="aside-module-p">2024-10-12 20:39 CEST
+	</section>
+	
+</aside>
+
+<!-- partials:aside:end -->
+		</div>
+	</body>
+	<!-- _default:list.html:end -->
+</html>
+<!-- _default:baseof.html:end -->

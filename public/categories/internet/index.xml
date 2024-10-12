@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Internet on Pierre Morsa</title>
+    <link>http://localhost:1313/categories/internet/</link>
+    <description>Recent content in Internet on Pierre Morsa</description>
+    <generator>Hugo</generator>
+    <language>fr</language>
+    <lastBuildDate>Mon, 20 Apr 2020 07:19:12 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/internet/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Quelques extensions en complément de uBlock Origin</title>
+      <link>http://localhost:1313/post/2019-02-25-extensions-pour-combattre-le-tracking-sur-internet/</link>
+      <pubDate>Mon, 25 Feb 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2019-02-25-extensions-pour-combattre-le-tracking-sur-internet/</guid>
+      <description>La semaine dernière j’expliquais pourquoi j’étais repassé sur Firefox : pour pouvoir bénéficier de uBlock Origin, la meilleure extension pour bloquer la publicité. Mais c’est loin d’être suffisant pour éviter d’être suivi. En faisant quelques recherches, j’ai choisi les extensions suivantes pour compléter mon arsenal :&#xA;Decentraleyes : crée une copie locale de certaines ressources pour éviter de (trop) se connecter aux CDN gratuits, qui monétisent leur service en aidant à vous suivre sur Internet.</description>
+    </item>
+    <item>
+      <title>Le meilleur bloqueur de pub sur Mac : uBlock Origin</title>
+      <link>http://localhost:1313/post/2019-02-18-le-meilleur-bloqueur-de-publicite-mac/</link>
+      <pubDate>Mon, 18 Feb 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2019-02-18-le-meilleur-bloqueur-de-publicite-mac/</guid>
+      <description>Je n’ai bien sûr pas testé tous les bloqueurs de publicité existants. Cependant, parmi les solutions existantes, il n’y en a qu’une qui revienne systématiquement : uBlock Origin. Attention, pas uBlock tout court, mais uBlock Origin. C’est la seule extension qui soit à la fois répandue et qui ne se fasse pas payer pour laisser passer les pubs « acceptables ».&#xA;Plein d’autres solutions, comme AdBlock, AdBlock Plus ou uBlock (tout court) se font payer par les publicitaires comme Google pour laisser passer leurs publicités, et ne sont donc pas réellement efficaces.</description>
+    </item>
+    <item>
+      <title>Préserver un web ouvert</title>
+      <link>http://localhost:1313/post/2018-12-24-preserver-un-web-ouvert/</link>
+      <pubDate>Mon, 24 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2018-12-24-preserver-un-web-ouvert/</guid>
+      <description>Le marché des navigateurs internet est dominé par un seul acteur. Microsoft. Nous sommes au milieu des années 2000 et Internet Explorer 6 a une part de marché de 95 %. Heureusement, à ce moment la Commission européenne intervient, et force Microsoft à séparer système d’exploitation et navigateur web. Quinze ans plus tard, le paysage a bien changé. Google Chrome est en position de force, Google ayant utilisé sa position dominante en tant que porte d’entrée du web pour « fortement inciter » les utilisateurs à passer à Chrome.</description>
+    </item>
+    <item>
+      <title>Supprimer des fichiers en masse dans Slack</title>
+      <link>http://localhost:1313/post/2018-11-26-supprimer-des-fichiers-en-masse-dans-slack/</link>
+      <pubDate>Mon, 26 Nov 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2018-11-26-supprimer-des-fichiers-en-masse-dans-slack/</guid>
+      <description>Supprimer des fichiers en masse dans Slack J&amp;rsquo;ai un ami qui utilise la version gratuite de Slack pour sa startup. En discutant, il m&amp;rsquo;a évoqué un problème auquel il faisait face. Il était obligé de supprimer les fichiers un à un lorsqu&amp;rsquo;il atteignait la limite de place.&#xA;Heureusement, comme toujours quelqu&amp;rsquo;un a inventé une solution. Elle est disponible à l&amp;rsquo;adresse ci-dessous :&#xA;https://bulk-delete-slack-files.herokuapp.com&#xA;Mise à jour du 2018-12-07 : le lien vers la page pour générer le « token » (jeton) Slack n&amp;rsquo;est plus bon.</description>
+    </item>
+    <item>
+      <title>Combien de temps reste-t-il à vivre au chiffrage de bout en bout ?</title>
+      <link>http://localhost:1313/post/2018-10-08-combien-de-temps-chiffrage-de-bout-en-bout/</link>
+      <pubDate>Mon, 08 Oct 2018 05:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/post/2018-10-08-combien-de-temps-chiffrage-de-bout-en-bout/</guid>
+      <description>Le chiffrage de bout en bout est la seule forme de chiffrage qui soit réellement sécurisée. C’est pour cela que le chiffrage de bout en bout est interdit dans la plupart des dictatures, par exemple la Chine ou la Corée du Nord.&#xA;Peut-être que ces dictatures ont raison. Peut-être que le chiffrage de bout en bout est réellement nuisible ? Le chiffrage est souvent considéré comme une arme. Comme les armes à feu, le chiffrement de bout en bout peut être utilisé par de mauvais acteurs.</description>
+    </item>
+    <item>
+      <title>Pourquoi Facebook s&#39;en fout</title>
+      <link>http://localhost:1313/post/2018-06-11-pourquoi-facebook-s-en-fout/</link>
+      <pubDate>Mon, 11 Jun 2018 05:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/post/2018-06-11-pourquoi-facebook-s-en-fout/</guid>
+      <description>Je n’ai pas de compte Facebook. Moins parce que je me soucie de la confidentialité de ce que je pourrais y publier — il suffit de voir les inepties que je poste sur Twitter — que parce que je ne veux pas perdre de temps dessus.&#xA;Pourtant, si j’écris sur le scandale Facebook, maintenant que les journaux commencent déjà à l’oublier, c’est parce que je veux montrer que ce scandale n’affectera presque pas Facebook.</description>
+    </item>
+    <item>
+      <title>Les GAFA tremblent, les GAFA ont peur</title>
+      <link>http://localhost:1313/post/2018-04-01-les-gafa-tremblent-les-gafa-ont-peur/</link>
+      <pubDate>Sun, 01 Apr 2018 05:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/post/2018-04-01-les-gafa-tremblent-les-gafa-ont-peur/</guid>
+      <description>Les GAFA, un moment tout puissants, tremblent sur leurs bases. Eux qui rêvaient de faire la loi sur terre se sont cassé les dents contre des alliances et des stratégies imparables.&#xA;Prenons l’exemple du marché du mobile. Aujourd’hui, plus de deux smartphones sur trois dans le monde tournent avec OrangeVodafoneTelefonicaDeutscheTelekomMobileOSMobile, le système d’exploitation co-développé par Orange, Vodafone, Telefonica et Deutsche Telekom. Grâce à son design soigné et à son ergonomie sans faille, il a rapidement su s’imposer face à Android et iOS et surtout Windows Phone.</description>
+    </item>
+  </channel>
+</rss>

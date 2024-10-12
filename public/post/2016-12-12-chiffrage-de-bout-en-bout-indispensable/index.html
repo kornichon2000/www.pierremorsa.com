@@ -1,0 +1,534 @@
+<!-- _default:baseof.html:start -->
+<!DOCTYPE HTML>
+<html>
+	
+		
+<!-- partials:head:start -->
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	
+	
+		
+			<meta name="author" content="Pierre Morsa" />
+		
+		<meta name="fediverse:creator" content="@pmorsa@mastodon.social" />
+	
+	
+	<meta name="generator" content="Hugo 0.128.0">
+	
+	
+		
+			<title>Pourquoi le chiffrage de bout en bout est indispensable</title>
+		
+		
+		
+			<!-- language taken from SITE default language parameter  -->
+			<meta http-equiv="Content-Language" content="fr" />
+		
+		
+	
+
+	<link rel="me" href="https://mastodon.social/@pmorsa" />
+	<link rel="me" href="https://www.ideasonstage.com/" />
+
+	<link rel="apple-touch-icon-precomposed" href="/favicon/apple-touch-icon-precomposed.png" />
+	<link rel="icon" href="/favicon/favicon.png" />
+	<link rel="stylesheet" href="/main.min.css" />
+</head>	
+<!-- partials:head:end -->
+
+	
+	
+	<!-- _default:single:start -->
+  <body>
+		
+<!-- partials:topbar:start -->
+<section id="topbar" class="topbar-style">
+		<a href="/">
+			<img src="/pictures/main/pierre-morsa-avatar.png" class="intro-circle" width="48" alt="Pierre Morsa" />
+		</a>
+	
+		
+		
+			
+			
+				<h1>
+					<a href="/">
+						ce bon vieux blog
+					</a>
+				</h1>
+			
+			
+				<p class="topbar-style">
+					Réflexions de comptoir
+				</p>
+			
+		
+	
+
+</section>
+
+<!-- partials:topbar:end -->
+
+    <div class="grandparent-flex">
+			<main class="main-flex">
+				<!-- _default:article:start -->
+<article class="layout-module post">
+	<!-- _default:article-header:start -->
+<header class="post-header">
+	<h2 class="post-header-h2">
+		<a href="/post/2016-12-12-chiffrage-de-bout-en-bout-indispensable/">
+			Pourquoi le chiffrage de bout en bout est indispensable
+		</a>
+	</h2>
+  
+  <div class="post-header-meta">
+		
+	    <time class="post-header-meta-published" datetime='2016-12-12'>
+				2016-12-12
+			</time>
+		
+		
+		
+	</div><!-- meta -->
+	<div class="pills">
+		
+		
+			<span class="pill pill-category">
+				<a href="/categories/technomagie/">
+					Technomagie
+				</a>
+			</span>
+		
+		
+		
+		
+	</div>
+
+</header>
+<!-- _default:article-header:end -->
+
+	<div class="post-content">
+		<p><strong>Avertissement : la sécurité informatique est un sujet très complexe et difficile à mettre en œuvre. Je ne suis moi-même pas un expert en sécurité, mais je base cet article sur ce que j&rsquo;ai pu lire sur différents sites. Mais à vous de vous documenter plus si vous souhaitez vérifier la sécurité des applications listées ci-dessous.</strong></p>
+<p>Saviez-vous que chaque email que vous envoyez peut être très facilement lu par des personnes mal intentionnées ? Non seulement les emails ne sont pas chiffrés sur votre machine, mais ils ne sont pas chiffrés non plus sur les serveurs distants. Pire, ils ne sont pas chiffrés non plus pendant le transfert de votre machine à celle de votre correspondant ! L&rsquo;email standard est le niveau 0 de la sécurité : il n&rsquo;y a aucun chiffrage, que ce soit au niveau du stockage ou au niveau du transport ! Concrètement cela signifie que n&rsquo;importe quelle agence à trois lettres qui souhaite lire vos emails peut le faire très facilement. C&rsquo;est d&rsquo;ailleurs assez ironique de voir à quel point les grandes entreprises si jalouses de leurs secrets n&rsquo;hésitent pas à utiliser l&rsquo;email pour envoyer des documents confidentiels.</p>
+<p>Évidemment la parade à cela, c&rsquo;est le chiffrage. Le problème c&rsquo;est que le chiffrage, c&rsquo;est loin d&rsquo;être simple. Autant pour des raisons mathématiques que techniques et surtout politiques.</p>
+<h2 id="le-chiffrage-et-la-sécurité-nationale">Le chiffrage et la sécurité nationale</h2>
+<p>Les solutions de chiffrage efficaces sont souvent présentées comme des armes pour les terroristes, les pédophiles et autres êtres malfaisants. On arrête l&rsquo;hypocrisie. La France et bien d&rsquo;autres pays n&rsquo;ont aucun remords à vendre des armes bien réelles et des systèmes de surveillance électronique à des dictatures. Comble de l&rsquo;ironie, ces superbes deals sont protégés par l&rsquo;excuse du secret défense ! Il faut voir aussi à quel point nos démocraties sont promptes à condamner le Great Firewall of China alors qu&rsquo;elles-mêmes bloquent de plus en plus facilement ce qu&rsquo;elles considèrent comme contraire à leurs intérêts. Alors bien sûr que les sites qui font l&rsquo;apologie du terrorisme ne sont pas acceptables, mais sans cadre légal démocratique strict la dérive totalitaire est très facile.</p>
+<p>La réalité c&rsquo;est que sur le point de la surveillance nos pays sont bien mieux équipés que la plupart des dictatures. Dans un réflexe spontané d&rsquo;auto-préservation les États démocratiques font tout pour surveiller les individus au détriment du respect de leurs libertés et de leur vie privée et sans aucune réflexion sur les dégâts potentiels à long terme.</p>
+<h2 id="le-chiffrage-des-transmissions-de-données-ce-nest-pas-le-vrai-chiffrage-">Le chiffrage des transmissions de données ce n&rsquo;est pas le vrai chiffrage !</h2>
+<p>Lorsque vous voyez l&rsquo;icône du cadenas dans votre navigateur web vous pouvez vous croire protégé. Faux. Archi-faux. Ce qui est chiffré c&rsquo;est uniquement la transmission des données entre votre machine et le serveur situé quelque part ailleurs sur terre.  Toute personne qui a accès à votre machine ou la machine à distance pourra accéder à vos données. Quelques exemples de services qui ne chiffrent que la transmission des données ? Voilà :</p>
+<ul>
+<li>gmail</li>
+<li>Dropbox</li>
+<li>OneDrive</li>
+<li>iCloud</li>
+<li>Hotmail</li>
+<li>Slack</li>
+<li>Facebook</li>
+</ul>
+<p>Je continue ? 99,99% des services internet ne chiffrent nos données que durant la transmission. Par exemple une personne mal intentionnée qui accède à la machine sur laquelle sont stockées vos fichiers Dropbox peut les lire sans aucune difficulté. Certaines données, comme le mot de passe, sont souvent chiffrées, c&rsquo;est vrai (avec différentes méthodes comme le hash et le salt trop longues à décrire ici), mais toutes les autres données sont stockées sans aucun chiffrage.</p>
+<h2 id="le-chiffrage-de-bout-en-bout-seule-véritable-solution-sécurisée">Le chiffrage de bout en bout, seule véritable solution sécurisée</h2>
+<p>Pour avoir des données réellement sécurisées, il faut utiliser ce qu&rsquo;on appelle le chiffrage de bout en bout. Les données sont chiffrées partout. Seul le propriétaire, et éventuellement le destinataire, doivent pouvoir lire les données. De plus il faut que la mise en œuvre du chiffrage soit : </p>
+<ul>
+<li>fiable, ce qui est très difficile à faire (par exemple la NSA a poussé à l&rsquo;adoption de certains algorithmes de chiffrage comportant des faiblesses qui rendent le déchiffrage beaucoup plus facile),</li>
+<li>auditable pour vérifier qu&rsquo;elle ne comporte pas de « porte dérobée » (par exemple via un mot de passe secret qui permettrait à une agence de renseignement d&rsquo;accéder à vos données),</li>
+<li>chiffre également ce qu&rsquo;on appelle les méta-data ou du moins en minimise l&rsquo;empreinte. Un exemple de méta-data c&rsquo;est la liste des appels que vous avez passé depuis votre téléphone ; ce sont des données supplémentaires qui sont nécessaires pour transmettre les données principales, mais qui peuvent être utilisées contre vous.</li>
+</ul>
+<p>La liste de services internet qui respectent ces critères pour le chiffrement de bout en bout est incroyablement courte. Pour plusieurs raisons. Premièrement, comme déjà évoqué, c&rsquo;est très difficile à mettre en œuvre correctement et cela demande un niveau de compétences spécifiques très élevé. Deuxièmement les agences de surveillance font tout pour empêcher le développement de ces solutions. Voici néanmoins une liste de solutions qui, au mieux de mes connaissances, utilisent le chiffrage de bout en bout.</p>
+<h2 id="email-protonmail">Email: Protonmail</h2>
+<p><strong><a href="https://www.protonmail.com">Protonmail</a>.</strong></p>
+<p>Protonmail est un service d&rsquo;email sécurisé basé en Suisse. Attention, il ne fonctionnera de manière sécurisée que lorsque les emails sont échangées entre adresses @protonmail.com - si vous envoyez un email à une autre adresse, par exemple @gmail.com, cet email ne sera pas chiffré. C&rsquo;est une limitation impossible à contourner à cause du fonctionnement non chiffré des messageries email classiques. Le service fonctionne bien, mais par contre il possède plusieurs faiblesses potentielles. La première est l&rsquo;utilisation de JavaScript dans le navigateur pour assurer le chiffrage qui ne permet pas de garantir une sécurité à 100% (compromission des serveurs de Protonmail, man in the middle attack). L&rsquo;utilisation de l&rsquo;App iOS ou Android permet de résoudre ce problème. La deuxième est que vos clés de chiffrement sont stockées sur leurs serveurs. Néanmoins Protonmail semble un excellent compromis entre sécurité et facilité d&rsquo;utilisation.</p>
+<p>À noter que pour freiner l&rsquo;adoption de Protonmail celui-ci a mystérieusement disparu des résultats de recherche de Google pendant plusieurs mois. Google n&rsquo;a jamais fourni d&rsquo;explication, mais on peut penser que la concurrence que Protonmail représente pour gmail n&rsquo;y est pas étrangère.</p>
+<h2 id="messagerie-instantanée--signal">Messagerie instantanée : Signal</h2>
+<p><a href="https://whispersystems.org/#page-top">Signal</a></p>
+<p>Signal est à l&rsquo;heure actuelle une des seules messageries instantanées qui supporte le chiffrage de bout en bout de manière suffisamment fiable et auditée.</p>
+<p>Oubliez WhatsApp ou Skype. WhatsApp a été racheté par Facebook. Microsoft a modifié l&rsquo;architecture de Skype pour permettre à la NSA d&rsquo;écouter toutes les conversations.</p>
+<h2 id="gtd--omnifocus">GTD : Omnifocus</h2>
+<p><a href="https://www.omnigroup.com/omnifocus/">Omnifocus</a></p>
+<p>Omnifocus 2 utilise les serveurs de Omni Group pour la synchronisation entre appareils et supporte le chiffrage de sa base de données de bout en bout. Le chiffrage a lieu <em>avant</em> que les données ne quittent vos appareils. Cela signifie que les données stockées sur les serveurs de Omni Group sont illisibles pour toutes les personnes qui ne disposent pas du mot de passe ; même les employés de Omni Group ne peuvent y accéder.</p>
+<p>C&rsquo;est un excellent pas dans la bonne direction, même si comme souvent il est impossible d&rsquo;être certain qu&rsquo;aucune porte dérobée n&rsquo;existe.</p>
+<h2 id="disque-dur--truecrypt-ou-veracrypt-avertissement-">Disque Dur : TrueCrypt ou VeraCrypt (Avertissement !)</h2>
+<p><a href="https://www.grc.com/misc/truecrypt/truecrypt.htm">TrueCrypt</a>
+<a href="https://veracrypt.codeplex.com">VeraCrypt</a></p>
+<p>Vous pouvez utiliser TrueCrypt version 7.1a (la dernière vraie version de TrueCrypt, les versions plus récentes n&rsquo;étant pas fiables). Mais attention, le projet n&rsquo;est plus maintenu, après l&rsquo;abandon brutal du projet par l&rsquo;équipe de développement.</p>
+<p>Vous pouvez également vous tourner vers son successeur, VeraCrypt. Même si ces solutions ne sont pas parfaites, ce sont celles qui ont le moins de risques de comporter une porte dérobée cachée.</p>
+<p>Pour chiffrer le contenu de votre disque dur, vous pouvez faire confiance aux solutions standard fournies par Apple (FileVault) ou Microsoft (Bitlocker). Mais il faut savoir que <a href="http://arstechnica.com/security/2016/08/microsoft-secure-boot-firmware-snafu-leaks-golden-key/">Microsoft a laissé échapper par mégarde la clé de la porte dérobée pour accéder au contenu des disques lors du Secure Boot&hellip;</a>. À l&rsquo;heure actuelle aucun élément ne permet d&rsquo;incriminer Apple, mais rien ne permet de garantir que FileVault ne comporte pas une porte dérobée. Par simplicité FileVault est la solution que j&rsquo;utilise pour protéger mes données en cas de vol.</p>
+<h2 id="en-conclusion">En conclusion&hellip;</h2>
+<p>Je veux encore rappeler que je ne suis pas un expert de la sécurité et que de nos jours en termes de sécurité on ne peut être sûr de rien. Adopter ces solutions chiffrées de bout en bout, c&rsquo;est bien, mais vous allez vite vous rendre compte de la limite principale : l&rsquo;humain. 90% des utilisateurs se fichent de la sécurité de leurs données et ne voudront pas utiliser Protonmail ou Signal. Tant pis pour eux. Je suis personnellement convaincu que ces solutions doivent être supportées activement pour permettre leur développement et leur adoption par un nombre croissant d&rsquo;utilisateurs.</p>
+
+    </div>
+ 	<div class="post-related">
+	
+	
+		<h3>Articles liés</h3>
+		<ul>
+			
+			<li><a href="/post/2022-12-19-poster-automatiquement-sur-mastodon/">Poster automatiquement sur Mastodon</a></li>
+			
+			<li><a href="/post/2022-04-25-que-faire-si-microsoft-office-vous-demande-d-activer-votre-abonnement-a-chaque-lancement/">Que faire si Microsoft Office vous demande d’activer votre abonnement à chaque lancement ?</a></li>
+			
+			<li><a href="/post/2022-03-21-creer-un-menu-pour-controler-music-avec-keyboard-maestro/">Créer un menu pour contrôler Music avec Keyboard Maestro</a></li>
+			
+			<li><a href="/post/2022-02-07-gordon-a-un-m1-coince-dans-le-cul/">Gordon a un M1 coincé dans le cul</a></li>
+			
+			<li><a href="/post/2022-01-24-comment-masquer-les-tendances-dans-twitter/">Comment masquer les tendances dans Twitter</a></li>
+			
+		</ul>
+	
+	</div>
+</article>
+<!-- _default:article:end -->
+
+			</main>
+			
+
+<!-- partials:aside:start -->
+
+<aside class="aside-flex">
+
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="blog" class="aside-module">
+					
+					
+					
+						<a href="/" class="button width-full">
+							
+		        		BLOG
+							
+						</a>
+					
+				</section>
+			
+		
+		
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="howitisgoing" class="aside-module">
+					
+					
+					
+						<a href="/howitisgoing/" class="button width-full">
+							
+		        		HOW IT IS GOING PROJECT
+							
+						</a>
+					
+				</section>
+			
+		
+		
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="mac-automation" class="aside-module">
+					
+					
+					
+						<a href="/mac-automation/" class="button width-full">
+							
+		        		MAC AUTOMATION TOOLS
+							
+						</a>
+					
+				</section>
+			
+		
+		
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="about" class="aside-module">
+					
+					
+					
+						<a href="/about/" class="button width-full">
+							
+		        		À PROPOS
+							
+						</a>
+					
+				</section>
+			
+		
+		
+	
+		
+			
+			
+				
+				<!-- links -->
+				<section id="links" class="aside-module hide-lg">
+					<header>
+					  <h2 class="aside-module-h2 align-center">Les sites que je soutiens</p>
+					</header>
+					<div class="links-flex">
+						
+							<div class="link">
+								<a href="https://www.codingandbricks.com/" class="link-a">
+					    		<img src="/pictures/links/codingandbricks.jpg" class="link-img">
+					    		<p class="link-p">Ateliers LEGO Serious Play® pour les entreprises</p>
+					    	</a>
+							</div>
+						
+							<div class="link">
+								<a href="https://www.ideasonstage.com/" class="link-a">
+					    		<img src="/pictures/links/ideasonstage.jpg" class="link-img">
+					    		<p class="link-p">Le spécialiste des présentations en public</p>
+					    	</a>
+							</div>
+						
+					</div>
+				</section>
+
+			
+		
+		
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="mastodon" class="aside-module">
+					
+					
+					
+						<a href="https://mastodon.social/@pmorsa" class="button width-full">
+							
+								<img src="/pictures/main/wordmark-black-text.svg" alt="MASTODON" class="piclight" />
+								
+									<img src="/pictures/main/wordmark-white-text.svg" alt="MASTODON" class="picdark" />
+								
+							
+						</a>
+					
+				</section>
+			
+		
+		
+	
+		
+			
+				
+				<!-- rss -->
+				<section id="rss" class="aside-module blurb">
+					
+					<a rel="alternate" type="application/rss+xml" href="" title="RSS" class="button width-full">S&rsquo;abonner au fil RSS</a>
+					
+				</section>
+		
+			
+		
+		
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="contact" class="aside-module">
+					
+					
+					
+						<a href="mailto:pier%72e.%6Dors%61@pierremorsa.com" class="button width-full">
+							
+		        		CONTACT
+							
+						</a>
+					
+				</section>
+			
+		
+		
+	
+		
+			
+				
+				<!-- list of taxonomy terms -->
+				
+				<section id="categories" class="aside-module">
+					<h2 class="aside-module-h2">BLOG CATEGORIES</h2>
+				  <ul class="aside-taxonomy-ul">
+						
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/art-oratoire/">Art Oratoire</a>
+								</span>
+								<span style="float:right;">1</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/cr%C3%A9ativit%C3%A9/">Créativité</a>
+								</span>
+								<span style="float:right;">1</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/gtd-getting-things-done/">GTD Getting Things Done</a>
+								</span>
+								<span style="float:right;">44</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/hugo/">Hugo</a>
+								</span>
+								<span style="float:right;">9</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/ideas-on-stage/">Ideas on Stage</a>
+								</span>
+								<span style="float:right;">1</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/internet/">Internet</a>
+								</span>
+								<span style="float:right;">7</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/lifehacks/">Lifehacks</a>
+								</span>
+								<span style="float:right;">68</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/mac/">Mac</a>
+								</span>
+								<span style="float:right;">24</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/nomade-digital/">Nomade Digital</a>
+								</span>
+								<span style="float:right;">5</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/nouvelles/">Nouvelles</a>
+								</span>
+								<span style="float:right;">48</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/opinions/">Opinions</a>
+								</span>
+								<span style="float:right;">16</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/philosophie-de-blog/">Philosophie De Blog</a>
+								</span>
+								<span style="float:right;">121</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/pr%C3%A9senter-en-public/">Présenter en Public</a>
+								</span>
+								<span style="float:right;">68</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/startup/">Startup</a>
+								</span>
+								<span style="float:right;">15</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/storytelling/">Storytelling</a>
+								</span>
+								<span style="float:right;">8</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/technomagie/">Technomagie</a>
+								</span>
+								<span style="float:right;">87</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/tedx/">TEDx</a>
+								</span>
+								<span style="float:right;">12</span>
+							</li>
+					   
+			    </ul>
+				</section>
+								
+			
+		
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="copyright" class="aside-module">
+					
+			    	<h2 class="aside-module-h2">COPYLEFT ET ZÉRO COOKIES</h2>
+					
+					
+			    	<p class="aside-module-p">Site garanti sans cookies et sans JavaScript. Le contenu est en copie libre : vous pouvez tout copier et réutiliser librement.</p>
+					
+					
+				</section>
+			
+		
+		
+	
+	<section id="last-updated" class="aside-module">
+		<h2 class="aside-module-h2">Dernière mise à jour</h2>
+		<p class="aside-module-p">2024-10-12 20:40 CEST
+	</section>
+	
+</aside>
+
+<!-- partials:aside:end -->
+    </div>
+  </body>
+ 	<!-- _default:single:end -->
+
+</html>
+<!-- _default:baseof.html:end -->

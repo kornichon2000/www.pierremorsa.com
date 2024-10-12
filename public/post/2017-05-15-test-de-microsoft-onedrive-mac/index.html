@@ -1,0 +1,529 @@
+<!-- _default:baseof.html:start -->
+<!DOCTYPE HTML>
+<html>
+	
+		
+<!-- partials:head:start -->
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	
+	
+		
+			<meta name="author" content="Pierre Morsa" />
+		
+		<meta name="fediverse:creator" content="@pmorsa@mastodon.social" />
+	
+	
+	<meta name="generator" content="Hugo 0.128.0">
+	
+	
+		
+			<title>Test de Microsoft OneDrive sur Mac</title>
+		
+		
+		
+			<!-- language taken from SITE default language parameter  -->
+			<meta http-equiv="Content-Language" content="fr" />
+		
+		
+	
+
+	<link rel="me" href="https://mastodon.social/@pmorsa" />
+	<link rel="me" href="https://www.ideasonstage.com/" />
+
+	<link rel="apple-touch-icon-precomposed" href="/favicon/apple-touch-icon-precomposed.png" />
+	<link rel="icon" href="/favicon/favicon.png" />
+	<link rel="stylesheet" href="/main.min.css" />
+</head>	
+<!-- partials:head:end -->
+
+	
+	
+	<!-- _default:single:start -->
+  <body>
+		
+<!-- partials:topbar:start -->
+<section id="topbar" class="topbar-style">
+		<a href="/">
+			<img src="/pictures/main/pierre-morsa-avatar.png" class="intro-circle" width="48" alt="Pierre Morsa" />
+		</a>
+	
+		
+		
+			
+			
+				<h1>
+					<a href="/">
+						ce bon vieux blog
+					</a>
+				</h1>
+			
+			
+				<p class="topbar-style">
+					Réflexions de comptoir
+				</p>
+			
+		
+	
+
+</section>
+
+<!-- partials:topbar:end -->
+
+    <div class="grandparent-flex">
+			<main class="main-flex">
+				<!-- _default:article:start -->
+<article class="layout-module post">
+	<!-- _default:article-header:start -->
+<header class="post-header">
+	<h2 class="post-header-h2">
+		<a href="/post/2017-05-15-test-de-microsoft-onedrive-mac/">
+			Test de Microsoft OneDrive sur Mac
+		</a>
+	</h2>
+  
+  <div class="post-header-meta">
+		
+	    <time class="post-header-meta-published" datetime='2017-05-15'>
+				2017-05-15
+			</time>
+		
+		
+		
+	</div><!-- meta -->
+	<div class="pills">
+		
+		
+			<span class="pill pill-category">
+				<a href="/categories/lifehacks/">
+					Lifehacks
+				</a>
+			</span>
+		
+			<span class="pill pill-category">
+				<a href="/categories/technomagie/">
+					Technomagie
+				</a>
+			</span>
+		
+		
+		
+		
+	</div>
+
+</header>
+<!-- _default:article-header:end -->
+
+	<div class="post-content">
+		<p>En résumé : si vous avez déjà Dropbox et que vous n&rsquo;avez pas besoin des fonctions de collaboration de Office Online, restez sur Dropbox. OneDrive fonctionne correctement, mais est plus lent que Dropbox et offre moins de fonctionnalités. Son seul avantage est l&rsquo;intégration plus poussée, mais très perfectible, avec Office Online.</p>
+<p>Si vous vous demandez pourquoi lire mon test plutôt que celui d&rsquo;un site spécialisé, c&rsquo;est parce que j&rsquo;utilise Office 365, Dropbox et OneDrive tous les jours. De plus, je suis totalement indépendant de Microsoft, je n&rsquo;ai pas à être gentil avec eux pour préserver mon droit d&rsquo;accès à quoi que ce soit.</p>
+<h2 id="onedrive--les-bases">OneDrive : les bases</h2>
+<p>OneDrive est un des services de stockage dans le Cloud de Microsoft. Parce que rien n&rsquo;est jamais assez compliqué chez Microsoft, OneDrive est un service différent de OneDrive for Business, il ne faut donc pas confondre les deux. Un peu comme Skype et Skype for Business, qui sont deux trucs différents aussi. Et Office et Office for Business sont différents mais très similaires et compatibles. J&rsquo;espère que vous suivez toujours.</p>
+<p>Il y a trois manières d&rsquo;accéder à OneDrive depuis son Mac :</p>
+<ul>
+<li>Via l&rsquo;interface web en utilisant un navigateur comme Safari ou Firefox.</li>
+<li>Via l&rsquo;app OneDrive téléchargeable gratuitement depuis l&rsquo;App Store.</li>
+<li>Via une des applications Office 365 : Word, Excel ou PowerPoint. Les autres, comme Microsoft Publisher, ne sont pas disponibles sur Mac, mais franchement vous ne ratez rien.</li>
+</ul>
+<p>L&rsquo;app OneDrive va créer une copie locale des fichiers OneDrive stockés dans le Cloud, et il est possible de limiter la copie locale à une liste de dossiers sélectionnés. L&rsquo;avantage, c&rsquo;est que l&rsquo;ouverture et la sauvegarde de fichiers en local est beaucoup plus rapide que sur un serveur distant.</p>
+<p><img src="/pictures/2017/04/onedrive-cloud-local.jpg" alt="OneDrive Local et Cloud"></p>
+<p>Notez bien la différence entre <strong>OneDrive Local</strong> et <strong>OneDrive Cloud</strong>, car c&rsquo;est déterminant pour la suite de l&rsquo;article.</p>
+<p>En théorie avec l&rsquo;app OneDrive on a le meilleur des deux mondes : le stockage dans le cloud avec les fonctions de collaboration et de partage d&rsquo;Office 365, et la vitesse d&rsquo;accès aux fichiers du OneDrive local. Mais malheureusement ce n&rsquo;est pas le cas, la faute à des petits défauts d&rsquo;intégration qui viennent tout gâcher.</p>
+<h2 id="premier-point-qui-fâche--cest-lent">Premier point qui fâche : c&rsquo;est lent</h2>
+<p>Le service de Microsoft est trop lent. Par exemple j&rsquo;ai essayé d&rsquo;ouvrir une présentation de 30 Mo dans le Cloud OneDrive depuis PowerPoint, et il a fallu plus d&rsquo;une dizaine de minutes pour la télécharger et l&rsquo;ouvrir (débit misérable de quelques centaines de ko sur une connexion câble de 100 Mbps). Peut-être serez-vous plus chanceux que moi sur ce point.</p>
+<p><img src="/pictures/2017/04/onedrive-cestlent.jpg" alt="OneDrive C&rsquo;est lent"></p>
+<h2 id="une-intégration-cloud---local-à-revoir">Une intégration cloud - local à revoir</h2>
+<p>Le truc le plus frustrant avec OneDrive Mac, c&rsquo;est que lorsque vous ouvrez un document Office dans votre dossier OneDrive <strong>local</strong>, Office est trop bête pour comprendre qu&rsquo;il s&rsquo;agit d&rsquo;un document déjà stocké dans le cloud. Si vous essayez d&rsquo;obtenir un lien pour partager le document avec d&rsquo;autres personnes, il va vous dire qu&rsquo;il faut d&rsquo;abord sauver le document sur&hellip; OneDrive (sous-entendu OneDrive <strong>Cloud</strong>), <em>alors que c&rsquo;est déjà le cas</em>. Pour obtenir le lien, il faut donc fermer la copie locale, et ouvrir la copie Cloud&hellip;</p>
+<p>&hellip; Et lorsque vous essayez d&rsquo;ouvrir la copie OneDrive <strong>Cloud</strong>, Office n&rsquo;est pas bien malin non plus. Il se rend pas compte qu&rsquo;une copie locale complète existe déjà et il télécharge à nouveau 100% du document à une allure d&rsquo;escargot (franchement, c&rsquo;est vraiment lent comparé à Dropbox). Mais au moins vous pouvez obtenir le fameux lien de partage du document.</p>
+<p>Vous êtes donc obligé de choisir entre éditer la copie locale d&rsquo;un document en bénéficiant de la vitesse ou éditer la copie cloud en bénéficiant des options de collaboration et de partage. OneDrive ne devrait pas nous forcer à choisir et devrait nous permettre de bénéficier du meilleur des deux mondes sans que l&rsquo;utilisateur n&rsquo;aie à se poser de question.</p>
+<h2 id="la-raison-dutiliser-onedrive--lédition-collaborative-de-documents">LA raison d&rsquo;utiliser OneDrive : l&rsquo;édition collaborative de documents</h2>
+<p>Il y a une raison bien précise pour laquelle j&rsquo;ai voulu utiliser OneDrive. C&rsquo;est que mon métier m&rsquo;amène très souvent à partager et à collaborer sur des documents Office avec des collègues ou des clients.</p>
+<p>Malheureusement là encore, il reste trop de bugs pour que cela soit réellement efficace au-delà d&rsquo;une collaboration très simple. Par exemple il m&rsquo;est arrivé plusieurs fois qu&rsquo;un document se retrouve verrouillé en accès pour une raison inconnue, ou que PowerPoint multiplie de manière anarchique les « Masters » de slides comme d&rsquo;autres les petits pains lors d&rsquo;une édition collaborative à plusieurs. De plus comme mentionné plus haut si vous ouvrez la copie OneDrive Locale, Office n&rsquo;est pas assez intelligent et ne comprend pas qu&rsquo;il s&rsquo;agit d&rsquo;un document disponible dans OneDrive Cloud, et ne vous fait pas bénéficier des fonctions d&rsquo;édition collaborative.</p>
+<p>Au final c&rsquo;est bien mieux qu&rsquo;Office pré-365, mais insuffisant face à des outils comme Google Docs où l&rsquo;édition collaborative fonctionne sans efforts.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Je tire une dernière fois sur l&rsquo;ambulance. OneDrive est incapable de gérer tous les caractères dans les noms de fichiers, alors que Dropbox le fait sans aucun problème depuis des années. Enfin la fonction de sauvegarde des différentes versions de documents de Dropbox est bien plus sécurisante et aboutie que celle de OneDrive.</p>
+<p>En l&rsquo;état il est donc impossible de recommander OneDrive face à Dropbox. Pourtant Microsoft n&rsquo;est pas loin, en réalité il n&rsquo;y a que deux choses à améliorer pour faire de OneDrive un bon service :</p>
+<ul>
+<li>Améliorer la vitesse</li>
+<li>Corriger l&rsquo;intégration fichiers locaux - cloud pour la rendre totalement transparente lorsqu&rsquo;on utilise Office 365.</li>
+</ul>
+<p>Allez Microsoft, un effort et OneDrive peut devenir une bonne solution de stockage Cloud.</p>
+<p><img src="/pictures/2017/04/onedrive-crottemoji.jpg" alt="OneDrive Local et Cloud"></p>
+<p>Oui, cette dernière image est totalement inutile.</p>
+
+    </div>
+ 	<div class="post-related">
+	
+	
+		<h3>Articles liés</h3>
+		<ul>
+			
+			<li><a href="/post/2022-12-19-poster-automatiquement-sur-mastodon/">Poster automatiquement sur Mastodon</a></li>
+			
+			<li><a href="/post/2021-11-01-facebook-devient-meta/">Facebook devient Meta</a></li>
+			
+			<li><a href="/post/2021-10-25-science-vs-methode-scientifique/">Science vs méthode scientifique</a></li>
+			
+			<li><a href="/post/2021-10-18-comment-trouver-le-numero-du-service-client-orange-pro/">Comment trouver le numéro du service client Orange Pro</a></li>
+			
+			<li><a href="/post/2021-04-19-i-love-stupides-fichiers-textes/">I love stupides fichiers textes</a></li>
+			
+		</ul>
+	
+	</div>
+</article>
+<!-- _default:article:end -->
+
+			</main>
+			
+
+<!-- partials:aside:start -->
+
+<aside class="aside-flex">
+
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="blog" class="aside-module">
+					
+					
+					
+						<a href="/" class="button width-full">
+							
+		        		BLOG
+							
+						</a>
+					
+				</section>
+			
+		
+		
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="howitisgoing" class="aside-module">
+					
+					
+					
+						<a href="/howitisgoing/" class="button width-full">
+							
+		        		HOW IT IS GOING PROJECT
+							
+						</a>
+					
+				</section>
+			
+		
+		
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="mac-automation" class="aside-module">
+					
+					
+					
+						<a href="/mac-automation/" class="button width-full">
+							
+		        		MAC AUTOMATION TOOLS
+							
+						</a>
+					
+				</section>
+			
+		
+		
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="about" class="aside-module">
+					
+					
+					
+						<a href="/about/" class="button width-full">
+							
+		        		À PROPOS
+							
+						</a>
+					
+				</section>
+			
+		
+		
+	
+		
+			
+			
+				
+				<!-- links -->
+				<section id="links" class="aside-module hide-lg">
+					<header>
+					  <h2 class="aside-module-h2 align-center">Les sites que je soutiens</p>
+					</header>
+					<div class="links-flex">
+						
+							<div class="link">
+								<a href="https://www.codingandbricks.com/" class="link-a">
+					    		<img src="/pictures/links/codingandbricks.jpg" class="link-img">
+					    		<p class="link-p">Ateliers LEGO Serious Play® pour les entreprises</p>
+					    	</a>
+							</div>
+						
+							<div class="link">
+								<a href="https://www.ideasonstage.com/" class="link-a">
+					    		<img src="/pictures/links/ideasonstage.jpg" class="link-img">
+					    		<p class="link-p">Le spécialiste des présentations en public</p>
+					    	</a>
+							</div>
+						
+					</div>
+				</section>
+
+			
+		
+		
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="mastodon" class="aside-module">
+					
+					
+					
+						<a href="https://mastodon.social/@pmorsa" class="button width-full">
+							
+								<img src="/pictures/main/wordmark-black-text.svg" alt="MASTODON" class="piclight" />
+								
+									<img src="/pictures/main/wordmark-white-text.svg" alt="MASTODON" class="picdark" />
+								
+							
+						</a>
+					
+				</section>
+			
+		
+		
+	
+		
+			
+				
+				<!-- rss -->
+				<section id="rss" class="aside-module blurb">
+					
+					<a rel="alternate" type="application/rss+xml" href="" title="RSS" class="button width-full">S&rsquo;abonner au fil RSS</a>
+					
+				</section>
+		
+			
+		
+		
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="contact" class="aside-module">
+					
+					
+					
+						<a href="mailto:pier%72e.%6Dors%61@pierremorsa.com" class="button width-full">
+							
+		        		CONTACT
+							
+						</a>
+					
+				</section>
+			
+		
+		
+	
+		
+			
+				
+				<!-- list of taxonomy terms -->
+				
+				<section id="categories" class="aside-module">
+					<h2 class="aside-module-h2">BLOG CATEGORIES</h2>
+				  <ul class="aside-taxonomy-ul">
+						
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/art-oratoire/">Art Oratoire</a>
+								</span>
+								<span style="float:right;">1</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/cr%C3%A9ativit%C3%A9/">Créativité</a>
+								</span>
+								<span style="float:right;">1</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/gtd-getting-things-done/">GTD Getting Things Done</a>
+								</span>
+								<span style="float:right;">44</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/hugo/">Hugo</a>
+								</span>
+								<span style="float:right;">9</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/ideas-on-stage/">Ideas on Stage</a>
+								</span>
+								<span style="float:right;">1</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/internet/">Internet</a>
+								</span>
+								<span style="float:right;">7</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/lifehacks/">Lifehacks</a>
+								</span>
+								<span style="float:right;">68</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/mac/">Mac</a>
+								</span>
+								<span style="float:right;">24</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/nomade-digital/">Nomade Digital</a>
+								</span>
+								<span style="float:right;">5</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/nouvelles/">Nouvelles</a>
+								</span>
+								<span style="float:right;">48</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/opinions/">Opinions</a>
+								</span>
+								<span style="float:right;">16</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/philosophie-de-blog/">Philosophie De Blog</a>
+								</span>
+								<span style="float:right;">121</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/pr%C3%A9senter-en-public/">Présenter en Public</a>
+								</span>
+								<span style="float:right;">68</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/startup/">Startup</a>
+								</span>
+								<span style="float:right;">15</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/storytelling/">Storytelling</a>
+								</span>
+								<span style="float:right;">8</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/technomagie/">Technomagie</a>
+								</span>
+								<span style="float:right;">87</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/tedx/">TEDx</a>
+								</span>
+								<span style="float:right;">12</span>
+							</li>
+					   
+			    </ul>
+				</section>
+								
+			
+		
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="copyright" class="aside-module">
+					
+			    	<h2 class="aside-module-h2">COPYLEFT ET ZÉRO COOKIES</h2>
+					
+					
+			    	<p class="aside-module-p">Site garanti sans cookies et sans JavaScript. Le contenu est en copie libre : vous pouvez tout copier et réutiliser librement.</p>
+					
+					
+				</section>
+			
+		
+		
+	
+	<section id="last-updated" class="aside-module">
+		<h2 class="aside-module-h2">Dernière mise à jour</h2>
+		<p class="aside-module-p">2024-10-12 20:40 CEST
+	</section>
+	
+</aside>
+
+<!-- partials:aside:end -->
+    </div>
+  </body>
+ 	<!-- _default:single:end -->
+
+</html>
+<!-- _default:baseof.html:end -->

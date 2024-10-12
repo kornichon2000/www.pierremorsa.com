@@ -1,0 +1,507 @@
+<!-- _default:baseof.html:start -->
+<!DOCTYPE HTML>
+<html>
+	
+		
+<!-- partials:head:start -->
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	
+	
+		
+			<meta name="author" content="Pierre Morsa" />
+		
+		<meta name="fediverse:creator" content="@pmorsa@mastodon.social" />
+	
+	
+	<meta name="generator" content="Hugo 0.128.0">
+	
+	
+		
+			<title>Préserver un web ouvert</title>
+		
+		
+		
+			<!-- language taken from SITE default language parameter  -->
+			<meta http-equiv="Content-Language" content="fr" />
+		
+		
+	
+
+	<link rel="me" href="https://mastodon.social/@pmorsa" />
+	<link rel="me" href="https://www.ideasonstage.com/" />
+
+	<link rel="apple-touch-icon-precomposed" href="/favicon/apple-touch-icon-precomposed.png" />
+	<link rel="icon" href="/favicon/favicon.png" />
+	<link rel="stylesheet" href="/main.min.css" />
+</head>	
+<!-- partials:head:end -->
+
+	
+	
+	<!-- _default:single:start -->
+  <body>
+		
+<!-- partials:topbar:start -->
+<section id="topbar" class="topbar-style">
+		<a href="/">
+			<img src="/pictures/main/pierre-morsa-avatar.png" class="intro-circle" width="48" alt="Pierre Morsa" />
+		</a>
+	
+		
+		
+			
+			
+				<h1>
+					<a href="/">
+						ce bon vieux blog
+					</a>
+				</h1>
+			
+			
+				<p class="topbar-style">
+					Réflexions de comptoir
+				</p>
+			
+		
+	
+
+</section>
+
+<!-- partials:topbar:end -->
+
+    <div class="grandparent-flex">
+			<main class="main-flex">
+				<!-- _default:article:start -->
+<article class="layout-module post">
+	<!-- _default:article-header:start -->
+<header class="post-header">
+	<h2 class="post-header-h2">
+		<a href="/post/2018-12-24-preserver-un-web-ouvert/">
+			Préserver un web ouvert
+		</a>
+	</h2>
+  
+  <div class="post-header-meta">
+		
+	    <time class="post-header-meta-published" datetime='2018-12-24'>
+				2018-12-24
+			</time>
+		
+		
+		
+	</div><!-- meta -->
+	<div class="pills">
+		
+		
+			<span class="pill pill-category">
+				<a href="/categories/nouvelles/">
+					Nouvelles
+				</a>
+			</span>
+		
+			<span class="pill pill-category">
+				<a href="/categories/technomagie/">
+					Technomagie
+				</a>
+			</span>
+		
+			<span class="pill pill-category">
+				<a href="/categories/internet/">
+					Internet
+				</a>
+			</span>
+		
+		
+		
+		
+	</div>
+
+</header>
+<!-- _default:article-header:end -->
+
+	<div class="post-content">
+		<p>Le marché des navigateurs internet est dominé par un seul acteur. Microsoft. Nous sommes au milieu des années 2000 et Internet Explorer 6 a une part de marché de 95 %. Heureusement, à ce moment la Commission européenne intervient, et force Microsoft à séparer système d’exploitation et navigateur web. Quinze ans plus tard, le paysage a bien changé. Google Chrome est en position de force, Google ayant utilisé sa position dominante en tant que porte d’entrée du web pour « fortement inciter » les utilisateurs à passer à Chrome. Position tellement dominante que Microsoft, autrefois roi du web, vient de jeter l’éponge et va adopter Chromium, le moteur de rendu de Chrome, au cœur de son propre navigateur. Et c’est une très mauvaise nouvelle pour le web. Je vais expliquer pourquoi en racontant ce qu’il m’est arrivé cette semaine lorsque j’ai voulu utiliser une clé d’authentification matérielle.</p>
+<p><img src="/pictures/2018/12/security-key.jpg" alt="Security Key"></p>
+<p>Une clé d’authentification matérielle, c’est une petite clé USB qui vient s’ajouter au mot de passe traditionnel pour renforcer la sécurité des sites web. On dit qu’il s’agit du deuxième facteur d’authentification. Sans cette clé, impossible d’accéder au site web. Je ne cite volontairement pas de marque, mais ça se trouve facilement. J’ai décidé d’utiliser une telle clé car le deuxième facteur d’authentification par SMS n’offre qu’une sécurité relative. Et pour démarrer, je choisis d’ajouter la clé d’authentification à mon compte Dropbox et à mon compte Google (mon entreprise utilise Gmail, je regrette ce choix, mais basculer vers un autre service d’email est vraiment trop compliqué).</p>
+<p>J’essaie d’abord avec Safari, mon navigateur par défaut. Ça ne marche pas, impossible d’ajouter la clé, Safari n’est pas compatible avec les clés d’authentification matérielles. Personne ne sait aujourd’hui si Apple prévoit de les supporter dans une future version de son navigateur. Je me tourne donc vers Firefox. Pour Dropbox, aucun problème, ça fonctionne du premier coup. J’ajoute la clé simplement et rapidement. J’essaie alors de faire la même chose pour Google. Surprise, ça ne fonctionne pas. Il est impossible d’ajouter une clé matérielle à Google depuis Firefox. Il faut impérativement passer par Google Chrome. Je n’ai donc pas le choix. J’installe Chrome, je me connecte pour ajouter la clé, puis je balance Chrome directement à la poubelle, sans oublier de supprimer le service com.google.keystone.user.agent installé de manière invisible par Google et se connectant à ses serveurs plusieurs fois par jour. Heureusement, même s’il reste impossible <strong>d’ajouter</strong> une clé à Google depuis Firefox, les versions les plus récentes permettent de <strong>se connecter</strong> avec la clé d’authentification matérielle.</p>
+<p>On le voit, il ne s’agit que d’un exemple, mais si rien ne se passe le futur semble tracé. La démarche de Microsoft consistant à utiliser Chromium comme moteur de rendu est une grosse erreur stratégique. Google gardera toujours plusieurs coups d’avance pour faire de Chrome un meilleur navigateur que celui de Microsoft, et la réduction de la compétition lui donnera les coudées franches pour Gougueuliser le web. Combien de temps avant que AMP soit spécifiquement optimisé pour Chrome ? Ou que Google propose un protocole de chiffrage des échanges compatible uniquement avec Chrome sous prétexte de renforcer la sécurité du web ?</p>
+<p>Si j’en reviens au début de mon histoire, ce qui a empêché Microsoft de conserver un monopole de fait sur le marché des navigateurs web, c’est cette institution tellement incomprise, la Commission européenne. Aujourd’hui Chrome est déjà installé de fait chez une grande partie des utilisateurs, et ce n’est pas d’eux que doit venir la sauvegarde du web. Pour éviter une situation de monopole qui ne va aller qu’en s’aggravant, il faut imposer aux sites web de respecter les standards chaque fois que cela et possible, et par conséquent être compatible avec les trois principaux moteurs de rendu du marché : Chromium, Webkit et Gecko. Ce n’est pas du tout aussi difficile qu’il n’y paraît, à condition de privilégier la simplicité et de ne pas développer des bouses à base de frameworks inutilement lourds. Bien sûr qu’une telle mesure vient avec ses propres problèmes. Il est possible que le développement des standards soit ralenti, devienne encore plus noyauté par les lobbies, ou que des fonctionnalités indésirables, comme WebUSB, deviennent des standards. Mais tout pesé, je pense qu’empêcher un seul acteur de s’approprier le point d’entrée sur Internet en rendant petit à petit les sites compatibles uniquement avec son navigateur est bien plus important.</p>
+<p>L’enjeu est simple. C’est le futur du web qui se joue. Il se décide aujourd’hui si le web restera un endroit ouvert, ou s’il sera contrôlé par un seul acteur.</p>
+
+    </div>
+ 	<div class="post-related">
+	
+	
+		<h3>Articles liés</h3>
+		<ul>
+			
+			<li><a href="/post/2021-11-01-facebook-devient-meta/">Facebook devient Meta</a></li>
+			
+			<li><a href="/post/2021-10-25-science-vs-methode-scientifique/">Science vs méthode scientifique</a></li>
+			
+			<li><a href="/post/2021-10-18-comment-trouver-le-numero-du-service-client-orange-pro/">Comment trouver le numéro du service client Orange Pro</a></li>
+			
+			<li><a href="/post/2019-07-29-oubliez-nirvana-pour-revivre-les-annees-90-allez-sur-le-site-de-ma-banque/">Oubliez Nirvana, pour revivre les années 90, allez sur le site de ma banque</a></li>
+			
+			<li><a href="/post/2019-04-08-ia-m-conscience/">IAm</a></li>
+			
+		</ul>
+	
+	</div>
+</article>
+<!-- _default:article:end -->
+
+			</main>
+			
+
+<!-- partials:aside:start -->
+
+<aside class="aside-flex">
+
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="blog" class="aside-module">
+					
+					
+					
+						<a href="/" class="button width-full">
+							
+		        		BLOG
+							
+						</a>
+					
+				</section>
+			
+		
+		
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="howitisgoing" class="aside-module">
+					
+					
+					
+						<a href="/howitisgoing/" class="button width-full">
+							
+		        		HOW IT IS GOING PROJECT
+							
+						</a>
+					
+				</section>
+			
+		
+		
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="mac-automation" class="aside-module">
+					
+					
+					
+						<a href="/mac-automation/" class="button width-full">
+							
+		        		MAC AUTOMATION TOOLS
+							
+						</a>
+					
+				</section>
+			
+		
+		
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="about" class="aside-module">
+					
+					
+					
+						<a href="/about/" class="button width-full">
+							
+		        		À PROPOS
+							
+						</a>
+					
+				</section>
+			
+		
+		
+	
+		
+			
+			
+				
+				<!-- links -->
+				<section id="links" class="aside-module hide-lg">
+					<header>
+					  <h2 class="aside-module-h2 align-center">Les sites que je soutiens</p>
+					</header>
+					<div class="links-flex">
+						
+							<div class="link">
+								<a href="https://www.codingandbricks.com/" class="link-a">
+					    		<img src="/pictures/links/codingandbricks.jpg" class="link-img">
+					    		<p class="link-p">Ateliers LEGO Serious Play® pour les entreprises</p>
+					    	</a>
+							</div>
+						
+							<div class="link">
+								<a href="https://www.ideasonstage.com/" class="link-a">
+					    		<img src="/pictures/links/ideasonstage.jpg" class="link-img">
+					    		<p class="link-p">Le spécialiste des présentations en public</p>
+					    	</a>
+							</div>
+						
+					</div>
+				</section>
+
+			
+		
+		
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="mastodon" class="aside-module">
+					
+					
+					
+						<a href="https://mastodon.social/@pmorsa" class="button width-full">
+							
+								<img src="/pictures/main/wordmark-black-text.svg" alt="MASTODON" class="piclight" />
+								
+									<img src="/pictures/main/wordmark-white-text.svg" alt="MASTODON" class="picdark" />
+								
+							
+						</a>
+					
+				</section>
+			
+		
+		
+	
+		
+			
+				
+				<!-- rss -->
+				<section id="rss" class="aside-module blurb">
+					
+					<a rel="alternate" type="application/rss+xml" href="" title="RSS" class="button width-full">S&rsquo;abonner au fil RSS</a>
+					
+				</section>
+		
+			
+		
+		
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="contact" class="aside-module">
+					
+					
+					
+						<a href="mailto:pier%72e.%6Dors%61@pierremorsa.com" class="button width-full">
+							
+		        		CONTACT
+							
+						</a>
+					
+				</section>
+			
+		
+		
+	
+		
+			
+				
+				<!-- list of taxonomy terms -->
+				
+				<section id="categories" class="aside-module">
+					<h2 class="aside-module-h2">BLOG CATEGORIES</h2>
+				  <ul class="aside-taxonomy-ul">
+						
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/art-oratoire/">Art Oratoire</a>
+								</span>
+								<span style="float:right;">1</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/cr%C3%A9ativit%C3%A9/">Créativité</a>
+								</span>
+								<span style="float:right;">1</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/gtd-getting-things-done/">GTD Getting Things Done</a>
+								</span>
+								<span style="float:right;">44</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/hugo/">Hugo</a>
+								</span>
+								<span style="float:right;">9</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/ideas-on-stage/">Ideas on Stage</a>
+								</span>
+								<span style="float:right;">1</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/internet/">Internet</a>
+								</span>
+								<span style="float:right;">7</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/lifehacks/">Lifehacks</a>
+								</span>
+								<span style="float:right;">68</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/mac/">Mac</a>
+								</span>
+								<span style="float:right;">24</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/nomade-digital/">Nomade Digital</a>
+								</span>
+								<span style="float:right;">5</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/nouvelles/">Nouvelles</a>
+								</span>
+								<span style="float:right;">48</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/opinions/">Opinions</a>
+								</span>
+								<span style="float:right;">16</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/philosophie-de-blog/">Philosophie De Blog</a>
+								</span>
+								<span style="float:right;">121</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/pr%C3%A9senter-en-public/">Présenter en Public</a>
+								</span>
+								<span style="float:right;">68</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/startup/">Startup</a>
+								</span>
+								<span style="float:right;">15</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/storytelling/">Storytelling</a>
+								</span>
+								<span style="float:right;">8</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/technomagie/">Technomagie</a>
+								</span>
+								<span style="float:right;">87</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/tedx/">TEDx</a>
+								</span>
+								<span style="float:right;">12</span>
+							</li>
+					   
+			    </ul>
+				</section>
+								
+			
+		
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="copyright" class="aside-module">
+					
+			    	<h2 class="aside-module-h2">COPYLEFT ET ZÉRO COOKIES</h2>
+					
+					
+			    	<p class="aside-module-p">Site garanti sans cookies et sans JavaScript. Le contenu est en copie libre : vous pouvez tout copier et réutiliser librement.</p>
+					
+					
+				</section>
+			
+		
+		
+	
+	<section id="last-updated" class="aside-module">
+		<h2 class="aside-module-h2">Dernière mise à jour</h2>
+		<p class="aside-module-p">2024-10-12 20:40 CEST
+	</section>
+	
+</aside>
+
+<!-- partials:aside:end -->
+    </div>
+  </body>
+ 	<!-- _default:single:end -->
+
+</html>
+<!-- _default:baseof.html:end -->

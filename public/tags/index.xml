@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Pierre Morsa</title>
+    <link>http://localhost:1313/tags/</link>
+    <description>Recent content in Tags on Pierre Morsa</description>
+    <generator>Hugo</generator>
+    <language>fr</language>
+    <lastBuildDate>Sat, 12 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Delivery</title>
+      <link>http://localhost:1313/tags/delivery/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/delivery/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Robotaxi</title>
+      <link>http://localhost:1313/tags/robotaxi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/robotaxi/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>AI</title>
+      <link>http://localhost:1313/tags/ai/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bank</title>
+      <link>http://localhost:1313/tags/bank/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/bank/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cybertruck</title>
+      <link>http://localhost:1313/tags/cybertruck/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/cybertruck/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Could</title>
+      <link>http://localhost:1313/tags/could/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/could/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Metaverse</title>
+      <link>http://localhost:1313/tags/metaverse/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/metaverse/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Profits</title>
+      <link>http://localhost:1313/tags/profits/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/profits/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Full Self Driving</title>
+      <link>http://localhost:1313/tags/full-self-driving/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/full-self-driving/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CSR</title>
+      <link>http://localhost:1313/tags/csr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/csr/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

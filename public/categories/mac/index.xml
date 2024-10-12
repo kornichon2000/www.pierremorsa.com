@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mac on Pierre Morsa</title>
+    <link>http://localhost:1313/categories/mac/</link>
+    <description>Recent content in Mac on Pierre Morsa</description>
+    <generator>Hugo</generator>
+    <language>fr</language>
+    <lastBuildDate>Sun, 30 Jun 2024 15:28:13 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/mac/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Changer la sortie audio depuis la ligne de commande sur macOS</title>
+      <link>http://localhost:1313/post/2021-07-19-changer-la-sortie-audio-depuis-la-ligne-de-commande-sur-macos/</link>
+      <pubDate>Mon, 19 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2021-07-19-changer-la-sortie-audio-depuis-la-ligne-de-commande-sur-macos/</guid>
+      <description>J’ai quatre sorties audio sur mon Mac de bureau. Comme je passe d’une sortie à une autre assez fréquemment, j’ai essayé d’automatiser le processus, mais sans succès. Ni Keyboard Maestro ni AppleScript n’offrent de solution pour changer la sortie son.&#xA;Heureusement, comme souvent, quelqu’un a rencontré le même problème et a développé une solution. Dans ce cas, la solution s’appelle switchaudio-osx. Elle permet de changer la sortie son à partir de la ligne de commande, et donc depuis Keyboard Maestro ou AppleScript.</description>
+    </item>
+    <item>
+      <title>Créer automatiquement des dossiers par jour</title>
+      <link>http://localhost:1313/post/2020-06-01-creer-automatiquement-des-dossiers-par-jour/</link>
+      <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2020-06-01-creer-automatiquement-des-dossiers-par-jour/</guid>
+      <description>Pendant le confinement, comme beaucoup de parents, nous avons reçu les devoirs pour nos enfants chaque jour. La routine était toujours la même : se connecter sur École Directe, télécharger la liste des devoirs et les pièces jointes, parfois nombreuses, faire les devoirs, les scanner puis les envoyer au professeur.&#xA;Pour me simplifier un peu la vie, j’ai décidé d’adopter un classement des documents assez simple : un dossier par jour, avec un sous-dossier « In » pour les documents reçus du professeur, et un sous-dossier « Out » pour les devoirs scannés à envoyer.</description>
+    </item>
+    <item>
+      <title>La façon la plus simple d’imprimer un paquet de documents sur macOS</title>
+      <link>http://localhost:1313/post/2020-05-18-imprimer-un-paquet-de-documents-sur-macos/</link>
+      <pubDate>Mon, 18 May 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2020-05-18-imprimer-un-paquet-de-documents-sur-macos/</guid>
+      <description>Pendant le confinement, comme beaucoup de parents nous avons fait école à la maison. Tous les jours, nous avons reçu les devoirs des élèves, et ces devoirs incluaient de nombreuses pièces jointes qu’il fallait imprimer.&#xA;La méthode classique consiste à télécharger chaque pièce jointe, les ouvrir une à une, puis à choisir Fichier — Imprimer autant de fois que nécessaire. Heureusement, sur macOS, il existe une solution bien plus simple, qui consiste à ajouter l’imprimante au Dock puis à glisser-déposer les documents sur l’icône de l’imprimante.</description>
+    </item>
+    <item>
+      <title>OmniFocus Action Pack : une liste d’actions pour automatiser OmniFocus avec Keyboard Maestro</title>
+      <link>http://localhost:1313/post/2020-04-20-omnifocus-action-pack-une-liste-d-actions-pour-automatiser-omnifocus-avec-keyboard-maestro/</link>
+      <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2020-04-20-omnifocus-action-pack-une-liste-d-actions-pour-automatiser-omnifocus-avec-keyboard-maestro/</guid>
+      <description>Au fil du temps, j’ai créé de nombreuses actions pour améliorer l’intégration entre Keyboard Maestro et OmniFocus. Aujourd’hui, ces actions sont regroupées au sein du « OmniFocus Action Pack ».&#xA;Ces actions permettent par exemple de manipuler les tâches comme par exemple leur assigner un tag ou les affecter à un projet. Ce pack propose également un système de « template » très flexible pour créer des séries de tâches.</description>
+    </item>
+    <item>
+      <title>OmniFocus Action Pack for Keyboard Maestro</title>
+      <link>http://localhost:1313/mac-automation/omnifocus-action-pack-for-keyboard-maestro/</link>
+      <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/mac-automation/omnifocus-action-pack-for-keyboard-maestro/</guid>
+      <description>The OmniFocus Action Pack for Keyboard Maestro is a set of plugin actions to control OmniFocus from Keyboard Maestro. OmniFocus is a top-class task management App from Omni Group. Keyboard Maestro is a wonderful automation app from Peter Lewis. Together, they are a fantastic productivity combo.&#xA;I originally created these actions for my own use, but I decided to make them available for free here as they might be of interest to others.</description>
+    </item>
+    <item>
+      <title>Mac ARM, Marzipan et Tim le marteau</title>
+      <link>http://localhost:1313/post/2019-06-03-mac-arm-marzipan-et-tim-le-marteau/</link>
+      <pubDate>Mon, 03 Jun 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2019-06-03-mac-arm-marzipan-et-tim-le-marteau/</guid>
+      <description>Bon, c’est quasi certain maintenant que Apple prépare la transition du Mac des processeurs Intel vers ses puces ARM. Personnellement, ça ne m’enthousiasme pas trop.&#xA;D’une part, le coup de « mes processeurs sont meilleurs que ceux d’Intel », Apple nous l’a déjà fait plusieurs fois. À vrai dire, depuis toujours. Motorola 68xxx, puis PowerPC. Sur papier, c’était vrai. Dans la vraie vie, les jeux et applications étaient à chaque fois bien plus performants sur PC.</description>
+    </item>
+    <item>
+      <title>Adapter le CSS d&#39;un site web pour le mode sombre de macOS Mojave</title>
+      <link>http://localhost:1313/post/2019-03-11-adapter-css-site-web-mode-sombre-macos-mojave/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2019-03-11-adapter-css-site-web-mode-sombre-macos-mojave/</guid>
+      <description>Mojave a introduit la fonctionnalité la plus utile de tous les temps : le mode sombre, qui utilise une magnifique couleur gris sombre pour les éléments de l’interface plutôt qu’une couleur claire. Mojave 10.14.4 — toujours en Beta et donc pas encore sorti à l’heure où j’écris ces lignes — supportera automatiquement le mode sombre pour l’affichage des sites web qui ont été adaptés. Mojave 10.14.3 et les versions antérieures ne le supportent pas encore, mais vous pouvez tester le passage automatique au mode sombre en téléchargeant la Safari Technology Preview.</description>
+    </item>
+    <item>
+      <title>Mac Mini 2018 et macOS Mojave</title>
+      <link>http://localhost:1313/post/2019-03-04-mac-mini-2018-macos-mojave/</link>
+      <pubDate>Mon, 04 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2019-03-04-mac-mini-2018-macos-mojave/</guid>
+      <description>Début de cette année j’ai fait l’acquisition d’un Mac Mini qui fonctionne sous Mojave. C’était donc le moment de passer à la dernière version du système d’exploitation d’Apple. Voici quelques observations en vrac. Ce n’est pas vraiment un test, plutôt le retour d’expérience d’un vieux Mac User.&#xA;Pourquoi un Mac Mini ? Cela faisait maintenant pratiquement quinze ans que je n’utilisais plus que des portables. Mon dernier Mac fixe était un G4 Cube, c’est vous dire.</description>
+    </item>
+    <item>
+      <title>Quelques extensions en complément de uBlock Origin</title>
+      <link>http://localhost:1313/post/2019-02-25-extensions-pour-combattre-le-tracking-sur-internet/</link>
+      <pubDate>Mon, 25 Feb 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2019-02-25-extensions-pour-combattre-le-tracking-sur-internet/</guid>
+      <description>La semaine dernière j’expliquais pourquoi j’étais repassé sur Firefox : pour pouvoir bénéficier de uBlock Origin, la meilleure extension pour bloquer la publicité. Mais c’est loin d’être suffisant pour éviter d’être suivi. En faisant quelques recherches, j’ai choisi les extensions suivantes pour compléter mon arsenal :&#xA;Decentraleyes : crée une copie locale de certaines ressources pour éviter de (trop) se connecter aux CDN gratuits, qui monétisent leur service en aidant à vous suivre sur Internet.</description>
+    </item>
+    <item>
+      <title>Le meilleur bloqueur de pub sur Mac : uBlock Origin</title>
+      <link>http://localhost:1313/post/2019-02-18-le-meilleur-bloqueur-de-publicite-mac/</link>
+      <pubDate>Mon, 18 Feb 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2019-02-18-le-meilleur-bloqueur-de-publicite-mac/</guid>
+      <description>Je n’ai bien sûr pas testé tous les bloqueurs de publicité existants. Cependant, parmi les solutions existantes, il n’y en a qu’une qui revienne systématiquement : uBlock Origin. Attention, pas uBlock tout court, mais uBlock Origin. C’est la seule extension qui soit à la fois répandue et qui ne se fasse pas payer pour laisser passer les pubs « acceptables ».&#xA;Plein d’autres solutions, comme AdBlock, AdBlock Plus ou uBlock (tout court) se font payer par les publicitaires comme Google pour laisser passer leurs publicités, et ne sont donc pas réellement efficaces.</description>
+    </item>
+    <item>
+      <title>Pourquoi Marzipan porte les apps iOS sur Mac, mais pas les apps Mac sur iOS ?</title>
+      <link>http://localhost:1313/post/2019-01-07-pourquoi-marzipan-apporte-les-apps-ios-sur-mac-mais-pas-l-inverse/</link>
+      <pubDate>Mon, 07 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2019-01-07-pourquoi-marzipan-apporte-les-apps-ios-sur-mac-mais-pas-l-inverse/</guid>
+      <description>Fin 2018, Apple a présenté Marzipan, un système pour créer des apps iOS compatibles avec macOS. Certains y ont vu une excellente solution pour enrichir le catalogue d’applications Mac, qui est peut-être de qualité, mais loin d’avoir le dynamisme de l’écosystème d’iOS. Cela s’explique très simplement. Il y a en circulation autour d’un milliard de terminaux iOS, alors qu’on estime qu’il y a « seulement » cent millions de Mac en activité.</description>
+    </item>
+    <item>
+      <title>Des macros Keyboard Maestro pour Hugo</title>
+      <link>http://localhost:1313/post/2018-12-17-des-macros-keyboard-maestro-pour-hugo/</link>
+      <pubDate>Mon, 17 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2018-12-17-des-macros-keyboard-maestro-pour-hugo/</guid>
+      <description>Je l&amp;rsquo;ai déjà avoué, je ne suis pas un &amp;ldquo;vrai&amp;rdquo; ; taper tout à la ligne de commande, ça me casse les pieds. C&amp;rsquo;est pourquoi j&amp;rsquo;ai créé une palette de Macros avec Keyboard Maestro pour exécuter les commandes Hugo les plus fréquentes. Ces commandes sont :&#xA;Choisir le site sur lequel on veut travailler. Créer un nouvel article Démarrer le serveur local Hugo Arrêter le serveur local Hugo Générer ou non les articles futurs Générer ou non les brouillons (drafts) Nettoyer le répertoire cible Vous pouvez télécharger les macros ici.</description>
+    </item>
+    <item>
+      <title>Éviter les fichiers impossibles à supprimer de la corbeille de macOS</title>
+      <link>http://localhost:1313/post/2018-12-10-eviter-fichiers-impossibles-a-supprimer-corbeille-macos/</link>
+      <pubDate>Mon, 10 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2018-12-10-eviter-fichiers-impossibles-a-supprimer-corbeille-macos/</guid>
+      <description>De temps en temps, lorsque vous essayez de vider la corbeille de votre Mac, vous pouvez avoir un message d’erreur vous disant que vous n’avez pas les droits de supprimer les fichiers. C’est gênant, d’autant plus que l’erreur ne va pas se résoudre toute seule. Pour moi, c’est d’autant plus gênant que cela cause une erreur lorsque Hazel essaie de faire le ménage de la corbeille. C’est pourquoi j’utilise un script qui se déclenche chaque jour pour rendre tous les fichiers de la corbeille effaçables.</description>
+    </item>
+    <item>
+      <title>Ajouter automatiquement la date aux noms de fichiers avec Hazel</title>
+      <link>http://localhost:1313/post/2018-12-03-utiliser-hazel-pour-ajouter-automatiquement-la-date-aux-noms-de-fichiers/</link>
+      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2018-12-03-utiliser-hazel-pour-ajouter-automatiquement-la-date-aux-noms-de-fichiers/</guid>
+      <description>Hazel fait partie de mes outils d’automatisation indispensables avec Keyboard Maestro, Quicksilver et AppleScript. Je vais montrer ici comment ajouter automatiquement à un nom de fichier la date à laquelle celui-ci a été ajouté. Cela peut être très utile, par exemple, pour classer facilement les documents scannés par date de réception.&#xA;Pour cela, commencez par ajouter à Hazel le dossier contenant les documents à renommer.&#xA;Ensuite, créez la règle suivante :</description>
+    </item>
+    <item>
+      <title>Comment lancer une macro Visual Basic depuis AppleScript</title>
+      <link>http://localhost:1313/post/2018-11-19-lancer-macro-visual-basic-depuis-applescript/</link>
+      <pubDate>Mon, 19 Nov 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2018-11-19-lancer-macro-visual-basic-depuis-applescript/</guid>
+      <description>Il est possible de lancer une macro Visual Basic depuis un script AppleScript. Comme souvent, il n’y a pas vraiment d’exemple, il faut donc tâtonner pour trouver comment cela marche. Aussi pour vous éviter la galère je vous donne la méthode.&#xA;Dans l’exemple ci-dessous, j’utilise AppleScript pour lancer une macro Visual Basic qui prend deux nombres comme paramètres.&#xA;tell application &amp;#34;Microsoft PowerPoint&amp;#34; run VB macro macro name &amp;#34;SetShapePosition&amp;#34; list of parameters {200, 100} end tell Un exemple concret : lancer une macro Visual Basic depuis Keyboard Maestro Visual Basic est beaucoup, beaucoup, beaucoup plus performant qu’AppleScript pour exécuter des actions dans PowerPoint, comme par exemple ajouter une forme sur chaque slide.</description>
+    </item>
+    <item>
+      <title>La meilleure solution de récupération de disques sur Mac : Disk Warrior</title>
+      <link>http://localhost:1313/post/2018-05-21-meilleure-solution-recuperation-disques-mac-disk-warrior/</link>
+      <pubDate>Mon, 21 May 2018 05:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/post/2018-05-21-meilleure-solution-recuperation-disques-mac-disk-warrior/</guid>
+      <description>Lorsque le gouvernement intersidéral ne sait plus faire face à ses problèmes de crash de disque dur ou de SSD, il ne fait pas appel au Capitaine Flam qui est un peu naze en informatique. Il fait appel à Disk Warrior. Ce super héros, méconnu du grand public, qui œuvre sur Mac depuis la nuit des temps.&#xA;Pourquoi est-ce que je recommande Disk Warrior ? Déjà parce que contrairement aux autres solutions, il est « prudent » ; il ne va pas définitivement flinguer les données du disque problématique en essayant des opérations de récupération hasardeuses.</description>
+    </item>
+    <item>
+      <title>Désactiver un trackpad en panne sur un MacBook Pro</title>
+      <link>http://localhost:1313/post/2018-04-30-desactiver-trackpad-en-panne-mackbook-pro/</link>
+      <pubDate>Mon, 30 Apr 2018 05:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/post/2018-04-30-desactiver-trackpad-en-panne-mackbook-pro/</guid>
+      <description>Mise à jour du 2018-05-02 : le chevalier d’or du Taureau @DandumontP m’a fait remarquer que ce problème peut arriver parce que la batterie interne, située sous le trackpad, commence à gonfler. Dans ce cas il vaut mieux faire remplacer la batterie du Mac.&#xA;J’ai un MacBook Pro 15 pouces dont le trackpad est bloqué. Du coup impossible de l’utiliser correctement, l’ordinateur pensant que le bouton de la souris est enfoncé en permanence.</description>
+    </item>
+    <item>
+      <title>Utilisez Firefox au lieu de Safari pour tester votre connexion internet sur Mac</title>
+      <link>http://localhost:1313/post/2018-04-09-utilisez-firefox-pas-safari-test-vitesse-connexion-internet-mac/</link>
+      <pubDate>Mon, 09 Apr 2018 05:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/post/2018-04-09-utilisez-firefox-pas-safari-test-vitesse-connexion-internet-mac/</guid>
+      <description>Depuis le mois de janvier j’ai la chance d’avoir une connexion internet rapide pour mon home office. Il y avait cependant quelque chose qui me chiffonnait : en dépit d’une connexion Gigabit sur chaque maillon (Ethernet et fibre), lorsque j’exécutais un test de performance avec nperf.com ou speedtest.net les débits descendants (téléchargement) restaient bloqués autour de 250 à 300Mbits.&#xA;J’ai d’abord suspecté Orange d’avoir oublié d’activer l’option 1 Gbit. Mais j’ai commencé à me dire qu’il y avait quelque chose de pourri dans mes tests lorsque j’ai essayé de télécharger macOS El Capitan depuis les serveurs d’Apple.</description>
+    </item>
+    <item>
+      <title>Mini test de la dernière version de PowerPoint Mac</title>
+      <link>http://localhost:1313/post/2018-03-26-mini-test-powerpoint-mac-office-365-fevrier-2018/</link>
+      <pubDate>Mon, 26 Mar 2018 05:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/post/2018-03-26-mini-test-powerpoint-mac-office-365-fevrier-2018/</guid>
+      <description>Il y a quelques semaines, Microsoft a publié une nouvelle version de PowerPoint qui cache plus de changements qu’il n’y paraît au premier abord. Outre les nouvelles fonctionnalités visibles comme la collaboration en temps réel, PowerPoint partage désormais une bonne partie de son code avec celui de PowerPoint Windows. Quel impact dans l’utilisation quotidienne de PowerPoint ? C’est ce que je vous propose de découvrir ici non pas à travers un test complet (pour cela il faudrait déjà que tous les changements soient documentés clairement par Microsoft), mais à travers un retour d’expérience basé sur quelques semaines d’utilisation.</description>
+    </item>
+    <item>
+      <title>Résoudre le problème « Failed to Render » dans Apple Motion et Final Cut Pro X</title>
+      <link>http://localhost:1313/post/2018-03-19-resoudre-probleme-plugin-apple-motion/</link>
+      <pubDate>Mon, 19 Mar 2018 05:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/post/2018-03-19-resoudre-probleme-plugin-apple-motion/</guid>
+      <description>Mise à jour du 2018-03-31 : à priori macOS High Sierra 10.13.4 (c&amp;rsquo;est le .4 qui est important) règle le problème. Pour vérifier quelle est votre version de macOS, il faut aller dans le menu Pomme → À propos de ce Mac&amp;hellip;&#xA;J’utilise de temps en temps Apple Motion, lorsque je dois réaliser des animations qui dépassent les capacités de PowerPoint. Un de mes plug-ins préférés est Yanobox Nodes 2. Mais la semaine dernière j’ai été confronté à un message d’erreur que je n’avais jamais eu lorsque j’ai essayé d’insérer le plug-in dans Motion : « Plugin&amp;lt;Nodes 2&amp;gt;: Failed To Render ».</description>
+    </item>
+    <item>
+      <title>Un script pour extraire les images, photos et vidéos d&#39;un fichier PowerPoint</title>
+      <link>http://localhost:1313/post/2018-03-05-script-extraire-images-photos-videos-fichire-powerpoint-pptx/</link>
+      <pubDate>Mon, 05 Mar 2018 05:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/post/2018-03-05-script-extraire-images-photos-videos-fichire-powerpoint-pptx/</guid>
+      <description>Vous vous souvenez peut-être du truc que je donnais dans un ancien billet pour extraire les images, les photos et les vidéos d’un fichier PowerPoint ? Et bien si vous possédez un Mac vous avez de la chance : j’ai écrit un script AppleScript pour automatiser la tâche. Si vous êtes sur Windows, vous pouvez toujours utiliser la technique manuelle.&#xA;Si vous vous intéressez à AppleScript, j’ai beaucoup commenté le code pour vous aider à comprendre comment le script fonctionne.</description>
+    </item>
+    <item>
+      <title>Le top 20 de mes Apps Mac en 2017</title>
+      <link>http://localhost:1313/post/2018-01-01-top-20-apps-mac-2017/</link>
+      <pubDate>Mon, 01 Jan 2018 05:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/post/2018-01-01-top-20-apps-mac-2017/</guid>
+      <description>C&amp;rsquo;est parfois difficile de savoir exactement quelles sont les applications que l&amp;rsquo;on utilise le plus souvent. Cependant depuis le milieu de l&amp;rsquo;année dernière j&amp;rsquo;utilise Timing (voir en position 9) pour suivre exactement le nombre d&amp;rsquo;heures à facturer à mes clients. Je peux donc vous donner avec assez de précision le top 20 des applications Mac que j&amp;rsquo;ai le plus utilisé entre juillet et décembre 2017, la numéro 1 étant la plus utilisée.</description>
+    </item>
+    <item>
+      <title>Contrôler PowerPoint avec un contrôleur MIDI</title>
+      <link>http://localhost:1313/post/2017-10-02-controler-powerpoint-avec-controleur-midi/</link>
+      <pubDate>Mon, 02 Oct 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2017-10-02-controler-powerpoint-avec-controleur-midi/</guid>
+      <description>Keyboard Maestro fait partie du top 5 des programmes que j&amp;rsquo;utilise tout le temps pour simplifier ou automatiser mon travail sur Mac. J&amp;rsquo;ai déjà donné quelques exemples d&amp;rsquo;actions possibles dans cet article. Depuis la semaine dernière Keyboard Maestro 8 est disponible. Je ne vais pas lister toutes les nouveautés ici, elles sont trop nombreuses, pour cela rendez vous directement sur la page officielle (en anglais).&#xA;Je vais juste évoquer l&amp;rsquo;amélioration de la partie MIDI ; il est désormais possible de déclencher des actions à partir d&amp;rsquo;un contrôleur MIDI.</description>
+    </item>
+    <item>
+      <title>Trier automatiquement ses projets par statut</title>
+      <link>http://localhost:1313/post/2017-09-25-comment-je-trie-projets-omnifocus/</link>
+      <pubDate>Mon, 25 Sep 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2017-09-25-comment-je-trie-projets-omnifocus/</guid>
+      <description>Comment trier ses projets dans OmniFocus ? Professionnel vs. personnel ? Par priorité ? Par date d&amp;rsquo;échéance ? Personnellement je les trie par statut. Si vous regardez l&amp;rsquo;image ci-dessous vous verrez que j&amp;rsquo;ai des dossiers nommés « active » (actifs), « stalled » (bloqué), « waiting for » (en attente), etc.&#xA;Pourquoi ai-je choisi de trier mes projets de cette manière ? Parce que cela me permet d&amp;rsquo;identifier en un coup d&amp;rsquo;œil les projets sur lesquels je dois travailler, ceux que je dois débloquer, ceux qui sont en attente de quelque chose, etc.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GTD Getting Things Done on Pierre Morsa</title>
+    <link>http://localhost:1313/categories/gtd-getting-things-done/</link>
+    <description>Recent content in GTD Getting Things Done on Pierre Morsa</description>
+    <generator>Hugo</generator>
+    <language>fr</language>
+    <lastBuildDate>Sun, 30 Jun 2024 15:28:13 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/gtd-getting-things-done/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>La façon la plus simple d’imprimer un paquet de documents sur macOS</title>
+      <link>http://localhost:1313/post/2020-05-18-imprimer-un-paquet-de-documents-sur-macos/</link>
+      <pubDate>Mon, 18 May 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2020-05-18-imprimer-un-paquet-de-documents-sur-macos/</guid>
+      <description>Pendant le confinement, comme beaucoup de parents nous avons fait école à la maison. Tous les jours, nous avons reçu les devoirs des élèves, et ces devoirs incluaient de nombreuses pièces jointes qu’il fallait imprimer.&#xA;La méthode classique consiste à télécharger chaque pièce jointe, les ouvrir une à une, puis à choisir Fichier — Imprimer autant de fois que nécessaire. Heureusement, sur macOS, il existe une solution bien plus simple, qui consiste à ajouter l’imprimante au Dock puis à glisser-déposer les documents sur l’icône de l’imprimante.</description>
+    </item>
+    <item>
+      <title>OmniFocus Action Pack : une liste d’actions pour automatiser OmniFocus avec Keyboard Maestro</title>
+      <link>http://localhost:1313/post/2020-04-20-omnifocus-action-pack-une-liste-d-actions-pour-automatiser-omnifocus-avec-keyboard-maestro/</link>
+      <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2020-04-20-omnifocus-action-pack-une-liste-d-actions-pour-automatiser-omnifocus-avec-keyboard-maestro/</guid>
+      <description>Au fil du temps, j’ai créé de nombreuses actions pour améliorer l’intégration entre Keyboard Maestro et OmniFocus. Aujourd’hui, ces actions sont regroupées au sein du « OmniFocus Action Pack ».&#xA;Ces actions permettent par exemple de manipuler les tâches comme par exemple leur assigner un tag ou les affecter à un projet. Ce pack propose également un système de « template » très flexible pour créer des séries de tâches.</description>
+    </item>
+    <item>
+      <title>OmniFocus Action Pack for Keyboard Maestro</title>
+      <link>http://localhost:1313/mac-automation/omnifocus-action-pack-for-keyboard-maestro/</link>
+      <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/mac-automation/omnifocus-action-pack-for-keyboard-maestro/</guid>
+      <description>The OmniFocus Action Pack for Keyboard Maestro is a set of plugin actions to control OmniFocus from Keyboard Maestro. OmniFocus is a top-class task management App from Omni Group. Keyboard Maestro is a wonderful automation app from Peter Lewis. Together, they are a fantastic productivity combo.&#xA;I originally created these actions for my own use, but I decided to make them available for free here as they might be of interest to others.</description>
+    </item>
+    <item>
+      <title>Télétravailpocalypse Now partie II : t&#39;es un killer Berthier</title>
+      <link>http://localhost:1313/post/2020-03-23-teletravailpocalypse-now-partie-2/</link>
+      <pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2020-03-23-teletravailpocalypse-now-partie-2/</guid>
+      <description>Vous venez de finir la construction de votre espace de télétravail. Vous avez dû faire avec les moyens du bord, mais désormais les cannibales peuvent toujours essayer de vous attaquer, vous êtes parfaitement barricadé derrière un amas de trucs qui rendrait Robinson Crusoe pâle de jalousie. Vous avez un peu faim, vous quittez donc votre télébureau pour vous diriger vers le frigo. Mais là je dis HALTE. Vous ne vous rendez pas compte des conséquences dramatiques du geste que vous vous apprêtez à commettre.</description>
+    </item>
+    <item>
+      <title>Télétravailpocalypse Now (partie I)</title>
+      <link>http://localhost:1313/post/2020-03-16-teletravailpocalypse-now-partie-1/</link>
+      <pubDate>Mon, 16 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2020-03-16-teletravailpocalypse-now-partie-1/</guid>
+      <description>2020, jungle de Créteil, quelque part entre un Starbucks et le kebab du coin. On vient de vous parachuter du jour au lendemain en plein télétravail. Loin du bruit rassurant de la machine à café et des cris du patron, vous vous retrouvez livré à vous-même, face à l’inconnu, aux cannibales affamés et à ce putain de fil Facebook où les gens n’arrêtent pas de poster des trucs. Vous vous rappelez votre entraînement en école de survie commerce.</description>
+    </item>
+    <item>
+      <title>La valeur de la compétence individuelle</title>
+      <link>http://localhost:1313/post/2019-07-22-la-valeur-de-la-competence-individuelle/</link>
+      <pubDate>Mon, 22 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2019-07-22-la-valeur-de-la-competence-individuelle/</guid>
+      <description>Prenez l’équipe de foot de Trifouillis les Oies. En face mettez Ronaldo, ou n’importe quel joueur professionnel. Je parie qu’il bat à lui tout seul les 11 gars. Si en plus Ronaldo est aidé par un gardien de but, je suis certain qu’il écrase l’équipe adverse, à 2 contre 11.&#xA;Jouer ensemble, c’est bien. Collaborer, c’est bien. Mais cela ne doit pas occulter le fait qu’une équipe, aussi nombreuse soit-elle, ne remplacera pas la compétence.</description>
+    </item>
+    <item>
+      <title>La Muskute, unité de productivité ultime ?</title>
+      <link>http://localhost:1313/post/2019-06-24-la-muskute-unite-de-productivite-ultime/</link>
+      <pubDate>Mon, 24 Jun 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2019-06-24-la-muskute-unite-de-productivite-ultime/</guid>
+      <description>Je ne sais pas si vous vous souvenez de la méthode de productivité d’Elon Musk. En résumé, il dit qu’il :&#xA;fait des journées de 20 heures de travail, sans s’arrêter pour manger et qu’il divise tout son temps en intervalles de 5 minutes, chacun dédié à une tâche. Nous appellerons cet intervalle de temps standard une « Muskute ». Bien. Cool, mec. Faisons un petit calcul. Il y a 12 créneaux de 5 minutes par heure.</description>
+    </item>
+    <item>
+      <title>Comment je lutte contre ma manie d’oublier des trucs</title>
+      <link>http://localhost:1313/post/2019-03-18-comment-je-lutte-contre-ma-manie-d-oublier-des-trucs/</link>
+      <pubDate>Mon, 18 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2019-03-18-comment-je-lutte-contre-ma-manie-d-oublier-des-trucs/</guid>
+      <description>Comme tout le monde, il m’arrive de ne pas réussir à me concentrer. Mais j’ai également le problème inverse. Je suis parfois tellement concentré sur une pensée que j’en oublie tout le reste, et cela peut se révéler gênant. En 2017, j’ai oublié mon iPhone 4 fois. J’ai eu une sacrée chance. À chaque fois, je l’ai récupéré. Comme quoi, il n’y a pas qu’au Japon qu’il y a des gens honnêtes ; en France aussi, on peut tomber sur de nombreuses personnes qui n’hésitent pas à faire le bon geste.</description>
+    </item>
+    <item>
+      <title>La réalité, c&#39;est chiant.</title>
+      <link>http://localhost:1313/post/2018-09-24-la-verite-c-est-chiant/</link>
+      <pubDate>Mon, 24 Sep 2018 05:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/post/2018-09-24-la-verite-c-est-chiant/</guid>
+      <description>Il ne se passe pas une semaine sans que l’on ne découvre1 dans la presse un nouveau régime qui nous promet longue vie et prospérité. Ces régimes ont toujours les mêmes caractéristiques. Ils font des promesses incroyables. Ils se basent sur des explications scientifiques assez ténues et souvent contradictoires ou prises hors contexte. Ils excluent certains groupes d’aliments qui sont vus comme les philistins de la bouffe. Et ils sont défendus par une communauté à la ferveur quasi religieuse.</description>
+    </item>
+    <item>
+      <title>PSB : Potentiel de Surface Bordélique</title>
+      <link>http://localhost:1313/post/2018-09-17-spb---surface-de-potentiel-bord%C3%A9lique/</link>
+      <pubDate>Mon, 17 Sep 2018 05:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/post/2018-09-17-spb---surface-de-potentiel-bord%C3%A9lique/</guid>
+      <description>Imaginez une situation qui ne vous est probablement jamais arrivée. C’est le bordel dans votre bureau. Des papiers traînent partout. Vous avez besoin de vous organiser. De ranger. D’ordonner. Vous manquez de place. Vous installez donc logiquement des étagères supplémentaires dans votre bureau.&#xA;Vous ne venez pas de vous organiser. Vous venez d’augmenter votre PSB : votre Potentiel de Surface Bordélique. Petit à petit, le désordre va revenir. Inéluctablement. Et vous venez d’augmenter la surface sur laquelle il va pouvoir s’installer.</description>
+    </item>
+    <item>
+      <title>Une vie « low maintenance »</title>
+      <link>http://localhost:1313/post/2018-07-02-une-vie-low-maintenance/</link>
+      <pubDate>Mon, 02 Jul 2018 05:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/post/2018-07-02-une-vie-low-maintenance/</guid>
+      <description>Cela vous est sûrement déjà arrivé : vous achetez un truc en pensant que cela va vous faire gagner en productivité. Mais petit à petit, vous réalisez que le bénéfice apporté est anéanti par le besoin de maintenance de ce truc. Et que finalement le gain de productivité n’en est pas vraiment un. Pour éviter cela, j’ai une philosophie low maintenance, autrement dit « entretien minimum ».&#xA;Un exemple simple : l’email.</description>
+    </item>
+    <item>
+      <title>Utilisez la limite de 40 minutes de Zoom à votre avantage</title>
+      <link>http://localhost:1313/post/2018-06-25-utiliser-la-limite-de-temps-comme-un-avantage/</link>
+      <pubDate>Mon, 25 Jun 2018 05:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/post/2018-06-25-utiliser-la-limite-de-temps-comme-un-avantage/</guid>
+      <description>Depuis quelques mois, nous utilisons Zoom pour réaliser nos vidéoconférences. Cela fonctionne vraiment beaucoup mieux que Skype, en particulier pour les groupes de plusieurs personnes. Seulement voilà, la version gratuite de Zoom limite par défaut les vidéoconférences à 40 minutes maximum. Au-delà de ce délai, la communication est interrompue automatiquement.&#xA;Mais si au lieu de considérer cela comme un problème, on considérait cela comme un avantage ? C’est exactement ce que nous faisons : la vidéoconférence dure 40 minutes.</description>
+    </item>
+    <item>
+      <title>Il y a un temps pour parler et un temps pour la fermer.</title>
+      <link>http://localhost:1313/post/2018-06-18-il-y-a-un-temps-pour-parler-et-un-temps-pour-la-fermer/</link>
+      <pubDate>Mon, 18 Jun 2018 05:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/post/2018-06-18-il-y-a-un-temps-pour-parler-et-un-temps-pour-la-fermer/</guid>
+      <description>Une étude intéressante a été réalisée par l&amp;rsquo;armée américaine. Et sans LSD ni ouverture de portail dimensionnel ni aliens cachés dans la zone 51. Cette étude porte sur des créatures encore plus étranges : les cyber teams, ces équipes spécialisées dans l&amp;rsquo;attaque et la défense des réseaux numériques. Et leur conclusion est sans appel : les équipes les plus performantes sont celles qui la ferment.&#xA;Bim.&#xA;Évidemment, on connaît tous le cliché du Geek asocial face à son écran, incapable de communiquer correctement.</description>
+    </item>
+    <item>
+      <title>Utilisez un grand moniteur pour améliorer votre productivité</title>
+      <link>http://localhost:1313/post/2018-05-07-les-trucs-les-plus-simples-pour-augmenter-sa-productivit%C3%A9/</link>
+      <pubDate>Mon, 07 May 2018 05:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/post/2018-05-07-les-trucs-les-plus-simples-pour-augmenter-sa-productivit%C3%A9/</guid>
+      <description>Il existe un objet qui permet d’augmenter sa productivité, immédiatement, sans effort, et en satisfaisant votre envie d’achat. Cet objet, c’est un grand moniteur. Ou plus exactement, c’est un moniteur qui augmente la résolution utile disponible. La résolution utile, c’est celle qui détermine la quantité d’information utile qui peut être affichée. Comprendre la distinction entre résolution utile et matérielle demande une petite explication, ceci étant parfois très confus.&#xA;Distinguer résolution utile et résolution matérielle L’écran 15 pouces (38 cm de diagonale) de mon MacBook Pro a une résolution matérielle de 2880 x 1800 pixels.</description>
+    </item>
+    <item>
+      <title>Minimiser le changement de projet</title>
+      <link>http://localhost:1313/post/2018-02-05-minimiser-le-changement-de-projet/</link>
+      <pubDate>Mon, 05 Feb 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2018-02-05-minimiser-le-changement-de-projet/</guid>
+      <description>Dans la méthodologie d’organisation personnelle GTD, on crée des projets et on saute de l’un à l’autre en fonction du contexte. Mais changer trop souvent de projet (et de contexte !) est contre-productif. Voici pourquoi.&#xA;Avec GTD alias Getting Things Done on travaille par contexte : par exemple, pour écrire cet article je suis dans le contexte @mac, car je le fais depuis mon ordinateur. C’est tout bête, mais cela évite de penser à des tâches que l’on ne peut pas faire maintenant, comme acheter des cartouches d’encre pour cette c*** d’imprimante.</description>
+    </item>
+    <item>
+      <title>Contrôler PowerPoint avec un contrôleur MIDI</title>
+      <link>http://localhost:1313/post/2017-10-02-controler-powerpoint-avec-controleur-midi/</link>
+      <pubDate>Mon, 02 Oct 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2017-10-02-controler-powerpoint-avec-controleur-midi/</guid>
+      <description>Keyboard Maestro fait partie du top 5 des programmes que j&amp;rsquo;utilise tout le temps pour simplifier ou automatiser mon travail sur Mac. J&amp;rsquo;ai déjà donné quelques exemples d&amp;rsquo;actions possibles dans cet article. Depuis la semaine dernière Keyboard Maestro 8 est disponible. Je ne vais pas lister toutes les nouveautés ici, elles sont trop nombreuses, pour cela rendez vous directement sur la page officielle (en anglais).&#xA;Je vais juste évoquer l&amp;rsquo;amélioration de la partie MIDI ; il est désormais possible de déclencher des actions à partir d&amp;rsquo;un contrôleur MIDI.</description>
+    </item>
+    <item>
+      <title>Trier automatiquement ses projets par statut</title>
+      <link>http://localhost:1313/post/2017-09-25-comment-je-trie-projets-omnifocus/</link>
+      <pubDate>Mon, 25 Sep 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2017-09-25-comment-je-trie-projets-omnifocus/</guid>
+      <description>Comment trier ses projets dans OmniFocus ? Professionnel vs. personnel ? Par priorité ? Par date d&amp;rsquo;échéance ? Personnellement je les trie par statut. Si vous regardez l&amp;rsquo;image ci-dessous vous verrez que j&amp;rsquo;ai des dossiers nommés « active » (actifs), « stalled » (bloqué), « waiting for » (en attente), etc.&#xA;Pourquoi ai-je choisi de trier mes projets de cette manière ? Parce que cela me permet d&amp;rsquo;identifier en un coup d&amp;rsquo;œil les projets sur lesquels je dois travailler, ceux que je dois débloquer, ceux qui sont en attente de quelque chose, etc.</description>
+    </item>
+    <item>
+      <title>Non, je n&#39;automatise pas tout !</title>
+      <link>http://localhost:1313/post/2017-09-18-non-je-n-automatise-pas-tout/</link>
+      <pubDate>Mon, 18 Sep 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2017-09-18-non-je-n-automatise-pas-tout/</guid>
+      <description>Vous le savez, je suis un grand partisan de l&amp;rsquo;automatisation pour économiser du temps. Pourtant ce n&amp;rsquo;est pas vrai pour tout. Par exemple je fais mon café du matin à l&amp;rsquo;Aeropress, une méthode assez originale pour préparer le café. Chaque matin je mouds les grains de café à la main, je fais bouillir l&amp;rsquo;eau et j&amp;rsquo;utilise ensuite l&amp;rsquo;Aeropress pour faire le café. La solution automatique serait d&amp;rsquo;utiliser une machine à expresso à dosettes.</description>
+    </item>
+    <item>
+      <title>Un script AppleScript pour envoyer tous les emails vers OmniFocus</title>
+      <link>http://localhost:1313/post/2017-07-10-script-applescript-fusion-boite-de-reception-mail-omnifocus/</link>
+      <pubDate>Mon, 10 Jul 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2017-07-10-script-applescript-fusion-boite-de-reception-mail-omnifocus/</guid>
+      <description>Suite à mon article sur OmniFocus 2, un lecteur m&amp;rsquo;a demandé si je pouvais partager le script qui me sert à fusionner les boîtes de réceptions de Apple Mail et OmniFocus 2. Le voilà.&#xA;Attention 1 : à la première exécution le script va créer une tâche OmniFocus pour tous les emails dans la boîte de réception, si vous en avez beaucoup vous risquez de vous retrouver avec des milliers de tâches OmniFocus en plus !</description>
+    </item>
+    <item>
+      <title>OmniFocus 2 affiche la boîte de réception dans les projets</title>
+      <link>http://localhost:1313/post/2017-06-26-omnifocus-affiche-boite-de-reception-dans-projets/</link>
+      <pubDate>Mon, 26 Jun 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2017-06-26-omnifocus-affiche-boite-de-reception-dans-projets/</guid>
+      <description>il y a quelques semaines j&amp;rsquo;ai publié un test d&amp;rsquo;OmniFocus 2. Un des griefs principaux que je faisais était l&amp;rsquo;impossibilité d&amp;rsquo;afficher la boîte de réception en même temps que les projets. Et bien magie, OmniFocus 2.10 vient d&amp;rsquo;ajouter cette fonctionnalité !&#xA;C&amp;rsquo;est beaucoup plus logique et plus rapide de traiter sa boîte de réception de cette manière : on traite les différentes actions, et celles qui doivent aller dans un projet peuvent être directement glissées-déposées dans le bon projet, au bon endroit.</description>
+    </item>
+    <item>
+      <title>Bien s&#39;organiser avec OmniFocus 2</title>
+      <link>http://localhost:1313/post/2017-06-12-test-omnifocus-2/</link>
+      <pubDate>Mon, 12 Jun 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2017-06-12-test-omnifocus-2/</guid>
+      <description>OmniFocus 2 est un outil de gestion des tâches basé sur la méthode GTD, disponible pour Mac, iPad et iPhone. Après avoir essayé différentes solutions, c&amp;rsquo;est celle-ci qui a retenu mon choix, car c&amp;rsquo;est la solution la plus complète et la plus puissante, et surtout elle peut être personnalisée avec AppleScript, le langage d&amp;rsquo;automatisation d&amp;rsquo;Apple.&#xA;Plutôt qu&amp;rsquo;un test classique, j&amp;rsquo;ai voulu décrire comment OmniFocus s&amp;rsquo;en sort dans une utilisation quotidienne pour quelqu&amp;rsquo;un qui utilise la méthodologie GTD.</description>
+    </item>
+    <item>
+      <title>Automatiser ses tâches sur Mac</title>
+      <link>http://localhost:1313/post/2017-03-06-automatiser-taches-mac/</link>
+      <pubDate>Mon, 06 Mar 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2017-03-06-automatiser-taches-mac/</guid>
+      <description>Je l&amp;rsquo;avoue. Je suis un fanboy de l&amp;rsquo;automatisation des tâches sur Mac. Pour moi :&#xA;Automatisation &amp;gt; Délégation &amp;gt; Répétition manuelle&#xA;Autrement dit, par ordre d&amp;rsquo;efficacité l&amp;rsquo;idéal est d&amp;rsquo;abord d&amp;rsquo;automatiser une tâche. Si ce n&amp;rsquo;est pas possible, essayer de la déléguer, mais ce n&amp;rsquo;est pas très sympa pour la personne qui hérite de cette tâche répétitive. En dernier recours on peut faire la tâche répétitive soi-même, encore et encore et encore et encore, comme un Shadok condamné à pomper pour l&amp;rsquo;éternité.</description>
+    </item>
+    <item>
+      <title>Démarrer la journée de travail par un échauffement GTD</title>
+      <link>http://localhost:1313/post/2017-02-27-commencez-la-journee-par-des-taches-d-echauffement/</link>
+      <pubDate>Mon, 27 Feb 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2017-02-27-commencez-la-journee-par-des-taches-d-echauffement/</guid>
+      <description>Le conseil classique que tout le monde donne est de commencer la journée par la tâche la plus difficile et la plus importante de la journée. Mais ça ne fonctionne pas pour moi ; au saut du lit je ne suis pas encore complètement opérationnel, et j&amp;rsquo;ai besoin d&amp;rsquo;un peu de temps et de café avant d&amp;rsquo;attaquer les tâches les plus difficiles.&#xA;C&amp;rsquo;est pourquoi je préfère ouvrir ma journée de travail en m&amp;rsquo;échauffant avec quelques tâches très simples, toujours les mêmes : nettoyer ma boîte de réception et faire ma revue quotidienne dans OmniFocus.</description>
+    </item>
+    <item>
+      <title>7 ans avec la disposition clavier BÉPO</title>
+      <link>http://localhost:1313/post/2017-02-13-7-ans-clavier-bepo/</link>
+      <pubDate>Mon, 13 Feb 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2017-02-13-7-ans-clavier-bepo/</guid>
+      <description>Connaissez-vous le BÉPO ? C&amp;rsquo;est une disposition de clavier optimisée pour le français proposée comme alternative au bon vieux AZERTY. Voilà à quoi ressemble la disposition des touches sur un clavier BÉPO (image appartenant à https://bepo.fr) :&#xA;J&amp;rsquo;ai découvert le BÉPO il y a environ 7 ans. À l&amp;rsquo;époque j&amp;rsquo;avais des douleurs dans les articulations des mains à force d&amp;rsquo;utiliser des souris et des claviers d&amp;rsquo;ordinateurs tous les jours. Aujourd&amp;rsquo;hui je tape encore du texte tous les jours, mais je n&amp;rsquo;ai plus de douleurs.</description>
+    </item>
+    <item>
+      <title>Comment j&#39;ai vaincu mon blocage du blogging</title>
+      <link>http://localhost:1313/post/2017-01-09-comment-vaincu-blocage-blogging/</link>
+      <pubDate>Mon, 09 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2017-01-09-comment-vaincu-blocage-blogging/</guid>
+      <description>Ce blog existe depuis août 2008. Si vous êtes un ancien lecteur, vous avez dû remarquer qu&amp;rsquo;il est passé par différentes phases. En mode « Pierre découvre le blogging » au début avec plusieurs articles par semaine, puis look sapin de noël avec des tas de rubriques colorées, pour finir aujourd&amp;rsquo;hui sur un format qui me convient bien. Simple, avec une mise en valeur du texte et peu d&amp;rsquo;images. Mais surtout vous avez dû remarquer que depuis août 2016 je suis beaucoup plus assidu et régulier ; je poste exactement un article chaque lundi, alors que ces dernières années c&amp;rsquo;était plutôt un article tous les six mois.</description>
+    </item>
+    <item>
+      <title>Nomade digital, étape 2 : être efficace en télétravail</title>
+      <link>http://localhost:1313/post/2016-12-05-nomade-digital-etape-2-efficace-teletravail/</link>
+      <pubDate>Mon, 05 Dec 2016 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2016-12-05-nomade-digital-etape-2-efficace-teletravail/</guid>
+      <description>Suite de mes réflexions en tant que nomade digital. Vous pouvez trouver les autres articles sur le sujet ici et ici.&#xA;Finalement être nomade digital, c&amp;rsquo;est simplement être un télétravailleur à temps plein. Beaucoup de personnes qui rêvent du télétravail sans en avoir fait l&amp;rsquo;expérience s&amp;rsquo;imaginent que c&amp;rsquo;est la liberté absolue. Elles ont raison. Et c&amp;rsquo;est bien là le problème.&#xA;Car « en situation de liberté absolue l&amp;rsquo;activité prioritaire est l&amp;rsquo;activité qu&amp;rsquo;on a envie de faire.</description>
+    </item>
+    <item>
+      <title>Mes contextes GTD, édition 2016</title>
+      <link>http://localhost:1313/post/2016-11-14-mes-contextes-gtd-edition-2016/</link>
+      <pubDate>Mon, 14 Nov 2016 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2016-11-14-mes-contextes-gtd-edition-2016/</guid>
+      <description>S&amp;rsquo;il y a bien une chose que je trouve difficile sur GTD, c&amp;rsquo;est de définir une liste de contextes adaptée à ses besoins. Pour ceux que cela intéresse, voici la liste des contextes que j&amp;rsquo;utilise aujourd&amp;rsquo;hui :&#xA;mac filemaker iphone ipad hereandnow errands waitingfor J&amp;rsquo;ai choisi un système de contextes structuré principalement autour de mes appareils, car c&amp;rsquo;est ce qui détermine le mieux ce que je suis capable de faire à un moment donné !</description>
+    </item>
+    <item>
+      <title>Mes gros Pomodoros de 50 minutes</title>
+      <link>http://localhost:1313/post/2016-10-17-mes-gros-pomodoros-de-50-minutes/</link>
+      <pubDate>Mon, 17 Oct 2016 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2016-10-17-mes-gros-pomodoros-de-50-minutes/</guid>
+      <description>J&amp;rsquo;ai un problème lorsque je travaille. Il m&amp;rsquo;arrive de perdre la notion du temps, et de me retrouver deux heures plus tard sans avoir fait d&amp;rsquo;interruption. Si les procrastinateurs rêveraient d&amp;rsquo;avoir ce problème, cela me gêne car travaillant à un bureau debout je ne souhaite pas rester immobile trop longtemps.&#xA;C&amp;rsquo;est pourquoi aujourd&amp;rsquo;hui je divise mon travail en plages de 50 minutes, entrecoupées de pauses de 7 minutes minimum. Des gros Pomodoros1, quoi.</description>
+    </item>
+    <item>
+      <title>Proposez trois dates pour fixer un rendez-vous par email</title>
+      <link>http://localhost:1313/post/2016-10-10-proposez-trois-dates-pour-fixer-un-rendez-vous-par-email/</link>
+      <pubDate>Mon, 10 Oct 2016 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2016-10-10-proposez-trois-dates-pour-fixer-un-rendez-vous-par-email/</guid>
+      <description>Lorsqu&amp;rsquo;on veut fixer un rendez-vous par email, ça se passe souvent comme ça :&#xA;email 1 : &amp;ldquo;Bonjour, seriez-vous disponible pour un rendez-vous téléphonique ?&amp;rdquo; email 2 : &amp;ldquo;Oui, quand êtes-vous disponible ?&amp;rdquo; email 3 : &amp;ldquo;Est-ce que le 3 janvier vous convient ?&amp;rdquo; email 4 : &amp;ldquo;Oui, le 3 janvier à 10h.&amp;rdquo; email 5 : &amp;ldquo;Ah à 10h j&amp;rsquo;ai déjà autre chose, êtes-vous disponible à un autre moment ?&amp;rdquo; email 6 : &amp;ldquo;Non, mais je pourrais le 4 janvier&amp;rdquo; email 7 : &amp;ldquo;Non le 4 je ne suis pas disponible&amp;rdquo; Etc.</description>
+    </item>
+    <item>
+      <title>Utilisez Slack comme la machine à café pour être plus productif</title>
+      <link>http://localhost:1313/blog/utilisez-slack-comme-la-machine-a-cafe-pour-etre-plus-productif/</link>
+      <pubDate>Tue, 08 Mar 2016 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/utilisez-slack-comme-la-machine-a-cafe-pour-etre-plus-productif/</guid>
+      <description>Peut-être avez-vous entendu parler de Slack. C’est le système de messagerie d’entreprise à la mode actuellement. Slack promet de remplacer l’email par une solution plus efficace. Chez Ideas on Stage, nous l’utilisons depuis plus d’un an, avec un certain succès. Comme nous travaillons aux quatre coins de la planète, cela crée une sorte de lieu virtuel où nous pouvons nous retrouver pour avoir des discussions de groupe.&#xA;Mais… Petit à petit, Slack peut prendre de plus en plus de place, au point de devenir une source de distractions permanente.</description>
+    </item>
+    <item>
+      <title>De retour sur Omnifocus</title>
+      <link>http://localhost:1313/blog/de-retour-sur-omnifocus/</link>
+      <pubDate>Sun, 16 Aug 2015 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/de-retour-sur-omnifocus/</guid>
+      <description>Avant 2008, préhistoire de GTD, j’ai utilisé un outil dont j’ai oublié le nom. Il était loin d’être parfait, mais finalement il avait déjà tous les ingrédients principaux dont les projets et les contextes. En 2008 je bascule sur Omnifocus qui vient de sortir. Puissant, flexible et scriptable il me permet de faire tout ce que je veux, même s’il est vraiment moche et parfois pénible à utiliser.&#xA;2010, je décide d’abandonner Omnifocus pour gérer tous mes projets et toutes mes tâches dans Curio, une application dont l’objectif premier n’est pas GTD, mais qui me permet de rassembler tous les éléments d’un projet à un seul endroit : documents, brainstorm, mind maps, tâches, etc.</description>
+    </item>
+    <item>
+      <title>David Allen à Paris le 1er octobre ?</title>
+      <link>http://localhost:1313/blog/david-allen-paris-le-1er-octobre/</link>
+      <pubDate>Mon, 27 Jul 2015 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/david-allen-paris-le-1er-octobre/</guid>
+      <description>David Allen, le créateur de Getting Things Done alias GTD, serait à Paris le 1er octobre 2015.&#xA;En tout cas c’est ce qu’annonce Romain Bisseret (@romainbisseret) sur Twitter… Affaire à suivre donc.</description>
+    </item>
+    <item>
+      <title>Le guide du travail à distance sur zapier.com</title>
+      <link>http://localhost:1313/blog/le-guide-du-travail-distance-sur-zapier-com/</link>
+      <pubDate>Mon, 27 Jul 2015 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/le-guide-du-travail-distance-sur-zapier-com/</guid>
+      <description>Saviez-vous que chez Ideas on Stage, nous avons UN bureau ? Lorsque je dis un bureau, c’est à prendre au sens littéral : nous avons 1 table et 1 chaise que nous louons dans un espace de co-working. Le reste du temps, nous travaillons à distance ou directement chez notre client. Nous sommes répartis un peu partout en Europe, en France, en Espagne, en Allemagne ou ailleurs.&#xA;L’idée de créer une entreprise où tout le monde travaille dans un lieu différent était encore inimaginable il y a quelques années, car il manquait un élément essentiel : les outils.</description>
+    </item>
+    <item>
+      <title>Les trucmuches dont on ne se sert jamais</title>
+      <link>http://localhost:1313/blog/les-trucmuches-dont-on-ne-se-sert-jamais/</link>
+      <pubDate>Wed, 14 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/les-trucmuches-dont-on-ne-se-sert-jamais/</guid>
+      <description>Qui ne s’est jamais dit « si j’achète ce trucmuche, ça va me permettre de faire du sport | dessiner | faire la cuisine | etc. » ? Un mois plus tard, et un déballage fébrile après, le trucmuche prend la poussière et encombre le fond d’un placard pour ne plus jamais revoir la lumière du jour.&#xA;Le problème ? Le marketing passe son temps à me « survendre » les bénéfices du trucmuche, me donnant l’impression qu’il va changer ma vie, la rendre meilleure sans devoir faire d’effort.</description>
+    </item>
+    <item>
+      <title>Savoir oublier GTD pour être plus productif [La minute GTD]</title>
+      <link>http://localhost:1313/blog/savoir-oublier-gtd-pour-tre-plus-productif-la-minute-gtd/</link>
+      <pubDate>Sun, 21 Sep 2014 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/savoir-oublier-gtd-pour-tre-plus-productif-la-minute-gtd/</guid>
+      <description>Cela fait maintenant plusieurs années que j’utilise la méthode GTD pour m’organiser. Je l’ai découverte par hasard en 2006, au détour d’un petit article sur un blog.&#xA;Cependant au fil du temps j’ai découvert que cette méthode a un défaut : elle donne l’impression d’avoir toujours quelque chose à faire, à n’importe quel moment de la journée. Cela peut s’avérer fatiguant à la longue, et même paradoxalement avoir un effet négatif sur la productivité (ça donne l’impression que même si j’arrive » réaliser 10 tâches importantes, il en restera encore 9990 alors à quoi bon s’exciter).</description>
+    </item>
+    <item>
+      <title>Il y a désormais un formateur officiel à GTD en France</title>
+      <link>http://localhost:1313/blog/formateur-officiel-gtd-en-france/</link>
+      <pubDate>Thu, 11 Sep 2014 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/formateur-officiel-gtd-en-france/</guid>
+      <description>Câest une des questions que je reçois le plus souvent : où peut-on suivre une formation officielle GTD en France ? Ma réponse, jusqu&amp;rsquo;à aujourd&amp;rsquo;hui, était « nulle part »…&#xA;Mais depuis peu Romain Bisseret, de la société In Excelsis, vient de se lancer dans l&amp;rsquo;aventure, et est désormais « GTD Certified Trainer &amp;amp; Executive Coach ». Câest bien réel, puisqu&amp;rsquo;il est listé parmi les Global Partners de GTDÂ sur le site officiel.</description>
+    </item>
+    <item>
+      <title>Une chose à la fois pour ne pas succomber à la charge de travail [La minute GTD]</title>
+      <link>http://localhost:1313/blog/une-chose-la-fois/</link>
+      <pubDate>Thu, 11 Sep 2014 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/une-chose-la-fois/</guid>
+      <description>Une critique qui revient régulièrement sur la méthodologie GTD est le fait de se retrouver rapidement avec des listes d’action à rallonge impossibles à réaliser. Personnellement j’utilise trois moyens pour éviter cela :&#xA;Une chose à la fois : c’est le principe de la « next action » : on choisit l’action que l’on préfère faire en fonction du contexte, de l’énergie et du temps disponible. Une fois cette action identifiée, on se focalise uniquement sur celle-ci, sans se soucier des autres actions en attente.</description>
+    </item>
+    <item>
+      <title>Transformer un cahier Moleskine en outil GTD</title>
+      <link>http://localhost:1313/blog/transformer-un-cahier-moleskine-en-outil-gtd/</link>
+      <pubDate>Tue, 02 Sep 2014 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/transformer-un-cahier-moleskine-en-outil-gtd/</guid>
+      <description>Note : c’est un vieux billet que je repose à la demande d’un internaute qui souhaitait en savoir un peu plus sur la façon dont j’avais adapté la méthodologie GTD pour un carnet Moleskine. Malheureusement j’ai perdu les photos que j’avais prises à l’époque ; j’essaierai d’en reprendre des nouvelles lorsque j’aurai un peu de temps.&#xA;Cette semaine, nous nous attaquons à un outil allégé à 0% en matières technologiques grasses.</description>
+    </item>
+    <item>
+      <title>Un bureau debout pour 20€</title>
+      <link>http://localhost:1313/blog/bureau-debout-pour-20-euros/</link>
+      <pubDate>Fri, 08 Jun 2012 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/bureau-debout-pour-20-euros/</guid>
+      <description>Récemment plusieurs études ont été publiées et toutes concordent : rester assis trop longtemps est très mauvais pour la santé. L’impact négatif est particulièrement fort pour les personnes qui restent assises 8h ou plus par jour, mais les effets néfastes sont présents dès 4h de position assise par jour. C’est pourquoi il y quelques semaines je décide de franchir le pas et de m’équiper d’un bureau debout. Je regarde les bureaux assis debout, équipés d’un moteur pour lever ou abaisser le plateau.</description>
+    </item>
+    <item>
+      <title>Hemingway et la productivité</title>
+      <link>http://localhost:1313/blog/hemingway-productivite-2/</link>
+      <pubDate>Fri, 11 May 2012 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/hemingway-productivite-2/</guid>
+      <description>Ernerst Hemingway a dit un jour « Le téléphone et les visiteurs sont les destructeurs de travail ». Autrement dit, il considérait que le téléphone et les visiteurs étaient les deux choses qui l’empêchaient le plus de travailler. S’il avait vécu aujourd’hui, j’imagine qu’il aurait dû dire : « Le smartphone, les visiteurs, l’iPad, les réseaux sociaux, l’email, les sites de nouvelles et les flux rss sont les destructeurs de travail »…</description>
+    </item>
+    <item>
+      <title>La liste des meilleurs outils GTD V1</title>
+      <link>http://localhost:1313/blog/liste-meilleurs-outils-gtd-v1/</link>
+      <pubDate>Mon, 07 May 2012 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/liste-meilleurs-outils-gtd-v1/</guid>
+      <description>J’ai le plaisir de vous annoncer la publication de la V1 de la liste des meilleurs outils GTD. Aujourd’hui il est pratiquement impossible d’établir une liste exhaustive des outils du marché, j’ai donc choisi de parler des outils qui sont réellement utilisés par les lecteurs du blog. Ces outils Getting Things Done sont répartis en trois catégories :&#xA;Les meilleurs outils GTD pour gérer ses tâches, contextes et projets Les meilleurs outils GTD pour gérer son agenda Les meilleurs outils GTD pour stocker ses documents de référence Actuellement la solution la plus souvent citée est Dropbox, ce qui n’est pas surprenant vu son succès et sa présence sur toutes les plateformes.</description>
+    </item>
+    <item>
+      <title>Quels outils GTD utilisez-vous ? Appel à témoins</title>
+      <link>http://localhost:1313/blog/quels-outils-gtd-utilisez-vous/</link>
+      <pubDate>Thu, 19 Apr 2012 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/quels-outils-gtd-utilisez-vous/</guid>
+      <description>Suite à la publication de la FAQ sur GTD (s’organiser pour réussir), je prépare une autre page qui liste les outils GTD les plus populaires pour aider les débutants à construire leur système GTD.&#xA;Personnellement, j’utilise ou j’ai utilisé plusieurs combinaisons d’Apps GTD, pour finalement aujourd’hui arrêter mon choix sur une combinaison simple : Carnet papier + Mail + Curio + Dropbox. Omnifocus a longtemps été mon gestionnaire de tâches GTD de prédilection, et je continue de le recommander dans la plupart des cas, car il est un « vrai » outil pur jus GTD alos que Curio est un outil particulier, un peu touche à tout, qui est à la base plutôt destiné à gérer des projets créatifs, sur lequel j’écrirai un billet bientôt.</description>
+    </item>
+    <item>
+      <title>FAQ GTD V1</title>
+      <link>http://localhost:1313/blog/faq-gtd-v1/</link>
+      <pubDate>Mon, 16 Apr 2012 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/faq-gtd-v1/</guid>
+      <description>J’ai le plaisir de vous annoncer la publication de la FAQ GTD V1. FAQ est un acronyme anglais qui signifie Frequently Asked Questions, autrement dit « Questions souvent posées ».&#xA;Cette FAQ a comme objectif de répondre aux questions qui me sont le plus souvent posées sur GTD par email ou dans les commentaires. C’est la toute première version, n’hésitez pas à m’aider à l’enrichir en postant dans les commentaires ce que vous aimeriez y voir figurer comme éléments !</description>
+    </item>
+    <item>
+      <title>La règle des deux minutes</title>
+      <link>http://localhost:1313/blog/regle-deux-minutes/</link>
+      <pubDate>Sun, 15 Apr 2012 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/regle-deux-minutes/</guid>
+      <description>Si une tâche prend moins de deux minutes à faire, faites-la tout de suite. La remettre à plus tard ne fera que vous faire perdre du temps.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,556 @@
+<!-- _default:baseof.html:start -->
+<!DOCTYPE HTML>
+<html>
+	
+		
+<!-- partials:head:start -->
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	
+	
+		
+			<meta name="author" content="Pierre Morsa" />
+		
+		<meta name="fediverse:creator" content="@pmorsa@mastodon.social" />
+	
+	
+	<meta name="generator" content="Hugo 0.128.0">
+	
+	
+		
+			<title>Héberger gratuitement un site Hugo avec Github et Netlify (2/2)</title>
+		
+		
+		
+			<!-- language taken from SITE default language parameter  -->
+			<meta http-equiv="Content-Language" content="fr" />
+		
+		
+	
+
+	<link rel="me" href="https://mastodon.social/@pmorsa" />
+	<link rel="me" href="https://www.ideasonstage.com/" />
+
+	<link rel="apple-touch-icon-precomposed" href="/favicon/apple-touch-icon-precomposed.png" />
+	<link rel="icon" href="/favicon/favicon.png" />
+	<link rel="stylesheet" href="/main.min.css" />
+</head>	
+<!-- partials:head:end -->
+
+	
+	
+	<!-- _default:single:start -->
+  <body>
+		
+<!-- partials:topbar:start -->
+<section id="topbar" class="topbar-style">
+		<a href="/">
+			<img src="/pictures/main/pierre-morsa-avatar.png" class="intro-circle" width="48" alt="Pierre Morsa" />
+		</a>
+	
+		
+		
+			
+			
+				<h1>
+					<a href="/">
+						ce bon vieux blog
+					</a>
+				</h1>
+			
+			
+				<p class="topbar-style">
+					Réflexions de comptoir
+				</p>
+			
+		
+	
+
+</section>
+
+<!-- partials:topbar:end -->
+
+    <div class="grandparent-flex">
+			<main class="main-flex">
+				<!-- _default:article:start -->
+<article class="layout-module post">
+	<!-- _default:article-header:start -->
+<header class="post-header">
+	<h2 class="post-header-h2">
+		<a href="/post/2017-12-25-site-hugo-github-netlify-2/">
+			Héberger gratuitement un site Hugo avec Github et Netlify (2/2)
+		</a>
+	</h2>
+  
+  <div class="post-header-meta">
+		
+	    <time class="post-header-meta-published" datetime='2017-12-25'>
+				2017-12-25
+			</time>
+		
+		
+		
+	</div><!-- meta -->
+	<div class="pills">
+		
+		
+			<span class="pill pill-category">
+				<a href="/categories/technomagie/">
+					Technomagie
+				</a>
+			</span>
+		
+			<span class="pill pill-category">
+				<a href="/categories/hugo/">
+					Hugo
+				</a>
+			</span>
+		
+		
+		
+		
+	</div>
+
+</header>
+<!-- _default:article-header:end -->
+
+	<div class="post-content">
+		<p>Dans cette deuxième partie nous allons voir comment configurer Netlify pour servir les pages du site. Si vous ne l&rsquo;avez pas lue je vous conseille de démarrer par la <a href="/post/2017-12-18-site-hugo-github-netlify-1">partie 1 de l&rsquo;article qui explique comment déplacer le code du site dans Github</a>.</p>
+<p>Le truc génial avec Netlify, c&rsquo;est qu&rsquo;il s&rsquo;occupe de faire tout ce qui est généralement bien pénible à configurer :</p>
+<ul>
+<li>Il va être le serveur web des pages</li>
+<li>Il est CDN (Content Distributed Network) pour accélérer la performance du site, et prend entièrement à sa charge la gestion du rafraîchissement du cache. Fini les arrachages de cheveux parce que le cache ne s&rsquo;est pas mis à jour correctement.</li>
+<li>Il offre un DNS très rapide pour réduire la latence de connexion.</li>
+<li>Il gère le https pour vous (si vous le souhaitez), et force la redirection de http vers https.</li>
+</ul>
+<p>Pour pas un roro, c&rsquo;est déjà super. Mais si en plus je vous dis que Netlify :</p>
+<ul>
+<li>Compile automatiquement le site hugo pour vous à partir du repository Github</li>
+<li>Déploie automatiquement la branche compilée</li>
+<li>Permet de tester autant de branches alternatives (versions de test ou versions futures par exemple) que souhaité</li>
+<li>Permet de faire du A/B testing automatiquement</li>
+<li>Permet de faire un rollback (retour en arrière) simplement en cas de catastrophe.</li>
+<li>Offre un système de gestion de contenu hyper rapide (CMS).</li>
+</ul>
+<p>Et tout ça toujours pour zéro roros ? Elle est pas belle la vie ?</p>
+<h2 id="configurer-netlify">Configurer Netlify</h2>
+<p>C&rsquo;est bien beau tout ça, mais du coup ça doit sûrement être compliqué de tout paramétrer. Ben non. La magie de Netlify c&rsquo;est que tout reste super simple.</p>
+<h3 id="créer-un-compte-netlify">Créer un compte Netlify</h3>
+<p>Pour créer un compte Netlify, identifiez-vous avec votre compte Github.</p>
+<p><img src="/pictures/2017/12/netlify-signin-github.jpg" alt="Netlify Signin Github"></p>
+<p>Pourquoi avec votre compte Github ? Parce que&hellip; Netlify va automatiquement vous proposer les différents projets que vous avez stockés sur Github. Donnez l&rsquo;autorisation à Netlify d&rsquo;accéder à votre compte Github. Voilà, vous venez de configurer votre compte Netlify.</p>
+<p><img src="/pictures/2017/12/netlify-authorize-github.jpg" alt="Netlify Authorize Github"></p>
+<h3 id="ajouter-son-site-hugo-sur-netlify">Ajouter son site Hugo sur Netlify</h3>
+<p>Pour ajouter un site commençons par cliquer sur le bouton « New site from Git ».</p>
+<p><img src="/pictures/2017/12/netlify-new-site-from-git.jpg" alt="Netlify New Site From Git"></p>
+<p>Ensuite, il faut choisir « Github » (ou une des autres options  si votre code est hébergé chez GitLab ou un autre).</p>
+<p><img src="/pictures/2017/12/netlify-create-a-new-site-from-github.jpg" alt="Netlify Create A New Site From Github"></p>
+<p>Il faut de nouveau autoriser Netlify à accéder aux repositories GitHub.</p>
+<p><img src="/pictures/2017/12/netlify-github-additional-permissions.jpg" alt="Netlify Github Additional Permissions"></p>
+<p>Sélectionnez alors le repository qui contient le code de votre site, dans mon cas « www.testtoto.com ».</p>
+<p><img src="/pictures/2017/12/netlify-new-site-choose.jpg" alt="Netlify New Site Choose"></p>
+<p>Il ne reste désormais plus que quelques informations à fournir :</p>
+<ul>
+<li>Vous pouvez normalement laisser le nom de la branche à déployer à « master » (comme expliqué dans l&rsquo;article précédent, c&rsquo;est le nom par défaut de la version « validée »).</li>
+<li>La « Build command » est simplement&hellip; <code>hugo</code></li>
+<li>Le nom du répertoire de publication est <code>public</code></li>
+</ul>
+<p>Une fois ces informations renseignées, vous pouvez cliquer sur « Deploy Site ». En général la compilation et publication d&rsquo;un site prend entre quelques secondes et quelques minutes maximum.</p>
+<p><img src="/pictures/2017/12/netlify-new-site-added.jpg" alt="Netlify New Site Added"></p>
+<p>Netlify attribue automatiquement un URL au nouveau site qu&rsquo;il gère. Dans mon exemple cet URL est <a href="http://eager-hugle-1657a8.netlify.com">http://eager-hugle-1657a8.netlify.com</a> - Le site est désormais accessible directement à cet URL, mais il ne vous convient certainement pas. Nous allons donc maintenant passer aux étapes 2 et 3 : la configuration d&rsquo;un nom de domaine personnalisé et du https.</p>
+<h3 id="configurer-le-nom-de-domaine">Configurer le nom de domaine</h3>
+<p>Mon nom de domaine est pierremorsa.com, et je l&rsquo;ai acheté il y a un bout de temps&hellip; Pour le configurer, il y a deux solutions :</p>
+<ul>
+<li>Modifier les informations du DNS existant pour pointer vers les serveurs de Netlify.</li>
+<li>Ou utiliser les serveurs DNS de Netlify.</li>
+</ul>
+<p>Je ne vais décrire ici que la deuxième option, utiliser les serveurs DNS de Netlify. Ils se vantent d&rsquo;avoir les serveurs DNS les plus rapides du monde. J&rsquo;ignore si c&rsquo;est vrai.</p>
+<p>Cette opération est rendue la plus simple possible par Netlify, mais elle reste malgré tout assez délicate, et parfois un peu déroutante, car il y a un temps de latence entre le moment où l&rsquo;on demande la modification des paramètres d&rsquo;un DNS et le moment où ces changements deviennent effectifs partout dans le monde. C&rsquo;est une opération à faire le moins souvent possible.</p>
+<p>Cliquez sur « Set up a custom domain ». Si vous avez loupé cet écran, cliquez simplement sur « Domain settings » → Domain management → Domains et cela reviendra au même.</p>
+<p><img src="/pictures/2017/12/netlify-add-custom-domain.jpg" alt="Netlify Add Custom Domain"></p>
+<p>Cliquez ensuite sur « Add custom domain », entrez le nom de votre domaine, puis sur Save.</p>
+<p><img src="/pictures/2017/12/netlify-add-custom-domain-2.jpg" alt="Netlify Add Custom Domain 2"></p>
+<p>À ce niveau, vous allez probablement avoir une erreur. Cliquez sur le message « Check DNS configuration ». Cliquez alors sur « Set up Netlify DNS for votredomaine.com ».</p>
+<p><img src="/pictures/2017/12/netlify-setup-dns.jpg" alt="Netlify Setup Dns"></p>
+<p>Dans l&rsquo;écran qui apparaît, cliquez sur Create DNS zone.</p>
+<p><img src="/pictures/2017/12/netlify-create-dns-zone.jpg" alt="Netlify Create Dns Zone"></p>
+<p>Netlify crée alors les données de base pour le DNS, mais vous pouvez allez avoir besoin d&rsquo;ajouter des infos manuellement. Encore une fois, c&rsquo;est la partie la plus « compliquée » du processus car chaque cas est différent. Par exemple si vous avez un service d&rsquo;email lié à votre nom de domaine (dans mon exemple <a href="mailto:email@testtoto.com">email@testtoto.com</a>) vous devrez configurer correctement les données DNS de votre service d&rsquo;email sinon vos emails vont se perdre dans la nature.</p>
+<p><strong>Une fois cette étape effectuée, allez sur le service chez qui vous avez enregistré votre nom de domaine, et modifiez les serveurs DNS actuels par ceux de Netlify.</strong></p>
+<p>Une fois cette étape terminée, et une fois que les serveurs DNS dans le monde se seront mis à jour, votre site Hugo <a href="https://www.votresite.com">www.votresite.com</a> sera servi par Netlify hyper rapidement ! Il ne vous restera plus qu&rsquo;à activer le https pour que tout soit parfait ; l&rsquo;opération étant très simple, je ne la détaillerai pas ici.</p>
+
+    </div>
+ 	<div class="post-related">
+	
+	
+		<h3>Articles liés</h3>
+		<ul>
+			
+			<li><a href="/post/2018-12-17-des-macros-keyboard-maestro-pour-hugo/">Des macros Keyboard Maestro pour Hugo</a></li>
+			
+			<li><a href="/post/2017-12-18-site-hugo-github-netlify-1/">Héberger gratuitement un site Hugo avec Github et Netlify (1/2)</a></li>
+			
+			<li><a href="/post/2017-11-13-ajouter-formulaire-hugo/">Ajouter un formulaire de contact dans Hugo</a></li>
+			
+			<li><a href="/post/2016-08-16-quelques-trucs-en-plus-pour-votre-site-hugo/">Quelques trucs en plus pour votre site Hugo</a></li>
+			
+			<li><a href="/post/2016-08-08-comment-migrer-un-blog-wordpress-sous-hugo/">Comment migrer un blog Wordpress vers Hugo</a></li>
+			
+		</ul>
+	
+	</div>
+</article>
+<!-- _default:article:end -->
+
+			</main>
+			
+
+<!-- partials:aside:start -->
+
+<aside class="aside-flex">
+
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="blog" class="aside-module">
+					
+					
+					
+						<a href="/" class="button width-full">
+							
+		        		BLOG
+							
+						</a>
+					
+				</section>
+			
+		
+		
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="howitisgoing" class="aside-module">
+					
+					
+					
+						<a href="/howitisgoing/" class="button width-full">
+							
+		        		HOW IT IS GOING PROJECT
+							
+						</a>
+					
+				</section>
+			
+		
+		
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="mac-automation" class="aside-module">
+					
+					
+					
+						<a href="/mac-automation/" class="button width-full">
+							
+		        		MAC AUTOMATION TOOLS
+							
+						</a>
+					
+				</section>
+			
+		
+		
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="about" class="aside-module">
+					
+					
+					
+						<a href="/about/" class="button width-full">
+							
+		        		À PROPOS
+							
+						</a>
+					
+				</section>
+			
+		
+		
+	
+		
+			
+			
+				
+				<!-- links -->
+				<section id="links" class="aside-module hide-lg">
+					<header>
+					  <h2 class="aside-module-h2 align-center">Les sites que je soutiens</p>
+					</header>
+					<div class="links-flex">
+						
+							<div class="link">
+								<a href="https://www.codingandbricks.com/" class="link-a">
+					    		<img src="/pictures/links/codingandbricks.jpg" class="link-img">
+					    		<p class="link-p">Ateliers LEGO Serious Play® pour les entreprises</p>
+					    	</a>
+							</div>
+						
+							<div class="link">
+								<a href="https://www.ideasonstage.com/" class="link-a">
+					    		<img src="/pictures/links/ideasonstage.jpg" class="link-img">
+					    		<p class="link-p">Le spécialiste des présentations en public</p>
+					    	</a>
+							</div>
+						
+					</div>
+				</section>
+
+			
+		
+		
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="mastodon" class="aside-module">
+					
+					
+					
+						<a href="https://mastodon.social/@pmorsa" class="button width-full">
+							
+								<img src="/pictures/main/wordmark-black-text.svg" alt="MASTODON" class="piclight" />
+								
+									<img src="/pictures/main/wordmark-white-text.svg" alt="MASTODON" class="picdark" />
+								
+							
+						</a>
+					
+				</section>
+			
+		
+		
+	
+		
+			
+				
+				<!-- rss -->
+				<section id="rss" class="aside-module blurb">
+					
+					<a rel="alternate" type="application/rss+xml" href="" title="RSS" class="button width-full">S&rsquo;abonner au fil RSS</a>
+					
+				</section>
+		
+			
+		
+		
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="contact" class="aside-module">
+					
+					
+					
+						<a href="mailto:pier%72e.%6Dors%61@pierremorsa.com" class="button width-full">
+							
+		        		CONTACT
+							
+						</a>
+					
+				</section>
+			
+		
+		
+	
+		
+			
+				
+				<!-- list of taxonomy terms -->
+				
+				<section id="categories" class="aside-module">
+					<h2 class="aside-module-h2">BLOG CATEGORIES</h2>
+				  <ul class="aside-taxonomy-ul">
+						
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/art-oratoire/">Art Oratoire</a>
+								</span>
+								<span style="float:right;">1</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/cr%C3%A9ativit%C3%A9/">Créativité</a>
+								</span>
+								<span style="float:right;">1</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/gtd-getting-things-done/">GTD Getting Things Done</a>
+								</span>
+								<span style="float:right;">44</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/hugo/">Hugo</a>
+								</span>
+								<span style="float:right;">9</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/ideas-on-stage/">Ideas on Stage</a>
+								</span>
+								<span style="float:right;">1</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/internet/">Internet</a>
+								</span>
+								<span style="float:right;">7</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/lifehacks/">Lifehacks</a>
+								</span>
+								<span style="float:right;">68</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/mac/">Mac</a>
+								</span>
+								<span style="float:right;">24</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/nomade-digital/">Nomade Digital</a>
+								</span>
+								<span style="float:right;">5</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/nouvelles/">Nouvelles</a>
+								</span>
+								<span style="float:right;">48</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/opinions/">Opinions</a>
+								</span>
+								<span style="float:right;">16</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/philosophie-de-blog/">Philosophie De Blog</a>
+								</span>
+								<span style="float:right;">121</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/pr%C3%A9senter-en-public/">Présenter en Public</a>
+								</span>
+								<span style="float:right;">68</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/startup/">Startup</a>
+								</span>
+								<span style="float:right;">15</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/storytelling/">Storytelling</a>
+								</span>
+								<span style="float:right;">8</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/technomagie/">Technomagie</a>
+								</span>
+								<span style="float:right;">87</span>
+							</li>
+					   
+					    <li class="aside-taxonomy-li">
+								<span class="pill pill-category">
+									<a href="/categories/tedx/">TEDx</a>
+								</span>
+								<span style="float:right;">12</span>
+							</li>
+					   
+			    </ul>
+				</section>
+								
+			
+		
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			
+			
+				
+				<!-- blurb -->
+				<section id="copyright" class="aside-module">
+					
+			    	<h2 class="aside-module-h2">COPYLEFT ET ZÉRO COOKIES</h2>
+					
+					
+			    	<p class="aside-module-p">Site garanti sans cookies et sans JavaScript. Le contenu est en copie libre : vous pouvez tout copier et réutiliser librement.</p>
+					
+					
+				</section>
+			
+		
+		
+	
+	<section id="last-updated" class="aside-module">
+		<h2 class="aside-module-h2">Dernière mise à jour</h2>
+		<p class="aside-module-p">2024-10-12 20:40 CEST
+	</section>
+	
+</aside>
+
+<!-- partials:aside:end -->
+    </div>
+  </body>
+ 	<!-- _default:single:end -->
+
+</html>
+<!-- _default:baseof.html:end -->
