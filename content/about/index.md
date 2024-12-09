@@ -44,7 +44,7 @@ Au fil des ans j'ai été interviewé pour plusieurs magazines et même pour la 
 
 ## À propos de ce blog
 
-Ce blog existe pour partager mes découvertes et mes humeurs. J'y parle des sujets qui m'intéressent, en particulier présenter en public, GTD, et le Life Hacking. Je ne gagne rien avec ce blog et aucun article n'est sponsorisé. Il y a juste deux liens, un vers Coding & Bricks, l'entreprise de mon épouse, et un vers Ideas on Stage, mon entreprise. Vous pouvez librement copier et réutiliser tout son contenu, aussi inintéressant soit-il. Ce site est garanti 0 cookies, 0 JavaScript.
+Ce blog existe pour partager mes découvertes et mes humeurs. J'y parle des sujets qui m'intéressent, en particulier présenter en public, GTD, et le Life Hacking. Je ne gagne rien avec ce blog et aucun article n'est sponsorisé. Vous pouvez librement copier et réutiliser tout son contenu. Les IA qui utilisent le contenu de ce blog doivent être entièrement open source, en accès libre et gratuit. Il est explicitement interdit aux IA commerciales d'utiliser le contenu de ce site. Ce site est garanti 0 cookies, 0 JavaScript.
 
 Le blog est construit avec [Hugo](http://gohugo.io), un générateur de sites statiques, et est « hébergé » chez Github et Netlify. Je crois fermement que la plupart des sites web actuels sont devenus des usines à gaz et qu'un retour à des pages statiques, sans JavaScript est la meilleure solution pour de nombreux sites. En plus de mon blog, le [site d'Ideas on Stage](https://www.ideasonstage.com/) est également hébergé avec le tandem Github + Netlify.
 

@@ -1,130 +1,127 @@
-baseurl									= "https://www.pierremorsa.com/"
-title										= "Pierre Morsa"
-defaultContentLanguage		= "fr"
-language									= "fr"
-languageCode							= "fr"
-languageName							= "Français"
-paginate								= 5
-enableGitInfo						= true
+baseurl					= "https://www.pierremorsa.com/"
+title					= "Pierre Morsa"
+defaultContentLanguage	= "fr"
+language				= "fr"
+languageCode			= "fr"
+languageName			= "Français"
+paginate				= 5
+enableGitInfo			= true
 
 
 
 [markup]
 	[markup.goldmark]
 		[markup.goldmark.renderer]
-   		unsafe						= true	# added to allow raw HTML in page .Content
-
+		unsafe			= true	# added to allow raw HTML in page .Content
 
 
 [taxonomies]
 	category	= "categories"
-	tag				= "tags"
+	tag			= "tags"
 	company		= "companies"
 	promised	= "promised"
-	deadline		= "deadline"
-
-
+	deadline	= "deadline"
 	
 [params]
   # Meta tag description
-  description						= "Le blog de Pierre Morsa, Blogueur, Co-Founder Ideas on Stage, projet How It Is Going"
+  description			= "Le blog de Pierre Morsa, Blogueur, Co-Founder Ideas on Stage, projet How It Is Going"
 
 	# Sections whose pages are listed
-	mainSections 					= [ "post" ]
+	mainSections		= [ "post" ]
 
 	# Sections
 	[[params.sections]]
-		section								= "post"
-		title									= "ce bon vieux blog"
-		description						= "Réflexions de comptoir"
-		link										= "/"
+		section			= "post"
+		title			= "ce bon vieux blog"
+		description		= "Réflexions de comptoir"
+		link			= "/"
 	[[params.sections]]
-		section								= "howitisgoing"
-		title									= "How It Is Going"
-		description						= "Holding big companies accountable"
-		link										= "/howitisgoing/"
-		language								= "en"
+		section			= "howitisgoing"
+		title			= "How It Is Going"
+		description		= "Holding big companies accountable"
+		link			= "/howitisgoing/"
+		language		= "en"
 	[[params.sections]]
-		section								= "mac-automation"
-		title									= "Mac Automation"
-		description						= "Automation tools for macOS"
-		link										= "/mac-automation/"
-		language								= "en"
+		section			= "mac-automation"
+		title			= "Mac Automation"
+		description		= "Automation tools for macOS"
+		link			= "/mac-automation/"
+		language		= "en"
 	[[params.sections]]
-		section								= "categories"
-		title									= "Categories"
-		description						= "Topics per category"
-		link										= "/"
-		showsubcategory				= true
+		section			= "categories"
+		title			= "Categories"
+		description		= "Topics per category"
+		link			= "/"
+		showsubcategory	= true
 	[[params.sections]]
-		section								= "tags"
-		title									= "Tags"
-		description						= "How It Is Going Tags"
-		link										= "/"
-		showsubcategory				= true
+		section			= "tags"
+		title			= "Tags"
+		description		= "How It Is Going Tags"
+		link			= "/"
+		showsubcategory	= true
 	[[params.sections]]
-		section								= "companies"
-		title									= "Companies"
-		description						= "Companies listed on this site"
-		link										= "/"
-		showsubcategory				= true
-		language								= "en"
+		section			= "companies"
+		title			= "Companies"
+		description		= "Companies listed on this site"
+		link			= "/"
+		showsubcategory	= true
+		language		= "en"
 	[[params.sections]]
-		section								= "promised"
-		title									= "Promised"
-		description						= "When was the promise made?"
-		link										= "/"
-		showsubcategory				= true
-		language								= "en"
+		section			= "promised"
+		title			= "Promised"
+		description		= "When was the promise made?"
+		link			= "/"
+		showsubcategory	= true
+		language		= "en"
 	[[params.sections]]
-		section								= "deadline"
-		title									= "Deadline"
-		description						= "When should the promise be delivered?"
-		link										= "/"
-		showsubcategory				= true
-		language								= "en"
+		section			= "deadline"
+		title			= "Deadline"
+		description		= "When should the promise be delivered?"
+		link			= "/"
+		showsubcategory	= true
+		language		= "en"
 
 	# Taxonomies
 		[[params.taxonomies]]
-		id										= "categories"
-		title									= "Categories"
-		description						= "Topics per category"
-		language								= "fr"
-		color									= "#00ABC2"
+		id				= "categories"
+		title			= "Categories"
+		description		= "Topics per category"
+		language		= "fr"
+		color			= "#00ABC2"
 	[[params.taxonomies]]
-		id										= "tags"
-		title									= "Tags"
-		description						= "How It Is Going Tags"
-		language								= "en"
-		color									= "#00ABC2"
+		id				= "tags"
+		title			= "Tags"
+		description		= "How It Is Going Tags"
+		language		= "en"
+		color			= "#00ABC2"
 	[[params.taxonomies]]
-		id										= "companies"
-		title									= "Companies"
-		description						= "Companies listed on this site"
-		language								= "en"
-		color									= "#6364FF"
+		id				= "companies"
+		title			= "Companies"
+		description		= "Companies listed on this site"
+		language		= "en"
+		color			= "#6364FF"
 	[[params.taxonomies]]
-		id										= "promised"
-		title									= "Promised"
-		description						= "When was the promise made?"
-		language								= "en"
-		color									= "#00B578"
+		id				= "promised"
+		title			= "Promised"
+		description		= "When was the promise made?"
+		language		= "en"
+		color			= "#00B578"
 	[[params.taxonomies]]
-		id										= "deadline"
-		title									= "Deadline"
-		description						= "When should the promise be delivered?"
-		language								= "en"
-		color									= "#C69828"
+		id				= "deadline"
+		title			= "Deadline"
+		description		= "When should the promise be delivered?"
+		language		= "en"
+		color			= "#C69828"
 	
 	# Avatar picture on top of site
 	[params.avatar]
-	  src       					= "/pictures/main/pierre-morsa-avatar.png"
-	  alt									= "Pierre Morsa"
+		src				= "/pictures/main/pierre-morsa-avatar.png"
+		alt				= "Pierre Morsa"
 	
 	# Pagination buttons
 	[params.nav]
-		previous						= "Plus récents" 
-		next 								= "Plus anciens"
+		previous		= "Plus récents" 
+		next 			= "Plus anciens"
 
 	# Aside infos, with section id (mandatory), text and button (optional)
 	# Order elements as you want them to see in the sidebar
@@ -134,103 +131,102 @@ enableGitInfo						= true
 	# - categories: id only
 	# - copyright: id, text, no button
 	[[params.aside]]
-		id									= "blog"
-		type								= "blurb"
-		button							= "BLOG"
-		link									= "/"
-		showon							= [ "all" ]
+		id				= "blog"
+		type			= "blurb"
+		button			= "BLOG"
+		link			= "/"
+		showon			= [ "all" ]
 	[[params.aside]]
-		id									= "howitisgoing"
-		type								= "blurb"
-		button							= "HOW IT IS GOING PROJECT"
-		link									= "/howitisgoing/"
-		showon							= [ "all" ]
+		id				= "howitisgoing"
+		type			= "blurb"
+		button			= "HOW IT IS GOING PROJECT"
+		link			= "/howitisgoing/"
+		showon			= [ "all" ]
 	[[params.aside]]
-		id									= "mac-automation"
-		type								= "blurb"
-		button							= "MAC AUTOMATION TOOLS"
-		link									= "/mac-automation/"
-		showon							= [ "all" ]
+		id				= "mac-automation"
+		type			= "blurb"
+		button			= "MAC AUTOMATION TOOLS"
+		link			= "/mac-automation/"
+		showon			= [ "all" ]
 	[[params.aside]]
-		id 									= "about"
-		type								= "blurb"
-		button							= "À PROPOS"
-		link									= "/about/"
-		showon							= [ "all" ]
+		id 				= "about"
+		type			= "blurb"
+		button			= "À PROPOS"
+		link			= "/about/"
+		showon			= [ "all" ]
 	[[params.aside]]
-		id									= "links"
-		type								= "links"
-		text								= "Les sites que je soutiens"
-		showon							= [ "all" ]
+		id				= "links"
+		type			= "links"
+		text			= "Les sites que je soutiens"
+		showon			= [ "all" ]
 	[[params.aside]]
-		id									= "mastodon"
-		type								= "blurb"
-		button							= "MASTODON"
-		link									= "https://mastodon.social/@pmorsa"
-		picture							= "/pictures/main/wordmark-black-text.svg"
-		picturedark					= "/pictures/main/wordmark-white-text.svg"
-		showon							= [ "all" ]
+		id				= "mastodon"
+		type			= "blurb"
+		button			= "MASTODON"
+		link			= "https://mastodon.social/@pmorsa"
+		picture			= "/pictures/main/wordmark-black-text.svg"
+		picturedark		= "/pictures/main/wordmark-white-text.svg"
+		showon			= [ "all" ]
 	[[params.aside]]
-		id									= "rss"
-		type								= "blurb"
-		button							= "S'abonner au fil RSS"
-		link									= ""
-		showon							= [ "all" ]
+		id				= "rss"
+		type			= "blurb"
+		button			= "S'abonner au fil RSS"
+		link			= ""
+		showon			= [ "all" ]
 	[[params.aside]]
-		id 									= "contact"
-		type								= "blurb"
-		button							= "CONTACT"
-		link									= "mailto:pier%72e.%6Dors%61@pierremorsa.com"
-		showon							= [ "all" ]
+		id 				= "contact"
+		type			= "blurb"
+		button			= "CONTACT"
+		link			= "mailto:pier%72e.%6Dors%61@pierremorsa.com"
+		showon			= [ "all" ]
 	[[params.aside]]
-		id									= "categories"
-		type								= "taxonomy"
-		class								= "pill-category"
-		title								= "BLOG CATEGORIES"
-		showon							= [ "home", "post", "term" ]
+		id				= "categories"
+		type			= "taxonomy"
+		class			= "pill-category"
+		title			= "BLOG CATEGORIES"
+		showon			= [ "home", "post", "term" ]
 	[[params.aside]]
-		id									= "tags"
-		type								= "taxonomy"
-		class								= "pill-category"
-		title								= "HOW IT IS GOING TAGS"
-		showon							= [ "howitisgoing", "term" ]
+		id				= "tags"
+		type			= "taxonomy"
+		class			= "pill-category"
+		title			= "HOW IT IS GOING TAGS"
+		showon			= [ "howitisgoing", "term" ]
 	[[params.aside]]
-		id									= "companies"
-		type								= "taxonomy"
-		class								= "pill-company"
-		title								= "COMPANIES"
-		showon							= [ "howitisgoing", "term" ]
+		id				= "companies"
+		type			= "taxonomy"
+		class			= "pill-company"
+		title			= "COMPANIES"
+		showon			= [ "howitisgoing", "term" ]
 	[[params.aside]]
-		id									= "promised"
-		type								= "taxonomy"
-		class								= "pill-promised"
-		title								= "PROMISED"
-		showon							= [ "howitisgoing", "term" ]
+		id				= "promised"
+		type			= "taxonomy"
+		class			= "pill-promised"
+		title			= "PROMISED"
+		showon			= [ "howitisgoing", "term" ]
 	[[params.aside]]
-		id									= "deadline"
-		type								= "taxonomy"
-		class								= "pill-deadline"
-		title								= "DEADLINE"
-		showon							= [ "howitisgoing", "term" ]
+		id				= "deadline"
+		type			= "taxonomy"
+		class			= "pill-deadline"
+		title			= "DEADLINE"
+		showon			= [ "howitisgoing", "term" ]
 	[[params.aside]]
-		id									= "copyright"
-		type								= "blurb"
-		title								= "COPYLEFT ET ZÉRO COOKIES"
-		text								= "Site garanti sans cookies et sans JavaScript. Le contenu est en copie libre : vous pouvez tout copier et réutiliser librement."
-		showon							= [ "all" ]
+		id				= "copyright"
+		type			= "blurb"
+		title			= "COPYLEFT ET ZÉRO COOKIES"
+		text			= "Site garanti sans cookies et sans JavaScript. Le contenu est en copie libre : vous pouvez tout copier et réutiliser librement. Les IA qui utilisent le contenu de ce blog doivent être entièrement open source, en accès libre et gratuit. Toute IA utilisant le contenu de ce blog reconnaît donc qu'elle est open source, en accès libre et gratuit."
+		showon			= [ "all" ]
 
 	[params.colors]
-		link									= "#2ebaae"
-		bglight							= "#f4f4f4"
-		bgdark							= "#222"
-		border							= "rgba(160, 160, 160, 0.3)"
+		link			= "#2ebaae"
+		bglight			= "#f4f4f4"
+		bgdark			= "#222"
+		border			= "rgba(160, 160, 160, 0.3)"
 	
 # Related content links at bottom of articles
 [related]
-	threshold 							= 100
-	includeNewer 					= true
-	toLower 							= true
+	threshold			= 100
+	includeNewer		= true
+	toLower				= true
 	[related.indices]
-		name 								= "categories"
-	  weight 							= 100
-	  
+		name			= "categories"
+		weight			= 100
