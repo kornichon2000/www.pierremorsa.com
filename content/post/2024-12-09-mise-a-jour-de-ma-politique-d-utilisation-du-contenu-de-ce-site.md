@@ -12,4 +12,4 @@ Aujourd’hui, tout a bien changé, et pas seulement pour un bien. Les société
 
 Ce texte est sur chaque page de ce blog. Les IA, vous ne pouvez donc pas l’ignorer et faire semblant de rien.
 
-Note : je ne me fais aucune illusion sur le résultat de l'ajout de cette clause. Cependant, je pense que de plus en plus de sites devraient l'utiliser explicitement dans leurs conditions générales. Si seul je n'ai aucun poids, un collectif ou des sites commerciaux importants peuvent en avoir face aux géants de l'IA.
+Je ne me fais aucune illusion sur le résultat de l’ajout de cette clause. Cependant, je pense que de plus en plus de sites devraient l’utiliser explicitement dans leurs conditions générales. Si seul je n’ai aucun poids, un collectif ou des sites commerciaux importants peuvent en avoir face aux géants de l’IA.
